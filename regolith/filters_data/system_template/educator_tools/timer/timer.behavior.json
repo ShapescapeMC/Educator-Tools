@@ -21,185 +21,28 @@
 				"always_show": true
 			},
 			"minecraft:health": {
-				"value": 1,
-				"max": 1
+				"value": 10000,
+				"max": 10000
 			},
-
 			"minecraft:tick_world": {
 				"never_despawn": true,
 				"radius": 2
+			},
+			"minecraft:boss": {
+				"name": "--:--:--",
+				"hud_range": 1000000,
+				"should_darken_sky": false
 			}
 		},
 		"component_groups": {
-			"edu_tools:30_seconds": {
-				"minecraft:health": {
-					"value": 30,
-					"max": 30
-				}
-			},
-			"edu_tools:1_minute": {
-				"minecraft:health": {
-					"value": 60,
-					"max": 60
-				}
-			},
-			"edu_tools:2_minutes": {
-				"minecraft:health": {
-					"value": 120,
-					"max": 120
-				}
-			},
-			"edu_tools:3_minutes": {
-				"minecraft:health": {
-					"value": 180,
-					"max": 180
-				}
-			},
-			"edu_tools:5_minutes": {
-				"minecraft:health": {
-					"value": 300,
-					"max": 300
-				}
-			},
-			"edu_tools:10_minutes": {
-				"minecraft:health": {
-					"value": 600,
-					"max": 600
-				}
-			},
-			"edu_tools:15_minutes": {
-				"minecraft:health": {
-					"value": 900,
-					"max": 900
-				}
-			},
-			"edu_tools:30_minutes": {
-				"minecraft:health": {
-					"value": 1800,
-					"max": 1800
-				}
-			},
-			"edu_tools:45_minutes": {
-				"minecraft:health": {
-					"value": 2700,
-					"max": 2700
-				}
-			},
-			"edu_tools:60_minutes": {
-				"minecraft:health": {
-					"value": 3600,
-					"max": 3600
-				}
-			},
-			"edu_tools:90_minutes": {
-				"minecraft:health": {
-					"value": 5400,
-					"max": 5400
-				}
-			},
 			"edu_tools:despawn": {
 				"minecraft:instant_despawn": {}
-			},
-			"edu_tools:pause_timer": {
-				"minecraft:boss": {
-					"name": "--:--:--",
-					"hud_range": 10000,
-					"should_darken_sky": false
-				},
-				"minecraft:is_baby": {}
-			},
-			"`[K(f'edu_tools:timer_{h:02d}_{m:02d}_{s:02d}', hour=h, minute=m, second=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`": {
-				"minecraft:boss": {
-					"name": "`f'{hour:02d}:{minute:02d}:{second:02d}'`",
-					"hud_range": 10000,
-					"should_darken_sky": false
-				}
 			}
 		},
 		"events": {
 			"edu_tools:despawn": {
 				"add": {
 					"component_groups": ["edu_tools:despawn"]
-				}
-			},
-			"edu_tools:30_seconds": {
-				"add": {
-					"component_groups": ["edu_tools:30_seconds"]
-				}
-			},
-			"edu_tools:1_minute": {
-				"add": {
-					"component_groups": ["edu_tools:1_minute"]
-				}
-			},
-			"edu_tools:2_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:2_minutes"]
-				}
-			},
-			"edu_tools:3_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:3_minutes"]
-				}
-			},
-			"edu_tools:5_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:5_minutes"]
-				}
-			},
-			"edu_tools:10_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:10_minutes"]
-				}
-			},
-			"edu_tools:15_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:15_minutes"]
-				}
-			},
-			"edu_tools:30_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:30_minutes"]
-				}
-			},
-			"edu_tools:45_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:45_minutes"]
-				}
-			},
-			"edu_tools:60_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:60_minutes"]
-				}
-			},
-			"edu_tools:90_minutes": {
-				"add": {
-					"component_groups": ["edu_tools:90_minutes"]
-				}
-			},
-			"edu_tools:clear_timer": {
-				"remove": {
-					"component_groups": [
-						"edu_tools:pause_timer",
-						{
-							"__unpack__": "`[dict(h=h, m=m, s=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`",
-							"__value__": "`f'edu_tools:timer_{h:02d}_{m:02d}_{s:02d}'`"
-						}
-					]
-				}
-			},
-
-			"edu_tools:pause_timer": {
-				"add": {
-					"component_groups": ["edu_tools:pause_timer"]
-				}
-			},
-
-			"`[K(f'edu_tools:set_timer_{h:02d}_{m:02d}_{s:02d}', hour=h, minute=m, second=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`": {
-				"add": {
-					"component_groups": [
-						"`f'edu_tools:timer_{hour:02d}_{minute:02d}_{second:02d}'`"
-					]
 				}
 			}
 		}
