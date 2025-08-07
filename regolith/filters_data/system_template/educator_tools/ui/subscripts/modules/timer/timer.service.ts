@@ -173,7 +173,7 @@ export class TimerService implements Module {
 	 * Removes the timer from storage and clears cache
 	 */
 	clearTimer(): void {
-		this.storage.drop("timer");
+		this.storage.set("timer", undefined);
 		this.removeEntity(); // Remove the visual entity if it exists
 	}
 
@@ -200,6 +200,12 @@ export class TimerService implements Module {
 		if (entity) {
 			entity.remove(); // Remove the visual entity if it exists
 		}
+		const otherEntities = world.getDimension("overworld").getEntities({
+			type: "edu_tools:timer",
+		});
+		otherEntities.forEach((e) => {
+			e.remove(); // Remove any other timer entities in the world
+		});
 	}
 
 	/**

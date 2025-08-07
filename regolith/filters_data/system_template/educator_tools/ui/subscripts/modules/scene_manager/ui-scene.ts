@@ -100,7 +100,7 @@ export class ActionUIScene {
 	 */
 	addLabel(label: string | RawMessage): void {
 		this.form.label(label);
-		this.buttonHandlers.push(() => {});
+		//this.buttonHandlers.push(() => {});
 	}
 
 	/**
@@ -111,7 +111,7 @@ export class ActionUIScene {
 	 */
 	addDivider(): void {
 		this.form.divider();
-		this.buttonHandlers.push(() => {});
+		//this.buttonHandlers.push(() => {});
 	}
 
 	/**

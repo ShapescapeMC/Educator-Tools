@@ -187,11 +187,14 @@ export class LockPlayerService implements Module {
 				playerBound,
 			});
 		} else {
+			const sourcePlayer = context.getSourcePlayer();
+			const center = sourcePlayer.location;
 			this.updateLockSettings(subjectTeam.id, {
 				radius,
 				teleportToCenter,
 				showLockMessage,
 				showBoundaries,
+				center,
 			});
 		}
 	}

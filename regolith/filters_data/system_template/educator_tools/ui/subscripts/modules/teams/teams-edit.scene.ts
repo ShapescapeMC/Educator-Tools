@@ -12,7 +12,7 @@ export class TeamsEditScene extends ModalUIScene {
 		context: SceneContext,
 		private readonly teamsService: TeamsService,
 	) {
-		super(TeamsEditScene.id, context.getSourcePlayer(), "main");
+		super(TeamsEditScene.id, context.getSourcePlayer());
 
 		this.setContext(context);
 		const subjectTeam = context.getSubjectTeam();
@@ -67,6 +67,7 @@ export class TeamsEditScene extends ModalUIScene {
 				return;
 			}
 			this.applyChanges(context);
+			sceneManager.openSceneWithContext(context, "teams_manage_players", true);
 		});
 	}
 
@@ -78,16 +79,18 @@ export class TeamsEditScene extends ModalUIScene {
 				name.toLowerCase().replace(/\s+/g, "_") +
 				"_" +
 				Math.random().toString(36).substring(2, 15);
-			this.teamsService.createTeam(id, name, {
+			const team = this.teamsService.createTeam(id, name, {
 				description: context.getData("team_description") || "",
 				icon: context.getData("team_icon") || TeamsService.availableIcons[0],
 			});
+			context.setSubjectTeam(team);
 		} else {
-			this.teamsService.updateTeam(subjectTeam.id, {
+			const team = this.teamsService.updateTeam(subjectTeam.id, {
 				name: name,
 				description: context.getData("team_description") || "",
 				icon: context.getData("team_icon") || TeamsService.availableIcons[0],
 			});
+			context.setSubjectTeam(team);
 		}
 	}
 }

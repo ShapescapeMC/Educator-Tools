@@ -68,6 +68,13 @@ export class TeamsManagePlayersScene extends ActionUIScene {
 			},
 			"textures/edu_tools/ui/icons/teams_management/remove_player",
 		);
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			(): void => {
+				sceneManager.goBackToScene(context, "teams_management");
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
 
 		this.show(context.getSourcePlayer(), sceneManager);
 	}

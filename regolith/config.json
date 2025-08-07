@@ -42,7 +42,7 @@
 		"profiles": {
 			"default": {
 				"export": {
-					"build": "standard",
+					"build": "education",
 					"readOnly": false,
 					"target": "development"
 				},

@@ -23,6 +23,7 @@ export class TimerScene extends ActionUIScene {
 					"edu_tools.ui.timer.buttons.start",
 					(): void => {
 						timerService.startTimer();
+						sceneManager.openSceneWithContext(context, "timer", false);
 					},
 					"textures/edu_tools/ui/icons/timer/start_timer",
 				);
@@ -31,6 +32,7 @@ export class TimerScene extends ActionUIScene {
 					"edu_tools.ui.timer.buttons.resume",
 					(): void => {
 						timerService.resumeTimer();
+						sceneManager.openSceneWithContext(context, "timer", false);
 					},
 					"textures/edu_tools/ui/icons/timer/start_timer",
 				);
@@ -39,6 +41,7 @@ export class TimerScene extends ActionUIScene {
 					"edu_tools.ui.timer.buttons.pause",
 					(): void => {
 						timerService.pauseTimer();
+						sceneManager.openSceneWithContext(context, "timer", false);
 					},
 					"textures/edu_tools/ui/icons/timer/pause_timer",
 				);
@@ -55,6 +58,7 @@ export class TimerScene extends ActionUIScene {
 				"edu_tools.ui.timer.buttons.remove",
 				(): void => {
 					timerService.clearTimer();
+					sceneManager.openSceneWithContext(context, "timer", false);
 				},
 				"textures/edu_tools/ui/icons/timer/stop_timer",
 			);

@@ -61,6 +61,15 @@ export class TeamsManagementScene extends ActionUIScene {
 			"textures/edu_tools/ui/icons/teams_management/manage_players",
 		);
 
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			(): void => {
+				context.reset();
+				sceneManager.openSceneWithContext(context, "main", true);
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
+
 		this.show(context.getSourcePlayer(), sceneManager);
 	}
 }

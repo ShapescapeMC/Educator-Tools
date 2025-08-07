@@ -4,6 +4,7 @@ import { Team } from "../teams/interfaces/team.interface";
 import { SceneContext } from "../scene_manager/scene-context";
 import { ModuleManager } from "../../module-manager";
 import { FocusModeService } from "./focus_mode.service";
+import { TeamsService } from "../teams/teams.service";
 
 export class FocusModeScene extends ActionUIScene {
 	public static readonly id = "focus_mode";
@@ -41,6 +42,23 @@ export class FocusModeScene extends ActionUIScene {
 			(): void => {
 				context.setSubjectTeamRequired(true);
 				context.setNextScene("focus_mode_manage");
+				context.setData(
+					"team_filter",
+					(team: Team, teamsService: TeamsService): boolean => {
+						if (team.memberIds.length < 1) {
+							return false; // Skip empty teams
+						}
+						for (const memberId of team.memberIds) {
+							const isTeacher = teamsService
+								.getTeam("system_teachers")
+								?.memberIds.includes(memberId);
+							if (!isTeacher) {
+								return true; // Include teams with at least one non-teacher player
+							}
+						}
+						return false;
+					},
+				);
 				sceneManager.openSceneWithContext(context, "team_select", true);
 			},
 			"textures/edu_tools/ui/icons/focus_mode/select_team",

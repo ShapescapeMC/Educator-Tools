@@ -5,6 +5,7 @@ import { Team } from "../teams/interfaces/team.interface";
 import { SceneContext } from "../scene_manager/scene-context";
 import { TeleportScene } from "./teleport.scene";
 import { ButtonConfig } from "../main/main.service";
+import { TeamsService } from "../teams/teams.service";
 
 export class TeleportService implements Module {
 	static readonly id = "teleport";
@@ -48,7 +49,7 @@ export class TeleportService implements Module {
 			context.setSubjectTeamRequired(true);
 			context.setTargetTeamRequired(true);
 			context.setNextScene("teleport");
-			context.setData("team_filter", (team: Team): boolean => {
+			context.setData("team_filter_subject", (team: Team): boolean => {
 				if (team.memberIds.length < 1) {
 					return false; // Skip empty teams
 				}
@@ -58,6 +59,22 @@ export class TeleportService implements Module {
 				}
 				return true;
 			});
+			context.setData(
+				"team_filter_target",
+				(team: Team, teamsService: TeamsService): boolean => {
+					if (team.memberIds.length < 1) {
+						return false; // Skip empty teams
+					}
+					if (!teamsService.isPlayerTeam(team.id)) {
+						return false; // Skip non-player teams
+					}
+					for (const memberId of team.memberIds) {
+						const player = world.getEntity(memberId) as Player;
+						if (!!player) return true; // Include teams with at least one online player
+					}
+					return false;
+				},
+			);
 			context.setData("body_key", "teleport");
 			sceneManager.openSceneWithContext(context, "team_select", false);
 		}

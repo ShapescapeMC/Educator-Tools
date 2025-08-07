@@ -126,6 +126,11 @@ export class LockPlayerMechanic {
 	processPlayer(player: Player, lockSettings: LockSettings): void {
 		const playerLocation = player.location;
 		const center = lockSettings.center;
+		if (!center) {
+			throw new Error(
+				`LockPlayerMechanic: No center defined for player ${player.name}`,
+			);
+		}
 		const distance = Vec3.from(playerLocation).distance(center);
 
 		// Calculate dynamic activation radius based on lock radius

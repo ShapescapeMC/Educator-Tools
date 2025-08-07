@@ -12,7 +12,7 @@ export class TimerEditScene extends ModalUIScene {
 		context: SceneContext,
 		private readonly timerService: TimerService,
 	) {
-		super(TimerEditScene.id, context.getSourcePlayer(), "main");
+		super(TimerEditScene.id, context.getSourcePlayer());
 
 		this.setContext(context);
 		const timer = timerService.getTimer();
@@ -114,6 +114,8 @@ export class TimerEditScene extends ModalUIScene {
 		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
 			if (!r.canceled) {
 				this.applyChanges(context);
+
+				sceneManager.goBackToScene(context, "timer");
 			}
 		});
 	}

@@ -18,7 +18,7 @@ export class LockPlayerConfirmScene extends MessageUIScene {
 
 		this.setRawBody([
 			{
-				translate: "edu_tools.ui.lock_player.team.body.1",
+				translate: "edu_tools.ui.lock_player_confirm.team.body.1",
 			},
 			{
 				text: " §9",
@@ -30,14 +30,20 @@ export class LockPlayerConfirmScene extends MessageUIScene {
 				text: " §r",
 			},
 			{
-				translate: "edu_tools.ui.lock_player.team.body.2",
+				translate: "edu_tools.ui.lock_player_confirm.team.body.2",
 			},
 		]);
 
-		this.setButton1("edu_tools.ui.lock_player.buttons.confirm", (): void => {
-			this.lockPlayerService.confirmAction(context);
-		});
-		this.setButton2("edu_tools.ui.lock_player.buttons.cancel", (): void => {});
+		this.setButton1(
+			"edu_tools.ui.lock_player_confirm.buttons.confirm",
+			(): void => {
+				this.lockPlayerService.confirmAction(context);
+			},
+		);
+		this.setButton2(
+			"edu_tools.ui.lock_player_confirm.buttons.cancel",
+			(): void => {},
+		);
 
 		this.show(context.getSourcePlayer(), sceneManager);
 	}

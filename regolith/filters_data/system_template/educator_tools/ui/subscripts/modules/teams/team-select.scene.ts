@@ -83,8 +83,13 @@ export class TeamSelectScene extends ActionUIScene {
 	// Set the body text based on which team is required
 	private setBodyByContext(context: SceneContext): void {
 		let bodyKey = context.getData("body_key");
-		if (bodyKey)
-			bodyKey = "edu_tools.ui." + bodyKey + ".team_select.get_subject.body";
+		if (bodyKey) {
+			if (context.isSubjectTeamRequired()) {
+				bodyKey = "edu_tools.ui." + bodyKey + ".team_select.get_subject.body";
+			} else if (context.isTargetTeamRequired()) {
+				bodyKey = "edu_tools.ui." + bodyKey + ".team_select.get_target.body";
+			}
+		}
 
 		if (context.isSubjectTeamRequired()) {
 			this.setSimpleBody(
