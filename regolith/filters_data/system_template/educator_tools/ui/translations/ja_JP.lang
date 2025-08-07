@@ -130,6 +130,12 @@ edu_tools.ui.lock_player_team_settings.title=§fプレイヤーをロックの�
 edu_tools.ui.lock_player_team_settings.button.settings=設定
 edu_tools.ui.lock_player_team_settings.button.update_center=中心を更新する
 edu_tools.ui.lock_player_team_settings.button.teleport_to_center=中心にテレポートする
+edu_tools.ui.lock_player_team_settings.button.delete_lock=プレイヤーのロックを削除する
+edu_tools.ui.lock_player_confirm.title=§fプレイヤーのロックを確認する
+edu_tools.ui.lock_player_confirm.body.1=§r
+edu_tools.ui.lock_player_confirm.body.2=§rに対してロックを有効にしようとしています。これにより、設定したエリア外への移動が禁止されます
+edu_tools.ui.lock_player_confirm.buttons.confirm=確認
+edu_tools.ui.lock_player_confirm.buttons.cancel=キャンセル
 edu_tools.actionbar.lock_player.too_far_push=あなたは遠くに行き過ぎています
 
 ### Teleport Scene
@@ -256,10 +262,9 @@ edu_tools.ui.copy_item.select_item_tooltip=インベントリの中身からコ�
 ### Timer Scene
 edu_tools.ui.timer.title=§fタイマー
 edu_tools.ui.timer.body=タイマーは、特定の時間設定を行うためのツールです。タイマーを開始または停止することができ、時間が経過すると通知してくれます。
-edu_tools.ui.timer.buttons.create_timer=タイマーを作成する
 edu_tools.ui.edit_timer.title=§fタイマーの設定
-edu_tools.ui.edit_timer.time=タイマーの時間
-edu_tools.ui.edit_timer.time_tooltip=タイマーの時間を設定してください
+edu_tools.ui.timer_edit.time=タイマーの時間
+edu_tools.ui.timer_edit.time_tooltip=タイマーの時間を設定してください
 edu_tools.ui.timer.time.second=秒
 edu_tools.ui.timer.time.seconds=秒
 edu_tools.ui.timer.time.minute=分
@@ -267,6 +272,8 @@ edu_tools.ui.timer.time.minutes=分
 edu_tools.ui.timer.time.hour=時間
 edu_tools.ui.timer.time.hours=時間
 edu_tools.ui.timer_edit.show_timer_entity=タイマーのエンティティを表示する
+edu_tools.ui.timer_edit.show_timer_entity_tooltip=有効にすると、ワールド内にタイマーが視覚的に表示されます
+edu_tools.ui.timer.buttons.create=タイマーを作成する
 edu_tools.ui.timer.buttons.edit=タイマーを編集する
 edu_tools.ui.timer.buttons.pause=タイマーを一時停止する
 edu_tools.ui.timer.buttons.resume=タイマーを再開する
