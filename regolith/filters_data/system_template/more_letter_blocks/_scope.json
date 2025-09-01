@@ -1,8 +1,9 @@
 {
 	"letter_sets": [
+		// Blank
 		{
 			"id": "main_letter_set",
-			"font_size": 64,
+			"font_size": 48,
 			"text_color": [10, 10, 10, 255],
 			"image_size": [64, 64],
 			"font_path": "fonts/AzeretMono-Black.ttf",
@@ -619,12 +620,5132 @@
 		},
 		{
 			"id": "bigger_symbols",
-			"font_size": 48,
+			"font_size": 32,
 			"text_color": [10, 10, 10, 255],
 			"image_size": [64, 64],
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/blank.block.png",
 			"suffix": null,
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u00bc",
+					"safe_name": "vulgar_fraction_one_quarter",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				}
+			]
+		},
+		// Red outline
+		{
+			"id": "red_outline_set",
+			"font_size": 48,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/red_outline.block.png",
+			"suffix": "_red_outline",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u0041",
+					"safe_name": "A",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0042",
+					"safe_name": "B",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0043",
+					"safe_name": "C",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0044",
+					"safe_name": "D",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0045",
+					"safe_name": "E",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0046",
+					"safe_name": "F",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0047",
+					"safe_name": "G",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0048",
+					"safe_name": "H",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0049",
+					"safe_name": "I",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004a",
+					"safe_name": "J",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004b",
+					"safe_name": "K",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004c",
+					"safe_name": "L",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004d",
+					"safe_name": "M",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004e",
+					"safe_name": "N",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004f",
+					"safe_name": "O",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0050",
+					"safe_name": "P",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0051",
+					"safe_name": "Q",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0052",
+					"safe_name": "R",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0053",
+					"safe_name": "S",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0054",
+					"safe_name": "T",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0055",
+					"safe_name": "U",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0056",
+					"safe_name": "V",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0057",
+					"safe_name": "W",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0058",
+					"safe_name": "X",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0059",
+					"safe_name": "Y",
+					"group": "letter"
+				},
+				{
+					"char": "\\u005a",
+					"safe_name": "Z",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0030",
+					"safe_name": "0",
+					"group": "number"
+				},
+				{
+					"char": "\\u0031",
+					"safe_name": "1",
+					"group": "number"
+				},
+				{
+					"char": "\\u0032",
+					"safe_name": "2",
+					"group": "number"
+				},
+				{
+					"char": "\\u0033",
+					"safe_name": "3",
+					"group": "number"
+				},
+				{
+					"char": "\\u0034",
+					"safe_name": "4",
+					"group": "number"
+				},
+				{
+					"char": "\\u0035",
+					"safe_name": "5",
+					"group": "number"
+				},
+				{
+					"char": "\\u0036",
+					"safe_name": "6",
+					"group": "number"
+				},
+				{
+					"char": "\\u0037",
+					"safe_name": "7",
+					"group": "number"
+				},
+				{
+					"char": "\\u0038",
+					"safe_name": "8",
+					"group": "number"
+				},
+				{
+					"char": "\\u0039",
+					"safe_name": "9",
+					"group": "number"
+				},
+				{
+					"char": "\\u002e",
+					"safe_name": "dot",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u002c",
+					"safe_name": "comma",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003b",
+					"safe_name": "semicolon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003a",
+					"safe_name": "colon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0021",
+					"safe_name": "exclamation_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003f",
+					"safe_name": "question_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u00c2",
+					"safe_name": "a_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a1",
+					"safe_name": "inverted_exclamation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u002d",
+					"safe_name": "hyphen",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u005f",
+					"safe_name": "_",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0040",
+					"safe_name": "at_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0023",
+					"safe_name": "hash",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0024",
+					"safe_name": "dollar_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0025",
+					"safe_name": "percent_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u005e",
+					"safe_name": "caret",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0026",
+					"safe_name": "ampersand",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002a",
+					"safe_name": "asterisk",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002b",
+					"safe_name": "plus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003d",
+					"safe_name": "equals_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003c",
+					"safe_name": "less_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003e",
+					"safe_name": "greater_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u007e",
+					"safe_name": "tilde",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u201a",
+					"safe_name": "single_low_9_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b0",
+					"safe_name": "degree_sign",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00c3",
+					"safe_name": "a_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a2",
+					"safe_name": "cent_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a4",
+					"safe_name": "currency_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a6",
+					"safe_name": "broken_bar",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a9",
+					"safe_name": "copyright_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a8",
+					"safe_name": "diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00aa",
+					"safe_name": "feminine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ab",
+					"safe_name": "left_pointing_double_angle",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ad",
+					"safe_name": "soft_hyphen",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ae",
+					"safe_name": "registered_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00af",
+					"safe_name": "macron",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b1",
+					"safe_name": "plus_minus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b3",
+					"safe_name": "superscript_three",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b2",
+					"safe_name": "superscript_two",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b4",
+					"safe_name": "acute_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b6",
+					"safe_name": "pilcrow_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b5",
+					"safe_name": "micro_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b8",
+					"safe_name": "cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ba",
+					"safe_name": "masculine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b9",
+					"safe_name": "superscript_one",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0178",
+					"safe_name": "y_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ce",
+					"safe_name": "iota_with_tonos",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u201d",
+					"safe_name": "right_double_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CF",
+					"safe_name": "i_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u20ac",
+					"safe_name": "euro_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b7",
+					"safe_name": "middle_dot",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u2014",
+					"safe_name": "em_dash",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u02c6",
+					"safe_name": "modifier_letter_circumflex_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C0",
+					"safe_name": "A_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C1",
+					"safe_name": "A_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C8",
+					"safe_name": "E_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C9",
+					"safe_name": "E_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CA",
+					"safe_name": "E_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CB",
+					"safe_name": "E_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C6",
+					"safe_name": "AE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0152",
+					"safe_name": "OE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C7",
+					"safe_name": "C_cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D1",
+					"safe_name": "N_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00df",
+					"safe_name": "sharp_s",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CC",
+					"safe_name": "I_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CD",
+					"safe_name": "I_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CE",
+					"safe_name": "I_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D2",
+					"safe_name": "O_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D3",
+					"safe_name": "O_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D4",
+					"safe_name": "O_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D6",
+					"safe_name": "O_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D9",
+					"safe_name": "U_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DA",
+					"safe_name": "U_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DB",
+					"safe_name": "U_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DC",
+					"safe_name": "U_diaeresis",
+					"group": "diacritic"
+				}
+			]
+		},
+		{
+			"id": "red_outline_bigger_symbols",
+			"font_size": 32,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/red_outline.block.png",
+			"suffix": "_red_outline",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u00bc",
+					"safe_name": "vulgar_fraction_one_quarter",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				}
+			]
+		},
+		// Blue outline
+		{
+			"id": "blue_outline_set",
+			"font_size": 48,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/blue_outline.block.png",
+			"suffix": "_blue_outline",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u0041",
+					"safe_name": "A",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0042",
+					"safe_name": "B",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0043",
+					"safe_name": "C",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0044",
+					"safe_name": "D",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0045",
+					"safe_name": "E",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0046",
+					"safe_name": "F",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0047",
+					"safe_name": "G",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0048",
+					"safe_name": "H",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0049",
+					"safe_name": "I",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004a",
+					"safe_name": "J",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004b",
+					"safe_name": "K",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004c",
+					"safe_name": "L",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004d",
+					"safe_name": "M",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004e",
+					"safe_name": "N",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004f",
+					"safe_name": "O",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0050",
+					"safe_name": "P",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0051",
+					"safe_name": "Q",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0052",
+					"safe_name": "R",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0053",
+					"safe_name": "S",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0054",
+					"safe_name": "T",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0055",
+					"safe_name": "U",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0056",
+					"safe_name": "V",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0057",
+					"safe_name": "W",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0058",
+					"safe_name": "X",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0059",
+					"safe_name": "Y",
+					"group": "letter"
+				},
+				{
+					"char": "\\u005a",
+					"safe_name": "Z",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0030",
+					"safe_name": "0",
+					"group": "number"
+				},
+				{
+					"char": "\\u0031",
+					"safe_name": "1",
+					"group": "number"
+				},
+				{
+					"char": "\\u0032",
+					"safe_name": "2",
+					"group": "number"
+				},
+				{
+					"char": "\\u0033",
+					"safe_name": "3",
+					"group": "number"
+				},
+				{
+					"char": "\\u0034",
+					"safe_name": "4",
+					"group": "number"
+				},
+				{
+					"char": "\\u0035",
+					"safe_name": "5",
+					"group": "number"
+				},
+				{
+					"char": "\\u0036",
+					"safe_name": "6",
+					"group": "number"
+				},
+				{
+					"char": "\\u0037",
+					"safe_name": "7",
+					"group": "number"
+				},
+				{
+					"char": "\\u0038",
+					"safe_name": "8",
+					"group": "number"
+				},
+				{
+					"char": "\\u0039",
+					"safe_name": "9",
+					"group": "number"
+				},
+				{
+					"char": "\\u002e",
+					"safe_name": "dot",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u002c",
+					"safe_name": "comma",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003b",
+					"safe_name": "semicolon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003a",
+					"safe_name": "colon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0021",
+					"safe_name": "exclamation_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003f",
+					"safe_name": "question_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u00c2",
+					"safe_name": "a_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a1",
+					"safe_name": "inverted_exclamation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u002d",
+					"safe_name": "hyphen",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u005f",
+					"safe_name": "_",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0040",
+					"safe_name": "at_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0023",
+					"safe_name": "hash",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0024",
+					"safe_name": "dollar_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0025",
+					"safe_name": "percent_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u005e",
+					"safe_name": "caret",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0026",
+					"safe_name": "ampersand",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002a",
+					"safe_name": "asterisk",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002b",
+					"safe_name": "plus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003d",
+					"safe_name": "equals_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003c",
+					"safe_name": "less_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003e",
+					"safe_name": "greater_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u007e",
+					"safe_name": "tilde",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u201a",
+					"safe_name": "single_low_9_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b0",
+					"safe_name": "degree_sign",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00c3",
+					"safe_name": "a_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a2",
+					"safe_name": "cent_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a4",
+					"safe_name": "currency_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a6",
+					"safe_name": "broken_bar",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a9",
+					"safe_name": "copyright_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a8",
+					"safe_name": "diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00aa",
+					"safe_name": "feminine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ab",
+					"safe_name": "left_pointing_double_angle",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ad",
+					"safe_name": "soft_hyphen",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ae",
+					"safe_name": "registered_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00af",
+					"safe_name": "macron",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b1",
+					"safe_name": "plus_minus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b3",
+					"safe_name": "superscript_three",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b2",
+					"safe_name": "superscript_two",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b4",
+					"safe_name": "acute_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b6",
+					"safe_name": "pilcrow_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b5",
+					"safe_name": "micro_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b8",
+					"safe_name": "cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ba",
+					"safe_name": "masculine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b9",
+					"safe_name": "superscript_one",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0178",
+					"safe_name": "y_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ce",
+					"safe_name": "iota_with_tonos",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u201d",
+					"safe_name": "right_double_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CF",
+					"safe_name": "i_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u20ac",
+					"safe_name": "euro_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b7",
+					"safe_name": "middle_dot",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u2014",
+					"safe_name": "em_dash",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u02c6",
+					"safe_name": "modifier_letter_circumflex_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C0",
+					"safe_name": "A_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C1",
+					"safe_name": "A_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C8",
+					"safe_name": "E_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C9",
+					"safe_name": "E_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CA",
+					"safe_name": "E_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CB",
+					"safe_name": "E_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C6",
+					"safe_name": "AE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0152",
+					"safe_name": "OE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C7",
+					"safe_name": "C_cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D1",
+					"safe_name": "N_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00df",
+					"safe_name": "sharp_s",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CC",
+					"safe_name": "I_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CD",
+					"safe_name": "I_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CE",
+					"safe_name": "I_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D2",
+					"safe_name": "O_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D3",
+					"safe_name": "O_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D4",
+					"safe_name": "O_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D6",
+					"safe_name": "O_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D9",
+					"safe_name": "U_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DA",
+					"safe_name": "U_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DB",
+					"safe_name": "U_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DC",
+					"safe_name": "U_diaeresis",
+					"group": "diacritic"
+				}
+			]
+		},
+		{
+			"id": "blue_outline_bigger_symbols",
+			"font_size": 32,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/blue_outline.block.png",
+			"suffix": "_blue_outline",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u00bc",
+					"safe_name": "vulgar_fraction_one_quarter",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				}
+			]
+		},
+		// Green outline
+		{
+			"id": "green_outline_set",
+			"font_size": 48,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/green_outline.block.png",
+			"suffix": "_green_outline",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u0041",
+					"safe_name": "A",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0042",
+					"safe_name": "B",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0043",
+					"safe_name": "C",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0044",
+					"safe_name": "D",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0045",
+					"safe_name": "E",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0046",
+					"safe_name": "F",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0047",
+					"safe_name": "G",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0048",
+					"safe_name": "H",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0049",
+					"safe_name": "I",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004a",
+					"safe_name": "J",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004b",
+					"safe_name": "K",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004c",
+					"safe_name": "L",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004d",
+					"safe_name": "M",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004e",
+					"safe_name": "N",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004f",
+					"safe_name": "O",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0050",
+					"safe_name": "P",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0051",
+					"safe_name": "Q",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0052",
+					"safe_name": "R",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0053",
+					"safe_name": "S",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0054",
+					"safe_name": "T",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0055",
+					"safe_name": "U",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0056",
+					"safe_name": "V",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0057",
+					"safe_name": "W",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0058",
+					"safe_name": "X",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0059",
+					"safe_name": "Y",
+					"group": "letter"
+				},
+				{
+					"char": "\\u005a",
+					"safe_name": "Z",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0030",
+					"safe_name": "0",
+					"group": "number"
+				},
+				{
+					"char": "\\u0031",
+					"safe_name": "1",
+					"group": "number"
+				},
+				{
+					"char": "\\u0032",
+					"safe_name": "2",
+					"group": "number"
+				},
+				{
+					"char": "\\u0033",
+					"safe_name": "3",
+					"group": "number"
+				},
+				{
+					"char": "\\u0034",
+					"safe_name": "4",
+					"group": "number"
+				},
+				{
+					"char": "\\u0035",
+					"safe_name": "5",
+					"group": "number"
+				},
+				{
+					"char": "\\u0036",
+					"safe_name": "6",
+					"group": "number"
+				},
+				{
+					"char": "\\u0037",
+					"safe_name": "7",
+					"group": "number"
+				},
+				{
+					"char": "\\u0038",
+					"safe_name": "8",
+					"group": "number"
+				},
+				{
+					"char": "\\u0039",
+					"safe_name": "9",
+					"group": "number"
+				},
+				{
+					"char": "\\u002e",
+					"safe_name": "dot",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u002c",
+					"safe_name": "comma",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003b",
+					"safe_name": "semicolon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003a",
+					"safe_name": "colon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0021",
+					"safe_name": "exclamation_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003f",
+					"safe_name": "question_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u00c2",
+					"safe_name": "a_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a1",
+					"safe_name": "inverted_exclamation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u002d",
+					"safe_name": "hyphen",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u005f",
+					"safe_name": "_",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0040",
+					"safe_name": "at_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0023",
+					"safe_name": "hash",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0024",
+					"safe_name": "dollar_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0025",
+					"safe_name": "percent_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u005e",
+					"safe_name": "caret",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0026",
+					"safe_name": "ampersand",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002a",
+					"safe_name": "asterisk",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002b",
+					"safe_name": "plus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003d",
+					"safe_name": "equals_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003c",
+					"safe_name": "less_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003e",
+					"safe_name": "greater_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u007e",
+					"safe_name": "tilde",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u201a",
+					"safe_name": "single_low_9_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b0",
+					"safe_name": "degree_sign",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00c3",
+					"safe_name": "a_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a2",
+					"safe_name": "cent_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a4",
+					"safe_name": "currency_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a6",
+					"safe_name": "broken_bar",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a9",
+					"safe_name": "copyright_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a8",
+					"safe_name": "diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00aa",
+					"safe_name": "feminine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ab",
+					"safe_name": "left_pointing_double_angle",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ad",
+					"safe_name": "soft_hyphen",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ae",
+					"safe_name": "registered_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00af",
+					"safe_name": "macron",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b1",
+					"safe_name": "plus_minus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b3",
+					"safe_name": "superscript_three",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b2",
+					"safe_name": "superscript_two",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b4",
+					"safe_name": "acute_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b6",
+					"safe_name": "pilcrow_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b5",
+					"safe_name": "micro_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b8",
+					"safe_name": "cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ba",
+					"safe_name": "masculine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b9",
+					"safe_name": "superscript_one",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0178",
+					"safe_name": "y_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ce",
+					"safe_name": "iota_with_tonos",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u201d",
+					"safe_name": "right_double_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CF",
+					"safe_name": "i_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u20ac",
+					"safe_name": "euro_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b7",
+					"safe_name": "middle_dot",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u2014",
+					"safe_name": "em_dash",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u02c6",
+					"safe_name": "modifier_letter_circumflex_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C0",
+					"safe_name": "A_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C1",
+					"safe_name": "A_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C8",
+					"safe_name": "E_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C9",
+					"safe_name": "E_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CA",
+					"safe_name": "E_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CB",
+					"safe_name": "E_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C6",
+					"safe_name": "AE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0152",
+					"safe_name": "OE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C7",
+					"safe_name": "C_cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D1",
+					"safe_name": "N_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00df",
+					"safe_name": "sharp_s",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CC",
+					"safe_name": "I_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CD",
+					"safe_name": "I_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CE",
+					"safe_name": "I_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D2",
+					"safe_name": "O_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D3",
+					"safe_name": "O_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D4",
+					"safe_name": "O_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D6",
+					"safe_name": "O_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D9",
+					"safe_name": "U_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DA",
+					"safe_name": "U_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DB",
+					"safe_name": "U_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DC",
+					"safe_name": "U_diaeresis",
+					"group": "diacritic"
+				}
+			]
+		},
+		{
+			"id": "green_outline_bigger_symbols",
+			"font_size": 32,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/green_outline.block.png",
+			"suffix": "_green_outline",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u00bc",
+					"safe_name": "vulgar_fraction_one_quarter",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				}
+			]
+		},
+		// Yellow outline
+		{
+			"id": "yellow_outline_set",
+			"font_size": 48,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/yellow_outline.block.png",
+			"suffix": "_yellow_outline",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u0041",
+					"safe_name": "A",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0042",
+					"safe_name": "B",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0043",
+					"safe_name": "C",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0044",
+					"safe_name": "D",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0045",
+					"safe_name": "E",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0046",
+					"safe_name": "F",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0047",
+					"safe_name": "G",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0048",
+					"safe_name": "H",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0049",
+					"safe_name": "I",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004a",
+					"safe_name": "J",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004b",
+					"safe_name": "K",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004c",
+					"safe_name": "L",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004d",
+					"safe_name": "M",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004e",
+					"safe_name": "N",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004f",
+					"safe_name": "O",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0050",
+					"safe_name": "P",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0051",
+					"safe_name": "Q",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0052",
+					"safe_name": "R",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0053",
+					"safe_name": "S",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0054",
+					"safe_name": "T",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0055",
+					"safe_name": "U",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0056",
+					"safe_name": "V",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0057",
+					"safe_name": "W",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0058",
+					"safe_name": "X",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0059",
+					"safe_name": "Y",
+					"group": "letter"
+				},
+				{
+					"char": "\\u005a",
+					"safe_name": "Z",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0030",
+					"safe_name": "0",
+					"group": "number"
+				},
+				{
+					"char": "\\u0031",
+					"safe_name": "1",
+					"group": "number"
+				},
+				{
+					"char": "\\u0032",
+					"safe_name": "2",
+					"group": "number"
+				},
+				{
+					"char": "\\u0033",
+					"safe_name": "3",
+					"group": "number"
+				},
+				{
+					"char": "\\u0034",
+					"safe_name": "4",
+					"group": "number"
+				},
+				{
+					"char": "\\u0035",
+					"safe_name": "5",
+					"group": "number"
+				},
+				{
+					"char": "\\u0036",
+					"safe_name": "6",
+					"group": "number"
+				},
+				{
+					"char": "\\u0037",
+					"safe_name": "7",
+					"group": "number"
+				},
+				{
+					"char": "\\u0038",
+					"safe_name": "8",
+					"group": "number"
+				},
+				{
+					"char": "\\u0039",
+					"safe_name": "9",
+					"group": "number"
+				},
+				{
+					"char": "\\u002e",
+					"safe_name": "dot",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u002c",
+					"safe_name": "comma",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003b",
+					"safe_name": "semicolon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003a",
+					"safe_name": "colon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0021",
+					"safe_name": "exclamation_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003f",
+					"safe_name": "question_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u00c2",
+					"safe_name": "a_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a1",
+					"safe_name": "inverted_exclamation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u002d",
+					"safe_name": "hyphen",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u005f",
+					"safe_name": "_",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0040",
+					"safe_name": "at_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0023",
+					"safe_name": "hash",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0024",
+					"safe_name": "dollar_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0025",
+					"safe_name": "percent_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u005e",
+					"safe_name": "caret",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0026",
+					"safe_name": "ampersand",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002a",
+					"safe_name": "asterisk",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002b",
+					"safe_name": "plus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003d",
+					"safe_name": "equals_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003c",
+					"safe_name": "less_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003e",
+					"safe_name": "greater_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u007e",
+					"safe_name": "tilde",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u201a",
+					"safe_name": "single_low_9_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b0",
+					"safe_name": "degree_sign",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00c3",
+					"safe_name": "a_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a2",
+					"safe_name": "cent_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a4",
+					"safe_name": "currency_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a6",
+					"safe_name": "broken_bar",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a9",
+					"safe_name": "copyright_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a8",
+					"safe_name": "diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00aa",
+					"safe_name": "feminine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ab",
+					"safe_name": "left_pointing_double_angle",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ad",
+					"safe_name": "soft_hyphen",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ae",
+					"safe_name": "registered_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00af",
+					"safe_name": "macron",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b1",
+					"safe_name": "plus_minus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b3",
+					"safe_name": "superscript_three",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b2",
+					"safe_name": "superscript_two",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b4",
+					"safe_name": "acute_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b6",
+					"safe_name": "pilcrow_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b5",
+					"safe_name": "micro_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b8",
+					"safe_name": "cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ba",
+					"safe_name": "masculine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b9",
+					"safe_name": "superscript_one",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0178",
+					"safe_name": "y_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ce",
+					"safe_name": "iota_with_tonos",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u201d",
+					"safe_name": "right_double_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CF",
+					"safe_name": "i_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u20ac",
+					"safe_name": "euro_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b7",
+					"safe_name": "middle_dot",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u2014",
+					"safe_name": "em_dash",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u02c6",
+					"safe_name": "modifier_letter_circumflex_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C0",
+					"safe_name": "A_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C1",
+					"safe_name": "A_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C8",
+					"safe_name": "E_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C9",
+					"safe_name": "E_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CA",
+					"safe_name": "E_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CB",
+					"safe_name": "E_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C6",
+					"safe_name": "AE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0152",
+					"safe_name": "OE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C7",
+					"safe_name": "C_cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D1",
+					"safe_name": "N_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00df",
+					"safe_name": "sharp_s",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CC",
+					"safe_name": "I_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CD",
+					"safe_name": "I_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CE",
+					"safe_name": "I_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D2",
+					"safe_name": "O_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D3",
+					"safe_name": "O_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D4",
+					"safe_name": "O_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D6",
+					"safe_name": "O_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D9",
+					"safe_name": "U_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DA",
+					"safe_name": "U_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DB",
+					"safe_name": "U_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DC",
+					"safe_name": "U_diaeresis",
+					"group": "diacritic"
+				}
+			]
+		},
+		{
+			"id": "yellow_outline_bigger_symbols",
+			"font_size": 32,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/yellow_outline.block.png",
+			"suffix": "_yellow_outline",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u00bc",
+					"safe_name": "vulgar_fraction_one_quarter",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				}
+			]
+		},
+		// Light blue concrete
+		{
+			"id": "light_blue_concrete_set",
+			"font_size": 48,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/light_blue_concrete.block.png",
+			"suffix": "_light_blue_concrete",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u0041",
+					"safe_name": "A",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0042",
+					"safe_name": "B",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0043",
+					"safe_name": "C",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0044",
+					"safe_name": "D",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0045",
+					"safe_name": "E",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0046",
+					"safe_name": "F",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0047",
+					"safe_name": "G",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0048",
+					"safe_name": "H",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0049",
+					"safe_name": "I",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004a",
+					"safe_name": "J",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004b",
+					"safe_name": "K",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004c",
+					"safe_name": "L",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004d",
+					"safe_name": "M",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004e",
+					"safe_name": "N",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004f",
+					"safe_name": "O",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0050",
+					"safe_name": "P",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0051",
+					"safe_name": "Q",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0052",
+					"safe_name": "R",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0053",
+					"safe_name": "S",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0054",
+					"safe_name": "T",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0055",
+					"safe_name": "U",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0056",
+					"safe_name": "V",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0057",
+					"safe_name": "W",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0058",
+					"safe_name": "X",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0059",
+					"safe_name": "Y",
+					"group": "letter"
+				},
+				{
+					"char": "\\u005a",
+					"safe_name": "Z",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0030",
+					"safe_name": "0",
+					"group": "number"
+				},
+				{
+					"char": "\\u0031",
+					"safe_name": "1",
+					"group": "number"
+				},
+				{
+					"char": "\\u0032",
+					"safe_name": "2",
+					"group": "number"
+				},
+				{
+					"char": "\\u0033",
+					"safe_name": "3",
+					"group": "number"
+				},
+				{
+					"char": "\\u0034",
+					"safe_name": "4",
+					"group": "number"
+				},
+				{
+					"char": "\\u0035",
+					"safe_name": "5",
+					"group": "number"
+				},
+				{
+					"char": "\\u0036",
+					"safe_name": "6",
+					"group": "number"
+				},
+				{
+					"char": "\\u0037",
+					"safe_name": "7",
+					"group": "number"
+				},
+				{
+					"char": "\\u0038",
+					"safe_name": "8",
+					"group": "number"
+				},
+				{
+					"char": "\\u0039",
+					"safe_name": "9",
+					"group": "number"
+				},
+				{
+					"char": "\\u002e",
+					"safe_name": "dot",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u002c",
+					"safe_name": "comma",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003b",
+					"safe_name": "semicolon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003a",
+					"safe_name": "colon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0021",
+					"safe_name": "exclamation_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003f",
+					"safe_name": "question_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u00c2",
+					"safe_name": "a_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a1",
+					"safe_name": "inverted_exclamation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u002d",
+					"safe_name": "hyphen",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u005f",
+					"safe_name": "_",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0040",
+					"safe_name": "at_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0023",
+					"safe_name": "hash",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0024",
+					"safe_name": "dollar_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0025",
+					"safe_name": "percent_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u005e",
+					"safe_name": "caret",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0026",
+					"safe_name": "ampersand",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002a",
+					"safe_name": "asterisk",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002b",
+					"safe_name": "plus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003d",
+					"safe_name": "equals_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003c",
+					"safe_name": "less_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003e",
+					"safe_name": "greater_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u007e",
+					"safe_name": "tilde",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u201a",
+					"safe_name": "single_low_9_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b0",
+					"safe_name": "degree_sign",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00c3",
+					"safe_name": "a_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a2",
+					"safe_name": "cent_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a4",
+					"safe_name": "currency_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a6",
+					"safe_name": "broken_bar",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a9",
+					"safe_name": "copyright_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a8",
+					"safe_name": "diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00aa",
+					"safe_name": "feminine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ab",
+					"safe_name": "left_pointing_double_angle",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ad",
+					"safe_name": "soft_hyphen",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ae",
+					"safe_name": "registered_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00af",
+					"safe_name": "macron",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b1",
+					"safe_name": "plus_minus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b3",
+					"safe_name": "superscript_three",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b2",
+					"safe_name": "superscript_two",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b4",
+					"safe_name": "acute_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b6",
+					"safe_name": "pilcrow_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b5",
+					"safe_name": "micro_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b8",
+					"safe_name": "cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ba",
+					"safe_name": "masculine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b9",
+					"safe_name": "superscript_one",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0178",
+					"safe_name": "y_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ce",
+					"safe_name": "iota_with_tonos",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u201d",
+					"safe_name": "right_double_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CF",
+					"safe_name": "i_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u20ac",
+					"safe_name": "euro_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b7",
+					"safe_name": "middle_dot",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u2014",
+					"safe_name": "em_dash",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u02c6",
+					"safe_name": "modifier_letter_circumflex_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C0",
+					"safe_name": "A_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C1",
+					"safe_name": "A_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C8",
+					"safe_name": "E_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C9",
+					"safe_name": "E_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CA",
+					"safe_name": "E_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CB",
+					"safe_name": "E_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C6",
+					"safe_name": "AE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0152",
+					"safe_name": "OE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C7",
+					"safe_name": "C_cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D1",
+					"safe_name": "N_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00df",
+					"safe_name": "sharp_s",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CC",
+					"safe_name": "I_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CD",
+					"safe_name": "I_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CE",
+					"safe_name": "I_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D2",
+					"safe_name": "O_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D3",
+					"safe_name": "O_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D4",
+					"safe_name": "O_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D6",
+					"safe_name": "O_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D9",
+					"safe_name": "U_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DA",
+					"safe_name": "U_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DB",
+					"safe_name": "U_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DC",
+					"safe_name": "U_diaeresis",
+					"group": "diacritic"
+				}
+			]
+		},
+		{
+			"id": "light_blue_concrete_bigger_symbols",
+			"font_size": 32,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/light_blue_concrete.block.png",
+			"suffix": "_light_blue_concrete",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u00bc",
+					"safe_name": "vulgar_fraction_one_quarter",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				}
+			]
+		},
+		// Dark Oak
+		{
+			"id": "dark_oak_set",
+			"font_size": 48,
+			"text_color": [240, 240, 240, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/dark_oak.block.png",
+			"suffix": "_dark_oak",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u0041",
+					"safe_name": "A",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0042",
+					"safe_name": "B",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0043",
+					"safe_name": "C",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0044",
+					"safe_name": "D",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0045",
+					"safe_name": "E",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0046",
+					"safe_name": "F",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0047",
+					"safe_name": "G",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0048",
+					"safe_name": "H",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0049",
+					"safe_name": "I",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004a",
+					"safe_name": "J",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004b",
+					"safe_name": "K",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004c",
+					"safe_name": "L",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004d",
+					"safe_name": "M",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004e",
+					"safe_name": "N",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004f",
+					"safe_name": "O",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0050",
+					"safe_name": "P",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0051",
+					"safe_name": "Q",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0052",
+					"safe_name": "R",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0053",
+					"safe_name": "S",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0054",
+					"safe_name": "T",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0055",
+					"safe_name": "U",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0056",
+					"safe_name": "V",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0057",
+					"safe_name": "W",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0058",
+					"safe_name": "X",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0059",
+					"safe_name": "Y",
+					"group": "letter"
+				},
+				{
+					"char": "\\u005a",
+					"safe_name": "Z",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0030",
+					"safe_name": "0",
+					"group": "number"
+				},
+				{
+					"char": "\\u0031",
+					"safe_name": "1",
+					"group": "number"
+				},
+				{
+					"char": "\\u0032",
+					"safe_name": "2",
+					"group": "number"
+				},
+				{
+					"char": "\\u0033",
+					"safe_name": "3",
+					"group": "number"
+				},
+				{
+					"char": "\\u0034",
+					"safe_name": "4",
+					"group": "number"
+				},
+				{
+					"char": "\\u0035",
+					"safe_name": "5",
+					"group": "number"
+				},
+				{
+					"char": "\\u0036",
+					"safe_name": "6",
+					"group": "number"
+				},
+				{
+					"char": "\\u0037",
+					"safe_name": "7",
+					"group": "number"
+				},
+				{
+					"char": "\\u0038",
+					"safe_name": "8",
+					"group": "number"
+				},
+				{
+					"char": "\\u0039",
+					"safe_name": "9",
+					"group": "number"
+				},
+				{
+					"char": "\\u002e",
+					"safe_name": "dot",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u002c",
+					"safe_name": "comma",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003b",
+					"safe_name": "semicolon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003a",
+					"safe_name": "colon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0021",
+					"safe_name": "exclamation_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003f",
+					"safe_name": "question_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u00c2",
+					"safe_name": "a_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a1",
+					"safe_name": "inverted_exclamation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u002d",
+					"safe_name": "hyphen",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u005f",
+					"safe_name": "_",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0040",
+					"safe_name": "at_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0023",
+					"safe_name": "hash",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0024",
+					"safe_name": "dollar_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0025",
+					"safe_name": "percent_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u005e",
+					"safe_name": "caret",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0026",
+					"safe_name": "ampersand",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002a",
+					"safe_name": "asterisk",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002b",
+					"safe_name": "plus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003d",
+					"safe_name": "equals_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003c",
+					"safe_name": "less_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003e",
+					"safe_name": "greater_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u007e",
+					"safe_name": "tilde",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u201a",
+					"safe_name": "single_low_9_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b0",
+					"safe_name": "degree_sign",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00c3",
+					"safe_name": "a_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a2",
+					"safe_name": "cent_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a4",
+					"safe_name": "currency_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a6",
+					"safe_name": "broken_bar",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a9",
+					"safe_name": "copyright_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a8",
+					"safe_name": "diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00aa",
+					"safe_name": "feminine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ab",
+					"safe_name": "left_pointing_double_angle",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ad",
+					"safe_name": "soft_hyphen",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ae",
+					"safe_name": "registered_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00af",
+					"safe_name": "macron",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b1",
+					"safe_name": "plus_minus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b3",
+					"safe_name": "superscript_three",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b2",
+					"safe_name": "superscript_two",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b4",
+					"safe_name": "acute_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b6",
+					"safe_name": "pilcrow_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b5",
+					"safe_name": "micro_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b8",
+					"safe_name": "cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ba",
+					"safe_name": "masculine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b9",
+					"safe_name": "superscript_one",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0178",
+					"safe_name": "y_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ce",
+					"safe_name": "iota_with_tonos",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u201d",
+					"safe_name": "right_double_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CF",
+					"safe_name": "i_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u20ac",
+					"safe_name": "euro_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b7",
+					"safe_name": "middle_dot",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u2014",
+					"safe_name": "em_dash",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u02c6",
+					"safe_name": "modifier_letter_circumflex_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C0",
+					"safe_name": "A_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C1",
+					"safe_name": "A_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C8",
+					"safe_name": "E_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C9",
+					"safe_name": "E_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CA",
+					"safe_name": "E_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CB",
+					"safe_name": "E_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C6",
+					"safe_name": "AE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0152",
+					"safe_name": "OE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C7",
+					"safe_name": "C_cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D1",
+					"safe_name": "N_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00df",
+					"safe_name": "sharp_s",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CC",
+					"safe_name": "I_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CD",
+					"safe_name": "I_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CE",
+					"safe_name": "I_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D2",
+					"safe_name": "O_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D3",
+					"safe_name": "O_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D4",
+					"safe_name": "O_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D6",
+					"safe_name": "O_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D9",
+					"safe_name": "U_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DA",
+					"safe_name": "U_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DB",
+					"safe_name": "U_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DC",
+					"safe_name": "U_diaeresis",
+					"group": "diacritic"
+				}
+			]
+		},
+		{
+			"id": "dark_oak_bigger_symbols",
+			"font_size": 32,
+			"text_color": [240, 240, 240, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/dark_oak.block.png",
+			"suffix": "_dark_oak",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u00bc",
+					"safe_name": "vulgar_fraction_one_quarter",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				}
+			]
+		},
+		// Pale Oak
+		{
+			"id": "pale_oak_set",
+			"font_size": 48,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/pale_oak.block.png",
+			"suffix": "_pale_oak",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u0041",
+					"safe_name": "A",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0042",
+					"safe_name": "B",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0043",
+					"safe_name": "C",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0044",
+					"safe_name": "D",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0045",
+					"safe_name": "E",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0046",
+					"safe_name": "F",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0047",
+					"safe_name": "G",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0048",
+					"safe_name": "H",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0049",
+					"safe_name": "I",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004a",
+					"safe_name": "J",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004b",
+					"safe_name": "K",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004c",
+					"safe_name": "L",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004d",
+					"safe_name": "M",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004e",
+					"safe_name": "N",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004f",
+					"safe_name": "O",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0050",
+					"safe_name": "P",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0051",
+					"safe_name": "Q",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0052",
+					"safe_name": "R",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0053",
+					"safe_name": "S",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0054",
+					"safe_name": "T",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0055",
+					"safe_name": "U",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0056",
+					"safe_name": "V",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0057",
+					"safe_name": "W",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0058",
+					"safe_name": "X",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0059",
+					"safe_name": "Y",
+					"group": "letter"
+				},
+				{
+					"char": "\\u005a",
+					"safe_name": "Z",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0030",
+					"safe_name": "0",
+					"group": "number"
+				},
+				{
+					"char": "\\u0031",
+					"safe_name": "1",
+					"group": "number"
+				},
+				{
+					"char": "\\u0032",
+					"safe_name": "2",
+					"group": "number"
+				},
+				{
+					"char": "\\u0033",
+					"safe_name": "3",
+					"group": "number"
+				},
+				{
+					"char": "\\u0034",
+					"safe_name": "4",
+					"group": "number"
+				},
+				{
+					"char": "\\u0035",
+					"safe_name": "5",
+					"group": "number"
+				},
+				{
+					"char": "\\u0036",
+					"safe_name": "6",
+					"group": "number"
+				},
+				{
+					"char": "\\u0037",
+					"safe_name": "7",
+					"group": "number"
+				},
+				{
+					"char": "\\u0038",
+					"safe_name": "8",
+					"group": "number"
+				},
+				{
+					"char": "\\u0039",
+					"safe_name": "9",
+					"group": "number"
+				},
+				{
+					"char": "\\u002e",
+					"safe_name": "dot",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u002c",
+					"safe_name": "comma",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003b",
+					"safe_name": "semicolon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003a",
+					"safe_name": "colon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0021",
+					"safe_name": "exclamation_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003f",
+					"safe_name": "question_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u00c2",
+					"safe_name": "a_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a1",
+					"safe_name": "inverted_exclamation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u002d",
+					"safe_name": "hyphen",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u005f",
+					"safe_name": "_",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0040",
+					"safe_name": "at_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0023",
+					"safe_name": "hash",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0024",
+					"safe_name": "dollar_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0025",
+					"safe_name": "percent_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u005e",
+					"safe_name": "caret",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0026",
+					"safe_name": "ampersand",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002a",
+					"safe_name": "asterisk",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002b",
+					"safe_name": "plus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003d",
+					"safe_name": "equals_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003c",
+					"safe_name": "less_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003e",
+					"safe_name": "greater_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u007e",
+					"safe_name": "tilde",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u201a",
+					"safe_name": "single_low_9_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b0",
+					"safe_name": "degree_sign",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00c3",
+					"safe_name": "a_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a2",
+					"safe_name": "cent_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a4",
+					"safe_name": "currency_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a6",
+					"safe_name": "broken_bar",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a9",
+					"safe_name": "copyright_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a8",
+					"safe_name": "diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00aa",
+					"safe_name": "feminine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ab",
+					"safe_name": "left_pointing_double_angle",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ad",
+					"safe_name": "soft_hyphen",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ae",
+					"safe_name": "registered_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00af",
+					"safe_name": "macron",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b1",
+					"safe_name": "plus_minus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b3",
+					"safe_name": "superscript_three",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b2",
+					"safe_name": "superscript_two",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b4",
+					"safe_name": "acute_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b6",
+					"safe_name": "pilcrow_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b5",
+					"safe_name": "micro_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b8",
+					"safe_name": "cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ba",
+					"safe_name": "masculine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b9",
+					"safe_name": "superscript_one",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0178",
+					"safe_name": "y_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ce",
+					"safe_name": "iota_with_tonos",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u201d",
+					"safe_name": "right_double_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CF",
+					"safe_name": "i_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u20ac",
+					"safe_name": "euro_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b7",
+					"safe_name": "middle_dot",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u2014",
+					"safe_name": "em_dash",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u02c6",
+					"safe_name": "modifier_letter_circumflex_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C0",
+					"safe_name": "A_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C1",
+					"safe_name": "A_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C8",
+					"safe_name": "E_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C9",
+					"safe_name": "E_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CA",
+					"safe_name": "E_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CB",
+					"safe_name": "E_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C6",
+					"safe_name": "AE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0152",
+					"safe_name": "OE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C7",
+					"safe_name": "C_cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D1",
+					"safe_name": "N_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00df",
+					"safe_name": "sharp_s",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CC",
+					"safe_name": "I_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CD",
+					"safe_name": "I_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CE",
+					"safe_name": "I_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D2",
+					"safe_name": "O_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D3",
+					"safe_name": "O_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D4",
+					"safe_name": "O_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D6",
+					"safe_name": "O_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D9",
+					"safe_name": "U_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DA",
+					"safe_name": "U_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DB",
+					"safe_name": "U_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DC",
+					"safe_name": "U_diaeresis",
+					"group": "diacritic"
+				}
+			]
+		},
+		{
+			"id": "pale_oak_bigger_symbols",
+			"font_size": 32,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/pale_oak.block.png",
+			"suffix": "_pale_oak",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u00bc",
+					"safe_name": "vulgar_fraction_one_quarter",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				}
+			]
+		},
+		// Rainbow
+		{
+			"id": "rainbow_set",
+			"font_size": 48,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/rainbow.block.png",
+			"suffix": "_rainbow",
+			"antialias": true,
+			"letters": [
+				{
+					"char": "\\u0041",
+					"safe_name": "A",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0042",
+					"safe_name": "B",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0043",
+					"safe_name": "C",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0044",
+					"safe_name": "D",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0045",
+					"safe_name": "E",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0046",
+					"safe_name": "F",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0047",
+					"safe_name": "G",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0048",
+					"safe_name": "H",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0049",
+					"safe_name": "I",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004a",
+					"safe_name": "J",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004b",
+					"safe_name": "K",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004c",
+					"safe_name": "L",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004d",
+					"safe_name": "M",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004e",
+					"safe_name": "N",
+					"group": "letter"
+				},
+				{
+					"char": "\\u004f",
+					"safe_name": "O",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0050",
+					"safe_name": "P",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0051",
+					"safe_name": "Q",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0052",
+					"safe_name": "R",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0053",
+					"safe_name": "S",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0054",
+					"safe_name": "T",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0055",
+					"safe_name": "U",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0056",
+					"safe_name": "V",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0057",
+					"safe_name": "W",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0058",
+					"safe_name": "X",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0059",
+					"safe_name": "Y",
+					"group": "letter"
+				},
+				{
+					"char": "\\u005a",
+					"safe_name": "Z",
+					"group": "letter"
+				},
+				{
+					"char": "\\u0030",
+					"safe_name": "0",
+					"group": "number"
+				},
+				{
+					"char": "\\u0031",
+					"safe_name": "1",
+					"group": "number"
+				},
+				{
+					"char": "\\u0032",
+					"safe_name": "2",
+					"group": "number"
+				},
+				{
+					"char": "\\u0033",
+					"safe_name": "3",
+					"group": "number"
+				},
+				{
+					"char": "\\u0034",
+					"safe_name": "4",
+					"group": "number"
+				},
+				{
+					"char": "\\u0035",
+					"safe_name": "5",
+					"group": "number"
+				},
+				{
+					"char": "\\u0036",
+					"safe_name": "6",
+					"group": "number"
+				},
+				{
+					"char": "\\u0037",
+					"safe_name": "7",
+					"group": "number"
+				},
+				{
+					"char": "\\u0038",
+					"safe_name": "8",
+					"group": "number"
+				},
+				{
+					"char": "\\u0039",
+					"safe_name": "9",
+					"group": "number"
+				},
+				{
+					"char": "\\u002e",
+					"safe_name": "dot",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u002c",
+					"safe_name": "comma",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003b",
+					"safe_name": "semicolon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003a",
+					"safe_name": "colon",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0021",
+					"safe_name": "exclamation_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u003f",
+					"safe_name": "question_mark",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u00c2",
+					"safe_name": "a_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a1",
+					"safe_name": "inverted_exclamation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u002d",
+					"safe_name": "hyphen",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u005f",
+					"safe_name": "_",
+					"group": "punctuation"
+				},
+				{
+					"char": "\\u0040",
+					"safe_name": "at_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0023",
+					"safe_name": "hash",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0024",
+					"safe_name": "dollar_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0025",
+					"safe_name": "percent_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u005e",
+					"safe_name": "caret",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u0026",
+					"safe_name": "ampersand",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002a",
+					"safe_name": "asterisk",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u002b",
+					"safe_name": "plus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003d",
+					"safe_name": "equals_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003c",
+					"safe_name": "less_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u003e",
+					"safe_name": "greater_than",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u007e",
+					"safe_name": "tilde",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u201a",
+					"safe_name": "single_low_9_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b0",
+					"safe_name": "degree_sign",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00c3",
+					"safe_name": "a_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00a2",
+					"safe_name": "cent_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a4",
+					"safe_name": "currency_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a3",
+					"safe_name": "pound_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a5",
+					"safe_name": "yen_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a7",
+					"safe_name": "section_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00a6",
+					"safe_name": "broken_bar",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a9",
+					"safe_name": "copyright_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00a8",
+					"safe_name": "diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00aa",
+					"safe_name": "feminine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ab",
+					"safe_name": "left_pointing_double_angle",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ad",
+					"safe_name": "soft_hyphen",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ac",
+					"safe_name": "not_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00ae",
+					"safe_name": "registered_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00af",
+					"safe_name": "macron",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b1",
+					"safe_name": "plus_minus_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b3",
+					"safe_name": "superscript_three",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b2",
+					"safe_name": "superscript_two",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b4",
+					"safe_name": "acute_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b6",
+					"safe_name": "pilcrow_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b5",
+					"safe_name": "micro_sign",
+					"group": "symbol"
+				},
+				{
+					"char": "\\u00b8",
+					"safe_name": "cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ba",
+					"safe_name": "masculine_ordinal_indicator",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00b9",
+					"safe_name": "superscript_one",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bd",
+					"safe_name": "vulgar_fraction_one_half",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00bf",
+					"safe_name": "inverted_question",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0178",
+					"safe_name": "y_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00ce",
+					"safe_name": "iota_with_tonos",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u201d",
+					"safe_name": "right_double_quotation",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CF",
+					"safe_name": "i_with_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u20ac",
+					"safe_name": "euro_sign",
+					"group": "currency"
+				},
+				{
+					"char": "\\u00b7",
+					"safe_name": "middle_dot",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u2014",
+					"safe_name": "em_dash",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u02c6",
+					"safe_name": "modifier_letter_circumflex_accent",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C0",
+					"safe_name": "A_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C1",
+					"safe_name": "A_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C8",
+					"safe_name": "E_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C9",
+					"safe_name": "E_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CA",
+					"safe_name": "E_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CB",
+					"safe_name": "E_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C6",
+					"safe_name": "AE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u0152",
+					"safe_name": "OE_ligature",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00C7",
+					"safe_name": "C_cedilla",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D1",
+					"safe_name": "N_tilde",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00df",
+					"safe_name": "sharp_s",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CC",
+					"safe_name": "I_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CD",
+					"safe_name": "I_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00CE",
+					"safe_name": "I_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D2",
+					"safe_name": "O_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D3",
+					"safe_name": "O_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D4",
+					"safe_name": "O_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D6",
+					"safe_name": "O_diaeresis",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00D9",
+					"safe_name": "U_grave",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DA",
+					"safe_name": "U_acute",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DB",
+					"safe_name": "U_circumflex",
+					"group": "diacritic"
+				},
+				{
+					"char": "\\u00DC",
+					"safe_name": "U_diaeresis",
+					"group": "diacritic"
+				}
+			]
+		},
+		{
+			"id": "rainbow_bigger_symbols",
+			"font_size": 32,
+			"text_color": [10, 10, 10, 255],
+			"image_size": [64, 64],
+			"font_path": "fonts/AzeretMono-Black.ttf",
+			"background_image_path": "letter_blocks/rainbow.block.png",
+			"suffix": "_rainbow",
 			"antialias": true,
 			"letters": [
 				{

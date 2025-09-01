@@ -64,6 +64,18 @@
 					}
 				]
 			},
+			"bedrock_more_letter_blocks": {
+				"export": {
+					"build": "standard",
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": [
+					{
+						"profile": "more_letter_blocks"
+					}
+				]
+			},
 			"debug": {
 				"export": {
 					"build": "standard",

@@ -23,7 +23,6 @@ edu_tools.ui.main.buttons.assignments=Assignments
 edu_tools.ui.main.buttons.teams_management=Teams Management
 edu_tools.ui.main.buttons.focus_mode=Focus Mode
 edu_tools.ui.main.buttons.inventory_manage=Inventory Management
-edu_tools.ui.main.buttons.about=About
 
 ### Team Selection Scene
 edu_tools.ui.team_select.title=§fSelect a Team

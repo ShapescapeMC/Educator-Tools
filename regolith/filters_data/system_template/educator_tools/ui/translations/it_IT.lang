@@ -1,0 +1,278 @@
+### Educator Tools
+item.edu_tools:educator_tool=Strumenti dell'Educatore
+### General
+edu_tools.ui.buttons.back=Indietro
+edu_tools.ui.buttons.exit=Esci
+edu_tools.ui.buttons.continue=Continua
+
+edu_tools.ui.not_enough_players.title=Giocatori Insufficienti
+edu_tools.ui.not_enough_players.body=Sono necessari almeno due giocatori per usare questo strumento
+
+### Main UI Scene
+edu_tools.ui.main.title=§fStrumenti per Educatori
+edu_tools.ui.main.body=Seleziona uno strumento da usare
+edu_tools.ui.main.buttons.teleport=Teletrasporto
+edu_tools.ui.main.buttons.copy_inventory=Copia Inventario
+edu_tools.ui.main.buttons.gamemode=Modalità di Gioco
+edu_tools.ui.main.buttons.manage_teams=Gestisci Squadre
+edu_tools.ui.main.buttons.timer=Timer
+edu_tools.ui.main.buttons.world_management=Gestione del Mondo
+edu_tools.ui.main.buttons.lock_player=Blocca Giocatori
+edu_tools.ui.main.buttons.manage_health=Gestisci Salute
+edu_tools.ui.main.buttons.assignments=Compiti
+edu_tools.ui.main.buttons.teams_management=Gestione Squadre
+edu_tools.ui.main.buttons.focus_mode=Modalità Focus
+edu_tools.ui.main.buttons.inventory_manage=Gestione Inventario
+
+### Team Selection Scene
+edu_tools.ui.team_select.title=§fSeleziona una Squadra
+edu_tools.ui.team_select.get_subject.body=Seleziona il soggetto per continuare
+edu_tools.ui.team_select.get_target.body=Seleziona il destinatario per continuare
+edu_tools.ui.team.name.system_all_players=Tutti i Giocatori
+edu_tools.ui.team.name.system_teachers=Tutti gli Insegnanti
+edu_tools.ui.team.name.system_students=Tutti gli Studenti
+
+### Teams Management Scene
+edu_tools.ui.teams_management.title=§fGestione Squadre
+edu_tools.ui.teams_management.body=Seleziona un'operazione da eseguire sulle squadre
+edu_tools.ui.teams_management.buttons.create_team=Crea Squadra
+edu_tools.ui.teams_management.buttons.delete_team=Elimina Squadra
+edu_tools.ui.teams_management.buttons.edit_team=Modifica Squadra
+edu_tools.ui.teams_management.buttons.manage_players=Gestisci Giocatori della Squadra
+edu_tools.ui.teams_edit.title=§fModifica Squadra
+edu_tools.ui.teams_edit.name=Nome Squadra
+edu_tools.ui.teams_edit.name_tooltip=Inserisci il nome della squadra
+edu_tools.ui.teams_edit.name_placeholder=Inserisci qui il nome della squadra
+edu_tools.ui.teams_edit.description=Descrizione della Squadra
+edu_tools.ui.teams_edit.description_tooltip=Inserisci la descrizione della squadra
+edu_tools.ui.teams_edit.description_placeholder=Inserisci qui la descrizione della squadra
+edu_tools.ui.teams_edit.icon=Icona della Squadra
+edu_tools.ui.teams_edit.icon_tooltip=Seleziona l'icona per la squadra
+edu_tools.ui.teams_edit.icon.options.iron_axe=Ascia di Ferro
+edu_tools.ui.teams_edit.icon.options.clownfish=Pesce Pagliaccio
+edu_tools.ui.teams_edit.icon.options.diamond=Diamante
+edu_tools.ui.teams_edit.icon.options.egg=Uovo
+edu_tools.ui.teams_edit.icon.options.potato=Patata
+edu_tools.ui.teams_manage_players.title=§fGestisci i Giocatori della Squadra
+edu_tools.ui.teams_manage_players.body.1=Stai gestendo i giocatori di
+edu_tools.ui.teams_manage_players.body.2=§rsquadra
+edu_tools.ui.teams_manage_players.buttons.add_player=Aggiungi Giocatore
+edu_tools.ui.teams_manage_players.buttons.remove_player=Rimuovi Giocatore
+edu_tools.ui.teams_edit_players_apply.title=§fSquadra Aggiornata
+edu_tools.ui.teams_edit_players_apply.add.body=Giocatore aggiunto con successo alla squadra
+edu_tools.ui.teams_edit_players_apply.remove.body=Giocatore rimosso con successo dalla squadra
+
+### Gamemode Scene
+edu_tools.ui.set_gamemode.title=§fImposta Modalità di Gioco
+edu_tools.ui.set_gamemode.team.body.1=Seleziona una modalità di gioco da impostare per
+edu_tools.ui.set_gamemode.team.body.2=§r
+edu_tools.ui.set_gamemode.buttons.adventure=Avventura
+edu_tools.ui.set_gamemode.buttons.survival=Sopravvivenza
+edu_tools.ui.set_gamemode.buttons.creative=Creativa
+edu_tools.ui.set_gamemode.buttons.spectator=Spettatore
+edu_tools.ui.set_gamemode.confirm.title=§fConferma cambio modalità di gioco
+edu_tools.ui.set_gamemode.confirm.body=Hai impostato con successo la modalità di gioco.
+
+### Manage Health Scene
+edu_tools.ui.manage_health.title=§fGestisci Salute
+edu_tools.ui.manage_health.team.body.1=Stai gestendo la salute di
+edu_tools.ui.manage_health.team.body.2=§r
+edu_tools.ui.manage_health.buttons.heal=Cura
+edu_tools.ui.manage_health.buttons.clear_effects=Rimuovi Effetti
+edu_tools.ui.manage_health.buttons.reset=Reimposta
+edu_tools.ui.manage_health.buttons.settings=Impostazioni
+edu_tools.ui.manage_health_settings.title=§fImpostazioni Salute
+edu_tools.ui.manage_health.settings.health=Abilita Danno
+edu_tools.ui.manage_health.settings.health_toooltip=Abilita o disabilita la capacità di subire danni
+edu_tools.ui.manage_health.settings.hunger=Abilita Fame
+edu_tools.ui.manage_health.settings.hunger_tooltip=Abilita o disabilita la funzionalità della fame
+edu_tools.ui.manage_health.settings.effect_immunity=Abilita Immunità agli Effetti
+edu_tools.ui.manage_health.settings.effect_immunity_tooltip=Abilitando questa opzione, i giocatori non riceveranno alcun effetto, inclusi quelli positivi
+
+### Focus Mode Scene
+edu_tools.ui.focus_mode.title=§fModalità Focus
+edu_tools.ui.focus_mode.screen_title=§fModalità Focus
+edu_tools.ui.focus_mode.body=La Modalità Focus è uno strumento che permette di disabilitare lo schermo a tutti i giocatori della squadra, impedendo loro di interagire con il mondo di gioco. Questo è utile quando vuoi concentrarti su un compito o attività specifica fuori dal gioco senza distrazioni.
+edu_tools.ui.focus_mode.buttons.global_disable=Disabilita Globalmente
+edu_tools.ui.focus_mode.buttons.select_team=Seleziona Squadra
+edu_tools.ui.focus_mode_manage.title=§fGestione Modalità Focus
+edu_tools.ui.focus_mode_manage.body.1=Stai gestendo la Modalità Focus per
+edu_tools.ui.focus_mode_manage.body.2=§r
+edu_tools.ui.focus_mode_manage.toggle.enable=Abilita Modalità Focus
+edu_tools.ui.focus_mode_manage.toggle.enable_tooltip=Abilita o disabilita la Modalità Focus per la squadra o il giocatore selezionato
+edu_tools.ui.focus_mode_manage.text_field.message=Messaggio da mostrare
+edu_tools.ui.focus_mode_manage.text_field.message_tooltip=Messaggio da mostrare quando la Modalità Focus è attivata
+edu_tools.ui.focus_mode_manage.text_field.message_placeholder=Inserisci qui il tuo messaggio
+
+### Lock Player Scene
+edu_tools.ui.lock_player.title=§fBlocca giocatori
+edu_tools.ui.lock_player.body=Blocca giocatori è uno strumento che ti permette di controllare dove un giocatore o una squadra può muoversi. Non potranno muoversi fuori dall'area che imposti e verranno teletrasportati indietro se cercano di uscire.
+edu_tools.ui.lock_player.buttons.add_team_lock=Aggiungi un nuovo blocco
+edu_tools.ui.lock_player.buttons.view_teams=Visualizza squadre bloccate
+edu_tools.ui.lock_player_team.title=§fBlocca squadra
+edu_tools.ui.lock_player.team.body.1=Stai gestendo il blocco per
+edu_tools.ui.lock_player.team.body.2=§r
+edu_tools.ui.lock_player_team.radius=Raggio
+edu_tools.ui.lock_player_team.radius_tooltip=Il raggio dell'area in cui il giocatore o la squadra possono muoversi
+edu_tools.ui.lock_player_team.teleport_to_center=Teletrasporta al centro
+edu_tools.ui.lock_player_team.teleport_to_center_tooltip=Se attivato, il giocatore o la squadra verranno teletrasportati al centro dell'area quando cercano di uscire.
+edu_tools.ui.lock_player_team.show_boundaries=Mostra confini
+edu_tools.ui.lock_player_team.show_boundaries_tooltip=Se attivato, i confini dell'area saranno visibili ai giocatori.
+edu_tools.ui.lock_player_team.show_lock_message=Mostra messaggio di blocco
+edu_tools.ui.lock_player_team.show_lock_message_tooltip=Se attivato, verrà mostrato un messaggio ai giocatori quando tentano di uscire dall'area.
+edu_tools.ui.lock_player_team.mode=Modalità di Blocco
+edu_tools.ui.lock_player_team.mode_tooltip=Seleziona la modalità per il Blocco. In modalità Giocatore, l'area di blocco seguirà un determinato giocatore, mentre in modalità Centro, l'area di blocco sarà centrata su un punto specifico del mondo.
+edu_tools.ui.lock_player_team.mode.options.player=Giocatore
+edu_tools.ui.lock_player_team.mode.options.center=Centro
+edu_tools.ui.lock_player_team_settings.title=§fImpostazioni Blocco Giocatore
+edu_tools.ui.lock_player_team_settings.button.settings=Impostazioni
+edu_tools.ui.lock_player_team_settings.button.update_center=Aggiorna Centro
+edu_tools.ui.lock_player_team_settings.button.teleport_to_center=Teletrasporta al Centro
+edu_tools.ui.lock_player_team_settings.button.delete_lock=Elimina Blocco
+edu_tools.ui.lock_player_confirm.title=§fConferma Blocco Giocatore
+edu_tools.ui.lock_player_confirm.body.1=Stai per attivare un blocco per §r
+edu_tools.ui.lock_player_confirm.body.2=§r. Questo impedirà loro di muoversi fuori dall'area che hai impostato.
+edu_tools.ui.lock_player_confirm.buttons.confirm=Conferma
+edu_tools.ui.lock_player_confirm.buttons.cancel=Annulla
+edu_tools.actionbar.lock_player.too_far_push=Ti stai allontanando troppo
+
+### Teleport Scene
+edu_tools.ui.teleport.title=§fTeletrasporto
+edu_tools.ui.teleport.body.1=Stai per teletrasportarti
+edu_tools.ui.teleport.body.2=§r a
+edu_tools.ui.teleport.buttons.teleport=Teletrasporta
+edu_tools.ui.teleport.team_select.get_subject.body=Seleziona il giocatore o la squadra da teletrasportare
+edu_tools.ui.teleport.team_select.get_target.body=Seleziona il giocatore a cui teletrasportarti
+
+### World Management Scene
+edu_tools.ui.world_management.title=§fGestione del Mondo
+edu_tools.ui.world_management.body=La gestione del mondo è uno strumento che ti permette di gestire le impostazioni del mondo, come il meteo, l'ora e altro.
+edu_tools.ui.world_management.buttons.world_settings=Impostazioni del Mondo
+edu_tools.ui.world_management.buttons.environment=Ambiente
+edu_tools.ui.world_settings.title=§fImpostazioni del Mondo
+edu_tools.ui.world_settings.toggles.mob_spawning=Generazione mob
+edu_tools.ui.world_settings.toggles.mob_spawning_tooltip=Abilita o disabilita la generazione dei mob
+edu_tools.ui.world_settings.toggles.keep_inventory=Tieni Inventario
+edu_tools.ui.world_settings.toggles.keep_inventory_tooltip=Abilita o disabilita il mantenimento dell’inventario
+edu_tools.ui.world_settings.toggles.daylight_cycle=Ciclo Giorno/Notte
+edu_tools.ui.world_settings.toggles.daylight_cycle_tooltip=Abilita o disabilita il ciclo giorno/notte
+edu_tools.ui.world_settings.toggles.weather_cycle=Ciclo Meteo
+edu_tools.ui.world_settings.toggles.weather_cycle_tooltip=Abilita o disabilita il ciclo del meteo
+edu_tools.ui.world_settings.toggles.immediate_respawn=Respawn Immediato
+edu_tools.ui.world_settings.toggles.immediate_respawn_tooltip=Abilita o disabilita il respawn immediato
+edu_tools.ui.world_settings.toggles.command_blocks=Blocchi Comando
+edu_tools.ui.world_settings.toggles.command_blocks_tooltip=Abilita o disabilita i blocchi comando
+edu_tools.ui.world_settings.toggles.world_damage=Danno al Mondo
+edu_tools.ui.world_settings.toggles.world_damage_tooltip=Abilita o disabilita il danno al mondo
+edu_tools.ui.world_settings.select_difficulty=Difficoltà
+edu_tools.ui.world_settings.select_difficulty_tooltip=Seleziona la difficoltà del mondo
+edu_tools.ui.world_settings.difficulty.peaceful=Pacifica
+edu_tools.ui.world_settings.difficulty.easy=Facile
+edu_tools.ui.world_settings.difficulty.normal=Normale
+edu_tools.ui.world_settings.difficulty.hard=Difficile
+edu_tools.ui.environment.title=§fImpostazioni Ambiente
+edu_tools.ui.environment.body=Stai gestendo le impostazioni dell'ambiente
+edu_tools.ui.environment.buttons.daytime_settings=Impostazioni Giorno
+edu_tools.ui.environment.buttons.weather_settings=Impostazioni Meteo
+edu_tools.ui.environment.buttons.always_day=Sempre Giorno
+edu_tools.ui.environment_daytime.title=§fImpostazioni Giorno
+edu_tools.ui.environment_daytime.select_daytime=Seleziona l'Ora del Giorno
+edu_tools.ui.environment_daytime.select_daytime_tooltip=Seleziona l'ora del giorno
+edu_tools.ui.environment_daytime.select_daytime.options.no_change=Nessuna Modifica
+edu_tools.ui.environment_daytime.select_daytime.options.day=Giorno
+edu_tools.ui.environment_daytime.select_daytime.options.night=Notte
+edu_tools.ui.environment_daytime.select_daytime.options.noon=Mezzogiorno
+edu_tools.ui.environment_daytime.select_daytime.options.midnight=Mezzanotte
+edu_tools.ui.environment_daytime.select_daytime.options.sunrise=Alba
+edu_tools.ui.environment_daytime.select_daytime.options.sunset=Tramonto
+edu_tools.ui.environment_daytime.set_daytime_cycle=Ciclo Giorno
+edu_tools.ui.environment_daytime.set_daytime_cycle_tooltip=Attiva o disattiva il ciclo giorno
+edu_tools.ui.environment_weather.title=§fImpostazioni Meteo
+edu_tools.ui.environment_weather.select_weather=Seleziona il meteo
+edu_tools.ui.environment_weather.select_weather_tooltip=Seleziona il tipo di meteo
+edu_tools.ui.environment_weather.select_weather.options.no_change=Nessuna modifica
+edu_tools.ui.environment_weather.select_weather.options.clear=Sereno
+edu_tools.ui.environment_weather.select_weather.options.rain=Pioggia
+edu_tools.ui.environment_weather.select_weather.options.thunder=Temporale
+edu_tools.ui.environment_weather.set_weather_cycle=Ciclo Meteo
+edu_tools.ui.environment_weather.set_weather_cycle_tooltip=Attiva o disattiva il ciclo meteo
+
+### Assignments Scene
+edu_tools.ui.assignment_teacher.title=§fCompiti
+edu_tools.ui.assignment_teacher.body=I compiti sono uno strumento che ti consente di creare e gestire compiti per i tuoi studenti. Puoi creare compiti, vedere i compiti e gestire le consegne dei compiti.
+edu_tools.ui.assignment_teacher.buttons.create_assignment=Crea Compito
+edu_tools.ui.assignment_teacher.buttons.active_assignments=Compiti Attivi
+edu_tools.ui.assignment_teacher.buttons.completed_assignments=Compiti Completati
+edu_tools.ui.assignment_create.title=§fCrea Compito
+edu_tools.ui.assignment_create.body=Stai creando un nuovo compito
+edu_tools.ui.assignment_create.name=Nome del Compito
+edu_tools.ui.assignment_create.name_tooltip=Inserisci il nome del compito
+edu_tools.ui.assignment_create.name_placeholder=Inserisci qui il nome del compito
+edu_tools.ui.assignment_create.description=Descrizione del Compito
+edu_tools.ui.assignment_create.description_tooltip=Inserisci la descrizione del compito
+edu_tools.ui.assignment_create.description_placeholder=Inserisci qui la descrizione del compito
+edu_tools.ui.assignment_create.icon=Icona del Compito
+edu_tools.ui.assignment_create.icon_tooltip=Seleziona l'icona per il compito
+edu_tools.ui.assignment_create.icon.options.iron_axe=Ascia di Ferro
+edu_tools.ui.assignment_create.icon.options.clownfish=Pesce Pagliaccio
+edu_tools.ui.assignment_create.icon.options.diamond=Diamante
+edu_tools.ui.assignment_create.icon.options.egg=Uovo
+edu_tools.ui.assignment_create.icon.options.potato=Patata
+edu_tools.ui.assignment_create.toggles.notify=Notifica gli studenti
+edu_tools.ui.assignment_create.toggles.notify_tooltip=Abilita o disabilita le notifiche per gli studenti quando il compito viene creato.
+edu_tools.ui.assignment_list_teacher.title=§fCompiti
+edu_tools.ui.assignment.no_assignments=Nessun compito trovato
+edu_tools.ui.assignment_student_list.title=§fElenco Studenti
+
+### Inventory Management Scene
+edu_tools.ui.inventory_manage.title=§fGestione Inventario
+edu_tools.ui.inventory_manage.body=La Gestione Inventario è uno strumento che ti permette di gestire l'inventario di giocatori e squadre. Puoi copiare l'inventario di un giocatore o di una squadra, svuotare l'inventario e altro.
+edu_tools.ui.inventory_manage.buttons.copy_hotbar=Copia Hotbar
+edu_tools.ui.inventory_manage.buttons.clear_inventory=Svuota Inventario
+edu_tools.ui.inventory_manage.buttons.copy_inventory=Copia Inventario
+edu_tools.ui.inventory_manage.buttons.copy_item=Copia Oggetto
+edu_tools.ui.copy_inventory.title=§fCopia Inventario
+edu_tools.ui.inventory_manage.copy_inventory.team_select.get_subject.body=Seleziona il giocatore da cui copiare l'inventario
+edu_tools.ui.inventory_manage.copy_inventory.team_select.get_target.body=Seleziona il giocatore o la squadra a cui copiare l'inventario
+edu_tools.ui.inventory_manage.copy_inventory.body.1=Inventario copiato con successo da
+edu_tools.ui.inventory_manage.copy_inventory.body.2=§r a
+edu_tools.ui.inventory_manage.copy_inventory.body.3=§r
+edu_tools.ui.copy_hotbar.title=§fCopia Hotbar
+edu_tools.ui.inventory_manage.copy_hotbar.team_select.get_subject.body=Seleziona il giocatore da cui copiare la hotbar
+edu_tools.ui.inventory_manage.copy_hotbar.team_select.get_target.body=Seleziona il giocatore o la squadra a cui copiare la hotbar
+edu_tools.ui.inventory_manage.copy_hotbar.body.1=Hotbar copiata con successo da
+edu_tools.ui.inventory_manage.copy_hotbar.body.2=§r a
+edu_tools.ui.inventory_manage.copy_hotbar.body.3=§r
+edu_tools.ui.clear_inventory.title=§fSvuota Inventario
+edu_tools.ui.inventory_manage.clear_inventory.team_select.get_subject.body=Seleziona il giocatore o la squadra a cui svuotare l'inventario
+edu_tools.ui.inventory_manage.clear_inventory.body.1=Inventario svuotato con successo di
+edu_tools.ui.inventory_manage.clear_inventory.body.2=§r
+edu_tools.ui.copy_item.title=§fCopia Oggetto
+edu_tools.ui.inventory_manage.copy_item.team_select.get_subject.body=Seleziona il giocatore da cui copiare l'oggetto
+edu_tools.ui.inventory_manage.copy_item.team_select.get_target.body=Seleziona il giocatore o la squadra a cui copiare l'oggetto
+edu_tools.ui.inventory_manage.copy_item.body.1=Oggetto copiato con successo da
+edu_tools.ui.inventory_manage.copy_item.body.2=§r a
+edu_tools.ui.inventory_manage.copy_item.body.3=§r
+edu_tools.ui.copy_item.select_item=Seleziona Oggetto
+edu_tools.ui.copy_item.select_item_tooltip=Seleziona l'oggetto da copiare dall'inventario
+
+### Timer Scene
+edu_tools.ui.timer.title=§fTimer
+edu_tools.ui.timer.body=Un timer è uno strumento che ti permette di impostare un conto alla rovescia per una durata specifica. Puoi avviare e fermare il timer, e ti avviserà quando il tempo sarà scaduto.
+edu_tools.ui.edit_timer.title=§fImpostazioni Timer
+edu_tools.ui.timer_edit.time=Durata del Timer
+edu_tools.ui.timer_edit.time_tooltip=Inserisci la durata del timer
+edu_tools.ui.timer.time.second=Secondo
+edu_tools.ui.timer.time.seconds=Secondi
+edu_tools.ui.timer.time.minute=Minuto
+edu_tools.ui.timer.time.minutes=Minuti
+edu_tools.ui.timer.time.hour=Ora
+edu_tools.ui.timer.time.hours=Ore
+edu_tools.ui.timer_edit.show_timer_entity=Mostra Entità del Timer
+edu_tools.ui.timer_edit.show_timer_entity_tooltip=Attiva o disattiva la rappresentazione visiva del timer nel mondo
+edu_tools.ui.timer.buttons.create=Crea Timer
+edu_tools.ui.timer.buttons.edit=Modifica Timer
+edu_tools.ui.timer.buttons.pause=Metti in Pausa il Timer
+edu_tools.ui.timer.buttons.resume=Riprendi Timer
+edu_tools.ui.timer.buttons.start=Avvia Timer
+edu_tools.ui.timer.buttons.remove=Rimuovi Timer

@@ -10,7 +10,7 @@
 				"default": "geometry.letter_block_placer"
 			},
 			"textures": {
-				"default": "`f'textures/edu_tools/blocks/letter_blocks/{letter}'`"
+				"default": "`f'textures/edu_tools/blocks/more_letter_blocks/{letter}'`"
 			},
 			"animations": {
 				"first_person": "animation.letter_block_placer.first_person",
