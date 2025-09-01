@@ -200,7 +200,7 @@ edu_tools.ui.environment_weather.set_weather_cycle=天候の変化
 edu_tools.ui.environment_weather.set_weather_cycle_tooltip=有効にすると、天候が自動的に変化するようになります
 
 ### Assignments Scene
-edu_tools.ui.assignment_teacher.title=課題
+edu_tools.ui.assignment_teacher.title=§f課題
 edu_tools.ui.assignment_teacher.body=課題は、生徒向けの課題を作成し管理するためのツールです。課題の作成、課題の閲覧、および課題の提出管理を行うことができます。
 edu_tools.ui.assignment_teacher.buttons.create_assignment=課題を作成する
 edu_tools.ui.assignment_teacher.buttons.active_assignments=有効な課題を確認する
