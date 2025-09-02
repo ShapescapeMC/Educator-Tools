@@ -63,6 +63,10 @@ export class WorldSettingsScene extends ModalUIScene {
 			},
 		);
 
-		this.show(context.getSourcePlayer(), sceneManager);
+		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
+			if (!r.canceled) {
+				sceneManager.goBackToScene(context, "world_management");
+			}
+		});
 	}
 }

@@ -50,6 +50,14 @@ export class TeleportScene extends ActionUIScene {
 			);
 		});
 
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			() => {
+				sceneManager.goBackToScene(context, "main");
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
+
 		this.show(context.getSourcePlayer(), sceneManager);
 	}
 }

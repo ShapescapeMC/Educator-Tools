@@ -198,7 +198,7 @@ def main():
 
     # --- Create .mcaddon file ---
     mcaddon_file_path = (
-        mcaddon_file_root / f"{product_creator}_{SUB_PRODUCT_NAME.title().replace('_', ' ')}_{ZIP_FILE_SUFFIX}"
+        mcaddon_file_root / f"{product_creator}_{SUB_PRODUCT_NAME.title().replace('.', '_')}_{ZIP_FILE_SUFFIX}"
     )
     print(
         f"package_release.py: Creating mcaddon file at {mcaddon_file_path.as_posix()}"

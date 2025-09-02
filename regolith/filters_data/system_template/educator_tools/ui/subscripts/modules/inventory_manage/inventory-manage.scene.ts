@@ -148,6 +148,14 @@ export class InventoryManageScene extends ActionUIScene {
 			"textures/edu_tools/ui/icons/inventory_manage/clear_inventory",
 		);
 
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			() => {
+				sceneManager.goBackToScene(context, "main");
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
+
 		this.show(context.getSourcePlayer(), sceneManager);
 	}
 }

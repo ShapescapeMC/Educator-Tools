@@ -76,6 +76,14 @@ export class ManageHealthScene extends ActionUIScene {
 			"textures/edu_tools/ui/icons/manage_health/settings",
 		);
 
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			() => {
+				sceneManager.goBackToScene(context, "main");
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
+
 		// Pass the context to the scene to handle navigation
 		this.setContext(context);
 		this.show(context.getSourcePlayer(), sceneManager);

@@ -40,6 +40,14 @@ export class EnvironmentScene extends ActionUIScene {
 			"textures/edu_tools/ui/icons/environment/always_day",
 		);
 
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			() => {
+				sceneManager.goBackToScene(context, "main");
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
+
 		this.show(context.getSourcePlayer(), sceneManager);
 	}
 }

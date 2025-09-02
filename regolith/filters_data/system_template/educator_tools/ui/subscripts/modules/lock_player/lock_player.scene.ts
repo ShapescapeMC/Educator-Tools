@@ -52,6 +52,14 @@ export class LockPlayerScene extends ActionUIScene {
 			"textures/edu_tools/ui/icons/lock_player/view_teams",
 		);
 
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			() => {
+				sceneManager.goBackToScene(context, "main");
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
+
 		this.show(context.getSourcePlayer(), sceneManager);
 	}
 }

@@ -19,6 +19,7 @@ export class AssignmentManageScene extends ActionUIScene {
 		const assignmentID = context.getData("assignment");
 		const assignment = assignmentService.getAssignment(assignmentID!);
 		if (!assignment) throw new Error("Assignment not found");
+		const active = assignmentService.isAssignmentActive(assignmentID!);
 		const assignedTeam = teamsService.getTeam(assignment.assignedTo);
 		this.setRawBody([
 			{ translate: "edu_tools.ui.assignment.manage.body.1" },
@@ -32,22 +33,27 @@ export class AssignmentManageScene extends ActionUIScene {
 		this.addLabel(assignment.title);
 		this.addLabel(assignment.description);
 		this.addDivider();
-
-		this.addButton(
-			"edu_tools.ui.assignment.manage.buttons.assignment_update",
-			(): void => {
-				context.setData("assignment", assignment);
-				sceneManager.openSceneWithContext(context, "assignment_create", true);
-			},
-			"textures/edu_tools/ui/icons/assignment/assignment_update",
-		);
-		this.addButton(
-			"edu_tools.ui.assignment.manage.buttons.assignment_complete",
-			(): void => {
-				sceneManager.openSceneWithContext(context, "assignment_complete", true);
-			},
-			"textures/edu_tools/ui/icons/assignment/assignment_complete",
-		);
+		if (active) {
+			this.addButton(
+				"edu_tools.ui.assignment.manage.buttons.assignment_update",
+				(): void => {
+					context.setData("assignment", assignment);
+					sceneManager.openSceneWithContext(context, "assignment_create", true);
+				},
+				"textures/edu_tools/ui/icons/assignment/assignment_update",
+			);
+			this.addButton(
+				"edu_tools.ui.assignment.manage.buttons.assignment_complete",
+				(): void => {
+					sceneManager.openSceneWithContext(
+						context,
+						"assignment_complete",
+						true,
+					);
+				},
+				"textures/edu_tools/ui/icons/assignment/assignment_complete",
+			);
+		}
 		this.addButton(
 			"edu_tools.ui.assignment.manage.buttons.assignment_delete",
 			(): void => {
@@ -69,14 +75,28 @@ export class AssignmentManageScene extends ActionUIScene {
 		this.addButton(
 			"edu_tools.ui.buttons.back",
 			() => {
-				if (context.getHistory().includes("assignment_list_teacher")) {
-					sceneManager.goBackToScene(context, "assignment_list_teacher");
+				const target = this.getBackTargetFromHistory(context);
+				if (target) {
+					sceneManager.goBackToScene(context, target);
 				} else {
-					sceneManager.goBackToScene(context, "assignment_manage");
+					sceneManager.goBackToScene(context, "assignment_teacher");
 				}
 			},
 			"textures/edu_tools/ui/icons/_general/back",
 		);
 		this.show(context.getSourcePlayer(), sceneManager);
+	}
+
+	private getBackTargetFromHistory(context: SceneContext): string | undefined {
+		const history = context.getHistory();
+		const idxActive = history.lastIndexOf("active_assignments");
+		const idxCompleted = history.lastIndexOf("completed_assignments");
+
+		if (idxActive === -1 && idxCompleted === -1) return undefined;
+		if (idxActive === -1) return "completed_assignments";
+		if (idxCompleted === -1) return "active_assignments";
+		return idxActive > idxCompleted
+			? "active_assignments"
+			: "completed_assignments";
 	}
 }

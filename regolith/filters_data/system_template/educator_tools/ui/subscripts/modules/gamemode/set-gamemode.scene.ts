@@ -44,6 +44,14 @@ export class SetGamemodeScene extends ActionUIScene {
 		// Add gamemode buttons
 		this.addGamemodeButtons(sceneManager, subjectTeam);
 
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			() => {
+				sceneManager.goBackToScene(context, "main");
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
+
 		// Pass the context to the scene to handle navigation
 		this.setContext(context);
 		this.show(context.getSourcePlayer(), sceneManager);
