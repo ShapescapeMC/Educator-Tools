@@ -25,7 +25,7 @@ export class AssignmentCreateScene extends ModalUIScene {
 			});
 		} else {
 			this.addLabel({
-				translate: "edu_tools.ui.assignment_create.body.create",
+				translate: "edu_tools.ui.assignment_create.body",
 			});
 		}
 

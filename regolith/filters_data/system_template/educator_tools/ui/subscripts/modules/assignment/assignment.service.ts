@@ -13,6 +13,7 @@ import { AssignmentCreateScene } from "./assignment-create.scene";
 import { AssignmentStudentListScene } from "./assignment-student-list.scene";
 import { AssignmentStudentDetailScene } from "./assignment-student-detail.scene";
 import { AssignmentStudentSubmitScene } from "./assignment-student-submit.scene";
+import { AssignmentSubmissionsScene } from "./assignment-submissions.scene";
 
 export interface Assignment {
 	id: string;
@@ -77,7 +78,7 @@ export class AssignmentService implements Module {
 		sceneManager.registerScene(
 			AssignmentManageScene.id,
 			(manager: SceneManager, context: SceneContext) => {
-				new AssignmentManageScene(manager, context, this);
+				new AssignmentManageScene(manager, context, this, this.teamsService);
 			},
 		);
 		sceneManager.registerScene(
@@ -109,6 +110,17 @@ export class AssignmentService implements Module {
 			(manager: SceneManager, context: SceneContext) => {
 				// This scene is for students to submit their assignments
 				new AssignmentStudentSubmitScene(manager, context, this);
+			},
+		);
+		sceneManager.registerScene(
+			AssignmentSubmissionsScene.id,
+			(manager: SceneManager, context: SceneContext) => {
+				new AssignmentSubmissionsScene(
+					manager,
+					context,
+					this,
+					this.teamsService,
+				);
 			},
 		);
 	}
@@ -199,7 +211,8 @@ export class AssignmentService implements Module {
 
 	addSubmission(
 		assignmentId: string,
-		submission: Omit<Submission, "id" | "assignmentId">,
+		player: Player,
+		submission: Omit<Submission, "id" | "assignmentId" | "submittedBy">,
 	): Submission | undefined {
 		const assignmentData = this.repository.getAssignment(assignmentId);
 		if (!assignmentData) {
@@ -210,6 +223,7 @@ export class AssignmentService implements Module {
 			...submission,
 			id: id,
 			assignmentId: assignmentId,
+			submittedBy: player.id,
 		};
 		this.repository.addSubmission(assignmentId, id, newSubmission);
 		return newSubmission;

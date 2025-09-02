@@ -1,3 +1,4 @@
+import { world } from "@minecraft/server";
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ActionUIScene } from "../scene_manager/ui-scene";
@@ -30,7 +31,7 @@ export class AssignmentStudentDetailScene extends ActionUIScene {
 			return;
 		}
 
-		const submission = assignmentService.getSubmission(
+		const submission = assignmentService.getPlayerSubmissions(
 			assignmentId,
 			context.getSourcePlayer().id,
 		);
@@ -40,12 +41,14 @@ export class AssignmentStudentDetailScene extends ActionUIScene {
 		this.addLabel(assignment.title);
 		this.addLabel(assignment.description);
 		this.addDivider();
-		this.addLabel({
-			translate: "edu_tools.ui.assignment_student_detail.submission",
-		});
 
 		// Handle submission UI
-		this.handleSubmissionUI(isActive, submission, sceneManager, context);
+		this.handleSubmissionUI(
+			isActive,
+			submission.length > 0,
+			sceneManager,
+			context,
+		);
 
 		this.show(context.getSourcePlayer(), sceneManager);
 	}
@@ -62,7 +65,7 @@ export class AssignmentStudentDetailScene extends ActionUIScene {
 
 	private handleSubmissionUI(
 		isActive: boolean,
-		submission: any,
+		submission: boolean,
 		sceneManager: SceneManager,
 		context: SceneContext,
 	) {
@@ -72,7 +75,7 @@ export class AssignmentStudentDetailScene extends ActionUIScene {
 				() => {
 					sceneManager.openSceneWithContext(
 						context,
-						"assignment_student_submission",
+						"assignment_student_submit",
 						true,
 					);
 				},

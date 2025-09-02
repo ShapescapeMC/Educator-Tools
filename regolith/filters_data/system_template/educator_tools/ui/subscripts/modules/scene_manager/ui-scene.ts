@@ -82,7 +82,7 @@ export class ActionUIScene {
 	 * @param iconPath - The path to the item texture.
 	 */
 	addButton(
-		text: string,
+		text: string | RawMessage,
 		handler: (response: ModalFormResponse) => void,
 		iconPath?: string,
 	): void {

@@ -14,7 +14,7 @@ export class AssignmentCreatedScene extends ActionUIScene {
 		super(AssignmentCreatedScene.id, context.getSourcePlayer());
 
 		this.setContext(context);
-		const assignment = context.getData("assignment");
+		let assignment = context.getData("assignment");
 
 		if (assignment) {
 			this.setRawBody([
@@ -44,29 +44,27 @@ export class AssignmentCreatedScene extends ActionUIScene {
 			: context.getData("assignment_icon") || "";
 		const notify = !!context.getData("assignment_notify");
 
-		this.addButton(
-			"edu_tools.ui.assignment.create.buttons.close",
-			(): void => {
-				if (assignment) {
-					assignmentService.updateAssignment(assignment.id, {
-						title,
-						description,
-						icon,
-					});
-				} else {
-					assignmentService.createAssignment({
-						title,
-						description,
-						icon,
-						assignedTo: context.getSubjectTeam()!.id,
-					});
-					if (notify) {
-						assignmentService.notifyAssignmentCreated(assignment);
-					}
+		this.addButton("edu_tools.ui.buttons.continue", (): void => {
+			if (assignment) {
+				assignmentService.updateAssignment(assignment.id, {
+					title,
+					description,
+					icon,
+				});
+			} else {
+				assignment = assignmentService.createAssignment({
+					title,
+					description,
+					icon,
+					assignedTo: context.getSubjectTeam()!.id,
+				});
+				if (notify) {
+					assignmentService.notifyAssignmentCreated(assignment);
 				}
-			},
-			"textures/edu_tools/ui/icons/assignment/close",
-		);
+			}
+			context.setData("assignment", assignment.id);
+			sceneManager.openSceneWithContext(context, "assignment_manage", true);
+		});
 
 		this.show(context.getSourcePlayer(), sceneManager);
 	}

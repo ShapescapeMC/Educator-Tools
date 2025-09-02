@@ -13,15 +13,25 @@ export class AssignmentManageScene extends ActionUIScene {
 		sceneManager: SceneManager,
 		context: SceneContext,
 		assignmentService: AssignmentService,
+		teamsService: TeamsService,
 	) {
 		super(AssignmentManageScene.id, context.getSourcePlayer());
+		const assignmentID = context.getData("assignment");
+		const assignment = assignmentService.getAssignment(assignmentID!);
+		if (!assignment) throw new Error("Assignment not found");
+		const assignedTeam = teamsService.getTeam(assignment.assignedTo);
 		this.setRawBody([
 			{ translate: "edu_tools.ui.assignment.manage.body.1" },
 			{ text: " §9" },
-			{ text: context.getSubjectTeam()!.name },
+			{ text: assignedTeam!.name },
 			{ text: " §r" },
 			{ translate: "edu_tools.ui.assignment.manage.body.2" },
 		]);
+
+		this.addDivider();
+		this.addLabel(assignment.title);
+		this.addLabel(assignment.description);
+		this.addDivider();
 
 		this.addButton(
 			"edu_tools.ui.assignment.manage.buttons.assignment_update",
