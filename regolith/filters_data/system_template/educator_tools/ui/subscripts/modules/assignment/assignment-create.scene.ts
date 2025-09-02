@@ -4,22 +4,28 @@ import { SceneManager } from "../scene_manager/scene-manager";
 import { ModalUIScene } from "../scene_manager/ui-scene";
 import { Team } from "../teams/interfaces/team.interface";
 import { AssignmentService } from "./assignment.service";
+import { TeamsService } from "../teams/teams.service";
 
 export class AssignmentCreateScene extends ModalUIScene {
 	static readonly id = "assignment_create";
 
-	constructor(sceneManager: SceneManager, context: SceneContext) {
+	constructor(
+		sceneManager: SceneManager,
+		context: SceneContext,
+		teamsService: TeamsService,
+	) {
 		super(AssignmentCreateScene.id, context.getSourcePlayer());
 
 		this.setContext(context);
 
 		const assignment = context.getData("assignment");
+		const assignedTeam = teamsService.getTeam(assignment.assignedTo);
 		if (assignment) {
 			this.addLabel({
 				rawtext: [
 					{ translate: "edu_tools.ui.assignment_create.body.edit" },
 					{ text: " §9" },
-					{ text: context.getSubjectTeam()!.name },
+					{ text: assignedTeam?.name },
 					{ text: " §r" },
 				],
 			});
@@ -75,7 +81,10 @@ export class AssignmentCreateScene extends ModalUIScene {
 				"edu_tools.ui.assignment_create.icon",
 				iconsKeys,
 				(selectedIcon: number): void => {
-					context.setData("team_icon", selectedIcon);
+					context.setData(
+						"assignment_icon",
+						AssignmentService.availableIcons[selectedIcon],
+					);
 				},
 				{
 					defaultValueIndex: assignment?.icon
@@ -86,26 +95,22 @@ export class AssignmentCreateScene extends ModalUIScene {
 					tooltip: "edu_tools.ui.assignment_create.icon_tooltip",
 				},
 			);
-
-			this.show(context.getSourcePlayer(), sceneManager).then((r) => {
-				if (r.canceled) {
-					return;
-				}
-				if (!assignment) {
-					context.setSubjectTeamRequired(true);
-					context.setNextScene("assignment_created");
-					context.setData("team_filter", (team: Team): boolean => {
-						return true;
-					});
-					sceneManager.openSceneWithContext(context, "team_select", true);
-				} else {
-					sceneManager.openSceneWithContext(
-						context,
-						"assignment_created",
-						true,
-					);
-				}
-			});
 		}
+		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
+			if (r.canceled) {
+				return;
+			}
+			if (!assignment) {
+				context.setSubjectTeamRequired(true);
+				context.setNextScene("assignment_created");
+				context.setData("team_filter", (team: Team): boolean => {
+					return true;
+				});
+				sceneManager.openSceneWithContext(context, "team_select", true);
+			} else if (assignedTeam) {
+				context.setSubjectTeam(assignedTeam);
+				sceneManager.openSceneWithContext(context, "assignment_created", true);
+			}
+		});
 	}
 }

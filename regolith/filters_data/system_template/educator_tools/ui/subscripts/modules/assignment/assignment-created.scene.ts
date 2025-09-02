@@ -33,15 +33,15 @@ export class AssignmentCreatedScene extends ActionUIScene {
 				{ translate: "edu_tools.ui.assignment.create.body.2" },
 			]);
 		}
-		const title = assignment
-			? assignment.title
-			: context.getData("assignment_title") || "";
-		const description = assignment
-			? assignment.description
-			: context.getData("assignment_description") || "";
-		const icon = assignment
-			? assignment.icon
-			: context.getData("assignment_icon") || "";
+		const title = context.getData("assignment_title")
+			? context.getData("assignment_title")
+			: assignment.title || "";
+		const description = context.getData("assignment_description")
+			? context.getData("assignment_description")
+			: assignment.description || "";
+		const icon = context.getData("assignment_icon")
+			? context.getData("assignment_icon")
+			: assignment.icon || "";
 		const notify = !!context.getData("assignment_notify");
 
 		this.addButton("edu_tools.ui.buttons.continue", (): void => {
@@ -63,7 +63,11 @@ export class AssignmentCreatedScene extends ActionUIScene {
 				}
 			}
 			context.setData("assignment", assignment.id);
-			sceneManager.openSceneWithContext(context, "assignment_manage", true);
+			if (assignment) {
+				sceneManager.goBackToScene(context, "assignment_manage");
+			} else {
+				sceneManager.openSceneWithContext(context, "assignment_manage", true);
+			}
 		});
 
 		this.show(context.getSourcePlayer(), sceneManager);

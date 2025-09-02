@@ -1,3 +1,4 @@
+import { world } from "@minecraft/server";
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ActionUIScene } from "../scene_manager/ui-scene";
@@ -37,6 +38,14 @@ export class AssignmentListTeacherScene extends ActionUIScene {
 				"textures/edu_tools/ui/icons/generic/" + assignment.icon,
 			);
 		}
+
+		this.addButton(
+			"edu_tools.ui.buttons.back",
+			() => {
+				sceneManager.goBackToScene(context, "assignment_teacher");
+			},
+			"textures/edu_tools/ui/icons/_general/back",
+		);
 
 		this.show(context.getSourcePlayer(), sceneManager);
 	}

@@ -14,6 +14,8 @@ import { AssignmentStudentListScene } from "./assignment-student-list.scene";
 import { AssignmentStudentDetailScene } from "./assignment-student-detail.scene";
 import { AssignmentStudentSubmitScene } from "./assignment-student-submit.scene";
 import { AssignmentSubmissionsScene } from "./assignment-submissions.scene";
+import { AssignmentSubmissionScene } from "./assignment-submission.scene";
+import { AssignmentDeleteScene } from "./assignment-delete.scene";
 
 export interface Assignment {
 	id: string;
@@ -90,7 +92,7 @@ export class AssignmentService implements Module {
 		sceneManager.registerScene(
 			AssignmentCreateScene.id,
 			(manager: SceneManager, context: SceneContext) => {
-				new AssignmentCreateScene(manager, context);
+				new AssignmentCreateScene(manager, context, this.teamsService);
 			},
 		);
 		sceneManager.registerScene(
@@ -123,6 +125,23 @@ export class AssignmentService implements Module {
 				);
 			},
 		);
+		sceneManager.registerScene(
+			AssignmentSubmissionScene.id,
+			(manager: SceneManager, context: SceneContext) => {
+				new AssignmentSubmissionScene(
+					manager,
+					context,
+					this,
+					this.teamsService,
+				);
+			},
+		);
+		sceneManager.registerScene(
+			AssignmentDeleteScene.id,
+			(manager: SceneManager, context: SceneContext) => {
+				new AssignmentDeleteScene(manager, context, this);
+			},
+		);
 	}
 
 	getMainButton(): ButtonConfig {
@@ -146,7 +165,7 @@ export class AssignmentService implements Module {
 			const player = world.getEntity(memberId) as Player;
 			if (player) {
 				player.sendMessage([
-					{ translate: "edu_tools.ui.assignment.new_assignment" },
+					{ translate: "edu_tools.message.assignment.new_assignment" },
 					{ text: ` ${assignment.title}` },
 				]);
 			}
