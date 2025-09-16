@@ -5,8 +5,10 @@ edu_tools.ui.buttons.back=戻る
 edu_tools.ui.buttons.exit=やめる
 edu_tools.ui.buttons.continue=続ける
 
-edu_tools.ui.not_enough_players.title=プレイヤー不足
+edu_tools.ui.not_enough_players.title=§fプレイヤー不足
 edu_tools.ui.not_enough_players.body=このツールを使用するには、少なくとも2人のプレーヤーが必要です
+edu_tools.ui.no_teams.title=§f利用可能なチームがありません
+edu_tools.ui.no_teams.body=利用可能なチームが見つかりませんでした。このツールで使用するチームを作成してください。
 
 ### Main UI Scene
 ### main.titleは、固有名詞であるため、原題を使用
@@ -84,11 +86,14 @@ edu_tools.ui.manage_health.buttons.reset=リセットする
 edu_tools.ui.manage_health.buttons.settings=設定
 edu_tools.ui.manage_health_settings.title=§f体力設定
 edu_tools.ui.manage_health.settings.health=ダメージを有効にする
-edu_tools.ui.manage_health.settings.health_toooltip=これを有効にすると、対象のプレイヤーは常に回復のエフェクト効果を得ます
+edu_tools.ui.manage_health.settings.health_tooltip=これを有効にすると、対象のプレイヤーは常に回復のエフェクト効果を得ます
 edu_tools.ui.manage_health.settings.hunger=空腹を有効にする
 edu_tools.ui.manage_health.settings.hunger_tooltip=これを有効にすると、対象のプレイヤーは常に満腹のエフェクト効果を得ます
 edu_tools.ui.manage_health.settings.effect_immunity=エフェクトを有効にする
 edu_tools.ui.manage_health.settings.effect_immunity_tooltip=これを有効にすると、対象のプレイヤーはポジティブな効果も含め、いかなるエフェクト効果も受けられなくなります
+edu_tools.message.manage_health.team.healed=§aプレイヤーまたはチーム「§r%1§a」が回復されました。
+edu_tools.message.manage_health.team.cleared_effects=§aプレイヤーまたはチーム「§r%1§a」のエフェクト効果が削除されました。
+edu_tools.message.manage_health.team.reset=§aプレイヤーまたはチーム「§r%1§a」の体力の管理設定がリセットされました。
 
 ### Focus Mode Scene
 edu_tools.ui.focus_mode.title=§f集中モード
@@ -104,38 +109,44 @@ edu_tools.ui.focus_mode_manage.toggle.enable_tooltip=選択したチームまた
 edu_tools.ui.focus_mode_manage.text_field.message=表示するメッセージ
 edu_tools.ui.focus_mode_manage.text_field.message_tooltip=集中モードが有効な場合に表示されるメッセージを入力してください
 edu_tools.ui.focus_mode_manage.text_field.message_placeholder=ここにメッセージを入力
+edu_tools.message.focus_mode.global_disable=§a全てのプレイヤーに対して集中モードを無効に設定されました。
+edu_tools.message.focus_mode.settings_updated=§a集中モードの設定が更新されました。
 
 ### Lock Player Scene
 edu_tools.ui.lock_player.title=§fプレイヤーをロック
-edu_tools.ui.lock_player.body=プレイヤーを特定のエリアに閉じ込めます
+edu_tools.ui.lock_player.body=プレイヤーをロックは、プレイヤーやチームが移動できる範囲を制御するツールです。設定したエリア外への移動は不可能となり、エリアから離れようとした場合は元の位置へテレポートされます。
 edu_tools.ui.lock_player.buttons.add_team_lock=新しいロックを追加する
 edu_tools.ui.lock_player.buttons.view_teams=ロックされたチームを見る
 edu_tools.ui.lock_player_team.title=§fチームをロック
 edu_tools.ui.lock_player.team.body.1=あなたは「
 edu_tools.ui.lock_player.team.body.2=§r」のロックを管理しています
-edu_tools.ui.lock_player_team.radius=プレイヤーを閉じ込めるエリアの大きさ(中心からのブロック数)
+edu_tools.ui.lock_player_team.radius=プレイヤーを閉じ込めるエリアの大きさ(中央からのブロック数)
 edu_tools.ui.lock_player_team.radius_tooltip=プレイヤーまたはチームが移動できる範囲の半径を設定します
-edu_tools.ui.lock_player_team.teleport_to_center=中心にテレポートする
-edu_tools.ui.lock_player_team.teleport_to_center_tooltip=有効にすると、プレーヤーやチームがその場を離れようとしたときに、そのエリアの中央にテレポートされます
+edu_tools.ui.lock_player_team.teleport_to_center=中央にテレポートする
+edu_tools.ui.lock_player_team.teleport_to_center_tooltip=有効にすると、プレーヤーやチームがその場を離れようとしたときに、そのエリアの中央にテレポートされます。
 edu_tools.ui.lock_player_team.show_boundaries=境界線の表示
 edu_tools.ui.lock_player_team.show_boundaries_tooltip=有効にすると、エリアの境界がプレーヤーに表示されます。
 edu_tools.ui.lock_player_team.show_lock_message=ロックメッセージの表示
-edu_tools.ui.lock_player_team.show_lock_message_tooltip=有効にすると、プレーヤーがエリアから出ようとしたときにメッセージが表示されます
+edu_tools.ui.lock_player_team.show_lock_message_tooltip=有効にすると、プレーヤーがエリアから出ようとしたときにメッセージが表示されます。
 edu_tools.ui.lock_player_team.mode=ロックのモード
-edu_tools.ui.lock_player_team.mode_tooltip=ロックのモードを選択してください。プレイヤーモードでは、ロックエリアは特定のプレイヤーを追従し、中心モードでは、ロックエリアはワールドの特定の座標を中心とします。
+edu_tools.ui.lock_player_team.mode_tooltip=ロックのモードを選択してください。プレイヤーモードでは、ロックされたエリアは特定のプレイヤーを追従し、中央モードでは、ロックされたエリアはワールドの特定の座標を中央とします。
 edu_tools.ui.lock_player_team.mode.options.player=プレイヤー
-edu_tools.ui.lock_player_team.mode.options.center=中心
+edu_tools.ui.lock_player_team.mode.options.center=中央
 edu_tools.ui.lock_player_team_settings.title=§fプレイヤーをロックの設定
 edu_tools.ui.lock_player_team_settings.button.settings=設定
-edu_tools.ui.lock_player_team_settings.button.update_center=中心を更新する
-edu_tools.ui.lock_player_team_settings.button.teleport_to_center=中心にテレポートする
+edu_tools.ui.lock_player_team_settings.button.update_center=中央を更新する
+edu_tools.ui.lock_player_team_settings.button.teleport_to_center=中央にテレポートする
 edu_tools.ui.lock_player_team_settings.button.delete_lock=プレイヤーのロックを削除する
 edu_tools.ui.lock_player_confirm.title=§fプレイヤーのロックを確認する
-edu_tools.ui.lock_player_confirm.body.1=§r
-edu_tools.ui.lock_player_confirm.body.2=§rに対してロックを有効にしようとしています。これにより、設定したエリア外への移動が禁止されます
+edu_tools.ui.lock_player_confirm.team.body.1=§r
+edu_tools.ui.lock_player_confirm.team.body.2=§rに対してロックを有効にしようとしています。これにより、設定したエリア外への移動が禁止されます。
 edu_tools.ui.lock_player_confirm.buttons.confirm=確認
 edu_tools.ui.lock_player_confirm.buttons.cancel=やめる
 edu_tools.actionbar.lock_player.too_far_push=あなたは遠くに行き過ぎています
+edu_tools.message.lock_player_team_settings.teleport_to_center=§aロックされたプレイヤーはエリアの中央へテレポートされました。
+edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aあなたは、ロックされたエリアの中心へテレポートされました。
+edu_tools.message.lock_player_team_settings.update_center=§aロックされたエリアの中心が現在の位置に更新されました。
+edu_tools.message.lock_player_team_settings.delete_lock=§aロックは解除されました。
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fテレポート
@@ -148,7 +159,7 @@ edu_tools.ui.teleport.team_select.get_target.body=テレポート先のプレイ
 ### World Management Scene
 ### 日本語翻訳において、マイクラに詳しくないユーザーが利用することを考慮し、翻訳を調整しています
 edu_tools.ui.world_management.title=§fワールド管理
-edu_tools.ui.world_management.body=ワールド管理は、天候や時間などのワールド設定を管理できるツールです
+edu_tools.ui.world_management.body=ワールド管理は、天候や時間などのワールド設定を管理できるツールです。
 edu_tools.ui.world_management.buttons.world_settings=ワールド設定
 edu_tools.ui.world_management.buttons.environment=環境設定
 edu_tools.ui.world_settings.title=§fワールド設定
@@ -198,6 +209,7 @@ edu_tools.ui.environment_weather.select_weather.options.rain=雨
 edu_tools.ui.environment_weather.select_weather.options.thunder=雷雨
 edu_tools.ui.environment_weather.set_weather_cycle=天候の変化
 edu_tools.ui.environment_weather.set_weather_cycle_tooltip=有効にすると、天候が自動的に変化するようになります
+edu_tools.message.environment.always_day_set=§aワールドは「常に昼間」に設定されました。
 
 ### Assignments Scene
 edu_tools.ui.assignment_teacher.title=§f課題
@@ -222,7 +234,7 @@ edu_tools.ui.assignment_create.icon.options.diamond=ダイヤモンド
 edu_tools.ui.assignment_create.icon.options.egg=卵
 edu_tools.ui.assignment_create.icon.options.potato=ジャガイモ
 edu_tools.ui.assignment_create.toggles.notify=生徒に通知する
-edu_tools.ui.assignment_create.toggles.notify_tooltip=有効にすると、課題が作成された際に生徒に通知が送信されます
+edu_tools.ui.assignment_create.toggles.notify_tooltip=有効にすると、課題が作成された際に生徒に通知が送信されます。
 edu_tools.ui.assignment_created.title=§f課題の編集
 edu_tools.ui.assignment.update.body.1=あなたは「
 edu_tools.ui.assignment.update.body.2=§r」の課題を編集しています
@@ -237,20 +249,20 @@ edu_tools.ui.assignment.manage.buttons.assignment_delete=課題を削除する
 edu_tools.ui.assignment.manage.buttons.assignment_submissions=提出された課題を見る
 edu_tools.ui.assignment_delete.title=§f課題の削除
 edu_tools.ui.assignment.delete.body.1=課題「
-edu_tools.ui.assignment.delete.body.2=」を削除してもよろしいですか？この操作は取り消せません
+edu_tools.ui.assignment.delete.body.2=」を削除してもよろしいですか？この操作は取り消せません。
 edu_tools.ui.assignment.delete.buttons.delete=課題を削除する
 edu_tools.ui.assignment.delete.buttons.cancel=やめる
 edu_tools.ui.assignment_complete.title=§f課題を完了に設定
 edu_tools.ui.assignment.complete.body.1=課題「
-edu_tools.ui.assignment.complete.body.2=」を完了に設定してもよろしいですか？この操作は取り消せません
+edu_tools.ui.assignment.complete.body.2=」を完了に設定してもよろしいですか？この操作は取り消せません。
 edu_tools.ui.assignment.complete.buttons.complete=課題を完了に設定する
 edu_tools.ui.assignment.complete.buttons.cancel=やめる
 edu_tools.ui.assignment.no_submissions=提出された課題が見つかりませんでした
 edu_tools.ui.assignment.submission=提出したユーザー：
-edu_tools.ui.assignment_submission.title=§f提出された課題
+edu_tools.ui.assignment_submissions.title=§f提出された課題
 edu_tools.ui.assignment_submission_detail.title=§f提出された課題の詳細
-edu_tools.ui.assignment.submission_detail.from=「
-edu_tools.ui.assignment.submission_detail.for_assignment=」によって、次の課題が提出されました：
+edu_tools.ui.assignment.submission_details.from=「
+edu_tools.ui.assignment.submission_details.for_assignment=」によって、次の課題が提出されました：
 edu_tools.ui.assignment.submission_details.note=提出者のメモ
 edu_tools.ui.assignment.submission_details.location=提出された場所
 edu_tools.ui.assignment.submission_details.buttons.teleport=提出された場所にテレポートする
@@ -259,17 +271,17 @@ edu_tools.ui.assignment.no_assignments=課題が見つかりませんでした
 edu_tools.ui.assignment_student_list.title=§f課題
 edu_tools.ui.assignment_student_submit.title=§fS課題の提出
 edu_tools.ui.assignment_student_submit.submission=課題を提出してください。現在の位置情報も自動で送信されます。
-edu_tools.ui.assignment_student_submit.note=追加のメモは先生に表示されます
+edu_tools.ui.assignment_student_submit.note=追加のメモは先生に表示されます。
 edu_tools.ui.assignment_student_submit.note_tooltip=課題に関する追加のメモを入力してください
 edu_tools.ui.assignment_student_submit.note_placeholder=ここにメモを入力
 edu_tools.ui.assignment_student_detail.title=§f課題の詳細
 edu_tools.ui.assignment_student_detail.submit=課題を提出する
-edu_tools.ui.assignment_student_detail.already_submitted=この課題は既に提出済みです
-edu_tools.ui.assignment_student_detail.completed=この課題は完了しました
-edu_tools.ui.assignment.assignment_not_found=課題が見つかりません
-edu_tools.ui.assignment.no_assignment_selected=課題が選択されていません
-edu_tools.message.assignment_student_submit.success=§a課題の提出が正常に完了しました
-edu_tools.message.assignment_student_submit.failure=§c課題の提出に失敗しました。もう一度お試しください
+edu_tools.ui.assignment_student_detail.already_submitted=この課題は既に提出済みです。
+edu_tools.ui.assignment_student_detail.completed=この課題は完了しました。
+edu_tools.ui.assignment.assignment_not_found=課題が見つかりません。
+edu_tools.ui.assignment.no_assignment_selected=課題が選択されていません。
+edu_tools.message.assignment_student_submit.success=§a課題の提出が正常に完了しました。
+edu_tools.message.assignment_student_submit.failure=§c課題の提出に失敗しました。もう一度お試しください。
 edu_tools.message.assignment.new_assignment=§a新しい課題が作成されました: §r
 
 ### Inventory Management Scene
@@ -324,3 +336,5 @@ edu_tools.ui.timer.buttons.pause=タイマーを一時停止する
 edu_tools.ui.timer.buttons.resume=タイマーを再開する
 edu_tools.ui.timer.buttons.start=タイマーを開始する
 edu_tools.ui.timer.buttons.remove=タイマーを削除する
+edu_tools.message.timer.time_left=§a残り時間： §r%1 §a
+edu_tools.message.timer.times_up=§c時間になりました！
