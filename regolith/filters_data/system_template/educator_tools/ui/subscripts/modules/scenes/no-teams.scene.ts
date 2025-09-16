@@ -2,13 +2,13 @@ import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ActionUIScene } from "../scene_manager/ui-scene";
 
-export class NotEnoughPlayersScene extends ActionUIScene {
-	static readonly id = "not_enough_players";
+export class NoTeamsScene extends ActionUIScene {
+	static readonly id = "no_teams";
 
 	constructor(sceneManager: SceneManager, context: SceneContext) {
-		super(NotEnoughPlayersScene.id, context.getSourcePlayer());
+		super(NoTeamsScene.id, context.getSourcePlayer());
 
-		this.setSimpleBody("edu_tools.ui.not_enough_players.body");
+		this.setSimpleBody("edu_tools.ui.no_teams.body");
 
 		this.addButton(
 			"edu_tools.ui.buttons.back",

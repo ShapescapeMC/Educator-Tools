@@ -5,8 +5,10 @@ edu_tools.ui.buttons.back=Back
 edu_tools.ui.buttons.exit=Exit
 edu_tools.ui.buttons.continue=Continue
 
-edu_tools.ui.not_enough_players.title=Not Enough Players
+edu_tools.ui.not_enough_players.title=§fNot Enough Players
 edu_tools.ui.not_enough_players.body=You need at least two players to use this tool
+edu_tools.ui.no_teams.title=§fNo Teams Available
+edu_tools.ui.no_teams.body=There are no teams available. Please create teams to use this tool.
 
 ### Main UI Scene
 edu_tools.ui.main.title=§fEducator Tools
@@ -83,11 +85,14 @@ edu_tools.ui.manage_health.buttons.reset=Reset
 edu_tools.ui.manage_health.buttons.settings=Settings
 edu_tools.ui.manage_health_settings.title=§fHealth Settings
 edu_tools.ui.manage_health.settings.health=Enable Damage
-edu_tools.ui.manage_health.settings.health_toooltip=Enable or disable the ability to take damage
+edu_tools.ui.manage_health.settings.health_tooltip=Enable or disable the ability to take damage
 edu_tools.ui.manage_health.settings.hunger=Enable Hunger
 edu_tools.ui.manage_health.settings.hunger_tooltip=Enable or disable the hunger functionality
 edu_tools.ui.manage_health.settings.effect_immunity=Enable Effect Immunity
 edu_tools.ui.manage_health.settings.effect_immunity_tooltip=Enabling this will prevent players from receiving any effects, including positive ones
+edu_tools.message.manage_health.team.healed=§aThe player/team §r%1§a has been healed.
+edu_tools.message.manage_health.team.cleared_effects=§aThe player/team §r%1§a has had their effects cleared.
+edu_tools.message.manage_health.team.reset=§aThe player/team §r%1§a has had their health settings reset.
 
 ### Focus Mode Scene
 edu_tools.ui.focus_mode.title=§fFocus Mode
@@ -103,6 +108,8 @@ edu_tools.ui.focus_mode_manage.toggle.enable_tooltip=Enable or disable Focus Mod
 edu_tools.ui.focus_mode_manage.text_field.message=Message to show
 edu_tools.ui.focus_mode_manage.text_field.message_tooltip=Message to show when Focus Mode is enabled
 edu_tools.ui.focus_mode_manage.text_field.message_placeholder=Enter your message here
+edu_tools.message.focus_mode.global_disable=§aFocus Mode has been disabled for all players.
+edu_tools.message.focus_mode.settings_updated=§aFocus Mode settings have been updated.
 
 ### Lock Player Scene
 edu_tools.ui.lock_player.title=§fLock Players
@@ -130,11 +137,15 @@ edu_tools.ui.lock_player_team_settings.button.update_center=Update Center
 edu_tools.ui.lock_player_team_settings.button.teleport_to_center=Teleport to Center
 edu_tools.ui.lock_player_team_settings.button.delete_lock=Delete Lock
 edu_tools.ui.lock_player_confirm.title=§fConfirm Lock Player
-edu_tools.ui.lock_player_confirm.body.1=You are about to enable a lock for §r
-edu_tools.ui.lock_player_confirm.body.2=§r. This will prevent them from moving outside the area you set.
+edu_tools.ui.lock_player_confirm.team.body.1=You are about to enable a lock for §r
+edu_tools.ui.lock_player_confirm.team.body.2=§r. This will prevent them from moving outside the area you set.
 edu_tools.ui.lock_player_confirm.buttons.confirm=Confirm
 edu_tools.ui.lock_player_confirm.buttons.cancel=Cancel
 edu_tools.actionbar.lock_player.too_far_push=You are moving too far away
+edu_tools.message.lock_player_team_settings.teleport_to_center=§aLocked players have been teleported to the center of the area.
+edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aYou have been teleported to the center of your locked area.
+edu_tools.message.lock_player_team_settings.update_center=§aThe center of the locked area has been updated to your current position.
+edu_tools.message.lock_player_team_settings.delete_lock=§aThe lock has been removed.
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fTeleport
@@ -196,6 +207,7 @@ edu_tools.ui.environment_weather.select_weather.options.rain=Rain
 edu_tools.ui.environment_weather.select_weather.options.thunder=Thunder
 edu_tools.ui.environment_weather.set_weather_cycle=Weather Cycle
 edu_tools.ui.environment_weather.set_weather_cycle_tooltip=Enable or disable the weather cycle
+edu_tools.message.environment.always_day_set=§aThe world has been set to always day.
 
 ### Assignments Scene
 edu_tools.ui.assignment_teacher.title=§fAssignments
@@ -245,10 +257,10 @@ edu_tools.ui.assignment.complete.buttons.complete=Complete Assignment
 edu_tools.ui.assignment.complete.buttons.cancel=Cancel
 edu_tools.ui.assignment.no_submissions=No submissions found
 edu_tools.ui.assignment.submission=Submission from
-edu_tools.ui.assignment_submission.title=§fAssignment Submissions
+edu_tools.ui.assignment_submissions.title=§fAssignment Submissions
 edu_tools.ui.assignment_submission_detail.title=§fAssignment Submission Details
-edu_tools.ui.assignment.submission_detail.from=Submitted by
-edu_tools.ui.assignment.submission_detail.for_assignment=for Assignment
+edu_tools.ui.assignment.submission_details.from=Submitted by
+edu_tools.ui.assignment.submission_details.for_assignment=for Assignment
 edu_tools.ui.assignment.submission_details.note=Submission Note
 edu_tools.ui.assignment.submission_details.location=Submission Location
 edu_tools.ui.assignment.submission_details.buttons.teleport=Teleport to Location
@@ -322,3 +334,5 @@ edu_tools.ui.timer.buttons.pause=Pause Timer
 edu_tools.ui.timer.buttons.resume=Resume Timer
 edu_tools.ui.timer.buttons.start=Start Timer
 edu_tools.ui.timer.buttons.remove=Remove Timer
+edu_tools.message.timer.time_left=§aTime left: §r%1 §a
+edu_tools.message.timer.times_up=§cTime's up!

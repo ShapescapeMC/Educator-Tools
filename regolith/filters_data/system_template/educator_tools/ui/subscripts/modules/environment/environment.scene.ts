@@ -36,6 +36,8 @@ export class EnvironmentScene extends ActionUIScene {
 			"edu_tools.ui.environment.buttons.always_day",
 			(): void => {
 				environmentService.alwaysDay();
+				this.player.sendMessage("edu_tools.message.environment.always_day_set");
+				sceneManager.openSceneWithContext(context, "environment", false);
 			},
 			"textures/edu_tools/ui/icons/environment/always_day",
 		);

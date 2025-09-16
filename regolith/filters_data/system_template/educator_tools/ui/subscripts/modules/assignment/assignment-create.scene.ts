@@ -19,8 +19,9 @@ export class AssignmentCreateScene extends ModalUIScene {
 		this.setContext(context);
 
 		const assignment = context.getData("assignment");
-		const assignedTeam = teamsService.getTeam(assignment.assignedTo);
+		let assignedTeam: Team | undefined = undefined;
 		if (assignment) {
+			assignedTeam = teamsService.getTeam(assignment.assignedTo);
 			this.addLabel({
 				rawtext: [
 					{ translate: "edu_tools.ui.assignment_create.body.edit" },

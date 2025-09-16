@@ -63,7 +63,7 @@ export class AssignmentCreatedScene extends ActionUIScene {
 				}
 			}
 			context.setData("assignment", assignment.id);
-			if (assignment) {
+			if (context.getHistory().includes("assignment_manage")) {
 				sceneManager.goBackToScene(context, "assignment_manage");
 			} else {
 				sceneManager.openSceneWithContext(context, "assignment_manage", true);

@@ -73,6 +73,7 @@ export class TimerService implements Module {
 	initialize(): void {
 		// Initialize the timer mechanic to handle periodic updates
 		this.timerMechanic = new TimerMechanic(this);
+		this.timerMechanic.initialize();
 	}
 
 	/**
@@ -278,8 +279,11 @@ export class TimerService implements Module {
 	 */
 	getRemainingTime(): number {
 		const timer = this.getTimer();
-		if (!timer || !timer.started) {
+		if (!timer) {
 			return 0;
+		}
+		if (!timer.started) {
+			return timer.duration * 20; // Full duration in ticks if not started
 		}
 
 		let elapsed: number;
@@ -361,6 +365,15 @@ export class TimerService implements Module {
 			entity.nameTag = shouldShow
 				? this.formatTime(this.getRemainingTime())
 				: "--:--:--";
+			if (shouldShow) {
+				entity.triggerEvent("edu_tools:clear_timer");
+				entity.triggerEvent(
+					"edu_tools:set_timer_" +
+						this.formatTime(this.getRemainingTime()).replace(/:/g, "_"),
+				);
+			} else {
+				entity.triggerEvent("edu_tools:pause_timer");
+			}
 			return;
 		}
 
@@ -372,8 +385,40 @@ export class TimerService implements Module {
 			return;
 		}
 
+		if (remainingTime / 20 < 11) {
+			if (remainingTime < 20) {
+				world.sendMessage([
+					{
+						translate: "edu_tools.message.timer.times_up",
+					},
+				]);
+				world.getPlayers().forEach((player) => {
+					player.playSound("random.anvil_use", { volume: 0.3, pitch: 2 });
+				});
+			} else {
+				world.sendMessage([
+					{
+						translate: "edu_tools.message.timer.time_left",
+						with: [this.formatTime(remainingTime)],
+					},
+					// select second or seconds based on remaining time
+					remainingTime / 20 === 1
+						? { translate: "edu_tools.ui.timer.time.second" }
+						: { translate: "edu_tools.ui.timer.time.seconds" },
+				]);
+				world.getPlayers().forEach((player) => {
+					player.playSound("random.anvil_land", { volume: 0.3, pitch: 2 });
+				});
+			}
+		}
+
 		// Update display with remaining time
 		entity.nameTag = this.formatTime(remainingTime);
+		entity.triggerEvent("edu_tools:clear_timer");
+		entity.triggerEvent(
+			"edu_tools:set_timer_" +
+				this.formatTime(remainingTime).replace(/:/g, "_"),
+		);
 
 		// Update health bar to show progress
 		this.updateEntityHealth(entity, remainingTime, timer.duration * 20);

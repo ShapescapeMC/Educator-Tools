@@ -110,7 +110,8 @@ export class LockPlayerService implements Module {
 				player.teleport(settings.center);
 				if (settings.showLockMessage) {
 					player.sendMessage({
-						translate: "edu_tools.ui.lock_player.teleported_to_center",
+						translate:
+							"edu_tools.message.lock_player_team_settings.teleport_to_center_player",
 					});
 				}
 			}

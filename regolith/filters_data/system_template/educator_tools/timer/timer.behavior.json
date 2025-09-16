@@ -27,22 +27,57 @@
 			"minecraft:tick_world": {
 				"never_despawn": true,
 				"radius": 2
-			},
-			"minecraft:boss": {
-				"name": "--:--:--",
-				"hud_range": 1000000,
-				"should_darken_sky": false
 			}
 		},
 		"component_groups": {
 			"edu_tools:despawn": {
 				"minecraft:instant_despawn": {}
+			},
+			"edu_tools:pause_timer": {
+				"minecraft:boss": {
+					"name": "--:--:--",
+					"hud_range": 10000,
+					"should_darken_sky": false
+				}
+			},
+			// Generating bossbars due to MCPE-227635
+			"`[K(f'edu_tools:timer_{h:02d}_{m:02d}_{s:02d}', hour=h, minute=m, second=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`": {
+				"minecraft:boss": {
+					"name": "`f'{hour:02d}:{minute:02d}:{second:02d}'`",
+					"hud_range": 10000,
+					"should_darken_sky": false
+				}
 			}
 		},
 		"events": {
 			"edu_tools:despawn": {
 				"add": {
 					"component_groups": ["edu_tools:despawn"]
+				}
+			},
+			"edu_tools:clear_timer": {
+				"remove": {
+					"component_groups": [
+						"edu_tools:pause_timer",
+						{
+							"__unpack__": "`[dict(h=h, m=m, s=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`",
+							"__value__": "`f'edu_tools:timer_{h:02d}_{m:02d}_{s:02d}'`"
+						}
+					]
+				}
+			},
+
+			"edu_tools:pause_timer": {
+				"add": {
+					"component_groups": ["edu_tools:pause_timer"]
+				}
+			},
+
+			"`[K(f'edu_tools:set_timer_{h}_{m:02d}_{s:02d}', hour=h, minute=m, second=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`": {
+				"add": {
+					"component_groups": [
+						"`f'edu_tools:timer_{hour:02d}_{minute:02d}_{second:02d}'`"
+					]
 				}
 			}
 		}

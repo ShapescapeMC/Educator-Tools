@@ -58,6 +58,9 @@ export class EnvironmentWeatherScene extends ModalUIScene {
 			},
 		);
 
-		this.show(context.getSourcePlayer(), sceneManager);
+		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
+			if (r.canceled) return;
+			sceneManager.goBackToScene(context, "environment");
+		});
 	}
 }

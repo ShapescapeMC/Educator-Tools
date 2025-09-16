@@ -72,6 +72,11 @@ export class FocusModeManageScene extends ModalUIScene {
 			},
 		);
 
-		this.show(context.getSourcePlayer(), sceneManager);
+		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
+			if (r.canceled) return;
+			this.player.sendMessage({
+				translate: "edu_tools.message.focus_mode.settings_updated",
+			});
+		});
 	}
 }

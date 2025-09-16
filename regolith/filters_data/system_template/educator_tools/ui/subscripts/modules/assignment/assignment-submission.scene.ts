@@ -23,9 +23,12 @@ export class AssignmentSubmissionScene extends ActionUIScene {
 
 		this.addLabel({
 			rawtext: [
-				{ translate: "edu_tools.ui.assignment.submission_detail.from" },
+				{ translate: "edu_tools.ui.assignment.submission_details.from" },
 				{ text: " " + submissionPlayerName + " " },
-				{ translate: "edu_tools.ui.assignment.submission.for_assignment" },
+				{
+					translate:
+						"edu_tools.ui.assignment.submission_details.for_assignment",
+				},
 				{ text: " " + assignment?.title },
 			],
 		});
@@ -60,7 +63,7 @@ export class AssignmentSubmissionScene extends ActionUIScene {
 		this.addButton(
 			"edu_tools.ui.buttons.back",
 			() => {
-				sceneManager.goBackToScene(context, "assignment_manage");
+				sceneManager.goBackToScene(context, "assignment_submissions");
 			},
 			"textures/edu_tools/ui/icons/_general/back",
 		);

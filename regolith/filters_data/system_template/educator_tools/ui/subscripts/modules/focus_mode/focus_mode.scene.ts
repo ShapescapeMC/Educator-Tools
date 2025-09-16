@@ -10,7 +10,11 @@ export class FocusModeScene extends ActionUIScene {
 	public static readonly id = "focus_mode";
 	private focusModeService: FocusModeService;
 
-	constructor(sceneManager: SceneManager, context: SceneContext) {
+	constructor(
+		sceneManager: SceneManager,
+		context: SceneContext,
+		teamsService: TeamsService,
+	) {
 		// Create the scene
 		super(FocusModeScene.id, context.getSourcePlayer());
 		this.context = context;
@@ -33,6 +37,9 @@ export class FocusModeScene extends ActionUIScene {
 			"edu_tools.ui.focus_mode.buttons.global_disable",
 			(): void => {
 				this.focusModeService.globalDisableFocusMode();
+				this.player.sendMessage({
+					translate: "edu_tools.message.focus_mode.global_disable",
+				});
 			},
 			"textures/edu_tools/ui/icons/focus_mode/global_disable",
 		);
@@ -40,26 +47,24 @@ export class FocusModeScene extends ActionUIScene {
 		this.addButton(
 			"edu_tools.ui.focus_mode.buttons.select_team",
 			(): void => {
-				context.setSubjectTeamRequired(true);
-				context.setNextScene("focus_mode_manage");
-				context.setData(
-					"team_filter",
-					(team: Team, teamsService: TeamsService): boolean => {
-						if (team.memberIds.length < 1) {
-							return false; // Skip empty teams
-						}
-						for (const memberId of team.memberIds) {
-							const isTeacher = teamsService
-								.getTeam("system_teachers")
-								?.memberIds.includes(memberId);
-							if (!isTeacher) {
-								return true; // Include teams with at least one non-teacher player
-							}
-						}
-						return false;
-					},
-				);
-				sceneManager.openSceneWithContext(context, "team_select", true);
+				if (
+					teamsService
+						.getAllTeams()
+						.filter((team) => this.teamFilter(team, teamsService)).length < 1
+				) {
+					// No teams available
+					sceneManager.openSceneWithContext(context, "no_teams", true);
+				} else {
+					context.setSubjectTeamRequired(true);
+					context.setNextScene("focus_mode_manage");
+					context.setData(
+						"team_filter",
+						(team: Team, teamsService: TeamsService): boolean => {
+							return this.teamFilter(team, teamsService);
+						},
+					);
+					sceneManager.openSceneWithContext(context, "team_select", true);
+				}
 			},
 			"textures/edu_tools/ui/icons/focus_mode/select_team",
 		);
@@ -73,5 +78,20 @@ export class FocusModeScene extends ActionUIScene {
 		);
 
 		this.show(context.getSourcePlayer(), sceneManager);
+	}
+
+	private teamFilter(team: Team, teamsService: TeamsService): boolean {
+		if (team.memberIds.length < 1) {
+			return false; // Skip empty teams
+		}
+		for (const memberId of team.memberIds) {
+			const isTeacher = teamsService
+				.getTeam("system_teachers")
+				?.memberIds.includes(memberId);
+			if (!isTeacher) {
+				return true; // Include teams with at least one non-teacher player
+			}
+		}
+		return false;
 	}
 }

@@ -23,6 +23,12 @@ export class ManageHealthMechanic {
 				this.manageHealthService.clearEffects(player);
 				this.manageHealthService.checkHealthProperties(player);
 			}
+			if (
+				system.currentTick % 15 === 0 &&
+				(!healthProperties.hunger || !healthProperties.health)
+			) {
+				this.manageHealthService.checkHealthProperties(player);
+			}
 		}
 	}
 

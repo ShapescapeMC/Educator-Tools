@@ -32,8 +32,8 @@ export class AssignmentStudentDetailScene extends ActionUIScene {
 		}
 
 		const submission = assignmentService.getPlayerSubmissions(
-			assignmentId,
 			context.getSourcePlayer().id,
+			assignmentId,
 		);
 		const isActive = assignmentService.isAssignmentActive(assignmentId);
 
@@ -88,8 +88,8 @@ export class AssignmentStudentDetailScene extends ActionUIScene {
 					: "edu_tools.ui.assignment_student_detail.completed";
 
 			this.addLabel({ translate: messageKey });
-			this.addBackButton(sceneManager, context);
 		}
+		this.addBackButton(sceneManager, context);
 	}
 
 	private addBackButton(sceneManager: SceneManager, context: SceneContext) {

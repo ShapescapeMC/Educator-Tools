@@ -213,7 +213,7 @@ export class ManageHealthService implements Module {
 	): void {
 		const playerStorage = new PropertyStorage(player);
 		playerStorage.set("health_properties", properties);
-		if (properties.health) {
+		if (!properties.health) {
 			player.addEffect("minecraft:regeneration", 20000000, {
 				amplifier: 100,
 				showParticles: false,
@@ -224,7 +224,7 @@ export class ManageHealthService implements Module {
 				player.removeEffect(effect.typeId);
 			}
 		}
-		if (properties.hunger) {
+		if (!properties.hunger) {
 			player.addEffect("minecraft:saturation", 20000000, {
 				amplifier: 100,
 				showParticles: false,

@@ -18,7 +18,11 @@
 			},
 			"minecraft:can_destroy_in_creative": {
 				"value": false
-			}
+			},
+			"minecraft:allow_off_hand": {
+				"value": false
+			},
+			"minecraft:interact_button": true
 		}
 	}
 }

@@ -46,6 +46,11 @@ export class ManageHealthScene extends ActionUIScene {
 			"edu_tools.ui.manage_health.buttons.heal",
 			(): void => {
 				this.manageHealthService.cureTeam(subjectTeam);
+				this.player.sendMessage({
+					translate: "edu_tools.message.manage_health.team.healed",
+					with: [subjectTeam.name],
+				});
+				sceneManager.openSceneWithContext(context, "manage_health", false);
 			},
 			"textures/edu_tools/ui/icons/manage_health/heal",
 		);
@@ -53,6 +58,11 @@ export class ManageHealthScene extends ActionUIScene {
 			"edu_tools.ui.manage_health.buttons.clear_effects",
 			(): void => {
 				this.manageHealthService.clearTeamEffects(subjectTeam);
+				this.player.sendMessage({
+					translate: "edu_tools.message.manage_health.team.cleared_effects",
+					with: [subjectTeam.name],
+				});
+				sceneManager.openSceneWithContext(context, "manage_health", false);
 			},
 			"textures/edu_tools/ui/icons/manage_health/clear_effects",
 		);
@@ -60,6 +70,11 @@ export class ManageHealthScene extends ActionUIScene {
 			"edu_tools.ui.manage_health.buttons.reset",
 			(): void => {
 				this.manageHealthService.resetProperties(subjectTeam);
+				this.player.sendMessage({
+					translate: "edu_tools.message.manage_health.team.reset",
+					with: [subjectTeam.name],
+				});
+				sceneManager.openSceneWithContext(context, "manage_health", false);
 			},
 			"textures/edu_tools/ui/icons/manage_health/reset",
 		);

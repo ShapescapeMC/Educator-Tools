@@ -67,7 +67,7 @@ export class AssignmentItemService implements Module {
 		) as EntityInventoryComponent;
 		const inventory = inventoryComponent.container as Container;
 
-		let hasEducatorTool = false;
+		let hasAssignmentTool = false;
 
 		for (let i = 0; i < inventory.size; i++) {
 			const item = inventory.getItem(i);
@@ -77,15 +77,15 @@ export class AssignmentItemService implements Module {
 			// if the slot has an emerald item stack add the number of emeralds to
 			// the coins variable
 			if (item.typeId === "edu_tools:assignment") {
-				hasEducatorTool = true;
+				hasAssignmentTool = true;
 				break;
 			}
 		}
 
-		if (!hasEducatorTool) {
-			let educatorTool = new ItemStack("edu_tools:assignment", 1);
-			educatorTool.lockMode = ItemLockMode.inventory;
-			inventory.addItem(educatorTool);
+		if (!hasAssignmentTool) {
+			let assignmentTool = new ItemStack("edu_tools:assignment", 1);
+			assignmentTool.lockMode = ItemLockMode.inventory;
+			inventory.addItem(assignmentTool);
 		}
 	}
 

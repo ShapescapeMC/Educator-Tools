@@ -53,7 +53,7 @@ export class FocusModeService implements Module {
 		sceneManager.registerScene(
 			FocusModeScene.id,
 			(manager: SceneManager, context: SceneContext) => {
-				new FocusModeScene(manager, context);
+				new FocusModeScene(manager, context, this.teamsService);
 			},
 		);
 		sceneManager.registerScene(

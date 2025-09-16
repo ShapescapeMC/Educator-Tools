@@ -185,7 +185,8 @@ export class SceneManager implements Module {
 		}
 		// Remove the last 'steps' entries from history
 		let previousSceneId =
-			context.getHistory()[context.getHistory().length - steps - 1];
+			context.getHistory()[context.getHistory().length - steps - 1] ||
+			MainScene.id;
 		for (let i = 0; i < steps; i++) {
 			context.getHistory().pop();
 		}
