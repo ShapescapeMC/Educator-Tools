@@ -62,7 +62,7 @@ def generate_letter_images(
         image_size: tuple = (64, 64),
         background_image_path: str = None,
         suffix: str = None,
-        antialias: bool = False
+        aliasing: bool = False
     ) -> dict[str, Any]:
     '''
     Generates an image for each letter in the provided string with transparent background.
@@ -76,7 +76,7 @@ def generate_letter_images(
         text_color: RGBA color tuple for the text.
         image_size: Tuple with (width, height) of the output image.
         background_image_path: Path to background image. If None, transparent background will be used.
-        antialias: Enable antialiasing via oversampling and downsampling
+        aliasing: Enable aliasing via oversampling and downsampling
         
     Returns:
         The unmodified map_py_item.
@@ -114,7 +114,7 @@ def generate_letter_images(
     print(f"Created character mapping reference at {mapping_file_path}")
     
     # Determine oversampling factor and working size before any image ops
-    scale = 4 if antialias else 1
+    scale = 4 if aliasing else 1
     work_size = (image_size[0] * scale, image_size[1] * scale)
 
     # Load background image if provided
@@ -135,7 +135,7 @@ def generate_letter_images(
     font = None
     
     # Try to load the specified custom font
-    font_size_used = font_size * (4 if antialias else 1)
+    font_size_used = font_size * (4 if aliasing else 1)
     if font_path and os.path.exists(font_path):
         try:
             font = ImageFont.truetype(font_path, font_size_used)
@@ -212,8 +212,10 @@ def generate_letter_images(
             # Draw the letter
             draw.text(position, char, font=font, fill=text_color)
 
-            # downsample to final size with antialias
-            if antialias:
+            # downsample to final size with aliasing
+            if aliasing:
+                img = img.resize(image_size, resample=Image.LANCZOS)
+            else:
                 img = img.resize(image_size, resample=Image.NEAREST)
 
             # Determine filename with optional background suffix

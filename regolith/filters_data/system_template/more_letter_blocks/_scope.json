@@ -9,7 +9,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/blank.block.png",
 			"suffix": null,
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -626,7 +626,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/blank.block.png",
 			"suffix": null,
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",
@@ -649,7 +649,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/red_outline.block.png",
 			"suffix": "_red_outline",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -1266,7 +1266,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/red_outline.block.png",
 			"suffix": "_red_outline",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",
@@ -1289,7 +1289,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/blue_outline.block.png",
 			"suffix": "_blue_outline",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -1906,7 +1906,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/blue_outline.block.png",
 			"suffix": "_blue_outline",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",
@@ -1929,7 +1929,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/green_outline.block.png",
 			"suffix": "_green_outline",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -2546,7 +2546,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/green_outline.block.png",
 			"suffix": "_green_outline",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",
@@ -2569,7 +2569,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/yellow_outline.block.png",
 			"suffix": "_yellow_outline",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -3186,7 +3186,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/yellow_outline.block.png",
 			"suffix": "_yellow_outline",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",
@@ -3209,7 +3209,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/light_blue_concrete.block.png",
 			"suffix": "_light_blue_concrete",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -3826,7 +3826,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/light_blue_concrete.block.png",
 			"suffix": "_light_blue_concrete",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",
@@ -3849,7 +3849,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/dark_oak.block.png",
 			"suffix": "_dark_oak",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -4466,7 +4466,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/dark_oak.block.png",
 			"suffix": "_dark_oak",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",
@@ -4489,7 +4489,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/pale_oak.block.png",
 			"suffix": "_pale_oak",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -5106,7 +5106,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/pale_oak.block.png",
 			"suffix": "_pale_oak",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",
@@ -5129,7 +5129,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/rainbow.block.png",
 			"suffix": "_rainbow",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -5746,7 +5746,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/rainbow.block.png",
 			"suffix": "_rainbow",
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",

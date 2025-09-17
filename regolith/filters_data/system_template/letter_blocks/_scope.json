@@ -8,7 +8,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/blank.block.png",
 			"suffix": null,
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u0041",
@@ -625,7 +625,7 @@
 			"font_path": "fonts/AzeretMono-Black.ttf",
 			"background_image_path": "letter_blocks/blank.block.png",
 			"suffix": null,
-			"antialias": true,
+			"aliasing": true,
 			"letters": [
 				{
 					"char": "\\u00bc",

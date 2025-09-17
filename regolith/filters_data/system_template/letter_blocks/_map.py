@@ -12,7 +12,7 @@
                 font_path=ls["font_path"],
                 background_image_path=ls["background_image_path"],
                 suffix=ls["suffix"],
-                antialias=ls["antialias"]
+                aliasing=ls["aliasing"]
             )
             for ls in letter_sets
         ]
