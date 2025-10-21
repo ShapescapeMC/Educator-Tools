@@ -1,5 +1,5 @@
 ### Educator Tools
-item.edu_tools:educator_tool=Educator Gereedschapskist
+item.edu_tools:educator_tool=Educator Tools
 ### General
 edu_tools.ui.buttons.back=Terug
 edu_tools.ui.buttons.exit=Sluiten
@@ -79,7 +79,7 @@ edu_tools.ui.set_gamemode.confirm.body=Je hebt de spelmodus succesvol ingesteld.
 edu_tools.ui.manage_health.title=§fBeheer Gezondheid
 edu_tools.ui.manage_health.team.body.1=Je beheert de gezondheid van
 edu_tools.ui.manage_health.team.body.2=§r
-edu_tools.ui.manage_health.buttons.heal=Heal
+edu_tools.ui.manage_health.buttons.heal=Genees
 edu_tools.ui.manage_health.buttons.clear_effects=Verwijder Effecten
 edu_tools.ui.manage_health.buttons.reset=Reset
 edu_tools.ui.manage_health.buttons.settings=Instellingen
@@ -285,7 +285,7 @@ edu_tools.message.assignment.new_assignment=§aEr is een nieuwe opdracht gemaakt
 ### Inventory Management Scene
 edu_tools.ui.inventory_manage.title=§fInventarisbeheer
 edu_tools.ui.inventory_manage.body=Inventarisbeheer is een tool waarmee je de inventaris van spelers en teams kunt beheren. Je kunt de inventaris van een speler of team kopiëren, de inventaris leegmaken en meer.
-edu_tools.ui.inventory_manage.buttons.copy_hotbar=Kopieer Snelbalk
+edu_tools.ui.inventory_manage.buttons.copy_hotbar=Kopieer Hotbar
 edu_tools.ui.inventory_manage.buttons.clear_inventory=Leeg Inventaris
 edu_tools.ui.inventory_manage.buttons.copy_inventory=Kopieer Inventaris
 edu_tools.ui.inventory_manage.buttons.copy_item=Kopieer Item
@@ -295,10 +295,10 @@ edu_tools.ui.inventory_manage.copy_inventory.team_select.get_target.body=Selecte
 edu_tools.ui.inventory_manage.copy_inventory.body.1=Inventaris succesvol gekopieerd van
 edu_tools.ui.inventory_manage.copy_inventory.body.2=§rnaar
 edu_tools.ui.inventory_manage.copy_inventory.body.3=§r
-edu_tools.ui.copy_hotbar.title=§fKopieer Snelbalk
-edu_tools.ui.inventory_manage.copy_hotbar.team_select.get_subject.body=Selecteer de speler waarvan je de snelbalk wilt kopiëren
-edu_tools.ui.inventory_manage.copy_hotbar.team_select.get_target.body=Selecteer de speler of het team waarnaar je de snelbalk wilt kopiëren
-edu_tools.ui.inventory_manage.copy_hotbar.body.1=Succesvol de snelbalk gekopieerd van
+edu_tools.ui.copy_hotbar.title=§fKopieer hotbar
+edu_tools.ui.inventory_manage.copy_hotbar.team_select.get_subject.body=Selecteer de speler waarvan je de hotbar wilt kopiëren
+edu_tools.ui.inventory_manage.copy_hotbar.team_select.get_target.body=Selecteer de speler of het team waarnaar je de hotbar wilt kopiëren
+edu_tools.ui.inventory_manage.copy_hotbar.body.1=Succesvol de hotbar gekopieerd van
 edu_tools.ui.inventory_manage.copy_hotbar.body.2=§rnaar
 edu_tools.ui.inventory_manage.copy_hotbar.body.3=§r
 edu_tools.ui.clear_inventory.title=§fMaak Inventaris Leeg
