@@ -8,19 +8,23 @@ import { ClassroomLimitationsMechanic } from "./classroom-limitations.mechanic";
 
 /**
  * ClassroomLimitationsService
- * Allows teachers to toggle restrictions on certain gameplay mechanics/items for students.
- * Items/mechanics currently supported: Ender Pearls, Eggs, Arrows, Elytra.
+ * Allows teachers to toggle restrictions on certain gameplay mechanics/items/entities for students.
+ * Items/mechanics currently supported: Ender Pearls, Eggs, Arrows, Elytra, TNT, Potions, etc.
+ * Entities currently supported: Wither, Snow Golem, Iron Golem, Ender Dragon, etc.
  *
  * Storage layout (subStorage `classroom_limitations`):
  *  - enabled_ender_pearls: boolean (true => restriction active, item blocked)
  *  - enabled_eggs
  *  - enabled_arrows
  *  - enabled_elytra
+ *  - enabled_wither: boolean (true => wither spawning blocked)
+ *  - enabled_snow_golem
+ *  ... etc
  *
  * Assumptions:
  *  - A "teacher" is any player contained in the `system_teachers` team.
  *  - Restrictions apply to all non-teacher players (students + any others not in teachers team).
- *  - Mechanics are enforced via event interception (itemUse) and periodic inventory scans.
+ *  - Mechanics are enforced via event interception (itemUse, entitySpawn) and periodic inventory scans.
  *  - If API events are missing in a future version, fallback relies only on inventory scans.
  */
 export class ClassroomLimitationsService implements Module {
@@ -48,6 +52,15 @@ export class ClassroomLimitationsService implements Module {
 		},
 	];
 
+	private readonly entity_limitations = [
+		{ key: "wither", entityIds: ["minecraft:wither"] },
+		{ key: "snow_golem", entityIds: ["minecraft:snow_golem"] },
+		{ key: "iron_golem", entityIds: ["minecraft:iron_golem"] },
+		{ key: "ender_dragon", entityIds: ["minecraft:ender_dragon"] },
+		{ key: "elder_guardian", entityIds: ["minecraft:elder_guardian"] },
+		{ key: "warden", entityIds: ["minecraft:warden"] },
+	];
+
 	constructor(private readonly moduleManager: ModuleManager) {
 		// Acquire sub storage
 		this.storage = moduleManager.getStorage().getSubStorage(this.id);
@@ -58,6 +71,13 @@ export class ClassroomLimitationsService implements Module {
 	/** Ensure default values exist */
 	private ensureDefaults(): void {
 		for (const l of this.item_limitations) {
+			const key = this.getStorageKey(l.key);
+			if (this.storage.get(key) === undefined) {
+				// By default restrictions disabled
+				this.storage.set(key, false);
+			}
+		}
+		for (const l of this.entity_limitations) {
 			const key = this.getStorageKey(l.key);
 			if (this.storage.get(key) === undefined) {
 				// By default restrictions disabled
@@ -90,6 +110,19 @@ export class ClassroomLimitationsService implements Module {
 		return false;
 	}
 
+	/** Returns true if this entity typeId is currently restricted */
+	public isEntityRestricted(typeId: string): boolean {
+		for (const lim of this.entity_limitations) {
+			if (!this.isRestrictionEnabled(lim.key)) continue;
+			if (lim.entityIds.includes(typeId)) return true;
+		}
+		return false;
+	}
+
+	public isRestricted(typeId: string): boolean {
+		return this.isItemRestricted(typeId) || this.isEntityRestricted(typeId);
+	}
+
 	/** Determines whether a player is a teacher */
 	public isTeacher(player: Player): boolean {
 		return this.teamsService.isPlayerInTeam(
@@ -118,11 +151,16 @@ export class ClassroomLimitationsService implements Module {
 	public getItemLimitations(): { key: string; itemIds: string[] }[] {
 		return this.item_limitations;
 	}
+
+	/** Expose entity limitation definitions for scene */
+	public getEntityLimitations(): { key: string; entityIds: string[] }[] {
+		return this.entity_limitations;
+	}
 }
 
 /**
  * UI Scene for Classroom Limitations
- * Renders toggles for each restriction.
+ * Renders toggles for each restriction (items and entities).
  */
 class ClassroomLimitationsScene extends ModalUIScene {
 	constructor(
@@ -132,8 +170,23 @@ class ClassroomLimitationsScene extends ModalUIScene {
 	) {
 		super("classroom_limitations", context.getSourcePlayer(), "main");
 
-		// Add toggles dynamically based on service definitions
+		// Add toggles dynamically based on service definitions for items
 		for (const lim of this.service.getItemLimitations()) {
+			const translationKey = `edu_tools.ui.classroom_limitations.toggles.${lim.key}`;
+			this.addToggle(
+				translationKey,
+				(value: boolean) => {
+					this.service.setRestriction(lim.key, value);
+				},
+				{
+					defaultValue: this.service.isRestrictionEnabled(lim.key),
+					tooltip: `${translationKey}_tooltip`,
+				},
+			);
+		}
+
+		// Add toggles for entity limitations
+		for (const lim of this.service.getEntityLimitations()) {
 			const translationKey = `edu_tools.ui.classroom_limitations.toggles.${lim.key}`;
 			this.addToggle(
 				translationKey,

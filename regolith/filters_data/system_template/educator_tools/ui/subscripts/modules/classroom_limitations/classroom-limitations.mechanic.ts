@@ -12,10 +12,7 @@ import { ClassroomLimitationsService } from "./classroom-limitations.service";
 
 /**
  * ClassroomLimitationsMechanic
- * Encapsulates runtime enforcement of classroom limitation rules.
- */
-/**
- * ClassroomLimitationsMechanic
+ * Encapsulates runtime enforcement of classroom limitation rules for items and entities.
  * Uses system.runJob for inventory scanning so work is chunked safely across ticks.
  * Ensures no overlapping scans: a new job is only started once the previous job's generator finishes.
  */
@@ -112,6 +109,7 @@ export class ClassroomLimitationsMechanic {
 	}
 
 	public checkEntity(entity: Entity): void {
+		// Check if it's a restricted item entity
 		if (entity.typeId === "minecraft:item") {
 			const itemComp = entity.getComponent(
 				EntityItemComponent.componentId,
@@ -122,8 +120,32 @@ export class ClassroomLimitationsMechanic {
 			) {
 				entity.remove();
 			}
-		} else if (this.service.isItemRestricted(entity.typeId)) {
+		}
+		// Check if the item type itself is restricted
+		else if (this.service.isItemRestricted(entity.typeId)) {
 			entity.remove();
+		}
+		// Check if the entity type is restricted (e.g., wither, snow golem)
+		else if (this.service.isEntityRestricted(entity.typeId)) {
+			entity.remove();
+			// Try to notify nearby players
+			try {
+				const dimension = entity.dimension;
+				const location = entity.location;
+				const nearbyPlayers = dimension.getPlayers({
+					location: location,
+					maxDistance: 5,
+				});
+				for (const player of nearbyPlayers) {
+					if (!this.service.isTeacher(player)) {
+						player.sendMessage({
+							translate:
+								"edu_tools.message.classroom_limitations.entity_blocked",
+							with: [entity.typeId.split(":")[1]],
+						});
+					}
+				}
+			} catch {}
 		}
 	}
 }
