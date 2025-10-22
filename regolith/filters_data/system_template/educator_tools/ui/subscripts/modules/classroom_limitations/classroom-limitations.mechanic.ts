@@ -1,4 +1,11 @@
-import { world, system, Player } from "@minecraft/server";
+import {
+	world,
+	system,
+	Player,
+	Entity,
+	ItemComponent,
+	EntityItemComponent,
+} from "@minecraft/server";
 import { ClassroomLimitationsService } from "./classroom-limitations.service";
 
 /**
@@ -85,6 +92,22 @@ export class ClassroomLimitationsMechanic {
 		} catch {
 			// Fallback: mark not in progress so another attempt can be made later.
 			this.scanInProgress = false;
+		}
+	}
+
+	public checkEntity(entity: Entity): void {
+		if (entity.typeId === "minecraft:item") {
+			const itemComp = entity.getComponent(
+				EntityItemComponent.componentId,
+			) as EntityItemComponent;
+			if (
+				itemComp &&
+				this.service.isItemRestricted(itemComp.itemStack.typeId)
+			) {
+				entity.remove();
+			}
+		} else if (this.service.isItemRestricted(entity.typeId)) {
+			entity.remove();
 		}
 	}
 }
