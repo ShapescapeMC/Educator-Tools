@@ -1,10 +1,10 @@
 import { Module, ModuleManager } from "../../module-manager";
 import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
 import { PropertyStorage } from "@shapescape/storage";
-import { Player, world } from "@minecraft/server";
+import { Player } from "@minecraft/server";
 import { TeamsService } from "../teams/teams.service";
 import { ClassroomLimitationsMechanic } from "./classroom-limitations.mechanic";
+import { ClassroomLimitationsScene } from "./classroom-limitations.scene";
 
 /**
  * ClassroomLimitationsService
@@ -155,55 +155,5 @@ export class ClassroomLimitationsService implements Module {
 	/** Expose entity limitation definitions for scene */
 	public getEntityLimitations(): { key: string; entityIds: string[] }[] {
 		return this.entity_limitations;
-	}
-}
-
-/**
- * UI Scene for Classroom Limitations
- * Renders toggles for each restriction (items and entities).
- */
-class ClassroomLimitationsScene extends ModalUIScene {
-	constructor(
-		sceneManager: SceneManager,
-		context: any,
-		private service: ClassroomLimitationsService,
-	) {
-		super("classroom_limitations", context.getSourcePlayer(), "main");
-
-		// Add toggles dynamically based on service definitions for items
-		for (const lim of this.service.getItemLimitations()) {
-			const translationKey = `edu_tools.ui.classroom_limitations.toggles.${lim.key}`;
-			this.addToggle(
-				translationKey,
-				(value: boolean) => {
-					this.service.setRestriction(lim.key, value);
-				},
-				{
-					defaultValue: this.service.isRestrictionEnabled(lim.key),
-					tooltip: `${translationKey}_tooltip`,
-				},
-			);
-		}
-
-		// Add toggles for entity limitations
-		for (const lim of this.service.getEntityLimitations()) {
-			const translationKey = `edu_tools.ui.classroom_limitations.toggles.${lim.key}`;
-			this.addToggle(
-				translationKey,
-				(value: boolean) => {
-					this.service.setRestriction(lim.key, value);
-				},
-				{
-					defaultValue: this.service.isRestrictionEnabled(lim.key),
-					tooltip: `${translationKey}_tooltip`,
-				},
-			);
-		}
-
-		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
-			if (!r.canceled) {
-				sceneManager.goBackToScene(context, "main");
-			}
-		});
 	}
 }
