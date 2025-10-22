@@ -33,9 +33,19 @@ export class ClassroomLimitationsService implements Module {
 		{ key: "ender_pearls", itemIds: ["minecraft:ender_pearl"] },
 		{ key: "eggs", itemIds: ["minecraft:egg"] },
 		{ key: "arrows", itemIds: ["minecraft:arrow"] },
+		{ key: "fireworks", itemIds: ["minecraft:firework_rocket"] },
 		{ key: "elytra", itemIds: ["minecraft:elytra"] },
 		{ key: "tnt", itemIds: ["minecraft:tnt"] },
 		{ key: "dragon_egg", itemIds: ["minecraft:dragon_egg"] },
+		{
+			key: "potions",
+			itemIds: [
+				"minecraft:potion",
+				"minecraft:splash_potion",
+				"minecraft:lingering_potion",
+				"minecraft:ominous_bottle",
+			],
+		},
 	];
 
 	constructor(private readonly moduleManager: ModuleManager) {
