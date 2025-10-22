@@ -109,6 +109,7 @@ export class ClassroomLimitationsMechanic {
 	}
 
 	public checkEntity(entity: Entity): void {
+		let notify = false;
 		// Check if it's a restricted item entity
 		if (entity.typeId === "minecraft:item") {
 			const itemComp = entity.getComponent(
@@ -119,33 +120,34 @@ export class ClassroomLimitationsMechanic {
 				this.service.isItemRestricted(itemComp.itemStack.typeId)
 			) {
 				entity.remove();
+				notify = true;
 			}
 		}
 		// Check if the item type itself is restricted
 		else if (this.service.isItemRestricted(entity.typeId)) {
 			entity.remove();
+			notify = true;
 		}
 		// Check if the entity type is restricted (e.g., wither, snow golem)
 		else if (this.service.isEntityRestricted(entity.typeId)) {
 			entity.remove();
-			// Try to notify nearby players
-			try {
-				const dimension = entity.dimension;
-				const location = entity.location;
-				const nearbyPlayers = dimension.getPlayers({
-					location: location,
-					maxDistance: 5,
-				});
-				for (const player of nearbyPlayers) {
-					if (!this.service.isTeacher(player)) {
-						player.sendMessage({
-							translate:
-								"edu_tools.message.classroom_limitations.entity_blocked",
-							with: [entity.typeId.split(":")[1]],
-						});
-					}
+			notify = true;
+		}
+		if (notify) {
+			const dimension = entity.dimension;
+			const location = entity.location;
+			const nearbyPlayers = dimension.getPlayers({
+				location: location,
+				maxDistance: 5,
+			});
+			for (const player of nearbyPlayers) {
+				if (!this.service.isTeacher(player)) {
+					player.sendMessage({
+						translate: "edu_tools.message.classroom_limitations.entity_blocked",
+						with: [entity.typeId.split(":")[1]],
+					});
 				}
-			} catch {}
+			}
 		}
 	}
 }
