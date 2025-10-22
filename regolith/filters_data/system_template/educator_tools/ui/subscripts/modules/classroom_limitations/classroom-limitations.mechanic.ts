@@ -5,6 +5,8 @@ import {
 	Entity,
 	ItemComponent,
 	EntityItemComponent,
+	EntitySpawnAfterEvent,
+	EntityLoadAfterEvent,
 } from "@minecraft/server";
 import { ClassroomLimitationsService } from "./classroom-limitations.service";
 
@@ -26,6 +28,7 @@ export class ClassroomLimitationsMechanic {
 	public start(): void {
 		this.registerItemUseInterception();
 		this.scheduleInventoryScans();
+		this.registerEntitySpawnInterception();
 	}
 
 	/** Intercept restricted item usage (ender pearls, eggs, etc.) */
@@ -43,6 +46,19 @@ export class ClassroomLimitationsMechanic {
 					});
 				} catch {}
 			}
+		});
+	}
+
+	private registerEntitySpawnInterception(): void {
+		world.afterEvents.entitySpawn.subscribe((ev: EntitySpawnAfterEvent) => {
+			const entity: Entity = ev.entity;
+			if (!entity) return;
+			this.checkEntity(entity);
+		});
+		world.afterEvents.entityLoad.subscribe((ev: EntityLoadAfterEvent) => {
+			const entity: Entity = ev.entity;
+			if (!entity) return;
+			this.checkEntity(entity);
 		});
 	}
 
