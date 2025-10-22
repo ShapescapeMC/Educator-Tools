@@ -25,6 +25,7 @@ edu_tools.ui.main.buttons.assignments=Assignments
 edu_tools.ui.main.buttons.teams_management=Teams Management
 edu_tools.ui.main.buttons.focus_mode=Focus Mode
 edu_tools.ui.main.buttons.inventory_manage=Inventory Management
+edu_tools.ui.main.buttons.classroom_limitations=Classroom Limitations
 
 ### Team Selection Scene
 edu_tools.ui.team_select.title=§fSelect a Team
@@ -336,3 +337,16 @@ edu_tools.ui.timer.buttons.start=Start Timer
 edu_tools.ui.timer.buttons.remove=Remove Timer
 edu_tools.message.timer.time_left=§aTime left: §r%1 §a
 edu_tools.message.timer.times_up=§cTime's up!
+
+### Classroom Limitations Scene
+edu_tools.ui.classroom_limitations.title=§fClassroom Limitations
+edu_tools.ui.classroom_limitations.toggles.ender_pearls=Disable Ender Pearls
+edu_tools.ui.classroom_limitations.toggles.ender_pearls_tooltip=Prevent students from using or holding ender pearls.
+edu_tools.ui.classroom_limitations.toggles.eggs=Disable Eggs
+edu_tools.ui.classroom_limitations.toggles.eggs_tooltip=Prevent students from throwing eggs.
+edu_tools.ui.classroom_limitations.toggles.arrows=Disable Arrows
+edu_tools.ui.classroom_limitations.toggles.arrows_tooltip=Remove arrows from inventories and block their usage.
+edu_tools.ui.classroom_limitations.toggles.elytra=Disable Elytra
+edu_tools.ui.classroom_limitations.toggles.elytra_tooltip=Prevent students from gliding using Elytra.
+edu_tools.message.classroom_limitations.item_removed=§cRestricted item removed: §r%1
+edu_tools.message.classroom_limitations.attempt_blocked=§cYou cannot use this item right now.
