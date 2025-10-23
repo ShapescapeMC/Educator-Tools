@@ -14,6 +14,9 @@ export class ClassroomLimitationsScene extends ModalUIScene {
 	) {
 		super("classroom_limitations", context.getSourcePlayer(), "main");
 
+		this.addLabel({
+			translate: "edu_tools.ui.classroom_limitations.body.items",
+		});
 		// Add toggles dynamically based on service definitions for items
 		for (const lim of this.service.getItemLimitations()) {
 			const translationKey = `edu_tools.ui.classroom_limitations.toggles.${lim.key}`;
@@ -29,6 +32,9 @@ export class ClassroomLimitationsScene extends ModalUIScene {
 			);
 		}
 
+		this.addLabel({
+			translate: "edu_tools.ui.classroom_limitations.body.entities",
+		});
 		// Add toggles for entity limitations
 		for (const lim of this.service.getEntityLimitations()) {
 			const translationKey = `edu_tools.ui.classroom_limitations.toggles.${lim.key}`;
