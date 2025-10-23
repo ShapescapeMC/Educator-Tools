@@ -76,7 +76,12 @@ export class ClassroomLimitationsMechanic {
 
 		const mechanic = this; // capture for completion flag
 		function* scanGenerator(): Generator<void, void, unknown> {
-			for (const player of players) {
+			for (let player of players) {
+				if (!player.isValid) {
+					// Refresh player reference if invalid
+					player = world.getPlayers().find((p) => p.id === player.id)!;
+					if (!player) continue;
+				}
 				if (mechanic.service.isTeacher(player)) continue;
 				const inv = player.getComponent(
 					EntityInventoryComponent.componentId,
