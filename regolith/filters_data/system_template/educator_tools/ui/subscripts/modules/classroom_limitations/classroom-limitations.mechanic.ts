@@ -3,7 +3,6 @@ import {
 	system,
 	Player,
 	Entity,
-	ItemComponent,
 	EntityItemComponent,
 	EntitySpawnAfterEvent,
 	EntityLoadAfterEvent,
