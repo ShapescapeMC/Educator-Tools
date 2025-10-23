@@ -7,6 +7,7 @@ import {
 	EntityItemComponent,
 	EntitySpawnAfterEvent,
 	EntityLoadAfterEvent,
+	EntityInventoryComponent,
 } from "@minecraft/server";
 import { ClassroomLimitationsService } from "./classroom-limitations.service";
 
@@ -77,7 +78,9 @@ export class ClassroomLimitationsMechanic {
 		function* scanGenerator(): Generator<void, void, unknown> {
 			for (const player of players) {
 				if (mechanic.service.isTeacher(player)) continue;
-				const inv = player.getComponent("minecraft:inventory") as any;
+				const inv = player.getComponent(
+					EntityInventoryComponent.componentId,
+				) as EntityInventoryComponent;
 				const container = inv?.container;
 				if (!container) continue;
 				for (let i = 0; i < container.size; i++) {
