@@ -25,7 +25,6 @@ import { ClassroomLimitationsScene } from "./classroom-limitations.scene";
  *  - A "teacher" is any player contained in the `system_teachers` team.
  *  - Restrictions apply to all non-teacher players (students + any others not in teachers team).
  *  - Mechanics are enforced via event interception (itemUse, entitySpawn) and periodic inventory scans.
- *  - If API events are missing in a future version, fallback relies only on inventory scans.
  */
 export class ClassroomLimitationsService implements Module {
 	readonly id = "classroom_limitations";
