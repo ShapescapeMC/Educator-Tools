@@ -32,7 +32,7 @@ export class ClassroomLimitationsService implements Module {
 	private readonly storage: PropertyStorage;
 	private readonly teamsService: TeamsService;
 	private mechanic?: ClassroomLimitationsMechanic;
-	private readonly item_limitations = [
+	private readonly itemLimitations = [
 		{ key: "ender_pearls", itemIds: ["minecraft:ender_pearl"] },
 		{ key: "eggs", itemIds: ["minecraft:egg"] },
 		{ key: "arrows", itemIds: ["minecraft:arrow"] },
@@ -51,7 +51,7 @@ export class ClassroomLimitationsService implements Module {
 		},
 	];
 
-	private readonly entity_limitations = [
+	private readonly entityLimitations = [
 		{ key: "wither", entityIds: ["minecraft:wither"] },
 		{ key: "snow_golem", entityIds: ["minecraft:snow_golem"] },
 		{ key: "iron_golem", entityIds: ["minecraft:iron_golem"] },
@@ -69,14 +69,14 @@ export class ClassroomLimitationsService implements Module {
 
 	/** Ensure default values exist */
 	private ensureDefaults(): void {
-		for (const l of this.item_limitations) {
+		for (const l of this.itemLimitations) {
 			const key = this.getStorageKey(l.key);
 			if (this.storage.get(key) === undefined) {
 				// By default restrictions disabled
 				this.storage.set(key, false);
 			}
 		}
-		for (const l of this.entity_limitations) {
+		for (const l of this.entityLimitations) {
 			const key = this.getStorageKey(l.key);
 			if (this.storage.get(key) === undefined) {
 				// By default restrictions disabled
@@ -102,7 +102,7 @@ export class ClassroomLimitationsService implements Module {
 
 	/** Returns true if this item typeId is currently restricted */
 	public isItemRestricted(typeId: string): boolean {
-		for (const lim of this.item_limitations) {
+		for (const lim of this.itemLimitations) {
 			if (!this.isRestrictionEnabled(lim.key)) continue;
 			if (lim.itemIds.includes(typeId)) return true;
 		}
@@ -111,7 +111,7 @@ export class ClassroomLimitationsService implements Module {
 
 	/** Returns true if this entity typeId is currently restricted */
 	public isEntityRestricted(typeId: string): boolean {
-		for (const lim of this.entity_limitations) {
+		for (const lim of this.entityLimitations) {
 			if (!this.isRestrictionEnabled(lim.key)) continue;
 			if (lim.entityIds.includes(typeId)) return true;
 		}
@@ -148,11 +148,11 @@ export class ClassroomLimitationsService implements Module {
 
 	/** Expose limitation definitions for scene */
 	public getItemLimitations(): { key: string; itemIds: string[] }[] {
-		return this.item_limitations;
+		return this.itemLimitations;
 	}
 
 	/** Expose entity limitation definitions for scene */
 	public getEntityLimitations(): { key: string; entityIds: string[] }[] {
-		return this.entity_limitations;
+		return this.entityLimitations;
 	}
 }
