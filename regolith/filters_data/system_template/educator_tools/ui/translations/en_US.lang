@@ -161,6 +161,7 @@ edu_tools.ui.world_management.title=§fWorld Management
 edu_tools.ui.world_management.body=World Management is a tool that allows you to manage the world settings, such as weather, time, and more.
 edu_tools.ui.world_management.buttons.world_settings=World Settings
 edu_tools.ui.world_management.buttons.environment=Environment
+edu_tools.ui.world_management.buttons.classroom_limitations=Classroom Limitations
 edu_tools.ui.world_settings.title=§fWorld Settings
 edu_tools.ui.world_settings.toggles.mob_spawning=Mob Spawning
 edu_tools.ui.world_settings.toggles.mob_spawning_tooltip=Enable or disable mob spawning
