@@ -145,14 +145,26 @@ export class ClassroomLimitationsMechanic {
 				maxDistance: 5,
 			});
 			for (const player of nearbyPlayers) {
-				if (!this.service.isTeacher(player)) {
-					player.sendMessage({
-						translate: "edu_tools.message.classroom_limitations.entity_blocked",
-						with: [entity.typeId.split(":")[1]],
-					});
-				}
+				player.sendMessage({
+					translate: "edu_tools.message.classroom_limitations.entity_blocked",
+					with: [
+						ClassroomLimitationsMechanic.toTitleCase(
+							entity.typeId.split(":")[1],
+						),
+					],
+				});
 			}
 			entity.remove();
 		}
+	}
+
+	private static toTitleCase(str: string): string {
+		return str
+			.toLowerCase()
+			.split("_")
+			.map((word: any) => {
+				return word.charAt(0).toUpperCase() + word.slice(1);
+			})
+			.join(" ");
 	}
 }
