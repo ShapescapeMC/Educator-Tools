@@ -30,7 +30,7 @@ export class ClassroomLimitationsService implements Module {
 	readonly id = "classroom_limitations";
 
 	private readonly storage: PropertyStorage;
-	private readonly teamsService: TeamsService;
+	private teamsService: TeamsService;
 	private mechanic?: ClassroomLimitationsMechanic;
 	private readonly itemLimitations = [
 		{ key: "ender_pearls", itemIds: ["minecraft:ender_pearl"] },
@@ -63,7 +63,6 @@ export class ClassroomLimitationsService implements Module {
 	constructor(private readonly moduleManager: ModuleManager) {
 		// Acquire sub storage
 		this.storage = moduleManager.getStorage().getSubStorage(this.id);
-		this.teamsService = moduleManager.getModule<TeamsService>(TeamsService.id)!;
 		this.ensureDefaults();
 	}
 
@@ -144,6 +143,9 @@ export class ClassroomLimitationsService implements Module {
 	initialize(): void {
 		this.mechanic = new ClassroomLimitationsMechanic(this);
 		this.mechanic.start();
+		this.teamsService = this.moduleManager.getModule<TeamsService>(
+			TeamsService.id,
+		)!;
 	}
 
 	/** Expose limitation definitions for scene */
