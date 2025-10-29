@@ -116,7 +116,7 @@ export class ClassroomLimitationsMechanic {
 	}
 
 	public checkEntity(entity: Entity): void {
-		let notify = false;
+		let remove = false;
 		// Check if it's a restricted item entity
 		if (entity.typeId === "minecraft:item") {
 			const itemComp = entity.getComponent(
@@ -126,21 +126,18 @@ export class ClassroomLimitationsMechanic {
 				itemComp &&
 				this.service.isItemRestricted(itemComp.itemStack.typeId)
 			) {
-				entity.remove();
-				notify = true;
+				remove = true;
 			}
 		}
 		// Check if the item type itself is restricted
 		else if (this.service.isItemRestricted(entity.typeId)) {
-			entity.remove();
-			notify = true;
+			remove = true;
 		}
 		// Check if the entity type is restricted (e.g., wither, snow golem)
 		else if (this.service.isEntityRestricted(entity.typeId)) {
-			entity.remove();
-			notify = true;
+			remove = true;
 		}
-		if (notify) {
+		if (remove) {
 			const dimension = entity.dimension;
 			const location = entity.location;
 			const nearbyPlayers = dimension.getPlayers({
@@ -155,6 +152,7 @@ export class ClassroomLimitationsMechanic {
 					});
 				}
 			}
+			entity.remove();
 		}
 	}
 }
