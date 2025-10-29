@@ -7,6 +7,7 @@ import {
 	EntitySpawnAfterEvent,
 	EntityLoadAfterEvent,
 	EntityInventoryComponent,
+	DimensionTypes,
 } from "@minecraft/server";
 import { ClassroomLimitationsService } from "./classroom-limitations.service";
 
@@ -113,6 +114,23 @@ export class ClassroomLimitationsMechanic {
 			// Fallback: mark not in progress so another attempt can be made later.
 			this.scanInProgress = false;
 		}
+	}
+
+	public launchEntityScanJob(): void {
+		const mechanic = this;
+		const dimensionTypeIds = DimensionTypes.getAll().map((d) => d.typeId);
+		function* entityScanGenerator(): Generator<void, void, unknown> {
+			for (const dimTypeId of dimensionTypeIds) {
+				const dim = world.getDimension(dimTypeId);
+				const entities = dim.getEntities({});
+				for (const entity of entities) {
+					mechanic.checkEntity(entity);
+					yield;
+				}
+				yield;
+			}
+		}
+		system.runJob(entityScanGenerator());
 	}
 
 	public checkEntity(entity: Entity): void {

@@ -148,6 +148,11 @@ export class ClassroomLimitationsService implements Module {
 		)!;
 	}
 
+	public onSettingsUpdated(): void {
+		if (!this.mechanic) return;
+		this.mechanic.launchEntityScanJob();
+	}
+
 	/** Expose limitation definitions for scene */
 	public getItemLimitations(): { key: string; itemIds: string[] }[] {
 		return this.itemLimitations;

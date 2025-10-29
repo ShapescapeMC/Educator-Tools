@@ -53,6 +53,7 @@ export class ClassroomLimitationsScene extends ModalUIScene {
 		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
 			if (!r.canceled) {
 				sceneManager.goBack(context, 1); // Go back to previous scene
+				this.service.onSettingsUpdated();
 			}
 		});
 	}
