@@ -25,11 +25,11 @@ export interface Timer {
 	started: boolean;
 	/** Whether the timer is currently paused */
 	isPaused: boolean;
-	/** Game tick when the timer was started */
+	/** Timestamp when the timer was started (milliseconds since epoch) */
 	startedAt: number;
-	/** Game tick when the timer was paused (0 if not paused) */
+	/** Timestamp when the timer was paused (0 if not paused) */
 	pausedAt: number;
-	/** Total duration the timer has been paused (in ticks) */
+	/** Total duration the timer has been paused (in milliseconds) */
 	pauseDuration: number;
 	/** Optional entity ID for the visual timer entity */
 	entityId?: string;
@@ -61,7 +61,7 @@ export enum TimerDuration {
 export class TimerService implements Module {
 	public static readonly id = "timer";
 	public readonly id = TimerService.id;
-	private timerMechanic: TimerMechanic;
+	private timerMechanic: TimerMechanic | undefined;
 
 	/** Storage instance for persisting timer data */
 	private readonly storage: PropertyStorage;
@@ -245,7 +245,7 @@ export class TimerService implements Module {
 
 		this.updateTimer({
 			isPaused: true,
-			pausedAt: system.currentTick,
+			pausedAt: Date.now(),
 		});
 	}
 
@@ -262,8 +262,8 @@ export class TimerService implements Module {
 			return;
 		}
 
-		// Calculate how long the timer was paused
-		const pauseTime = system.currentTick - timer.pausedAt;
+		// Calculate how long the timer was paused (in milliseconds)
+		const pauseTime = Date.now() - timer.pausedAt;
 
 		this.updateTimer({
 			isPaused: false,
@@ -273,9 +273,9 @@ export class TimerService implements Module {
 	}
 
 	/**
-	 * Calculates the remaining time in ticks for the current timer
+	 * Calculates the remaining time in milliseconds for the current timer
 	 * Takes into account pause duration for accurate calculation
-	 * @returns Remaining time in ticks (0 if timer expired or doesn't exist)
+	 * @returns Remaining time in milliseconds (0 if timer expired or doesn't exist)
 	 */
 	getRemainingTime(): number {
 		const timer = this.getTimer();
@@ -283,7 +283,7 @@ export class TimerService implements Module {
 			return 0;
 		}
 		if (!timer.started) {
-			return timer.duration * 20; // Full duration in ticks if not started
+			return timer.duration * 1000; // Full duration in milliseconds if not started
 		}
 
 		let elapsed: number;
@@ -293,11 +293,11 @@ export class TimerService implements Module {
 			elapsed = timer.pausedAt - timer.startedAt - timer.pauseDuration;
 		} else {
 			// Calculate current elapsed time (excluding pause duration)
-			elapsed = system.currentTick - timer.startedAt - timer.pauseDuration;
+			elapsed = Date.now() - timer.startedAt - timer.pauseDuration;
 		}
 
-		const totalDurationTicks = timer.duration * 20; // Convert seconds to ticks
-		const remaining = totalDurationTicks - elapsed;
+		const totalDurationMs = timer.duration * 1000; // Convert seconds to milliseconds
+		const remaining = totalDurationMs - elapsed;
 
 		return Math.max(0, remaining);
 	}
@@ -335,10 +335,10 @@ export class TimerService implements Module {
 			console.warn("[TimerService] Timer is already running.");
 			return;
 		}
-		// Set the started state and current tick as the start time
+		// Set the started state and current timestamp as the start time
 		this.updateTimer({
 			started: true,
-			startedAt: system.currentTick,
+			startedAt: Date.now(),
 			isPaused: false,
 			pausedAt: 0,
 			pauseDuration: 0,
@@ -361,7 +361,7 @@ export class TimerService implements Module {
 
 		// Show blinking display when timer is not running or is paused
 		if (!isRunning) {
-			const shouldShow = Math.floor(system.currentTick / 20) % 2 === 0;
+			const shouldShow = Math.floor(Date.now() / 1000) % 2 === 0;
 			entity.nameTag = shouldShow
 				? this.formatTime(this.getRemainingTime())
 				: "--:--:--";
@@ -385,8 +385,9 @@ export class TimerService implements Module {
 			return;
 		}
 
-		if (remainingTime / 20 < 11) {
-			if (remainingTime < 20) {
+		const remainingSeconds = remainingTime / 1000;
+		if (remainingSeconds < 11) {
+			if (remainingTime < 1000) {
 				world.sendMessage([
 					{
 						translate: "edu_tools.message.timer.times_up",
@@ -402,7 +403,7 @@ export class TimerService implements Module {
 						with: [this.formatTime(remainingTime)],
 					},
 					// select second or seconds based on remaining time
-					remainingTime / 20 === 1
+					remainingSeconds === 1
 						? { translate: "edu_tools.ui.timer.time.second" }
 						: { translate: "edu_tools.ui.timer.time.seconds" },
 				]);
@@ -421,7 +422,7 @@ export class TimerService implements Module {
 		);
 
 		// Update health bar to show progress
-		this.updateEntityHealth(entity, remainingTime, timer.duration * 20);
+		this.updateEntityHealth(entity, remainingTime, timer.duration * 1000);
 
 		if (!timer.entityShown) {
 			const player = world.getAllPlayers()[0]; // Get the first player
@@ -432,18 +433,17 @@ export class TimerService implements Module {
 	}
 
 	/**
-	 * Formats time in ticks to HH:MM:SS string
-	 * @param ticks Time in game ticks
+	 * Formats time in milliseconds to HH:MM:SS string
+	 * @param milliseconds Time in milliseconds
 	 * @returns Formatted time string
 	 */
-	private formatTime(ticks: number): string {
-		const seconds = Math.floor(ticks / 20);
-		const minutes = Math.floor(seconds / 60);
-		const hours = Math.floor(minutes / 60);
+	private formatTime(milliseconds: number): string {
+		const totalSeconds = Math.floor(milliseconds / 1000);
+		const seconds = totalSeconds % 60;
+		const minutes = Math.floor(totalSeconds / 60) % 60;
+		const hours = Math.floor(totalSeconds / 3600);
 
-		return `${hours}:${(minutes % 60).toString().padStart(2, "0")}:${(
-			seconds % 60
-		)
+		return `${hours}:${minutes.toString().padStart(2, "0")}:${seconds
 			.toString()
 			.padStart(2, "0")}`;
 	}
@@ -451,8 +451,8 @@ export class TimerService implements Module {
 	/**
 	 * Updates the entity's health component to represent timer progress
 	 * @param entity The timer entity
-	 * @param remainingTime Remaining time in ticks
-	 * @param totalTime Total timer duration in ticks
+	 * @param remainingTime Remaining time in milliseconds
+	 * @param totalTime Total timer duration in milliseconds
 	 */
 	private updateEntityHealth(
 		entity: Entity,
