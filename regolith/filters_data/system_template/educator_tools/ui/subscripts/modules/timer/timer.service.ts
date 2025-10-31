@@ -174,10 +174,20 @@ export class TimerService implements Module {
 	 */
 	getTimer(): Timer | undefined {
 		const t = this.storage.get("timer") as Timer | undefined;
+		let mutated = false;
 		if (t) {
 			// Backward compatibility: if fields missing populate them
-			if (t.lastTick === undefined) t.lastTick = system.currentTick;
-			if (t.lastRealTime === undefined) t.lastRealTime = Date.now();
+			if (t.lastTick === undefined) {
+				t.lastTick = system.currentTick;
+				mutated = true;
+			}
+			if (t.lastRealTime === undefined) {
+				t.lastRealTime = Date.now();
+				mutated = true;
+			}
+			if (mutated) {
+				this.saveTimer(t);
+			}
 		}
 		return t;
 	}
