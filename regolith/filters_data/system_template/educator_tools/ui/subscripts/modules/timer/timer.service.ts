@@ -393,7 +393,10 @@ export class TimerService implements Module {
 		if (realDelta < expectedMs) offlineMs = 0;
 		// 4. Extremely huge offline vs startedAt (> 365 days) -> likely system clock change; clamp to one year to stay unlimited but sane.
 		const ONE_YEAR_MS = 365 * 24 * 3600 * 1000;
-		if (offlineMs > ONE_YEAR_MS) offlineMs = ONE_YEAR_MS;
+		if (offlineMs > ONE_YEAR_MS) {
+			console.warn('[TimerService] Detected offline time exceeding one year, clamping to prevent clock skew issues.');
+			offlineMs = ONE_YEAR_MS;
+		}
 		// (No fixed cap like 24h; genuine long breaks are now supported.)
 		if (offlineMs > 0 && !timer.isPaused) {
 			// Treat offline time as additional pauseDuration so remaining time not reduced
