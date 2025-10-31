@@ -463,8 +463,11 @@ export class TimerService implements Module {
 		}
 
 		const remainingSeconds = remainingTime / 1000;
+		// Show countdown warnings and final alert in the last 11 seconds
 		if (remainingSeconds < 11) {
-			if (remainingTime < 1000) {
+			// Show "times up" message only in the final 50ms (approximately 1 tick)
+			// This prevents premature "times up" messages while still giving a final warning
+			if (remainingTime < 50) {
 				world.sendMessage([
 					{
 						translate: "edu_tools.message.timer.times_up",
@@ -474,6 +477,7 @@ export class TimerService implements Module {
 					player.playSound("random.anvil_use", { volume: 0.3, pitch: 2 });
 				});
 			} else {
+				// Countdown warnings for 1-10 seconds remaining
 				world.sendMessage([
 					{
 						translate: "edu_tools.message.timer.time_left",
