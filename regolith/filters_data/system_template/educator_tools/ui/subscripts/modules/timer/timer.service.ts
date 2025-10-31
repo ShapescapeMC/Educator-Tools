@@ -35,6 +35,10 @@ export interface Timer {
 	entityId?: string;
 	/** Whether the timer entity is currently visible */
 	entityShown?: boolean;
+	/** Last game tick recorded for activity tracking */
+	lastTick?: number;
+	/** Last real world timestamp recorded (ms) */
+	lastRealTime?: number;
 }
 
 /**
@@ -139,6 +143,8 @@ export class TimerService implements Module {
 			pauseDuration: 0,
 			entityId: undefined,
 			entityShown: false,
+			lastTick: system.currentTick,
+			lastRealTime: Date.now(),
 			...timer, // Merge with provided properties
 		};
 		if (!timer.entityId) {
@@ -167,7 +173,13 @@ export class TimerService implements Module {
 	 * @returns Current timer or undefined if no timer exists
 	 */
 	getTimer(): Timer | undefined {
-		return this.storage.get("timer") as Timer | undefined;
+		const t = this.storage.get("timer") as Timer | undefined;
+		if (t) {
+			// Backward compatibility: if fields missing populate them
+			if (t.lastTick === undefined) t.lastTick = system.currentTick;
+			if (t.lastRealTime === undefined) t.lastRealTime = Date.now();
+		}
+		return t;
 	}
 
 	/**
@@ -269,6 +281,8 @@ export class TimerService implements Module {
 			isPaused: false,
 			pausedAt: 0,
 			pauseDuration: timer.pauseDuration + pauseTime,
+			lastTick: system.currentTick,
+			lastRealTime: Date.now(),
 		});
 	}
 
@@ -342,8 +356,48 @@ export class TimerService implements Module {
 			isPaused: false,
 			pausedAt: 0,
 			pauseDuration: 0,
+			lastTick: system.currentTick,
+			lastRealTime: Date.now(),
 		});
 		this.updateTimerEntity(); // Update the entity to reflect the new timer state
+	}
+
+	/**
+	 * Detects inactivity (time while game not open) and adjusts pauseDuration so timer "waits" during offline time.
+	 * Uses difference between system ticks and real time to avoid double-counting lag.
+	 */
+	handleInactivity(): void {
+		const timer = this.getTimer();
+		if (!timer || !timer.started) return;
+		// If currently paused we still update markers but don't add extra pauseDuration
+		const currentTick = system.currentTick;
+		const now = Date.now();
+		const TICK_MS = 50; // Expected ms per tick
+		if (timer.lastTick === undefined || timer.lastRealTime === undefined) {
+			this.updateTimer({ lastTick: currentTick, lastRealTime: now });
+			return;
+		}
+		const tickDelta = currentTick - timer.lastTick;
+		const realDelta = now - timer.lastRealTime;
+		// Expected real time that should have passed given tickDelta
+		const expectedMs = tickDelta * TICK_MS;
+		// Offline time = real time passed minus expected time (if positive and reasonable)
+		let offlineMs = realDelta - expectedMs;
+		// Filter out negative or tiny (<250ms) differences (normal lag jitter)
+		if (offlineMs < 250) offlineMs = 0;
+		// Cap offline to 24h to avoid absurd adjustments
+		if (offlineMs > 24 * 3600 * 1000) offlineMs = 24 * 3600 * 1000;
+		if (offlineMs > 0 && !timer.isPaused) {
+			// Treat offline time as additional pauseDuration so remaining time not reduced
+			this.updateTimer({
+				pauseDuration: timer.pauseDuration + offlineMs,
+				lastTick: currentTick,
+				lastRealTime: now,
+			});
+		} else {
+			// Just refresh markers
+			this.updateTimer({ lastTick: currentTick, lastRealTime: now });
+		}
 	}
 
 	/**
