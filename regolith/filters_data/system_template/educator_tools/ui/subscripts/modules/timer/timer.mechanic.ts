@@ -15,6 +15,8 @@ export class TimerMechanic {
 	}
 
 	tick(): void {
+		// First account for any inactivity (game closed) time so countdown remains fair
+		this.timerService.handleInactivity();
 		this.timerService.updateTimerEntity();
 	}
 
