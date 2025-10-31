@@ -132,9 +132,9 @@ export class TimerEditScene extends ModalUIScene {
 	}
 
 	private applyChanges(context: SceneContext): void {
-		const duration = context.getData("timer_duration") || 60;
-		const showTimer = context.getData("show_timer") || true;
-		const countOffline = context.getData("count_offline") || false;
+		const duration = context.getData("timer_duration") ?? 60;
+		const showTimer = context.getData("show_timer") ?? true;
+		const countOffline = context.getData("count_offline") ?? false;
 		const timer: Partial<Timer> = {
 			duration: duration,
 			entityShown: showTimer,
