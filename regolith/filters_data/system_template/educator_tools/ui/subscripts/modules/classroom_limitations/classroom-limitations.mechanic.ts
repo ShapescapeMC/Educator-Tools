@@ -18,6 +18,9 @@ import { ClassroomLimitationsService } from "./classroom-limitations.service";
  * Ensures no overlapping scans: a new job is only started once the previous job's generator finishes.
  */
 export class ClassroomLimitationsMechanic {
+	private static readonly BASE_SCAN_INTERVAL = 40; // Base interval in ticks for inventory scans
+	private static readonly SCAN_INTERVAL_JITTER = 20; // Random jitter range to avoid synchronized scans
+
 	private scanInProgress = false;
 
 	constructor(private readonly service: ClassroomLimitationsService) {}
@@ -66,7 +69,7 @@ export class ClassroomLimitationsMechanic {
 		system.runInterval(() => {
 			if (this.scanInProgress) return;
 			this.launchInventoryScanJob();
-		}, 40 + Math.floor(Math.random() * 20));
+		}, ClassroomLimitationsMechanic.BASE_SCAN_INTERVAL + Math.floor(Math.random() * ClassroomLimitationsMechanic.SCAN_INTERVAL_JITTER));
 	}
 
 	/** Launch job using generator for incremental work */
