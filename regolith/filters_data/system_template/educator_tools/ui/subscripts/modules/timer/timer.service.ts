@@ -384,6 +384,8 @@ export class TimerService implements Module {
 		const currentTick = system.currentTick;
 		const now = Date.now();
 		const TICK_MS = 50; // Expected ms per tick
+		// Ignore differences under this threshold as they likely represent normal tick timing variance or brief lag spikes
+		const MIN_OFFLINE_THRESHOLD_MS = 250;
 		if (timer.lastTick === undefined || timer.lastRealTime === undefined) {
 			this.updateTimer({ lastTick: currentTick, lastRealTime: now });
 			return;
@@ -395,8 +397,8 @@ export class TimerService implements Module {
 		// Offline time = real time passed minus expected time (if positive and reasonable)
 		let offlineMs = realDelta - expectedMs;
 		// SAFETY HEURISTICS
-		// 1. Negative or tiny (<250ms) differences -> treat as jitter, ignore.
-		if (offlineMs < 250) offlineMs = 0;
+		// 1. Negative or tiny differences -> treat as jitter, ignore.
+		if (offlineMs < MIN_OFFLINE_THRESHOLD_MS) offlineMs = 0;
 		// 2. Tick rollback (tickDelta < 0) indicates possible world reload with lost state; ignore offline.
 		if (tickDelta < 0) offlineMs = 0;
 		// 3. Suspicious ratio: if realDelta is less than expectedMs (lag spike) no offline adjustment.
