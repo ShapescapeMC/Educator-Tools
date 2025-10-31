@@ -18,6 +18,8 @@ import { ClassroomLimitationsService } from "./classroom-limitations.service";
  * Ensures no overlapping scans: a new job is only started once the previous job's generator finishes.
  */
 export class ClassroomLimitationsMechanic {
+	/** Maximum distance in blocks to notify players about blocked entities */
+	private static readonly NOTIFICATION_RADIUS = 5;
 	private static readonly BASE_SCAN_INTERVAL = 40; // Base interval in ticks for inventory scans
 	private static readonly SCAN_INTERVAL_JITTER = 20; // Random jitter range to avoid synchronized scans
 
@@ -163,7 +165,7 @@ export class ClassroomLimitationsMechanic {
 			const location = entity.location;
 			const nearbyPlayers = dimension.getPlayers({
 				location: location,
-				maxDistance: 5,
+				maxDistance: ClassroomLimitationsMechanic.NOTIFICATION_RADIUS,
 			});
 			for (const player of nearbyPlayers) {
 				player.sendMessage({
