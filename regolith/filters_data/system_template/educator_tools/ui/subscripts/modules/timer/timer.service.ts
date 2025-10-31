@@ -39,6 +39,8 @@ export interface Timer {
 	lastTick?: number;
 	/** Last real world timestamp recorded (ms) */
 	lastRealTime?: number;
+	/** If true, offline time counts down (timer continues while game is closed). If false, offline time is paused. */
+	countOffline?: boolean;
 }
 
 /**
@@ -145,6 +147,7 @@ export class TimerService implements Module {
 			entityShown: false,
 			lastTick: system.currentTick,
 			lastRealTime: Date.now(),
+			countOffline: false,
 			...timer, // Merge with provided properties
 		};
 		if (!timer.entityId) {
@@ -183,6 +186,11 @@ export class TimerService implements Module {
 			}
 			if (t.lastRealTime === undefined) {
 				t.lastRealTime = Date.now();
+				mutated = true;
+			}
+			if (t.countOffline === undefined) {
+				// Default old timers to NOT counting offline time (i.e., preserve previous pause-on-offline behavior)
+				t.countOffline = false;
 				mutated = true;
 			}
 			if (mutated) {
@@ -406,17 +414,24 @@ export class TimerService implements Module {
 		// 4. Extremely huge offline vs startedAt (> 365 days) -> likely system clock change; clamp to one year to stay unlimited but sane.
 		const ONE_YEAR_MS = 365 * 24 * 3600 * 1000;
 		if (offlineMs > ONE_YEAR_MS) {
-			console.warn('[TimerService] Detected offline time exceeding one year, clamping to prevent clock skew issues.');
+			console.warn(
+				"[TimerService] Detected offline time exceeding one year, clamping to prevent clock skew issues.",
+			);
 			offlineMs = ONE_YEAR_MS;
 		}
 		// (No fixed cap like 24h; genuine long breaks are now supported.)
 		if (offlineMs > 0 && !timer.isPaused) {
-			// Treat offline time as additional pauseDuration so remaining time not reduced
-			this.updateTimer({
-				pauseDuration: timer.pauseDuration + offlineMs,
-				lastTick: currentTick,
-				lastRealTime: now,
-			});
+			if (timer.countOffline) {
+				// Timer counts down while offline: we do NOT add offlineMs to pauseDuration; just refresh markers.
+				this.updateTimer({ lastTick: currentTick, lastRealTime: now });
+			} else {
+				// Pause while offline: convert offline time into pauseDuration so remaining time is preserved
+				this.updateTimer({
+					pauseDuration: timer.pauseDuration + offlineMs,
+					lastTick: currentTick,
+					lastRealTime: now,
+				});
+			}
 		} else {
 			// Just refresh markers
 			this.updateTimer({ lastTick: currentTick, lastRealTime: now });
