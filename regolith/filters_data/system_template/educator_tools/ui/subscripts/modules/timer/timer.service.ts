@@ -365,6 +365,7 @@ export class TimerService implements Module {
 	/**
 	 * Detects inactivity (time while game not open) and adjusts pauseDuration so timer "waits" during offline time.
 	 * Uses difference between system ticks and real time to avoid double-counting lag.
+	 * Unlimited offline time supported, with safety heuristics to ignore corrupted or implausible data.
 	 */
 	handleInactivity(): void {
 		const timer = this.getTimer();
@@ -383,10 +384,17 @@ export class TimerService implements Module {
 		const expectedMs = tickDelta * TICK_MS;
 		// Offline time = real time passed minus expected time (if positive and reasonable)
 		let offlineMs = realDelta - expectedMs;
-		// Filter out negative or tiny (<250ms) differences (normal lag jitter)
+		// SAFETY HEURISTICS
+		// 1. Negative or tiny (<250ms) differences -> treat as jitter, ignore.
 		if (offlineMs < 250) offlineMs = 0;
-		// Cap offline to 24h to avoid absurd adjustments
-		if (offlineMs > 24 * 3600 * 1000) offlineMs = 24 * 3600 * 1000;
+		// 2. Tick rollback (tickDelta < 0) indicates possible world reload with lost state; ignore offline.
+		if (tickDelta < 0) offlineMs = 0;
+		// 3. Suspicious ratio: if realDelta is less than expectedMs (lag spike) no offline adjustment.
+		if (realDelta < expectedMs) offlineMs = 0;
+		// 4. Extremely huge offline vs startedAt (> 365 days) -> likely system clock change; clamp to one year to stay unlimited but sane.
+		const ONE_YEAR_MS = 365 * 24 * 3600 * 1000;
+		if (offlineMs > ONE_YEAR_MS) offlineMs = ONE_YEAR_MS;
+		// (No fixed cap like 24h; genuine long breaks are now supported.)
 		if (offlineMs > 0 && !timer.isPaused) {
 			// Treat offline time as additional pauseDuration so remaining time not reduced
 			this.updateTimer({
