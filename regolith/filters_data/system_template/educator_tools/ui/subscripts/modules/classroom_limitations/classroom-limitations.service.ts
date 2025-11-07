@@ -21,10 +21,6 @@ import { ClassroomLimitationsScene } from "./classroom-limitations.scene";
  *  - enabled_snow_golem
  *  ... etc
  *
- * Assumptions:
- *  - A "teacher" is any player contained in the `system_teachers` team.
- *  - Restrictions apply to all non-teacher players (students + any others not in teachers team).
- *  - Mechanics are enforced via event interception (itemUse, entitySpawn) and periodic inventory scans.
  */
 export class ClassroomLimitationsService implements Module {
 	readonly id = "classroom_limitations";
