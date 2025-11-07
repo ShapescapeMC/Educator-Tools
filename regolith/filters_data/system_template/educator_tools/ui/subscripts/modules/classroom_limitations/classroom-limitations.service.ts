@@ -30,7 +30,7 @@ export class ClassroomLimitationsService implements Module {
 	readonly id = "classroom_limitations";
 
 	private readonly storage: PropertyStorage;
-	private teamsService: TeamsService;
+	private teamsService: TeamsService | undefined;
 	private mechanic?: ClassroomLimitationsMechanic;
 	private readonly itemLimitations = [
 		{ key: "ender_pearls", itemIds: ["minecraft:ender_pearl"] },
@@ -123,7 +123,7 @@ export class ClassroomLimitationsService implements Module {
 
 	/** Determines whether a player is a teacher */
 	public isTeacher(player: Player): boolean {
-		return this.teamsService.isPlayerInTeam(
+		return this.teamsService!.isPlayerInTeam(
 			TeamsService.TEACHERS_TEAM_ID,
 			player.id,
 		);
