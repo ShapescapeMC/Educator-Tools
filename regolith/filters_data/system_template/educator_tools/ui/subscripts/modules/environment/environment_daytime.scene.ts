@@ -10,6 +10,7 @@ import { EnvironmentService } from "./environment.service";
  */
 export class EnvironmentDaytimeScene extends ModalUIScene {
 	static readonly id = "environment_daytime";
+	private static readonly DROPDOWN_OFFSET = 2;
 
 	/**
 	 * Creates a new EnvironmentDaytimeScene with controls for time and cycle settings.
@@ -58,7 +59,11 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 				// Set specific daytime and disable real-time daylight
 				environmentService.setRealTimeDaylight(false);
 				environmentService.setDayTime(
-					TimeOfDay[daytimes[selectedDaytime - 2] as keyof typeof TimeOfDay],
+					TimeOfDay[
+						daytimes[
+							selectedDaytime - EnvironmentDaytimeScene.DROPDOWN_OFFSET
+						] as keyof typeof TimeOfDay
+					],
 				);
 			},
 			{
