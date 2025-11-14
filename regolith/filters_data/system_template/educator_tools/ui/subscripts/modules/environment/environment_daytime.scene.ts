@@ -20,10 +20,15 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 		const dayTimeLangKeys = daytimes.map((daytime) => ({
 			translate: `edu_tools.ui.environment_daytime.select_daytime.options.${daytime.toLowerCase()}`,
 		}));
+		// Add a "real-time" option
+		dayTimeLangKeys.unshift({
+			translate:
+				"edu_tools.ui.environment_daytime.select_daytime.options.realtime",
+		});
 		// Add a "no change" option
 		dayTimeLangKeys.unshift({
 			translate:
-				"edu_tools.ui.environment_weather.select_weather.options.no_change",
+				"edu_tools.ui.environment_daytime.select_daytime.options.no_change",
 		});
 
 		this.addDropdown(
@@ -34,6 +39,12 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 					// If "no change" is selected, do nothing
 					return;
 				}
+				if (selectedDaytime === 1) {
+					// If "real-time" is selected, enable real-time daylight
+					environmentService.setRealTimeDaylight(true);
+					return;
+				}
+				environmentService.setRealTimeDaylight(false);
 				environmentService.setDayTime(
 					TimeOfDay[daytimes[selectedDaytime] as keyof typeof TimeOfDay],
 				);

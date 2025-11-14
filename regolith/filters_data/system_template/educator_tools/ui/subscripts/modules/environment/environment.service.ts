@@ -5,13 +5,25 @@ import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { EnvironmentWeatherScene } from "./environment_weather.scene";
 import { EnvironmentDaytimeScene } from "./environment_daytime.scene";
+import { PropertyStorage } from "@shapescape/storage";
+import { EnvironmentMechanic } from "./environment.mechanic";
 
 export class EnvironmentService implements Module {
 	readonly id: string = "environment";
+	public static readonly id = "environment";
+	private readonly storage: PropertyStorage;
+	private readonly environmentMechanic: EnvironmentMechanic;
 
-	constructor() {}
+	constructor(storage: PropertyStorage) {
+		this.storage = storage.getSubStorage(EnvironmentService.id);
+		this.environmentMechanic = new EnvironmentMechanic(this);
+	}
 
-	registerScenes(sceneManager: any): void {
+	initialize(): void {
+		this.environmentMechanic.initialize();
+	}
+
+	registerScenes(sceneManager: SceneManager): void {
 		sceneManager.registerScene(
 			EnvironmentScene.id,
 			(manager: SceneManager, context: SceneContext) => {
@@ -60,10 +72,22 @@ export class EnvironmentService implements Module {
 		world.gameRules.doWeatherCycle = weatherCycle;
 	}
 
+	setRealTimeDaylight(value: boolean): void {
+		if (value) {
+			this.setDayLightCycle(!value);
+		}
+		this.storage.set("real_time_daylight", value);
+	}
+
+	isRealTimeDaylight(): boolean {
+		return this.storage.get("real_time_daylight", false);
+	}
+
 	alwaysDay(): void {
 		this.setDayLightCycle(false);
 		this.setWeatherCycle(false);
 		this.setDayTime(TimeOfDay.Noon); // Set time to day
 		this.setWeather(WeatherType.Clear); // Set weather to clear
+		this.setRealTimeDaylight(false);
 	}
 }
