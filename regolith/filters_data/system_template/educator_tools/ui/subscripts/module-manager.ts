@@ -78,7 +78,7 @@ export class ModuleManager {
 		const manageHealthService = new ManageHealthService();
 		const focusModeService = new FocusModeService(this);
 		const playerStatusService = new PlayerStatusService();
-		const environmentService = new EnvironmentService();
+		const environmentService = new EnvironmentService(this.storage);
 		const lockPlayerService = new LockPlayerService(this);
 		const timerService = new TimerService();
 		const worldManagementService = new WorldManagementService();
