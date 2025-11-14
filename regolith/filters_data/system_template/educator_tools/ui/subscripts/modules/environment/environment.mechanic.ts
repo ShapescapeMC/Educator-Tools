@@ -16,9 +16,11 @@ export class EnvironmentMechanic {
 	 * Initializes the mechanic by starting a tick interval that runs every game tick.
 	 */
 	initialize(): void {
-		system.runInterval(() => {
-			this.tick();
-		}, 1);
+		system.runTimeout(() => {
+			system.runInterval(() => {
+				this.tick();
+			}, 20);
+		}, Math.floor(Math.random() * 20)); // Random delay to spread load
 	}
 
 	/**
@@ -27,7 +29,11 @@ export class EnvironmentMechanic {
 	tick(): void {
 		if (this.environmentService.isRealTimeDaylight()) {
 			const ticks = this.getRealtimeTicks();
-			this.environmentService.setDayTime(ticks);
+			// Only update if the time has changed to avoid unnecessary operations
+			const currentTime = this.environmentService.getDayTime();
+			if (Math.abs(currentTime - ticks) > 1) {
+				this.environmentService.setDayTime(ticks);
+			}
 		}
 	}
 

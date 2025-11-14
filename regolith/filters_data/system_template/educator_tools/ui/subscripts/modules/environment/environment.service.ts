@@ -30,9 +30,6 @@ export class EnvironmentService implements Module {
 	/**
 	 * Initializes the environment service and starts the environment mechanic.
 	 */
-	/**
-	 * Initializes the environment service and starts the environment mechanic.
-	 */
 	initialize(): void {
 		this.environmentMechanic.initialize();
 	}
