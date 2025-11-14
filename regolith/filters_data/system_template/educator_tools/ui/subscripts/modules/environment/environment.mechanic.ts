@@ -2,8 +2,9 @@ import { system } from "@minecraft/server";
 import { EnvironmentService } from "./environment.service";
 
 /**
- * Mechanic that handles real-time daylight synchronization by continuously updating
- * the game time to match real-world time when the feature is enabled.
+ * Mechanic that handles real-time daylight synchronization and smooth time transitions.
+ * Continuously updates the game time to match real-world time when real-time daylight is enabled,
+ * and gradually transitions to target times when smooth transitions are active.
  */
 export class EnvironmentMechanic {
 	/**
@@ -16,17 +17,22 @@ export class EnvironmentMechanic {
 	 * Initializes the mechanic by starting a tick interval that runs every game tick.
 	 */
 	initialize(): void {
-		system.runTimeout(() => {
-			system.runInterval(() => {
-				this.tick();
-			}, 20);
-		}, Math.floor(Math.random() * 20)); // Random delay to spread load
+		system.runInterval(() => {
+			this.tick();
+		}, 1); // Run every tick for smooth transitions
 	}
 
 	/**
-	 * Tick function called every game tick to update the world time if real-time daylight is enabled.
+	 * Tick function called every game tick to update the world time.
+	 * Handles both real-time daylight synchronization and smooth time transitions.
 	 */
 	tick(): void {
+		// Priority 1: Handle smooth time transitions
+		if (this.environmentService.hasTimeTransitionTarget()) {
+			this.handleSmoothTransition();
+		}
+
+		// Priority 2: Handle real-time daylight
 		if (this.environmentService.isRealTimeDaylight()) {
 			const ticks = this.getRealtimeTicks();
 			// Only update if the time has changed to avoid unnecessary operations
@@ -35,6 +41,39 @@ export class EnvironmentMechanic {
 				this.environmentService.setDayTime(ticks);
 			}
 		}
+	}
+
+	/**
+	 * Handles smooth time transitions by gradually moving towards the target time.
+	 * Uses the configured transition speed to determine how many ticks to move per game tick.
+	 */
+	private handleSmoothTransition(): void {
+		const target = this.environmentService.getDayTimeTarget();
+		const current = this.environmentService.getDayTime();
+		const speed = this.environmentService.getTimeTransitionSpeed();
+
+		// Calculate the shortest path (considering the 24000 tick wrap-around)
+		let difference = target - current;
+
+		// Normalize to [-12000, 12000] to find shortest path
+		if (difference > 12000) {
+			difference -= 24000;
+		} else if (difference < -12000) {
+			difference += 24000;
+		}
+
+		// Check if we've reached the target (within tolerance)
+		if (Math.abs(difference) <= speed) {
+			// We're close enough, set to exact target and clear it
+			this.environmentService.setDayTimeImmediate(target);
+			this.environmentService.clearDayTimeTarget();
+			return;
+		}
+
+		// Move towards target by speed amount
+		const direction = difference > 0 ? 1 : -1;
+		const newTime = (current + speed * direction + 24000) % 24000;
+		this.environmentService.setDayTimeImmediate(newTime);
 	}
 
 	/**

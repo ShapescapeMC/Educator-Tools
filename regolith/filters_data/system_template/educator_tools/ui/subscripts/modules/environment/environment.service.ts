@@ -68,10 +68,19 @@ export class EnvironmentService implements Module {
 	}
 
 	/**
-	 * Sets the time of day in the world.
+	 * Sets the time of day in the world with smooth transition.
+	 * Instead of instantly changing time, it sets a target that will be reached gradually.
 	 * @param time - The time value in ticks (0-24000, where 0 is sunrise)
 	 */
 	setDayTime(time: number): void {
+		world.setDynamicProperty("edu_tools:day_time_target", time);
+	}
+
+	/**
+	 * Immediately sets the time of day without smooth transition.
+	 * @param time - The time value in ticks (0-24000, where 0 is sunrise)
+	 */
+	setDayTimeImmediate(time: number): void {
 		world.setTimeOfDay(time);
 	}
 
@@ -145,5 +154,47 @@ export class EnvironmentService implements Module {
 		this.setDayTime(TimeOfDay.Noon); // Set time to day
 		this.setWeather(WeatherType.Clear); // Set weather to clear
 		this.setRealTimeDaylight(false);
+	}
+
+	/**
+	 * Gets the target time for smooth transition, if any.
+	 * @returns The target time in ticks, or -1 if no transition is in progress
+	 */
+	getDayTimeTarget(): number {
+		const target = world.getDynamicProperty("edu_tools:day_time_target");
+		return typeof target === "number" ? target : -1;
+	}
+
+	/**
+	 * Checks if a smooth time transition is currently in progress.
+	 * @returns True if a transition target is set, false otherwise
+	 */
+	hasTimeTransitionTarget(): boolean {
+		return this.getDayTimeTarget() !== -1;
+	}
+
+	/**
+	 * Clears the target time, stopping any smooth transition in progress.
+	 */
+	clearDayTimeTarget(): void {
+		world.setDynamicProperty("edu_tools:day_time_target", undefined);
+	}
+
+	/**
+	 * Sets the speed of time transitions in ticks per game tick.
+	 * Higher values = faster transitions. Default is 50.
+	 * @param speed - The transition speed (recommended range: 10-200)
+	 */
+	setTimeTransitionSpeed(speed: number): void {
+		world.setDynamicProperty("edu_tools:time_transition_speed", speed);
+	}
+
+	/**
+	 * Gets the current time transition speed.
+	 * @returns The transition speed in ticks per game tick
+	 */
+	getTimeTransitionSpeed(): number {
+		const speed = world.getDynamicProperty("edu_tools:time_transition_speed");
+		return typeof speed === "number" ? speed : 50;
 	}
 }
