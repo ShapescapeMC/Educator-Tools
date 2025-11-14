@@ -161,7 +161,7 @@ export class EnvironmentService implements Module {
 	 * @returns The target time in ticks, or -1 if no transition is in progress
 	 */
 	getDayTimeTarget(): number {
-		const target = world.getDynamicProperty("edu_tools:day_time_target");
+		const target = this.storage.get("day_time_target");
 		return typeof target === "number" ? target : -1;
 	}
 
@@ -177,7 +177,7 @@ export class EnvironmentService implements Module {
 	 * Clears the target time, stopping any smooth transition in progress.
 	 */
 	clearDayTimeTarget(): void {
-		world.setDynamicProperty("edu_tools:day_time_target", undefined);
+		this.storage.set("day_time_target", undefined);
 	}
 
 	/**
@@ -186,7 +186,7 @@ export class EnvironmentService implements Module {
 	 * @param speed - The transition speed (recommended range: 10-200)
 	 */
 	setTimeTransitionSpeed(speed: number): void {
-		world.setDynamicProperty("edu_tools:time_transition_speed", speed);
+		this.storage.set("time_transition_speed", speed);
 	}
 
 	/**
@@ -194,7 +194,7 @@ export class EnvironmentService implements Module {
 	 * @returns The transition speed in ticks per game tick
 	 */
 	getTimeTransitionSpeed(): number {
-		const speed = world.getDynamicProperty("edu_tools:time_transition_speed");
+		const speed = this.storage.get("time_transition_speed");
 		return typeof speed === "number" ? speed : 50;
 	}
 }
