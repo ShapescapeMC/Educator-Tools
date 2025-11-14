@@ -1,4 +1,4 @@
-import { TimeOfDay, world } from "@minecraft/server";
+import { TimeOfDay } from "@minecraft/server";
 import { ModalUIScene } from "../scene_manager/ui-scene";
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";

@@ -132,7 +132,9 @@ export class EnvironmentService implements Module {
 	 */
 	setRealTimeDaylight(value: boolean): void {
 		if (value) {
-			this.setDayLightCycle(!value);
+			this.setDayLightCycle(false); // Disable daylight cycle when enabling real-time daylight
+		} else {
+			this.setDayLightCycle(true); // Restore daylight cycle when disabling real-time daylight
 		}
 		this.storage.set("real_time_daylight", value);
 	}
@@ -183,7 +185,7 @@ export class EnvironmentService implements Module {
 
 	/**
 	 * Sets the speed of time transitions in ticks per game tick.
-	 * Higher values = faster transitions. Default is 50.
+	 * Higher values = faster transitions. Default is 100.
 	 * @param speed - The transition speed (recommended range: 10-200)
 	 */
 	setTimeTransitionSpeed(speed: number): void {

@@ -1,4 +1,4 @@
-import { system, world } from "@minecraft/server";
+import { system } from "@minecraft/server";
 import { EnvironmentService } from "./environment.service";
 
 /**
@@ -39,7 +39,7 @@ export class EnvironmentMechanic {
 			// Only update if the time has changed to avoid unnecessary operations
 			const currentTime = this.environmentService.getDayTime();
 			if (Math.abs(currentTime - ticks) > 1) {
-				this.environmentService.setDayTime(ticks);
+				this.environmentService.setDayTimeImmediate(ticks);
 				if (this.environmentService.getDayLightCycle()) {
 					this.environmentService.setDayLightCycle(false);
 				}
