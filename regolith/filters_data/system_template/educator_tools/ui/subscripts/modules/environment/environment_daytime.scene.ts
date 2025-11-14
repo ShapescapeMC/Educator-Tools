@@ -1,4 +1,4 @@
-import { TimeOfDay } from "@minecraft/server";
+import { TimeOfDay, world } from "@minecraft/server";
 import { ModalUIScene } from "../scene_manager/ui-scene";
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
@@ -54,9 +54,11 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 					environmentService.setRealTimeDaylight(true);
 					return;
 				}
+				
+				// Set specific daytime and disable real-time daylight
 				environmentService.setRealTimeDaylight(false);
 				environmentService.setDayTime(
-					TimeOfDay[daytimes[selectedDaytime] as keyof typeof TimeOfDay],
+					TimeOfDay[daytimes[selectedDaytime - 2] as keyof typeof TimeOfDay],
 				);
 			},
 			{

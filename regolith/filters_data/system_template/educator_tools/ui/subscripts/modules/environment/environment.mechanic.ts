@@ -1,4 +1,4 @@
-import { system } from "@minecraft/server";
+import { system, world } from "@minecraft/server";
 import { EnvironmentService } from "./environment.service";
 
 /**
@@ -30,6 +30,7 @@ export class EnvironmentMechanic {
 		// Priority 1: Handle smooth time transitions
 		if (this.environmentService.hasTimeTransitionTarget()) {
 			this.handleSmoothTransition();
+			return; // Exit early to avoid conflicting with real-time daylight
 		}
 
 		// Priority 2: Handle real-time daylight
@@ -54,6 +55,7 @@ export class EnvironmentMechanic {
 
 		// Calculate the shortest path (considering the 24000 tick wrap-around)
 		let difference = target - current;
+		const rawDifference = difference; // Store for debug
 
 		// Normalize to [-12000, 12000] to find shortest path
 		if (difference > 12000) {

@@ -74,7 +74,7 @@ export class EnvironmentService implements Module {
 	 * @param time - The time value in ticks (0-24000, where 0 is sunrise)
 	 */
 	setDayTime(time: number): void {
-		world.setDynamicProperty("edu_tools:day_time_target", time);
+		this.storage.set("day_time_target", time);
 	}
 
 	/**
