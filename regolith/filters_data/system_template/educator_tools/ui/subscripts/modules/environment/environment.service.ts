@@ -142,7 +142,7 @@ export class EnvironmentService implements Module {
 	 * @returns True if real-time daylight is enabled, false otherwise
 	 */
 	isRealTimeDaylight(): boolean {
-		return this.storage.get("real_time_daylight", false);
+		return this.storage.get("real_time_daylight", true, false);
 	}
 
 	/**
