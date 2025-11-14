@@ -54,7 +54,7 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 					environmentService.setRealTimeDaylight(true);
 					return;
 				}
-				
+
 				// Set specific daytime and disable real-time daylight
 				environmentService.setRealTimeDaylight(false);
 				environmentService.setDayTime(
@@ -69,10 +69,14 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 		this.addToggle(
 			"edu_tools.ui.environment_daytime.set_daytime_cycle",
 			(isEnabled: boolean): void => {
-				environmentService.setDayLightCycle(isEnabled);
+				if (!environmentService.isRealTimeDaylight()) {
+					environmentService.setDayLightCycle(isEnabled);
+				}
 			},
 			{
-				defaultValue: environmentService.getDayLightCycle(),
+				defaultValue:
+					environmentService.getDayLightCycle() ||
+					environmentService.isRealTimeDaylight(),
 				tooltip: "edu_tools.ui.environment_daytime.set_daytime_cycle_tooltip",
 			},
 		);

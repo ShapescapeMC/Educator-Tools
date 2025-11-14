@@ -40,6 +40,9 @@ export class EnvironmentMechanic {
 			const currentTime = this.environmentService.getDayTime();
 			if (Math.abs(currentTime - ticks) > 1) {
 				this.environmentService.setDayTime(ticks);
+				if (this.environmentService.getDayLightCycle()) {
+					this.environmentService.setDayLightCycle(false);
+				}
 			}
 		}
 	}
