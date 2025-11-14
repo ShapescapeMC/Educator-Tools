@@ -17,7 +17,7 @@ export class EnvironmentService implements Module {
 	public static readonly id = "environment";
 	private readonly storage: PropertyStorage;
 	private readonly environmentMechanic: EnvironmentMechanic;
-	private static readonly DEFAULT_TRANSITION_SPEED = 50;
+	private static readonly DEFAULT_TRANSITION_SPEED = 100;
 
 	/**
 	 * Creates a new EnvironmentService instance.
