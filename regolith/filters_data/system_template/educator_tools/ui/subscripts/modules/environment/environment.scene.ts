@@ -3,9 +3,19 @@ import { SceneManager } from "../scene_manager/scene-manager";
 import { ActionUIScene } from "../scene_manager/ui-scene";
 import { EnvironmentService } from "./environment.service";
 
+/**
+ * Main environment settings scene that provides access to daytime, weather, and quick actions.
+ * Displays buttons for navigating to specific environment settings and applying preset configurations.
+ */
 export class EnvironmentScene extends ActionUIScene {
 	static readonly id = "environment";
 
+	/**
+	 * Creates a new EnvironmentScene with navigation to daytime, weather, and preset options.
+	 * @param sceneManager - The scene manager for handling scene navigation
+	 * @param context - The scene context containing player and navigation history
+	 * @param environmentService - The environment service for managing world settings
+	 */
 	constructor(
 		sceneManager: SceneManager,
 		context: SceneContext,

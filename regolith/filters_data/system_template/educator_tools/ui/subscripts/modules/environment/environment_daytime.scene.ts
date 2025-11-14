@@ -4,9 +4,19 @@ import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { EnvironmentService } from "./environment.service";
 
+/**
+ * Modal scene for configuring daytime settings including time of day and daylight cycle.
+ * Provides options to set specific time periods, enable real-time synchronization, or toggle the daylight cycle.
+ */
 export class EnvironmentDaytimeScene extends ModalUIScene {
 	static readonly id = "environment_daytime";
 
+	/**
+	 * Creates a new EnvironmentDaytimeScene with controls for time and cycle settings.
+	 * @param sceneManager - The scene manager for handling scene navigation
+	 * @param context - The scene context containing player and navigation history
+	 * @param environmentService - The environment service for managing daytime settings
+	 */
 	constructor(
 		sceneManager: SceneManager,
 		context: SceneContext,
