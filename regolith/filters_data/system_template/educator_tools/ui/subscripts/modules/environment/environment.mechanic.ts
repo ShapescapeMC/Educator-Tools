@@ -46,35 +46,27 @@ export class EnvironmentMechanic {
 
 	/**
 	 * Handles smooth time transitions by gradually moving towards the target time.
-	 * Uses the configured transition speed to determine how many ticks to move per game tick.
+	 * Always moves forward (adding ticks), wrapping around at 24000 when necessary.
+	 * For example, going from 20 to 10 will add ticks: 20 -> ... -> 24000 -> 0 -> ... -> 10
 	 */
 	private handleSmoothTransition(): void {
 		const target = this.environmentService.getDayTimeTarget();
 		const current = this.environmentService.getDayTime();
 		const speed = this.environmentService.getTimeTransitionSpeed();
 
-		// Calculate the shortest path (considering the 24000 tick wrap-around)
-		let difference = target - current;
-		const rawDifference = difference; // Store for debug
-
-		// Normalize to [-12000, 12000] to find shortest path
-		if (difference > 12000) {
-			difference -= 24000;
-		} else if (difference < -12000) {
-			difference += 24000;
-		}
+		// Calculate forward distance (always positive, wrapping at 24000)
+		let forwardDistance = (target - current + 24000) % 24000;
 
 		// Check if we've reached the target (within tolerance)
-		if (Math.abs(difference) <= speed) {
+		if (forwardDistance <= speed) {
 			// We're close enough, set to exact target and clear it
 			this.environmentService.setDayTimeImmediate(target);
 			this.environmentService.clearDayTimeTarget();
 			return;
 		}
 
-		// Move towards target by speed amount
-		const direction = difference > 0 ? 1 : -1;
-		const newTime = (current + speed * direction + 24000) % 24000;
+		// Always move forward by speed amount
+		const newTime = (current + speed) % 24000;
 		this.environmentService.setDayTimeImmediate(newTime);
 	}
 
