@@ -18,8 +18,8 @@ import { AssignmentService } from "../assignment/assignment.service";
 export class AssignmentItemService implements Module {
 	readonly id: string = "assignment_item";
 	private readonly moduleManager: ModuleManager;
-	private assignmentService: AssignmentService;
-	private teamsService: TeamsService;
+	private assignmentService: AssignmentService | undefined;
+	private teamsService: TeamsService | undefined;
 
 	private playerTasks: Map<string, number> = new Map();
 
@@ -94,8 +94,8 @@ export class AssignmentItemService implements Module {
 			return;
 		}
 		const task = system.runInterval(() => {
-			const playerTeams = this.teamsService.getPlayerTeams(player.id);
-			const assignments = this.assignmentService.getTeamsAssignments(
+			const playerTeams = this.teamsService!.getPlayerTeams(player.id);
+			const assignments = this.assignmentService!.getTeamsAssignments(
 				playerTeams.map((team) => team.id),
 				true,
 			);
