@@ -32,7 +32,7 @@
 				"triggers": [
 					{
 						"cause": "all",
-						"deals_damage": "no"
+						"deals_damage": false
 					}
 				]
 			}
