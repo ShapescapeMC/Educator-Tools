@@ -1,5 +1,6 @@
-import { system, world } from "@minecraft/server";
+import { Player, system, world } from "@minecraft/server";
 import { TimerService } from "./timer.service";
+import { SceneManager } from "../scene_manager/scene-manager";
 
 export class TimerMechanic {
 	static readonly id = "timer";
@@ -12,12 +13,22 @@ export class TimerMechanic {
 		this.taskId = system.runInterval(() => {
 			this.tick();
 		}, 20);
+		world.afterEvents.playerInteractWithEntity.subscribe((event) => {
+			if (event.target.typeId === "edu_tools:timer") {
+				this.onTimerClicked(event.player);
+			}
+		});
 	}
 
 	tick(): void {
 		// First account for any inactivity (game closed) time so countdown remains fair
 		this.timerService.handleInactivity();
 		this.timerService.updateTimerEntity();
+	}
+
+	onTimerClicked(player: Player): void {
+		const sceneManager = SceneManager.getInstance();
+		sceneManager.createContextAndOpenScene(player, "edit_timer");
 	}
 
 	stop(): void {
