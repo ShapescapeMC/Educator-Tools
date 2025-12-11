@@ -28,7 +28,7 @@ export class TimerMechanic {
 
 	onTimerClicked(player: Player): void {
 		const sceneManager = SceneManager.getInstance();
-		sceneManager.createContextAndOpenScene(player, "edit_timer");
+		sceneManager.createContextAndOpenScene(player, "timer");
 	}
 
 	stop(): void {

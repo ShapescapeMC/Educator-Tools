@@ -35,7 +35,11 @@
 						"deals_damage": false
 					}
 				]
-			}
+			},
+			"minecraft:interact": {
+				"interactions": [{}]
+			},
+			"minecraft:fire_immune": {}
 		},
 		"component_groups": {
 			"edu_tools:despawn": {
