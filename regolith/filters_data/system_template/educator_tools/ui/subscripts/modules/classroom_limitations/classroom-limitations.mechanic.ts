@@ -233,7 +233,7 @@ export class ClassroomLimitationsMechanic {
 		return str
 			.toLowerCase()
 			.split("_")
-			.map((word: any) => {
+			.map((word: string) => {
 				return word.charAt(0).toUpperCase() + word.slice(1);
 			})
 			.join(" ");
