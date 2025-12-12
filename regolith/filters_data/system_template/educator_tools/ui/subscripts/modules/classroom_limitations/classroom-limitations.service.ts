@@ -34,7 +34,14 @@ export class ClassroomLimitationsService implements Module {
 		{ key: "arrows", itemIds: ["minecraft:arrow"] },
 		{ key: "fireworks", itemIds: ["minecraft:firework_rocket"] },
 		{ key: "elytra", itemIds: ["minecraft:elytra"] },
-		{ key: "tnt", itemIds: ["minecraft:tnt"] },
+		{
+			key: "tnt",
+			itemIds: [
+				"minecraft:tnt",
+				"minecraft:underwater_tnt",
+				"minecraft:tnt_minecart",
+			],
+		},
 		{ key: "dragon_egg", itemIds: ["minecraft:dragon_egg"] },
 		{
 			key: "potions",
