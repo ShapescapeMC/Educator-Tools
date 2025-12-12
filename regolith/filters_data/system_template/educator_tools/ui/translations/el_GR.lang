@@ -161,6 +161,7 @@ edu_tools.ui.world_management.title=§fΔιαχείριση Κόσμου
 edu_tools.ui.world_management.body=Η Διαχείριση Κόσμου είναι ένα εργαλείο που σου επιτρέπει να διαχειριστείς τις ρυθμίσεις του κόσμου, όπως τον καιρό, την ώρα και άλλα.
 edu_tools.ui.world_management.buttons.world_settings=Ρυθμίσεις Κόσμου
 edu_tools.ui.world_management.buttons.environment=Περιβάλλον
+edu_tools.ui.world_management.buttons.classroom_limitations=Περιορισμοί Τάξης
 edu_tools.ui.world_settings.title=§fΡυθμίσεις Κόσμου
 edu_tools.ui.world_settings.toggles.mob_spawning=Γέννηση Όντων
 edu_tools.ui.world_settings.toggles.mob_spawning_tooltip=Ενεργοποίησε ή απενεργοποίησε τη γέννηση όντων

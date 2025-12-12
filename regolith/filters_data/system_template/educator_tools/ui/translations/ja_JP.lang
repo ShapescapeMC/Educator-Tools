@@ -161,6 +161,7 @@ edu_tools.ui.teleport.team_select.get_target.body=テレポート先のプレイ
 ### 日本語翻訳において、マイクラに詳しくないユーザーが利用することを考慮し、翻訳を調整しています
 edu_tools.ui.world_management.title=§fワールド管理
 edu_tools.ui.world_management.body=ワールド管理は、天候や時間などのワールド設定を管理できるツールです。
+edu_tools.ui.world_management.buttons.classroom_limitations=教室の制限
 edu_tools.ui.world_management.buttons.world_settings=ワールド設定
 edu_tools.ui.world_management.buttons.environment=環境設定
 edu_tools.ui.world_settings.title=§fワールド設定

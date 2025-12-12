@@ -161,6 +161,7 @@ edu_tools.ui.world_management.title=§fGestión del Mundo
 edu_tools.ui.world_management.body=La Gestión del Mundo es una herramienta que te permite administrar la configuración del mundo, como el clima, la hora y más.
 edu_tools.ui.world_management.buttons.world_settings=Configuración del mundo
 edu_tools.ui.world_management.buttons.environment=Entorno
+edu_tools.ui.world_management.buttons.classroom_limitations=Limitaciones del aula
 edu_tools.ui.world_settings.title=§fConfiguración del mundo
 edu_tools.ui.world_settings.toggles.mob_spawning=Generación de mobs
 edu_tools.ui.world_settings.toggles.mob_spawning_tooltip=Activar o desactivar la generación de mobs

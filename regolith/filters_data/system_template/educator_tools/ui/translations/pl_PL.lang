@@ -161,6 +161,7 @@ edu_tools.ui.world_management.title=§fZarządzanie światem
 edu_tools.ui.world_management.body=Zarządzanie światem to narzędzie umożliwiające zarządzanie ustawieniami świata, takimi jak pogoda, czas i inne.
 edu_tools.ui.world_management.buttons.world_settings=Ustawienia świata
 edu_tools.ui.world_management.buttons.environment=Środowisko
+edu_tools.ui.world_management.buttons.classroom_limitations=Ograniczenia klasy
 edu_tools.ui.world_settings.title=§fUstawienia świata
 edu_tools.ui.world_settings.toggles.mob_spawning=Spawning potworów
 edu_tools.ui.world_settings.toggles.mob_spawning_tooltip=Włącz lub wyłącz pojawianie się potworów

@@ -161,6 +161,7 @@ edu_tools.ui.world_management.title=§fWereldbeheer
 edu_tools.ui.world_management.body=Wereldbeheer is een tool waarmee je de wereldinstellingen kunt beheren, zoals het weer, de tijd en meer.
 edu_tools.ui.world_management.buttons.world_settings=Wereldinstellingen
 edu_tools.ui.world_management.buttons.environment=Omgeving
+edu_tools.ui.world_management.buttons.classroom_limitations=Klaslokaalbeperkingen
 edu_tools.ui.world_settings.title=§fWereldinstellingen
 edu_tools.ui.world_settings.toggles.mob_spawning=Mob Spawnen
 edu_tools.ui.world_settings.toggles.mob_spawning_tooltip=Schakel mob spawnen in of uit
