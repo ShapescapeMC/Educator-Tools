@@ -30,7 +30,10 @@ export class ClassroomLimitationsService implements Module {
 	private mechanic?: ClassroomLimitationsMechanic;
 	private readonly itemLimitations = [
 		{ key: "ender_pearls", itemIds: ["minecraft:ender_pearl"] },
-		{ key: "eggs", itemIds: ["minecraft:egg"] },
+		{
+			key: "eggs",
+			itemIds: ["minecraft:egg", "minecraft:brown_egg", "minecraft:blue_egg"],
+		},
 		{ key: "arrows", itemIds: ["minecraft:arrow"] },
 		{ key: "fireworks", itemIds: ["minecraft:firework_rocket"] },
 		{ key: "elytra", itemIds: ["minecraft:elytra"] },
