@@ -4,9 +4,19 @@ import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { EnvironmentService } from "./environment.service";
 
+/**
+ * Modal scene for configuring weather settings including weather type and weather cycle.
+ * Provides options to set specific weather conditions and toggle the weather cycle on or off.
+ */
 export class EnvironmentWeatherScene extends ModalUIScene {
 	static readonly id = "environment_weather";
 
+	/**
+	 * Creates a new EnvironmentWeatherScene with controls for weather settings.
+	 * @param sceneManager - The scene manager for handling scene navigation
+	 * @param context - The scene context containing player and navigation history
+	 * @param environmentService - The environment service for managing weather settings
+	 */
 	constructor(
 		sceneManager: SceneManager,
 		context: SceneContext,

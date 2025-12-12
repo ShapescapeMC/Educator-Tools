@@ -189,6 +189,7 @@ edu_tools.ui.environment.buttons.always_day=Πάντα Ημέρα
 edu_tools.ui.environment_daytime.title=§fΡυθμίσεις Ημέρας
 edu_tools.ui.environment_daytime.select_daytime=Επιλογή ώρας της ημέρας
 edu_tools.ui.environment_daytime.select_daytime_tooltip=Επιλέξτε την ώρα της ημέρας
+edu_tools.ui.environment_daytime.select_daytime.options.realtime=Σε πραγματικό χρόνο
 edu_tools.ui.environment_daytime.select_daytime.options.no_change=Χωρίς αλλαγή
 edu_tools.ui.environment_daytime.select_daytime.options.day=Ημέρα
 edu_tools.ui.environment_daytime.select_daytime.options.night=Νύχτα

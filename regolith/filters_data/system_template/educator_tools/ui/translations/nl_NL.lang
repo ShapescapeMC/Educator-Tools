@@ -190,6 +190,7 @@ edu_tools.ui.environment_daytime.title=§fTijdsinstellingen
 edu_tools.ui.environment_daytime.select_daytime=Selecteer tijdstip van de dag
 edu_tools.ui.environment_daytime.select_daytime_tooltip=Selecteer het tijdstip van de dag
 edu_tools.ui.environment_daytime.select_daytime.options.no_change=Geen wijziging
+edu_tools.ui.environment_daytime.select_daytime.options.realtime=Reële tijd
 edu_tools.ui.environment_daytime.select_daytime.options.day=Dag
 edu_tools.ui.environment_daytime.select_daytime.options.night=Nacht
 edu_tools.ui.environment_daytime.select_daytime.options.noon=Middag

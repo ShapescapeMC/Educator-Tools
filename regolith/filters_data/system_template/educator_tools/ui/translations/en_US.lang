@@ -189,6 +189,7 @@ edu_tools.ui.environment.buttons.always_day=Always Day
 edu_tools.ui.environment_daytime.title=§fDaytime Settings
 edu_tools.ui.environment_daytime.select_daytime=Select Daytime
 edu_tools.ui.environment_daytime.select_daytime_tooltip=Select the time of day
+edu_tools.ui.environment_daytime.select_daytime.options.realtime=Real-Time
 edu_tools.ui.environment_daytime.select_daytime.options.no_change=No Change
 edu_tools.ui.environment_daytime.select_daytime.options.day=Day
 edu_tools.ui.environment_daytime.select_daytime.options.night=Night

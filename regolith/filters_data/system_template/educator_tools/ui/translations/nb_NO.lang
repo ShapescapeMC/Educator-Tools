@@ -190,6 +190,7 @@ edu_tools.ui.environment_daytime.title=§fInnstillinger for tid på dagen
 edu_tools.ui.environment_daytime.select_daytime=Velg tid på dagen
 edu_tools.ui.environment_daytime.select_daytime_tooltip=Velg tidspunkt på dagen
 edu_tools.ui.environment_daytime.select_daytime.options.no_change=Ingen endring
+edu_tools.ui.environment_daytime.select_daytime.options.realtime=Sanntid
 edu_tools.ui.environment_daytime.select_daytime.options.day=Dag
 edu_tools.ui.environment_daytime.select_daytime.options.night=Natt
 edu_tools.ui.environment_daytime.select_daytime.options.noon=Middag
