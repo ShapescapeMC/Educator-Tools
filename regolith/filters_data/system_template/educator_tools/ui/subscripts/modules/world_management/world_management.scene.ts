@@ -28,6 +28,14 @@ export class WorldManagementScene extends ActionUIScene {
 		);
 
 		this.addButton(
+			"edu_tools.ui.world_management.buttons.classroom_limitations",
+			(): void => {
+				sceneManager.openSceneWithContext(context, "classroom_limitations", true);
+			},
+			"textures/edu_tools/ui/icons/world_management/classroom_limitations",
+		);
+
+		this.addButton(
 			"edu_tools.ui.buttons.back",
 			() => {
 				sceneManager.goBackToScene(context, "main");

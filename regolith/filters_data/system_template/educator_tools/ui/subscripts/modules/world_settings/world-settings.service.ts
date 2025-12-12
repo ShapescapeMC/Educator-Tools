@@ -3,8 +3,6 @@ import { PropertyStorage } from "@shapescape/storage";
 import { Module } from "../../module-manager";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { WorldSettingsScene } from "./world-settings.scene";
-import { ButtonConfig } from "../main/main.service";
-import { SceneContext } from "../scene_manager/scene-context";
 
 /**
  * Interface representing a game rule with its current value and update method
@@ -51,27 +49,27 @@ export class WorldSettingsService implements Module {
 	private initGameRules(): void {
 		// Standard game rules
 		this.addGameRule(
-			"doMobSpawning",
+			GameRule.DoMobSpawning,
 			"edu_tools.ui.world_settings.toggles.mob_spawning",
 		);
 		this.addGameRule(
-			"keepInventory",
+			GameRule.KeepInventory,
 			"edu_tools.ui.world_settings.toggles.keep_inventory",
 		);
 		this.addGameRule(
-			"doDayLightCycle",
+			GameRule.DoDayLightCycle,
 			"edu_tools.ui.world_settings.toggles.daylight_cycle",
 		);
 		this.addGameRule(
-			"doWeatherCycle",
+			GameRule.DoWeatherCycle,
 			"edu_tools.ui.world_settings.toggles.weather_cycle",
 		);
 		this.addGameRule(
-			"doImmediateRespawn",
+			GameRule.DoImmediateRespawn,
 			"edu_tools.ui.world_settings.toggles.immediate_respawn",
 		);
 		this.addGameRule(
-			"commandBlocksEnabled",
+			GameRule.CommandBlocksEnabled,
 			"edu_tools.ui.world_settings.toggles.command_blocks",
 		);
 
@@ -108,7 +106,7 @@ export class WorldSettingsService implements Module {
 					translationKey,
 					value: (world.gameRules as any)[ruleName],
 					toggle: (value: boolean) => {
-						(world.gameRules as GameRules)[ruleName] = value;
+						(world.gameRules as any)[ruleName] = value;
 						// Update the value in the gameRules map
 						this.gameRules.get(ruleName)!.update();
 					},
