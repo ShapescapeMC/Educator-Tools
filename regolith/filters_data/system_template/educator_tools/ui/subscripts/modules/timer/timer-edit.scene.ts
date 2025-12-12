@@ -111,6 +111,17 @@ export class TimerEditScene extends ModalUIScene {
 			},
 		);
 
+		this.addToggle(
+			"edu_tools.ui.timer_edit.count_offline_time",
+			(value: boolean): void => {
+				context.setData("count_offline", value);
+			},
+			{
+				defaultValue: timer ? !!timer.countOffline : false,
+				tooltip: "edu_tools.ui.timer_edit.count_offline_time_tooltip",
+			},
+		);
+
 		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
 			if (!r.canceled) {
 				this.applyChanges(context);
@@ -121,11 +132,14 @@ export class TimerEditScene extends ModalUIScene {
 	}
 
 	private applyChanges(context: SceneContext): void {
-		const duration = context.getData("timer_duration") || 60;
-		const showTimer = context.getData("show_timer") || true;
+		const rawDuration = context.getData("timer_duration");
+		const duration = (typeof rawDuration === "number" && rawDuration > 0) ? rawDuration : 60;
+		const showTimer = context.getData("show_timer") ?? true;
+		const countOffline = context.getData("count_offline") ?? false;
 		const timer: Partial<Timer> = {
 			duration: duration,
 			entityShown: showTimer,
+			countOffline: countOffline,
 		};
 
 		if (this.timerService.getTimer()) {

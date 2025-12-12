@@ -14,7 +14,7 @@
 			},
 			"minecraft:collision_box": {
 				"height": 1,
-				"width": 0
+				"width": 1
 			},
 			"minecraft:nameable": {
 				"allow_name_tag_renaming": false,
@@ -27,7 +27,19 @@
 			"minecraft:tick_world": {
 				"never_despawn": true,
 				"radius": 2
-			}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [{}]
+			},
+			"minecraft:fire_immune": {}
 		},
 		"component_groups": {
 			"edu_tools:despawn": {

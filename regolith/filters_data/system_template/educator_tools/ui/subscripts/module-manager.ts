@@ -18,6 +18,7 @@ import { TimerService } from "./modules/timer/timer.service";
 import { WorldManagementService } from "./modules/world_management/world_management.service";
 import { AssignmentService } from "./modules/assignment/assignment.service";
 import { AssignmentItemService } from "./modules/assignment-item/assignment-item.service";
+import { ClassroomLimitationsService } from "./modules/classroom_limitations/classroom-limitations.service";
 
 /**
  * Interface that all modules must implement.
@@ -78,12 +79,13 @@ export class ModuleManager {
 		const manageHealthService = new ManageHealthService();
 		const focusModeService = new FocusModeService(this);
 		const playerStatusService = new PlayerStatusService();
-		const environmentService = new EnvironmentService();
+		const environmentService = new EnvironmentService(this.storage);
 		const lockPlayerService = new LockPlayerService(this);
 		const timerService = new TimerService();
 		const worldManagementService = new WorldManagementService();
 		const assignmentService = new AssignmentService(this);
 		const assignmentItemService = new AssignmentItemService(this);
+		const classroomLimitationsService = new ClassroomLimitationsService(this);
 
 		// Create WorldSettingsService
 		const worldSettingsStorage = this.storage.getSubStorage("world_settings");
@@ -109,6 +111,7 @@ export class ModuleManager {
 		this.registerModule(worldManagementService);
 		this.registerModule(assignmentService);
 		this.registerModule(assignmentItemService);
+		this.registerModule(classroomLimitationsService);
 
 		// Initialize all modules
 		this.initializeModules();

@@ -4,9 +4,20 @@ import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { EnvironmentService } from "./environment.service";
 
+/**
+ * Modal scene for configuring daytime settings including time of day and daylight cycle.
+ * Provides options to set specific time periods, enable real-time synchronization, or toggle the daylight cycle.
+ */
 export class EnvironmentDaytimeScene extends ModalUIScene {
 	static readonly id = "environment_daytime";
+	private static readonly DROPDOWN_OFFSET = 2;
 
+	/**
+	 * Creates a new EnvironmentDaytimeScene with controls for time and cycle settings.
+	 * @param sceneManager - The scene manager for handling scene navigation
+	 * @param context - The scene context containing player and navigation history
+	 * @param environmentService - The environment service for managing daytime settings
+	 */
 	constructor(
 		sceneManager: SceneManager,
 		context: SceneContext,
@@ -20,10 +31,15 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 		const dayTimeLangKeys = daytimes.map((daytime) => ({
 			translate: `edu_tools.ui.environment_daytime.select_daytime.options.${daytime.toLowerCase()}`,
 		}));
+		// Add a "real-time" option
+		dayTimeLangKeys.unshift({
+			translate:
+				"edu_tools.ui.environment_daytime.select_daytime.options.realtime",
+		});
 		// Add a "no change" option
 		dayTimeLangKeys.unshift({
 			translate:
-				"edu_tools.ui.environment_weather.select_weather.options.no_change",
+				"edu_tools.ui.environment_daytime.select_daytime.options.no_change",
 		});
 
 		this.addDropdown(
@@ -34,8 +50,20 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 					// If "no change" is selected, do nothing
 					return;
 				}
+				if (selectedDaytime === 1) {
+					// If "real-time" is selected, enable real-time daylight
+					environmentService.setRealTimeDaylight(true);
+					return;
+				}
+
+				// Set specific daytime and disable real-time daylight
+				environmentService.setRealTimeDaylight(false);
 				environmentService.setDayTime(
-					TimeOfDay[daytimes[selectedDaytime] as keyof typeof TimeOfDay],
+					TimeOfDay[
+						daytimes[
+							selectedDaytime - EnvironmentDaytimeScene.DROPDOWN_OFFSET
+						] as keyof typeof TimeOfDay
+					],
 				);
 			},
 			{
@@ -46,10 +74,14 @@ export class EnvironmentDaytimeScene extends ModalUIScene {
 		this.addToggle(
 			"edu_tools.ui.environment_daytime.set_daytime_cycle",
 			(isEnabled: boolean): void => {
-				environmentService.setDayLightCycle(isEnabled);
+				if (!environmentService.isRealTimeDaylight()) {
+					environmentService.setDayLightCycle(isEnabled);
+				}
 			},
 			{
-				defaultValue: environmentService.getDayLightCycle(),
+				defaultValue:
+					environmentService.getDayLightCycle() ||
+					environmentService.isRealTimeDaylight(),
 				tooltip: "edu_tools.ui.environment_daytime.set_daytime_cycle_tooltip",
 			},
 		);
