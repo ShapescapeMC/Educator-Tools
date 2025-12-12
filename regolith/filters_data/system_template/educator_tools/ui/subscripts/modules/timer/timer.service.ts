@@ -25,7 +25,7 @@ export interface Timer {
 	started: boolean;
 	/** Whether the timer is currently paused */
 	isPaused: boolean;
-	/** Timestamp when the timer was started (milliseconds since epoch) */
+	/** Timestamp when the timer was started (Unix timestamp in milliseconds, as from JavaScript Date.now()) */
 	startedAt: number;
 	/** Timestamp when the timer was paused (0 if not paused) */
 	pausedAt: number;
