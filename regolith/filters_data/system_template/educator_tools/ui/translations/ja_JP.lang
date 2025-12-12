@@ -192,6 +192,7 @@ edu_tools.ui.environment_daytime.title=§f時刻の設定
 edu_tools.ui.environment_daytime.select_daytime=時刻を選択してください
 edu_tools.ui.environment_daytime.select_daytime_tooltip=変更したい時間帯を選択してください
 edu_tools.ui.environment_daytime.select_daytime.options.no_change=変更しない
+edu_tools.ui.environment_daytime.select_daytime.options.realtime=現実時間
 edu_tools.ui.environment_daytime.select_daytime.options.day=日
 edu_tools.ui.environment_daytime.select_daytime.options.night=夜
 edu_tools.ui.environment_daytime.select_daytime.options.noon=正午

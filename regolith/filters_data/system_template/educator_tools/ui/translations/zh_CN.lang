@@ -190,6 +190,7 @@ edu_tools.ui.environment_daytime.title=§f白天设置
 edu_tools.ui.environment_daytime.select_daytime=选择时间
 edu_tools.ui.environment_daytime.select_daytime_tooltip=选择一天中的时间
 edu_tools.ui.environment_daytime.select_daytime.options.no_change=不改变
+edu_tools.ui.environment_daytime.select_daytime.options.realtime=实时
 edu_tools.ui.environment_daytime.select_daytime.options.day=白天
 edu_tools.ui.environment_daytime.select_daytime.options.night=夜晚
 edu_tools.ui.environment_daytime.select_daytime.options.noon=正午

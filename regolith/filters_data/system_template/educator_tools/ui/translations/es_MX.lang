@@ -190,6 +190,7 @@ edu_tools.ui.environment_daytime.title=§fConfiguración del Día
 edu_tools.ui.environment_daytime.select_daytime=Seleccionar hora del día
 edu_tools.ui.environment_daytime.select_daytime_tooltip=Selecciona la hora del día
 edu_tools.ui.environment_daytime.select_daytime.options.no_change=Sin cambios
+edu_tools.ui.environment_daytime.select_daytime.options.realtime=Tiempo real
 edu_tools.ui.environment_daytime.select_daytime.options.day=Día
 edu_tools.ui.environment_daytime.select_daytime.options.night=Noche
 edu_tools.ui.environment_daytime.select_daytime.options.noon=Mediodía
