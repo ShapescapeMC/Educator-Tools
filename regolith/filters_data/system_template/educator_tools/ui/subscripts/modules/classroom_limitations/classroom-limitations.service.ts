@@ -45,6 +45,7 @@ export class ClassroomLimitationsService implements Module {
 				"minecraft:ominous_bottle",
 			],
 		},
+		{ key: "spawn_eggs", pattern: /_spawn_egg$/ },
 	];
 
 	private readonly entityLimitations = [
@@ -99,7 +100,10 @@ export class ClassroomLimitationsService implements Module {
 	public isItemRestricted(typeId: string): boolean {
 		for (const lim of this.itemLimitations) {
 			if (!this.isRestrictionEnabled(lim.key)) continue;
-			if (lim.itemIds.includes(typeId)) return true;
+			// Check exact match
+			if (lim.itemIds && lim.itemIds.includes(typeId)) return true;
+			// Check regex pattern match
+			if (lim.pattern && lim.pattern.test(typeId)) return true;
 		}
 		return false;
 	}
@@ -150,7 +154,11 @@ export class ClassroomLimitationsService implements Module {
 	}
 
 	/** Expose limitation definitions for scene */
-	public getItemLimitations(): { key: string; itemIds: string[] }[] {
+	public getItemLimitations(): {
+		key: string;
+		itemIds?: string[];
+		pattern?: RegExp;
+	}[] {
 		return this.itemLimitations;
 	}
 
