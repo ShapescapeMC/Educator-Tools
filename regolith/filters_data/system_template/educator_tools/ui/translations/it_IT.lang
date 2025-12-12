@@ -25,6 +25,7 @@ edu_tools.ui.main.buttons.assignments=Compiti
 edu_tools.ui.main.buttons.teams_management=Gestione Squadre
 edu_tools.ui.main.buttons.focus_mode=Modalità Focus
 edu_tools.ui.main.buttons.inventory_manage=Gestione Inventario
+edu_tools.ui.main.buttons.classroom_limitations=Limitazioni in Aula
 
 ### Team Selection Scene
 edu_tools.ui.team_select.title=§fSeleziona una Squadra

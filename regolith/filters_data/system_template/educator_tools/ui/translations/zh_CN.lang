@@ -25,6 +25,7 @@ edu_tools.ui.main.buttons.assignments=任务
 edu_tools.ui.main.buttons.teams_management=团队管理
 edu_tools.ui.main.buttons.focus_mode=专注模式
 edu_tools.ui.main.buttons.inventory_manage=库存管理
+edu_tools.ui.main.buttons.classroom_limitations=课堂限制
 
 ### Team Selection Scene
 edu_tools.ui.team_select.title=§f选择一个队伍

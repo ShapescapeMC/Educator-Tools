@@ -25,6 +25,7 @@ edu_tools.ui.main.buttons.assignments=Tareas
 edu_tools.ui.main.buttons.teams_management=Gestión de Equipos
 edu_tools.ui.main.buttons.focus_mode=Modo de Enfoque
 edu_tools.ui.main.buttons.inventory_manage=Gestión de Inventario
+edu_tools.ui.main.buttons.classroom_limitations=Limitaciones del Aula
 
 ### Team Selection Scene
 edu_tools.ui.team_select.title=§fSeleccionar un Equipo

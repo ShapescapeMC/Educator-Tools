@@ -26,6 +26,7 @@ edu_tools.ui.main.buttons.assignments=課題
 edu_tools.ui.main.buttons.teams_management=チーム管理
 edu_tools.ui.main.buttons.focus_mode=集中モード
 edu_tools.ui.main.buttons.inventory_manage=インベントリ管理
+edu_tools.ui.main.buttons.classroom_limitations=教室の制限
 
 ### Team Selection Scene
 edu_tools.ui.team_select.title=§fプレイヤーまたはチームを選んでください
