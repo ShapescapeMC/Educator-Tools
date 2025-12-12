@@ -8,6 +8,7 @@ import {
 	EntityLoadAfterEvent,
 	EntityInventoryComponent,
 	DimensionTypes,
+	ItemUseBeforeEvent,
 } from "@minecraft/server";
 import { ClassroomLimitationsService } from "./classroom-limitations.service";
 
@@ -58,7 +59,7 @@ export class ClassroomLimitationsMechanic {
 	 * @remarks Uses a broad `any` for the event parameter due to upstream typing variations.
 	 */
 	private registerItemUseInterception(): void {
-		world.beforeEvents.itemUse.subscribe((ev: any) => {
+		world.beforeEvents.itemUse.subscribe((ev: ItemUseBeforeEvent) => {
 			const player: Player = ev.source;
 			if (!player || this.service.isTeacher(player)) return;
 			const item = ev.itemStack;
