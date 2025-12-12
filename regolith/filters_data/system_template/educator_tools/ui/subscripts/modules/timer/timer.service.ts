@@ -480,7 +480,7 @@ export class TimerService implements Module {
 		const remainingSeconds = remainingTime / 1000;
 		// Show countdown warnings and final alert in the last 11 seconds
 		if (remainingSeconds < 11) {
-			// Show "times up" message only in the final 50ms (approximately 1 tick)
+			// Show "times up" message only in the final 50ms (exactly 1 tick; 1 tick = 50ms in Minecraft)
 			// This prevents premature "times up" messages while still giving a final warning
 			if (remainingTime < 50) {
 				world.sendMessage([
