@@ -12,7 +12,6 @@ export class AssignmentTeacherScene extends ActionUIScene {
 		this.addButton(
 			"edu_tools.ui.assignment.teacher.buttons.create_assignment",
 			(): void => {
-				context.setData("assignment", undefined);
 				sceneManager.openSceneWithContext(context, "assignment_create", true);
 			},
 			"textures/edu_tools/ui/icons/assignment/create_assignment",
