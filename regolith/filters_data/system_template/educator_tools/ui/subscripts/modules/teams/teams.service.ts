@@ -234,6 +234,7 @@ export class TeamsService implements Module {
 	 * @returns The team object or null if not found
 	 */
 	getTeam(teamId: string): Team | undefined {
+		if (!teamId) return undefined;
 		if (teamId === TeamsService.ALL_PLAYERS_TEAM_ID) {
 			return this.generateAllPlayersTeam();
 		} else if (teamId === TeamsService.TEACHERS_TEAM_ID) {
