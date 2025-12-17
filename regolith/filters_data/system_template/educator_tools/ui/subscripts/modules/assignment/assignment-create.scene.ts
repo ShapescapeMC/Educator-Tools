@@ -3,7 +3,7 @@ import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ModalUIScene } from "../scene_manager/ui-scene";
 import { Team } from "../teams/interfaces/team.interface";
-import { AssignmentService } from "./assignment.service";
+import { Assignment, AssignmentService } from "./assignment.service";
 import { TeamsService } from "../teams/teams.service";
 
 export class AssignmentCreateScene extends ModalUIScene {
@@ -18,7 +18,7 @@ export class AssignmentCreateScene extends ModalUIScene {
 
 		this.setContext(context);
 
-		const assignment = context.getData("assignment");
+		const assignment = context.getData("assignment") as Assignment | undefined;
 		let assignedTeam: Team | undefined = undefined;
 		if (assignment) {
 			assignedTeam = teamsService.getTeam(assignment.assignedTo);
