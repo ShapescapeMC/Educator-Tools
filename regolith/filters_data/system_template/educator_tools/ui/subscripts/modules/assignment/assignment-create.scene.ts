@@ -88,11 +88,9 @@ export class AssignmentCreateScene extends ModalUIScene {
 					);
 				},
 				{
-					defaultValueIndex: assignment?.icon
-						? AssignmentService.availableIcons.indexOf(assignment.icon)
-						: Math.floor(
-								Math.random() * AssignmentService.availableIcons.length,
-						  ),
+					defaultValueIndex: Math.floor(
+						Math.random() * AssignmentService.availableIcons.length,
+					),
 					tooltip: "edu_tools.ui.assignment_create.icon_tooltip",
 				},
 			);
