@@ -5,6 +5,7 @@ import { TeamsService } from "../teams/teams.service";
 
 export interface PlayerNicknameSettings {
 	promptOnJoin: boolean;
+	allowCustomColors: boolean;
 }
 
 export class PlayerNicknameService {
@@ -33,6 +34,14 @@ export class PlayerNicknameService {
 	}
 
 	setNickname(playerId: string, nickname: string): void {
+		// Trim whitespace from nickname, remove color codes, limit length and remove non ascii characters
+		nickname = nickname
+			.trim()
+			.replace(/[^\x00-\x7F]/g, "")
+			.substring(0, 20);
+		if (!this.getSettings().allowCustomColors) {
+			nickname = nickname.replace(/§[0-9a-fk-or]/gi, "");
+		}
 		this.nicknameStorage.set(playerId, nickname);
 	}
 
@@ -51,12 +60,15 @@ export class PlayerNicknameService {
 	getSettings(): PlayerNicknameSettings {
 		const defaultSettings: PlayerNicknameSettings = {
 			promptOnJoin: false,
+			allowCustomColors: false,
 		};
 		const settings = this.storage.get("settings") as
 			| Partial<PlayerNicknameSettings>
 			| undefined;
 		return {
 			promptOnJoin: settings?.promptOnJoin ?? defaultSettings.promptOnJoin,
+			allowCustomColors:
+				settings?.allowCustomColors ?? defaultSettings.allowCustomColors,
 		};
 	}
 
