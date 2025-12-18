@@ -16,7 +16,7 @@ import { TeamsService } from "../teams/teams.service";
 export class ItemService implements Module {
 	readonly id: string = "item";
 	private readonly moduleManager: ModuleManager;
-	private teamsService: TeamsService;
+	private teamsService: TeamsService | undefined;
 
 	constructor(moduleManager: ModuleManager) {
 		this.moduleManager = moduleManager;
