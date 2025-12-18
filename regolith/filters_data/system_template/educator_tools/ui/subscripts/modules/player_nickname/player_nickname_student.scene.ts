@@ -1,7 +1,7 @@
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ModalUIScene } from "../scene_manager/ui-scene";
-import { PlayerNicknameService } from "./player_nickname.service";
+import { ColorCode, PlayerNicknameService } from "./player_nickname.service";
 
 export class PlayerNicknameStudentScene extends ModalUIScene {
 	static readonly id = "player_nickname_student";
@@ -18,11 +18,13 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 			context.getSourcePlayer().id,
 		);
 
+		const settings = this.playerNicknameService.getSettings();
+
 		this.addLabel({ translate: "edu_tools.ui.player_nickname_student.body" });
 
 		this.addTextField(
 			{ translate: "edu_tools.ui.player_nickname_student.nickname" },
-			currentNickname ? currentNickname : "John",
+			currentNickname ? currentNickname : this.player.name,
 			(value: string) => {
 				context.setData("nickname", value);
 			},
@@ -31,16 +33,41 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 			},
 		);
 
+		if (settings.allowCustomColors) {
+			// Turn ColorCode enum into dropdown options using keys
+			const options: string[] = [];
+			for (const key in ColorCode) {
+				options.push(`edu_tools.ui.palette_color.${key.toLowerCase()}`);
+			}
+			this.addDropdown(
+				{ translate: "edu_tools.ui.player_nickname_student.color" },
+				options,
+				(value: string) => {
+					context.setData("color", options.indexOf(value));
+				},
+				{
+					defaultValueIndex: options.indexOf(
+						"edu_tools.ui.palette_color.white",
+					),
+					tooltip: "edu_tools.ui.player_nickname_student.color_tooltip",
+				},
+			);
+		}
+
 		const response = this.show(context.getSourcePlayer(), sceneManager);
 		response.then((r) => {
 			if (r.canceled) {
 				return;
 			}
 			const nickname = context.getData("nickname") as string;
+			const colorIndex = context.getData("color") as number | 0;
+			let colorCode = settings.allowCustomColors
+				? Object.values(ColorCode)[colorIndex]
+				: "";
 			if (nickname && nickname.trim().length > 0) {
 				this.playerNicknameService.setNickname(
 					context.getSourcePlayer().id,
-					nickname.trim(),
+					colorCode + nickname.trim(),
 				);
 			} else {
 				this.playerNicknameService.clearNickname(context.getSourcePlayer().id);
