@@ -70,10 +70,10 @@ export class PlayerNicknameService {
 		}
 		this.nicknameStorage.set(playerId, nickname);
 
-        const player = world.getEntity(playerId);
-        if (player) {
-            player.nameTag = nickname;
-        }
+		const player = world.getEntity(playerId);
+		if (player) {
+			player.nameTag = nickname;
+		}
 	}
 
 	clearNickname(playerId: string): void {
@@ -149,5 +149,13 @@ export class PlayerNicknameService {
 		if (partialSettings.requireApproval === false) {
 			this.checkIfApprovalNeeded();
 		}
+	}
+
+	setLastApprovalRequestTick(playerId: string, tick: number): void {
+		this.storage.set("last_approval_request", tick);
+	}
+
+	getLastApprovalRequestTick(playerId: string): number | undefined {
+		return this.storage.get("last_approval_request") as number | undefined;
 	}
 }
