@@ -69,6 +69,11 @@ export class PlayerNicknameService {
 			nickname = nickname.replace(/§[0-9a-fk-or]/gi, "");
 		}
 		this.nicknameStorage.set(playerId, nickname);
+
+        const player = world.getEntity(playerId);
+        if (player) {
+            player.nameTag = nickname;
+        }
 	}
 
 	clearNickname(playerId: string): void {
