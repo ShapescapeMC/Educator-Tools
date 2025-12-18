@@ -65,10 +65,18 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 				? Object.values(ColorCode)[colorIndex]
 				: "";
 			if (nickname && nickname.trim().length > 0) {
-				this.playerNicknameService.setNickname(
-					context.getSourcePlayer().id,
-					colorCode + nickname.trim(),
-				);
+				const newNickname = colorCode + nickname.trim();
+				if (settings.requireApproval) {
+					this.playerNicknameService.addNicknameApprovalRequest(
+						context.getSourcePlayer().id,
+						newNickname,
+					);
+				} else {
+					this.playerNicknameService.setNickname(
+						context.getSourcePlayer().id,
+						newNickname,
+					);
+				}
 			} else {
 				this.playerNicknameService.clearNickname(context.getSourcePlayer().id);
 			}

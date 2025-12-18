@@ -33,11 +33,13 @@ export class PlayerNicknameService {
 	public readonly id = PlayerNicknameService.id;
 	private readonly storage: PropertyStorage;
 	private readonly nicknameStorage: PropertyStorage;
+	private readonly approvalQueueStorage: PropertyStorage;
 	private teamsService: TeamsService | undefined;
 
 	constructor(private readonly moduleManager: ModuleManager) {
 		this.storage = new CachedStorage(world, "player_nickname");
 		this.nicknameStorage = this.storage.getSubStorage("nicknames");
+		this.approvalQueueStorage = this.storage.getSubStorage("approval_queue");
 	}
 
 	initialize(): void {
@@ -75,6 +77,26 @@ export class PlayerNicknameService {
 
 	getAllNicknames(): Record<string, string>[] {
 		return this.nicknameStorage.getAll();
+	}
+
+	addNicknameApprovalRequest(playerId: string, nickname: string): void {
+		this.approvalQueueStorage.set(playerId, nickname);
+	}
+
+	getNicknameApprovalRequests(): Record<string, string>[] {
+		return this.approvalQueueStorage.getAll();
+	}
+
+	removeNicknameApprovalRequest(playerId: string): void {
+		this.approvalQueueStorage.set(playerId, undefined);
+	}
+
+	approveNickname(playerId: string): void {
+		const nickname = this.approvalQueueStorage.get(playerId);
+		if (nickname) {
+			this.setNickname(playerId, nickname);
+			this.removeNicknameApprovalRequest(playerId);
+		}
 	}
 
 	getSettings(): PlayerNicknameSettings {
