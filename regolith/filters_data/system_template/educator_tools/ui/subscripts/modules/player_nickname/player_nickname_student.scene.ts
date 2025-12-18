@@ -1,6 +1,7 @@
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ModalUIScene } from "../scene_manager/ui-scene";
+import { TeamsService } from "../teams/teams.service";
 import { ColorCode, PlayerNicknameService } from "./player_nickname.service";
 
 export class PlayerNicknameStudentScene extends ModalUIScene {
@@ -10,6 +11,7 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 		sceneManager: SceneManager,
 		context: SceneContext,
 		private readonly playerNicknameService: PlayerNicknameService,
+		private readonly teamsService: TeamsService,
 	) {
 		super(PlayerNicknameStudentScene.id, context.getSourcePlayer());
 		this.setContext(context);
@@ -66,7 +68,13 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 				: "";
 			if (nickname && nickname.trim().length > 0) {
 				const newNickname = colorCode + nickname.trim();
-				if (settings.requireApproval) {
+				if (
+					settings.requireApproval &&
+					!this.teamsService!.isPlayerInTeam(
+						TeamsService.TEACHERS_TEAM_ID,
+						context.getSourcePlayer().id,
+					)
+				) {
 					this.playerNicknameService.addNicknameApprovalRequest(
 						context.getSourcePlayer().id,
 						newNickname,
