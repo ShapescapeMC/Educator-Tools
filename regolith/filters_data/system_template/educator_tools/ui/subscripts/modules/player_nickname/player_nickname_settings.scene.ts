@@ -41,6 +41,18 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 			},
 		);
 
+		this.addToggle(
+			"edu_tools.ui.player_nickname_settings.require_approval",
+			(value: boolean) => {
+				context.setData("requireApproval", value);
+			},
+			{
+				defaultValue: settings.requireApproval,
+				tooltip:
+					"edu_tools.ui.player_nickname_settings.require_approval_tooltip",
+			},
+		);
+
 		const response = this.show(context.getSourcePlayer(), sceneManager);
 		response.then((r) => {
 			if (r.canceled) {
