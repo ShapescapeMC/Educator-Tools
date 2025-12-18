@@ -39,6 +39,9 @@ export class PlayerNicknameMechanic {
 	remindApprovalQueue(): void {
 		const pendingNicknames =
 			this.playerNicknameService.getNicknameApprovalRequests();
+		if (pendingNicknames.length === 0) {
+			return;
+		}
 		const teachers =
 			this.teamService.getTeam(TeamsService.TEACHERS_TEAM_ID)?.memberIds || [];
 		teachers.forEach((teacherId) => {
