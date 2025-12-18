@@ -1,11 +1,15 @@
-import { PlayerSpawnAfterEvent, world } from "@minecraft/server";
+import { Player, PlayerSpawnAfterEvent, world } from "@minecraft/server";
 import { PlayerNicknameService } from "./player_nickname.service";
+import { TeamsService } from "../teams/teams.service";
 
 export class PlayerNicknameMechanic {
 	static readonly id = "player_nickname";
 	public readonly id = PlayerNicknameMechanic.id;
 
-	constructor(private readonly playerNicknameService: PlayerNicknameService) {}
+	constructor(
+		private readonly playerNicknameService: PlayerNicknameService,
+		private readonly teamService: TeamsService,
+	) {}
 
 	initialize(): void {
 		world.afterEvents.playerSpawn.subscribe((event) => {
@@ -26,5 +30,21 @@ export class PlayerNicknameMechanic {
 				}
 			}
 		}
+	}
+
+	remindApprovalQueue(): void {
+		const pendingNicknames =
+			this.playerNicknameService.getNicknameApprovalRequests();
+		const teachers =
+			this.teamService.getTeam(TeamsService.TEACHERS_TEAM_ID)?.memberIds || [];
+		teachers.forEach((teacherId) => {
+			const teacher = world.getEntity(teacherId) as Player;
+			if (teacher) {
+				teacher.sendMessage({
+					translate: "edu_tools.ui.player_nickname_approval.reminder",
+					with: [pendingNicknames.length + ""],
+				});
+			}
+		});
 	}
 }
