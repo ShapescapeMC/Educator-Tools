@@ -13,4 +13,5 @@ export interface TeamsData {
 	icon?: string; // Optional icon for the team
 	description?: string;
 	host_auto_assign?: boolean; // Whether the team should auto-assign members
+	nickname?: string; // Optional nickname for the team, used only for player teams
 }
