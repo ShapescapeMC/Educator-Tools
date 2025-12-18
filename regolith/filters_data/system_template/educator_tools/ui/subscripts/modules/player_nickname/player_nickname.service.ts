@@ -49,6 +49,10 @@ export class PlayerNicknameService {
 				TeamsService.id,
 			) as TeamsService;
 		});
+
+		system.runInterval(() => {
+			this.checkIfApprovalNeeded();
+		}, 20 * 60 * 5);
 	}
 
 	getNickname(playerId: string): string | undefined {
@@ -99,6 +103,15 @@ export class PlayerNicknameService {
 		}
 	}
 
+	checkIfApprovalNeeded(): void {
+		if (!this.getSettings().requireApproval) {
+			const pendingNicknames = this.getNicknameApprovalRequests();
+			pendingNicknames.forEach((request) => {
+				this.approveNickname(request.playerId);
+			});
+		}
+	}
+
 	getSettings(): PlayerNicknameSettings {
 		const defaultSettings: PlayerNicknameSettings = {
 			promptOnJoin: false,
@@ -119,11 +132,17 @@ export class PlayerNicknameService {
 
 	setSettings(settings: PlayerNicknameSettings): void {
 		this.storage.set("settings", settings);
+
+		this.checkIfApprovalNeeded();
 	}
 
 	updateSettings(partialSettings: Partial<PlayerNicknameSettings>): void {
 		const currentSettings = this.getSettings();
 		const updatedSettings = { ...currentSettings, ...partialSettings };
 		this.setSettings(updatedSettings);
+
+		if (partialSettings.requireApproval === false) {
+			this.checkIfApprovalNeeded();
+		}
 	}
 }
