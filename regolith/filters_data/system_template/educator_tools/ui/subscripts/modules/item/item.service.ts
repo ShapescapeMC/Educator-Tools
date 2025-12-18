@@ -13,10 +13,17 @@ import { Module, ModuleManager } from "../../module-manager";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { TeamsService } from "../teams/teams.service";
 
+export interface SceneSettings {
+	priority: number;
+	condition_callback: (player: Player) => boolean;
+	callback: (player: Player) => void;
+}
+
 export class ItemService implements Module {
 	readonly id: string = "item";
 	private readonly moduleManager: ModuleManager;
 	private teamsService: TeamsService | undefined;
+	private readonly registeredScenes: Map<string, SceneSettings> = new Map();
 
 	constructor(moduleManager: ModuleManager) {
 		this.moduleManager = moduleManager;
