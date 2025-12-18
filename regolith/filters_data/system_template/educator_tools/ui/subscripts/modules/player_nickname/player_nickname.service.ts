@@ -6,6 +6,7 @@ import { TeamsService } from "../teams/teams.service";
 export interface PlayerNicknameSettings {
 	promptOnJoin: boolean;
 	allowCustomColors: boolean;
+	requireApproval: boolean;
 }
 
 export enum ColorCode {
@@ -79,7 +80,8 @@ export class PlayerNicknameService {
 	getSettings(): PlayerNicknameSettings {
 		const defaultSettings: PlayerNicknameSettings = {
 			promptOnJoin: false,
-			allowCustomColors: false,
+			allowCustomColors: true,
+			requireApproval: false,
 		};
 		const settings = this.storage.get("settings") as
 			| Partial<PlayerNicknameSettings>
@@ -88,6 +90,8 @@ export class PlayerNicknameService {
 			promptOnJoin: settings?.promptOnJoin ?? defaultSettings.promptOnJoin,
 			allowCustomColors:
 				settings?.allowCustomColors ?? defaultSettings.allowCustomColors,
+			requireApproval:
+				settings?.requireApproval ?? defaultSettings.requireApproval,
 		};
 	}
 
