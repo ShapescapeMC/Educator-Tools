@@ -26,6 +26,9 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 			(value: string) => {
 				context.setData("nickname", value);
 			},
+			{
+				tooltip: "edu_tools.ui.player_nickname_student.nickname_tooltip",
+			},
 		);
 
 		const response = this.show(context.getSourcePlayer(), sceneManager);
