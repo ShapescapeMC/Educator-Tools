@@ -1,6 +1,7 @@
 import { Player, PlayerSpawnAfterEvent, world } from "@minecraft/server";
 import { PlayerNicknameService } from "./player_nickname.service";
 import { TeamsService } from "../teams/teams.service";
+import { SceneManager } from "../scene_manager/scene-manager";
 
 export class PlayerNicknameMechanic {
 	static readonly id = "player_nickname";
@@ -26,7 +27,10 @@ export class PlayerNicknameMechanic {
 			} else {
 				player.nameTag = player.name;
 				if (this.playerNicknameService.getSettings().promptOnJoin) {
-					// Prompt the player to set a nickname
+					SceneManager.getInstance().createContextAndOpenScene(
+						player,
+						"player_nickname_student",
+					);
 				}
 			}
 		}
