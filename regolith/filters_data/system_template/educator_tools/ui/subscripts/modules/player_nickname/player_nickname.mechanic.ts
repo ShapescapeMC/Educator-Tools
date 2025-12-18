@@ -1,4 +1,9 @@
-import { Player, PlayerSpawnAfterEvent, world } from "@minecraft/server";
+import {
+	Player,
+	PlayerSpawnAfterEvent,
+	system,
+	world,
+} from "@minecraft/server";
 import { PlayerNicknameService } from "./player_nickname.service";
 import { TeamsService } from "../teams/teams.service";
 import { SceneManager } from "../scene_manager/scene-manager";
@@ -16,6 +21,10 @@ export class PlayerNicknameMechanic {
 		world.afterEvents.playerSpawn.subscribe((event) => {
 			this.onPlayerJoin(event);
 		});
+
+		system.runInterval(() => {
+			this.remindApprovalQueue();
+		}, 20 * 60 * 3);
 	}
 
 	onPlayerJoin(event: PlayerSpawnAfterEvent): void {
