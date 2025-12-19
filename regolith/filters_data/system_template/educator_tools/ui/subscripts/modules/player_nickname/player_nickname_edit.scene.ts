@@ -25,8 +25,6 @@ export class PlayerNicknameEditScene extends ModalUIScene {
 
 		const currentNickname = this.playerNicknameService.getNickname(playerId);
 
-		const settings = this.playerNicknameService.getSettings();
-
 		this.addLabel({ translate: "edu_tools.ui.player_nickname_edit.body" });
 
 		this.addTextField(
