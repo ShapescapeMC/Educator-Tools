@@ -1,6 +1,6 @@
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene, ModalUIScene } from "../scene_manager/ui-scene";
+import { ModalUIScene } from "../scene_manager/ui-scene";
 import { TeamsService } from "../teams/teams.service";
 import { PlayerNicknameService } from "./player_nickname.service";
 
