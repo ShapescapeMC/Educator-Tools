@@ -3,6 +3,13 @@ import { PropertyStorage, CachedStorage } from "@shapescape/storage";
 import { ModuleManager } from "../../module-manager";
 import { TeamsService } from "../teams/teams.service";
 import { ItemService } from "../item/item.service";
+import { PlayerNicknameApprovalScene } from "./player_nickname_approval.scene";
+import { SceneContext } from "../scene_manager/scene-context";
+import { SceneManager } from "../scene_manager/scene-manager";
+import { PlayerNicknameEditScene } from "./player_nickname_edit.scene";
+import { PlayerNicknameSettingsScene } from "./player_nickname_settings.scene";
+import { PlayerNicknameStudentScene } from "./player_nickname_student.scene";
+import { PlayerNicknameTeacherScene } from "./player_nickname_teacher.scene";
 
 export interface PlayerNicknameSettings {
 	promptOnJoin: boolean;
@@ -69,6 +76,49 @@ export class PlayerNicknameService {
 				);
 			},
 		});
+	}
+
+	registerScenes(sceneManager: SceneManager): void {
+		sceneManager.registerScene(
+			PlayerNicknameApprovalScene.id,
+			(manager: SceneManager, context: SceneContext) => {
+				new PlayerNicknameApprovalScene(
+					manager,
+					context,
+					this,
+					this.teamsService!,
+				);
+			},
+		);
+		sceneManager.registerScene(
+			PlayerNicknameEditScene.id,
+			(manager: SceneManager, context: SceneContext) => {
+				new PlayerNicknameEditScene(manager, context, this, this.teamsService!);
+			},
+		);
+		sceneManager.registerScene(
+			PlayerNicknameSettingsScene.id,
+			(manager: SceneManager, context: SceneContext) => {
+				new PlayerNicknameSettingsScene(manager, context, this);
+			},
+		);
+		sceneManager.registerScene(
+			PlayerNicknameStudentScene.id,
+			(manager: SceneManager, context: SceneContext) => {
+				new PlayerNicknameStudentScene(
+					manager,
+					context,
+					this,
+					this.teamsService!,
+				);
+			},
+		);
+		sceneManager.registerScene(
+			PlayerNicknameTeacherScene.id,
+			(manager: SceneManager, context: SceneContext) => {
+				new PlayerNicknameTeacherScene(manager, context, this);
+			},
+		);
 	}
 
 	getNickname(playerId: string): string | undefined {
