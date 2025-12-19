@@ -2,6 +2,7 @@ import { system, world } from "@minecraft/server";
 import { PropertyStorage, CachedStorage } from "@shapescape/storage";
 import { ModuleManager } from "../../module-manager";
 import { TeamsService } from "../teams/teams.service";
+import { ItemService } from "../item/item.service";
 
 export interface PlayerNicknameSettings {
 	promptOnJoin: boolean;
@@ -34,6 +35,7 @@ export class PlayerNicknameService {
 	private readonly storage: PropertyStorage;
 	private readonly nicknameStorage: PropertyStorage;
 	private readonly approvalQueueStorage: PropertyStorage;
+	private itemService: ItemService | undefined;
 	private teamsService: TeamsService | undefined;
 
 	constructor(private readonly moduleManager: ModuleManager) {
@@ -53,6 +55,20 @@ export class PlayerNicknameService {
 		system.runInterval(() => {
 			this.checkIfApprovalNeeded();
 		}, 20 * 60 * 5);
+
+		this.itemService?.registerScene("player_nickname_queue", {
+			priority: 100,
+			condition_callback: (player) => {
+				const teacherTeam = this.teamsService?.getTeam(
+					TeamsService.TEACHERS_TEAM_ID,
+				);
+				return (
+					(teacherTeam?.memberIds.includes(player.id) &&
+						this.checkIfShouldOpenQueue()) ||
+					false
+				);
+			},
+		});
 	}
 
 	getNickname(playerId: string): string | undefined {
@@ -90,6 +106,7 @@ export class PlayerNicknameService {
 
 	addNicknameApprovalRequest(playerId: string, nickname: string): void {
 		this.approvalQueueStorage.set(playerId, nickname);
+		this.setLastApprovalRequestTick(system.currentTick);
 	}
 
 	getNicknameApprovalRequests(): Record<string, string>[] {
@@ -106,6 +123,13 @@ export class PlayerNicknameService {
 			this.setNickname(playerId, nickname);
 			this.removeNicknameApprovalRequest(playerId);
 		}
+	}
+
+	checkIfShouldOpenQueue(): boolean {
+		const pendingRequests = this.getNicknameApprovalRequests().length;
+		const timeSinceLastRequest =
+			system.currentTick - (this.getLastApprovalRequestTick() || 0);
+		return pendingRequests > 0 && timeSinceLastRequest >= 20 * 60 * 1;
 	}
 
 	checkIfApprovalNeeded(): void {
@@ -151,11 +175,11 @@ export class PlayerNicknameService {
 		}
 	}
 
-	setLastApprovalRequestTick(playerId: string, tick: number): void {
+	setLastApprovalRequestTick(tick: number): void {
 		this.storage.set("last_approval_request", tick);
 	}
 
-	getLastApprovalRequestTick(playerId: string): number | undefined {
+	getLastApprovalRequestTick(): number | undefined {
 		return this.storage.get("last_approval_request") as number | undefined;
 	}
 }
