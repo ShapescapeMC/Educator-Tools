@@ -51,5 +51,20 @@ export class PlayerNicknameApprovalScene extends ModalUIScene {
 				);
 			});
 		}
+
+		const response = this.show(context.getSourcePlayer(), sceneManager);
+		response.then((r) => {
+			if (r.canceled) {
+				return;
+			}
+			if (context.getHistory().length > 0) {
+				sceneManager.goBackToScene(context, "player_nickname_teacher");
+			} else {
+				sceneManager.createContextAndOpenScene(
+					context.getSourcePlayer(),
+					"main",
+				);
+			}
+		});
 	}
 }
