@@ -76,13 +76,17 @@ export class PlayerNicknameService {
 	}
 
 	setNickname(playerId: string, nickname: string): void {
-		// Trim whitespace from nickname, remove color codes, limit length and remove non ascii characters
+		// Trim whitespace from nickname, remove color codes, formatting codes, limit length and remove non ascii characters
 		nickname = nickname
 			.trim()
-			.replace(/[^\x00-\x7F]/g, "")
+			// Remove non-ascii characters except for §
+			.replace(/[^\x00-\x7F§]/g, "")
+			// Formatting codes are §k, §l, §m, §n, §o, §r
+			.replace(/§[klmno r]/gi, "")
+			// Limit to 20 characters
 			.substring(0, 20);
 		if (!this.getSettings().allowCustomColors) {
-			nickname = nickname.replace(/§[0-9a-fk-or]/gi, "");
+			nickname = nickname.replace(/§[0-9a-f]/gi, "");
 		}
 		this.nicknameStorage.set(playerId, nickname);
 
