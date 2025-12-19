@@ -1,7 +1,9 @@
-import { Module } from "../../module-manager";
+import { Module, ModuleManager } from "../../module-manager";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { MainScene } from "./main.scene";
 import { SceneContext } from "../scene_manager/scene-context";
+import { ItemService } from "../item/item.service";
+import { TeamsService } from "../teams/teams.service";
 
 /**
  * Interface for button configuration
@@ -21,6 +23,39 @@ export class MainService implements Module {
 	 * Unique identifier for the module.
 	 */
 	readonly id: string = "main";
+
+	private readonly moduleManager: ModuleManager;
+	private itemService: ItemService | undefined;
+	private teamsService: TeamsService | undefined;
+
+	constructor(moduleManager: ModuleManager) {
+		this.moduleManager = moduleManager;
+	}
+
+	initialize(): void {
+		this.itemService = this.moduleManager.getModule<ItemService>(
+			ItemService.id,
+		);
+		this.teamsService = this.moduleManager.getModule<TeamsService>(
+			TeamsService.id,
+		);
+
+		this.itemService?.registerScene("main_menu", {
+			priority: -10000,
+			condition_callback: (player) => {
+				const teacherTeam = this.teamsService?.getTeam("system_teachers");
+				if (teacherTeam?.memberIds.includes(player.id)) {
+					return true;
+				} else {
+					// Send a message to the player that they are not allowed to use the educator tool
+					player.sendMessage({
+						translate: "edu_tools.message.no_host",
+					});
+				}
+				return false;
+			},
+		});
+	}
 
 	/**
 	 * Registry of buttons for the main menu

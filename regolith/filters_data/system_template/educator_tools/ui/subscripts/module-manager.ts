@@ -68,10 +68,10 @@ export class ModuleManager {
 	private loadDefaultModules(): void {
 		// Create TeamsService with a scoped storage
 		const teamsStorage = this.storage.getSubStorage("teams");
-		const teamsService = new TeamsService(teamsStorage);
+		const teamsService = new TeamsService(teamsStorage, this);
 		const itemService = new ItemService(this);
 		const sceneManager = SceneManager.getInstance(this, this.storage);
-		const mainService = new MainService();
+		const mainService = new MainService(this);
 		const gamemodeService = new GamemodeService();
 		const teleportService = new TeleportService();
 		const scenesService = new ScenesService();

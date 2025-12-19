@@ -16,11 +16,11 @@ import { TeamsService } from "../teams/teams.service";
 export interface SceneSettings {
 	priority: number;
 	condition_callback: (player: Player) => boolean;
-	callback: (player: Player) => void;
 }
 
 export class ItemService implements Module {
 	readonly id: string = "item";
+	static readonly id: string = "item";
 	private readonly moduleManager: ModuleManager;
 	private teamsService: TeamsService | undefined;
 	private readonly registeredScenes: Map<string, SceneSettings> = new Map();
@@ -49,19 +49,35 @@ export class ItemService implements Module {
 		});
 	}
 
+	public registerScene(sceneId: string, settings: SceneSettings): void {
+		this.registeredScenes.set(sceneId, settings);
+	}
+
+	public unregisterScene(sceneId: string): void {
+		this.registeredScenes.delete(sceneId);
+	}
+
+	/**
+	 * Get the registered scenes sorted by priority
+	 * Higher priority scenes come first
+	 * @returns An array of tuples containing the scene ID and its settings
+	 */
+	private getSortedScenes(): [string, SceneSettings][] {
+		return Array.from(this.registeredScenes.entries()).sort(
+			(a, b) => b[1].priority - a[1].priority,
+		);
+	}
+
 	private onEducatorToolUse(event: ItemUseAfterEvent): void {
 		const player = event.source as Player;
-		const teacherTeam = this.teamsService.getTeam("system_teachers");
-		if (teacherTeam?.memberIds.includes(player.id)) {
-			// Create a new SceneManager instance with our PropertyStorage
-			const sceneManager = SceneManager.getInstance();
-			// Create a context and open the main scene
-			sceneManager.createContextAndOpenScene(player, "main");
-		} else {
-			// Send a message to the player that they are not allowed to use the educator tool
-			event.source.sendMessage({
-				translate: "edu_tools.message.no_host",
-			});
+		const sortedScenes = this.getSortedScenes();
+		for (const [sceneId, settings] of sortedScenes) {
+			if (settings.condition_callback(player)) {
+				const sceneManager = SceneManager.getInstance();
+				// Create a context and open the main scene
+				sceneManager.createContextAndOpenScene(player, sceneId);
+				return;
+			}
 		}
 	}
 
@@ -96,7 +112,7 @@ export class ItemService implements Module {
 
 	private onPlayerSpawn(event: PlayerSpawnAfterEvent): void {
 		system.runTimeout(() => {
-			const teacherTeam = this.teamsService.getTeam("system_teachers");
+			const teacherTeam = this.teamsService?.getTeam("system_teachers");
 			if (teacherTeam?.memberIds.includes(event.player.id)) {
 				this.giveEducatorTool(event.player);
 			}
