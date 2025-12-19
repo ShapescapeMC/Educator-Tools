@@ -4,7 +4,7 @@ import { ModalUIScene } from "../scene_manager/ui-scene";
 import { PlayerNicknameService } from "./player_nickname.service";
 
 export class PlayerNicknameSettingsScene extends ModalUIScene {
-	static readonly id = "player_nickname_Settings";
+	static readonly id = "player_nickname_settings";
 
 	constructor(
 		sceneManager: SceneManager,
