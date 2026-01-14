@@ -35,7 +35,13 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 			},
 		);
 
-		if (settings.allowCustomColors) {
+		if (
+			settings.allowCustomColors ||
+			this.teamsService!.isPlayerInTeam(
+				TeamsService.TEACHERS_TEAM_ID,
+				context.getSourcePlayer().id,
+			)
+		) {
 			// Turn ColorCode enum into dropdown options using keys
 			const options: string[] = [];
 			for (const key in ColorCode) {

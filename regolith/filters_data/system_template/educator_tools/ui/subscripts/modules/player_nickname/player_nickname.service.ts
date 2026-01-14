@@ -138,7 +138,13 @@ export class PlayerNicknameService {
 			.substring(0, 20);
 		this.nicknameStorage.set(playerId, nickname);
 
-		if (!this.getSettings().allowCustomColors) {
+		if (
+			!this.getSettings().allowCustomColors &&
+			!this.teamsService!.isPlayerInTeam(
+				TeamsService.TEACHERS_TEAM_ID,
+				playerId,
+			)
+		) {
 			nickname = nickname.replace(/§[0-9a-f]/gi, "");
 		}
 
