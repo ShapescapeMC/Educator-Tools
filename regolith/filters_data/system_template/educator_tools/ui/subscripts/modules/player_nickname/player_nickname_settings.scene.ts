@@ -83,6 +83,7 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 				requireApproval,
 				customLeaveJoinMessages,
 			});
+			sceneManager.goBackToScene(context, "player_nickname_teacher");
 		});
 	}
 }
