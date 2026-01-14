@@ -97,14 +97,12 @@ export class PlayerNicknameMechanic {
 
 	checkPlayerPrompts(): void {
 		this.playersToPrompt.forEach((location, playerId) => {
-			world.sendMessage(`Checking prompt for player ${playerId}`);
 			const player = world.getEntity(playerId) as Player;
 			if (player) {
 				const distance = Vec3.from(player.getViewDirection()).distance(
 					location,
 				);
 				if (distance >= 1) {
-					world.sendMessage(`Prompting player ${playerId} for nickname`);
 					SceneManager.getInstance().createContextAndOpenScene(
 						player,
 						"player_nickname_student",
