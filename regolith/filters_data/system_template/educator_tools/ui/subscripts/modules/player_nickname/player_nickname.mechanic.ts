@@ -3,15 +3,19 @@ import {
 	PlayerLeaveAfterEvent,
 	PlayerSpawnAfterEvent,
 	system,
+	Vector3,
 	world,
 } from "@minecraft/server";
 import { PlayerNicknameService } from "./player_nickname.service";
 import { TeamsService } from "../teams/teams.service";
 import { SceneManager } from "../scene_manager/scene-manager";
+import { Vec3 } from "@bedrock-oss/bedrock-boost";
 
 export class PlayerNicknameMechanic {
 	static readonly id = "player_nickname";
 	public readonly id = PlayerNicknameMechanic.id;
+
+	private playersToPrompt: Map<string, Vector3> = new Map();
 
 	constructor(
 		private readonly playerNicknameService: PlayerNicknameService,
@@ -29,6 +33,10 @@ export class PlayerNicknameMechanic {
 		system.runInterval(() => {
 			this.remindApprovalQueue();
 		}, 20 * 60 * 3);
+
+		system.runInterval(() => {
+			this.checkPlayerPrompts();
+		}, 20 + Math.floor(Math.random() * 20));
 	}
 
 	onPlayerJoin(event: PlayerSpawnAfterEvent): void {
@@ -47,10 +55,7 @@ export class PlayerNicknameMechanic {
 			} else {
 				player.nameTag = player.name;
 				if (this.playerNicknameService.getSettings().promptOnJoin) {
-					SceneManager.getInstance().createContextAndOpenScene(
-						player,
-						"player_nickname_student",
-					);
+					this.playersToPrompt.set(player.id, player.getViewDirection());
 				}
 			}
 		}
@@ -68,6 +73,7 @@ export class PlayerNicknameMechanic {
 				});
 			}
 		}
+		this.playersToPrompt.delete(playerId);
 	}
 
 	remindApprovalQueue(): void {
@@ -87,5 +93,29 @@ export class PlayerNicknameMechanic {
 				});
 			}
 		});
+	}
+
+	checkPlayerPrompts(): void {
+		this.playersToPrompt.forEach((location, playerId) => {
+			world.sendMessage(`Checking prompt for player ${playerId}`);
+			const player = world.getEntity(playerId) as Player;
+			if (player) {
+				const distance = Vec3.from(player.getViewDirection()).distance(
+					location,
+				);
+				if (distance >= 1) {
+					world.sendMessage(`Prompting player ${playerId} for nickname`);
+					SceneManager.getInstance().createContextAndOpenScene(
+						player,
+						"player_nickname_student",
+					);
+					//this.playersToPrompt.delete(playerId);
+				}
+			}
+		});
+	}
+
+	studentUIOpened(playerId: string): void {
+		this.playersToPrompt.delete(playerId);
 	}
 }

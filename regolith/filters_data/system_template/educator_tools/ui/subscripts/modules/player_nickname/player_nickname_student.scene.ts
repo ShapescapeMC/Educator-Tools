@@ -16,6 +16,10 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 		super(PlayerNicknameStudentScene.id, context.getSourcePlayer());
 		this.setContext(context);
 
+		this.playerNicknameService
+			.getPlayerNicknameMechanic()
+			.studentUIOpened(context.getSourcePlayer().id);
+
 		const currentNickname = this.playerNicknameService.getNickname(
 			context.getSourcePlayer().id,
 		);

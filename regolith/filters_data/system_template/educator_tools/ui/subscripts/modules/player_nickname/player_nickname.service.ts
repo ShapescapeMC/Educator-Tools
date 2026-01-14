@@ -1,4 +1,4 @@
-import { system, world } from "@minecraft/server";
+import { Player, system, world } from "@minecraft/server";
 import { PropertyStorage, CachedStorage } from "@shapescape/storage";
 import { ModuleManager } from "../../module-manager";
 import { TeamsService } from "../teams/teams.service";
@@ -150,19 +150,22 @@ export class PlayerNicknameService {
 		return this.nicknameStorage.get(playerId);
 	}
 
-	setNickname(playerId: string, nickname: string): void {
-		// Trim whitespace from nickname, remove color codes, formatting codes, limit length and remove non ascii characters
-		nickname = nickname
-			.trim()
-			// Remove non-ascii characters except for §
-			.replace(/[^\x00-\x7F§]/g, "")
-			// Formatting codes are §k, §l, §m, §n, §o, §r
-			.replace(/§[klmno r]/gi, "")
-			// Limit to 20 characters
-			.substring(0, 20);
+	setNickname(playerId: string, nickname: string | undefined): void {
+		if (nickname) {
+			// Trim whitespace from nickname, remove color codes, formatting codes, limit length and remove non ascii characters
+			nickname = nickname
+				.trim()
+				// Remove non-ascii characters except for §
+				.replace(/[^\x00-\x7F§]/g, "")
+				// Formatting codes are §k, §l, §m, §n, §o, §r
+				.replace(/§[klmno r]/gi, "")
+				// Limit to 20 characters
+				.substring(0, 20);
+		}
 		this.nicknameStorage.set(playerId, nickname);
 
 		if (
+			nickname &&
 			!this.getSettings().allowCustomColors &&
 			!this.teamsService!.isPlayerInTeam(
 				TeamsService.TEACHERS_TEAM_ID,
@@ -172,14 +175,14 @@ export class PlayerNicknameService {
 			nickname = nickname.replace(/§[0-9a-f]/gi, "");
 		}
 
-		const player = world.getEntity(playerId);
+		const player = world.getEntity(playerId) as Player | undefined;
 		if (player) {
-			player.nameTag = nickname;
+			player.nameTag = nickname || player.name;
 		}
 	}
 
 	clearNickname(playerId: string): void {
-		this.nicknameStorage.set(playerId, undefined);
+		this.setNickname(playerId, undefined);
 	}
 
 	clearAllNicknames(): void {
@@ -208,6 +211,8 @@ export class PlayerNicknameService {
 		if (nickname) {
 			this.setNickname(playerId, nickname);
 			this.removeNicknameApprovalRequest(playerId);
+		} else {
+			this.clearNickname(playerId);
 		}
 	}
 
@@ -217,6 +222,8 @@ export class PlayerNicknameService {
 			const nickname = this.getNickname(player.id);
 			if (nickname) {
 				this.setNickname(player.id, nickname);
+			} else {
+				this.clearNickname(player.id);
 			}
 		});
 	}
@@ -288,5 +295,9 @@ export class PlayerNicknameService {
 
 	getLastApprovalRequestTick(): number | undefined {
 		return this.storage.get("last_approval_request") as number | undefined;
+	}
+
+	getPlayerNicknameMechanic(): PlayerNicknameMechanic {
+		return this.playerNicknameMechanic;
 	}
 }
