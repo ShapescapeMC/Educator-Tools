@@ -23,12 +23,19 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 		]);
 
 		if (settings.requireApproval) {
+			let requestCount =
+				playerNicknameService.getNicknameApprovalRequests().length;
+			let requestCountString = "" + requestCount;
+			if (requestCount > 0) {
+				requestCountString = "§c" + requestCount + "§r";
+			}
+			if (requestCount > 99) {
+				requestCountString = "§c99+§r";
+			}
 			this.addButton(
 				{
 					translate: "edu_tools.ui.player_nickname_teacher.approval_queue",
-					with: [
-						playerNicknameService.getNicknameApprovalRequests().length + "",
-					],
+					with: [requestCountString],
 				},
 				() => {
 					sceneManager.openSceneWithContext(
