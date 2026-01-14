@@ -55,7 +55,7 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 				{ translate: "edu_tools.ui.player_nickname_student.color" },
 				options,
 				(value: string) => {
-					context.setData("color", options.indexOf(value));
+					context.setData("colorIndex", value);
 				},
 				{
 					defaultValueIndex: options.indexOf(
@@ -72,7 +72,7 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 				return;
 			}
 			const nickname = context.getData("nickname") as string;
-			const colorIndex = context.getData("color") as number | 0;
+			const colorIndex = context.getData("colorIndex") as number | 0;
 			let colorCode = settings.allowCustomColors
 				? Object.values(ColorCode)[colorIndex]
 				: "";
