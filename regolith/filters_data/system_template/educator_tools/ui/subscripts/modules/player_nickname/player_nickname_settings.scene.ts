@@ -74,8 +74,9 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 			const promptOnJoin = context.getData("promptOnJoin") as boolean;
 			const allowCustomColors = context.getData("allowCustomColors") as boolean;
 			const requireApproval = context.getData("requireApproval") as boolean;
-			const customLeaveJoinMessages =
-				context.getData("customLeaveJoinMessages") as boolean;
+			const customLeaveJoinMessages = context.getData(
+				"customLeaveJoinMessages",
+			) as boolean;
 
 			this.playerNicknameService.updateSettings({
 				promptOnJoin,
