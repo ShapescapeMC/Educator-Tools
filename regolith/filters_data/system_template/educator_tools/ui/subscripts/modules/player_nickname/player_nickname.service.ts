@@ -71,7 +71,7 @@ export class PlayerNicknameService {
 			this.checkIfApprovalNeeded();
 		}, 20 * 60 * 5);
 
-		this.itemService?.registerScene("player_nickname_queue", {
+		this.itemService?.registerScene("player_nickname_approval", {
 			priority: 100,
 			condition_callback: (player) => {
 				const teacherTeam = this.teamsService?.getTeam(
