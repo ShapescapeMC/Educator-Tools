@@ -396,8 +396,8 @@ edu_tools.ui.player_nickname_student.nickname=Nickname
 edu_tools.ui.player_nickname_student.nickname_tooltip=Enter your desired nickname
 edu_tools.ui.player_nickname_student.color=Color
 edu_tools.ui.player_nickname_student.color_tooltip=Select a color for your nickname
-edu_tools.ui.player_nickname_student.join_message=%1 joined the game (was %2)
-edu_tools.ui.player_nickname_student.leave_message=%1 left the game (was %2)
+edu_tools.ui.player_nickname_student.join_message=%1§r joined the game (was %2§r)
+edu_tools.ui.player_nickname_student.leave_message=%1§r left the game (was %2§r)
 
 edu_tools.ui.player_nickname_edit.title=§fEdit Player Nickname
 edu_tools.ui.player_nickname_edit.body=Edit the nickname of the selected player
@@ -418,7 +418,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Enable 
 
 edu_tools.ui.player_nickname_approval.title=§fApprove Nicknames
 edu_tools.ui.player_nickname_approval.no_pending=No pending nickname requests
-edu_tools.ui.player_nickname_approval.request_body=%1 requested by %2
+edu_tools.ui.player_nickname_approval.request_body=%1§r requested by %2
 edu_tools.ui.player_nickname_approval.reminder=There are §a%1 §rnickname approval request(s) waiting
 
 ### Palette Colors
