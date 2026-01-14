@@ -25,23 +25,23 @@ export class PlayerNicknameApprovalScene extends ModalUIScene {
 			});
 		} else {
 			pendingNicknames.forEach((request) => {
-				const requestingPlayerTeam = this.teamService.getPlayerIndividualTeam(
-					request.playerId,
-				);
+				const [[playerId, nickname]] = Object.entries(request);
+				const requestingPlayerTeam =
+					this.teamService.getPlayerIndividualTeam(playerId);
 				this.addToggle(
 					{
 						translate: "edu_tools.ui.player_nickname_approval.request_body",
 						with: [
-							request.nickname,
+							nickname,
 							requestingPlayerTeam ? requestingPlayerTeam.name : "",
 						],
 					},
 					(approved: boolean) => {
 						if (approved) {
-							this.playerNicknameService.approveNickname(request.playerId);
+							this.playerNicknameService.approveNickname(playerId);
 						} else {
 							this.playerNicknameService.removeNicknameApprovalRequest(
-								request.playerId,
+								playerId,
 							);
 						}
 					},
