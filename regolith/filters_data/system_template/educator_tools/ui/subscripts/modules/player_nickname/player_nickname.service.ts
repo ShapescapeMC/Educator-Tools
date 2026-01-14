@@ -47,25 +47,26 @@ export class PlayerNicknameService {
 	private readonly approvalQueueStorage: PropertyStorage;
 	private itemService: ItemService | undefined;
 	private teamsService: TeamsService | undefined;
-	private playerNicknameMechanic: PlayerNicknameMechanic;
+	private playerNicknameMechanic: PlayerNicknameMechanic | undefined;
 
 	constructor(private readonly moduleManager: ModuleManager) {
 		this.storage = new CachedStorage(world, "player_nickname");
 		this.nicknameStorage = this.storage.getSubStorage("nicknames");
 		this.approvalQueueStorage = this.storage.getSubStorage("approval_queue");
+	}
+
+	initialize(): void {
+		this.teamsService = this.moduleManager.getModule(
+			TeamsService.id,
+		) as TeamsService;
+		this.itemService = this.moduleManager.getModule(
+			ItemService.id,
+		) as ItemService;
+
 		this.playerNicknameMechanic = new PlayerNicknameMechanic(
 			this,
 			this.teamsService!,
 		);
-	}
-
-	initialize(): void {
-		// Delay getting TeamsService until after all modules are initialized
-		system.run(() => {
-			this.teamsService = this.moduleManager.getModule(
-				TeamsService.id,
-			) as TeamsService;
-		});
 
 		system.runInterval(() => {
 			this.checkIfApprovalNeeded();
