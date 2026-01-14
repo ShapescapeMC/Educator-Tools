@@ -46,7 +46,7 @@ export class PlayerNicknameEditScene extends ModalUIScene {
 			{ translate: "edu_tools.ui.player_nickname_edit.color" },
 			options,
 			(value: string) => {
-				context.setData("color", options.indexOf(value));
+				context.setData("colorIndex", value);
 			},
 			{
 				defaultValueIndex: options.indexOf("edu_tools.ui.palette_color.white"),
@@ -60,7 +60,7 @@ export class PlayerNicknameEditScene extends ModalUIScene {
 				return;
 			}
 			const nickname = context.getData("nickname") as string;
-			const colorIndex = context.getData("color") as number | 0;
+			const colorIndex = context.getData("colorIndex") as number | 0;
 			let colorCode = Object.values(ColorCode)[colorIndex];
 			if (nickname && nickname.trim().length > 0) {
 				const newNickname = colorCode + nickname.trim();
