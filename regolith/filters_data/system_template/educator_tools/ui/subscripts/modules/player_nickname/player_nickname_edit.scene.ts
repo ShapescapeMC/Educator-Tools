@@ -1,3 +1,4 @@
+import { Player, world } from "@minecraft/server";
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ModalUIScene } from "../scene_manager/ui-scene";
@@ -24,12 +25,13 @@ export class PlayerNicknameEditScene extends ModalUIScene {
 		const playerId = subjectTeam.memberIds[0];
 
 		const currentNickname = this.playerNicknameService.getNickname(playerId);
+		const player = world.getEntity(playerId) as Player | undefined;
 
 		this.addLabel({ translate: "edu_tools.ui.player_nickname_edit.body" });
 
 		this.addTextField(
 			{ translate: "edu_tools.ui.player_nickname_edit.nickname" },
-			currentNickname ? currentNickname : this.player.name,
+			currentNickname ? currentNickname : player?.name ?? "",
 			(value: string) => {
 				context.setData("nickname", value);
 			},
