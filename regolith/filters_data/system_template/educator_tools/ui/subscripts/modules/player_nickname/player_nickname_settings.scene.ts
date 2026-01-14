@@ -53,6 +53,18 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 			},
 		);
 
+		this.addToggle(
+			"edu_tools.ui.player_nickname_settings.custom_leave_join_messages",
+			(value: boolean) => {
+				context.setData("customLeaveJoinMessages", value);
+			},
+			{
+				defaultValue: settings.customLeaveJoinMessages,
+				tooltip:
+					"edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip",
+			},
+		);
+
 		const response = this.show(context.getSourcePlayer(), sceneManager);
 		response.then((r) => {
 			if (r.canceled) {
@@ -61,10 +73,15 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 
 			const promptOnJoin = context.getData("promptOnJoin") as boolean;
 			const allowCustomColors = context.getData("allowCustomColors") as boolean;
+			const requireApproval = context.getData("requireApproval") as boolean;
+			const customLeaveJoinMessages =
+				context.getData("customLeaveJoinMessages") as boolean;
 
 			this.playerNicknameService.updateSettings({
 				promptOnJoin,
 				allowCustomColors,
+				requireApproval,
+				customLeaveJoinMessages,
 			});
 		});
 	}
