@@ -83,5 +83,7 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 			},
 			"textures/edu_tools/ui/icons/_general/back",
 		);
+
+		this.show(context.getSourcePlayer(), sceneManager);
 	}
 }
