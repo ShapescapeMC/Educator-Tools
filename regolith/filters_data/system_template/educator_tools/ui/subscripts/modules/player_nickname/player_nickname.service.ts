@@ -135,10 +135,11 @@ export class PlayerNicknameService {
 			.replace(/§[klmno r]/gi, "")
 			// Limit to 20 characters
 			.substring(0, 20);
+		this.nicknameStorage.set(playerId, nickname);
+
 		if (!this.getSettings().allowCustomColors) {
 			nickname = nickname.replace(/§[0-9a-f]/gi, "");
 		}
-		this.nicknameStorage.set(playerId, nickname);
 
 		const player = world.getEntity(playerId);
 		if (player) {
@@ -179,6 +180,16 @@ export class PlayerNicknameService {
 		}
 	}
 
+	reloadNicknames(): void {
+		const allPlayers = world.getAllPlayers();
+		allPlayers.forEach((player) => {
+			const nickname = this.getNickname(player.id);
+			if (nickname) {
+				this.setNickname(player.id, nickname);
+			}
+		});
+	}
+
 	checkIfShouldOpenQueue(): boolean {
 		const pendingRequests = this.getNicknameApprovalRequests().length;
 		const timeSinceLastRequest =
@@ -199,7 +210,7 @@ export class PlayerNicknameService {
 		const defaultSettings: PlayerNicknameSettings = {
 			promptOnJoin: false,
 			allowCustomColors: true,
-			requireApproval: false,
+			requireApproval: true,
 		};
 		const settings = this.storage.get("settings") as
 			| Partial<PlayerNicknameSettings>
@@ -222,7 +233,14 @@ export class PlayerNicknameService {
 	updateSettings(partialSettings: Partial<PlayerNicknameSettings>): void {
 		const currentSettings = this.getSettings();
 		const updatedSettings = { ...currentSettings, ...partialSettings };
+
 		this.setSettings(updatedSettings);
+
+		if (
+			currentSettings.allowCustomColors !== updatedSettings.allowCustomColors
+		) {
+			this.reloadNicknames();
+		}
 
 		if (partialSettings.requireApproval === false) {
 			this.checkIfApprovalNeeded();
