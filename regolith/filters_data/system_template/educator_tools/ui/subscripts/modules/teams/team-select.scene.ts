@@ -54,7 +54,7 @@ export class TeamSelectScene extends ActionUIScene {
 			) {
 				buttonText = team.name;
 				if (team.nickname) {
-					buttonText += ` (${team.nickname})`;
+					buttonText += ` (${team.nickname}§r)`;
 				}
 			}
 			if (
