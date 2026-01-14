@@ -11,6 +11,7 @@ import { PlayerNicknameSettingsScene } from "./player_nickname_settings.scene";
 import { PlayerNicknameStudentScene } from "./player_nickname_student.scene";
 import { PlayerNicknameTeacherScene } from "./player_nickname_teacher.scene";
 import { ButtonConfig } from "../main/main.service";
+import { PlayerNicknameMechanic } from "./player_nickname.mechanic";
 
 export interface PlayerNicknameSettings {
 	promptOnJoin: boolean;
@@ -46,11 +47,16 @@ export class PlayerNicknameService {
 	private readonly approvalQueueStorage: PropertyStorage;
 	private itemService: ItemService | undefined;
 	private teamsService: TeamsService | undefined;
+	private playerNicknameMechanic: PlayerNicknameMechanic;
 
 	constructor(private readonly moduleManager: ModuleManager) {
 		this.storage = new CachedStorage(world, "player_nickname");
 		this.nicknameStorage = this.storage.getSubStorage("nicknames");
 		this.approvalQueueStorage = this.storage.getSubStorage("approval_queue");
+		this.playerNicknameMechanic = new PlayerNicknameMechanic(
+			this,
+			this.teamsService!,
+		);
 	}
 
 	initialize(): void {
@@ -78,6 +84,8 @@ export class PlayerNicknameService {
 				);
 			},
 		});
+
+		this.playerNicknameMechanic.initialize();
 	}
 
 	registerScenes(sceneManager: SceneManager): void {
