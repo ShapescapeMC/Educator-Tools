@@ -10,6 +10,7 @@ import { PlayerNicknameEditScene } from "./player_nickname_edit.scene";
 import { PlayerNicknameSettingsScene } from "./player_nickname_settings.scene";
 import { PlayerNicknameStudentScene } from "./player_nickname_student.scene";
 import { PlayerNicknameTeacherScene } from "./player_nickname_teacher.scene";
+import { ButtonConfig } from "../main/main.service";
 
 export interface PlayerNicknameSettings {
 	promptOnJoin: boolean;
@@ -120,6 +121,21 @@ export class PlayerNicknameService {
 				new PlayerNicknameTeacherScene(manager, context, this);
 			},
 		);
+	}
+
+	getMainButton(): ButtonConfig {
+		return {
+			labelKey: "edu_tools.ui.main.buttons.player_nickname",
+			iconPath: "textures/edu_tools/ui/icons/main/player_nickname",
+			handler: (sceneManager: SceneManager, context: SceneContext) => {
+				sceneManager.openSceneWithContext(
+					context,
+					"player_nickname_teacher",
+					true,
+				);
+			},
+			weight: 50,
+		};
 	}
 
 	getNickname(playerId: string): string | undefined {
