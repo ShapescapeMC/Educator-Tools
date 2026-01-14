@@ -344,6 +344,7 @@ edu_tools.message.timer.times_up=§cTime's up!
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§fClassroom Limitations
+edu_tools.ui.classroom_limitations.body=Warning! The usage of these limitations may affect gameplay and student experience. Please use them responsibly.
 edu_tools.ui.classroom_limitations.body.items=Disable Item usage
 edu_tools.ui.classroom_limitations.body.entities=Disable Entities
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=Disable Ender Pearls

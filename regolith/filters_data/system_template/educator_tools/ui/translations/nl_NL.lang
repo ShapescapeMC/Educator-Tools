@@ -342,6 +342,7 @@ edu_tools.message.timer.times_up=§cTijd is om!
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§fKlaslokaal beperkingen
+edu_tools.ui.classroom_limitations.body=Waarschuwing! Het gebruik van deze beperkingen kan de gameplay en studentervaring beïnvloeden. Gebruik ze verantwoord.
 edu_tools.ui.classroom_limitations.body.items=Gebruik van items uitschakelen
 edu_tools.ui.classroom_limitations.body.entities=Entiteiten uitschakelen
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=Enderparels uitschakelen

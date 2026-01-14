@@ -342,6 +342,7 @@ edu_tools.message.timer.times_up=§cTiden er ute!
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§fKlasseromsbegrensninger
+edu_tools.ui.classroom_limitations.body=Advarsel! Bruken av disse begrensningene kan påvirke spillet og elevenes opplevelse. Vennligst bruk dem ansvarlig.
 edu_tools.ui.classroom_limitations.body.items=Deaktiver bruk av gjenstander
 edu_tools.ui.classroom_limitations.body.entities=Deaktiver enheter
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=Deaktiver Ender-perler
