@@ -16,6 +16,7 @@ edu_tools.ui.main.body=Επίλεξε ένα εργαλείο για να το �
 edu_tools.ui.main.buttons.teleport=Τηλεμεταφορά
 edu_tools.ui.main.buttons.copy_inventory=Αντιγραφή Αποθέματος
 edu_tools.ui.main.buttons.gamemode=Τρόπος Παιχνιδιού
+edu_tools.ui.main.buttons.player_nicknames=Προσαρμοσμένα ψευδώνυμα
 edu_tools.ui.main.buttons.manage_teams=Διαχείριση Ομάδων
 edu_tools.ui.main.buttons.timer=Χρονοδιακόπτης
 edu_tools.ui.main.buttons.world_management=Διαχείριση Κόσμου

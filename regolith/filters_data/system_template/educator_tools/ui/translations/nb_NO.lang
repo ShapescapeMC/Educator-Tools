@@ -16,6 +16,7 @@ edu_tools.ui.main.body=Velg et verktøy å bruke
 edu_tools.ui.main.buttons.teleport=Teleport
 edu_tools.ui.main.buttons.copy_inventory=Kopier inventar
 edu_tools.ui.main.buttons.gamemode=Spillmodus
+edu_tools.ui.main.buttons.player_nicknames=Egendefinerte kallenavn
 edu_tools.ui.main.buttons.manage_teams=Administrer lag
 edu_tools.ui.main.buttons.timer=Tidtaker
 edu_tools.ui.main.buttons.world_management=Verdensadministrasjon

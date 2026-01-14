@@ -16,6 +16,7 @@ edu_tools.ui.main.body=Seleziona uno strumento da usare
 edu_tools.ui.main.buttons.teleport=Teletrasporto
 edu_tools.ui.main.buttons.copy_inventory=Copia Inventario
 edu_tools.ui.main.buttons.gamemode=Modalità di Gioco
+edu_tools.ui.main.buttons.player_nicknames=Nickname personalizzati
 edu_tools.ui.main.buttons.manage_teams=Gestisci Squadre
 edu_tools.ui.main.buttons.timer=Timer
 edu_tools.ui.main.buttons.world_management=Gestione del Mondo

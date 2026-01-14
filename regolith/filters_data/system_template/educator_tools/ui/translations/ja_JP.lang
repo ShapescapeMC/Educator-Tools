@@ -17,6 +17,7 @@ edu_tools.ui.main.body=使用するツールを選択してください
 edu_tools.ui.main.buttons.teleport=テレポート
 edu_tools.ui.main.buttons.copy_inventory=インベントリをコピー
 edu_tools.ui.main.buttons.gamemode=ゲームモードの変更
+edu_tools.ui.main.buttons.player_nicknames=カスタムニックネーム
 edu_tools.ui.main.buttons.manage_teams=チーム管理
 edu_tools.ui.main.buttons.timer=タイマー
 edu_tools.ui.main.buttons.world_management=ワールド設定
