@@ -40,7 +40,7 @@ export class MainService implements Module {
 			TeamsService.id,
 		);
 
-		this.itemService?.registerScene("main_menu", {
+		this.itemService?.registerScene("main", {
 			priority: -10000,
 			condition_callback: (player) => {
 				const teacherTeam = this.teamsService?.getTeam(
