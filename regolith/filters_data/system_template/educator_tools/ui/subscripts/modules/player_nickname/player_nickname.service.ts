@@ -15,6 +15,7 @@ export interface PlayerNicknameSettings {
 	promptOnJoin: boolean;
 	allowCustomColors: boolean;
 	requireApproval: boolean;
+	customLeaveJoinMessages: boolean;
 }
 
 export enum ColorCode {
@@ -211,6 +212,7 @@ export class PlayerNicknameService {
 			promptOnJoin: false,
 			allowCustomColors: true,
 			requireApproval: true,
+			customLeaveJoinMessages: false,
 		};
 		const settings = this.storage.get("settings") as
 			| Partial<PlayerNicknameSettings>
@@ -221,6 +223,9 @@ export class PlayerNicknameService {
 				settings?.allowCustomColors ?? defaultSettings.allowCustomColors,
 			requireApproval:
 				settings?.requireApproval ?? defaultSettings.requireApproval,
+			customLeaveJoinMessages:
+				settings?.customLeaveJoinMessages ??
+				defaultSettings.customLeaveJoinMessages,
 		};
 	}
 

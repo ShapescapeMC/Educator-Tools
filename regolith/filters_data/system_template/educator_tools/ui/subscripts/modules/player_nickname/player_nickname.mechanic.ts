@@ -1,5 +1,6 @@
 import {
 	Player,
+	PlayerLeaveAfterEvent,
 	PlayerSpawnAfterEvent,
 	system,
 	world,
@@ -21,6 +22,9 @@ export class PlayerNicknameMechanic {
 		world.afterEvents.playerSpawn.subscribe((event) => {
 			this.onPlayerJoin(event);
 		});
+		world.afterEvents.playerLeave.subscribe((event) => {
+			this.onPlayerLeave(event);
+		});
 
 		system.runInterval(() => {
 			this.remindApprovalQueue();
@@ -33,6 +37,13 @@ export class PlayerNicknameMechanic {
 			const nickname = this.playerNicknameService.getNickname(player.id);
 			if (nickname) {
 				player.nameTag = nickname;
+
+				if (this.playerNicknameService.getSettings().customLeaveJoinMessages) {
+					world.sendMessage({
+						translate: "edu_tools.ui.player_nickname_student.join_message",
+						with: [nickname, player.name],
+					});
+				}
 			} else {
 				player.nameTag = player.name;
 				if (this.playerNicknameService.getSettings().promptOnJoin) {
@@ -41,6 +52,20 @@ export class PlayerNicknameMechanic {
 						"player_nickname_student",
 					);
 				}
+			}
+		}
+	}
+
+	onPlayerLeave(event: PlayerLeaveAfterEvent): void {
+		const playerName = event.playerName;
+		const playerId = event.playerId;
+		if (this.playerNicknameService.getSettings().customLeaveJoinMessages) {
+			const nickname = this.playerNicknameService.getNickname(playerId);
+			if (nickname) {
+				world.sendMessage({
+					translate: "edu_tools.ui.player_nickname_student.leave_message",
+					with: [nickname, playerName],
+				});
 			}
 		}
 	}
