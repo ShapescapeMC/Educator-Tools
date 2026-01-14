@@ -342,7 +342,7 @@ edu_tools.message.timer.times_up=§c时间到！
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§f课堂限制
-edu_tools.ui.classroom_limitations.body=警告！使用这些限制可能会影响游戏玩法和学生体验。请负责任地使用。
+edu_tools.ui.classroom_limitations.body=警告！使用这些限制可能会影响游戏玩法和学生体验。请谨慎使用。
 edu_tools.ui.classroom_limitations.body.items=禁用物品使用
 edu_tools.ui.classroom_limitations.body.entities=禁用实体
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=禁用末影珍珠

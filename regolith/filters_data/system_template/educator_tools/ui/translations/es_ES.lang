@@ -342,7 +342,7 @@ edu_tools.message.timer.times_up=§c¡Se acabó el tiempo!
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§fLimitaciones del Aula
-edu_tools.ui.classroom_limitations.body=¡Advertencia! El uso de estas limitaciones puede afectar el juego y la experiencia del estudiante. Por favor, úsalas responsablemente.
+edu_tools.ui.classroom_limitations.body=¡Advertencia! El uso de estas limitaciones puede afectar el juego y la experiencia del estudiante. Por favor, úsalas con cuidado.
 edu_tools.ui.classroom_limitations.body.items=Desactivar uso de objetos
 edu_tools.ui.classroom_limitations.body.entities=Desactivar entidades
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=Desactivar Perlas de Ender

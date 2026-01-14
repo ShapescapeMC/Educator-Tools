@@ -342,7 +342,7 @@ edu_tools.message.timer.times_up=§cΟ χρόνος τελείωσε!
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§fΠεριορισμοί Τάξης
-edu_tools.ui.classroom_limitations.body=Προειδοποίηση! Η χρήση αυτών των περιορισμών μπορεί να επηρεάσει το παιχνίδι και την εμπειρία των μαθητών. Παρακαλούμε χρησιμοποιήστε τα υπεύθυνα.
+edu_tools.ui.classroom_limitations.body=Προειδοποίηση! Η χρήση αυτών των περιορισμών μπορεί να επηρεάσει το παιχνίδι και την εμπειρία των μαθητών. Παρακαλούμε χρησιμοποιήστε τα με προσοχή.
 edu_tools.ui.classroom_limitations.body.items=Απενεργοποίηση χρήσης αντικειμένων
 edu_tools.ui.classroom_limitations.body.entities=Απενεργοποίηση οντοτήτων
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=Απενεργοποίηση Μαργαριταριών Ender

@@ -344,7 +344,7 @@ edu_tools.message.timer.times_up=§c時間になりました！
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§f教室の制限
-edu_tools.ui.classroom_limitations.body=警告！これらの制限の使用は、ゲームプレイや生徒の体験に影響を与える可能性があります。責任を持って使用してください。
+edu_tools.ui.classroom_limitations.body=警告！これらの制限の使用は、ゲームプレイや生徒の体験に影響を与える可能性があります。注意して使用してください。
 edu_tools.ui.classroom_limitations.body.items=アイテムの使用を無効化
 edu_tools.ui.classroom_limitations.body.entities=エンティティを無効化
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=エンダーパールを無効化

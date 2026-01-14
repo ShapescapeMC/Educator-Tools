@@ -342,7 +342,7 @@ edu_tools.message.timer.times_up=§cCzas minął!
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§fOgraniczenia klasy
-edu_tools.ui.classroom_limitations.body=Ostrzeżenie! Użycie tych ograniczeń może wpłynąć na rozgrywkę i doświadczenie uczniów. Proszę używać ich odpowiedzialnie.
+edu_tools.ui.classroom_limitations.body=Ostrzeżenie! Użycie tych ograniczeń może wpłynąć na rozgrywkę i doświadczenie uczniów. Proszę używać ich ostrożnie.
 edu_tools.ui.classroom_limitations.body.items=Wyłącz użycie przedmiotów
 edu_tools.ui.classroom_limitations.body.entities=Wyłącz byty
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=Wyłącz Perły Endu
