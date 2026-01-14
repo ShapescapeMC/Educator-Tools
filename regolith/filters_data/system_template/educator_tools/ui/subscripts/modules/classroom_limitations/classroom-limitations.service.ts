@@ -55,6 +55,10 @@ export class ClassroomLimitationsService implements Module {
 				"minecraft:ominous_bottle",
 			],
 		},
+		{
+			key: "fireball",
+			itemIds: ["minecraft:fire_charge", "minecraft:dragon_fireball"],
+		},
 		{ key: "spawn_eggs", pattern: /_spawn_egg$/ },
 	];
 
