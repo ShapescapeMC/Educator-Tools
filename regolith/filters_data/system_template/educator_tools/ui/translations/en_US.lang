@@ -381,3 +381,60 @@ edu_tools.ui.classroom_limitations.toggles.warden_tooltip=Prevent the Warden fro
 edu_tools.message.classroom_limitations.item_removed=§cRestricted item removed: §r%1
 edu_tools.message.classroom_limitations.attempt_blocked=§cYou cannot use this item right now.
 edu_tools.message.classroom_limitations.entity_blocked=§cRestricted entity blocked: §r%1
+
+### Player Nickname Module
+edu_tools.ui.player_nickname_teacher.title=§fPlayer Nicknames
+edu_tools.ui.player_nickname_teacher.body=Manage player nicknames for your classroom
+edu_tools.ui.player_nickname_teacher.approval_queue=Approval Queue (%1)
+edu_tools.ui.player_nickname_teacher.settings=Nickname Settings
+edu_tools.ui.player_nickname_teacher.list=Edit Player Nicknames
+edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body=Select a student to edit their nickname
+
+edu_tools.ui.player_nickname_student.title=§fSet Your Nickname
+edu_tools.ui.player_nickname_student.body=Set a custom nickname for yourself in the game
+edu_tools.ui.player_nickname_student.nickname=Nickname
+edu_tools.ui.player_nickname_student.nickname_tooltip=Enter your desired nickname
+edu_tools.ui.player_nickname_student.color=Color
+edu_tools.ui.player_nickname_student.color_tooltip=Select a color for your nickname
+edu_tools.ui.player_nickname_student.join_message=%1 joined the game (was %2)
+edu_tools.ui.player_nickname_student.leave_message=%1 left the game (was %2)
+
+edu_tools.ui.player_nickname_edit.title=§fEdit Player Nickname
+edu_tools.ui.player_nickname_edit.body=Edit the nickname of the selected player
+edu_tools.ui.player_nickname_edit.nickname=Nickname
+edu_tools.ui.player_nickname_edit.nickname_tooltip=Enter the player's nickname
+edu_tools.ui.player_nickname_edit.color=Color
+edu_tools.ui.player_nickname_edit.color_tooltip=Select a color for the player's nickname
+
+edu_tools.ui.player_nickname_settings.title=§fNickname Settings
+edu_tools.ui.player_nickname_settings.prompt_on_join=Prompt on Join
+edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Ask players to set a nickname when they join the world
+edu_tools.ui.player_nickname_settings.allow_custom_colors=Allow Custom Colors
+edu_tools.ui.player_nickname_settings.allow_custom_colors_tooltip=Allow students to choose custom colors for their nicknames
+edu_tools.ui.player_nickname_settings.require_approval=Require Approval
+edu_tools.ui.player_nickname_settings.require_approval_tooltip=Require teacher approval for student nicknames
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Custom Leave/Join Messages
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Enable custom join and leave messages that include nicknames
+
+edu_tools.ui.player_nickname_approval.title=§fApprove Nicknames
+edu_tools.ui.player_nickname_approval.no_pending=No pending nickname requests
+edu_tools.ui.player_nickname_approval.request_body=%1 requested by %2
+edu_tools.ui.player_nickname_approval.reminder=There are §a%1 §rnickname approval request(s) waiting
+
+### Palette Colors
+edu_tools.ui.palette_color.black=Black
+edu_tools.ui.palette_color.darkblue=Dark Blue
+edu_tools.ui.palette_color.darkgreen=Dark Green
+edu_tools.ui.palette_color.darkaqua=Dark Aqua
+edu_tools.ui.palette_color.darkred=Dark Red
+edu_tools.ui.palette_color.darkpurple=Dark Purple
+edu_tools.ui.palette_color.gold=Gold
+edu_tools.ui.palette_color.gray=Gray
+edu_tools.ui.palette_color.darkgray=Dark Gray
+edu_tools.ui.palette_color.blue=Blue
+edu_tools.ui.palette_color.green=Green
+edu_tools.ui.palette_color.aqua=Aqua
+edu_tools.ui.palette_color.red=Red
+edu_tools.ui.palette_color.lightpurple=Light Purple
+edu_tools.ui.palette_color.yellow=Yellow
+edu_tools.ui.palette_color.white=White
