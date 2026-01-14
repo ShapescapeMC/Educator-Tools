@@ -18,7 +18,9 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 
 		const settings = playerNicknameService.getSettings();
 
-		this.addLabel({ translate: "edu_tools.ui.player_nickname_teacher.body" });
+		this.setRawBody([
+			{ translate: "edu_tools.ui.player_nickname_teacher.body" },
+		]);
 
 		if (settings.requireApproval) {
 			this.addButton(
