@@ -9,6 +9,9 @@ import {
 	EntityInventoryComponent,
 	DimensionTypes,
 	ItemUseBeforeEvent,
+	EntityComponentTypes,
+	EntityEquippableComponent,
+	EquipmentSlot,
 } from "@minecraft/server";
 import { ClassroomLimitationsService } from "./classroom-limitations.service";
 
@@ -37,10 +40,6 @@ export class ClassroomLimitationsMechanic {
 	/** Flag indicating an inventory scan job is currently running and new one must not start. */
 	private scanInProgress = false;
 
-	/**
-	 * Creates a new classroom limitations mechanic.
-	 * @param service Service providing role checks (teacher vs student) and restriction lookups.
-	 */
 	constructor(private readonly service: ClassroomLimitationsService) {}
 
 	/**
@@ -49,15 +48,10 @@ export class ClassroomLimitationsMechanic {
 	 */
 	public start(): void {
 		this.registerItemUseInterception();
-		this.scheduleInventoryScans();
 		this.registerEntitySpawnInterception();
+		this.scheduleInventoryScans();
 	}
 
-	/**
-	 * Subscribes to item use events and cancels usage of restricted items for non‑teacher players.
-	 * Sends a feedback message when an attempt is blocked.
-	 * @remarks Uses a broad `any` for the event parameter due to upstream typing variations.
-	 */
 	private registerItemUseInterception(): void {
 		world.beforeEvents.itemUse.subscribe((ev: ItemUseBeforeEvent) => {
 			const player: Player = ev.source;
@@ -65,103 +59,102 @@ export class ClassroomLimitationsMechanic {
 			const item = ev.itemStack;
 			if (item && this.service.isItemRestricted(item.typeId)) {
 				ev.cancel = true;
-				try {
-					player.sendMessage({
-						translate:
-							"edu_tools.message.classroom_limitations.attempt_blocked",
-					});
-				} catch {}
+				this.notifyPlayer(
+					player,
+					"edu_tools.message.classroom_limitations.attempt_blocked",
+				);
 			}
 		});
 	}
 
-	/**
-	 * Subscribes to entity spawn & load events so late‑loaded or newly created entities are checked.
-	 * Restricted entities are removed immediately with nearby player notification.
-	 */
 	private registerEntitySpawnInterception(): void {
-		world.afterEvents.entitySpawn.subscribe((ev: EntitySpawnAfterEvent) => {
-			const entity: Entity = ev.entity;
-			if (!entity) return;
-			this.checkEntity(entity);
-		});
-		world.afterEvents.entityLoad.subscribe((ev: EntityLoadAfterEvent) => {
-			const entity: Entity = ev.entity;
-			if (!entity) return;
-			this.checkEntity(entity);
-		});
+		const checkAndHandle = (entity: Entity) => {
+			if (entity) this.checkEntity(entity);
+		};
+		world.afterEvents.entitySpawn.subscribe((ev: EntitySpawnAfterEvent) =>
+			checkAndHandle(ev.entity),
+		);
+		world.afterEvents.entityLoad.subscribe((ev: EntityLoadAfterEvent) =>
+			checkAndHandle(ev.entity),
+		);
 	}
 
-	/**
-	 * Schedules periodic inventory scan attempts. A scan only starts if no other scan job is running.
-	 * Uses `system.runInterval` and applies jitter to reduce simultaneous execution across sessions.
-	 */
 	private scheduleInventoryScans(): void {
-		// Attempt start if no scan is active.
 		system.runInterval(() => {
-			if (this.scanInProgress) return;
-			this.launchInventoryScanJob();
+			if (!this.scanInProgress) this.launchInventoryScanJob();
 		}, ClassroomLimitationsMechanic.BASE_SCAN_INTERVAL + Math.floor(Math.random() * ClassroomLimitationsMechanic.SCAN_INTERVAL_JITTER));
 	}
 
-	/**
-	 * Launches a generator‑driven job that walks all player inventories slot‑by‑slot.
-	 * Restricted items are removed and players notified. Work yields after each slot for pacing.
-	 * @internal The completion flag is flipped before generator return ensuring subsequent scheduling.
-	 */
 	private launchInventoryScanJob(): void {
 		this.scanInProgress = true;
 		const players = world.getPlayers();
+		const mechanic = this;
 
-		const mechanic = this; // capture for completion flag
 		function* scanGenerator(): Generator<void, void, unknown> {
 			for (let player of players) {
 				if (!player.isValid) {
-					// Refresh player reference if invalid
 					player = world.getPlayers().find((p) => p.id === player.id)!;
 					if (!player) continue;
 				}
 				if (mechanic.service.isTeacher(player)) continue;
-				const inv = player.getComponent(
-					EntityInventoryComponent.componentId,
-				) as EntityInventoryComponent;
-				const container = inv?.container;
-				if (!container) continue;
-				for (let i = 0; i < container.size; i++) {
-					const item = container.getItem(i);
-					if (item && mechanic.service.isItemRestricted(item.typeId)) {
-						container.setItem(i, undefined);
-						try {
-							player.sendMessage({
-								translate:
-									"edu_tools.message.classroom_limitations.item_removed",
-								with: [item.typeId.split(":")[1]],
-							});
-						} catch {}
-					}
-					// Yield after each slot to let the job system manage pacing.
-					yield;
-				}
+
+				mechanic.scanPlayerInventory(player);
+				mechanic.scanPlayerEquipment(player);
 			}
-			// Mark completion before final return.
 			mechanic.scanInProgress = false;
 		}
 
 		try {
 			system.runJob(scanGenerator());
 		} catch {
-			// Fallback: mark not in progress so another attempt can be made later.
 			this.scanInProgress = false;
 		}
 	}
 
-	/**
-	 * Performs a full world entity scan across all dimensions using a generator job.
-	 * Each entity is validated via `checkEntity`. Intended for manual / on‑demand audits.
-	 */
+	private scanPlayerEquipment(player: Player): void {
+		const equipmentInv = player.getComponent(
+			EntityComponentTypes.Equippable,
+		) as EntityEquippableComponent;
+		if (!equipmentInv) return;
+
+		for (const slotKey in EquipmentSlot) {
+			const slot = EquipmentSlot[slotKey as keyof typeof EquipmentSlot];
+			const item = equipmentInv.getEquipment(slot);
+			if (item && this.service.isItemRestricted(item.typeId)) {
+				equipmentInv.setEquipment(slot, undefined);
+				this.notifyPlayer(
+					player,
+					"edu_tools.message.classroom_limitations.item_removed",
+					[item.typeId.split(":")[1]],
+				);
+			}
+		}
+	}
+
+	private scanPlayerInventory(player: Player): void {
+		const inv = player.getComponent(
+			EntityInventoryComponent.componentId,
+		) as EntityInventoryComponent;
+		const container = inv?.container;
+		if (!container) return;
+
+		for (let i = 0; i < container.size; i++) {
+			const item = container.getItem(i);
+			if (item && this.service.isItemRestricted(item.typeId)) {
+				container.setItem(i, undefined);
+				this.notifyPlayer(
+					player,
+					"edu_tools.message.classroom_limitations.item_removed",
+					[item.typeId.split(":")[1]],
+				);
+			}
+		}
+	}
+
 	public launchEntityScanJob(): void {
 		const mechanic = this;
 		const dimensionTypeIds = DimensionTypes.getAll().map((d) => d.typeId);
+
 		function* entityScanGenerator(): Generator<void, void, unknown> {
 			for (const dimTypeId of dimensionTypeIds) {
 				const dim = world.getDimension(dimTypeId);
@@ -170,72 +163,67 @@ export class ClassroomLimitationsMechanic {
 					mechanic.checkEntity(entity);
 					yield;
 				}
-				yield;
 			}
 		}
 		system.runJob(entityScanGenerator());
 	}
 
-	/**
-	 * Validates a single entity against restriction rules and removes it if necessary.
-	 * Notifies nearby players (within `NOTIFICATION_RADIUS`) of removal when blocked.
-	 * @param entity The entity instance to check & possibly remove.
-	 */
 	public checkEntity(entity: Entity): void {
-		let remove = false;
-		// Check if it's a restricted item entity
+		let isRestricted = false;
+
 		if (entity.typeId === "minecraft:item") {
 			const itemComp = entity.getComponent(
 				EntityItemComponent.componentId,
 			) as EntityItemComponent;
-			if (
-				itemComp &&
-				this.service.isItemRestricted(itemComp.itemStack.typeId)
-			) {
-				remove = true;
-			}
+			isRestricted =
+				itemComp && this.service.isItemRestricted(itemComp.itemStack.typeId);
+		} else {
+			isRestricted =
+				this.service.isItemRestricted(entity.typeId) ||
+				this.service.isEntityRestricted(entity.typeId);
 		}
-		// Check if the item type itself is restricted
-		else if (this.service.isItemRestricted(entity.typeId)) {
-			remove = true;
-		}
-		// Check if the entity type is restricted (e.g., wither, snow golem)
-		else if (this.service.isEntityRestricted(entity.typeId)) {
-			remove = true;
-		}
-		if (remove) {
-			const dimension = entity.dimension;
-			const location = entity.location;
-			const nearbyPlayers = dimension.getPlayers({
-				location: location,
-				maxDistance: ClassroomLimitationsMechanic.NOTIFICATION_RADIUS,
-			});
-			for (const player of nearbyPlayers) {
-				player.sendMessage({
-					translate: "edu_tools.message.classroom_limitations.entity_blocked",
-					with: [
-						ClassroomLimitationsMechanic.toTitleCase(
-							entity.typeId.split(":")[1],
-						),
-					],
-				});
-			}
+
+		if (isRestricted) {
+			this.notifyNearbyPlayers(
+				entity,
+				"edu_tools.message.classroom_limitations.entity_blocked",
+				[ClassroomLimitationsMechanic.toTitleCase(entity.typeId.split(":")[1])],
+			);
 			entity.remove();
 		}
 	}
 
-	/**
-	 * Converts a snake_case identifier to Title Case with spaces.
-	 * @param str Raw snake_case string (e.g., "snow_golem").
-	 * @returns Title cased version (e.g., "Snow Golem").
-	 */
+	private notifyPlayer(
+		player: Player,
+		translationKey: string,
+		params?: string[],
+	): void {
+		try {
+			player.sendMessage({
+				translate: translationKey,
+				with: params,
+			});
+		} catch {}
+	}
+
+	private notifyNearbyPlayers(
+		entity: Entity,
+		translationKey: string,
+		params: string[],
+	): void {
+		const nearbyPlayers = entity.dimension.getPlayers({
+			location: entity.location,
+			maxDistance: ClassroomLimitationsMechanic.NOTIFICATION_RADIUS,
+		});
+		for (const player of nearbyPlayers) {
+			this.notifyPlayer(player, translationKey, params);
+		}
+	}
+
 	private static toTitleCase(str: string): string {
 		return str
-			.toLowerCase()
 			.split("_")
-			.map((word: string) => {
-				return word.charAt(0).toUpperCase() + word.slice(1);
-			})
+			.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
 			.join(" ");
 	}
 }
