@@ -183,7 +183,7 @@ export class PlayerNicknameService {
 				// Remove non-ascii characters except for §
 				.replace(/[^\x00-\x7F§]/g, "")
 				// Formatting codes are §k, §l, §m, §n, §o, §r
-				.replace(/§[klmno r]/gi, "")
+				.replace(/§[klmnor]/gi, "")
 				// Limit to 20 characters
 				.substring(0, 20);
 		}
