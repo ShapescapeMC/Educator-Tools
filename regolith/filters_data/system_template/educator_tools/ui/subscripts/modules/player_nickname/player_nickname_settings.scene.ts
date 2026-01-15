@@ -16,7 +16,7 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 
 		const settings = this.playerNicknameService.getSettings();
 
-		this.addLabel({ translate: "edu_tools.ui.player_nickname_student.body" });
+		this.addLabel({ translate: "edu_tools.ui.player_nickname_settings.body" });
 
 		this.addToggle(
 			"edu_tools.ui.player_nickname_settings.prompt_on_join",

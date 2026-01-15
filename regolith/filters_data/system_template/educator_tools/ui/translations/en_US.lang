@@ -408,6 +408,7 @@ edu_tools.ui.player_nickname_edit.color=Color
 edu_tools.ui.player_nickname_edit.color_tooltip=Select a color for the player's nickname
 
 edu_tools.ui.player_nickname_settings.title=§fNickname Settings
+edu_tools.ui.player_nickname_settings.body=Configure how player nicknames are managed in your classroom
 edu_tools.ui.player_nickname_settings.prompt_on_join=Prompt on Join
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Ask players to set a nickname when they join the world
 edu_tools.ui.player_nickname_settings.allow_custom_colors=Allow Custom Colors
