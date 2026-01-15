@@ -183,7 +183,7 @@ export class PlayerNicknameMechanic {
 		this.playersToPrompt.delete(playerId);
 	}
 
-	studentUIOpenFail(playerId: string): void {
+	restartStudentUIPrompt(playerId: string): void {
 		this.playersToPrompt.set(playerId, { x: 0, y: 0, z: 0 });
 	}
 }

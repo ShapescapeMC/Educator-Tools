@@ -66,7 +66,7 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 			if (r.cancelationReason === FormCancelationReason.UserBusy) {
 				this.playerNicknameService
 					.getPlayerNicknameMechanic()
-					?.studentUIOpenFail(context.getSourcePlayer().id);
+					?.restartStudentUIPrompt(context.getSourcePlayer().id);
 			}
 
 			if (r.canceled) {

@@ -259,6 +259,8 @@ export class PlayerNicknameService {
 			);
 		}
 		this.removeNicknameApprovalRequest(playerId);
+
+		this.getPlayerNicknameMechanic()?.restartStudentUIPrompt(playerId);
 	}
 
 	reloadNicknames(): void {
