@@ -57,7 +57,10 @@ export class PlayerNicknameApprovalScene extends ModalUIScene {
 			if (r.canceled) {
 				return;
 			}
-			if (context.getHistory().length > 0) {
+			this.playerNicknameService
+				.getPlayerNicknameMechanic()
+				?.notifyNicknameQueueProcessed(context.getSourcePlayer());
+			if (context.getHistory().includes("player_nickname_teacher")) {
 				sceneManager.goBackToScene(context, "player_nickname_teacher");
 			} else {
 				sceneManager.createContextAndOpenScene(

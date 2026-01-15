@@ -150,6 +150,15 @@ export class PlayerNicknameMechanic {
 		});
 	}
 
+	notifyNicknameQueueProcessed(player: Player): void {
+		if (!player) {
+			return;
+		}
+		player.sendMessage({
+			translate: "edu_tools.ui.player_nickname_approval.queue_processed",
+		});
+	}
+
 	studentUIOpened(playerId: string): void {
 		this.playersToPrompt.delete(playerId);
 	}

@@ -424,6 +424,7 @@ edu_tools.ui.player_nickname_approval.reminder=There are §a%1 §rnickname appro
 edu_tools.ui.player_nickname_approval.notification=The user §a%1§r has requested to change their nickname to §a%2§r
 edu_tools.ui.player_nickname_approval.response.approved=§aYour nickname change to §r%1§a has been approved.
 edu_tools.ui.player_nickname_approval.response.denied=§cYour nickname change to §r%1§c has been denied.
+edu_tools.ui.player_nickname_approval.queue_processed=§aYou have processed all pending nickname requests.
 
 ### Palette Colors
 edu_tools.ui.palette_color.black=Black
