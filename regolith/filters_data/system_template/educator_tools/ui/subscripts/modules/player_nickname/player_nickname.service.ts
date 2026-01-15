@@ -232,31 +232,33 @@ export class PlayerNicknameService {
 		return this.approvalQueueStorage.getAll();
 	}
 
-	removeNicknameApprovalRequest(playerId: string, notify: boolean): void {
+	removeNicknameApprovalRequest(playerId: string): void {
+		this.approvalQueueStorage.set(playerId, undefined);
+	}
+
+	approveNickname(playerId: string): void {
 		const nickname = this.approvalQueueStorage.get(playerId);
-		if (nickname && notify) {
+		if (nickname) {
+			this.setNickname(playerId, nickname);
+			this.removeNicknameApprovalRequest(playerId);
+			this.playerNicknameMechanic?.notifyNicknameApproved(
+				world.getEntity(playerId) as Player,
+				nickname,
+			);
+		} else {
+			this.clearNickname(playerId);
+		}
+	}
+
+	rejectNickname(playerId: string): void {
+		const nickname = this.approvalQueueStorage.get(playerId);
+		if (nickname) {
 			this.playerNicknameMechanic?.notifyNicknameDenied(
 				world.getEntity(playerId) as Player,
 				nickname,
 			);
 		}
-		this.approvalQueueStorage.set(playerId, undefined);
-	}
-
-	approveNickname(playerId: string, notify: boolean): void {
-		const nickname = this.approvalQueueStorage.get(playerId);
-		if (nickname) {
-			this.setNickname(playerId, nickname);
-			this.removeNicknameApprovalRequest(playerId, false);
-			if (notify) {
-				this.playerNicknameMechanic?.notifyNicknameApproved(
-					world.getEntity(playerId) as Player,
-					nickname,
-				);
-			}
-		} else {
-			this.clearNickname(playerId);
-		}
+		this.removeNicknameApprovalRequest(playerId);
 	}
 
 	reloadNicknames(): void {

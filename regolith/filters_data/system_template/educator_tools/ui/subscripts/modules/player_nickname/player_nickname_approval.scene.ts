@@ -38,12 +38,9 @@ export class PlayerNicknameApprovalScene extends ModalUIScene {
 					},
 					(approved: boolean) => {
 						if (approved) {
-							this.playerNicknameService.approveNickname(playerId, true);
+							this.playerNicknameService.approveNickname(playerId);
 						} else {
-							this.playerNicknameService.removeNicknameApprovalRequest(
-								playerId,
-								true,
-							);
+							this.playerNicknameService.rejectNickname(playerId);
 						}
 					},
 					{
