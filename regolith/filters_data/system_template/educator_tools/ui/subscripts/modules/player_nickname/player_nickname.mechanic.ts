@@ -159,6 +159,26 @@ export class PlayerNicknameMechanic {
 		});
 	}
 
+	notifyNicknameQueueSubmitted(player: Player, nickname: string): void {
+		if (!player || !nickname) {
+			return;
+		}
+		player.sendMessage({
+			translate: "edu_tools.ui.player_nickname_approval.added_to_queue",
+			with: [nickname],
+		});
+	}
+
+	notifyNicknameChanged(player: Player, nickname: string): void {
+		if (!player || !nickname) {
+			return;
+		}
+		player.sendMessage({
+			translate: "edu_tools.ui.player_nickname_approval.changed_nickname",
+			with: [nickname],
+		});
+	}
+
 	studentUIOpened(playerId: string): void {
 		this.playersToPrompt.delete(playerId);
 	}

@@ -63,9 +63,9 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 			);
 		}
 
-				this.playerNicknameService
-					.getPlayerNicknameMechanic()
-					?.studentUIOpened(context.getSourcePlayer().id);
+		this.playerNicknameService
+			.getPlayerNicknameMechanic()
+			?.studentUIOpened(context.getSourcePlayer().id);
 
 		const response = this.show(context.getSourcePlayer(), sceneManager);
 		response.then((r) => {
@@ -96,11 +96,20 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 						context.getSourcePlayer().id,
 						newNickname,
 					);
+					this.playerNicknameService
+						.getPlayerNicknameMechanic()
+						?.notifyNicknameQueueSubmitted(
+							context.getSourcePlayer(),
+							newNickname,
+						);
 				} else {
 					this.playerNicknameService.setNickname(
 						context.getSourcePlayer().id,
 						newNickname,
 					);
+					this.playerNicknameService
+						.getPlayerNicknameMechanic()
+						?.notifyNicknameChanged(context.getSourcePlayer(), newNickname);
 				}
 			} else {
 				this.playerNicknameService.clearNickname(context.getSourcePlayer().id);
