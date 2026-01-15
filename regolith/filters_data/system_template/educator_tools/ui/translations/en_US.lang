@@ -421,6 +421,7 @@ edu_tools.ui.player_nickname_approval.title=§fApprove Nicknames
 edu_tools.ui.player_nickname_approval.no_pending=No pending nickname requests
 edu_tools.ui.player_nickname_approval.request_body=%1§r requested by %2
 edu_tools.ui.player_nickname_approval.reminder=There are §a%1 §rnickname approval request(s) waiting
+edu_tools.ui.player_nickname_approval.notification=The user §a%1§r has requested to change their nickname to §a%2§r
 
 ### Palette Colors
 edu_tools.ui.palette_color.black=Black

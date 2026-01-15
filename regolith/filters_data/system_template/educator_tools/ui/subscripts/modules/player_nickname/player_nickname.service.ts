@@ -197,6 +197,11 @@ export class PlayerNicknameService {
 	addNicknameApprovalRequest(playerId: string, nickname: string): void {
 		this.approvalQueueStorage.set(playerId, nickname);
 		this.setLastApprovalRequestTick(system.currentTick);
+
+		this.playerNicknameMechanic?.notifyApprovalQueue(
+			world.getEntity(playerId) as Player,
+			nickname,
+		);
 	}
 
 	getNicknameApprovalRequests(): Record<string, string>[] {
@@ -298,7 +303,7 @@ export class PlayerNicknameService {
 		return this.storage.get("last_approval_request") as number | undefined;
 	}
 
-	getPlayerNicknameMechanic(): PlayerNicknameMechanic {
+	getPlayerNicknameMechanic(): PlayerNicknameMechanic | undefined {
 		return this.playerNicknameMechanic;
 	}
 }

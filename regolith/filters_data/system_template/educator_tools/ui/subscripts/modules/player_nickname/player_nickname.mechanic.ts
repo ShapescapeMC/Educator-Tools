@@ -91,6 +91,24 @@ export class PlayerNicknameMechanic {
 					translate: "edu_tools.ui.player_nickname_approval.reminder",
 					with: [pendingNicknames.length + ""],
 				});
+				teacher.playSound("note.pling", { volume: 0.5, pitch: 1 });
+			}
+		});
+	}
+
+	notifyApprovalQueue(player: Player, nickname: string): void {
+		if (!player || !nickname) {
+			return;
+		}
+		const teachers =
+			this.teamService.getTeam(TeamsService.TEACHERS_TEAM_ID)?.memberIds || [];
+		teachers.forEach((teacherId) => {
+			const teacher = world.getEntity(teacherId) as Player;
+			if (teacher) {
+				teacher.sendMessage({
+					translate: "edu_tools.ui.player_nickname_approval.notification",
+					with: [player.name, nickname],
+				});
 			}
 		});
 	}
