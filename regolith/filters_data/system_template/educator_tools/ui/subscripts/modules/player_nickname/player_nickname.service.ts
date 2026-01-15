@@ -263,10 +263,10 @@ export class PlayerNicknameService {
 
 	getSettings(): PlayerNicknameSettings {
 		const defaultSettings: PlayerNicknameSettings = {
-			promptOnJoin: false,
+			promptOnJoin: true,
 			allowCustomColors: true,
 			requireApproval: true,
-			customLeaveJoinMessages: false,
+			customLeaveJoinMessages: true,
 		};
 		const settings = this.storage.get("settings") as
 			| Partial<PlayerNicknameSettings>
