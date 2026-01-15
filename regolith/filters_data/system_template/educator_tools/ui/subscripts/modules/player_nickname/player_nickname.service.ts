@@ -12,6 +12,7 @@ import { PlayerNicknameStudentScene } from "./player_nickname_student.scene";
 import { PlayerNicknameTeacherScene } from "./player_nickname_teacher.scene";
 import { ButtonConfig } from "../main/main.service";
 import { PlayerNicknameMechanic } from "./player_nickname.mechanic";
+import { Team } from "../teams/interfaces/team.interface";
 
 export interface PlayerNicknameSettings {
 	promptOnJoin: boolean;
@@ -105,6 +106,28 @@ export class PlayerNicknameService {
 			PlayerNicknameEditScene.id,
 			(manager: SceneManager, context: SceneContext) => {
 				new PlayerNicknameEditScene(manager, context, this, this.teamsService!);
+			},
+		);
+		sceneManager.registerScene(
+			"player_nickname_edit_selector",
+			(manager: SceneManager, context: SceneContext) => {
+				context.setSubjectTeamRequired(true);
+				context.setNextScene("player_nickname_edit");
+				context.setData(
+					"team_filter_subject",
+					(team: Team, teamsService: TeamsService): boolean => {
+						if (!teamsService.isPlayerTeam(team.id)) {
+							return false;
+						}
+						for (const memberId of team.memberIds) {
+							const player = world.getEntity(memberId) as Player;
+							if (!!player || this.getNickname(memberId)) return true; // Include teams with at least one online player or a nickname set
+						}
+						return false;
+					},
+				);
+				context.setData("body_key", "player_nickname_teacher.select_student");
+				sceneManager.openSceneWithContext(context, "team_select", false);
 			},
 		);
 		sceneManager.registerScene(

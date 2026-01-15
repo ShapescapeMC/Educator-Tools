@@ -63,7 +63,7 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 		this.addButton(
 			{ translate: "edu_tools.ui.player_nickname_teacher.list" },
 			() => {
-				context.setSubjectTeamRequired(true);
+				/*context.setSubjectTeamRequired(true);
 				context.setNextScene("player_nickname_edit");
 				context.setData(
 					"team_filter_subject",
@@ -79,8 +79,12 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 						return false;
 					},
 				);
-				context.setData("body_key", "player_nickname_teacher.select_student");
-				sceneManager.openSceneWithContext(context, "team_select", true);
+				context.setData("body_key", "player_nickname_teacher.select_student");*/
+				sceneManager.openSceneWithContext(
+					context,
+					"player_nickname_edit_selector",
+					false,
+				);
 			},
 			"textures/edu_tools/ui/icons/player_nickname/list",
 		);
