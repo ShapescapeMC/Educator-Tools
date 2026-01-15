@@ -1,6 +1,7 @@
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ActionUIScene } from "../scene_manager/ui-scene";
+import { Team } from "./interfaces/team.interface";
 import { TeamsService } from "./teams.service";
 
 // TeamSelectScene handles the UI for selecting a team (subject or target) in the educator tools module
@@ -52,6 +53,9 @@ export class TeamSelectScene extends ActionUIScene {
 				teamsService.isPlayerTeam(team.id)
 			) {
 				buttonText = team.name;
+				if (team.nickname) {
+					buttonText += ` (${team.nickname}§r)`;
+				}
 			}
 			if (
 				!context.isSubjectTeamRequired() &&
@@ -125,7 +129,7 @@ export class TeamSelectScene extends ActionUIScene {
 	private handleTeamButton(
 		sceneManager: SceneManager,
 		context: SceneContext,
-		team: any,
+		team: Team,
 	): void {
 		// If subject team is required, set it and check if target team is next
 		if (context.isSubjectTeamRequired()) {

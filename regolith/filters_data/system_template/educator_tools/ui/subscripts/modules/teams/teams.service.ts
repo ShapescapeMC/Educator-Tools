@@ -1,5 +1,5 @@
 import { PropertyStorage } from "@shapescape/storage";
-import { Module } from "../../module-manager";
+import { Module, ModuleManager } from "../../module-manager";
 import { world, Player, PlayerSpawnAfterEvent } from "@minecraft/server";
 import { Team, TeamsData } from "./interfaces/team.interface";
 import { SceneManager } from "../scene_manager/scene-manager";
@@ -11,6 +11,7 @@ import { TeamsManagementScene } from "./teams-management.scene";
 import { ButtonConfig } from "../main/main.service";
 import { TeamsEditPlayersApply } from "./teams-edit-players-apply.scene";
 import { TeamsManagePlayersScene } from "./teams-manage-players.scene";
+import { PlayerNicknameService } from "../player_nickname/player_nickname.service";
 
 /**
  * Service for managing player teams.
@@ -25,6 +26,9 @@ export class TeamsService implements Module {
 	public static readonly TEACHERS_TEAM_ID = "system_teachers";
 	public static readonly STUDENTS_TEAM_ID = "system_students";
 
+	private readonly moduleManager: ModuleManager;
+	private playerNicknameService: PlayerNicknameService | undefined;
+
 	public static readonly availableIcons = [
 		"clownfish",
 		"diamond",
@@ -33,8 +37,9 @@ export class TeamsService implements Module {
 		"potato",
 	];
 
-	constructor(storage: PropertyStorage) {
+	constructor(storage: PropertyStorage, moduleManager: ModuleManager) {
 		this.storage = storage.getSubStorage(TeamsService.id);
+		this.moduleManager = moduleManager;
 	}
 
 	registerScenes(sceneManager: SceneManager): void {
@@ -94,6 +99,9 @@ export class TeamsService implements Module {
 	}
 
 	initialize(): void {
+		this.playerNicknameService = this.moduleManager.getModule(
+			PlayerNicknameService.id,
+		) as PlayerNicknameService;
 		world.afterEvents.playerSpawn.subscribe((event: PlayerSpawnAfterEvent) => {
 			this.onPlayerSpawn(event);
 		});
@@ -334,6 +342,7 @@ export class TeamsService implements Module {
 				icon: "player_online",
 				maximumMembers: 1, // Individual teams can only have one member
 				minimumMembers: 1, // At least one member required
+				nickname: this.playerNicknameService?.getNickname(playerId),
 			};
 			if (
 				!existingTeam ||

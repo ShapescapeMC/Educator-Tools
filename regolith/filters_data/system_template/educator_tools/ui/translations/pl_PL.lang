@@ -16,6 +16,7 @@ edu_tools.ui.main.body=Wybierz narzędzie do użycia
 edu_tools.ui.main.buttons.teleport=Teleportuj
 edu_tools.ui.main.buttons.copy_inventory=Kopiuj ekwipunek
 edu_tools.ui.main.buttons.gamemode=Tryb gry
+edu_tools.ui.main.buttons.player_nickname=Niestandardowe pseudonimy
 edu_tools.ui.main.buttons.manage_teams=Zarządzaj drużynami
 edu_tools.ui.main.buttons.timer=Stoper
 edu_tools.ui.main.buttons.world_management=Zarządzanie światem
@@ -382,3 +383,75 @@ edu_tools.ui.classroom_limitations.toggles.warden_tooltip=Zapobiegaj pojawianiu 
 edu_tools.message.classroom_limitations.item_removed=§cUsunięto ograniczony przedmiot: §r%1
 edu_tools.message.classroom_limitations.attempt_blocked=§cNie możesz teraz używać tego przedmiotu.
 edu_tools.message.classroom_limitations.entity_blocked=§cZablokowano ograniczony byt: §r%1
+
+### Player Nickname Module
+edu_tools.ui.player_nickname_teacher.title=§fPseudonimy graczy
+edu_tools.ui.player_nickname_teacher.body=Zarządzaj pseudonimami graczy w swojej klasie
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cPseudonimy graczy są obecnie wyłączone. Włącz je w Ustawieniach pseudonimów, aby zarządzać pseudonimami.
+edu_tools.ui.player_nickname_teacher.approval_queue=Kolejka zatwierdzania (%1)
+edu_tools.ui.player_nickname_teacher.settings=Ustawienia pseudonimów
+edu_tools.ui.player_nickname_teacher.list=Edytuj pseudonimy graczy
+edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body=Wybierz ucznia, aby edytować jego pseudonim
+
+edu_tools.ui.player_nickname_student.title=§fUstaw swój pseudonim
+edu_tools.ui.player_nickname_student.body=Ustaw dla siebie niestandardowy pseudonim w grze
+edu_tools.ui.player_nickname_student.nickname=Pseudonim
+edu_tools.ui.player_nickname_student.nickname_placeholder=Twój niesamowity pseudonim tutaj
+edu_tools.ui.player_nickname_student.nickname_tooltip=Wpisz żądany pseudonim
+edu_tools.ui.player_nickname_student.color=Kolor
+edu_tools.ui.player_nickname_student.color_tooltip=Wybierz kolor dla swojego pseudonimu
+edu_tools.ui.player_nickname_student.join_message=%1§r dołączył do gry (wcześniej %2§r)
+edu_tools.ui.player_nickname_student.leave_message=%1§r opuścił grę (wcześniej %2§r)
+
+edu_tools.ui.player_nickname_edit.title=§fEdytuj pseudonim gracza
+edu_tools.ui.player_nickname_edit.body=Edytuj pseudonim gracza %1
+edu_tools.ui.player_nickname_edit.current_nickname=Obecny pseudonim: §r%1
+edu_tools.ui.player_nickname_edit.nickname=Pseudonim
+edu_tools.ui.player_nickname_edit.nickname_tooltip=Wpisz pseudonim gracza (pozostaw puste, aby zresetować)
+edu_tools.ui.player_nickname_edit.nickname_placeholder=Pozostaw puste, aby zresetować
+edu_tools.ui.player_nickname_edit.color=Kolor
+edu_tools.ui.player_nickname_edit.color_tooltip=Wybierz kolor dla pseudonimu gracza
+
+edu_tools.ui.player_nickname_settings.title=§fUstawienia pseudonimów
+edu_tools.ui.player_nickname_settings.body=Skonfiguruj sposób zarządzania pseudonimami graczy w swojej klasie
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Pseudonimy włączone
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Włącz lub wyłącz pseudonimy graczy w swojej klasie
+edu_tools.ui.player_nickname_settings.prompt_on_join=Zapytaj przy dołączeniu
+edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Proś graczy o ustawienie pseudonimu podczas dołączania do świata
+edu_tools.ui.player_nickname_settings.allow_custom_colors=Zezwalaj na niestandardowe kolory
+edu_tools.ui.player_nickname_settings.allow_custom_colors_tooltip=Pozwól uczniom wybierać niestandardowe kolory dla ich pseudonimów
+edu_tools.ui.player_nickname_settings.require_approval=Wymagaj zatwierdzenia
+edu_tools.ui.player_nickname_settings.require_approval_tooltip=Wymagaj zatwierdzenia nauczyciela dla pseudonimów uczniów
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Niestandardowe wiadomości wejścia/wyjścia
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Włącz niestandardowe wiadomości wejścia i wyjścia, które zawierają pseudonimy
+
+edu_tools.ui.player_nickname_approval.title=§fZatwierdzaj pseudonimy
+edu_tools.ui.player_nickname_approval.body=Zatwierdź lub odrzuć oczekujące prośby o zmianę pseudonimu. Aby odrzucić prośbę, wyłącz przełącznik obok prośby przed wysłaniem.
+edu_tools.ui.player_nickname_approval.no_pending=Brak oczekujących próśb o pseudonim
+edu_tools.ui.player_nickname_approval.request_body=%1§r zażądane przez %2
+edu_tools.ui.player_nickname_approval.reminder=Czeka §a%1 §rprośba(-y) o zatwierdzenie pseudonimu.
+edu_tools.ui.player_nickname_approval.notification=Użytkownik §a%1§r poprosił o zmianę pseudonimu na §a%2§r.
+edu_tools.ui.player_nickname_approval.added_to_queue=§aTwoja prośba o zmianę pseudonimu na §r%1§a została wysłana do zatwierdzenia.
+edu_tools.ui.player_nickname_approval.changed_nickname=§aTwój pseudonim został zmieniony na §r%1§a.
+edu_tools.ui.player_nickname_approval.response.approved=§aTwoja zmiana pseudonimu na §r%1§a została zatwierdzona.
+edu_tools.ui.player_nickname_approval.response.denied=§cTwoja zmiana pseudonimu na §r%1§c została odrzucona.
+edu_tools.ui.player_nickname_approval.queue_processed=§aPrzetworzono wszystkie oczekujące prośby o pseudonim.
+
+### Palette Colors
+edu_tools.ui.palette_color.none=§rKolor domyślny
+edu_tools.ui.palette_color.black=§0Czarny
+edu_tools.ui.palette_color.darkblue=§1Ciemnoniebieski
+edu_tools.ui.palette_color.darkgreen=§2Ciemnozielony
+edu_tools.ui.palette_color.darkaqua=§3Ciemnoturkusowy
+edu_tools.ui.palette_color.darkred=§4Ciemnoczerwony
+edu_tools.ui.palette_color.darkpurple=§5Ciemnofioletowy
+edu_tools.ui.palette_color.gold=§6Złoty
+edu_tools.ui.palette_color.gray=§7Szary
+edu_tools.ui.palette_color.darkgray=§8Ciemnoszary
+edu_tools.ui.palette_color.blue=§9Niebieski
+edu_tools.ui.palette_color.green=§aZielony
+edu_tools.ui.palette_color.aqua=§bTurkusowy
+edu_tools.ui.palette_color.red=§cCzerwony
+edu_tools.ui.palette_color.lightpurple=§dJasnofioletowy
+edu_tools.ui.palette_color.yellow=§eŻółty
+edu_tools.ui.palette_color.white=§fBiały

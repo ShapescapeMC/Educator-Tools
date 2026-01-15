@@ -16,6 +16,7 @@ edu_tools.ui.main.body=Velg et verktøy å bruke
 edu_tools.ui.main.buttons.teleport=Teleport
 edu_tools.ui.main.buttons.copy_inventory=Kopier inventar
 edu_tools.ui.main.buttons.gamemode=Spillmodus
+edu_tools.ui.main.buttons.player_nickname=Egendefinerte kallenavn
 edu_tools.ui.main.buttons.manage_teams=Administrer lag
 edu_tools.ui.main.buttons.timer=Tidtaker
 edu_tools.ui.main.buttons.world_management=Verdensadministrasjon
@@ -382,3 +383,75 @@ edu_tools.ui.classroom_limitations.toggles.warden_tooltip=Hindre at Warden spawn
 edu_tools.message.classroom_limitations.item_removed=§cBegrenset gjenstand fjernet: §r%1
 edu_tools.message.classroom_limitations.attempt_blocked=§cDu kan ikke bruke denne gjenstanden nå.
 edu_tools.message.classroom_limitations.entity_blocked=§cBegrenset entitet blokkert: §r%1
+
+### Player Nickname Module
+edu_tools.ui.player_nickname_teacher.title=§fKallenavn for spillere
+edu_tools.ui.player_nickname_teacher.body=Administrer spillernes kallenavn for klasserommet ditt
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cSpillernes kallenavn er for øyeblikket deaktivert. Aktiver dem i Kallenavninnstillinger for å administrere kallenavn.
+edu_tools.ui.player_nickname_teacher.approval_queue=Godkjenningskø (%1)
+edu_tools.ui.player_nickname_teacher.settings=Kallenavninnstillinger
+edu_tools.ui.player_nickname_teacher.list=Rediger spillernes kallenavn
+edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body=Velg en elev for å redigere kallenavnet
+
+edu_tools.ui.player_nickname_student.title=§fAngi kallenavnet ditt
+edu_tools.ui.player_nickname_student.body=Angi et egendefinert kallenavn for deg selv i spillet
+edu_tools.ui.player_nickname_student.nickname=Kallenavn
+edu_tools.ui.player_nickname_student.nickname_placeholder=Ditt fantastiske kallenavn her
+edu_tools.ui.player_nickname_student.nickname_tooltip=Skriv inn ønsket kallenavn
+edu_tools.ui.player_nickname_student.color=Farge
+edu_tools.ui.player_nickname_student.color_tooltip=Velg en farge for kallenavnet ditt
+edu_tools.ui.player_nickname_student.join_message=%1§r ble med i spillet (var %2§r)
+edu_tools.ui.player_nickname_student.leave_message=%1§r forlot spillet (var %2§r)
+
+edu_tools.ui.player_nickname_edit.title=§fRediger spillers kallenavn
+edu_tools.ui.player_nickname_edit.body=Rediger kallenavnet til %1
+edu_tools.ui.player_nickname_edit.current_nickname=Nåværende kallenavn: §r%1
+edu_tools.ui.player_nickname_edit.nickname=Kallenavn
+edu_tools.ui.player_nickname_edit.nickname_tooltip=Skriv inn spillerens kallenavn (la stå tomt for å tilbakestille)
+edu_tools.ui.player_nickname_edit.nickname_placeholder=La stå tomt for å tilbakestille
+edu_tools.ui.player_nickname_edit.color=Farge
+edu_tools.ui.player_nickname_edit.color_tooltip=Velg en farge for spillerens kallenavn
+
+edu_tools.ui.player_nickname_settings.title=§fKallenavninnstillinger
+edu_tools.ui.player_nickname_settings.body=Konfigurer hvordan spillernes kallenavn håndteres i klasserommet ditt
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Kallenavn aktivert
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Aktiver eller deaktiver spillernes kallenavn i klasserommet ditt
+edu_tools.ui.player_nickname_settings.prompt_on_join=Spør ved innlogging
+edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Be spillere om å angi et kallenavn når de blir med i verden
+edu_tools.ui.player_nickname_settings.allow_custom_colors=Tillat egendefinerte farger
+edu_tools.ui.player_nickname_settings.allow_custom_colors_tooltip=Tillat elever å velge egendefinerte farger for kallenavnene sine
+edu_tools.ui.player_nickname_settings.require_approval=Krev godkjenning
+edu_tools.ui.player_nickname_settings.require_approval_tooltip=Krev lærerens godkjenning for elevers kallenavn
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Egendefinerte inn/ut-meldinger
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Aktiver egendefinerte bli med- og forlat-meldinger som inkluderer kallenavn
+
+edu_tools.ui.player_nickname_approval.title=§fGodkjenn kallenavn
+edu_tools.ui.player_nickname_approval.body=Godkjenn eller avslå ventende forespørsler om endring av kallenavn. For å avslå en forespørsel, slå av bryteren ved siden av forespørselen før du sender inn.
+edu_tools.ui.player_nickname_approval.no_pending=Ingen ventende kallenavnsforespørsler
+edu_tools.ui.player_nickname_approval.request_body=%1§r forespurt av %2
+edu_tools.ui.player_nickname_approval.reminder=Det er §a%1 §rkallenavnsforespørsel(er) som venter på godkjenning.
+edu_tools.ui.player_nickname_approval.notification=Brukeren §a%1§r har bedt om å endre kallenavnet sitt til §a%2§r.
+edu_tools.ui.player_nickname_approval.added_to_queue=§aForespørselen din om å endre kallenavnet til §r%1§a er sendt inn for godkjenning.
+edu_tools.ui.player_nickname_approval.changed_nickname=§aKallenavnet ditt er endret til §r%1§a.
+edu_tools.ui.player_nickname_approval.response.approved=§aEndringen av kallenavnet ditt til §r%1§a ble godkjent.
+edu_tools.ui.player_nickname_approval.response.denied=§cEndringen av kallenavnet ditt til §r%1§c ble avslått.
+edu_tools.ui.player_nickname_approval.queue_processed=§aDu har behandlet alle ventende kallenavnsforespørsler.
+
+### Palette Colors
+edu_tools.ui.palette_color.none=§rStandardfarge
+edu_tools.ui.palette_color.black=§0Svart
+edu_tools.ui.palette_color.darkblue=§1Mørk blå
+edu_tools.ui.palette_color.darkgreen=§2Mørk grønn
+edu_tools.ui.palette_color.darkaqua=§3Mørk turkis
+edu_tools.ui.palette_color.darkred=§4Mørk rød
+edu_tools.ui.palette_color.darkpurple=§5Mørk lilla
+edu_tools.ui.palette_color.gold=§6Gull
+edu_tools.ui.palette_color.gray=§7Grå
+edu_tools.ui.palette_color.darkgray=§8Mørk grå
+edu_tools.ui.palette_color.blue=§9Blå
+edu_tools.ui.palette_color.green=§aGrønn
+edu_tools.ui.palette_color.aqua=§bTurkis
+edu_tools.ui.palette_color.red=§cRød
+edu_tools.ui.palette_color.lightpurple=§dLys lilla
+edu_tools.ui.palette_color.yellow=§eGul
+edu_tools.ui.palette_color.white=§fHvit

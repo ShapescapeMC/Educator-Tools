@@ -16,6 +16,7 @@ edu_tools.ui.main.body=Selecciona una herramienta para usar
 edu_tools.ui.main.buttons.teleport=Teletransportar
 edu_tools.ui.main.buttons.copy_inventory=Copiar Inventario
 edu_tools.ui.main.buttons.gamemode=Modo de juego
+edu_tools.ui.main.buttons.player_nickname=Apodos personalizados
 edu_tools.ui.main.buttons.manage_teams=Gestionar Equipos
 edu_tools.ui.main.buttons.timer=Temporizador
 edu_tools.ui.main.buttons.world_management=Gestión del Mundo
@@ -382,3 +383,75 @@ edu_tools.ui.classroom_limitations.toggles.warden_tooltip=Evita la aparición de
 edu_tools.message.classroom_limitations.item_removed=§cObjeto restringido eliminado: §r%1
 edu_tools.message.classroom_limitations.attempt_blocked=§cNo puedes usar este objeto en este momento.
 edu_tools.message.classroom_limitations.entity_blocked=§cEntidad restringida bloqueada: §r%1
+
+### Player Nickname Module
+edu_tools.ui.player_nickname_teacher.title=§fApodos de Jugadores
+edu_tools.ui.player_nickname_teacher.body=Administra los apodos de los jugadores de tu aula
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cLos apodos de los jugadores están desactivados actualmente. Actívalos en la Configuración de Apodos para administrar los apodos.
+edu_tools.ui.player_nickname_teacher.approval_queue=Cola de Aprobación (%1)
+edu_tools.ui.player_nickname_teacher.settings=Configuración de Apodos
+edu_tools.ui.player_nickname_teacher.list=Editar Apodos de Jugadores
+edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body=Selecciona un estudiante para editar su apodo
+
+edu_tools.ui.player_nickname_student.title=§fEstablece tu Apodo
+edu_tools.ui.player_nickname_student.body=Establece un apodo personalizado para ti en el juego
+edu_tools.ui.player_nickname_student.nickname=Apodo
+edu_tools.ui.player_nickname_student.nickname_placeholder=Tu increíble apodo aquí
+edu_tools.ui.player_nickname_student.nickname_tooltip=Ingresa el apodo que deseas
+edu_tools.ui.player_nickname_student.color=Color
+edu_tools.ui.player_nickname_student.color_tooltip=Selecciona un color para tu apodo
+edu_tools.ui.player_nickname_student.join_message=%1§r se unió al juego (antes %2§r)
+edu_tools.ui.player_nickname_student.leave_message=%1§r salió del juego (antes %2§r)
+
+edu_tools.ui.player_nickname_edit.title=§fEditar Apodo de Jugador
+edu_tools.ui.player_nickname_edit.body=Edita el apodo de %1
+edu_tools.ui.player_nickname_edit.current_nickname=Apodo actual: §r%1
+edu_tools.ui.player_nickname_edit.nickname=Apodo
+edu_tools.ui.player_nickname_edit.nickname_tooltip=Ingresa el apodo del jugador (déjalo vacío para restablecer)
+edu_tools.ui.player_nickname_edit.nickname_placeholder=Déjalo vacío para restablecer
+edu_tools.ui.player_nickname_edit.color=Color
+edu_tools.ui.player_nickname_edit.color_tooltip=Selecciona un color para el apodo del jugador
+
+edu_tools.ui.player_nickname_settings.title=§fConfiguración de Apodos
+edu_tools.ui.player_nickname_settings.body=Configura cómo se administran los apodos de los jugadores en tu aula
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Apodos Habilitados
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Activa o desactiva los apodos de los jugadores en tu aula
+edu_tools.ui.player_nickname_settings.prompt_on_join=Preguntar al Unirse
+edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Pide a los jugadores que establezcan un apodo cuando se unan al mundo
+edu_tools.ui.player_nickname_settings.allow_custom_colors=Permitir Colores Personalizados
+edu_tools.ui.player_nickname_settings.allow_custom_colors_tooltip=Permite que los estudiantes elijan colores personalizados para sus apodos
+edu_tools.ui.player_nickname_settings.require_approval=Requerir Aprobación
+edu_tools.ui.player_nickname_settings.require_approval_tooltip=Requiere la aprobación del profesor para los apodos de los estudiantes
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Mensajes Personalizados de Entrada/Salida
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Activa mensajes personalizados de entrada y salida que incluyan apodos
+
+edu_tools.ui.player_nickname_approval.title=§fAprobar Apodos
+edu_tools.ui.player_nickname_approval.body=Aprueba o rechaza las solicitudes pendientes de cambio de apodo. Para rechazar una solicitud, desactiva el interruptor junto a la solicitud antes de enviar.
+edu_tools.ui.player_nickname_approval.no_pending=No hay solicitudes de apodo pendientes
+edu_tools.ui.player_nickname_approval.request_body=%1§r solicitado por %2
+edu_tools.ui.player_nickname_approval.reminder=Hay §a%1 §rsolicitud(es) de aprobación de apodo esperando.
+edu_tools.ui.player_nickname_approval.notification=El usuario §a%1§r ha solicitado cambiar su apodo a §a%2§r.
+edu_tools.ui.player_nickname_approval.added_to_queue=§aTu solicitud de cambio de apodo a §r%1§a ha sido enviada para su aprobación.
+edu_tools.ui.player_nickname_approval.changed_nickname=§aTu apodo ha sido cambiado a §r%1§a.
+edu_tools.ui.player_nickname_approval.response.approved=§aTu cambio de apodo a §r%1§a ha sido aprobado.
+edu_tools.ui.player_nickname_approval.response.denied=§cTu cambio de apodo a §r%1§c ha sido rechazado.
+edu_tools.ui.player_nickname_approval.queue_processed=§aHas procesado todas las solicitudes de apodo pendientes.
+
+### Palette Colors
+edu_tools.ui.palette_color.none=§rColor Predeterminado
+edu_tools.ui.palette_color.black=§0Negro
+edu_tools.ui.palette_color.darkblue=§1Azul Oscuro
+edu_tools.ui.palette_color.darkgreen=§2Verde Oscuro
+edu_tools.ui.palette_color.darkaqua=§3Aguamarina Oscuro
+edu_tools.ui.palette_color.darkred=§4Rojo Oscuro
+edu_tools.ui.palette_color.darkpurple=§5Morado Oscuro
+edu_tools.ui.palette_color.gold=§6Dorado
+edu_tools.ui.palette_color.gray=§7Gris
+edu_tools.ui.palette_color.darkgray=§8Gris Oscuro
+edu_tools.ui.palette_color.blue=§9Azul
+edu_tools.ui.palette_color.green=§aVerde
+edu_tools.ui.palette_color.aqua=§bAguamarina
+edu_tools.ui.palette_color.red=§cRojo
+edu_tools.ui.palette_color.lightpurple=§dMorado Claro
+edu_tools.ui.palette_color.yellow=§eAmarillo
+edu_tools.ui.palette_color.white=§fBlanco
