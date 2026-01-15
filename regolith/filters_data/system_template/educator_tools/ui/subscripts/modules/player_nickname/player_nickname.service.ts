@@ -122,7 +122,7 @@ export class PlayerNicknameService {
 						}
 						for (const memberId of team.memberIds) {
 							const player = world.getEntity(memberId) as Player;
-							if (!!player || this.getNickname(memberId)) return true; // Include teams with at least one online player or a nickname set
+							if (player || this.getNickname(memberId)) return true; // Include teams with at least one online player or a nickname set
 						}
 						return false;
 					},
