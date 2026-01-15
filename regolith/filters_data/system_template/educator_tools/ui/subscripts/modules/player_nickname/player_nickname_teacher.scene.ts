@@ -63,23 +63,6 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 		this.addButton(
 			{ translate: "edu_tools.ui.player_nickname_teacher.list" },
 			() => {
-				/*context.setSubjectTeamRequired(true);
-				context.setNextScene("player_nickname_edit");
-				context.setData(
-					"team_filter_subject",
-					(team: Team, teamsService: TeamsService): boolean => {
-						if (!teamsService.isPlayerTeam(team.id)) {
-							return false;
-						}
-						for (const memberId of team.memberIds) {
-							const player = world.getEntity(memberId) as Player;
-							if (!!player || playerNicknameService.getNickname(memberId))
-								return true; // Include teams with at least one online player or a nickname set
-						}
-						return false;
-					},
-				);
-				context.setData("body_key", "player_nickname_teacher.select_student");*/
 				sceneManager.openSceneWithContext(
 					context,
 					"player_nickname_edit_selector",
