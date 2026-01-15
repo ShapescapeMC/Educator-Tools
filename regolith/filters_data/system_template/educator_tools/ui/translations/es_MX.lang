@@ -420,6 +420,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Mensajes Person
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Activa mensajes personalizados de entrada y salida que incluyan apodos
 
 edu_tools.ui.player_nickname_approval.title=§fAprobar Apodos
+edu_tools.ui.player_nickname_approval.body=Aprueba o rechaza las solicitudes pendientes de cambio de apodo. Para rechazar una solicitud, desactiva el interruptor junto a la solicitud antes de enviar.
 edu_tools.ui.player_nickname_approval.no_pending=No hay solicitudes de apodo pendientes
 edu_tools.ui.player_nickname_approval.request_body=%1§r solicitado por %2
 edu_tools.ui.player_nickname_approval.reminder=Hay §a%1 §rsolicitud(es) de aprobación de apodo esperando.

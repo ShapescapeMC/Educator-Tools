@@ -420,6 +420,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=自定义进出
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=启用包含昵称的自定义加入和离开消息
 
 edu_tools.ui.player_nickname_approval.title=§f审批昵称
+edu_tools.ui.player_nickname_approval.body=批准或拒绝待处理的昵称更改请求。若要拒绝请求，请在提交前关闭请求旁边的开关。
 edu_tools.ui.player_nickname_approval.no_pending=没有待处理的昵称请求
 edu_tools.ui.player_nickname_approval.request_body=%1§r 由 %2 请求
 edu_tools.ui.player_nickname_approval.reminder=有 §a%1 §r个昵称审批请求等待处理。

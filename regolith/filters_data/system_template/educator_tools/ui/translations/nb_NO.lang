@@ -420,6 +420,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Egendefinerte i
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Aktiver egendefinerte bli med- og forlat-meldinger som inkluderer kallenavn
 
 edu_tools.ui.player_nickname_approval.title=§fGodkjenn kallenavn
+edu_tools.ui.player_nickname_approval.body=Godkjenn eller avslå ventende forespørsler om endring av kallenavn. For å avslå en forespørsel, slå av bryteren ved siden av forespørselen før du sender inn.
 edu_tools.ui.player_nickname_approval.no_pending=Ingen ventende kallenavnsforespørsler
 edu_tools.ui.player_nickname_approval.request_body=%1§r forespurt av %2
 edu_tools.ui.player_nickname_approval.reminder=Det er §a%1 §rkallenavnsforespørsel(er) som venter på godkjenning.

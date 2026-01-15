@@ -422,6 +422,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Custom Leave/Jo
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Enable custom join and leave messages that include nicknames
 
 edu_tools.ui.player_nickname_approval.title=§fApprove Nicknames
+edu_tools.ui.player_nickname_approval.body=Approve or deny pending nickname change requests. To deny a request, turn off the toggle next to the request before submitting.
 edu_tools.ui.player_nickname_approval.no_pending=No pending nickname requests
 edu_tools.ui.player_nickname_approval.request_body=%1§r requested by %2
 edu_tools.ui.player_nickname_approval.reminder=There are §a%1 §rnickname approval request(s) waiting.

@@ -420,6 +420,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Niestandardowe 
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Włącz niestandardowe wiadomości wejścia i wyjścia, które zawierają pseudonimy
 
 edu_tools.ui.player_nickname_approval.title=§fZatwierdzaj pseudonimy
+edu_tools.ui.player_nickname_approval.body=Zatwierdź lub odrzuć oczekujące prośby o zmianę pseudonimu. Aby odrzucić prośbę, wyłącz przełącznik obok prośby przed wysłaniem.
 edu_tools.ui.player_nickname_approval.no_pending=Brak oczekujących próśb o pseudonim
 edu_tools.ui.player_nickname_approval.request_body=%1§r zażądane przez %2
 edu_tools.ui.player_nickname_approval.reminder=Czeka §a%1 §rprośba(-y) o zatwierdzenie pseudonimu.

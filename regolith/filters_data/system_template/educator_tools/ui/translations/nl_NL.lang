@@ -420,6 +420,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Aangepaste join
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Schakel aangepaste join- en leave-berichten in die bijnamen bevatten
 
 edu_tools.ui.player_nickname_approval.title=§fBijnamen goedkeuren
+edu_tools.ui.player_nickname_approval.body=Keur wachtende verzoeken voor bijnaamwijziging goed of af. Om een verzoek af te wijzen, zet je de schakelaar naast het verzoek uit voordat je verzendt.
 edu_tools.ui.player_nickname_approval.no_pending=Geen wachtende bijnaamverzoeken
 edu_tools.ui.player_nickname_approval.request_body=%1§r aangevraagd door %2
 edu_tools.ui.player_nickname_approval.reminder=Er wachten §a%1 §rbijnamengoedkeuringsverzoek(en).

@@ -422,6 +422,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=参加/退出�
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=ニックネームを含む参加・退出メッセージを有効にします
 
 edu_tools.ui.player_nickname_approval.title=§fニックネームを承認
+edu_tools.ui.player_nickname_approval.body=保留中のニックネーム変更申請を承認または却下します。却下する場合は、送信前に申請の横のトグルをオフにしてください。
 edu_tools.ui.player_nickname_approval.no_pending=承認待ちのニックネーム申請はありません
 edu_tools.ui.player_nickname_approval.request_body=%1§r（申請者: %2）
 edu_tools.ui.player_nickname_approval.reminder=§a%1 §r件のニックネーム承認申請が待機しています。

@@ -420,6 +420,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Προσαρμ�
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Ενεργοποιήστε προσαρμοσμένα μηνύματα εισόδου και εξόδου που περιλαμβάνουν ψευδώνυμα
 
 edu_tools.ui.player_nickname_approval.title=§fΈγκριση ψευδωνύμων
+edu_tools.ui.player_nickname_approval.body=Εγκρίνετε ή απορρίψτε εκκρεμή αιτήματα αλλαγής ψευδωνύμου. Για να απορρίψετε ένα αίτημα, απενεργοποιήστε τον διακόπτη δίπλα στο αίτημα πριν από την υποβολή.
 edu_tools.ui.player_nickname_approval.no_pending=Δεν υπάρχουν εκκρεμείς αιτήσεις ψευδωνύμου
 edu_tools.ui.player_nickname_approval.request_body=%1§r ζητήθηκε από %2
 edu_tools.ui.player_nickname_approval.reminder=Υπάρχουν §a%1 §rαίτηση/εις έγκρισης ψευδωνύμου σε αναμονή.

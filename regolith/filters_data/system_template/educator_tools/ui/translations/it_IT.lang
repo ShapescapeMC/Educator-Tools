@@ -420,6 +420,7 @@ edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Messaggi person
 edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Abilita messaggi personalizzati di entrata e uscita che includono i nickname
 
 edu_tools.ui.player_nickname_approval.title=§fApprova nickname
+edu_tools.ui.player_nickname_approval.body=Approva o rifiuta le richieste di cambio nickname in sospeso. Per rifiutare una richiesta, disattiva l'interruttore accanto alla richiesta prima di inviare.
 edu_tools.ui.player_nickname_approval.no_pending=Nessuna richiesta di nickname in attesa
 edu_tools.ui.player_nickname_approval.request_body=%1§r richiesto da %2
 edu_tools.ui.player_nickname_approval.reminder=Ci sono §a%1 §rrichiesta/e di approvazione nickname in attesa.

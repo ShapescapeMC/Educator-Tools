@@ -24,6 +24,9 @@ export class PlayerNicknameApprovalScene extends ModalUIScene {
 				translate: "edu_tools.ui.player_nickname_approval.no_pending",
 			});
 		} else {
+			this.addLabel({
+				translate: "edu_tools.ui.player_nickname_approval.body",
+			});
 			pendingNicknames.forEach((request) => {
 				const [[playerId, nickname]] = Object.entries(request);
 				const requestingPlayerTeam =
