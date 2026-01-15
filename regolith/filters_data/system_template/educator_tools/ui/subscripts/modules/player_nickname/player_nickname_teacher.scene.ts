@@ -1,9 +1,6 @@
-import { world, Player } from "@minecraft/server";
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ActionUIScene } from "../scene_manager/ui-scene";
-import { Team } from "../teams/interfaces/team.interface";
-import { TeamsService } from "../teams/teams.service";
 import { PlayerNicknameService } from "./player_nickname.service";
 
 export class PlayerNicknameTeacherScene extends ActionUIScene {
