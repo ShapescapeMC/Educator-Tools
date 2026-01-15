@@ -107,7 +107,6 @@ export class PlayerNicknameMechanic {
 						player,
 						"player_nickname_student",
 					);
-					//this.playersToPrompt.delete(playerId);
 				}
 			}
 		});
@@ -115,5 +114,9 @@ export class PlayerNicknameMechanic {
 
 	studentUIOpened(playerId: string): void {
 		this.playersToPrompt.delete(playerId);
+	}
+
+	studentUIOpenFail(playerId: string): void {
+		this.playersToPrompt.set(playerId, { x: 0, y: 0, z: 0 });
 	}
 }

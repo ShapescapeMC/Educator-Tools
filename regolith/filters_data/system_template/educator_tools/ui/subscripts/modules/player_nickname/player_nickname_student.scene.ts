@@ -1,3 +1,4 @@
+import { FormCancelationReason } from "@minecraft/server-ui";
 import { SceneContext } from "../scene_manager/scene-context";
 import { SceneManager } from "../scene_manager/scene-manager";
 import { ModalUIScene } from "../scene_manager/ui-scene";
@@ -15,10 +16,6 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 	) {
 		super(PlayerNicknameStudentScene.id, context.getSourcePlayer());
 		this.setContext(context);
-
-		this.playerNicknameService
-			.getPlayerNicknameMechanic()
-			.studentUIOpened(context.getSourcePlayer().id);
 
 		const currentNickname = this.playerNicknameService.getNickname(
 			context.getSourcePlayer().id,
@@ -66,8 +63,18 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 			);
 		}
 
+				this.playerNicknameService
+					.getPlayerNicknameMechanic()
+					?.studentUIOpened(context.getSourcePlayer().id);
+
 		const response = this.show(context.getSourcePlayer(), sceneManager);
 		response.then((r) => {
+			if (r.cancelationReason === FormCancelationReason.UserBusy) {
+				this.playerNicknameService
+					.getPlayerNicknameMechanic()
+					?.studentUIOpenFail(context.getSourcePlayer().id);
+			}
+
 			if (r.canceled) {
 				return;
 			}
