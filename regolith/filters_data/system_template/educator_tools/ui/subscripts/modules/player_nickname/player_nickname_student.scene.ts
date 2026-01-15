@@ -27,7 +27,7 @@ export class PlayerNicknameStudentScene extends ModalUIScene {
 
 		this.addTextField(
 			{ translate: "edu_tools.ui.player_nickname_student.nickname" },
-			currentNickname ? currentNickname : this.player.name,
+			"edu_tools.ui.player_nickname_student.nickname_placeholder",
 			(value: string) => {
 				context.setData("nickname", value);
 			},

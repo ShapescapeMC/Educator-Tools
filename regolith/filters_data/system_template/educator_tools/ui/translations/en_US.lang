@@ -394,6 +394,7 @@ edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body
 edu_tools.ui.player_nickname_student.title=§fSet Your Nickname
 edu_tools.ui.player_nickname_student.body=Set a custom nickname for yourself in the game
 edu_tools.ui.player_nickname_student.nickname=Nickname
+edu_tools.ui.player_nickname_student.nickname_placeholder=Your amazing nickname here
 edu_tools.ui.player_nickname_student.nickname_tooltip=Enter your desired nickname
 edu_tools.ui.player_nickname_student.color=Color
 edu_tools.ui.player_nickname_student.color_tooltip=Select a color for your nickname
@@ -401,9 +402,11 @@ edu_tools.ui.player_nickname_student.join_message=%1§r joined the game (was %2�
 edu_tools.ui.player_nickname_student.leave_message=%1§r left the game (was %2§r)
 
 edu_tools.ui.player_nickname_edit.title=§fEdit Player Nickname
-edu_tools.ui.player_nickname_edit.body=Edit the nickname of the selected player
+edu_tools.ui.player_nickname_edit.body=Edit the nickname of %1
+edu_tools.ui.player_nickname_edit.current_nickname=Current Nickname: §r%1
 edu_tools.ui.player_nickname_edit.nickname=Nickname
-edu_tools.ui.player_nickname_edit.nickname_tooltip=Enter the player's nickname
+edu_tools.ui.player_nickname_edit.nickname_tooltip=Enter the player's nickname (Leave empty to reset)
+edu_tools.ui.player_nickname_edit.nickname_placeholder=Leave empty to reset
 edu_tools.ui.player_nickname_edit.color=Color
 edu_tools.ui.player_nickname_edit.color_tooltip=Select a color for the player's nickname
 

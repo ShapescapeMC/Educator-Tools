@@ -27,11 +27,12 @@ export class PlayerNicknameEditScene extends ModalUIScene {
 		const currentNickname = this.playerNicknameService.getNickname(playerId);
 		const player = world.getEntity(playerId) as Player | undefined;
 
-		this.addLabel({ translate: "edu_tools.ui.player_nickname_edit.body" });
+		this.addLabel({ translate: "edu_tools.ui.player_nickname_edit.body", with: [player ? player.name : ""] });
+		this.addLabel({ translate: "edu_tools.ui.player_nickname_edit.current_nickname", with: [currentNickname ? currentNickname : "§r" + (player ? player.name : "")] });
 
 		this.addTextField(
 			{ translate: "edu_tools.ui.player_nickname_edit.nickname" },
-			currentNickname ? currentNickname : player?.name ?? "",
+			"edu_tools.ui.player_nickname_edit.nickname_placeholder",
 			(value: string) => {
 				context.setData("nickname", value);
 			},
@@ -70,6 +71,7 @@ export class PlayerNicknameEditScene extends ModalUIScene {
 			} else {
 				this.playerNicknameService.clearNickname(playerId);
 			}
+			sceneManager.goBack(context, 1);
 		});
 	}
 }
