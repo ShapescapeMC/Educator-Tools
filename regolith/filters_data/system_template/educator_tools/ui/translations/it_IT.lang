@@ -380,3 +380,70 @@ edu_tools.ui.classroom_limitations.toggles.warden_tooltip=Impedisci la generazio
 edu_tools.message.classroom_limitations.item_removed=§cOggetto limitato rimosso: §r%1
 edu_tools.message.classroom_limitations.attempt_blocked=§cNon puoi usare questo oggetto in questo momento.
 edu_tools.message.classroom_limitations.entity_blocked=§cEntità limitata bloccata: §r%1
+
+### Player Nickname Module
+edu_tools.ui.player_nickname_teacher.title=§fNickname dei giocatori
+edu_tools.ui.player_nickname_teacher.body=Gestisci i nickname dei giocatori per la tua classe
+edu_tools.ui.player_nickname_teacher.approval_queue=Coda di approvazione (%1)
+edu_tools.ui.player_nickname_teacher.settings=Impostazioni nickname
+edu_tools.ui.player_nickname_teacher.list=Modifica nickname giocatori
+edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body=Seleziona uno studente per modificare il suo nickname
+
+edu_tools.ui.player_nickname_student.title=§fImposta il tuo nickname
+edu_tools.ui.player_nickname_student.body=Imposta un nickname personalizzato per te nel gioco
+edu_tools.ui.player_nickname_student.nickname=Nickname
+edu_tools.ui.player_nickname_student.nickname_placeholder=Il tuo fantastico nickname qui
+edu_tools.ui.player_nickname_student.nickname_tooltip=Inserisci il nickname desiderato
+edu_tools.ui.player_nickname_student.color=Colore
+edu_tools.ui.player_nickname_student.color_tooltip=Seleziona un colore per il tuo nickname
+edu_tools.ui.player_nickname_student.join_message=%1§r è entrato nel gioco (era %2§r)
+edu_tools.ui.player_nickname_student.leave_message=%1§r ha lasciato il gioco (era %2§r)
+
+edu_tools.ui.player_nickname_edit.title=§fModifica nickname giocatore
+edu_tools.ui.player_nickname_edit.body=Modifica il nickname di %1
+edu_tools.ui.player_nickname_edit.current_nickname=Nickname attuale: §r%1
+edu_tools.ui.player_nickname_edit.nickname=Nickname
+edu_tools.ui.player_nickname_edit.nickname_tooltip=Inserisci il nickname del giocatore (lascia vuoto per reimpostare)
+edu_tools.ui.player_nickname_edit.nickname_placeholder=Lascia vuoto per reimpostare
+edu_tools.ui.player_nickname_edit.color=Colore
+edu_tools.ui.player_nickname_edit.color_tooltip=Seleziona un colore per il nickname del giocatore
+
+edu_tools.ui.player_nickname_settings.title=§fImpostazioni nickname
+edu_tools.ui.player_nickname_settings.body=Configura come vengono gestiti i nickname dei giocatori nella tua classe
+edu_tools.ui.player_nickname_settings.prompt_on_join=Richiedi all'ingresso
+edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Chiedi ai giocatori di impostare un nickname quando entrano nel mondo
+edu_tools.ui.player_nickname_settings.allow_custom_colors=Consenti colori personalizzati
+edu_tools.ui.player_nickname_settings.allow_custom_colors_tooltip=Consenti agli studenti di scegliere colori personalizzati per i loro nickname
+edu_tools.ui.player_nickname_settings.require_approval=Richiedi approvazione
+edu_tools.ui.player_nickname_settings.require_approval_tooltip=Richiedi l'approvazione dell'insegnante per i nickname degli studenti
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Messaggi personalizzati di entrata/uscita
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Abilita messaggi personalizzati di entrata e uscita che includono i nickname
+
+edu_tools.ui.player_nickname_approval.title=§fApprova nickname
+edu_tools.ui.player_nickname_approval.no_pending=Nessuna richiesta di nickname in attesa
+edu_tools.ui.player_nickname_approval.request_body=%1§r richiesto da %2
+edu_tools.ui.player_nickname_approval.reminder=Ci sono §a%1 §rrichiesta/e di approvazione nickname in attesa.
+edu_tools.ui.player_nickname_approval.notification=L'utente §a%1§r ha richiesto di cambiare il proprio nickname in §a%2§r.
+edu_tools.ui.player_nickname_approval.added_to_queue=§aLa tua richiesta di cambio nickname a §r%1§a è stata inviata per l'approvazione.
+edu_tools.ui.player_nickname_approval.changed_nickname=§aIl tuo nickname è stato cambiato in §r%1§a.
+edu_tools.ui.player_nickname_approval.response.approved=§aIl tuo cambio nickname a §r%1§a è stato approvato.
+edu_tools.ui.player_nickname_approval.response.denied=§cIl tuo cambio nickname a §r%1§c è stato rifiutato.
+edu_tools.ui.player_nickname_approval.queue_processed=§aHai elaborato tutte le richieste di nickname in attesa.
+
+### Palette Colors
+edu_tools.ui.palette_color.black=§0Nero
+edu_tools.ui.palette_color.darkblue=§1Blu scuro
+edu_tools.ui.palette_color.darkgreen=§2Verde scuro
+edu_tools.ui.palette_color.darkaqua=§3Acqua scura
+edu_tools.ui.palette_color.darkred=§4Rosso scuro
+edu_tools.ui.palette_color.darkpurple=§5Viola scuro
+edu_tools.ui.palette_color.gold=§6Oro
+edu_tools.ui.palette_color.gray=§7Grigio
+edu_tools.ui.palette_color.darkgray=§8Grigio scuro
+edu_tools.ui.palette_color.blue=§9Blu
+edu_tools.ui.palette_color.green=§aVerde
+edu_tools.ui.palette_color.aqua=§bAcqua
+edu_tools.ui.palette_color.red=§cRosso
+edu_tools.ui.palette_color.lightpurple=§dViola chiaro
+edu_tools.ui.palette_color.yellow=§eGiallo
+edu_tools.ui.palette_color.white=§fBianco

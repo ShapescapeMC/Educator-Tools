@@ -380,3 +380,70 @@ edu_tools.ui.classroom_limitations.toggles.warden_tooltip=阻止监守者生成�
 edu_tools.message.classroom_limitations.item_removed=§c受限物品已移除：§r%1
 edu_tools.message.classroom_limitations.attempt_blocked=§c你现在无法使用此物品。
 edu_tools.message.classroom_limitations.entity_blocked=§c已阻止受限实体：§r%1
+
+### Player Nickname Module
+edu_tools.ui.player_nickname_teacher.title=§f玩家昵称
+edu_tools.ui.player_nickname_teacher.body=管理课堂中的玩家昵称
+edu_tools.ui.player_nickname_teacher.approval_queue=审批队列 (%1)
+edu_tools.ui.player_nickname_teacher.settings=昵称设置
+edu_tools.ui.player_nickname_teacher.list=编辑玩家昵称
+edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body=选择一名学生来编辑其昵称
+
+edu_tools.ui.player_nickname_student.title=§f设置你的昵称
+edu_tools.ui.player_nickname_student.body=在游戏中为自己设置自定义昵称
+edu_tools.ui.player_nickname_student.nickname=昵称
+edu_tools.ui.player_nickname_student.nickname_placeholder=在此输入你的超棒昵称
+edu_tools.ui.player_nickname_student.nickname_tooltip=输入你想要的昵称
+edu_tools.ui.player_nickname_student.color=颜色
+edu_tools.ui.player_nickname_student.color_tooltip=为你的昵称选择一种颜色
+edu_tools.ui.player_nickname_student.join_message=%1§r 加入了游戏（之前为 %2§r）
+edu_tools.ui.player_nickname_student.leave_message=%1§r 离开了游戏（之前为 %2§r）
+
+edu_tools.ui.player_nickname_edit.title=§f编辑玩家昵称
+edu_tools.ui.player_nickname_edit.body=编辑 %1 的昵称
+edu_tools.ui.player_nickname_edit.current_nickname=当前昵称：§r%1
+edu_tools.ui.player_nickname_edit.nickname=昵称
+edu_tools.ui.player_nickname_edit.nickname_tooltip=输入玩家昵称（留空以重置）
+edu_tools.ui.player_nickname_edit.nickname_placeholder=留空以重置
+edu_tools.ui.player_nickname_edit.color=颜色
+edu_tools.ui.player_nickname_edit.color_tooltip=为玩家昵称选择一种颜色
+
+edu_tools.ui.player_nickname_settings.title=§f昵称设置
+edu_tools.ui.player_nickname_settings.body=配置课堂中玩家昵称的管理方式
+edu_tools.ui.player_nickname_settings.prompt_on_join=加入时提示
+edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=玩家加入世界时提示其设置昵称
+edu_tools.ui.player_nickname_settings.allow_custom_colors=允许自定义颜色
+edu_tools.ui.player_nickname_settings.allow_custom_colors_tooltip=允许学生为昵称选择自定义颜色
+edu_tools.ui.player_nickname_settings.require_approval=需要审批
+edu_tools.ui.player_nickname_settings.require_approval_tooltip=学生昵称需要教师审批
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages=自定义进出消息
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=启用包含昵称的自定义加入和离开消息
+
+edu_tools.ui.player_nickname_approval.title=§f审批昵称
+edu_tools.ui.player_nickname_approval.no_pending=没有待处理的昵称请求
+edu_tools.ui.player_nickname_approval.request_body=%1§r 由 %2 请求
+edu_tools.ui.player_nickname_approval.reminder=有 §a%1 §r个昵称审批请求等待处理。
+edu_tools.ui.player_nickname_approval.notification=用户 §a%1§r 请求将昵称更改为 §a%2§r。
+edu_tools.ui.player_nickname_approval.added_to_queue=§a你将昵称更改为 §r%1§a 的请求已提交审批。
+edu_tools.ui.player_nickname_approval.changed_nickname=§a你的昵称已更改为 §r%1§a。
+edu_tools.ui.player_nickname_approval.response.approved=§a你将昵称更改为 §r%1§a 的请求已获批准。
+edu_tools.ui.player_nickname_approval.response.denied=§c你将昵称更改为 §r%1§c 的请求已被拒绝。
+edu_tools.ui.player_nickname_approval.queue_processed=§a你已处理完所有待处理的昵称请求。
+
+### Palette Colors
+edu_tools.ui.palette_color.black=§0黑色
+edu_tools.ui.palette_color.darkblue=§1深蓝色
+edu_tools.ui.palette_color.darkgreen=§2深绿色
+edu_tools.ui.palette_color.darkaqua=§3深青色
+edu_tools.ui.palette_color.darkred=§4深红色
+edu_tools.ui.palette_color.darkpurple=§5深紫色
+edu_tools.ui.palette_color.gold=§6金色
+edu_tools.ui.palette_color.gray=§7灰色
+edu_tools.ui.palette_color.darkgray=§8深灰色
+edu_tools.ui.palette_color.blue=§9蓝色
+edu_tools.ui.palette_color.green=§a绿色
+edu_tools.ui.palette_color.aqua=§b青色
+edu_tools.ui.palette_color.red=§c红色
+edu_tools.ui.palette_color.lightpurple=§d浅紫色
+edu_tools.ui.palette_color.yellow=§e黄色
+edu_tools.ui.palette_color.white=§f白色
