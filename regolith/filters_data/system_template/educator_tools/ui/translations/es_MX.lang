@@ -431,6 +431,7 @@ edu_tools.ui.player_nickname_approval.response.denied=§cTu cambio de apodo a §
 edu_tools.ui.player_nickname_approval.queue_processed=§aHas procesado todas las solicitudes de apodo pendientes.
 
 ### Palette Colors
+edu_tools.ui.palette_color.none=§rColor Predeterminado
 edu_tools.ui.palette_color.black=§0Negro
 edu_tools.ui.palette_color.darkblue=§1Azul Oscuro
 edu_tools.ui.palette_color.darkgreen=§2Verde Oscuro

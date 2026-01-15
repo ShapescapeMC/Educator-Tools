@@ -60,7 +60,7 @@ export class PlayerNicknameEditScene extends ModalUIScene {
 				context.setData("colorIndex", value);
 			},
 			{
-				defaultValueIndex: options.indexOf("edu_tools.ui.palette_color.white"),
+				defaultValueIndex: options.indexOf("edu_tools.ui.palette_color.none"),
 				tooltip: "edu_tools.ui.player_nickname_edit.color_tooltip",
 			},
 		);

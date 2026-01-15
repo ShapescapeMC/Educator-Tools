@@ -431,6 +431,7 @@ edu_tools.ui.player_nickname_approval.response.denied=§cTwoja zmiana pseudonimu
 edu_tools.ui.player_nickname_approval.queue_processed=§aPrzetworzono wszystkie oczekujące prośby o pseudonim.
 
 ### Palette Colors
+edu_tools.ui.palette_color.none=§rKolor domyślny
 edu_tools.ui.palette_color.black=§0Czarny
 edu_tools.ui.palette_color.darkblue=§1Ciemnoniebieski
 edu_tools.ui.palette_color.darkgreen=§2Ciemnozielony

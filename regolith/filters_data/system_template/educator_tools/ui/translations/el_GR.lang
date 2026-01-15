@@ -431,6 +431,7 @@ edu_tools.ui.player_nickname_approval.response.denied=§cΗ αλλαγή ψευ�
 edu_tools.ui.player_nickname_approval.queue_processed=§aΈχετε επεξεργαστεί όλες τις εκκρεμείς αιτήσεις ψευδωνύμου.
 
 ### Palette Colors
+edu_tools.ui.palette_color.none=§rΠροεπιλεγμένο Χρώμα
 edu_tools.ui.palette_color.black=§0Μαύρο
 edu_tools.ui.palette_color.darkblue=§1Σκούρο Μπλε
 edu_tools.ui.palette_color.darkgreen=§2Σκούρο Πράσινο

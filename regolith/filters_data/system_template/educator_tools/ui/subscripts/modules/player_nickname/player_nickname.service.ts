@@ -22,6 +22,7 @@ export interface PlayerNicknameSettings {
 }
 
 export enum ColorCode {
+	None = "",
 	Black = "§0",
 	DarkBlue = "§1",
 	DarkGreen = "§2",

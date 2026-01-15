@@ -431,6 +431,7 @@ edu_tools.ui.player_nickname_approval.response.denied=§c你将昵称更改为 �
 edu_tools.ui.player_nickname_approval.queue_processed=§a你已处理完所有待处理的昵称请求。
 
 ### Palette Colors
+edu_tools.ui.palette_color.none=§r默认颜色
 edu_tools.ui.palette_color.black=§0黑色
 edu_tools.ui.palette_color.darkblue=§1深蓝色
 edu_tools.ui.palette_color.darkgreen=§2深绿色

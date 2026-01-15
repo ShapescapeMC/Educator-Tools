@@ -433,6 +433,7 @@ edu_tools.ui.player_nickname_approval.response.denied=§cニックネームを �
 edu_tools.ui.player_nickname_approval.queue_processed=§a保留中のニックネーム申請をすべて処理しました。
 
 ### Palette Colors
+edu_tools.ui.palette_color.none=§rデフォルトの色
 edu_tools.ui.palette_color.black=§0黒
 edu_tools.ui.palette_color.darkblue=§1濃い青
 edu_tools.ui.palette_color.darkgreen=§2濃い緑

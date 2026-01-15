@@ -431,6 +431,7 @@ edu_tools.ui.player_nickname_approval.response.denied=§cEndringen av kallenavne
 edu_tools.ui.player_nickname_approval.queue_processed=§aDu har behandlet alle ventende kallenavnsforespørsler.
 
 ### Palette Colors
+edu_tools.ui.palette_color.none=§rStandardfarge
 edu_tools.ui.palette_color.black=§0Svart
 edu_tools.ui.palette_color.darkblue=§1Mørk blå
 edu_tools.ui.palette_color.darkgreen=§2Mørk grønn

@@ -431,6 +431,7 @@ edu_tools.ui.player_nickname_approval.response.denied=§cJe bijnaamwijziging naa
 edu_tools.ui.player_nickname_approval.queue_processed=§aJe hebt alle wachtende bijnaamverzoeken verwerkt.
 
 ### Palette Colors
+edu_tools.ui.palette_color.none=§rStandaardkleur
 edu_tools.ui.palette_color.black=§0Zwart
 edu_tools.ui.palette_color.darkblue=§1Donkerblauw
 edu_tools.ui.palette_color.darkgreen=§2Donkergroen

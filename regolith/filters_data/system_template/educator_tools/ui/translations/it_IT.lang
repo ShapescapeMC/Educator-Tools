@@ -431,6 +431,7 @@ edu_tools.ui.player_nickname_approval.response.denied=§cIl tuo cambio nickname 
 edu_tools.ui.player_nickname_approval.queue_processed=§aHai elaborato tutte le richieste di nickname in attesa.
 
 ### Palette Colors
+edu_tools.ui.palette_color.none=§rColore predefinito
 edu_tools.ui.palette_color.black=§0Nero
 edu_tools.ui.palette_color.darkblue=§1Blu scuro
 edu_tools.ui.palette_color.darkgreen=§2Verde scuro
