@@ -384,6 +384,7 @@ edu_tools.message.classroom_limitations.entity_blocked=§c已阻止受限实体�
 ### Player Nickname Module
 edu_tools.ui.player_nickname_teacher.title=§f玩家昵称
 edu_tools.ui.player_nickname_teacher.body=管理课堂中的玩家昵称
+edu_tools.ui.player_nickname_teacher.warning_disabled=§c玩家昵称目前已禁用。请在昵称设置中启用以管理昵称。
 edu_tools.ui.player_nickname_teacher.approval_queue=审批队列 (%1)
 edu_tools.ui.player_nickname_teacher.settings=昵称设置
 edu_tools.ui.player_nickname_teacher.list=编辑玩家昵称
@@ -410,6 +411,8 @@ edu_tools.ui.player_nickname_edit.color_tooltip=为玩家昵称选择一种颜�
 
 edu_tools.ui.player_nickname_settings.title=§f昵称设置
 edu_tools.ui.player_nickname_settings.body=配置课堂中玩家昵称的管理方式
+edu_tools.ui.player_nickname_settings.nicknames_enabled=启用昵称
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=启用或禁用课堂中的玩家昵称
 edu_tools.ui.player_nickname_settings.prompt_on_join=加入时提示
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=玩家加入世界时提示其设置昵称
 edu_tools.ui.player_nickname_settings.allow_custom_colors=允许自定义颜色

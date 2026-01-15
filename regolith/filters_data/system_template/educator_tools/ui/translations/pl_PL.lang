@@ -384,6 +384,7 @@ edu_tools.message.classroom_limitations.entity_blocked=§cZablokowano ograniczon
 ### Player Nickname Module
 edu_tools.ui.player_nickname_teacher.title=§fPseudonimy graczy
 edu_tools.ui.player_nickname_teacher.body=Zarządzaj pseudonimami graczy w swojej klasie
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cPseudonimy graczy są obecnie wyłączone. Włącz je w Ustawieniach pseudonimów, aby zarządzać pseudonimami.
 edu_tools.ui.player_nickname_teacher.approval_queue=Kolejka zatwierdzania (%1)
 edu_tools.ui.player_nickname_teacher.settings=Ustawienia pseudonimów
 edu_tools.ui.player_nickname_teacher.list=Edytuj pseudonimy graczy
@@ -410,6 +411,8 @@ edu_tools.ui.player_nickname_edit.color_tooltip=Wybierz kolor dla pseudonimu gra
 
 edu_tools.ui.player_nickname_settings.title=§fUstawienia pseudonimów
 edu_tools.ui.player_nickname_settings.body=Skonfiguruj sposób zarządzania pseudonimami graczy w swojej klasie
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Pseudonimy włączone
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Włącz lub wyłącz pseudonimy graczy w swojej klasie
 edu_tools.ui.player_nickname_settings.prompt_on_join=Zapytaj przy dołączeniu
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Proś graczy o ustawienie pseudonimu podczas dołączania do świata
 edu_tools.ui.player_nickname_settings.allow_custom_colors=Zezwalaj na niestandardowe kolory

@@ -17,9 +17,19 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 
 		this.setRawBody([
 			{ translate: "edu_tools.ui.player_nickname_teacher.body" },
+			settings.nicknamesEnabled
+				? {}
+				: {
+						text: "\n",
+				  },
+			settings.nicknamesEnabled
+				? {}
+				: {
+						translate: "edu_tools.ui.player_nickname_teacher.warning_disabled",
+				  },
 		]);
 
-		if (settings.requireApproval) {
+		if (settings.requireApproval && settings.nicknamesEnabled) {
 			let requestCount =
 				playerNicknameService.getNicknameApprovalRequests().length;
 			let requestCountString = "" + requestCount;
@@ -57,17 +67,19 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 			"textures/edu_tools/ui/icons/player_nickname/settings",
 		);
 
-		this.addButton(
-			{ translate: "edu_tools.ui.player_nickname_teacher.list" },
-			() => {
-				sceneManager.openSceneWithContext(
-					context,
-					"player_nickname_edit_selector",
-					false,
-				);
-			},
-			"textures/edu_tools/ui/icons/player_nickname/list",
-		);
+		if (settings.nicknamesEnabled) {
+			this.addButton(
+				{ translate: "edu_tools.ui.player_nickname_teacher.list" },
+				() => {
+					sceneManager.openSceneWithContext(
+						context,
+						"player_nickname_edit_selector",
+						false,
+					);
+				},
+				"textures/edu_tools/ui/icons/player_nickname/list",
+			);
+		}
 
 		this.addButton(
 			"edu_tools.ui.buttons.back",

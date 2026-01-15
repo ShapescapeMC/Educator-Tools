@@ -384,6 +384,7 @@ edu_tools.message.classroom_limitations.entity_blocked=§cEntità limitata blocc
 ### Player Nickname Module
 edu_tools.ui.player_nickname_teacher.title=§fNickname dei giocatori
 edu_tools.ui.player_nickname_teacher.body=Gestisci i nickname dei giocatori per la tua classe
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cI nickname dei giocatori sono attualmente disabilitati. Abilitali nelle Impostazioni nickname per gestire i nickname.
 edu_tools.ui.player_nickname_teacher.approval_queue=Coda di approvazione (%1)
 edu_tools.ui.player_nickname_teacher.settings=Impostazioni nickname
 edu_tools.ui.player_nickname_teacher.list=Modifica nickname giocatori
@@ -410,6 +411,8 @@ edu_tools.ui.player_nickname_edit.color_tooltip=Seleziona un colore per il nickn
 
 edu_tools.ui.player_nickname_settings.title=§fImpostazioni nickname
 edu_tools.ui.player_nickname_settings.body=Configura come vengono gestiti i nickname dei giocatori nella tua classe
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Nickname abilitati
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Abilita o disabilita i nickname dei giocatori nella tua classe
 edu_tools.ui.player_nickname_settings.prompt_on_join=Richiedi all'ingresso
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Chiedi ai giocatori di impostare un nickname quando entrano nel mondo
 edu_tools.ui.player_nickname_settings.allow_custom_colors=Consenti colori personalizzati

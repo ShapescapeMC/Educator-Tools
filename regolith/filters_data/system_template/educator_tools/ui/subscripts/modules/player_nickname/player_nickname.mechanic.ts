@@ -41,12 +41,16 @@ export class PlayerNicknameMechanic {
 
 	onPlayerJoin(event: PlayerSpawnAfterEvent): void {
 		if (event.initialSpawn) {
+			const settings = this.playerNicknameService.getSettings();
+			if (!settings.nicknamesEnabled) {
+				return;
+			}
 			const player = event.player;
 			const nickname = this.playerNicknameService.getNickname(player.id);
 			if (nickname) {
 				player.nameTag = nickname;
 
-				if (this.playerNicknameService.getSettings().customLeaveJoinMessages) {
+				if (settings.customLeaveJoinMessages) {
 					world.sendMessage({
 						translate: "edu_tools.ui.player_nickname_student.join_message",
 						with: [nickname, player.name],
@@ -55,16 +59,20 @@ export class PlayerNicknameMechanic {
 			} else {
 				player.nameTag = player.name;
 				if (this.playerNicknameService.getSettings().promptOnJoin) {
-					this.playersToPrompt.set(player.id, player.getViewDirection());
+					this.startStudentUIPrompt(player);
 				}
 			}
 		}
 	}
 
 	onPlayerLeave(event: PlayerLeaveAfterEvent): void {
+		const settings = this.playerNicknameService.getSettings();
+		if (!settings.nicknamesEnabled) {
+			return;
+		}
 		const playerName = event.playerName;
 		const playerId = event.playerId;
-		if (this.playerNicknameService.getSettings().customLeaveJoinMessages) {
+		if (settings.customLeaveJoinMessages) {
 			const nickname = this.playerNicknameService.getNickname(playerId);
 			if (nickname) {
 				world.sendMessage({
@@ -77,6 +85,10 @@ export class PlayerNicknameMechanic {
 	}
 
 	remindApprovalQueue(): void {
+		const settings = this.playerNicknameService.getSettings();
+		if (!settings.nicknamesEnabled) {
+			return;
+		}
 		const pendingNicknames =
 			this.playerNicknameService.getNicknameApprovalRequests();
 		if (pendingNicknames.length === 0) {
@@ -97,6 +109,10 @@ export class PlayerNicknameMechanic {
 	}
 
 	notifyApprovalQueue(player: Player, nickname: string): void {
+		const settings = this.playerNicknameService.getSettings();
+		if (!settings.nicknamesEnabled) {
+			return;
+		}
 		if (!player || !nickname) {
 			return;
 		}
@@ -114,6 +130,10 @@ export class PlayerNicknameMechanic {
 	}
 
 	checkPlayerPrompts(): void {
+		const settings = this.playerNicknameService.getSettings();
+		if (!settings.nicknamesEnabled) {
+			return;
+		}
 		this.playersToPrompt.forEach((location, playerId) => {
 			const player = world.getEntity(playerId) as Player;
 			if (player) {
@@ -185,5 +205,9 @@ export class PlayerNicknameMechanic {
 
 	restartStudentUIPrompt(playerId: string): void {
 		this.playersToPrompt.set(playerId, { x: 0, y: 0, z: 0 });
+	}
+
+	startStudentUIPrompt(player: Player): void {
+		this.playersToPrompt.set(player.id, player.getViewDirection());
 	}
 }

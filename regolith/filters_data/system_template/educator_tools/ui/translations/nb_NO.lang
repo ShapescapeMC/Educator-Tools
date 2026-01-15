@@ -384,6 +384,7 @@ edu_tools.message.classroom_limitations.entity_blocked=§cBegrenset entitet blok
 ### Player Nickname Module
 edu_tools.ui.player_nickname_teacher.title=§fKallenavn for spillere
 edu_tools.ui.player_nickname_teacher.body=Administrer spillernes kallenavn for klasserommet ditt
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cSpillernes kallenavn er for øyeblikket deaktivert. Aktiver dem i Kallenavninnstillinger for å administrere kallenavn.
 edu_tools.ui.player_nickname_teacher.approval_queue=Godkjenningskø (%1)
 edu_tools.ui.player_nickname_teacher.settings=Kallenavninnstillinger
 edu_tools.ui.player_nickname_teacher.list=Rediger spillernes kallenavn
@@ -410,6 +411,8 @@ edu_tools.ui.player_nickname_edit.color_tooltip=Velg en farge for spillerens kal
 
 edu_tools.ui.player_nickname_settings.title=§fKallenavninnstillinger
 edu_tools.ui.player_nickname_settings.body=Konfigurer hvordan spillernes kallenavn håndteres i klasserommet ditt
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Kallenavn aktivert
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Aktiver eller deaktiver spillernes kallenavn i klasserommet ditt
 edu_tools.ui.player_nickname_settings.prompt_on_join=Spør ved innlogging
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Be spillere om å angi et kallenavn når de blir med i verden
 edu_tools.ui.player_nickname_settings.allow_custom_colors=Tillat egendefinerte farger

@@ -386,6 +386,7 @@ edu_tools.message.classroom_limitations.entity_blocked=§c制限対象のエン�
 ### Player Nickname Module
 edu_tools.ui.player_nickname_teacher.title=§fプレイヤーのニックネーム
 edu_tools.ui.player_nickname_teacher.body=クラスのプレイヤーのニックネームを管理します
+edu_tools.ui.player_nickname_teacher.warning_disabled=§c現在プレイヤーのニックネームは無効になっています。ニックネームを管理するには「ニックネーム設定」で有効にしてください。
 edu_tools.ui.player_nickname_teacher.approval_queue=承認キュー (%1)
 edu_tools.ui.player_nickname_teacher.settings=ニックネーム設定
 edu_tools.ui.player_nickname_teacher.list=プレイヤーのニックネームを編集
@@ -412,6 +413,8 @@ edu_tools.ui.player_nickname_edit.color_tooltip=プレイヤーのニックネ�
 
 edu_tools.ui.player_nickname_settings.title=§fニックネーム設定
 edu_tools.ui.player_nickname_settings.body=クラスでのニックネーム管理方法を設定します
+edu_tools.ui.player_nickname_settings.nicknames_enabled=ニックネームを有効化
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=クラス内のプレイヤーのニックネームを有効/無効にします
 edu_tools.ui.player_nickname_settings.prompt_on_join=参加時に促す
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=ワールドに参加したときにニックネーム設定を促します
 edu_tools.ui.player_nickname_settings.allow_custom_colors=カスタム色を許可

@@ -19,6 +19,18 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 		this.addLabel({ translate: "edu_tools.ui.player_nickname_settings.body" });
 
 		this.addToggle(
+			"edu_tools.ui.player_nickname_settings.nicknames_enabled",
+			(value: boolean) => {
+				context.setData("nicknamesEnabled", value);
+			},
+			{
+				defaultValue: settings.nicknamesEnabled,
+				tooltip:
+					"edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip",
+			},
+		);
+
+		this.addToggle(
 			"edu_tools.ui.player_nickname_settings.prompt_on_join",
 			(value: boolean) => {
 				context.setData("promptOnJoin", value);
@@ -71,6 +83,7 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 				return;
 			}
 
+			const nicknamesEnabled = context.getData("nicknamesEnabled") as boolean;
 			const promptOnJoin = context.getData("promptOnJoin") as boolean;
 			const allowCustomColors = context.getData("allowCustomColors") as boolean;
 			const requireApproval = context.getData("requireApproval") as boolean;
@@ -79,6 +92,7 @@ export class PlayerNicknameSettingsScene extends ModalUIScene {
 			) as boolean;
 
 			this.playerNicknameService.updateSettings({
+				nicknamesEnabled,
 				promptOnJoin,
 				allowCustomColors,
 				requireApproval,

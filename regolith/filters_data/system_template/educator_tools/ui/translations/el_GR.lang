@@ -384,6 +384,7 @@ edu_tools.message.classroom_limitations.entity_blocked=§cΠεριορισμέν
 ### Player Nickname Module
 edu_tools.ui.player_nickname_teacher.title=§fΨευδώνυμα παικτών
 edu_tools.ui.player_nickname_teacher.body=Διαχείριση ψευδωνύμων παικτών για την τάξη σας
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cΤα ψευδώνυμα παικτών είναι αυτή τη στιγμή απενεργοποιημένα. Ενεργοποιήστε τα στις Ρυθμίσεις ψευδωνύμων για να διαχειριστείτε τα ψευδώνυμα.
 edu_tools.ui.player_nickname_teacher.approval_queue=Ουρά έγκρισης (%1)
 edu_tools.ui.player_nickname_teacher.settings=Ρυθμίσεις ψευδωνύμων
 edu_tools.ui.player_nickname_teacher.list=Επεξεργασία ψευδωνύμων παικτών
@@ -410,6 +411,8 @@ edu_tools.ui.player_nickname_edit.color_tooltip=Επιλέξτε ένα χρώμ
 
 edu_tools.ui.player_nickname_settings.title=§fΡυθμίσεις ψευδωνύμων
 edu_tools.ui.player_nickname_settings.body=Ρυθμίστε πώς διαχειρίζονται τα ψευδώνυμα παικτών στην τάξη σας
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Ψευδώνυμα ενεργοποιημένα
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Ενεργοποιήστε ή απενεργοποιήστε τα ψευδώνυμα παικτών στην τάξη σας
 edu_tools.ui.player_nickname_settings.prompt_on_join=Προτροπή κατά την είσοδο
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Ζητήστε από τους παίκτες να ορίσουν ψευδώνυμο όταν μπαίνουν στον κόσμο
 edu_tools.ui.player_nickname_settings.allow_custom_colors=Να επιτρέπονται προσαρμοσμένα χρώματα

@@ -384,6 +384,7 @@ edu_tools.message.classroom_limitations.entity_blocked=§cEntidad restringida bl
 ### Player Nickname Module
 edu_tools.ui.player_nickname_teacher.title=§fApodos de Jugadores
 edu_tools.ui.player_nickname_teacher.body=Administra los apodos de los jugadores de tu aula
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cLos apodos de los jugadores están desactivados actualmente. Actívalos en la Configuración de Apodos para administrar los apodos.
 edu_tools.ui.player_nickname_teacher.approval_queue=Cola de Aprobación (%1)
 edu_tools.ui.player_nickname_teacher.settings=Configuración de Apodos
 edu_tools.ui.player_nickname_teacher.list=Editar Apodos de Jugadores
@@ -410,6 +411,8 @@ edu_tools.ui.player_nickname_edit.color_tooltip=Selecciona un color para el apod
 
 edu_tools.ui.player_nickname_settings.title=§fConfiguración de Apodos
 edu_tools.ui.player_nickname_settings.body=Configura cómo se administran los apodos de los jugadores en tu aula
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Apodos Habilitados
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Activa o desactiva los apodos de los jugadores en tu aula
 edu_tools.ui.player_nickname_settings.prompt_on_join=Preguntar al Unirse
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Pide a los jugadores que establezcan un apodo cuando se unan al mundo
 edu_tools.ui.player_nickname_settings.allow_custom_colors=Permitir Colores Personalizados

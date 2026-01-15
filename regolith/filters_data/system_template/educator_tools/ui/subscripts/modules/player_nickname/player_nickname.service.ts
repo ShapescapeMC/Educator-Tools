@@ -15,6 +15,7 @@ import { PlayerNicknameMechanic } from "./player_nickname.mechanic";
 import { Team } from "../teams/interfaces/team.interface";
 
 export interface PlayerNicknameSettings {
+	nicknamesEnabled: boolean;
 	promptOnJoin: boolean;
 	allowCustomColors: boolean;
 	requireApproval: boolean;
@@ -265,12 +266,17 @@ export class PlayerNicknameService {
 
 	reloadNicknames(): void {
 		const allPlayers = world.getAllPlayers();
+		const settings = this.getSettings();
 		allPlayers.forEach((player) => {
-			const nickname = this.getNickname(player.id);
-			if (nickname) {
-				this.setNickname(player.id, nickname);
+			if (settings.nicknamesEnabled) {
+				const nickname = this.getNickname(player.id);
+				if (nickname) {
+					this.setNickname(player.id, nickname);
+				} else {
+					this.clearNickname(player.id);
+				}
 			} else {
-				this.clearNickname(player.id);
+				player.nameTag = player.name;
 			}
 		});
 	}
@@ -293,6 +299,7 @@ export class PlayerNicknameService {
 
 	getSettings(): PlayerNicknameSettings {
 		const defaultSettings: PlayerNicknameSettings = {
+			nicknamesEnabled: true,
 			promptOnJoin: true,
 			allowCustomColors: true,
 			requireApproval: true,
@@ -302,6 +309,8 @@ export class PlayerNicknameService {
 			| Partial<PlayerNicknameSettings>
 			| undefined;
 		return {
+			nicknamesEnabled:
+				settings?.nicknamesEnabled ?? defaultSettings.nicknamesEnabled,
 			promptOnJoin: settings?.promptOnJoin ?? defaultSettings.promptOnJoin,
 			allowCustomColors:
 				settings?.allowCustomColors ?? defaultSettings.allowCustomColors,
@@ -326,7 +335,8 @@ export class PlayerNicknameService {
 		this.setSettings(updatedSettings);
 
 		if (
-			currentSettings.allowCustomColors !== updatedSettings.allowCustomColors
+			currentSettings.allowCustomColors !== updatedSettings.allowCustomColors ||
+			currentSettings.nicknamesEnabled !== updatedSettings.nicknamesEnabled
 		) {
 			this.reloadNicknames();
 		}

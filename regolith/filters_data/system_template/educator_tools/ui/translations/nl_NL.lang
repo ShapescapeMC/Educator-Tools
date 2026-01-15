@@ -384,6 +384,7 @@ edu_tools.message.classroom_limitations.entity_blocked=§cBeperkte entiteit gebl
 ### Player Nickname Module
 edu_tools.ui.player_nickname_teacher.title=§fSpelersbijnamen
 edu_tools.ui.player_nickname_teacher.body=Beheer spelersbijnamen voor je klas
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cSpelersbijnamen zijn momenteel uitgeschakeld. Schakel ze in bij Bijnaaminstellingen om bijnamen te beheren.
 edu_tools.ui.player_nickname_teacher.approval_queue=Goedkeuringswachtrij (%1)
 edu_tools.ui.player_nickname_teacher.settings=Bijnaaminstellingen
 edu_tools.ui.player_nickname_teacher.list=Spelersbijnamen bewerken
@@ -410,6 +411,8 @@ edu_tools.ui.player_nickname_edit.color_tooltip=Selecteer een kleur voor de bijn
 
 edu_tools.ui.player_nickname_settings.title=§fBijnaaminstellingen
 edu_tools.ui.player_nickname_settings.body=Configureer hoe spelersbijnamen in je klas worden beheerd
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Bijnamen ingeschakeld
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Schakel spelersbijnamen in of uit in je klas
 edu_tools.ui.player_nickname_settings.prompt_on_join=Vragen bij binnenkomst
 edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Vraag spelers om een bijnaam in te stellen wanneer ze de wereld betreden
 edu_tools.ui.player_nickname_settings.allow_custom_colors=Aangepaste kleuren toestaan
