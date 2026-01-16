@@ -44,7 +44,8 @@
 							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_no"
 						]
 					}
-				]
+				],
+				"on_open_commands": ["/scriptevent edu_tools:feedback_prompt_opened"]
 			},
 			{
 				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_yes",
@@ -74,6 +75,7 @@
 						},
 						"url": "`feedback_url`",
 						"commands": [
+							"/scriptevent edu_tools:feedback_provided",
 							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you"
 						]
 					},

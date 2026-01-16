@@ -14,7 +14,7 @@
 					"Array.textures": ["Texture.sam", "Texture.sarah"]
 				},
 				"geometries": {
-					"Array.geo": ["Geometry.alex", "Geometry.steve"]
+					"Array.geo": ["Geometry.steve", "Geometry.alex"]
 				}
 			}
 		}
