@@ -43,8 +43,8 @@
 			"minecraft:npc": {
 				"npc_data": {
 					"portrait_offsets": {
-						"translate": [-7, 50, 0],
-						"scale": [1.75, 1.75, 1.75]
+						"translate": [-7, 90, 0],
+						"scale": [175, 175, 175]
 					},
 					"picker_offsets": {
 						"translate": [0, 20, 0],
@@ -53,7 +53,7 @@
 				}
 			},
 			"minecraft:scale": {
-				"value": 0
+				"value": 0.01
 			},
 			"minecraft:nameable": {
 				"always_show": false,
@@ -69,6 +69,15 @@
 			"minecraft:pushable": {
 				"is_pushable": false,
 				"is_pushable_by_piston": false
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 0,
+						"height": 0,
+						"pivot": [0, 1, 0]
+					}
+				]
 			}
 		},
 		"events": {
