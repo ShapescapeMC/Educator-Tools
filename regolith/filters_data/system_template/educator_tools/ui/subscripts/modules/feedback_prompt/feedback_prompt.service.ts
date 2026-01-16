@@ -29,7 +29,6 @@ export class FeedbackPromptService implements Module {
 	private static readonly SESSION_WARMUP_MINUTES = 10;
 	private static readonly IDLE_WINDOW_SECONDS = 45;
 	private static readonly MOVEMENT_SPEED_THRESHOLD = 0.01;
-	private static readonly PROMPT_COOLDOWN_MINUTES = 60;
 
 	constructor(private readonly moduleManager: ModuleManager) {
 		this.storage = moduleManager
