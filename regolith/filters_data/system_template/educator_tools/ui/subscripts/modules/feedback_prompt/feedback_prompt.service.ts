@@ -38,7 +38,7 @@ export class FeedbackPromptService implements Module {
 	private playersToPrompt: Map<string, PromptCandidate> = new Map();
 	private readonly worldInitDate: Date = new Date();
 
-	private static readonly MIN_PROMPT_DELAY_MINUTES = 1;
+	private static readonly MIN_PROMPT_DELAY_MINUTES = 5;
 	private static readonly SESSION_WARMUP_MINUTES = 10;
 	private static readonly IDLE_WINDOW_SECONDS = 15;
 	private static readonly MOVEMENT_SPEED_THRESHOLD = 0.01;
