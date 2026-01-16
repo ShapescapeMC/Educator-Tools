@@ -27,7 +27,7 @@ export class FeedbackPromptService implements Module {
 
 	private static readonly MIN_PROMPT_DELAY_MINUTES = 5;
 	private static readonly SESSION_WARMUP_MINUTES = 10;
-	private static readonly IDLE_WINDOW_SECONDS = 45;
+	private static readonly IDLE_WINDOW_SECONDS = 10;
 	private static readonly MOVEMENT_SPEED_THRESHOLD = 0.01;
 
 	constructor(private readonly moduleManager: ModuleManager) {
@@ -58,7 +58,7 @@ export class FeedbackPromptService implements Module {
 			} else if (event.id === "edu_tools:feedback_ask") {
 				const player = event.sourceEntity as Player | undefined;
 				if (player) {
-					this.ensureCandidate(player.id);
+					this.tryPromptPlayer(player.id);
 				}
 			} else if (event.id === "edu_tools:feedback_prompt_opened") {
 				const player =
@@ -67,6 +67,8 @@ export class FeedbackPromptService implements Module {
 				if (player) {
 					this.pendingPromptPlayers.delete(player.id);
 				}
+			} else if (event.id === "edu_tools:feedback_clear_storage") {
+				this.storage.set("feedback_provided_players", []);
 			}
 		});
 	}
@@ -119,15 +121,15 @@ export class FeedbackPromptService implements Module {
 					this.pendingPromptPlayers.add(playerId);
 				}
 			}
-		}, 40);
+		}, 40 + Math.floor(Math.random() * 20)); // Every 1-2 seconds
 
 		system.runInterval(() => {
+			this.checkAndRemoveInactiveEntities();
 			if (this.pendingPromptPlayers.size === 0) return;
 			for (const playerId of Array.from(this.pendingPromptPlayers.values())) {
 				this.tryPromptPlayer(playerId);
 			}
-			this.checkAndRemoveInactiveEntities();
-		}, 60);
+		}, 20 + Math.floor(Math.random() * 20));
 	}
 	private handleToolUse(player: Player): boolean {
 		if (!this.isTeacher(player.id)) {
@@ -244,21 +246,23 @@ export class FeedbackPromptService implements Module {
 		const entityType = entity.getProperty("edu_tools:skin") as
 			| number
 			| undefined;
-		if (entityType === 0) {
-			player.runCommand(
-				"dialogue open @s @e[type=edu_tools:prompt_npc,c=1] edu_tools_dialogue_prompt_npc_ask_feedback_sam",
-			);
-		} else if (entityType === 1) {
-			player.runCommand(
-				"dialogue open @s @e[type=edu_tools:prompt_npc,c=1] edu_tools_dialogue_prompt_npc_ask_feedback_sarah",
-			);
-		}
-		entity.removeTag("edu_tools_self");
+		system.runTimeout(() => {
+			if (entityType === 0) {
+				player.runCommand(
+					"dialogue open @e[type=edu_tools:prompt_npc,tag=edu_tools_self, c=1] @s edu_tools_dialogue_prompt_npc_ask_feedback_sam",
+				);
+			} else if (entityType === 1) {
+				player.runCommand(
+					"dialogue open @e[type=edu_tools:prompt_npc,tag=edu_tools_self, c=1] @s edu_tools_dialogue_prompt_npc_ask_feedback_sarah",
+				);
+			}
+			entity.removeTag("edu_tools_self");
+		}, 5); // Delay to ensure entity is fully initialized
 
 		system.runTimeout(() => {
 			this.unlinkByEntityId(entity!.id);
-			entity!.remove();
-		}, 60 * 20); // Remove after 60 seconds if still present
+			if (entity && entity.isValid) entity?.remove();
+		}, 120 * 20); // Remove after 120 seconds if still present
 	}
 
 	checkIfPlayerShouldBePrompted(playerOrId: Player | string): boolean {
