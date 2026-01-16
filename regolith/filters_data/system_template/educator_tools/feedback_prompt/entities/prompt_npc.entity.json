@@ -7,8 +7,8 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"sam": "textures/entity/edu_tools/sam_s",
-				"sarah": "textures/entity/edu_tools/sarah_a"
+				"sam": "textures/edu_tools/entity/sam_s",
+				"sarah": "textures/edu_tools/entity/sarah_a"
 			},
 			"geometry": {
 				"alex": "geometry.edu_tools.alex",
