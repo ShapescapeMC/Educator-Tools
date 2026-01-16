@@ -16,7 +16,8 @@
 				"geometries": {
 					"Array.geo": ["Geometry.steve", "Geometry.alex"]
 				}
-			}
+			},
+			"ignore_lighting": true
 		}
 	}
 }
