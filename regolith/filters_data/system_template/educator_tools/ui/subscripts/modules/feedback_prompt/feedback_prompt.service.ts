@@ -254,6 +254,11 @@ export class FeedbackPromptService implements Module {
 			);
 		}
 		entity.removeTag("edu_tools_self");
+
+		system.runTimeout(() => {
+			this.unlinkByEntityId(entity!.id);
+			entity!.remove();
+		}, 60 * 20); // Remove after 60 seconds if still present
 	}
 
 	checkIfPlayerShouldBePrompted(playerOrId: Player | string): boolean {
