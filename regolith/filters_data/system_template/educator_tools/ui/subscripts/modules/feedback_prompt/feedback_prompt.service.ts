@@ -235,7 +235,7 @@ export class FeedbackPromptService implements Module {
 		let entityId = this.getEntityIdForPlayer(playerId);
 		let entity = entityId ? world.getEntity(entityId) : undefined;
 		if (!entity) {
-			const location = Vec3.from(player.location).add(new Vec3(0, 10, 0));
+			const location = Vec3.from(player.location).add(new Vec3(0, 90, 0));
 			entity = player.dimension.spawnEntity("edu_tools:prompt_npc", location);
 			this.linkPlayerEntity(player.id, entity.id);
 		}
