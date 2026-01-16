@@ -72,7 +72,7 @@
 								}
 							]
 						},
-						"url": "https://forms.office.com/e/gE2ks5WR7R",
+						"url": "`feedback_url`",
 						"commands": [
 							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you"
 						]
@@ -117,7 +117,7 @@
 								}
 							]
 						},
-						"url": "https://forms.office.com/e/gE2ks5WR7R",
+						"url": "`feedback_url`",
 						"commands": [
 							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you"
 						]
