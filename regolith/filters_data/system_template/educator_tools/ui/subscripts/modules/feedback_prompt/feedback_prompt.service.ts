@@ -19,7 +19,7 @@ export class FeedbackPromptService implements Module {
 	private storage: PropertyStorage;
 
 	// Debug logging control
-	private static readonly DEBUG_ENABLED = true;
+	private static readonly DEBUG_ENABLED = false;
 
 	private playersToPrompt: Map<string, PromptCandidate> = new Map();
 	// Bi-directional indexing: key -> value and value -> key
