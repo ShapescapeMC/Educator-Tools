@@ -1,15 +1,6 @@
-import {
-	world,
-	system,
-	Player,
-	Entity,
-	DimensionTypes,
-} from "@minecraft/server";
+import { world, system, Player, DimensionTypes } from "@minecraft/server";
 import { Vec3 } from "@bedrock-oss/bedrock-boost";
-import {
-	FeedbackPromptService,
-	PromptCandidate,
-} from "./feedback_prompt.service";
+import { FeedbackPromptService } from "./feedback_prompt.service";
 
 /**
  * Runtime enforcement and interaction layer for feedback prompt mechanics.
