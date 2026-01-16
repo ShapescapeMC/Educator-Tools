@@ -59,6 +59,18 @@ export class FeedbackPromptMechanic {
 	 * Call once after world load.
 	 */
 	public start(): void {
+		let edu = true;
+		try {
+			world
+				.getDimension("overworld")
+				.runCommand("give @p[tag=edu_tools_non_existent] minecraft:camera");
+		} catch (e) {
+			edu = false;
+		}
+
+		if (!edu) {
+			return;
+		}
 		this.registerScriptEventHandlers();
 		this.startActivityMonitor();
 		this.startRetryLoop();
