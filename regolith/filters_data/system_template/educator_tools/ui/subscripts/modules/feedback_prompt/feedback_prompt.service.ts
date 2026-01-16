@@ -63,6 +63,10 @@ export class FeedbackPromptService implements Module {
 		this.mechanic.start();
 	}
 
+	/**
+	 * Marks a player as having provided feedback and persists the state.
+	 * @param player Player who completed the feedback.
+	 */
 	public markFeedbackProvided(player: Player): void {
 		const providedPlayers = this.storage.get(
 			"feedback_provided_players",
@@ -89,6 +93,11 @@ export class FeedbackPromptService implements Module {
 		});
 	}
 
+	/**
+	 * Handles tool usage to register teachers as prompt candidates.
+	 * @param player Player using an EDU tool.
+	 * @returns Whether to open a scene (always false; managed manually).
+	 */
 	private handleToolUse(player: Player): boolean {
 		if (!this.isTeacher(player.id)) {
 			this.debugLog(
@@ -114,6 +123,11 @@ export class FeedbackPromptService implements Module {
 		return teacherTeam?.memberIds.includes(playerId) ?? false;
 	}
 
+	/**
+	 * Ensures a prompt candidate entry exists for a player.
+	 * @param playerId Player identifier.
+	 * @returns The existing or newly created candidate.
+	 */
 	private ensureCandidate(playerId: string): PromptCandidate {
 		const existing = this.playersToPrompt.get(playerId);
 		if (existing) {
@@ -240,6 +254,11 @@ export class FeedbackPromptService implements Module {
 		return isIdle;
 	}
 
+	/**
+	 * Logs the remaining time until a candidate can be prompted, gated by current blockers.
+	 * @param player Player being evaluated.
+	 * @param candidate Associated prompt candidate state.
+	 */
 	public logRemainingTime(player: Player, candidate: PromptCandidate): void {
 		const now = new Date();
 		let reason = "";
@@ -274,6 +293,10 @@ export class FeedbackPromptService implements Module {
 		}
 	}
 
+	/**
+	 * Records that the prompt dialogue was shown for a player.
+	 * @param player Player object or identifier.
+	 */
 	public markPromptShown(player: Player | string): void {
 		const playerId = typeof player === "string" ? player : player.id;
 		const playerName = typeof player === "string" ? playerId : player.name;
@@ -286,6 +309,11 @@ export class FeedbackPromptService implements Module {
 		);
 	}
 
+	/**
+	 * Determines whether a player should be prompted now based on gating logic.
+	 * @param playerOrId Player instance or player identifier.
+	 * @returns True if the prompt can be shown immediately.
+	 */
 	checkIfPlayerShouldBePrompted(playerOrId: Player | string): boolean {
 		const player =
 			typeof playerOrId === "string"
@@ -297,14 +325,25 @@ export class FeedbackPromptService implements Module {
 		return this.isPromptWindowOpen(candidate);
 	}
 
+	/**
+	 * Exposes current prompt candidates map.
+	 * @returns Map keyed by player ID containing prompt candidates.
+	 */
 	getPlayersToPrompt(): Map<string, PromptCandidate> {
 		return this.playersToPrompt;
 	}
 
+	/**
+	 * Removes a player from the candidate registry.
+	 * @param playerId Player identifier to remove.
+	 */
 	public removeCandidate(playerId: string): void {
 		this.playersToPrompt.delete(playerId);
 	}
 
+	/**
+	 * Clears all stored feedback state.
+	 */
 	public clearStorage(): void {
 		this.storage.clear();
 	}

@@ -64,6 +64,9 @@ export class FeedbackPromptMechanic {
 		this.startRetryLoop();
 	}
 
+	/**
+	 * Registers script event handlers for prompt lifecycle events.
+	 */
 	private registerScriptEventHandlers(): void {
 		system.afterEvents.scriptEventReceive.subscribe((event) => {
 			if (event.id === "edu_tools:feedback_provided") {
@@ -88,6 +91,10 @@ export class FeedbackPromptMechanic {
 		);
 	}
 
+	/**
+	 * Removes a player from prompting after refusal and clears tracking state.
+	 * @param player Player who refused.
+	 */
 	private handleFeedbackRefused(player: Player): void {
 		if (!player) return;
 		this.pendingPromptPlayers.delete(player.id);
@@ -97,6 +104,10 @@ export class FeedbackPromptMechanic {
 		);
 	}
 
+	/**
+	 * Manually triggers a prompt for a player via script event.
+	 * @param player Player to prompt immediately.
+	 */
 	private handleManualPrompt(player: Player): void {
 		if (!player) return;
 		this.promptPlayer(player);
@@ -105,6 +116,10 @@ export class FeedbackPromptMechanic {
 		);
 	}
 
+	/**
+	 * Tracks when a prompt dialogue successfully opened.
+	 * @param player Player who saw the prompt.
+	 */
 	private handlePromptOpened(player: Player): void {
 		const playerId = player.id?.trim();
 		if (!playerId) return;
@@ -117,6 +132,9 @@ export class FeedbackPromptMechanic {
 		);
 	}
 
+	/**
+	 * Starts monitoring player activity to track idle status for prompt eligibility.
+	 */
 	private startActivityMonitor(): void {
 		system.runInterval(() => {
 			const playersToPrompt = this.service.getPlayersToPrompt();
@@ -170,6 +188,9 @@ export class FeedbackPromptMechanic {
 		}, FeedbackPromptMechanic.ACTIVITY_MONITOR_BASE + Math.floor(Math.random() * FeedbackPromptMechanic.ACTIVITY_MONITOR_JITTER));
 	}
 
+	/**
+	 * Retries prompting pending players and cleans up NPC entities.
+	 */
 	private startRetryLoop(): void {
 		system.runInterval(() => {
 			this.checkAndRemoveInactiveEntities();
@@ -185,6 +206,10 @@ export class FeedbackPromptMechanic {
 		}, FeedbackPromptMechanic.RETRY_LOOP_BASE + Math.floor(Math.random() * FeedbackPromptMechanic.RETRY_LOOP_JITTER));
 	}
 
+	/**
+	 * Attempts to prompt a player if online, spawning an NPC when needed.
+	 * @param playerId Player identifier to prompt.
+	 */
 	private tryPromptPlayer(playerId: string): void {
 		const player = world.getAllPlayers().find((p) => p.id === playerId);
 		if (!player) {
@@ -288,6 +313,9 @@ export class FeedbackPromptMechanic {
 		entity.removeTag("edu_tools_self");
 	}
 
+	/**
+	 * Scans all dimensions to remove orphaned prompt NPCs that lost their player link.
+	 */
 	public checkAndRemoveInactiveEntities(): void {
 		const dimensionTypeIds = DimensionTypes.getAll().map((d) => d.typeId);
 		let totalRemoved = 0;
