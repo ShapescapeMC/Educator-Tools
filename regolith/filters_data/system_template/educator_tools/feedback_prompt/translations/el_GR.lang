@@ -1,0 +1,15 @@
+edu_tools.dialogue.prompt_npc.sam.name=Sam
+edu_tools.dialogue.prompt_npc.sarah.name=Sarah
+edu_tools.dialogue.prompt_npc.ask_feedback_sam=Γεια σου! Είμαι ο Sam, από την Shapescape! Σου αρέσει το Educator Tools μέχρι στιγμής;
+edu_tools.dialogue.prompt_npc.ask_feedback_sarah=Γεια σου! Είμαι η Sarah, από την Shapescape! Σου αρέσει το Educator Tools μέχρι στιγμής;
+edu_tools.dialogue.prompt_npc.ask_feedback_yes=Υπέροχα! Θα μπορούσες να μας δώσεις κάποια σχόλια για να μας βοηθήσεις να βελτιωθούμε;
+edu_tools.dialogue.prompt_npc.ask_feedback_no=Δεν πειράζει! Αν έχεις κάποιες προτάσεις, μη διστάσεις να τις μοιραστείς μαζί μας.
+edu_tools.dialogue.prompt_npc.thank_you=Ευχαριστούμε για τα σχόλιά σου! Είναι πολύ πολύτιμα για εμάς.
+edu_tools.dialogue.prompt_npc.no_feedback=Εντάξει! Αν αλλάξεις γνώμη, μπορείς πάντα να μας δώσεις σχόλια αργότερα.
+edu_tools.dialogue.prompt_npc.button.yes=Το λατρεύω!
+edu_tools.dialogue.prompt_npc.button.no=Όχι ιδιαίτερα
+edu_tools.dialogue.prompt_npc.button.feedback=Δώσε Σχόλια
+edu_tools.dialogue.prompt_npc.button.later=Ίσως Αργότερα
+edu_tools.dialogue.prompt_npc.button.did=Το έκανα!
+edu_tools.dialogue.prompt_npc.button.your_welcome=Παρακαλώ
+edu_tools.dialogue.prompt_npc.button.close=Κλείσιμο

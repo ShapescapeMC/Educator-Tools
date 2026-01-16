@@ -1,0 +1,15 @@
+edu_tools.dialogue.prompt_npc.sam.name=Sam
+edu_tools.dialogue.prompt_npc.sarah.name=Sarah
+edu_tools.dialogue.prompt_npc.ask_feedback_sam=你好！我是 Shapescape 的 Sam！你喜欢 Educator Tools 吗？
+edu_tools.dialogue.prompt_npc.ask_feedback_sarah=你好！我是 Shapescape 的 Sarah！你喜欢 Educator Tools 吗？
+edu_tools.dialogue.prompt_npc.ask_feedback_yes=太好了！你能给我们一些反馈来帮助我们改进吗？
+edu_tools.dialogue.prompt_npc.ask_feedback_no=没关系！如果你有任何建议，欢迎与我们分享。
+edu_tools.dialogue.prompt_npc.thank_you=感谢你的反馈！这对我们非常宝贵。
+edu_tools.dialogue.prompt_npc.no_feedback=没关系！如果你改变主意，随时可以提供反馈。
+edu_tools.dialogue.prompt_npc.button.yes=我很喜欢！
+edu_tools.dialogue.prompt_npc.button.no=不太喜欢
+edu_tools.dialogue.prompt_npc.button.feedback=提供反馈
+edu_tools.dialogue.prompt_npc.button.later=以后再说
+edu_tools.dialogue.prompt_npc.button.did=我完成了！
+edu_tools.dialogue.prompt_npc.button.your_welcome=不客气
+edu_tools.dialogue.prompt_npc.button.close=关闭
