@@ -8,7 +8,6 @@ import { FeedbackPromptMechanic } from "./feedback-prompt.mechanic";
 export type PromptCandidate = {
 	scheduledAt: Date;
 	lastActiveAt: Date;
-	lastPromptedAt?: Date;
 };
 
 /**
@@ -302,7 +301,6 @@ export class FeedbackPromptService implements Module {
 		const playerName = typeof player === "string" ? playerId : player.name;
 		const candidate = this.playersToPrompt.get(playerId);
 		if (!candidate) return;
-		candidate.lastPromptedAt = new Date();
 		this.playersToPrompt.set(playerId, candidate);
 		this.debugLog(
 			`[FeedbackPrompt] ${playerName}: markPromptShown called at ${new Date().toISOString()}`,
