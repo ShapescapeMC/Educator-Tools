@@ -204,13 +204,6 @@ export class FeedbackPromptService implements Module {
 		);
 	}
 
-	private hasCooldownElapsed(candidate: PromptCandidate, now: Date): boolean {
-		if (!candidate.lastPromptedAt) return true;
-		const minutesSincePrompt =
-			(now.getTime() - candidate.lastPromptedAt.getTime()) / 1000 / 60;
-		return minutesSincePrompt >= FeedbackPromptService.PROMPT_COOLDOWN_MINUTES;
-	}
-
 	private wasFeedbackAlreadyAsked(playerId: string): boolean {
 		const providedPlayers = this.storage.get(
 			"feedback_provided_players",
