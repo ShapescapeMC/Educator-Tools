@@ -314,6 +314,15 @@ export class FeedbackPromptMechanic {
 		}
 
 		entity.removeTag("edu_tools_self");
+
+		// Ensure manually prompted NPCs are cleaned up after a timeout to avoid leaks.
+		system.runTimeout(() => {
+			// Entity may already have been removed by other logic.
+			if (!entity.isValid) {
+				return;
+			}
+			entity.remove();
+		}, FeedbackPromptMechanic.NPC_REMOVAL_TIMEOUT);
 	}
 
 	/**
