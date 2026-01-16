@@ -73,10 +73,7 @@
 								}
 							]
 						},
-						"url": "`feedback_url`",
-						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah"
-						]
+						"url": "`feedback_url`"
 					},
 					{
 						"name": {
@@ -88,6 +85,19 @@
 						},
 						"commands": [
 							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sarah"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.did"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah",
+							"/scriptevent edu_tools:feedback_provided"
 						]
 					}
 				]
@@ -118,11 +128,7 @@
 								}
 							]
 						},
-						"url": "`feedback_url`",
-						"commands": [
-							"/scriptevent edu_tools:feedback_provided",
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah"
-						]
+						"url": "`feedback_url`"
 					},
 					{
 						"name": {
@@ -134,6 +140,19 @@
 						},
 						"commands": [
 							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sarah"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.did"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah",
+							"/scriptevent edu_tools:feedback_provided"
 						]
 					}
 				]

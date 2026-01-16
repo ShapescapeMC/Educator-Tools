@@ -10,5 +10,6 @@ edu_tools.dialogue.prompt_npc.button.yes=I love it!
 edu_tools.dialogue.prompt_npc.button.no=Not really
 edu_tools.dialogue.prompt_npc.button.feedback=Give Feedback
 edu_tools.dialogue.prompt_npc.button.later=Maybe Later
+edu_tools.dialogue.prompt_npc.button.did=I did it!
 edu_tools.dialogue.prompt_npc.button.your_welcome=You're welcome
 edu_tools.dialogue.prompt_npc.button.close=Close
