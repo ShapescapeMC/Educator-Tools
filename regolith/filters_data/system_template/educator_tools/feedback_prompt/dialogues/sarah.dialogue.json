@@ -29,7 +29,7 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_yes"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_yes_sarah"
 						]
 					},
 					{
@@ -41,14 +41,14 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_no"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_no_sarah"
 						]
 					}
 				],
 				"on_open_commands": ["/scriptevent edu_tools:feedback_prompt_opened"]
 			},
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_yes",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_yes_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
@@ -75,7 +75,7 @@
 						},
 						"url": "`feedback_url`",
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah"
 						]
 					},
 					{
@@ -87,13 +87,13 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sarah"
 						]
 					}
 				]
 			},
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_no",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_no_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
@@ -121,7 +121,7 @@
 						"url": "`feedback_url`",
 						"commands": [
 							"/scriptevent edu_tools:feedback_provided",
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah"
 						]
 					},
 					{
@@ -133,13 +133,13 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sarah"
 						]
 					}
 				]
 			},
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_thank_you",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_thank_you_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
@@ -168,7 +168,7 @@
 				]
 			},
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_no_feedback",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_no_feedback_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
