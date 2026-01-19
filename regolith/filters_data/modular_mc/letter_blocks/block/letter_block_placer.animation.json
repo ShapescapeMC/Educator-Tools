@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.letter_block_placer.first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"position": [-3, 29, -4],
+					"rotation": [70, 56, -62],
+					"scale": 0.35
+				}
+			}
+		},
+		"animation.letter_block_placer.third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"position": [0, 18, -4],
+					"rotation": [20, 60, 15],
+					"scale": 0.35
+				}
+			}
+		}
+	}
+}

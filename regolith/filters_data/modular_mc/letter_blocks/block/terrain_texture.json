@@ -1,0 +1,11 @@
+{
+	"resource_pack_name": "pack.name",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"`[K(f'letter_block_{letter}', letter=letter) for letter in letters]`": {
+			"textures": "`f'textures/edu_tools/blocks/letter_blocks/{letter}'`"
+		}
+	}
+}

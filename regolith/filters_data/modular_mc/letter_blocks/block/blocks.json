@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.0",
+	"`[K(f'edu_tools:letter_block_{letter}', letter=letter) for letter in letters]`": {
+		"textures": "`f'letter_block_{letter}'`",
+		"sound": "stone"
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "`f'edu_tools:letter_block_{letter}_placer'`",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.letter_block_placer"
+			},
+			"textures": {
+				"default": "`f'textures/edu_tools/blocks/letter_blocks/{letter}'`"
+			},
+			"animations": {
+				"first_person": "animation.letter_block_placer.first_person",
+				"third_person": "animation.letter_block_placer.third_person"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person": "c.is_first_person"
+					},
+					{
+						"third_person": "!c.is_first_person"
+					}
+				]
+			},
+
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}
