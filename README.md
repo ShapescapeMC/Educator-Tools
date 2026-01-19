@@ -33,6 +33,7 @@ The **Educator Tools** Add-On introduces several key functionalities for classro
 - **Educator Tool UI** – A reorganized, intuitive in-game menu accessible only by teachers (now supports multiple teachers).
 - **Teleport System** – Move players to specific locations, teleport students to each other, or bring the entire class together.
 - **Gamemode Management** – Instantly switch between Creative, Survival, Adventure, and now **Spectator Mode** for specific players or everyone.
+- **Custom Nicknames** – Assign and manage nicknames for students to enhance engagement and personalization.
 - **Assignments Tool** – Create tasks and let students submit their builds or work directly in-game.
 - **Team Management** – Create and manage teams to organize classroom activities and challenges.
 - **Focus Mode** – Temporarily pause students’ screens to regain attention or give instructions.
