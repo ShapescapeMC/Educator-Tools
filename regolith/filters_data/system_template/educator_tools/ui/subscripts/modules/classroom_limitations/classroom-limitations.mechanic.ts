@@ -169,6 +169,8 @@ export class ClassroomLimitationsMechanic {
 	}
 
 	public checkEntity(entity: Entity): void {
+		if (!entity.isValid) return;
+
 		let isRestricted = false;
 
 		if (entity.typeId === "minecraft:item") {
