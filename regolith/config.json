@@ -44,18 +44,6 @@
 		},
 		"formatVersion": "1.4.0",
 		"profiles": {
-			"default": {
-				"export": {
-					"build": "education",
-					"readOnly": false,
-					"target": "development"
-				},
-				"filters": [
-					{
-						"profile": "educator_tools"
-					}
-				]
-			},
 			"bedrock": {
 				"export": {
 					"build": "standard",
@@ -169,6 +157,18 @@
 					}
 				]
 			},
+			"default": {
+				"export": {
+					"build": "education",
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": [
+					{
+						"profile": "educator_tools"
+					}
+				]
+			},
 			"educator_tools": {
 				"export": {
 					"build": "education",
@@ -183,14 +183,14 @@
 						"filter": "system_template",
 						"settings": {
 							"log_path": "system_template_log.json",
-							"scope": {
-								"esbuild_path": "data/system_template_esbuild"
-							},
-							"scope_path": "scope.json",
 							"prioritized_systems": [
 								"addon_setup/educator_tools",
 								"scripting_setup"
 							],
+							"scope": {
+								"esbuild_path": "data/system_template_esbuild"
+							},
+							"scope_path": "scope.json",
 							"systems": [
 								"educator_tools/**",
 								"letter_blocks",
@@ -250,13 +250,13 @@
 						"filter": "system_template",
 						"settings": {
 							"log_path": "system_template_log.json",
+							"prioritized_systems": [
+								"addon_setup/more_letter_blocks"
+							],
 							"scope": {
 								"esbuild_path": "data/system_template_esbuild"
 							},
 							"scope_path": "scope.json",
-							"prioritized_systems": [
-								"addon_setup/more_letter_blocks"
-							],
 							"systems": [
 								"more_letter_blocks",
 								"addon_setup/more_letter_blocks"
