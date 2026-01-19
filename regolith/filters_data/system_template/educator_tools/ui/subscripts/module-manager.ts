@@ -20,6 +20,7 @@ import { AssignmentService } from "./modules/assignment/assignment.service";
 import { AssignmentItemService } from "./modules/assignment-item/assignment-item.service";
 import { ClassroomLimitationsService } from "./modules/classroom_limitations/classroom-limitations.service";
 import { PlayerNicknameService } from "./modules/player_nickname/player_nickname.service";
+import { FeedbackPromptService } from "./modules/feedback_prompt/feedback_prompt.service";
 
 /**
  * Interface that all modules must implement.
@@ -88,6 +89,7 @@ export class ModuleManager {
 		const assignmentItemService = new AssignmentItemService(this);
 		const classroomLimitationsService = new ClassroomLimitationsService(this);
 		const playerNicknameService = new PlayerNicknameService(this);
+		const feedbackPromptService = new FeedbackPromptService(this);
 
 		// Create WorldSettingsService
 		const worldSettingsStorage = this.storage.getSubStorage("world_settings");
@@ -115,6 +117,7 @@ export class ModuleManager {
 		this.registerModule(assignmentItemService);
 		this.registerModule(classroomLimitationsService);
 		this.registerModule(playerNicknameService);
+		this.registerModule(feedbackPromptService);
 
 		// Initialize all modules
 		this.initializeModules();

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.edu_tools.prompt_npc": {
+			"geometry": "Array.geo[query.property('edu_tools:skin')]",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": ["Array.textures[query.property('edu_tools:skin')]"],
+			"arrays": {
+				"textures": {
+					"Array.textures": ["Texture.sam", "Texture.sarah"]
+				},
+				"geometries": {
+					"Array.geo": ["Geometry.steve", "Geometry.alex"]
+				}
+			},
+			"ignore_lighting": true
+		}
+	}
+}

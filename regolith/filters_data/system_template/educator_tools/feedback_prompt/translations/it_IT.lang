@@ -1,0 +1,15 @@
+edu_tools.dialogue.prompt_npc.sam.name=Sam
+edu_tools.dialogue.prompt_npc.sarah.name=Sarah
+edu_tools.dialogue.prompt_npc.ask_feedback_sam=Ciao! Sono Sam, di Shapescape! Ti sta piacendo Educator Tools finora?
+edu_tools.dialogue.prompt_npc.ask_feedback_sarah=Ciao! Sono Sarah, di Shapescape! Ti sta piacendo Educator Tools finora?
+edu_tools.dialogue.prompt_npc.ask_feedback_yes=Fantastico! Ti dispiacerebbe darci un feedback per aiutarci a migliorare?
+edu_tools.dialogue.prompt_npc.ask_feedback_no=Nessun problema! Se hai dei suggerimenti, sentiti libero di condividerli con noi.
+edu_tools.dialogue.prompt_npc.thank_you=Grazie per il tuo feedback! È molto prezioso per noi.
+edu_tools.dialogue.prompt_npc.no_feedback=Va bene! Se cambi idea, puoi sempre fornire un feedback più tardi.
+edu_tools.dialogue.prompt_npc.button.yes=Lo adoro!
+edu_tools.dialogue.prompt_npc.button.no=Non proprio
+edu_tools.dialogue.prompt_npc.button.feedback=Dai Feedback
+edu_tools.dialogue.prompt_npc.button.later=Forse Dopo
+edu_tools.dialogue.prompt_npc.button.did=L'ho fatto!
+edu_tools.dialogue.prompt_npc.button.your_welcome=Prego
+edu_tools.dialogue.prompt_npc.button.close=Chiudi

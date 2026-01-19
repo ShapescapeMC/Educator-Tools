@@ -1,0 +1,220 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_sarah",
+				"npc_name": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.ask_feedback_sarah",
+							"with": ["\n"]
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.yes"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_yes_sarah"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.no"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_no_sarah"
+						]
+					}
+				],
+				"on_open_commands": ["/scriptevent edu_tools:feedback_prompt_opened"]
+			},
+			{
+				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_yes_sarah",
+				"npc_name": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.ask_feedback_yes",
+							"with": ["\n"]
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.feedback"
+								}
+							]
+						},
+						"url": "`feedback_url`"
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.later"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sarah"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.did"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah",
+							"/scriptevent edu_tools:feedback_provided"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_no_sarah",
+				"npc_name": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.ask_feedback_no",
+							"with": ["\n"]
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.feedback"
+								}
+							]
+						},
+						"url": "`feedback_url`"
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.later"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sarah"
+						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.did"
+								}
+							]
+						},
+						"commands": [
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah",
+							"/scriptevent edu_tools:feedback_provided"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "edu_tools_dialogue_prompt_npc_thank_you_sarah",
+				"npc_name": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.thank_you",
+							"with": ["\n"]
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.your_welcome"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"scene_tag": "edu_tools_dialogue_prompt_npc_no_feedback_sarah",
+				"npc_name": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
+						}
+					]
+				},
+				"text": {
+					"rawtext": [
+						{
+							"translate": "edu_tools.dialogue.prompt_npc.no_feedback",
+							"with": ["\n"]
+						}
+					]
+				},
+				"buttons": [
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.close"
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+}
