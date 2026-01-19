@@ -31,7 +31,6 @@ export class AssignmentDeleteScene extends ActionUIScene {
 			"edu_tools.ui.assignment.delete.buttons.delete",
 			(): void => {
 				//assignmentService.deleteAssignment(assignment.id);
-				world.sendMessage(JSON.stringify(context.getHistory()));
 				const target = this.getBackTargetFromHistory(context);
 				if (target) {
 					sceneManager.goBackToScene(context, target);

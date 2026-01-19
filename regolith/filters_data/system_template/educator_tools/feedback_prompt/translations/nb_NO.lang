@@ -1,0 +1,15 @@
+edu_tools.dialogue.prompt_npc.sam.name=Sam
+edu_tools.dialogue.prompt_npc.sarah.name=Sarah
+edu_tools.dialogue.prompt_npc.ask_feedback_sam=Hei! Jeg er Sam, fra Shapescape! Liker du Educator Tools så langt?
+edu_tools.dialogue.prompt_npc.ask_feedback_sarah=Hei! Jeg er Sarah, fra Shapescape! Liker du Educator Tools så langt?
+edu_tools.dialogue.prompt_npc.ask_feedback_yes=Flott! Vil du gi oss tilbakemelding for å hjelpe oss med å forbedre?
+edu_tools.dialogue.prompt_npc.ask_feedback_no=Ingen problem! Hvis du har forslag, er du velkommen til å dele dem med oss.
+edu_tools.dialogue.prompt_npc.thank_you=Takk for tilbakemeldingen din! Den er veldig verdifull for oss.
+edu_tools.dialogue.prompt_npc.no_feedback=Det er greit! Hvis du ombestemmer deg, kan du alltid gi tilbakemelding senere.
+edu_tools.dialogue.prompt_npc.button.yes=Jeg elsker det!
+edu_tools.dialogue.prompt_npc.button.no=Ikke egentlig
+edu_tools.dialogue.prompt_npc.button.feedback=Gi Tilbakemelding
+edu_tools.dialogue.prompt_npc.button.later=Kanskje Senere
+edu_tools.dialogue.prompt_npc.button.did=Jeg gjorde det!
+edu_tools.dialogue.prompt_npc.button.your_welcome=Vær så god
+edu_tools.dialogue.prompt_npc.button.close=Lukk

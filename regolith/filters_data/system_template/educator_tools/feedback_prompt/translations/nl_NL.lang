@@ -1,0 +1,15 @@
+edu_tools.dialogue.prompt_npc.sam.name=Sam
+edu_tools.dialogue.prompt_npc.sarah.name=Sarah
+edu_tools.dialogue.prompt_npc.ask_feedback_sam=Hoi! Ik ben Sam, van Shapescape! Vind je Educator Tools leuk tot nu toe?
+edu_tools.dialogue.prompt_npc.ask_feedback_sarah=Hallo! Ik ben Sarah, van Shapescape! Vind je Educator Tools leuk tot nu toe?
+edu_tools.dialogue.prompt_npc.ask_feedback_yes=Geweldig! Zou je wat feedback willen geven om ons te helpen verbeteren?
+edu_tools.dialogue.prompt_npc.ask_feedback_no=Geen probleem! Als je suggesties hebt, deel ze gerust met ons.
+edu_tools.dialogue.prompt_npc.thank_you=Bedankt voor je feedback! Het is erg waardevol voor ons.
+edu_tools.dialogue.prompt_npc.no_feedback=Dat is oké! Als je van gedachten verandert, kun je altijd later feedback geven.
+edu_tools.dialogue.prompt_npc.button.yes=Ik vind het geweldig!
+edu_tools.dialogue.prompt_npc.button.no=Niet echt
+edu_tools.dialogue.prompt_npc.button.feedback=Geef Feedback
+edu_tools.dialogue.prompt_npc.button.later=Misschien Later
+edu_tools.dialogue.prompt_npc.button.did=Ik heb het gedaan!
+edu_tools.dialogue.prompt_npc.button.your_welcome=Graag gedaan
+edu_tools.dialogue.prompt_npc.button.close=Sluiten

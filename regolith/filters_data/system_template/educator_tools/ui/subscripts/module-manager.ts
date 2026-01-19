@@ -19,6 +19,8 @@ import { WorldManagementService } from "./modules/world_management/world_managem
 import { AssignmentService } from "./modules/assignment/assignment.service";
 import { AssignmentItemService } from "./modules/assignment-item/assignment-item.service";
 import { ClassroomLimitationsService } from "./modules/classroom_limitations/classroom-limitations.service";
+import { PlayerNicknameService } from "./modules/player_nickname/player_nickname.service";
+import { FeedbackPromptService } from "./modules/feedback_prompt/feedback_prompt.service";
 
 /**
  * Interface that all modules must implement.
@@ -68,10 +70,10 @@ export class ModuleManager {
 	private loadDefaultModules(): void {
 		// Create TeamsService with a scoped storage
 		const teamsStorage = this.storage.getSubStorage("teams");
-		const teamsService = new TeamsService(teamsStorage);
+		const teamsService = new TeamsService(teamsStorage, this);
 		const itemService = new ItemService(this);
 		const sceneManager = SceneManager.getInstance(this, this.storage);
-		const mainService = new MainService();
+		const mainService = new MainService(this);
 		const gamemodeService = new GamemodeService();
 		const teleportService = new TeleportService();
 		const scenesService = new ScenesService();
@@ -86,6 +88,8 @@ export class ModuleManager {
 		const assignmentService = new AssignmentService(this);
 		const assignmentItemService = new AssignmentItemService(this);
 		const classroomLimitationsService = new ClassroomLimitationsService(this);
+		const playerNicknameService = new PlayerNicknameService(this);
+		const feedbackPromptService = new FeedbackPromptService(this);
 
 		// Create WorldSettingsService
 		const worldSettingsStorage = this.storage.getSubStorage("world_settings");
@@ -112,6 +116,8 @@ export class ModuleManager {
 		this.registerModule(assignmentService);
 		this.registerModule(assignmentItemService);
 		this.registerModule(classroomLimitationsService);
+		this.registerModule(playerNicknameService);
+		this.registerModule(feedbackPromptService);
 
 		// Initialize all modules
 		this.initializeModules();

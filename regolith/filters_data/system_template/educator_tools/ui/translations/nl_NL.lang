@@ -16,6 +16,7 @@ edu_tools.ui.main.body=Selecteer een tool om te gebruiken
 edu_tools.ui.main.buttons.teleport=Teleporteren
 edu_tools.ui.main.buttons.copy_inventory=Inventaris kopiëren
 edu_tools.ui.main.buttons.gamemode=Spelmodus
+edu_tools.ui.main.buttons.player_nickname=Aangepaste bijnamen
 edu_tools.ui.main.buttons.manage_teams=Teams beheren
 edu_tools.ui.main.buttons.timer=Timer
 edu_tools.ui.main.buttons.world_management=Wereldbeheer
@@ -342,6 +343,7 @@ edu_tools.message.timer.times_up=§cTijd is om!
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§fKlaslokaal beperkingen
+edu_tools.ui.classroom_limitations.body=Waarschuwing! Het gebruik van deze beperkingen kan de gameplay en studentervaring beïnvloeden. Gebruik ze verantwoord.
 edu_tools.ui.classroom_limitations.body.items=Gebruik van items uitschakelen
 edu_tools.ui.classroom_limitations.body.entities=Entiteiten uitschakelen
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=Enderparels uitschakelen
@@ -356,6 +358,8 @@ edu_tools.ui.classroom_limitations.toggles.fireworks=Vuurwerk uitschakelen
 edu_tools.ui.classroom_limitations.toggles.fireworks_tooltip=Voorkom dat studenten vuurwerk-raketten gebruiken.
 edu_tools.ui.classroom_limitations.toggles.tnt=TNT uitschakelen
 edu_tools.ui.classroom_limitations.toggles.tnt_tooltip=Verwijder TNT uit inventarissen en voorkom plaatsing.
+edu_tools.ui.classroom_limitations.toggles.fireball=Vuurballes uitschakelen
+edu_tools.ui.classroom_limitations.toggles.fireball_tooltip=Voorkom dat studenten vuurballes en drakenvuurballes gebruiken.
 edu_tools.ui.classroom_limitations.toggles.dragon_egg=Drakenei uitschakelen
 edu_tools.ui.classroom_limitations.toggles.dragon_egg_tooltip=Voorkom dat studenten het drakenei verkrijgen of gebruiken.
 edu_tools.ui.classroom_limitations.toggles.potions=Drankjes uitschakelen
@@ -379,3 +383,75 @@ edu_tools.ui.classroom_limitations.toggles.warden_tooltip=Voorkom dat de Warden 
 edu_tools.message.classroom_limitations.item_removed=§cBeperkt item verwijderd: §r%1
 edu_tools.message.classroom_limitations.attempt_blocked=§cJe kunt dit item momenteel niet gebruiken.
 edu_tools.message.classroom_limitations.entity_blocked=§cBeperkte entiteit geblokkeerd: §r%1
+
+### Player Nickname Module
+edu_tools.ui.player_nickname_teacher.title=§fSpelersbijnamen
+edu_tools.ui.player_nickname_teacher.body=Beheer spelersbijnamen voor je klas
+edu_tools.ui.player_nickname_teacher.warning_disabled=§cSpelersbijnamen zijn momenteel uitgeschakeld. Schakel ze in bij Bijnaaminstellingen om bijnamen te beheren.
+edu_tools.ui.player_nickname_teacher.approval_queue=Goedkeuringswachtrij (%1)
+edu_tools.ui.player_nickname_teacher.settings=Bijnaaminstellingen
+edu_tools.ui.player_nickname_teacher.list=Spelersbijnamen bewerken
+edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body=Selecteer een leerling om de bijnaam te bewerken
+
+edu_tools.ui.player_nickname_student.title=§fStel je bijnaam in
+edu_tools.ui.player_nickname_student.body=Stel een aangepaste bijnaam voor jezelf in in het spel
+edu_tools.ui.player_nickname_student.nickname=Bijnaam
+edu_tools.ui.player_nickname_student.nickname_placeholder=Jouw geweldige bijnaam hier
+edu_tools.ui.player_nickname_student.nickname_tooltip=Voer de gewenste bijnaam in
+edu_tools.ui.player_nickname_student.color=Kleur
+edu_tools.ui.player_nickname_student.color_tooltip=Selecteer een kleur voor je bijnaam
+edu_tools.ui.player_nickname_student.join_message=%1§r is het spel binnengekomen (was %2§r)
+edu_tools.ui.player_nickname_student.leave_message=%1§r heeft het spel verlaten (was %2§r)
+
+edu_tools.ui.player_nickname_edit.title=§fSpelerbijnaam bewerken
+edu_tools.ui.player_nickname_edit.body=Bewerk de bijnaam van %1
+edu_tools.ui.player_nickname_edit.current_nickname=Huidige bijnaam: §r%1
+edu_tools.ui.player_nickname_edit.nickname=Bijnaam
+edu_tools.ui.player_nickname_edit.nickname_tooltip=Voer de bijnaam van de speler in (laat leeg om te resetten)
+edu_tools.ui.player_nickname_edit.nickname_placeholder=Laat leeg om te resetten
+edu_tools.ui.player_nickname_edit.color=Kleur
+edu_tools.ui.player_nickname_edit.color_tooltip=Selecteer een kleur voor de bijnaam van de speler
+
+edu_tools.ui.player_nickname_settings.title=§fBijnaaminstellingen
+edu_tools.ui.player_nickname_settings.body=Configureer hoe spelersbijnamen in je klas worden beheerd
+edu_tools.ui.player_nickname_settings.nicknames_enabled=Bijnamen ingeschakeld
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=Schakel spelersbijnamen in of uit in je klas
+edu_tools.ui.player_nickname_settings.prompt_on_join=Vragen bij binnenkomst
+edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=Vraag spelers om een bijnaam in te stellen wanneer ze de wereld betreden
+edu_tools.ui.player_nickname_settings.allow_custom_colors=Aangepaste kleuren toestaan
+edu_tools.ui.player_nickname_settings.allow_custom_colors_tooltip=Sta leerlingen toe aangepaste kleuren voor hun bijnamen te kiezen
+edu_tools.ui.player_nickname_settings.require_approval=Goedkeuring vereisen
+edu_tools.ui.player_nickname_settings.require_approval_tooltip=Vereis goedkeuring van de leraar voor bijnamen van leerlingen
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages=Aangepaste join/leave-berichten
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=Schakel aangepaste join- en leave-berichten in die bijnamen bevatten
+
+edu_tools.ui.player_nickname_approval.title=§fBijnamen goedkeuren
+edu_tools.ui.player_nickname_approval.body=Keur wachtende verzoeken voor bijnaamwijziging goed of af. Om een verzoek af te wijzen, zet je de schakelaar naast het verzoek uit voordat je verzendt.
+edu_tools.ui.player_nickname_approval.no_pending=Geen wachtende bijnaamverzoeken
+edu_tools.ui.player_nickname_approval.request_body=%1§r aangevraagd door %2
+edu_tools.ui.player_nickname_approval.reminder=Er wachten §a%1 §rbijnamengoedkeuringsverzoek(en).
+edu_tools.ui.player_nickname_approval.notification=De gebruiker §a%1§r heeft gevraagd de bijnaam te wijzigen naar §a%2§r.
+edu_tools.ui.player_nickname_approval.added_to_queue=§aJe verzoek om je bijnaam te wijzigen naar §r%1§a is ter goedkeuring ingediend.
+edu_tools.ui.player_nickname_approval.changed_nickname=§aJe bijnaam is gewijzigd naar §r%1§a.
+edu_tools.ui.player_nickname_approval.response.approved=§aJe bijnaamwijziging naar §r%1§a is goedgekeurd.
+edu_tools.ui.player_nickname_approval.response.denied=§cJe bijnaamwijziging naar §r%1§c is afgewezen.
+edu_tools.ui.player_nickname_approval.queue_processed=§aJe hebt alle wachtende bijnaamverzoeken verwerkt.
+
+### Palette Colors
+edu_tools.ui.palette_color.none=§rStandaardkleur
+edu_tools.ui.palette_color.black=§0Zwart
+edu_tools.ui.palette_color.darkblue=§1Donkerblauw
+edu_tools.ui.palette_color.darkgreen=§2Donkergroen
+edu_tools.ui.palette_color.darkaqua=§3Donkeraqua
+edu_tools.ui.palette_color.darkred=§4Donkerrood
+edu_tools.ui.palette_color.darkpurple=§5Donkerpaars
+edu_tools.ui.palette_color.gold=§6Goud
+edu_tools.ui.palette_color.gray=§7Grijs
+edu_tools.ui.palette_color.darkgray=§8Donkergrijs
+edu_tools.ui.palette_color.blue=§9Blauw
+edu_tools.ui.palette_color.green=§aGroen
+edu_tools.ui.palette_color.aqua=§bAqua
+edu_tools.ui.palette_color.red=§cRood
+edu_tools.ui.palette_color.lightpurple=§dLichtpaars
+edu_tools.ui.palette_color.yellow=§eGeel
+edu_tools.ui.palette_color.white=§fWit

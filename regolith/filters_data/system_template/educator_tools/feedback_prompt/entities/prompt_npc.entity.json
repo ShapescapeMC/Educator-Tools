@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "edu_tools:prompt_npc",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"sam": "textures/edu_tools/entity/sam_s",
+				"sarah": "textures/edu_tools/entity/sarah_a"
+			},
+			"geometry": {
+				"alex": "geometry.edu_tools.alex",
+				"steve": "geometry.edu_tools.steve"
+			},
+			"render_controllers": ["controller.render.edu_tools.prompt_npc"],
+			"animations": {
+				"a.idle": "animation.humanoid.bob"
+			},
+			"scripts": {
+				"scale": "0.9375",
+				"animate": ["a.idle"]
+			}
+		}
+	}
+}

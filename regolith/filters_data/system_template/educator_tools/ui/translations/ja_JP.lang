@@ -17,6 +17,7 @@ edu_tools.ui.main.body=使用するツールを選択してください
 edu_tools.ui.main.buttons.teleport=テレポート
 edu_tools.ui.main.buttons.copy_inventory=インベントリをコピー
 edu_tools.ui.main.buttons.gamemode=ゲームモードの変更
+edu_tools.ui.main.buttons.player_nickname=カスタムニックネーム
 edu_tools.ui.main.buttons.manage_teams=チーム管理
 edu_tools.ui.main.buttons.timer=タイマー
 edu_tools.ui.main.buttons.world_management=ワールド設定
@@ -344,6 +345,7 @@ edu_tools.message.timer.times_up=§c時間になりました！
 
 ### Classroom Limitations Scene
 edu_tools.ui.classroom_limitations.title=§f教室の制限
+edu_tools.ui.classroom_limitations.body=警告！これらの制限の使用は、ゲームプレイや生徒の体験に影響を与える可能性があります。注意して使用してください。
 edu_tools.ui.classroom_limitations.body.items=アイテムの使用を無効化
 edu_tools.ui.classroom_limitations.body.entities=エンティティを無効化
 edu_tools.ui.classroom_limitations.toggles.ender_pearls=エンダーパールを無効化
@@ -358,6 +360,8 @@ edu_tools.ui.classroom_limitations.toggles.fireworks=花火を無効化
 edu_tools.ui.classroom_limitations.toggles.fireworks_tooltip=花火ロケットの使用を禁止します。
 edu_tools.ui.classroom_limitations.toggles.tnt=TNTを無効化
 edu_tools.ui.classroom_limitations.toggles.tnt_tooltip=インベントリからTNTを削除し、設置を禁止します。
+edu_tools.ui.classroom_limitations.toggles.fireball=ファイアボールを無効化
+edu_tools.ui.classroom_limitations.toggles.fireball_tooltip=火炎チャージとドラゴンファイアボールの使用を禁止します。
 edu_tools.ui.classroom_limitations.toggles.dragon_egg=ドラゴンの卵を無効化
 edu_tools.ui.classroom_limitations.toggles.dragon_egg_tooltip=ドラゴンの卵の取得・使用を禁止します。
 edu_tools.ui.classroom_limitations.toggles.potions=ポーションを無効化
@@ -381,3 +385,75 @@ edu_tools.ui.classroom_limitations.toggles.warden_tooltip=ウォーデンの出�
 edu_tools.message.classroom_limitations.item_removed=§c制限対象のアイテムを削除しました: §r%1
 edu_tools.message.classroom_limitations.attempt_blocked=§c現在このアイテムは使用できません。
 edu_tools.message.classroom_limitations.entity_blocked=§c制限対象のエンティティをブロックしました: §r%1
+
+### Player Nickname Module
+edu_tools.ui.player_nickname_teacher.title=§fプレイヤーのニックネーム
+edu_tools.ui.player_nickname_teacher.body=クラスのプレイヤーのニックネームを管理します
+edu_tools.ui.player_nickname_teacher.warning_disabled=§c現在プレイヤーのニックネームは無効になっています。ニックネームを管理するには「ニックネーム設定」で有効にしてください。
+edu_tools.ui.player_nickname_teacher.approval_queue=承認キュー (%1)
+edu_tools.ui.player_nickname_teacher.settings=ニックネーム設定
+edu_tools.ui.player_nickname_teacher.list=プレイヤーのニックネームを編集
+edu_tools.ui.player_nickname_teacher.select_student.team_select.get_subject.body=ニックネームを編集する生徒を選択してください
+
+edu_tools.ui.player_nickname_student.title=§fニックネームを設定
+edu_tools.ui.player_nickname_student.body=ゲーム内で自分用のカスタムニックネームを設定します
+edu_tools.ui.player_nickname_student.nickname=ニックネーム
+edu_tools.ui.player_nickname_student.nickname_placeholder=ここに素敵なニックネーム
+edu_tools.ui.player_nickname_student.nickname_tooltip=希望するニックネームを入力してください
+edu_tools.ui.player_nickname_student.color=色
+edu_tools.ui.player_nickname_student.color_tooltip=ニックネームの色を選択してください
+edu_tools.ui.player_nickname_student.join_message=%1§r がゲームに参加しました（以前は %2§r）
+edu_tools.ui.player_nickname_student.leave_message=%1§r がゲームから退出しました（以前は %2§r）
+
+edu_tools.ui.player_nickname_edit.title=§fプレイヤーのニックネームを編集
+edu_tools.ui.player_nickname_edit.body=%1 のニックネームを編集します
+edu_tools.ui.player_nickname_edit.current_nickname=現在のニックネーム: §r%1
+edu_tools.ui.player_nickname_edit.nickname=ニックネーム
+edu_tools.ui.player_nickname_edit.nickname_tooltip=プレイヤーのニックネームを入力してください（空欄でリセット）
+edu_tools.ui.player_nickname_edit.nickname_placeholder=空欄でリセット
+edu_tools.ui.player_nickname_edit.color=色
+edu_tools.ui.player_nickname_edit.color_tooltip=プレイヤーのニックネームの色を選択してください
+
+edu_tools.ui.player_nickname_settings.title=§fニックネーム設定
+edu_tools.ui.player_nickname_settings.body=クラスでのニックネーム管理方法を設定します
+edu_tools.ui.player_nickname_settings.nicknames_enabled=ニックネームを有効化
+edu_tools.ui.player_nickname_settings.nicknames_enabled_tooltip=クラス内のプレイヤーのニックネームを有効/無効にします
+edu_tools.ui.player_nickname_settings.prompt_on_join=参加時に促す
+edu_tools.ui.player_nickname_settings.prompt_on_join_tooltip=ワールドに参加したときにニックネーム設定を促します
+edu_tools.ui.player_nickname_settings.allow_custom_colors=カスタム色を許可
+edu_tools.ui.player_nickname_settings.allow_custom_colors_tooltip=生徒がニックネームにカスタム色を選べるようにします
+edu_tools.ui.player_nickname_settings.require_approval=承認が必要
+edu_tools.ui.player_nickname_settings.require_approval_tooltip=生徒のニックネームは先生の承認が必要です
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages=参加/退出メッセージをカスタム
+edu_tools.ui.player_nickname_settings.custom_leave_join_messages_tooltip=ニックネームを含む参加・退出メッセージを有効にします
+
+edu_tools.ui.player_nickname_approval.title=§fニックネームを承認
+edu_tools.ui.player_nickname_approval.body=保留中のニックネーム変更申請を承認または却下します。却下する場合は、送信前に申請の横のトグルをオフにしてください。
+edu_tools.ui.player_nickname_approval.no_pending=承認待ちのニックネーム申請はありません
+edu_tools.ui.player_nickname_approval.request_body=%1§r（申請者: %2）
+edu_tools.ui.player_nickname_approval.reminder=§a%1 §r件のニックネーム承認申請が待機しています。
+edu_tools.ui.player_nickname_approval.notification=ユーザー §a%1§r がニックネームを §a%2§r に変更したいと申請しました。
+edu_tools.ui.player_nickname_approval.added_to_queue=§aニックネームを §r%1§a に変更する申請を送信しました。
+edu_tools.ui.player_nickname_approval.changed_nickname=§aニックネームが §r%1§a に変更されました。
+edu_tools.ui.player_nickname_approval.response.approved=§aニックネームを §r%1§a に変更する申請が承認されました。
+edu_tools.ui.player_nickname_approval.response.denied=§cニックネームを §r%1§c に変更する申請が却下されました。
+edu_tools.ui.player_nickname_approval.queue_processed=§a保留中のニックネーム申請をすべて処理しました。
+
+### Palette Colors
+edu_tools.ui.palette_color.none=§rデフォルトの色
+edu_tools.ui.palette_color.black=§0黒
+edu_tools.ui.palette_color.darkblue=§1濃い青
+edu_tools.ui.palette_color.darkgreen=§2濃い緑
+edu_tools.ui.palette_color.darkaqua=§3濃い水色
+edu_tools.ui.palette_color.darkred=§4濃い赤
+edu_tools.ui.palette_color.darkpurple=§5濃い紫
+edu_tools.ui.palette_color.gold=§6金色
+edu_tools.ui.palette_color.gray=§7灰色
+edu_tools.ui.palette_color.darkgray=§8濃い灰色
+edu_tools.ui.palette_color.blue=§9青
+edu_tools.ui.palette_color.green=§a緑
+edu_tools.ui.palette_color.aqua=§b水色
+edu_tools.ui.palette_color.red=§c赤
+edu_tools.ui.palette_color.lightpurple=§d薄紫
+edu_tools.ui.palette_color.yellow=§e黄色
+edu_tools.ui.palette_color.white=§f白

@@ -15,6 +15,11 @@ export class ClassroomLimitationsScene extends ModalUIScene {
 		super("classroom_limitations", context.getSourcePlayer(), "main");
 
 		this.addLabel({
+			translate: "edu_tools.ui.classroom_limitations.body",
+		});
+		this.addDivider();
+
+		this.addLabel({
 			translate: "edu_tools.ui.classroom_limitations.body.items",
 		});
 		// Add toggles dynamically based on service definitions for items

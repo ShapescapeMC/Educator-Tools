@@ -55,6 +55,10 @@ export class ClassroomLimitationsService implements Module {
 				"minecraft:ominous_bottle",
 			],
 		},
+		{
+			key: "fireball",
+			itemIds: ["minecraft:fire_charge", "minecraft:dragon_fireball"],
+		},
 		{ key: "spawn_eggs", pattern: /_spawn_egg$/ },
 	];
 
@@ -63,7 +67,10 @@ export class ClassroomLimitationsService implements Module {
 		{ key: "snow_golem", entityIds: ["minecraft:snow_golem"] },
 		{ key: "iron_golem", entityIds: ["minecraft:iron_golem"] },
 		{ key: "ender_dragon", entityIds: ["minecraft:ender_dragon"] },
-		{ key: "ender_crystal", entityIds: ["minecraft:ender_crystal"] },
+		{
+			key: "ender_crystal",
+			entityIds: ["minecraft:ender_crystal", "minecraft:end_crystal"],
+		},
 		{ key: "elder_guardian", entityIds: ["minecraft:elder_guardian"] },
 		{ key: "warden", entityIds: ["minecraft:warden"] },
 	];
