@@ -1,9 +1,7 @@
-[
-    ## BP Setup
+export const MAP = [
     {
         "source": "bp/manifest.json",
-        "target": "BP/manifest.json",
-        "json_template": True,
+        "target": "BP/manifest.json"
     },
     {
         "source": "bp/pack_icon.png",
@@ -17,11 +15,9 @@
         "source": "bp/texts/en_US.lang",
         "target": "BP/texts/en_US.lang",
     },
-    ## RP Setup
     {
         "source": "rp/manifest.json",
-        "target": "RP/manifest.json",
-        "json_template": True,
+        "target": "RP/manifest.json"
     },
     {
         "source": "rp/pack_icon.png",
