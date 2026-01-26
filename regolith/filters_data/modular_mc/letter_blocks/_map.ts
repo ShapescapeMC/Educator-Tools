@@ -1,7 +1,7 @@
-import * as fs from "fs";
-import * as path from "path";
-import { generateLetterImages } from "./plugins/generateLetters";
-import { scope } from "./scope";
+import * as fs from "node:fs";
+import * as path from "node:path";
+import { generateLetterImages } from "./plugins/generateLetters.ts";
+import { scope } from "./scope.ts";
 
 // Get all PNG files from letter_blocks directory
 function getLetterBlockPngs(dir: string): string[] {

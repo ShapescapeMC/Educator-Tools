@@ -38,5 +38,6 @@
     {
         "source": "rp/textures/item_texture.json",
         "target": "RP/textures/item_texture.json",
+        "on_conflict": "merge"
     }
 ]

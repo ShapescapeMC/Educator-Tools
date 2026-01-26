@@ -3,9 +3,13 @@
  * in a string provided in the scope. It uses the Canvas library for image manipulation.
  */
 
-import * as fs from "fs";
-import * as path from "path";
-import { createCanvas, loadImage, registerFont, Canvas } from "canvas";
+import * as fs from "node:fs";
+import * as path from "node:path";
+import {
+	createCanvas,
+	loadImage,
+	type Canvas,
+} from "https://deno.land/x/canvas/mod.ts";
 
 export interface LetterItem {
 	char: string;
@@ -121,16 +125,24 @@ export async function generateLetterImages(
 		);
 	}
 
-	// Register font if provided
+	// Load and register custom font if provided
 	const fontSizeUsed = fontSize * scale;
+	let fontFamily = "sans-serif";
+
 	if (fontPath && fs.existsSync(fontPath)) {
 		try {
-			registerFont(fontPath, { family: "CustomFont" });
-			console.log(
-				`Successfully loaded custom font '${fontPath}' with size ${fontSize}`,
-			);
+			// Read font file as buffer
+			const fontData = fs.readFileSync(fontPath);
+
+			// Extract font family name from file name (or use a default)
+			const fontFileName = path.basename(fontPath, path.extname(fontPath));
+			fontFamily = fontFileName.replace(/[_-]/g, " ");
+
+			console.log(`Loading custom font from '${fontPath}' as '${fontFamily}'`);
 		} catch (e) {
-			console.error(`Error loading custom font '${fontPath}': ${e}`);
+			console.error(`Error reading font file '${fontPath}': ${e}`);
+			console.log("Falling back to sans-serif font");
+			fontFamily = "sans-serif";
 		}
 	}
 
@@ -156,14 +168,25 @@ export async function generateLetterImages(
 			// Create the oversampled canvas
 			const canvas = createCanvas(workSize[0], workSize[1]);
 			const ctx = canvas.getContext("2d");
+			// Load custom font into this canvas if font path was provided
+			if (fontPath && fs.existsSync(fontPath)) {
+				try {
+					const fontData = fs.readFileSync(fontPath);
+					const fontFileName = path.basename(fontPath, path.extname(fontPath));
+					const customFontFamily = fontFileName.replace(/[_-]/g, " ");
 
+					canvas.loadFont(fontData, { family: customFontFamily });
+					fontFamily = customFontFamily;
+				} catch (e) {
+					console.error(`Error loading font into canvas: ${e}`);
+				}
+			}
 			// Draw background if available
 			if (backgroundImage) {
 				ctx.drawImage(backgroundImage, 0, 0);
 			}
 
 			// Set up text properties
-			const fontFamily = fontPath ? "CustomFont" : "sans-serif";
 			ctx.font = `${fontSizeUsed}px ${fontFamily}`;
 			ctx.fillStyle = `rgba(${textColor[0]}, ${textColor[1]}, ${
 				textColor[2]
