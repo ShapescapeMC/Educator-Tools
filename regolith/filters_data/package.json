@@ -4,8 +4,6 @@
 		"@minecraft/server": "2.0.0",
 		"@minecraft/server-ui": "2.0.0",
 		"@shapescape/storage": "^1.0.7",
-		"addon-version": "file:system_template_esbuild/addon-version",
-		"canvas": "^2.11.2",
-		"@types/node": "^20.0.0"
+		"addon-version": "file:system_template_esbuild/addon-version"
 	}
 }
