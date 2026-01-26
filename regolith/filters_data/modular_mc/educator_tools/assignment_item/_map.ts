@@ -1,11 +1,11 @@
 export const MAP = [
 	{
 		source: "assignment_item.bp_item.json",
-		target: :autoFlat,
+		target: ":autoFlat",
 	},
 	{
 		source: "assignment_item.item.png",
-		target: :autoFlat,
+		target: ":autoFlat",
 	},
 	{
 		source: "item_texture.json",
