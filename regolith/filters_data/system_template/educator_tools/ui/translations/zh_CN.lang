@@ -148,6 +148,8 @@ edu_tools.message.lock_player_team_settings.teleport_to_center=§a已将被锁�
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§a您已被传送到被锁定区域的中心。
 edu_tools.message.lock_player_team_settings.update_center=§a被锁定区域的中心已更新为您当前的位置。
 edu_tools.message.lock_player_team_settings.delete_lock=§a锁定已被移除。
+edu_tools.message.lock_player.too_far_teleport_center=§c你已被传送回被锁定区域的中心。
+edu_tools.message.lock_player.too_far_teleport_area=§c你已被传送回被锁定区域内。
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§f传送

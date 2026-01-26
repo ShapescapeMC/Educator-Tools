@@ -148,6 +148,8 @@ edu_tools.message.lock_player_team_settings.teleport_to_center=§aΟι κλει�
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aΤηλεμεταφέρθηκες στο κέντρο της κλειδωμένης περιοχής σου.
 edu_tools.message.lock_player_team_settings.update_center=§aΤο κέντρο της κλειδωμένης περιοχής ενημερώθηκε στη τρέχουσα θέση σου.
 edu_tools.message.lock_player_team_settings.delete_lock=§aΤο κλείδωμα έχει αφαιρεθεί.
+edu_tools.message.lock_player.too_far_teleport_center=§cΤηλεμεταφέρθηκες πίσω στο κέντρο της κλειδωμένης περιοχής.
+edu_tools.message.lock_player.too_far_teleport_area=§cΤηλεμεταφέρθηκες πίσω μέσα στην κλειδωμένη περιοχή.
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fΤηλεμεταφορά

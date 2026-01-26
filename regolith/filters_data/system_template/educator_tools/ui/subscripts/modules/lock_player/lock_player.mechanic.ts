@@ -223,7 +223,7 @@ export class LockPlayerMechanic {
 			if (lockSettings.showLockMessage) {
 				player.sendMessage([
 					{
-						translate: "edu_tools.message.too_far_teleport_center",
+						translate: "edu_tools.message.lock_player.too_far_teleport_center",
 					},
 				]);
 			}
@@ -234,7 +234,7 @@ export class LockPlayerMechanic {
 			if (lockSettings.showLockMessage) {
 				player.sendMessage([
 					{
-						translate: "edu_tools.message.too_far_teleport_area",
+						translate: "edu_tools.message.lock_player.too_far_teleport_area",
 					},
 				]);
 			}

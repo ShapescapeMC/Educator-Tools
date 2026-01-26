@@ -148,6 +148,8 @@ edu_tools.message.lock_player_team_settings.teleport_to_center=§aVergrendelde s
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aJe bent naar het midden van je vergrendelde gebied geteleporteerd.
 edu_tools.message.lock_player_team_settings.update_center=§aHet midden van het vergrendelde gebied is bijgewerkt naar je huidige positie.
 edu_tools.message.lock_player_team_settings.delete_lock=§aDe vergrendeling is verwijderd.
+edu_tools.message.lock_player.too_far_teleport_center=§cJe bent terug naar het midden van het vergrendelde gebied geteleporteerd.
+edu_tools.message.lock_player.too_far_teleport_area=§cJe bent terug binnen het vergrendelde gebied geteleporteerd.
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fTeleporteren

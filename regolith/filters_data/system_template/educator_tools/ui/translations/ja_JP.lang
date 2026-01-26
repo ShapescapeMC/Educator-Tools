@@ -149,6 +149,8 @@ edu_tools.message.lock_player_team_settings.teleport_to_center=§aロックさ�
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aあなたは、ロックされたエリアの中心へテレポートされました。
 edu_tools.message.lock_player_team_settings.update_center=§aロックされたエリアの中心が現在の位置に更新されました。
 edu_tools.message.lock_player_team_settings.delete_lock=§aロックは解除されました。
+edu_tools.message.lock_player.too_far_teleport_center=§cロックされたエリアの中心にテレポートされました。
+edu_tools.message.lock_player.too_far_teleport_area=§cロックされたエリア内にテレポートされました。
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fテレポート

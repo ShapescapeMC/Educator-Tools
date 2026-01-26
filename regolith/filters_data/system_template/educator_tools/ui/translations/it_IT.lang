@@ -148,6 +148,8 @@ edu_tools.message.lock_player_team_settings.teleport_to_center=§aI giocatori bl
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aSei stato teletrasportato al centro della tua area bloccata.
 edu_tools.message.lock_player_team_settings.update_center=§aIl centro dell'area bloccata è stato aggiornato alla tua posizione corrente.
 edu_tools.message.lock_player_team_settings.delete_lock=§aIl blocco è stato rimosso.
+edu_tools.message.lock_player.too_far_teleport_center=§cSei stato teletrasportato al centro dell'area bloccata.
+edu_tools.message.lock_player.too_far_teleport_area=§cSei stato teletrasportato di nuovo all'interno dell'area bloccata.
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fTeletrasporto

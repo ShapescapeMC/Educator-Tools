@@ -148,6 +148,8 @@ edu_tools.message.lock_player_team_settings.teleport_to_center=§aLåste spiller
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aDu har blitt teleportert til sentrum av ditt låste område.
 edu_tools.message.lock_player_team_settings.update_center=§aSentrum av det låste området har blitt oppdatert til din nåværende posisjon.
 edu_tools.message.lock_player_team_settings.delete_lock=§aLåsen har blitt fjernet.
+edu_tools.message.lock_player.too_far_teleport_center=§cDu har blitt teleportert tilbake til sentrum av det låste området.
+edu_tools.message.lock_player.too_far_teleport_area=§cDu har blitt teleportert tilbake innenfor det låste området.
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fTeleporter

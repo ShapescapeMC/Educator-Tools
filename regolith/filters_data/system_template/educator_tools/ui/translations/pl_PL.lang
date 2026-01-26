@@ -148,6 +148,8 @@ edu_tools.message.lock_player_team_settings.teleport_to_center=§aZablokowani gr
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aZostałeś przeteleportowany do centrum zablokowanego obszaru.
 edu_tools.message.lock_player_team_settings.update_center=§aCentrum zablokowanego obszaru zostało zaktualizowane do twojej obecnej pozycji.
 edu_tools.message.lock_player_team_settings.delete_lock=§aBlokada została usunięta.
+edu_tools.message.lock_player.too_far_teleport_center=§cZostałeś przeteleportowany z powrotem do centrum zablokowanego obszaru.
+edu_tools.message.lock_player.too_far_teleport_area=§cZostałeś przeteleportowany z powrotem do wnętrza zablokowanego obszaru.
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fTeleportacja
