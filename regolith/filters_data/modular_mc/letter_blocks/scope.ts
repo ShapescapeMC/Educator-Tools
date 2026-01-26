@@ -60,7 +60,7 @@ export const scope = {
 				},
 				{ char: "\u00bf", safe_name: "inverted_question", group: "diacritic" },
 				{ char: "\u002d", safe_name: "hyphen", group: "punctuation" },
-				{ char: "\u005f", safe_name: "_", group: "punctuation" },
+				{ char: "\u005f", safe_name: "underscore", group: "punctuation" },
 				{ char: "\u0040", safe_name: "at_sign", group: "symbol" },
 				{ char: "\u0023", safe_name: "hash", group: "symbol" },
 				{ char: "\u0024", safe_name: "dollar_sign", group: "symbol" },
