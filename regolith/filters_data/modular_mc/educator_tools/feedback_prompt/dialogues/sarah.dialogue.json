@@ -3,18 +3,18 @@
 	"minecraft:npc_dialogue": {
 		"scenes": [
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_sam",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
-							"translate": "edu_tools.dialogue.prompt_npc.sam.name"
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
 						}
 					]
 				},
 				"text": {
 					"rawtext": [
 						{
-							"translate": "edu_tools.dialogue.prompt_npc.ask_feedback_sam",
+							"translate": "edu_tools.dialogue.prompt_npc.ask_feedback_sarah",
 							"with": ["\n"]
 						}
 					]
@@ -29,7 +29,7 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_yes_sam"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_yes_sarah"
 						]
 					},
 					{
@@ -41,18 +41,18 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_no_sam"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_ask_feedback_no_sarah"
 						]
 					}
 				],
 				"on_open_commands": ["/scriptevent edu_tools:feedback_prompt_opened"]
 			},
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_yes_sam",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_yes_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
-							"translate": "edu_tools.dialogue.prompt_npc.sam.name"
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
 						}
 					]
 				},
@@ -73,7 +73,7 @@
 								}
 							]
 						},
-						"url": "`feedback_url`"
+						"url": "::feedback_url"
 					},
 					{
 						"name": {
@@ -84,7 +84,7 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sam"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sarah"
 						]
 					},
 					{
@@ -96,18 +96,18 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sam",
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah",
 							"/scriptevent edu_tools:feedback_provided"
 						]
 					}
 				]
 			},
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_no_sam",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_ask_feedback_no_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
-							"translate": "edu_tools.dialogue.prompt_npc.sam.name"
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
 						}
 					]
 				},
@@ -128,7 +128,7 @@
 								}
 							]
 						},
-						"url": "`feedback_url`"
+						"url": "::feedback_url"
 					},
 					{
 						"name": {
@@ -139,7 +139,7 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sam"
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_no_feedback_sarah"
 						]
 					},
 					{
@@ -151,18 +151,18 @@
 							]
 						},
 						"commands": [
-							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sam",
+							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sarah",
 							"/scriptevent edu_tools:feedback_provided"
 						]
 					}
 				]
 			},
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_thank_you_sam",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_thank_you_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
-							"translate": "edu_tools.dialogue.prompt_npc.sam.name"
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
 						}
 					]
 				},
@@ -187,11 +187,11 @@
 				]
 			},
 			{
-				"scene_tag": "edu_tools_dialogue_prompt_npc_no_feedback_sam",
+				"scene_tag": "edu_tools_dialogue_prompt_npc_no_feedback_sarah",
 				"npc_name": {
 					"rawtext": [
 						{
-							"translate": "edu_tools.dialogue.prompt_npc.sam.name"
+							"translate": "edu_tools.dialogue.prompt_npc.sarah.name"
 						}
 					]
 				},
