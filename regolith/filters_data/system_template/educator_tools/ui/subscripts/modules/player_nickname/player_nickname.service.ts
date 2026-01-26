@@ -71,9 +71,12 @@ export class PlayerNicknameService {
 			this.teamsService!,
 		);
 
-		system.runInterval(() => {
-			this.checkIfApprovalNeeded();
-		}, 20 * 60 * 5);
+		system.runInterval(
+			() => {
+				this.checkIfApprovalNeeded();
+			},
+			20 * 60 * 5,
+		);
 
 		this.itemService?.registerScene("player_nickname_approval", {
 			priority: 100,
@@ -181,8 +184,6 @@ export class PlayerNicknameService {
 			// Trim whitespace from nickname, remove color codes, formatting codes, limit length and remove non ascii characters
 			nickname = nickname
 				.trim()
-				// Remove non-ascii characters except for §
-				.replace(/[^\x00-\x7F§]/g, "")
 				// Formatting codes are §k, §l, §m, §n, §o, §r
 				.replace(/§[klmnor]/gi, "")
 				// Limit to 20 characters
