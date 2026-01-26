@@ -10,6 +10,6 @@ export const MAP = [
 	{
 		source: "item_texture.json",
 		target: "RP/textures/item_texture.json",
-		on_conflict: "merge",
+		onConflict: "merge",
 	},
 ];
