@@ -144,10 +144,13 @@ edu_tools.ui.lock_player_confirm.team.body.2=§r. Esto impedirá que se mueva fu
 edu_tools.ui.lock_player_confirm.buttons.confirm=Confirmar
 edu_tools.ui.lock_player_confirm.buttons.cancel=Cancelar
 edu_tools.actionbar.lock_player.too_far_push=Te estás alejando demasiado
+edu_tools.actionbar.lock_player.too_far_push=§cTe estás alejando demasiado
 edu_tools.message.lock_player_team_settings.teleport_to_center=§aLos jugadores bloqueados han sido teletransportados al centro del área.
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§aHas sido teletransportado al centro de tu área bloqueada.
 edu_tools.message.lock_player_team_settings.update_center=§aEl centro del área bloqueada se ha actualizado a tu posición actual.
 edu_tools.message.lock_player_team_settings.delete_lock=§aEl bloqueo ha sido eliminado.
+edu_tools.message.lock_player.too_far_teleport_center=§cHas sido teletransportado de vuelta al centro del área bloqueada.
+edu_tools.message.lock_player.too_far_teleport_area=§cHas sido teletransportado de vuelta dentro del área bloqueada.
 
 ### Teleport Scene
 edu_tools.ui.teleport.title=§fTeletransporte
