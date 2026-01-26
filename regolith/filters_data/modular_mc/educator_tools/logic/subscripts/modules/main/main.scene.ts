@@ -2,7 +2,7 @@ import { SceneManager } from "../scene_manager/scene-manager";
 import { ActionUIScene } from "../scene_manager/ui-scene";
 import { SceneContext } from "../scene_manager/scene-context";
 import { MainService } from "./main.service";
-import { getAddonVersion } from "addon-version";
+import { getAddonVersion } from "../../utils/addon-version";
 
 /**
  * Class representing the Main Scene.

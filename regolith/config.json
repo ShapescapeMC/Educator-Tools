@@ -183,38 +183,6 @@
 					{
 						"filter": "python_modules"
 					},
-					/*{
-						"filter": "system_template",
-						"settings": {
-							"log_path": "system_template_log.json",
-							"prioritized_systems": [
-								"addon_setup/educator_tools",
-								"scripting_setup"
-							],
-							"scope": {
-								"esbuild_path": "data/system_template_esbuild"
-							},
-							"scope_path": "scope.json",
-							"systems": [
-								"educator_tools/**",
-								"scripting_setup",
-								"addon_setup/educator_tools"
-							]
-						}
-					},
-					{
-						"filter": "system_template_esbuild",
-						"settings": {
-							"entryPoint": "data/system_template_esbuild/main.ts",
-							"external": [
-								"@minecraft/server",
-								"@minecraft/server-ui"
-							],
-							"minify": false,
-							"outfile": "`BP/scripts/{path_namespace}/main.js`",
-							"scope_path": "scope.json"
-						}
-					},*/
 					{
 						"filter": "modular_mc",
 						"settings": {
@@ -223,7 +191,15 @@
 								"letter_blocks",
 								"scripting_setup",
 								"addon_setup/educator_tools"
-							]
+							],
+							"esbuild": {
+								"buildPath": ".modular_mc/main.js",
+								"settings": {
+									"sourcemap": false,
+									"minify": false,
+									"external": ["@minecraft/server", "@minecraft/server-ui"]
+								}
+							}
 						}
 					},
 					{
