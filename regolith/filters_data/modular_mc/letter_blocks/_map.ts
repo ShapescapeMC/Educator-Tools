@@ -178,6 +178,7 @@ export const MAP = [
 	{
 		source: "block/letter_block.mcfunction",
 		target: ":autoFlat",
+		textTemplate: true,
 		scope: {
 			blocks: getLetterBlockPngs("letter_blocks").map((pngPath) => {
 				const letter = path.basename(pngPath, ".block.png");

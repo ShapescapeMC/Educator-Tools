@@ -29,6 +29,10 @@
 				"url": "github.com/ShapescapeMC/Shapescape-Copy-Files",
 				"version": "1.0.0"
 			},
+			"subfunctions": {
+				"url": "github.com/Nusiq/regolith-filters",
+				"version": "2.1.2"
+			},
 			"system_template": {
 				"url": "github.com/Nusiq/regolith-filters",
 				"version": "3.16.0"
@@ -213,6 +217,9 @@
 					},
 					{
 						"filter": "modular_mc"
+					},
+					{
+						"filter": "subfunctions"
 					},
 					{
 						"filter": "name_ninja",
