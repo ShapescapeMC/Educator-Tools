@@ -193,7 +193,6 @@
 							"scope_path": "scope.json",
 							"systems": [
 								"educator_tools/**",
-								"letter_blocks",
 								"scripting_setup",
 								"addon_setup/educator_tools"
 							]
