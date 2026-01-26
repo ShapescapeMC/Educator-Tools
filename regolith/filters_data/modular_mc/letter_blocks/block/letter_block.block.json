@@ -2,8 +2,8 @@
 	"format_version": "1.21.0",
 	"minecraft:block": {
 		"description": {
-			"identifier": "`f'edu_tools:letter_block_{letter}'`",
-			//"name": "`f\"{letter.replace('_', ' ').title()}\"`"
+			"identifier": "::`edu_tools:letter_block_${letter}`",
+			//"name": "::letter.replace(/_/g, ' ').split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')"
 			"traits": {
 				"minecraft:placement_direction": {
 					"enabled_states": [
@@ -115,11 +115,11 @@
 		"components": {
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "`f'letter_block_{background}'`",
+					"texture": "::`letter_block_${background}`",
 					"render_method": "opaque"
 				},
 				"south": {
-					"texture": "`f'letter_block_{letter}'`"
+					"texture": "::`letter_block_${letter}`"
 				}
 			},
 			"minecraft:geometry": {
@@ -132,7 +132,7 @@
 				"explosion_resistance": 99999
 			},
 			"minecraft:transformation": { "rotation": [0, 0, 0] },
-			"minecraft:loot": "`f'loot_tables/edu_tools/{letter}.loot.json'`",
+			"minecraft:loot": "::`loot_tables/edu_tools/${letter}.loot.json`",
 			"minecraft:friction": 0.4,
 			"minecraft:map_color": "#444444",
 			"minecraft:light_dampening": 15
