@@ -180,6 +180,9 @@
 						"filter": "python_modules"
 					},
 					{
+						"filter": "modular_mc"
+					},
+					{
 						"filter": "system_template",
 						"settings": {
 							"log_path": "system_template_log.json",
