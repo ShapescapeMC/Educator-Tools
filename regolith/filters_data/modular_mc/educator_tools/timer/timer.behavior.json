@@ -53,9 +53,9 @@
 				}
 			},
 			// Generating bossbars due to MCPE-227635
-			"`[K(f'edu_tools:timer_{h:02d}_{m:02d}_{s:02d}', hour=h, minute=m, second=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`": {
+			"::[...Array(2)].flatMap((_, h) => [...Array(60)].flatMap((_, m) => [...Array(60)].map((_, s) => ({ h, m, s })))).filter(({ h, m, s }) => !(h === 1 && m > 30) && !(h === 1 && m === 30 && s > 0)).map(({ h, m, s }) => K('edu_tools:timer_' + String(h).padStart(2, '0') + '_' + String(m).padStart(2, '0') + '_' + String(s).padStart(2, '0'), { hour: h, minute: m, second: s }))": {
 				"minecraft:boss": {
-					"name": "`f'{hour:02d}:{minute:02d}:{second:02d}'`",
+					"name": "::String(hour).padStart(2, '0') + ':' + String(minute).padStart(2, '0') + ':' + String(second).padStart(2, '0')",
 					"hud_range": 10000,
 					"should_darken_sky": false
 				}
@@ -72,8 +72,8 @@
 					"component_groups": [
 						"edu_tools:pause_timer",
 						{
-							"__unpack__": "`[dict(h=h, m=m, s=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`",
-							"__value__": "`f'edu_tools:timer_{h:02d}_{m:02d}_{s:02d}'`"
+							"__unpack__": "::[...Array(2)].flatMap((_, h) => [...Array(60)].flatMap((_, m) => [...Array(60)].map((_, s) => ({ h, m, s })))).filter(({ h, m, s }) => !(h === 1 && m > 30) && !(h === 1 && m === 30 && s > 0))",
+							"__value__": "::'edu_tools:timer_' + String(h).padStart(2, '0') + '_' + String(m).padStart(2, '0') + '_' + String(s).padStart(2, '0')"
 						}
 					]
 				}
@@ -85,10 +85,10 @@
 				}
 			},
 
-			"`[K(f'edu_tools:set_timer_{h}_{m:02d}_{s:02d}', hour=h, minute=m, second=s) for h in range(2) for m in range(60) for s in range(60) if not (h == 1 and m > 30) and not (h == 1 and m == 30 and s > 0)]`": {
+			"::[...Array(2)].flatMap((_, h) => [...Array(60)].flatMap((_, m) => [...Array(60)].map((_, s) => ({ h, m, s })))).filter(({ h, m, s }) => !(h === 1 && m > 30) && !(h === 1 && m === 30 && s > 0)).map(({ h, m, s }) => K('edu_tools:set_timer_' + h + '_' + String(m).padStart(2, '0') + '_' + String(s).padStart(2, '0'), { hour: h, minute: m, second: s }))": {
 				"add": {
 					"component_groups": [
-						"`f'edu_tools:timer_{hour:02d}_{minute:02d}_{second:02d}'`"
+						"::('edu_tools:timer_' + String(hour).padStart(2, '0') + '_' + String(minute).padStart(2, '0') + '_' + String(second).padStart(2, '0'))"
 					]
 				}
 			}
