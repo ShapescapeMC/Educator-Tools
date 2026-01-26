@@ -1,8 +1,8 @@
 import { WeatherType } from "@minecraft/server";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { EnvironmentService } from "./environment.service";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { EnvironmentService } from "./environment.service.ts";
 
 /**
  * Modal scene for configuring weather settings including weather type and weather cycle.

@@ -1,6 +1,6 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
 
 export class AssignmentTeacherScene extends ActionUIScene {
 	static readonly id = "assignment_teacher";

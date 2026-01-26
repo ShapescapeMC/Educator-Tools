@@ -1,8 +1,8 @@
 import { Player, world } from "@minecraft/server";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { TeleportService } from "./teleport.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { TeleportService } from "./teleport.service.ts";
 
 export class TeleportScene extends ActionUIScene {
 	static readonly id = "teleport";

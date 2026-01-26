@@ -1,6 +1,6 @@
 import { world, system, Player, DimensionTypes } from "@minecraft/server";
 import { Vec3 } from "@bedrock-oss/bedrock-boost";
-import { FeedbackPromptService } from "./feedback_prompt.service";
+import { FeedbackPromptService } from "./feedback_prompt.service.ts";
 
 /**
  * Runtime enforcement and interaction layer for feedback prompt mechanics.
@@ -139,74 +139,84 @@ export class FeedbackPromptMechanic {
 	 * Starts monitoring player activity to track idle status for prompt eligibility.
 	 */
 	private startActivityMonitor(): void {
-		system.runInterval(() => {
-			const playersToPrompt = this.service.getPlayersToPrompt();
-			if (playersToPrompt.size === 0) return;
+		system.runInterval(
+			() => {
+				const playersToPrompt = this.service.getPlayersToPrompt();
+				if (playersToPrompt.size === 0) return;
 
-			const onlinePlayers = new Map(
-				world.getAllPlayers().map((player) => [player.id, player]),
-			);
+				const onlinePlayers = new Map(
+					world.getAllPlayers().map((player) => [player.id, player]),
+				);
 
-			this.service.debugLog(
-				`[FeedbackPrompt] Activity Monitor: checking ${playersToPrompt.size} candidates, ${onlinePlayers.size} online players`,
-			);
+				this.service.debugLog(
+					`[FeedbackPrompt] Activity Monitor: checking ${playersToPrompt.size} candidates, ${onlinePlayers.size} online players`,
+				);
 
-			for (const playerId of Array.from(playersToPrompt.keys())) {
-				const player = onlinePlayers.get(playerId);
-				if (!player || !player.isValid) {
-					this.service.debugLog(
-						`[FeedbackPrompt] ${playerId}: player offline/invalid, skipping activity check`,
-					);
-					continue;
+				for (const playerId of Array.from(playersToPrompt.keys())) {
+					const player = onlinePlayers.get(playerId);
+					if (!player || !player.isValid) {
+						this.service.debugLog(
+							`[FeedbackPrompt] ${playerId}: player offline/invalid, skipping activity check`,
+						);
+						continue;
+					}
+
+					this.service.refreshActivityForPlayer(player);
+					const candidate = playersToPrompt.get(playerId);
+					if (!candidate) continue;
+
+					if (this.promptOpenedPlayers.has(playerId)) {
+						this.service.debugLog(
+							`[FeedbackPrompt] ${player.name}: prompt already opened, skipping re-prompt`,
+						);
+						continue;
+					}
+
+					if (this.service.wasFeedbackAlreadyAsked(playerId)) {
+						this.service.debugLog(
+							`[FeedbackPrompt] ${player.name}: feedback already asked (persistent), removing candidate`,
+						);
+						this.service.removeCandidate(playerId);
+						continue;
+					}
+
+					if (this.service.isPromptWindowOpen(candidate)) {
+						this.service.debugLog(
+							`[FeedbackPrompt] ${player.name}: PROMPT WINDOW OPEN - queuing for prompt`,
+						);
+						this.pendingPromptPlayers.add(playerId);
+					} else {
+						this.service.logRemainingTime(player, candidate);
+					}
 				}
-
-				this.service.refreshActivityForPlayer(player);
-				const candidate = playersToPrompt.get(playerId);
-				if (!candidate) continue;
-
-				if (this.promptOpenedPlayers.has(playerId)) {
-					this.service.debugLog(
-						`[FeedbackPrompt] ${player.name}: prompt already opened, skipping re-prompt`,
-					);
-					continue;
-				}
-
-				if (this.service.wasFeedbackAlreadyAsked(playerId)) {
-					this.service.debugLog(
-						`[FeedbackPrompt] ${player.name}: feedback already asked (persistent), removing candidate`,
-					);
-					this.service.removeCandidate(playerId);
-					continue;
-				}
-
-				if (this.service.isPromptWindowOpen(candidate)) {
-					this.service.debugLog(
-						`[FeedbackPrompt] ${player.name}: PROMPT WINDOW OPEN - queuing for prompt`,
-					);
-					this.pendingPromptPlayers.add(playerId);
-				} else {
-					this.service.logRemainingTime(player, candidate);
-				}
-			}
-		}, FeedbackPromptMechanic.ACTIVITY_MONITOR_BASE + Math.floor(Math.random() * FeedbackPromptMechanic.ACTIVITY_MONITOR_JITTER));
+			},
+			FeedbackPromptMechanic.ACTIVITY_MONITOR_BASE +
+				Math.floor(
+					Math.random() * FeedbackPromptMechanic.ACTIVITY_MONITOR_JITTER,
+				),
+		);
 	}
 
 	/**
 	 * Retries prompting pending players and cleans up NPC entities.
 	 */
 	private startRetryLoop(): void {
-		system.runInterval(() => {
-			this.checkAndRemoveInactiveEntities();
-			if (this.pendingPromptPlayers.size === 0) return;
+		system.runInterval(
+			() => {
+				this.checkAndRemoveInactiveEntities();
+				if (this.pendingPromptPlayers.size === 0) return;
 
-			this.service.debugLog(
-				`[FeedbackPrompt] Retry loop: attempting to open dialogue for ${this.pendingPromptPlayers.size} players`,
-			);
+				this.service.debugLog(
+					`[FeedbackPrompt] Retry loop: attempting to open dialogue for ${this.pendingPromptPlayers.size} players`,
+				);
 
-			for (const playerId of Array.from(this.pendingPromptPlayers.values())) {
-				this.tryPromptPlayer(playerId);
-			}
-		}, FeedbackPromptMechanic.RETRY_LOOP_BASE + Math.floor(Math.random() * FeedbackPromptMechanic.RETRY_LOOP_JITTER));
+				for (const playerId of Array.from(this.pendingPromptPlayers.values())) {
+					this.tryPromptPlayer(playerId);
+				}
+			},
+			FeedbackPromptMechanic.RETRY_LOOP_BASE +
+				Math.floor(Math.random() * FeedbackPromptMechanic.RETRY_LOOP_JITTER),
+		);
 	}
 
 	/**

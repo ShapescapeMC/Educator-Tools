@@ -1,17 +1,17 @@
 import { Player, Vector3, world } from "@minecraft/server";
 import { CachedStorage, PropertyStorage } from "@shapescape/storage";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ButtonConfig } from "../main/main.service";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { Team } from "../teams/interfaces/team.interface";
-import { LockPlayerScene } from "./lock_player.scene";
-import { LockPlayerConfirmScene } from "./lock_player_confirm.scene";
-import { LockPlayerEditScene } from "./lock_player_edit.scene";
-import { LockPlayerTeamScene } from "./lock_player_team.scene";
-import { Module, ModuleManager } from "../../module-manager";
-import { LockPlayerMechanic } from "./lock_player.mechanic";
-import { TeamsService } from "../teams/teams.service";
-import { LockPlayerTeamSettingsScene } from "./lock_player_team_settings.scene";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ButtonConfig } from "../main/main.service.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { LockPlayerScene } from "./lock_player.scene.ts";
+import { LockPlayerConfirmScene } from "./lock_player_confirm.scene.ts";
+import { LockPlayerEditScene } from "./lock_player_edit.scene.ts";
+import { LockPlayerTeamScene } from "./lock_player_team.scene.ts";
+import { Module, ModuleManager } from "../../module-manager.ts";
+import { LockPlayerMechanic } from "./lock_player.mechanic.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { LockPlayerTeamSettingsScene } from "./lock_player_team_settings.scene.ts";
 
 export interface LockSettings {
 	radius: number; // The radius around the player that will be locked

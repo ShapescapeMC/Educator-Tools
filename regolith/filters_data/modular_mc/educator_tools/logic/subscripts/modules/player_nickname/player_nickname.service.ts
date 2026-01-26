@@ -1,18 +1,18 @@
 import { Player, system, world } from "@minecraft/server";
 import { PropertyStorage, CachedStorage } from "@shapescape/storage";
-import { ModuleManager } from "../../module-manager";
-import { TeamsService } from "../teams/teams.service";
-import { ItemService } from "../item/item.service";
-import { PlayerNicknameApprovalScene } from "./player_nickname_approval.scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { PlayerNicknameEditScene } from "./player_nickname_edit.scene";
-import { PlayerNicknameSettingsScene } from "./player_nickname_settings.scene";
-import { PlayerNicknameStudentScene } from "./player_nickname_student.scene";
-import { PlayerNicknameTeacherScene } from "./player_nickname_teacher.scene";
-import { ButtonConfig } from "../main/main.service";
-import { PlayerNicknameMechanic } from "./player_nickname.mechanic";
-import { Team } from "../teams/interfaces/team.interface";
+import { ModuleManager } from "../../module-manager.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { ItemService } from "../item/item.service.ts";
+import { PlayerNicknameApprovalScene } from "./player_nickname_approval.scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { PlayerNicknameEditScene } from "./player_nickname_edit.scene.ts";
+import { PlayerNicknameSettingsScene } from "./player_nickname_settings.scene.ts";
+import { PlayerNicknameStudentScene } from "./player_nickname_student.scene.ts";
+import { PlayerNicknameTeacherScene } from "./player_nickname_teacher.scene.ts";
+import { ButtonConfig } from "../main/main.service.ts";
+import { PlayerNicknameMechanic } from "./player_nickname.mechanic.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
 
 export interface PlayerNicknameSettings {
 	nicknamesEnabled: boolean;

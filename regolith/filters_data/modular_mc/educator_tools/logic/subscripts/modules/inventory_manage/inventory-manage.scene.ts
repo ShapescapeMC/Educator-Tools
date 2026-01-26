@@ -1,10 +1,10 @@
 import { Player, world } from "@minecraft/server";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { InventoryManageService } from "./inventory-manage.service";
-import { Team } from "../teams/interfaces/team.interface";
-import { TeamsService } from "../teams/teams.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { InventoryManageService } from "./inventory-manage.service.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { TeamsService } from "../teams/teams.service.ts";
 
 export class InventoryManageScene extends ActionUIScene {
 	static readonly id = "inventory_manage";

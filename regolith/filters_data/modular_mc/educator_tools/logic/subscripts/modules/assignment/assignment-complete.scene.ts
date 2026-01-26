@@ -1,7 +1,7 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { Assignment, AssignmentService } from "./assignment.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { Assignment, AssignmentService } from "./assignment.service.ts";
 
 export class AssignmentCompleteScene extends ActionUIScene {
 	static readonly id = "assignment_complete";
@@ -55,6 +55,8 @@ export class AssignmentCompleteScene extends ActionUIScene {
 		if (idxActive === -1 && idxCompleted === -1) return undefined;
 		if (idxActive === -1) return "completed_assignments";
 		if (idxCompleted === -1) return "active_assignments";
-		return idxActive > idxCompleted ? "active_assignments" : "completed_assignments";
+		return idxActive > idxCompleted
+			? "active_assignments"
+			: "completed_assignments";
 	}
 }

@@ -9,9 +9,9 @@ import {
 	world,
 	system,
 } from "@minecraft/server";
-import { Module, ModuleManager } from "../../module-manager";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { TeamsService } from "../teams/teams.service";
+import { Module, ModuleManager } from "../../module-manager.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { TeamsService } from "../teams/teams.service.ts";
 
 export interface SceneSettings {
 	priority: number;

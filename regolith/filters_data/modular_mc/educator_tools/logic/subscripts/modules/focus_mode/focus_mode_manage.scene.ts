@@ -1,9 +1,8 @@
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene, ModalUIScene } from "../scene_manager/ui-scene";
-import { Team } from "../teams/interfaces/team.interface";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ModuleManager } from "../../module-manager";
-import { FocusModeService } from "./focus_mode.service";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ModuleManager } from "../../module-manager.ts";
+import { FocusModeService } from "./focus_mode.service.ts";
 
 export class FocusModeManageScene extends ModalUIScene {
 	public static readonly id = "focus_mode_manage";

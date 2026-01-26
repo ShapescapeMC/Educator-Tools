@@ -1,8 +1,8 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { Team } from "./interfaces/team.interface";
-import { TeamsService } from "./teams.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { Team } from "./interfaces/team.interface.ts";
+import { TeamsService } from "./teams.service.ts";
 
 // TeamSelectScene handles the UI for selecting a team (subject or target) in the educator tools module
 export class TeamSelectScene extends ActionUIScene {

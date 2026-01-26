@@ -1,9 +1,9 @@
-import { Module, ModuleManager } from "../../module-manager";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { MainScene } from "./main.scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ItemService } from "../item/item.service";
-import { TeamsService } from "../teams/teams.service";
+import { Module, ModuleManager } from "../../module-manager.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { MainScene } from "./main.scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ItemService } from "../item/item.service.ts";
+import { TeamsService } from "../teams/teams.service.ts";
 
 /**
  * Interface for button configuration

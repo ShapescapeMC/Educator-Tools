@@ -1,11 +1,11 @@
-import { Module } from "../../module-manager";
+import { Module } from "../../module-manager.ts";
 import { GameMode, Player, world } from "@minecraft/server";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { Team } from "../teams/interfaces/team.interface";
-import { SceneContext } from "../scene_manager/scene-context";
-import { TeleportScene } from "./teleport.scene";
-import { ButtonConfig } from "../main/main.service";
-import { TeamsService } from "../teams/teams.service";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { TeleportScene } from "./teleport.scene.ts";
+import { ButtonConfig } from "../main/main.service.ts";
+import { TeamsService } from "../teams/teams.service.ts";
 
 export class TeleportService implements Module {
 	static readonly id = "teleport";

@@ -1,9 +1,9 @@
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { GamemodeService } from "./gamemode.service";
-import { Team } from "../teams/interfaces/team.interface";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ModuleManager } from "../../module-manager";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { GamemodeService } from "./gamemode.service.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ModuleManager } from "../../module-manager.ts";
 import { GameMode } from "@minecraft/server";
 
 export class SetGamemodeScene extends ActionUIScene {

@@ -1,7 +1,7 @@
-import { Module } from "../../module-manager";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { WorldManagementScene } from "./world_management.scene";
+import { Module } from "../../module-manager.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { WorldManagementScene } from "./world_management.scene.ts";
 
 export class WorldManagementService implements Module {
 	readonly id: string = "world_management";

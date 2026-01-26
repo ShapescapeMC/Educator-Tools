@@ -1,6 +1,10 @@
 import { CachedStorage, PropertyStorage } from "@shapescape/storage";
 import { world } from "@minecraft/server";
-import { Assignment, AssignmentData, Submission } from "./assignment.service";
+import {
+	Assignment,
+	AssignmentData,
+	Submission,
+} from "./assignment.service.ts";
 
 export class AssignmentRepository {
 	private readonly storage: PropertyStorage;

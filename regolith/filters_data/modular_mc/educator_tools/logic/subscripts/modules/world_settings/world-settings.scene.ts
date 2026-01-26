@@ -1,8 +1,8 @@
 import { Difficulty, RawMessage, world } from "@minecraft/server";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { WorldSettingsService } from "./world-settings.service";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { WorldSettingsService } from "./world-settings.service.ts";
 
 /**
  * Class representing the World Settings Scene.

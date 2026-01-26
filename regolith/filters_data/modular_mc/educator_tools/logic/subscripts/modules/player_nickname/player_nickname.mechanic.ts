@@ -6,9 +6,9 @@ import {
 	Vector3,
 	world,
 } from "@minecraft/server";
-import { PlayerNicknameService } from "./player_nickname.service";
-import { TeamsService } from "../teams/teams.service";
-import { SceneManager } from "../scene_manager/scene-manager";
+import { PlayerNicknameService } from "./player_nickname.service.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
 import { Vec3 } from "@bedrock-oss/bedrock-boost";
 
 export class PlayerNicknameMechanic {
@@ -30,13 +30,19 @@ export class PlayerNicknameMechanic {
 			this.onPlayerLeave(event);
 		});
 
-		system.runInterval(() => {
-			this.remindApprovalQueue();
-		}, 20 * 60 * 3);
+		system.runInterval(
+			() => {
+				this.remindApprovalQueue();
+			},
+			20 * 60 * 3,
+		);
 
-		system.runInterval(() => {
-			this.checkPlayerPrompts();
-		}, 20 + Math.floor(Math.random() * 20));
+		system.runInterval(
+			() => {
+				this.checkPlayerPrompts();
+			},
+			20 + Math.floor(Math.random() * 20),
+		);
 	}
 
 	onPlayerJoin(event: PlayerSpawnAfterEvent): void {

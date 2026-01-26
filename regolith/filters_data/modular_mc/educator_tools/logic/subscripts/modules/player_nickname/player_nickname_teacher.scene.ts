@@ -1,7 +1,7 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { PlayerNicknameService } from "./player_nickname.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { PlayerNicknameService } from "./player_nickname.service.ts";
 
 export class PlayerNicknameTeacherScene extends ActionUIScene {
 	static readonly id = "player_nickname_teacher";
@@ -21,12 +21,12 @@ export class PlayerNicknameTeacherScene extends ActionUIScene {
 				? {}
 				: {
 						text: "\n",
-				  },
+					},
 			settings.nicknamesEnabled
 				? {}
 				: {
 						translate: "edu_tools.ui.player_nickname_teacher.warning_disabled",
-				  },
+					},
 		]);
 
 		if (settings.requireApproval && settings.nicknamesEnabled) {

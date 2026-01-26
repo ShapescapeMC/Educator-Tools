@@ -1,8 +1,8 @@
 import { RawMessage, world } from "@minecraft/server";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene, RawBodyElement } from "../scene_manager/ui-scene";
-import { Timer, TimerDuration, TimerService } from "./timer.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene, RawBodyElement } from "../scene_manager/ui-scene.ts";
+import { Timer, TimerDuration, TimerService } from "./timer.service.ts";
 
 export class TimerEditScene extends ModalUIScene {
 	static readonly id = "edit_timer";
@@ -133,7 +133,8 @@ export class TimerEditScene extends ModalUIScene {
 
 	private applyChanges(context: SceneContext): void {
 		const rawDuration = context.getData("timer_duration");
-		const duration = (typeof rawDuration === "number" && rawDuration > 0) ? rawDuration : 60;
+		const duration =
+			typeof rawDuration === "number" && rawDuration > 0 ? rawDuration : 60;
 		const showTimer = context.getData("show_timer") ?? true;
 		const countOffline = context.getData("count_offline") ?? false;
 		const timer: Partial<Timer> = {

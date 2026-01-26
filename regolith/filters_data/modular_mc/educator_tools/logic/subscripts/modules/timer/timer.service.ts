@@ -1,5 +1,5 @@
 import { CachedStorage, PropertyStorage } from "@shapescape/storage";
-import { Module } from "../../module-manager";
+import { Module } from "../../module-manager.ts";
 import {
 	Entity,
 	EntityHealthComponent,
@@ -7,13 +7,13 @@ import {
 	system,
 	world,
 } from "@minecraft/server";
-import { TimerMechanic } from "./timer.mechanic";
+import { TimerMechanic } from "./timer.mechanic.ts";
 import { Vec3 } from "@bedrock-oss/bedrock-boost";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { TimerScene } from "./timer.scene";
-import { ButtonConfig } from "../main/main.service";
-import { TimerEditScene } from "./timer-edit.scene";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { TimerScene } from "./timer.scene.ts";
+import { ButtonConfig } from "../main/main.service.ts";
+import { TimerEditScene } from "./timer-edit.scene.ts";
 
 /**
  * Represents a timer configuration and state

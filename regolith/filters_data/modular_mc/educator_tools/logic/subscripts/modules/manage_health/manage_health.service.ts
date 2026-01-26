@@ -1,18 +1,18 @@
-import { Module } from "../../module-manager";
+import { Module } from "../../module-manager.ts";
 import {
 	EntityHealthComponent,
 	GameMode,
 	Player,
 	world,
 } from "@minecraft/server";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { Team } from "../teams/interfaces/team.interface";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ButtonConfig } from "../main/main.service";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ButtonConfig } from "../main/main.service.ts";
 import { PropertyStorage } from "@shapescape/storage";
-import { ManageHealthMechanic } from "./manage_health.mechanic";
-import { ManageHealthScene } from "./manage_health.scene";
-import { ManageHealthSettingsScene } from "./manage_health_settings.scene";
+import { ManageHealthMechanic } from "./manage_health.mechanic.ts";
+import { ManageHealthScene } from "./manage_health.scene.ts";
+import { ManageHealthSettingsScene } from "./manage_health_settings.scene.ts";
 
 export interface HealthProperties {
 	health: boolean;

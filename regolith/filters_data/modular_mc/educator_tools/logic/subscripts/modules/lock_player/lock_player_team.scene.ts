@@ -1,10 +1,10 @@
 import { world } from "@minecraft/server";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { LockPlayerService } from "./lock_player.service";
-import { Team } from "../teams/interfaces/team.interface";
-import { TeamsService } from "../teams/teams.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { LockPlayerService } from "./lock_player.service.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { TeamsService } from "../teams/teams.service.ts";
 
 export class LockPlayerTeamScene extends ModalUIScene {
 	static readonly id = "lock_player_team";

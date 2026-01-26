@@ -16,9 +16,9 @@ import {
 	RawMessageScore,
 	RawText,
 } from "@minecraft/server";
-import { SceneManager } from "./scene-manager";
-import { SceneContext } from "./scene-context";
-import { ConfirmSceneConfig } from "../confirm/confirm.scene";
+import { SceneManager } from "./scene-manager.ts";
+import { SceneContext } from "./scene-context.ts";
+import { ConfirmSceneConfig } from "../confirm/confirm.scene.ts";
 
 /**
  * Interface representing a RawTextElement.

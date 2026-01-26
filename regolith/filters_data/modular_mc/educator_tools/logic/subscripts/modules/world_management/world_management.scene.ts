@@ -1,6 +1,6 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
 
 export class WorldManagementScene extends ActionUIScene {
 	static readonly id = "world_management";
@@ -30,7 +30,11 @@ export class WorldManagementScene extends ActionUIScene {
 		this.addButton(
 			"edu_tools.ui.world_management.buttons.classroom_limitations",
 			(): void => {
-				sceneManager.openSceneWithContext(context, "classroom_limitations", true);
+				sceneManager.openSceneWithContext(
+					context,
+					"classroom_limitations",
+					true,
+				);
 			},
 			"textures/edu_tools/ui/icons/world_management/classroom_limitations",
 		);

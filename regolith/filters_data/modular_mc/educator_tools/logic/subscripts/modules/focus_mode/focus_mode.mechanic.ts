@@ -1,5 +1,5 @@
 import { Player, system, world } from "@minecraft/server";
-import { FocusModeService } from "./focus_mode.service";
+import { FocusModeService } from "./focus_mode.service.ts";
 
 export class FocusModeMechanic {
 	static readonly id = "focus_mode";

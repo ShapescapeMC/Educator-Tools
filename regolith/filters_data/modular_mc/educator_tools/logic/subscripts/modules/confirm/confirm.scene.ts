@@ -1,7 +1,7 @@
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ConfirmSceneConfig } from "./confirm-scene-config";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ConfirmSceneConfig } from "./confirm-scene-config.ts";
 
 /**
  * Class representing the Confirmation Scene.
@@ -39,4 +39,4 @@ export class ConfirmScene extends ActionUIScene {
 }
 
 // Export the interface for use in other files
-export { ConfirmSceneConfig as Config } from "./confirm-scene-config";
+export { ConfirmSceneConfig as Config } from "./confirm-scene-config.ts";

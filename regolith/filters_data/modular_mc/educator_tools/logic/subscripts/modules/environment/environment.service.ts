@@ -1,12 +1,12 @@
 import { TimeOfDay, WeatherType, world } from "@minecraft/server";
-import { Module } from "../../module-manager";
-import { EnvironmentScene } from "./environment.scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { EnvironmentWeatherScene } from "./environment_weather.scene";
-import { EnvironmentDaytimeScene } from "./environment_daytime.scene";
+import { Module } from "../../module-manager.ts";
+import { EnvironmentScene } from "./environment.scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { EnvironmentWeatherScene } from "./environment_weather.scene.ts";
+import { EnvironmentDaytimeScene } from "./environment_daytime.scene.ts";
 import { PropertyStorage } from "@shapescape/storage";
-import { EnvironmentMechanic } from "./environment.mechanic";
+import { EnvironmentMechanic } from "./environment.mechanic.ts";
 
 /**
  * Service module for managing world environment settings including weather, time of day, and day/night cycles.

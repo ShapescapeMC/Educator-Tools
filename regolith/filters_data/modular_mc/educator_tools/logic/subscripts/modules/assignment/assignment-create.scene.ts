@@ -1,10 +1,10 @@
 import { RawMessage } from "@minecraft/server";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { Team } from "../teams/interfaces/team.interface";
-import { Assignment, AssignmentService } from "./assignment.service";
-import { TeamsService } from "../teams/teams.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { Assignment, AssignmentService } from "./assignment.service.ts";
+import { TeamsService } from "../teams/teams.service.ts";
 
 export class AssignmentCreateScene extends ModalUIScene {
 	static readonly id = "assignment_create";

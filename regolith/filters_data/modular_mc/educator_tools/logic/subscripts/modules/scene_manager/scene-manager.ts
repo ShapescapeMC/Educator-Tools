@@ -5,12 +5,12 @@ import {
 	system,
 } from "@minecraft/server";
 import { PropertyStorage } from "@shapescape/storage";
-import { ModuleManager, Module } from "../../module-manager";
-import { TeamsService } from "../teams/teams.service";
-import { SceneContext } from "./scene-context";
-import { ConfirmSceneConfig } from "../confirm/confirm-scene-config";
-import { MainScene } from "../main/main.scene";
-import { ConfirmScene } from "../confirm/confirm.scene";
+import { ModuleManager, Module } from "../../module-manager.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { SceneContext } from "./scene-context.ts";
+import { ConfirmSceneConfig } from "../confirm/confirm-scene-config.ts";
+import { MainScene } from "../main/main.scene.ts";
+import { ConfirmScene } from "../confirm/confirm.scene.ts";
 
 type SceneFactory = (
 	manager: SceneManager,

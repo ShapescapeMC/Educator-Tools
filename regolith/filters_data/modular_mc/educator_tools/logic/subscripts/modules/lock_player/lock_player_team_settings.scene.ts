@@ -1,7 +1,7 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { LockPlayerService } from "./lock_player.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { LockPlayerService } from "./lock_player.service.ts";
 
 export class LockPlayerTeamSettingsScene extends ActionUIScene {
 	static readonly id = "lock_player_team_settings";

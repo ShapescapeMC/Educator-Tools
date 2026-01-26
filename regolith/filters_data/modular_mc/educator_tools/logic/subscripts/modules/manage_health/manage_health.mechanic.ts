@@ -1,5 +1,5 @@
 import { system, world } from "@minecraft/server";
-import { ManageHealthService } from "./manage_health.service";
+import { ManageHealthService } from "./manage_health.service.ts";
 
 export class ManageHealthMechanic {
 	static readonly id = "manage_health";

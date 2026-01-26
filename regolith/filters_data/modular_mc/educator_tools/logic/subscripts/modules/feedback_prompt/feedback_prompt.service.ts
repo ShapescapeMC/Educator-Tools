@@ -1,9 +1,9 @@
 import { Player, world } from "@minecraft/server";
-import { Module, ModuleManager } from "../../module-manager";
-import { ItemService } from "../item/item.service";
-import { TeamsService } from "../teams/teams.service";
+import { Module, ModuleManager } from "../../module-manager.ts";
+import { ItemService } from "../item/item.service.ts";
+import { TeamsService } from "../teams/teams.service.ts";
 import { PropertyStorage } from "@shapescape/storage";
-import { FeedbackPromptMechanic } from "./feedback-prompt.mechanic";
+import { FeedbackPromptMechanic } from "./feedback-prompt.mechanic.ts";
 
 export type PromptCandidate = {
 	scheduledAt: Date;

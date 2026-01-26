@@ -1,7 +1,7 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { PlayerNicknameService } from "./player_nickname.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { PlayerNicknameService } from "./player_nickname.service.ts";
 
 export class PlayerNicknameSettingsScene extends ModalUIScene {
 	static readonly id = "player_nickname_settings";

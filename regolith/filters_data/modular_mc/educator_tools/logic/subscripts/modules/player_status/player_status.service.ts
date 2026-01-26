@@ -5,7 +5,7 @@ import {
 	HudElement,
 	HudVisibility,
 } from "@minecraft/server";
-import { Module } from "../../module-manager";
+import { Module } from "../../module-manager.ts";
 import { PropertyStorage } from "@shapescape/storage";
 
 export class PlayerStatusService implements Module {

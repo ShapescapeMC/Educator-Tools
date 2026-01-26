@@ -1,26 +1,26 @@
 import { PropertyStorage, CachedStorage } from "@shapescape/storage";
 import { world } from "@minecraft/server";
-import { TeamsService } from "./modules/teams/teams.service";
-import { WorldSettingsService } from "./modules/world_settings/world-settings.service";
-import { SceneManager } from "./modules/scene_manager/scene-manager";
-import { ItemService } from "./modules/item/item.service";
-import { ButtonConfig, MainService } from "./modules/main/main.service";
-import { GamemodeService } from "./modules/gamemode/gamemode.service";
-import { TeleportService } from "./modules/teleport/teleport.service";
-import { ScenesService } from "./modules/scenes/scenes.service";
-import { ManageHealthService } from "./modules/manage_health/manage_health.service";
-import { PlayerStatusService } from "./modules/player_status/player_status.service";
-import { FocusModeService } from "./modules/focus_mode/focus_mode.service";
-import { InventoryManageService } from "./modules/inventory_manage/inventory-manage.service";
-import { EnvironmentService } from "./modules/environment/environment.service";
-import { LockPlayerService } from "./modules/lock_player/lock_player.service";
-import { TimerService } from "./modules/timer/timer.service";
-import { WorldManagementService } from "./modules/world_management/world_management.service";
-import { AssignmentService } from "./modules/assignment/assignment.service";
-import { AssignmentItemService } from "./modules/assignment-item/assignment-item.service";
-import { ClassroomLimitationsService } from "./modules/classroom_limitations/classroom-limitations.service";
-import { PlayerNicknameService } from "./modules/player_nickname/player_nickname.service";
-import { FeedbackPromptService } from "./modules/feedback_prompt/feedback_prompt.service";
+import { TeamsService } from "./modules/teams/teams.service.ts";
+import { WorldSettingsService } from "./modules/world_settings/world-settings.service.ts";
+import { SceneManager } from "./modules/scene_manager/scene-manager.ts";
+import { ItemService } from "./modules/item/item.service.ts";
+import { ButtonConfig, MainService } from "./modules/main/main.service.ts";
+import { GamemodeService } from "./modules/gamemode/gamemode.service.ts";
+import { TeleportService } from "./modules/teleport/teleport.service.ts";
+import { ScenesService } from "./modules/scenes/scenes.service.ts";
+import { ManageHealthService } from "./modules/manage_health/manage_health.service.ts";
+import { PlayerStatusService } from "./modules/player_status/player_status.service.ts";
+import { FocusModeService } from "./modules/focus_mode/focus_mode.service.ts";
+import { InventoryManageService } from "./modules/inventory_manage/inventory-manage.service.ts";
+import { EnvironmentService } from "./modules/environment/environment.service.ts";
+import { LockPlayerService } from "./modules/lock_player/lock_player.service.ts";
+import { TimerService } from "./modules/timer/timer.service.ts";
+import { WorldManagementService } from "./modules/world_management/world_management.service.ts";
+import { AssignmentService } from "./modules/assignment/assignment.service.ts";
+import { AssignmentItemService } from "./modules/assignment-item/assignment-item.service.ts";
+import { ClassroomLimitationsService } from "./modules/classroom_limitations/classroom-limitations.service.ts";
+import { PlayerNicknameService } from "./modules/player_nickname/player_nickname.service.ts";
+import { FeedbackPromptService } from "./modules/feedback_prompt/feedback_prompt.service.ts";
 
 /**
  * Interface that all modules must implement.

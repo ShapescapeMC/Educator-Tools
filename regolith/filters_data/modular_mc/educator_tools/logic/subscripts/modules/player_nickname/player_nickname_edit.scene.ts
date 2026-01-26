@@ -1,9 +1,9 @@
 import { Player, world } from "@minecraft/server";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { TeamsService } from "../teams/teams.service";
-import { ColorCode, PlayerNicknameService } from "./player_nickname.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { ColorCode, PlayerNicknameService } from "./player_nickname.service.ts";
 
 export class PlayerNicknameEditScene extends ModalUIScene {
 	static readonly id = "player_nickname_edit";

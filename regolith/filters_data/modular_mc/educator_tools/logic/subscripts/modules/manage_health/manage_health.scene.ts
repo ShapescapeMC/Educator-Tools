@@ -1,10 +1,10 @@
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { Team } from "../teams/interfaces/team.interface";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ModuleManager } from "../../module-manager";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ModuleManager } from "../../module-manager.ts";
 import { GameMode } from "@minecraft/server";
-import { ManageHealthService } from "./manage_health.service";
+import { ManageHealthService } from "./manage_health.service.ts";
 
 export class ManageHealthScene extends ActionUIScene {
 	public static readonly id = "manage_health";

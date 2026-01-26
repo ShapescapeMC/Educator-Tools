@@ -13,7 +13,7 @@ import {
 	EntityEquippableComponent,
 	EquipmentSlot,
 } from "@minecraft/server";
-import { ClassroomLimitationsService } from "./classroom-limitations.service";
+import { ClassroomLimitationsService } from "./classroom-limitations.service.ts";
 
 /**
  * Runtime enforcement layer for classroom limitation rules (restricted items & entities).
@@ -80,9 +80,15 @@ export class ClassroomLimitationsMechanic {
 	}
 
 	private scheduleInventoryScans(): void {
-		system.runInterval(() => {
-			if (!this.scanInProgress) this.launchInventoryScanJob();
-		}, ClassroomLimitationsMechanic.BASE_SCAN_INTERVAL + Math.floor(Math.random() * ClassroomLimitationsMechanic.SCAN_INTERVAL_JITTER));
+		system.runInterval(
+			() => {
+				if (!this.scanInProgress) this.launchInventoryScanJob();
+			},
+			ClassroomLimitationsMechanic.BASE_SCAN_INTERVAL +
+				Math.floor(
+					Math.random() * ClassroomLimitationsMechanic.SCAN_INTERVAL_JITTER,
+				),
+		);
 	}
 
 	private launchInventoryScanJob(): void {

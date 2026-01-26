@@ -1,5 +1,5 @@
 import { world } from "@minecraft/server";
-import { ModuleManager } from "./subscripts/module-manager";
+import { ModuleManager } from "./subscripts/module-manager.ts";
 
 class EducatorTools {
 	constructor() {

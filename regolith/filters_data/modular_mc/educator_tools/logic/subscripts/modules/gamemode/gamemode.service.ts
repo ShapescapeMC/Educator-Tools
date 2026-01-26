@@ -1,10 +1,10 @@
-import { Module } from "../../module-manager";
+import { Module } from "../../module-manager.ts";
 import { GameMode, Player, world } from "@minecraft/server";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { Team } from "../teams/interfaces/team.interface";
-import { SetGamemodeScene } from "./set-gamemode.scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ButtonConfig } from "../main/main.service";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { SetGamemodeScene } from "./set-gamemode.scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ButtonConfig } from "../main/main.service.ts";
 
 /**
  * Service for managing player gamemodes.

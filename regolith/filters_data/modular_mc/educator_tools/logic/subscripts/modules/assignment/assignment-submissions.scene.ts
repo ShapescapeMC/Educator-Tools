@@ -1,8 +1,8 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { TeamsService } from "../teams/teams.service";
-import { AssignmentService } from "./assignment.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { AssignmentService } from "./assignment.service.ts";
 
 export class AssignmentSubmissionsScene extends ActionUIScene {
 	static readonly id = "assignment_submissions";

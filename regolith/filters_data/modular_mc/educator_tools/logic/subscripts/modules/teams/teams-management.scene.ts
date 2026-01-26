@@ -1,7 +1,7 @@
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { Team } from "./interfaces/team.interface";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { Team } from "./interfaces/team.interface.ts";
 
 export class TeamsManagementScene extends ActionUIScene {
 	static readonly id = "teams_management";

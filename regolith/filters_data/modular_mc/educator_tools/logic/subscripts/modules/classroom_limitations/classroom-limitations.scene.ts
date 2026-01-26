@@ -1,6 +1,6 @@
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { ClassroomLimitationsService } from "./classroom-limitations.service";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { ClassroomLimitationsService } from "./classroom-limitations.service.ts";
 
 /**
  * UI Scene for Classroom Limitations

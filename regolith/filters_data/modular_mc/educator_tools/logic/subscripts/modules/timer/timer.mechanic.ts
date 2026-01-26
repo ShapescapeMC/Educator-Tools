@@ -1,6 +1,6 @@
 import { Player, system, world } from "@minecraft/server";
-import { TimerService } from "./timer.service";
-import { SceneManager } from "../scene_manager/scene-manager";
+import { TimerService } from "./timer.service.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
 
 export class TimerMechanic {
 	static readonly id = "timer";

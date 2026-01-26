@@ -1,17 +1,17 @@
 import { PropertyStorage } from "@shapescape/storage";
-import { Module, ModuleManager } from "../../module-manager";
+import { Module, ModuleManager } from "../../module-manager.ts";
 import { world, Player, PlayerSpawnAfterEvent } from "@minecraft/server";
-import { Team, TeamsData } from "./interfaces/team.interface";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { TeamSelectScene } from "./team-select.scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { TeamsDeleteScene } from "./team-delete.scene";
-import { TeamsEditScene } from "./teams-edit.scene";
-import { TeamsManagementScene } from "./teams-management.scene";
-import { ButtonConfig } from "../main/main.service";
-import { TeamsEditPlayersApply } from "./teams-edit-players-apply.scene";
-import { TeamsManagePlayersScene } from "./teams-manage-players.scene";
-import { PlayerNicknameService } from "../player_nickname/player_nickname.service";
+import { Team, TeamsData } from "./interfaces/team.interface.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { TeamSelectScene } from "./team-select.scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { TeamsDeleteScene } from "./team-delete.scene.ts";
+import { TeamsEditScene } from "./teams-edit.scene.ts";
+import { TeamsManagementScene } from "./teams-management.scene.ts";
+import { ButtonConfig } from "../main/main.service.ts";
+import { TeamsEditPlayersApply } from "./teams-edit-players-apply.scene.ts";
+import { TeamsManagePlayersScene } from "./teams-manage-players.scene.ts";
+import { PlayerNicknameService } from "../player_nickname/player_nickname.service.ts";
 
 /**
  * Service for managing player teams.

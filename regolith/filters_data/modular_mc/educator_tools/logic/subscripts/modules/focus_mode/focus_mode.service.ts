@@ -1,4 +1,4 @@
-import { Module, ModuleManager } from "../../module-manager";
+import { Module, ModuleManager } from "../../module-manager.ts";
 import {
 	GameMode,
 	HudElement,
@@ -7,16 +7,16 @@ import {
 	Player,
 	world,
 } from "@minecraft/server";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { Team } from "../teams/interfaces/team.interface";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ButtonConfig } from "../main/main.service";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ButtonConfig } from "../main/main.service.ts";
 import { CachedStorage, PropertyStorage } from "@shapescape/storage";
-import { FocusModeMechanic } from "./focus_mode.mechanic";
-import { TeamsService } from "../teams/teams.service";
-import { PlayerStatusService } from "../player_status/player_status.service";
-import { FocusModeScene } from "./focus_mode.scene";
-import { FocusModeManageScene } from "./focus_mode_manage.scene";
+import { FocusModeMechanic } from "./focus_mode.mechanic.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { PlayerStatusService } from "../player_status/player_status.service.ts";
+import { FocusModeScene } from "./focus_mode.scene.ts";
+import { FocusModeManageScene } from "./focus_mode_manage.scene.ts";
 
 /**
  * Service for managing player gamemodes.

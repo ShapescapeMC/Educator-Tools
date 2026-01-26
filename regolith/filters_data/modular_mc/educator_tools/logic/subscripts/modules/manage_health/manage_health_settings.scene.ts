@@ -1,8 +1,8 @@
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ModuleManager } from "../../module-manager";
-import { ManageHealthService } from "./manage_health.service";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ModuleManager } from "../../module-manager.ts";
+import { ManageHealthService } from "./manage_health.service.ts";
 
 export class ManageHealthSettingsScene extends ModalUIScene {
 	public static readonly id = "manage_health_settings";

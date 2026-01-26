@@ -1,5 +1,5 @@
 import { system } from "@minecraft/server";
-import { EnvironmentService } from "./environment.service";
+import { EnvironmentService } from "./environment.service.ts";
 
 /**
  * Mechanic that handles real-time daylight synchronization and smooth time transitions.

@@ -1,20 +1,20 @@
-import { Module, ModuleManager } from "../../module-manager";
+import { Module, ModuleManager } from "../../module-manager.ts";
 import {
 	EntityInventoryComponent,
 	ItemStack,
 	Player,
 	world,
 } from "@minecraft/server";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { SceneContext } from "../scene_manager/scene-context";
-import { ButtonConfig } from "../main/main.service";
-import { Team } from "../teams/interfaces/team.interface";
-import { TeamsService } from "../teams/teams.service";
-import { InventoryManageScene } from "./inventory-manage.scene";
-import { CopyItemScene } from "./copy-item.scene";
-import { CopyHotbarScene } from "./copy-hotbar.scene";
-import { CopyInventoryScene } from "./copy-inventory.scene";
-import { ClearInventoryScene } from "./clear-inventory.scene";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { ButtonConfig } from "../main/main.service.ts";
+import { Team } from "../teams/interfaces/team.interface.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { InventoryManageScene } from "./inventory-manage.scene.ts";
+import { CopyItemScene } from "./copy-item.scene.ts";
+import { CopyHotbarScene } from "./copy-hotbar.scene.ts";
+import { CopyInventoryScene } from "./copy-inventory.scene.ts";
+import { ClearInventoryScene } from "./clear-inventory.scene.ts";
 
 export class InventoryManageService implements Module {
 	static readonly id = "inventory_manage";

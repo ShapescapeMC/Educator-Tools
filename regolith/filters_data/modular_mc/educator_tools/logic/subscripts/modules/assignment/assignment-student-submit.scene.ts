@@ -1,9 +1,9 @@
 import { ModalFormResponse } from "@minecraft/server-ui";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { TeamsService } from "../teams/teams.service";
-import { AssignmentService } from "./assignment.service";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { AssignmentService } from "./assignment.service.ts";
 
 export class AssignmentStudentSubmitScene extends ModalUIScene {
 	static readonly id = "assignment_student_submit";

@@ -1,9 +1,9 @@
 import { Player, world } from "@minecraft/server";
-import { SceneContext } from "../scene_manager/scene-context";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ModalUIScene } from "../scene_manager/ui-scene";
-import { InventoryManageService } from "./inventory-manage.service";
-import { InventoryManageScene } from "./inventory-manage.scene";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { InventoryManageService } from "./inventory-manage.service.ts";
+import { InventoryManageScene } from "./inventory-manage.scene.ts";
 
 export class CopyItemScene extends ModalUIScene {
 	static readonly id = "copy_item";

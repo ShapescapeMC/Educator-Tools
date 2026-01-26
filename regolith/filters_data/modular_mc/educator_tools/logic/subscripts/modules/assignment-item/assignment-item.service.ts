@@ -10,10 +10,10 @@ import {
 	system,
 	PlayerLeaveAfterEvent,
 } from "@minecraft/server";
-import { Module, ModuleManager } from "../../module-manager";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { TeamsService } from "../teams/teams.service";
-import { AssignmentService } from "../assignment/assignment.service";
+import { Module, ModuleManager } from "../../module-manager.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { TeamsService } from "../teams/teams.service.ts";
+import { AssignmentService } from "../assignment/assignment.service.ts";
 
 export class AssignmentItemService implements Module {
 	readonly id: string = "assignment_item";
@@ -93,16 +93,19 @@ export class AssignmentItemService implements Module {
 		if (this.playerTasks.has(player.id)) {
 			return;
 		}
-		const task = system.runInterval(() => {
-			const playerTeams = this.teamsService!.getPlayerTeams(player.id);
-			const assignments = this.assignmentService!.getTeamsAssignments(
-				playerTeams.map((team) => team.id),
-				true,
-			);
-			if (assignments.length > 0) {
-				this.giveAssignmentTool(player);
-			}
-		}, 5 * 20 + Math.random() * 20);
+		const task = system.runInterval(
+			() => {
+				const playerTeams = this.teamsService!.getPlayerTeams(player.id);
+				const assignments = this.assignmentService!.getTeamsAssignments(
+					playerTeams.map((team) => team.id),
+					true,
+				);
+				if (assignments.length > 0) {
+					this.giveAssignmentTool(player);
+				}
+			},
+			5 * 20 + Math.random() * 20,
+		);
 		this.playerTasks.set(player.id, task);
 	}
 

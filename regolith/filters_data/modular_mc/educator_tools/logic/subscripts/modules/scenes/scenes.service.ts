@@ -1,8 +1,8 @@
-import { Module } from "../../module-manager";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { SceneContext } from "../scene_manager/scene-context";
-import { NotEnoughPlayersScene } from "./not-enough-players.scene";
-import { NoTeamsScene } from "./no-teams.scene";
+import { Module } from "../../module-manager.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { NotEnoughPlayersScene } from "./not-enough-players.scene.ts";
+import { NoTeamsScene } from "./no-teams.scene.ts";
 
 export class ScenesService implements Module {
 	static readonly id = "scenes";

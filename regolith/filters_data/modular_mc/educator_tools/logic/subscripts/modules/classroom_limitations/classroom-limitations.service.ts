@@ -1,10 +1,10 @@
-import { Module, ModuleManager } from "../../module-manager";
-import { SceneManager } from "../scene_manager/scene-manager";
+import { Module, ModuleManager } from "../../module-manager.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
 import { PropertyStorage } from "@shapescape/storage";
 import { Player } from "@minecraft/server";
-import { TeamsService } from "../teams/teams.service";
-import { ClassroomLimitationsMechanic } from "./classroom-limitations.mechanic";
-import { ClassroomLimitationsScene } from "./classroom-limitations.scene";
+import { TeamsService } from "../teams/teams.service.ts";
+import { ClassroomLimitationsMechanic } from "./classroom-limitations.mechanic.ts";
+import { ClassroomLimitationsScene } from "./classroom-limitations.scene.ts";
 
 /**
  * ClassroomLimitationsService

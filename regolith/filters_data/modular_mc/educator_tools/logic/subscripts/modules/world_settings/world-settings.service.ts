@@ -1,8 +1,8 @@
 import { world, GameRule, GameRules, Difficulty } from "@minecraft/server";
 import { PropertyStorage } from "@shapescape/storage";
-import { Module } from "../../module-manager";
-import { SceneManager } from "../scene_manager/scene-manager";
-import { WorldSettingsScene } from "./world-settings.scene";
+import { Module } from "../../module-manager.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { WorldSettingsScene } from "./world-settings.scene.ts";
 
 /**
  * Interface representing a game rule with its current value and update method

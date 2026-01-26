@@ -1,5 +1,5 @@
 import { Player } from "@minecraft/server";
-import { Team } from "../teams/interfaces/team.interface";
+import { Team } from "../teams/interfaces/team.interface.ts";
 
 /**
  * Class representing the context for a scene.

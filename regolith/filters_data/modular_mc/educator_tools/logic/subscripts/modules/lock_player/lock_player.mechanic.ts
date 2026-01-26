@@ -1,7 +1,7 @@
 import { Player, system, Vector2, Vector3, world } from "@minecraft/server";
-import { LockPlayerService, LockSettings } from "./lock_player.service";
-import { ModuleManager } from "../../module-manager";
-import { TeamsService } from "../teams/teams.service";
+import { LockPlayerService, LockSettings } from "./lock_player.service.ts";
+import { ModuleManager } from "../../module-manager.ts";
+import { TeamsService } from "../teams/teams.service.ts";
 import { Polyfill, Vec3 } from "@bedrock-oss/bedrock-boost";
 
 /**

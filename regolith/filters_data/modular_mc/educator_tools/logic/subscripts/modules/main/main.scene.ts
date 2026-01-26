@@ -1,8 +1,8 @@
-import { SceneManager } from "../scene_manager/scene-manager";
-import { ActionUIScene } from "../scene_manager/ui-scene";
-import { SceneContext } from "../scene_manager/scene-context";
-import { MainService } from "./main.service";
-import { getAddonVersion } from "../../utils/addon-version";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { ActionUIScene } from "../scene_manager/ui-scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { MainService } from "./main.service.ts";
+import { getAddonVersion } from "../../utils/addon-version.ts";
 
 /**
  * Class representing the Main Scene.
