@@ -144,6 +144,7 @@ edu_tools.ui.lock_player_confirm.team.body.2=§r。这将防止他们移动到�
 edu_tools.ui.lock_player_confirm.buttons.confirm=确认
 edu_tools.ui.lock_player_confirm.buttons.cancel=取消
 edu_tools.actionbar.lock_player.too_far_push=您移动得太远了
+edu_tools.actionbar.lock_player.too_far_push=§c您移动得太远了
 edu_tools.message.lock_player_team_settings.teleport_to_center=§a已将被锁定的玩家传送到区域中心。
 edu_tools.message.lock_player_team_settings.teleport_to_center_player=§a您已被传送到被锁定区域的中心。
 edu_tools.message.lock_player_team_settings.update_center=§a被锁定区域的中心已更新为您当前的位置。
