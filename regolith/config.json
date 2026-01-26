@@ -183,7 +183,7 @@
 					{
 						"filter": "python_modules"
 					},
-					{
+					/*{
 						"filter": "system_template",
 						"settings": {
 							"log_path": "system_template_log.json",
@@ -214,7 +214,7 @@
 							"outfile": "`BP/scripts/{path_namespace}/main.js`",
 							"scope_path": "scope.json"
 						}
-					},
+					},*/
 					{
 						"filter": "modular_mc",
 						"settings": {
