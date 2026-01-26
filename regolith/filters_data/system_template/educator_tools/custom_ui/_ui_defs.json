@@ -1,3 +1,0 @@
-{
-	"ui_defs": "`[p.name for p in Path('ui').glob('*')]`"
-}
