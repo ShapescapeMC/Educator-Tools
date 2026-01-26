@@ -216,7 +216,15 @@
 						}
 					},
 					{
-						"filter": "modular_mc"
+						"filter": "modular_mc",
+						"settings": {
+							"whitelist": [
+								"educator_tools",
+								"letter_blocks",
+								"scripting_setup",
+								"addon_setup/educator_tools"
+							]
+						}
 					},
 					{
 						"filter": "subfunctions"
