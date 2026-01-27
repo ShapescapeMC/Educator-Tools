@@ -188,22 +188,86 @@ export async function generateLetterImage(
     textColor[3] / 255
   })`;
 
-  // Calculate text bounding box to center it precisely
-  const metrics = ctx.measureText(char);
+  // Center the glyph using the same approach as Pillow's textbbox:
+  // 1. Render the character at (0, 0) on a temporary canvas
+  // 2. Scan pixels to find the actual bounding box (left, top, right, bottom)
+  // 3. Compute the draw position so the visual bounding box is centered
+  //
+  // This avoids relying on measureText's actualBoundingBox* properties,
+  // which may be undefined or inaccurate in Deno canvas (skia).
 
-  // Calculate the actual visual bounds of the character
-  const charWidth = metrics.actualBoundingBoxLeft +
-    metrics.actualBoundingBoxRight;
-  const charHeight = metrics.actualBoundingBoxAscent +
-    metrics.actualBoundingBoxDescent;
+  ctx.textAlign = "left";
+  ctx.textBaseline = "alphabetic";
 
-  // Calculate position to center the character's visual bounding box
-  const x = (workSize[0] - charWidth) / 2 +
-    metrics.actualBoundingBoxLeft;
-  const y = (workSize[1] - charHeight) / 2 +
-    metrics.actualBoundingBoxAscent;
+  // Use a temporary canvas to measure the glyph's true pixel bounds.
+  // Draw at a safe origin offset so glyphs extending left/above aren't clipped.
+  const tmpCanvas = createCanvas(workSize[0] * 2, workSize[1] * 2);
+  const tmpCtx = tmpCanvas.getContext("2d");
 
-  // Draw the letter at calculated position
+  // Load font into tmp canvas too
+  if (resolvedFontPath && fs.existsSync(resolvedFontPath)) {
+    try {
+      const tmpFontData = fs.readFileSync(resolvedFontPath);
+      tmpCanvas.loadFont(tmpFontData, { family: fontFamily });
+    } catch (_e) { /* font already loaded, ignore */ }
+  }
+
+  tmpCtx.font = ctx.font;
+  tmpCtx.fillStyle = "white";
+  tmpCtx.textAlign = "left";
+  tmpCtx.textBaseline = "alphabetic";
+
+  // Draw at the center of the oversized tmp canvas to avoid clipping
+  const tmpOriginX = workSize[0];
+  const tmpOriginY = workSize[1];
+  tmpCtx.fillText(char, tmpOriginX, tmpOriginY);
+
+  // Scan pixels to find bounding box of non-zero alpha
+  const tmpW = tmpCanvas.width;
+  const tmpH = tmpCanvas.height;
+  const imgData = tmpCtx.getImageData(0, 0, tmpW, tmpH);
+  const pixels = imgData.data;
+
+  let minX = tmpW, minY = tmpH, maxX = 0, maxY = 0;
+  for (let py = 0; py < tmpH; py++) {
+    for (let px = 0; px < tmpW; px++) {
+      const alpha = pixels[(py * tmpW + px) * 4 + 3];
+      if (alpha > 0) {
+        if (px < minX) minX = px;
+        if (px > maxX) maxX = px;
+        if (py < minY) minY = py;
+        if (py > maxY) maxY = py;
+      }
+    }
+  }
+
+  if (maxX < minX || maxY < minY) {
+    // No visible pixels found — glyph is empty, skip
+    console.warn(`[${char}] No visible pixels found, skipping`);
+    return;
+  }
+
+  // Bounding box relative to draw origin (like Pillow's textbbox at (0,0))
+  const bbLeft = minX - tmpOriginX;   // offset from origin to left edge
+  const bbTop = minY - tmpOriginY;    // offset from origin to top edge
+  const bbRight = maxX - tmpOriginX;  // offset from origin to right edge
+  const bbBottom = maxY - tmpOriginY; // offset from origin to bottom edge
+
+  const textWidth = bbRight - bbLeft;
+  const textHeight = bbBottom - bbTop;
+
+  // Pillow-equivalent centering:
+  // position = ((canvasW - textWidth) / 2 - left, (canvasH - textHeight) / 2 - top)
+  const x = (workSize[0] - textWidth) / 2 - bbLeft;
+  const y = (workSize[1] - textHeight) / 2 - bbTop;
+
+  console.log(
+    `[${char}] bbox: left=${bbLeft}, top=${bbTop}, right=${bbRight}, bottom=${bbBottom}, textW=${textWidth}, textH=${textHeight}`,
+  );
+  console.log(
+    `[${char}] draw position: x=${x}, y=${y}, canvas=${workSize[0]}x${workSize[1]}`,
+  );
+
   ctx.fillText(char, x, y);
 
   // Downsample to final size if needed
