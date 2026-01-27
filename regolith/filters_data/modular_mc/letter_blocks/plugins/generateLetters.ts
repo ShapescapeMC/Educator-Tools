@@ -248,9 +248,9 @@ export async function generateLetterImage(
   }
 
   // Bounding box relative to draw origin (like Pillow's textbbox at (0,0))
-  const bbLeft = minX - tmpOriginX;   // offset from origin to left edge
-  const bbTop = minY - tmpOriginY;    // offset from origin to top edge
-  const bbRight = maxX - tmpOriginX;  // offset from origin to right edge
+  const bbLeft = minX - tmpOriginX; // offset from origin to left edge
+  const bbTop = minY - tmpOriginY; // offset from origin to top edge
+  const bbRight = maxX - tmpOriginX; // offset from origin to right edge
   const bbBottom = maxY - tmpOriginY; // offset from origin to bottom edge
 
   const textWidth = bbRight - bbLeft;
@@ -265,7 +265,9 @@ export async function generateLetterImage(
     `[${char}] bbox: left=${bbLeft}, top=${bbTop}, right=${bbRight}, bottom=${bbBottom}, textW=${textWidth}, textH=${textHeight}`,
   );
   console.log(
-    `[${char}] draw position: x=${x}, y=${y}, canvas=${workSize[0]}x${workSize[1]}`,
+    `[${char}] draw position: x=${x}, y=${y}, canvas=${workSize[0]}x${
+      workSize[1]
+    }`,
   );
 
   ctx.fillText(char, x, y);
