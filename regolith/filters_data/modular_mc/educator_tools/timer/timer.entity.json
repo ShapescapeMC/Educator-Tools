@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/edu_tools/ui/icons/main/timer"
+				"default": "textures/edu_tools/ui/main/timer"
 			},
 			"geometry": {
 				"default": "geometry.edu_tools.timer"
