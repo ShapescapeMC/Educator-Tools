@@ -120,7 +120,6 @@ export const scope = {
           safe_name: "vulgar_fraction_one_half",
           group: "diacritic",
         },
-        { char: "\u00bf", safe_name: "inverted_question", group: "diacritic" },
         { char: "\u0178", safe_name: "y_with_diaeresis", group: "diacritic" },
         { char: "\u00ce", safe_name: "iota_with_tonos", group: "diacritic" },
         {
