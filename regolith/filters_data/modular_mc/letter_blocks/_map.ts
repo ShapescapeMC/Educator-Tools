@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { generateLetterImages } from "./plugins/generateLetters.ts";
+import { generateLetterImage } from "./plugins/generateLetters.ts";
 import { scope } from "./scope.ts";
 
 // Get all PNG files from letter_blocks directory
@@ -25,13 +25,15 @@ function getLetterBlockPngs(dir: string): string[] {
 
 // Get letters from generated PNG files
 function getLettersFromPngs(): string[] {
-  const pngs = getLetterBlockPngs("letter_blocks");
+  const pngs = getLetterBlockPngs(
+    "data/modular_mc/letter_blocks/letter_blocks",
+  );
   return pngs.map((p) => path.basename(p, ".block.png"));
 }
 
 // Get categories and their blocks
 function getCategoriesData() {
-  const letterBlocksDir = "letter_blocks";
+  const letterBlocksDir = "data/modular_mc/letter_blocks/letter_blocks";
   if (!fs.existsSync(letterBlocksDir)) {
     return { categories: [], categoryNames: [] };
   }
@@ -56,17 +58,14 @@ function getCategoriesData() {
 }
 
 // Generate letter images for each letter set (executed at build time)
-const __dirname = path.dirname(import.meta.url.replace("file:///", ""));
-scope.letter_sets.forEach((ls) => {
-  generateLetterImages(
-    {
-      source: "letter_blocks/**/*.block.png",
-      target: ":autoFlat",
-      onConflict: "skip",
-    },
-    {
-      letters: ls.letters,
-      outputDir: "./letter_blocks",
+// Generate all letter images synchronously before building the MAP
+for (const ls of scope.letter_sets) {
+  for (const letter of ls.letters) {
+    await generateLetterImage({
+      char: letter.char,
+      safeName: letter.safe_name,
+      group: letter.group,
+      outputDir: "./data/modular_mc/letter_blocks/letter_blocks",
       fontSize: ls.font_size,
       textColor: ls.text_color as [number, number, number, number],
       imageSize: ls.image_size as [number, number],
@@ -74,10 +73,9 @@ scope.letter_sets.forEach((ls) => {
       backgroundImagePath: ls.background_image_path,
       suffix: ls.suffix,
       aliasing: ls.aliasing,
-      workingDir: __dirname,
-    },
-  );
-});
+    });
+  }
+}
 
 export const MAP = [
   // Textures - Item texture for block and item icon
@@ -174,6 +172,10 @@ export const MAP = [
   },
   {
     source: "block/letter_block_placer.animation.json",
+    target: ":autoFlat",
+  },
+  {
+    source: "letter_blocks/**/*.block.png",
     target: ":autoFlat",
   },
   // Debug function for getting all block items

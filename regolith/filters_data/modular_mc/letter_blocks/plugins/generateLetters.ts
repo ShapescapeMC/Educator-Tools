@@ -11,14 +11,10 @@ import {
   loadImage,
 } from "https://deno.land/x/canvas/mod.ts";
 
-export interface LetterItem {
+export interface GenerateLetterImageOptions {
   char: string;
-  safe_name: string;
-  group: string;
-}
-
-export interface GenerateLetterImagesOptions {
-  letters: LetterItem[];
+  safeName?: string;
+  group?: string;
   outputDir: string;
   fontPath?: string;
   fontSize: number;
@@ -27,15 +23,6 @@ export interface GenerateLetterImagesOptions {
   backgroundImagePath?: string;
   suffix?: string | null;
   aliasing: boolean;
-  workingDir?: string;
-}
-
-interface MapEntry {
-  source: string;
-  target: string | { path: string };
-  onConflict?: string;
-  scope?: Record<string, any>;
-  jsonTemplate?: boolean;
 }
 
 function safeFilename(character: string): string {
@@ -46,15 +33,16 @@ function safeFilename(character: string): string {
   return `char_${codePoint.toString(16)}`;
 }
 
-export async function generateLetterImages(
-  mapEntry: MapEntry,
-  options: GenerateLetterImagesOptions,
-): Promise<MapEntry> {
+export async function generateLetterImage(
+  options: GenerateLetterImageOptions,
+): Promise<void> {
   /**
-   * Generates an image for each letter in the provided array with transparent background.
+   * Generates an image for a single letter with optional background.
    */
   const {
-    letters,
+    char,
+    safeName,
+    group,
     outputDir = ".",
     fontPath,
     fontSize = 64,
@@ -63,44 +51,45 @@ export async function generateLetterImages(
     backgroundImagePath,
     suffix,
     aliasing = false,
-    workingDir,
   } = options;
 
-  // Determine the base directory for resolving relative paths
-  const baseDir = workingDir || Deno.cwd();
+  // Skip whitespace-only characters
+  if (!char.trim()) {
+    return;
+  }
 
-  // Create output directory if it doesn't exist
+  // Determine the base directory for resolving relative paths
+  // Use the module's directory as base, not Deno.cwd()
+  const moduleUrl = new URL(import.meta.url);
+  const modulePath = moduleUrl.pathname.replace(/^\/([A-Z]:)/, "$1"); // Fix Windows paths
+  const baseDir = path.dirname(path.dirname(modulePath)); // Go up from plugins/ to letter_blocks/
+
+  // Determine filename
+  const filename = safeName || safeFilename(char);
+
+  // Create output directory path
+  // outputDir should be relative to Deno.cwd() (the tmp directory)
   const outputPath = path.isAbsolute(outputDir)
     ? outputDir
-    : path.resolve(baseDir, outputDir);
-  if (!fs.existsSync(outputPath)) {
-    fs.mkdirSync(outputPath, { recursive: true });
+    : path.resolve(Deno.cwd(), outputDir);
+
+  // Add group subdirectory if specified
+  let finalOutputPath = outputPath;
+  if (group) {
+    finalOutputPath = path.join(outputPath, group);
   }
 
-  // Extract background image name if provided
-  let backgroundSubfolder: string | null = null;
+  // Add background subfolder if available
   if (backgroundImagePath) {
     const bgFilename = path.basename(backgroundImagePath);
-    backgroundSubfolder = bgFilename.replace(".block.png", "");
+    const backgroundSubfolder = bgFilename.replace(".block.png", "");
+    finalOutputPath = path.join(finalOutputPath, backgroundSubfolder);
   }
 
-  // Build character map
-  const charMap = new Map<string, { filename: string; group: string }>();
-  for (const item of letters) {
-    const char = item.char;
-    const safeName = item.safe_name || safeFilename(char);
-    const group = item.group;
-    charMap.set(char, { filename: safeName, group });
+  // Create output directory if it doesn't exist
+  if (!fs.existsSync(finalOutputPath)) {
+    fs.mkdirSync(finalOutputPath, { recursive: true });
   }
-
-  // Create a character mapping reference file
-  const mappingFilePath = path.join(outputPath, "character_mapping.txt");
-  const mappingLines = ["Character\tFilename\tUnicode\tGroup"];
-  for (const [char, { filename, group }] of charMap.entries()) {
-    mappingLines.push(`${char}\t${filename}\t${char.charCodeAt(0)}\t${group}`);
-  }
-  fs.writeFileSync(mappingFilePath, mappingLines.join("\n"), "utf-8");
-  console.log(`Created character mapping reference at ${mappingFilePath}`);
 
   // Determine oversampling factor and working size
   const scale = aliasing ? 4 : 1;
@@ -167,122 +156,74 @@ export async function generateLetterImages(
     }
   }
 
-  // Generate an image for each unique letter
-  for (const [char, { filename, group }] of charMap.entries()) {
-    if (char.trim()) {
-      let outputPathGroup = outputPath;
-      if (group) {
-        outputPathGroup = path.join(outputPath, group);
-        if (!fs.existsSync(outputPathGroup)) {
-          fs.mkdirSync(outputPathGroup, { recursive: true });
-        }
-      }
+  // Create the oversampled canvas
+  const canvas = createCanvas(workSize[0], workSize[1]);
+  const ctx = canvas.getContext("2d");
 
-      // Add background subfolder if available
-      if (backgroundSubfolder) {
-        outputPathGroup = path.join(outputPathGroup, backgroundSubfolder);
-        if (!fs.existsSync(outputPathGroup)) {
-          fs.mkdirSync(outputPathGroup, { recursive: true });
-        }
-      }
+  // Load custom font into this canvas if font path was provided
+  if (resolvedFontPath && fs.existsSync(resolvedFontPath)) {
+    try {
+      const fontData = fs.readFileSync(resolvedFontPath);
+      const fontFileName = path.basename(
+        resolvedFontPath,
+        path.extname(resolvedFontPath),
+      );
+      const customFontFamily = fontFileName.replace(/[_-]/g, " ");
 
-      // Create the oversampled canvas
-      const canvas = createCanvas(workSize[0], workSize[1]);
-      const ctx = canvas.getContext("2d");
-      // Load custom font into this canvas if font path was provided
-      if (resolvedFontPath && fs.existsSync(resolvedFontPath)) {
-        try {
-          const fontData = fs.readFileSync(resolvedFontPath);
-          const fontFileName = path.basename(
-            resolvedFontPath,
-            path.extname(resolvedFontPath),
-          );
-          const customFontFamily = fontFileName.replace(/[_-]/g, " ");
-
-          canvas.loadFont(fontData, { family: customFontFamily });
-          fontFamily = customFontFamily;
-        } catch (e) {
-          console.error(`Error loading font into canvas: ${e}`);
-        }
-      }
-      // Draw background if available
-      if (backgroundImage) {
-        ctx.drawImage(backgroundImage, 0, 0);
-      }
-
-      // Set up text properties
-      ctx.font = `bold ${fontSizeUsed}px ${fontFamily}`;
-      ctx.fillStyle = `rgba(${textColor[0]}, ${textColor[1]}, ${
-        textColor[2]
-      }, ${textColor[3] / 255})`;
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-
-      // Draw the letter centered
-      const centerX = workSize[0] / 2;
-      const centerY = workSize[1] / 2;
-      ctx.fillText(char, centerX, centerY);
-
-      // Downsample to final size
-      let finalCanvas: Canvas;
-      if (scale > 1) {
-        finalCanvas = createCanvas(imageSize[0], imageSize[1]);
-        const finalCtx = finalCanvas.getContext("2d");
-        // aliasing=true means sharp edges (no smoothing), aliasing=false means smooth
-        finalCtx.imageSmoothingEnabled = !aliasing;
-        finalCtx.imageSmoothingQuality = "high";
-        finalCtx.drawImage(canvas, 0, 0, imageSize[0], imageSize[1]);
-      } else {
-        finalCanvas = canvas;
-      }
-
-      // Save the image
-      const name = suffix
-        ? `${filename}${suffix}.block.png`
-        : `${filename}.block.png`;
-      const outputFilePath = path.join(outputPathGroup, name);
-      const buffer = finalCanvas.toBuffer("image/png");
-      fs.writeFileSync(outputFilePath, buffer);
+      canvas.loadFont(fontData, { family: customFontFamily });
+      fontFamily = customFontFamily;
+    } catch (e) {
+      console.error(`Error loading font into canvas: ${e}`);
     }
   }
 
-  // Print summary
-  const chars = Array.from(charMap.keys()).join("");
-  console.log(`Generated characters: ${chars}`);
-
-  // Move files to custom subdirectory
-  const backgroundsDir = path.join(outputPath, "custom");
-  if (!fs.existsSync(backgroundsDir)) {
-    fs.mkdirSync(backgroundsDir, { recursive: true });
+  // Draw background if available
+  if (backgroundImage) {
+    ctx.drawImage(backgroundImage, 0, 0);
   }
 
-  const letterBlocksPattern = path.join(
-    outputPath,
-    "letter_blocks",
-    "*.block.png",
-  );
-  const letterBlocksDir = path.join(outputPath, "letter_blocks");
-  if (fs.existsSync(letterBlocksDir)) {
-    const files = fs
-      .readdirSync(letterBlocksDir)
-      .filter((f) => f.endsWith(".block.png"));
-    for (const file of files) {
-      const filePath = path.join(letterBlocksDir, file);
-      const stat = fs.statSync(filePath);
-      if (stat.isFile() && !filePath.startsWith(backgroundsDir)) {
-        const baseName = path.basename(file, ".block.png");
-        const targetDir = path.join(backgroundsDir, baseName);
-        if (!fs.existsSync(targetDir)) {
-          fs.mkdirSync(targetDir, { recursive: true });
-        }
-        const targetFile = path.join(targetDir, file);
-        console.log(`Moving ${filePath} to ${targetFile}`);
-        fs.copyFileSync(filePath, targetFile);
-        fs.unlinkSync(filePath);
-      }
-    }
+  // Set up text properties
+  ctx.font = `bold ${fontSizeUsed}px ${fontFamily}`;
+  ctx.fillStyle = `rgba(${textColor[0]}, ${textColor[1]}, ${textColor[2]}, ${
+    textColor[3] / 255
+  })`;
+
+  // Calculate text bounding box to center it precisely
+  const metrics = ctx.measureText(char);
+
+  // Calculate the actual visual bounds of the character
+  const charWidth = metrics.actualBoundingBoxLeft +
+    metrics.actualBoundingBoxRight;
+  const charHeight = metrics.actualBoundingBoxAscent +
+    metrics.actualBoundingBoxDescent;
+
+  // Calculate position to center the character's visual bounding box
+  const x = (workSize[0] - charWidth) / 2 +
+    metrics.actualBoundingBoxLeft;
+  const y = (workSize[1] - charHeight) / 2 +
+    metrics.actualBoundingBoxAscent;
+
+  // Draw the letter at calculated position
+  ctx.fillText(char, x, y);
+
+  // Downsample to final size if needed
+  let finalCanvas: Canvas;
+  if (scale > 1) {
+    finalCanvas = createCanvas(imageSize[0], imageSize[1]);
+    const finalCtx = finalCanvas.getContext("2d");
+    finalCtx.imageSmoothingEnabled = !aliasing;
+    finalCtx.imageSmoothingQuality = "high";
+    finalCtx.drawImage(canvas, 0, 0, imageSize[0], imageSize[1]);
+  } else {
+    finalCanvas = canvas;
   }
 
-  // Return unmodified mapEntry
-  return mapEntry;
+  // Save the image
+  const name = suffix
+    ? `${filename}${suffix}.block.png`
+    : `${filename}.block.png`;
+  const outputFilePath = path.join(finalOutputPath, name);
+  const buffer = finalCanvas.toBuffer("image/png");
+  fs.writeFileSync(outputFilePath, buffer);
+  console.log(`Generated: ${outputFilePath}`);
 }
