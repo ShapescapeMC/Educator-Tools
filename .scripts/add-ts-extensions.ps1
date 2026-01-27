@@ -1,6 +1,6 @@
 # Script to add .ts extension to all relative imports in TypeScript files
 
-$rootPath = "C:\Users\FabrizioLaRosa\Repos\Educator-Tools-New\regolith\filters_data\modular_mc\educator_tools\logic"
+$rootPath = Join-Path $PSScriptRoot "..\regolith\filters_data\modular_mc\educator_tools\logic"
 
 # Get all TypeScript files recursively
 $tsFiles = Get-ChildItem -Path $rootPath -Filter "*.ts" -Recurse
