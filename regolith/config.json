@@ -160,6 +160,7 @@
 						"filter": "modular_mc",
 						"settings": {
 							"whitelist": [
+								"addon_setup/more_letter_blocks",
 								"more_letter_blocks"
 							],
 							"esbuild": {
