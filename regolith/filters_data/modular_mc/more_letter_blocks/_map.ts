@@ -26,14 +26,14 @@ function getLetterBlockPngs(dir: string): string[] {
 // Get letters from generated PNG files
 function getLettersFromPngs(): string[] {
 	const pngs = getLetterBlockPngs(
-		"data/modular_mc/letter_blocks/letter_blocks",
+		"data/modular_mc/more_letter_blocks/letter_blocks",
 	);
 	return pngs.map((p) => path.basename(p, ".block.png"));
 }
 
 // Get categories and their blocks
 function getCategoriesData() {
-	const letterBlocksDir = "data/modular_mc/letter_blocks/letter_blocks";
+	const letterBlocksDir = "data/modular_mc/more_letter_blocks/letter_blocks";
 	if (!fs.existsSync(letterBlocksDir)) {
 		return { categories: [], categoryNames: [] };
 	}
@@ -65,7 +65,7 @@ for (const ls of scope.letter_sets) {
 			char: letter.char,
 			safeName: letter.safe_name,
 			group: letter.group,
-			outputDir: "./data/modular_mc/letter_blocks/letter_blocks",
+			outputDir: "./data/modular_mc/more_letter_blocks/letter_blocks",
 			fontSize: ls.font_size,
 			textColor: ls.text_color as [number, number, number, number],
 			imageSize: ls.image_size as [number, number],
@@ -109,72 +109,78 @@ export const MAP = [
 		},
 	},
 	// Block definitions - one for each PNG
-	...getLetterBlockPngs("data/modular_mc/letter_blocks/letter_blocks").map(
-		(pngPath) => {
-			const letter = path.basename(pngPath, ".block.png");
-			const parentDir = path.basename(path.dirname(pngPath));
-			const background = parentDir !== "letter_blocks"
-				? parentDir
-				: letter;
+	...getLetterBlockPngs("data/modular_mc/more_letter_blocks/letter_blocks")
+		.map(
+			(pngPath) => {
+				const letter = path.basename(pngPath, ".block.png");
+				const parentDir = path.basename(path.dirname(pngPath));
+				const background = parentDir !== "letter_blocks"
+					? parentDir
+					: letter;
 
-			return {
-				source: "block/letter_block.block.json",
-				target: `BP/blocks/${letter}.block.json`,
-				jsonTemplate: true,
-				scope: {
-					letter,
-					background,
-				},
-			};
-		},
-	),
+				return {
+					source: "block/letter_block.block.json",
+					target: `BP/blocks/${letter}.block.json`,
+					jsonTemplate: true,
+					scope: {
+						letter,
+						background,
+					},
+				};
+			},
+		),
 	// Block loot - one for each PNG
-	...getLetterBlockPngs("data/modular_mc/letter_blocks/letter_blocks").map(
-		(pngPath) => {
-			const letter = path.basename(pngPath, ".block.png");
+	...getLetterBlockPngs("data/modular_mc/more_letter_blocks/letter_blocks")
+		.map(
+			(pngPath) => {
+				const letter = path.basename(pngPath, ".block.png");
 
-			return {
-				source: "block/letter_block.loot.json",
-				target: `BP/loot_tables/edu_tools/${letter}.loot.json`,
-				jsonTemplate: true,
-				scope: {
-					letter,
-				},
-			};
-		},
-	),
+				return {
+					source: "block/letter_block.loot.json",
+					target: `BP/loot_tables/edu_tools/${letter}.loot.json`,
+					jsonTemplate: true,
+					scope: {
+						letter,
+					},
+				};
+			},
+		),
 	// Item definitions - one for each PNG
-	...getLetterBlockPngs("data/modular_mc/letter_blocks/letter_blocks").map(
-		(pngPath) => {
-			const letter = path.basename(pngPath, ".block.png");
-			const group = path.basename(path.dirname(path.dirname(pngPath)));
+	...getLetterBlockPngs("data/modular_mc/more_letter_blocks/letter_blocks")
+		.map(
+			(pngPath) => {
+				const letter = path.basename(pngPath, ".block.png");
+				const group = path.basename(
+					path.dirname(path.dirname(pngPath)),
+				);
 
-			return {
-				source: "block/letter_block_placer.bp_item.json",
-				target: `BP/items/${letter}.bp_item.json`,
-				jsonTemplate: true,
-				scope: {
-					letter,
-					group,
-				},
-			};
-		},
-	),
+				return {
+					source: "block/letter_block_placer.bp_item.json",
+					target: `BP/items/${letter}.bp_item.json`,
+					jsonTemplate: true,
+					scope: {
+						letter,
+						group,
+					},
+				};
+			},
+		),
 	// Attachables - one for each PNG
-	...getLetterBlockPngs("data/modular_mc/letter_blocks/letter_blocks").map(
-		(pngPath) => {
-			const letter = path.basename(pngPath, ".block.png");
+	...getLetterBlockPngs("data/modular_mc/more_letter_blocks/letter_blocks")
+		.map(
+			(pngPath) => {
+				const letter = path.basename(pngPath, ".block.png");
 
-			return {
-				source: "block/letter_block_placer.attachable.json",
-				target: `RP/attachables/${letter}.attachable.json`,
-				jsonTemplate: true,
-				scope: {
-					letter,
-				},
-			};
-		},
-	),
+				return {
+					source: "block/letter_block_placer.attachable.json",
+					target: `RP/attachables/${letter}.attachable.json`,
+					jsonTemplate: true,
+					scope: {
+						letter,
+					},
+				};
+			},
+		),
 	// Attachable model and animation (shared)
 	{
 		source: "block/letter_block_placer.geo.json",
@@ -195,7 +201,7 @@ export const MAP = [
 		textTemplate: true,
 		scope: {
 			blocks: getLetterBlockPngs(
-				"data/modular_mc/letter_blocks/letter_blocks",
+				"data/modular_mc/more_letter_blocks/letter_blocks",
 			)
 				.map((pngPath) => {
 					const letter = path.basename(pngPath, ".block.png");

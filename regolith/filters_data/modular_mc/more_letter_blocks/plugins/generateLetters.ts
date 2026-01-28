@@ -109,12 +109,22 @@ export async function generateLetterImage(
 		try {
 			const bgImg = await loadImage(resolvedBackgroundPath);
 			const bgCanvas = createCanvas(workSize[0], workSize[1]);
-			const bgCtx = bgCanvas.getContext("2d");
-			bgCtx.imageSmoothingEnabled = false;
-			bgCtx.drawImage(bgImg, 0, 0, workSize[0], workSize[1]);
-			backgroundImage = bgCanvas;
+			if (!bgCanvas) {
+				console.error(`[${char}] Failed to create background canvas`);
+				backgroundImage = null;
+			} else {
+				const bgCtx = bgCanvas.getContext("2d");
+				if (!bgCtx) {
+					console.error(`[${char}] Failed to get background context`);
+					backgroundImage = null;
+				} else {
+					bgCtx.imageSmoothingEnabled = false;
+					bgCtx.drawImage(bgImg, 0, 0, workSize[0], workSize[1]);
+					backgroundImage = bgCanvas;
+				}
+			}
 		} catch (e) {
-			console.error(`Error loading background image: ${e}`);
+			console.error(`[${char}] Error loading background image: ${e}`);
 			backgroundImage = null;
 		}
 	}
@@ -148,7 +158,15 @@ export async function generateLetterImage(
 
 	// Create the oversampled canvas
 	const canvas = createCanvas(workSize[0], workSize[1]);
+	if (!canvas) {
+		console.error(`[${char}] Failed to create main canvas, skipping`);
+		return;
+	}
 	const ctx = canvas.getContext("2d");
+	if (!ctx) {
+		console.error(`[${char}] Failed to get main canvas context, skipping`);
+		return;
+	}
 
 	// Load custom font into this canvas if font path was provided
 	if (resolvedFontPath && fs.existsSync(resolvedFontPath)) {
@@ -192,7 +210,17 @@ export async function generateLetterImage(
 	// Use a temporary canvas to measure the glyph's true pixel bounds.
 	// Draw at a safe origin offset so glyphs extending left/above aren't clipped.
 	const tmpCanvas = createCanvas(workSize[0] * 2, workSize[1] * 2);
+	if (!tmpCanvas) {
+		console.error(`[${char}] Failed to create temporary canvas, skipping`);
+		return;
+	}
 	const tmpCtx = tmpCanvas.getContext("2d");
+	if (!tmpCtx) {
+		console.error(
+			`[${char}] Failed to get temporary canvas context, skipping`,
+		);
+		return;
+	}
 
 	// Load font into tmp canvas too
 	if (resolvedFontPath && fs.existsSync(resolvedFontPath)) {
@@ -215,10 +243,20 @@ export async function generateLetterImage(
 	// Scan pixels to find bounding box of non-zero alpha
 	const tmpW = tmpCanvas.width;
 	const tmpH = tmpCanvas.height;
-	const imgData = tmpCtx.getImageData(0, 0, tmpW, tmpH);
+	let imgData: ImageData | null = null;
+	try {
+		imgData = tmpCtx.getImageData(0, 0, tmpW, tmpH);
+	} catch (e) {
+		console.error(`[${char}] Error getting image data: ${e}`);
+		return;
+	}
 
-	if (!imgData || !imgData.data) {
-		console.warn(`[${char}] Failed to get image data, skipping`);
+	if (!imgData || !imgData.data || imgData.data.length === 0) {
+		console.warn(
+			`[${char}] Failed to get valid image data (char code: ${
+				char.charCodeAt(0).toString(16)
+			}), skipping`,
+		);
 		return;
 	}
 
@@ -263,7 +301,17 @@ export async function generateLetterImage(
 	let finalCanvas: Canvas;
 	if (scale > 1) {
 		finalCanvas = createCanvas(imageSize[0], imageSize[1]);
+		if (!finalCanvas) {
+			console.error(`[${char}] Failed to create final canvas, skipping`);
+			return;
+		}
 		const finalCtx = finalCanvas.getContext("2d");
+		if (!finalCtx) {
+			console.error(
+				`[${char}] Failed to get final canvas context, skipping`,
+			);
+			return;
+		}
 		finalCtx.imageSmoothingEnabled = !aliasing;
 		finalCtx.imageSmoothingQuality = "high";
 		finalCtx.drawImage(canvas, 0, 0, imageSize[0], imageSize[1]);
