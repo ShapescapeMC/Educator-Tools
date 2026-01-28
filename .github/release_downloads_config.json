@@ -1,0 +1,22 @@
+{
+	"header": {
+		"title": "",
+		"content": "\n"
+	},
+	"main_download": {
+		"id": "educator_tools",
+		"name": "Educator Tools",
+		"description": "The complete Educator Tools add-on for Minecraft Education Edition",
+		"file_pattern": "Shapescape_Educator_Tools_*.mcaddon",
+		"color": "00D26A"
+	},
+	"extensions": [
+		{
+			"id": "more_letter_blocks",
+			"name": "More Letter Blocks",
+			"description": "Additional letter blocks with extended character support",
+			"file_pattern": "Shapescape_More_Letter_Blocks_*.mcaddon",
+			"color": "7C3AED"
+		}
+	]
+}

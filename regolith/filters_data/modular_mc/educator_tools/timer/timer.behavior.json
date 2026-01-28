@@ -1,0 +1,97 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "edu_tools:timer",
+			"is_spawnable": false,
+			"is_summonable": true
+		},
+		"components": {
+			"minecraft:persistent": {},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:collision_box": {
+				"height": 1,
+				"width": 1
+			},
+			"minecraft:nameable": {
+				"allow_name_tag_renaming": false,
+				"always_show": true
+			},
+			"minecraft:health": {
+				"value": 10000,
+				"max": 10000
+			},
+			"minecraft:tick_world": {
+				"never_despawn": true,
+				"radius": 2
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [{}]
+			},
+			"minecraft:fire_immune": {}
+		},
+		"component_groups": {
+			"edu_tools:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"edu_tools:pause_timer": {
+				"minecraft:boss": {
+					"name": "--:--:--",
+					"hud_range": 10000,
+					"should_darken_sky": false
+				}
+			},
+			// Generating bossbars due to MCPE-227635
+			"::[...Array(2)].flatMap((_, h) => [...Array(60)].flatMap((_, m) => [...Array(60)].map((_, s) => ({ h, m, s })))).filter(({ h, m, s }) => !(h === 1 && m > 30) && !(h === 1 && m === 30 && s > 0)).map(({ h, m, s }) => K('edu_tools:timer_' + String(h).padStart(2, '0') + '_' + String(m).padStart(2, '0') + '_' + String(s).padStart(2, '0'), { hour: h, minute: m, second: s }))": {
+				"minecraft:boss": {
+					"name": "::String(hour).padStart(2, '0') + ':' + String(minute).padStart(2, '0') + ':' + String(second).padStart(2, '0')",
+					"hud_range": 10000,
+					"should_darken_sky": false
+				}
+			}
+		},
+		"events": {
+			"edu_tools:despawn": {
+				"add": {
+					"component_groups": ["edu_tools:despawn"]
+				}
+			},
+			"edu_tools:clear_timer": {
+				"remove": {
+					"component_groups": [
+						"edu_tools:pause_timer",
+						{
+							"__unpack__": "::[...Array(2)].flatMap((_, h) => [...Array(60)].flatMap((_, m) => [...Array(60)].map((_, s) => ({ h, m, s })))).filter(({ h, m, s }) => !(h === 1 && m > 30) && !(h === 1 && m === 30 && s > 0))",
+							"__value__": "::'edu_tools:timer_' + String(h).padStart(2, '0') + '_' + String(m).padStart(2, '0') + '_' + String(s).padStart(2, '0')"
+						}
+					]
+				}
+			},
+
+			"edu_tools:pause_timer": {
+				"add": {
+					"component_groups": ["edu_tools:pause_timer"]
+				}
+			},
+
+			"::[...Array(2)].flatMap((_, h) => [...Array(60)].flatMap((_, m) => [...Array(60)].map((_, s) => ({ h, m, s })))).filter(({ h, m, s }) => !(h === 1 && m > 30) && !(h === 1 && m === 30 && s > 0)).map(({ h, m, s }) => K('edu_tools:set_timer_' + h + '_' + String(m).padStart(2, '0') + '_' + String(s).padStart(2, '0'), { hour: h, minute: m, second: s }))": {
+				"add": {
+					"component_groups": [
+						"::('edu_tools:timer_' + String(hour).padStart(2, '0') + '_' + String(minute).padStart(2, '0') + '_' + String(second).padStart(2, '0'))"
+					]
+				}
+			}
+		}
+	}
+}

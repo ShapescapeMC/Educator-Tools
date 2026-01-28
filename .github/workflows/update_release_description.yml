@@ -1,0 +1,64 @@
+name: Update Release Description
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  update-description:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Wait for all assets to be uploaded
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          echo "Waiting for release assets to be uploaded..."
+
+          # Calculate expected asset count from config file
+          EXPECTED_COUNT=$(python3 -c "
+          import json
+          with open('.github/release_downloads_config.json') as f:
+              config = json.load(f)
+          count = 0
+          if config.get('main_download'):
+              count += 1
+          count += len(config.get('extensions', []))
+          print(count)
+          ")
+
+          echo "Expecting $EXPECTED_COUNT assets"
+
+          # Wait up to 15 minutes for all assets to appear
+          for i in {1..90}; do
+            ASSET_COUNT=$(gh release view "$RELEASE_TAG" --json assets --jq '.assets | length')
+            echo "Found $ASSET_COUNT/$EXPECTED_COUNT assets (attempt $i/90)"
+            if [ "$ASSET_COUNT" -ge "$EXPECTED_COUNT" ]; then
+              echo "All expected assets are uploaded!"
+              break
+            fi
+            sleep 10
+          done
+
+          # Final check
+          FINAL_COUNT=$(gh release view "$RELEASE_TAG" --json assets --jq '.assets | length')
+          if [ "$FINAL_COUNT" -lt "$EXPECTED_COUNT" ]; then
+            echo "ERROR: Only $FINAL_COUNT/$EXPECTED_COUNT assets found after timeout."
+            exit 1
+          fi
+
+      - name: Update release description
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          python ./.github/python/update_release_description.py
