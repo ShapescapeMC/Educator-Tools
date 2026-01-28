@@ -58,8 +58,8 @@ jobs:
         run: |
           cd regolith
 
-          wget https://github.com/Bedrock-OSS/regolith/releases/download/1.5.1/regolith_1.5.1_linux_386.tar.gz
-          tar xvf regolith_1.5.1_linux_386.tar.gz
+          wget https://github.com/Bedrock-OSS/regolith/releases/download/1.7.0/regolith_1.7.0_linux_386.tar.gz
+          tar xvf regolith_1.7.0_linux_386.tar.gz
 
           chmod +x regolith
           ./regolith install-all
