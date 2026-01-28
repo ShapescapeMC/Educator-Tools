@@ -57,7 +57,12 @@ export class ClassroomLimitationsService implements Module {
 		},
 		{
 			key: "fireball",
-			itemIds: ["minecraft:fire_charge", "minecraft:dragon_fireball"],
+			itemIds: [
+				"minecraft:fire_charge",
+				"minecraft:dragon_fireball",
+				"minecraft:small_fireball",
+				"minecraft:large_fireball",
+			],
 		},
 		{ key: "spawn_eggs", pattern: /_spawn_egg$/ },
 	];
