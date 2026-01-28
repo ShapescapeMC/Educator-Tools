@@ -64,7 +64,7 @@ Per-module state stored with `@shapescape/storage` (`PropertyStorage`). Acquire 
 
 ### Manifest & Dependencies
 
-Minecraft scripting modules declared in `system_template/scripting_setup/manifest.json` (entry: `scripts/edu_tools/main.js`). Dependencies pinned: `@minecraft/server` & `@minecraft/server-ui` @ 2.0.0. Additional TS deps in `regolith/filters_data/package.json` (e.g. `@shapescape/storage`, `bedrock-boost`). Local addon versioning via `system_template_esbuild/addon-version` package.
+Minecraft scripting modules declared in `system_template/scripting_setup/manifest.json` (entry: `scripts/edu_tools/main.js`). Dependencies pinned: `@minecraft/server` & `@minecraft/server-ui` @ 2.0.0. Additional TS deps in `regolith/filters_data/package.json` (e.g. `@shapescape/storage`, `bedrock-boost`). Local addon versioning via `regolith\filters_data\modular_mc\educator_tools\logic\subscripts\utils\addon-version.ts` package.
 
 ### Naming & Internationalization
 

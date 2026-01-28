@@ -40,16 +40,18 @@ jobs:
         with:
           node-version: "18.x"
 
+      - name: Install Deno
+        run: |
+          curl -fsSL https://deno.land/install.sh | sh
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
+
       - name: Install js modules
-        if: ${{ always() && (hashFiles('regolith/filters_data/package.json') != '') }}
+        if: ${{ always() && (hashFiles('regolith/deno.json') != '') }}
         id: install_js_modules
         run: |
-          cd regolith/filters_data
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.SHAPESCAPE_API_ACCESS }}" > .npmrc
-          echo "@shapescape-software=https://npm.pkg.github.com/" >> .npmrc
-          echo "always-auth=true" >> .npmrc
-          npm i
-          cd ../..
+          cd regolith
+          deno i
+          cd ..
 
       - name: Run Regolith
         id: run_regolith
