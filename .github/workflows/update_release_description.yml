@@ -1,0 +1,44 @@
+name: Update Release Description
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  update-description:
+    runs-on: ubuntu-latest
+    # Wait for other release workflows to complete and upload their assets
+    # This job needs the assets to exist before generating download links
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Wait for release assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Waiting for release assets to be uploaded..."
+          # Wait up to 10 minutes for assets to appear
+          for i in {1..60}; do
+            ASSET_COUNT=$(gh release view ${{ github.event.release.tag_name }} --json assets --jq '.assets | length')
+            if [ "$ASSET_COUNT" -gt "0" ]; then
+              echo "Found $ASSET_COUNT assets"
+              break
+            fi
+            echo "Waiting for assets... attempt $i/60"
+            sleep 10
+          done
+
+      - name: Update release description
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          RELEASE_ID: ${{ github.event.release.id }}
+        run: |
+          python ./.github/python/update_release_description.py
