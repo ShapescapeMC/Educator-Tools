@@ -3207,7 +3207,8 @@ export const scope = {
 			text_color: [10, 10, 10, 255],
 			image_size: [64, 64],
 			font_path: "fonts/AzeretMono-Black.ttf",
-			background_image_path: "letter_blocks/light_blue_concrete.block.png",
+			background_image_path:
+				"letter_blocks/light_blue_concrete.block.png",
 			suffix: "_light_blue_concrete",
 			aliasing: true,
 			letters: [
@@ -3824,7 +3825,8 @@ export const scope = {
 			text_color: [10, 10, 10, 255],
 			image_size: [64, 64],
 			font_path: "fonts/AzeretMono-Black.ttf",
-			background_image_path: "letter_blocks/light_blue_concrete.block.png",
+			background_image_path:
+				"letter_blocks/light_blue_concrete.block.png",
 			suffix: "_light_blue_concrete",
 			aliasing: true,
 			letters: [
