@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { generateLetterImage } from "./plugins/generateLetters.ts";
+import { clearCaches, generateLetterImage } from "./plugins/generateLetters.ts";
 import { scope } from "./scope.ts";
 
 // Get all PNG files from letter_blocks directory
@@ -59,6 +59,7 @@ function getCategoriesData() {
 
 // Generate letter images for each letter set (executed at build time)
 // Generate all letter images synchronously before building the MAP
+// Canvas objects are now pooled and reused to minimize memory usage
 for (const ls of scope.letter_sets) {
 	for (const letter of ls.letters) {
 		await generateLetterImage({
@@ -76,6 +77,9 @@ for (const ls of scope.letter_sets) {
 		});
 	}
 }
+
+// Clear caches after generation to free memory
+clearCaches();
 
 export const MAP = [
 	// Textures - Item texture for block and item icon

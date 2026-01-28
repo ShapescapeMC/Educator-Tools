@@ -8,6 +8,7 @@ import * as path from "node:path";
 import {
 	type Canvas,
 	createCanvas,
+	type Image,
 	loadImage,
 } from "https://deno.land/x/canvas/mod.ts";
 
@@ -23,6 +24,148 @@ export interface GenerateLetterImageOptions {
 	backgroundImagePath?: string;
 	suffix?: string | null;
 	aliasing: boolean;
+}
+
+// Cache for font data to avoid repeated file reads
+const fontCache = new Map<string, Uint8Array>();
+
+// Cache for background images to avoid repeated loading
+const backgroundImageCache = new Map<string, Image>();
+
+// Reusable canvas pool to avoid creating new canvases for each character
+interface CanvasPool {
+	main: Canvas | null;
+	tmp: Canvas | null;
+	final: Canvas | null;
+	background: Canvas | null;
+	mainSize: [number, number];
+	tmpSize: [number, number];
+	finalSize: [number, number];
+}
+
+const canvasPool: CanvasPool = {
+	main: null,
+	tmp: null,
+	final: null,
+	background: null,
+	mainSize: [0, 0],
+	tmpSize: [0, 0],
+	finalSize: [0, 0],
+};
+
+/**
+ * Get or create a canvas from the pool with the specified size.
+ */
+function getPooledCanvas(
+	poolKey: "main" | "tmp" | "final" | "background",
+	width: number,
+	height: number,
+): Canvas | null {
+	const sizeKey = poolKey === "background"
+		? "mainSize"
+		: `${poolKey}Size` as keyof CanvasPool;
+	const currentSize = canvasPool[sizeKey] as [number, number];
+
+	// If canvas exists and size matches, clear and reuse it
+	if (
+		canvasPool[poolKey] &&
+		currentSize[0] === width &&
+		currentSize[1] === height
+	) {
+		const ctx = canvasPool[poolKey]!.getContext("2d");
+		if (ctx) {
+			ctx.clearRect(0, 0, width, height);
+		}
+		return canvasPool[poolKey];
+	}
+
+	// Create new canvas and store in pool
+	const canvas = createCanvas(width, height);
+	if (canvas) {
+		canvasPool[poolKey] = canvas;
+		if (sizeKey !== "mainSize" || poolKey === "main") {
+			(canvasPool as Record<string, unknown>)[sizeKey] = [width, height];
+		}
+	}
+	return canvas;
+}
+
+/**
+ * Get the base directory for resolving relative paths.
+ * Cached to avoid repeated URL parsing.
+ */
+let cachedBaseDir: string | null = null;
+function getBaseDir(): string {
+	if (cachedBaseDir === null) {
+		const moduleUrl = new URL(import.meta.url);
+		const modulePath = moduleUrl.pathname.replace(/^\/([A-Z]:)/, "$1"); // Fix Windows paths
+		cachedBaseDir = path.dirname(path.dirname(modulePath)); // Go up from plugins/ to letter_blocks/
+	}
+	return cachedBaseDir;
+}
+
+/**
+ * Get cached font data or load it from disk.
+ */
+function getFontData(fontPath: string): Uint8Array | null {
+	if (fontCache.has(fontPath)) {
+		return fontCache.get(fontPath)!;
+	}
+
+	const baseDir = getBaseDir();
+	const resolvedPath = path.isAbsolute(fontPath)
+		? fontPath
+		: path.resolve(baseDir, fontPath);
+
+	if (!fs.existsSync(resolvedPath)) {
+		return null;
+	}
+
+	try {
+		const fontData = fs.readFileSync(resolvedPath);
+		fontCache.set(fontPath, fontData);
+		return fontData;
+	} catch (e) {
+		console.error(`Error reading font file '${resolvedPath}': ${e}`);
+		return null;
+	}
+}
+
+/**
+ * Get cached background image or load it from disk.
+ */
+async function getBackgroundImage(
+	backgroundPath: string,
+): Promise<Image | null> {
+	if (backgroundImageCache.has(backgroundPath)) {
+		return backgroundImageCache.get(backgroundPath)!;
+	}
+
+	const baseDir = getBaseDir();
+	const resolvedPath = path.isAbsolute(backgroundPath)
+		? backgroundPath
+		: path.resolve(baseDir, backgroundPath);
+
+	if (!fs.existsSync(resolvedPath)) {
+		return null;
+	}
+
+	try {
+		const img = await loadImage(resolvedPath);
+		backgroundImageCache.set(backgroundPath, img);
+		return img;
+	} catch (e) {
+		console.error(`Error loading background image '${resolvedPath}': ${e}`);
+		return null;
+	}
+}
+
+/**
+ * Get font family name from font path.
+ */
+function getFontFamily(fontPath: string): string {
+	const fontFileName = path.basename(fontPath, path.extname(fontPath));
+	return fontFileName.replace(/[_-]/g, " ");
 }
 
 function safeFilename(character: string): string {
@@ -58,12 +201,6 @@ export async function generateLetterImage(
 		return;
 	}
 
-	// Determine the base directory for resolving relative paths
-	// Use the module's directory as base, not Deno.cwd()
-	const moduleUrl = new URL(import.meta.url);
-	const modulePath = moduleUrl.pathname.replace(/^\/([A-Z]:)/, "$1"); // Fix Windows paths
-	const baseDir = path.dirname(path.dirname(modulePath)); // Go up from plugins/ to letter_blocks/
-
 	// Determine filename
 	const filename = safeName || safeFilename(char);
 
@@ -98,66 +235,20 @@ export async function generateLetterImage(
 		imageSize[1] * scale,
 	];
 
-	// Load background image if provided
-	let backgroundImage: Canvas | null = null;
-	const resolvedBackgroundPath = backgroundImagePath
-		? path.isAbsolute(backgroundImagePath)
-			? backgroundImagePath
-			: path.resolve(baseDir, backgroundImagePath)
-		: null;
-	if (resolvedBackgroundPath && fs.existsSync(resolvedBackgroundPath)) {
-		try {
-			const bgImg = await loadImage(resolvedBackgroundPath);
-			const bgCanvas = createCanvas(workSize[0], workSize[1]);
-			if (!bgCanvas) {
-				console.error(`[${char}] Failed to create background canvas`);
-				backgroundImage = null;
-			} else {
-				const bgCtx = bgCanvas.getContext("2d");
-				if (!bgCtx) {
-					console.error(`[${char}] Failed to get background context`);
-					backgroundImage = null;
-				} else {
-					bgCtx.imageSmoothingEnabled = false;
-					bgCtx.drawImage(bgImg, 0, 0, workSize[0], workSize[1]);
-					backgroundImage = bgCanvas;
-				}
-			}
-		} catch (e) {
-			console.error(`[${char}] Error loading background image: ${e}`);
-			backgroundImage = null;
-		}
-	}
-
-	// Load and register custom font if provided
+	// Get font data from cache
 	const fontSizeUsed = fontSize * scale;
 	let fontFamily = "sans-serif";
+	let fontData: Uint8Array | null = null;
 
-	const resolvedFontPath = fontPath
-		? path.isAbsolute(fontPath) ? fontPath : path.resolve(baseDir, fontPath)
-		: null;
-
-	if (resolvedFontPath && fs.existsSync(resolvedFontPath)) {
-		try {
-			// Read font file as buffer
-			const fontData = fs.readFileSync(resolvedFontPath);
-
-			// Extract font family name from file name (or use a default)
-			const fontFileName = path.basename(
-				resolvedFontPath,
-				path.extname(resolvedFontPath),
-			);
-			fontFamily = fontFileName.replace(/[_-]/g, " ");
-		} catch (e) {
-			console.error(
-				`Error reading font file '${resolvedFontPath}': ${e}`,
-			);
-			fontFamily = "sans-serif";
+	if (fontPath) {
+		fontData = getFontData(fontPath);
+		if (fontData) {
+			fontFamily = getFontFamily(fontPath);
 		}
 	}
 
-	// Create the oversampled canvas
-	const canvas = createCanvas(workSize[0], workSize[1]);
+	// Get or create the main canvas from pool
+	const canvas = getPooledCanvas("main", workSize[0], workSize[1]);
 	if (!canvas) {
 		console.error(`[${char}] Failed to create main canvas, skipping`);
 		return;
@@ -168,26 +259,25 @@ export async function generateLetterImage(
 		return;
 	}
 
-	// Load custom font into this canvas if font path was provided
-	if (resolvedFontPath && fs.existsSync(resolvedFontPath)) {
-		try {
-			const fontData = fs.readFileSync(resolvedFontPath);
-			const fontFileName = path.basename(
-				resolvedFontPath,
-				path.extname(resolvedFontPath),
-			);
-			const customFontFamily = fontFileName.replace(/[_-]/g, " ");
+	// Clear the canvas
+	ctx.clearRect(0, 0, workSize[0], workSize[1]);
 
-			canvas.loadFont(fontData, { family: customFontFamily });
-			fontFamily = customFontFamily;
-		} catch (e) {
-			console.error(`Error loading font into canvas: ${e}`);
+	// Load font into canvas
+	if (fontData) {
+		try {
+			canvas.loadFont(fontData, { family: fontFamily });
+		} catch (_e) {
+			// Font may already be loaded, ignore
 		}
 	}
 
-	// Draw background if available
-	if (backgroundImage) {
-		ctx.drawImage(backgroundImage, 0, 0);
+	// Draw background if provided
+	if (backgroundImagePath) {
+		const bgImg = await getBackgroundImage(backgroundImagePath);
+		if (bgImg) {
+			ctx.imageSmoothingEnabled = false;
+			ctx.drawImage(bgImg, 0, 0, workSize[0], workSize[1]);
+		}
 	}
 
 	// Set up text properties
@@ -209,7 +299,7 @@ export async function generateLetterImage(
 
 	// Use a temporary canvas to measure the glyph's true pixel bounds.
 	// Draw at a safe origin offset so glyphs extending left/above aren't clipped.
-	const tmpCanvas = createCanvas(workSize[0] * 2, workSize[1] * 2);
+	const tmpCanvas = getPooledCanvas("tmp", workSize[0] * 2, workSize[1] * 2);
 	if (!tmpCanvas) {
 		console.error(`[${char}] Failed to create temporary canvas, skipping`);
 		return;
@@ -222,12 +312,16 @@ export async function generateLetterImage(
 		return;
 	}
 
+	// Clear tmp canvas
+	tmpCtx.clearRect(0, 0, workSize[0] * 2, workSize[1] * 2);
+
 	// Load font into tmp canvas too
-	if (resolvedFontPath && fs.existsSync(resolvedFontPath)) {
+	if (fontData) {
 		try {
-			const tmpFontData = fs.readFileSync(resolvedFontPath);
-			tmpCanvas.loadFont(tmpFontData, { family: fontFamily });
-		} catch (_e) { /* font already loaded, ignore */ }
+			tmpCanvas.loadFont(fontData, { family: fontFamily });
+		} catch (_e) {
+			/* font already loaded, ignore */
+		}
 	}
 
 	tmpCtx.font = ctx.font;
@@ -262,7 +356,10 @@ export async function generateLetterImage(
 
 	const pixels = imgData.data;
 
-	let minX = tmpW, minY = tmpH, maxX = 0, maxY = 0;
+	let minX = tmpW,
+		minY = tmpH,
+		maxX = 0,
+		maxY = 0;
 	for (let py = 0; py < tmpH; py++) {
 		for (let px = 0; px < tmpW; px++) {
 			const alpha = pixels[(py * tmpW + px) * 4 + 3];
@@ -276,7 +373,7 @@ export async function generateLetterImage(
 	}
 
 	if (maxX < minX || maxY < minY) {
-		// No visible pixels found — glyph is empty, skip
+		// No visible pixels found - glyph is empty, skip
 		console.warn(`[${char}] No visible pixels found, skipping`);
 		return;
 	}
@@ -300,11 +397,16 @@ export async function generateLetterImage(
 	// Downsample to final size if needed
 	let finalCanvas: Canvas;
 	if (scale > 1) {
-		finalCanvas = createCanvas(imageSize[0], imageSize[1]);
-		if (!finalCanvas) {
+		const pooledFinal = getPooledCanvas(
+			"final",
+			imageSize[0],
+			imageSize[1],
+		);
+		if (!pooledFinal) {
 			console.error(`[${char}] Failed to create final canvas, skipping`);
 			return;
 		}
+		finalCanvas = pooledFinal;
 		const finalCtx = finalCanvas.getContext("2d");
 		if (!finalCtx) {
 			console.error(
@@ -312,6 +414,7 @@ export async function generateLetterImage(
 			);
 			return;
 		}
+		finalCtx.clearRect(0, 0, imageSize[0], imageSize[1]);
 		finalCtx.imageSmoothingEnabled = !aliasing;
 		finalCtx.imageSmoothingQuality = "high";
 		finalCtx.drawImage(canvas, 0, 0, imageSize[0], imageSize[1]);
@@ -326,4 +429,21 @@ export async function generateLetterImage(
 	const outputFilePath = path.join(finalOutputPath, name);
 	const buffer = finalCanvas.toBuffer("image/png");
 	fs.writeFileSync(outputFilePath, buffer);
+}
+
+/**
+ * Clear all caches. Call this after batch processing to free memory.
+ */
+export function clearCaches(): void {
+	fontCache.clear();
+	backgroundImageCache.clear();
+	cachedBaseDir = null;
+	// Clear canvas pool
+	canvasPool.main = null;
+	canvasPool.tmp = null;
+	canvasPool.final = null;
+	canvasPool.background = null;
+	canvasPool.mainSize = [0, 0];
+	canvasPool.tmpSize = [0, 0];
+	canvasPool.finalSize = [0, 0];
 }
