@@ -1,14 +1,14 @@
 import {
+	Container,
+	EntityInventoryComponent,
+	ItemLockMode,
+	ItemStack,
 	ItemUseAfterEvent,
 	Player,
-	EntityInventoryComponent,
-	Container,
-	ItemStack,
-	ItemLockMode,
-	PlayerSpawnAfterEvent,
-	world,
-	system,
 	PlayerLeaveAfterEvent,
+	PlayerSpawnAfterEvent,
+	system,
+	world,
 } from "@minecraft/server";
 import { Module, ModuleManager } from "../../module-manager.ts";
 import { SceneManager } from "../scene_manager/scene-manager.ts";
@@ -31,7 +31,9 @@ export class AssignmentItemService implements Module {
 		this.teamsService = this.moduleManager.getModule<TeamsService>(
 			TeamsService.id,
 		)!;
-		this.assignmentService = this.moduleManager.getModule<AssignmentService>(
+		this.assignmentService = this.moduleManager.getModule<
+			AssignmentService
+		>(
 			AssignmentService.id,
 		)!;
 
@@ -44,12 +46,12 @@ export class AssignmentItemService implements Module {
 				this.onAssignmentToolUse(event);
 			}
 		});
-		world.getAllPlayers().forEach((player) => {
-			this.registerTask(player);
-		});
-		world.afterEvents.playerLeave.subscribe((event: PlayerLeaveAfterEvent) => {
-			this.onPlayerLogout(event);
-		});
+		this.registerTask();
+		world.afterEvents.playerLeave.subscribe(
+			(event: PlayerLeaveAfterEvent) => {
+				this.onPlayerLogout(event);
+			},
+		);
 	}
 
 	private onAssignmentToolUse(event: ItemUseAfterEvent): void {
@@ -57,7 +59,10 @@ export class AssignmentItemService implements Module {
 		// Create a new SceneManager instance with our PropertyStorage
 		const sceneManager = SceneManager.getInstance();
 		// Create a context and open the assignment student list scene
-		sceneManager.createContextAndOpenScene(player, "assignment_student_list");
+		sceneManager.createContextAndOpenScene(
+			player,
+			"assignment_student_list",
+		);
 	}
 
 	public giveAssignmentTool(player: Player): void {
@@ -83,30 +88,31 @@ export class AssignmentItemService implements Module {
 		}
 
 		if (!hasAssignmentTool) {
-			let assignmentTool = new ItemStack("edu_tools:assignment", 1);
+			const assignmentTool = new ItemStack("edu_tools:assignment", 1);
 			assignmentTool.lockMode = ItemLockMode.inventory;
 			inventory.addItem(assignmentTool);
 		}
 	}
 
-	private registerTask(player: Player): void {
-		if (this.playerTasks.has(player.id)) {
-			return;
-		}
-		const task = system.runInterval(
+	private registerTask(): void {
+		system.runInterval(
 			() => {
-				const playerTeams = this.teamsService!.getPlayerTeams(player.id);
-				const assignments = this.assignmentService!.getTeamsAssignments(
-					playerTeams.map((team) => team.id),
-					true,
-				);
-				if (assignments.length > 0) {
-					this.giveAssignmentTool(player);
-				}
+				world.getAllPlayers().forEach((player) => {
+					const playerTeams = this.teamsService!.getPlayerTeams(
+						player.id,
+					);
+					const assignments = this.assignmentService!
+						.getTeamsAssignments(
+							playerTeams.map((team) => team.id),
+							true,
+						);
+					if (assignments.length > 0) {
+						this.giveAssignmentTool(player);
+					}
+				});
 			},
 			5 * 20 + Math.random() * 20,
 		);
-		this.playerTasks.set(player.id, task);
 	}
 
 	private onPlayerLogout(event: PlayerLeaveAfterEvent): void {
