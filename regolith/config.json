@@ -165,7 +165,7 @@
 							"esbuild": {
 								"buildPath": ".modular_mc/main.js",
 								"settings": {
-									"outfile": "BP/scripts/edu_tools/main.js",
+									"outfile": "BP/scripts/more_letter_blocks/main.js",
 									"sourcemap": false,
 									"minify": false,
 									"external": ["@minecraft/server", "@minecraft/server-ui"]
