@@ -13,25 +13,21 @@
 				"url": "github.com/Nusiq/regolith-filters",
 				"version": "2.0.0"
 			},
+			"modular_mc": {
+				"url": "github.com/Nusiq/regolith-filters",
+				"version": "1.1.0"
+			},
 			"name_ninja": {
 				"url": "github.com/Bedrock-OSS/regolith-filters",
 				"version": "1.3.1"
-			},
-			"python_modules": {
-				"runWith": "python",
-				"script": "./local_filters/python_modules/python_modules.py"
 			},
 			"shapescape_copy_files": {
 				"url": "github.com/ShapescapeMC/Shapescape-Copy-Files",
 				"version": "1.0.0"
 			},
-			"system_template": {
+			"subfunctions": {
 				"url": "github.com/Nusiq/regolith-filters",
-				"version": "3.16.0"
-			},
-			"system_template_esbuild": {
-				"url": "github.com/Nusiq/regolith-filters",
-				"version": "2.1.0"
+				"version": "2.1.2"
 			},
 			"texture_list": {
 				"url": "github.com/Bedrock-OSS/regolith-filters",
@@ -40,18 +36,6 @@
 		},
 		"formatVersion": "1.4.0",
 		"profiles": {
-			"default": {
-				"export": {
-					"build": "education",
-					"readOnly": false,
-					"target": "development"
-				},
-				"filters": [
-					{
-						"profile": "educator_tools"
-					}
-				]
-			},
 			"bedrock": {
 				"export": {
 					"build": "standard",
@@ -99,69 +83,15 @@
 					}
 				]
 			},
-			"debugger": {
+			"default": {
 				"export": {
-					"bpPath": "../debugger/bp",
-					"readOnly": true,
-					"rpPath": "../debugger/rp",
-					"target": "exact"
+					"build": "education",
+					"readOnly": false,
+					"target": "development"
 				},
 				"filters": [
 					{
-						"filter": "system_template",
-						"settings": {
-							"log_path": "system_template_log.json",
-							"scope": {
-								"esbuild_path": "BP/scripts/shapescape/et/"
-							},
-							"scope_path": "scope.json"
-						}
-					},
-					{
-						"filter": "system_template_esbuild",
-						"settings": {
-							"entryPoint": "BP/scripts/shapescape/et/main.ts",
-							"external": [
-								"@minecraft/server",
-								"@minecraft/server-ui",
-								"@shapescape/storage",
-								"@shapescape/space"
-							],
-							"minify": false,
-							"outfile": "`BP/scripts/{path_namespace}/main.js`",
-							"scope_path": "scope.json",
-							"sourcemap": true
-						}
-					},
-					{
-						"filter": "shapescape_copy_files",
-						"settings": {
-							"values": [
-								{
-									"dest": "BP/scripts/package-lock.json",
-									"src": "data/package-lock.json"
-								}
-							]
-						}
-					},
-					{
-						"filter": "name_ninja",
-						"settings": {
-							"blocks": {
-								"auto_name": true
-							},
-							"entities": {
-								"auto_name": true
-							},
-							"items": {
-								"auto_name": true
-							},
-							"spawn_eggs": {
-								"auto_name": true,
-								"postfix": "",
-								"prefix": "§fSpawn §f"
-							}
-						}
+						"profile": "educator_tools"
 					}
 				]
 			},
@@ -173,40 +103,27 @@
 				},
 				"filters": [
 					{
-						"filter": "python_modules"
-					},
-					{
-						"filter": "system_template",
+						"filter": "modular_mc",
 						"settings": {
-							"log_path": "system_template_log.json",
-							"scope": {
-								"esbuild_path": "data/system_template_esbuild"
-							},
-							"scope_path": "scope.json",
-							"prioritized_systems": [
-								"addon_setup/educator_tools",
-								"scripting_setup"
-							],
-							"systems": [
-								"educator_tools/**",
+							"whitelist": [
+								"educator_tools",
 								"letter_blocks",
 								"scripting_setup",
 								"addon_setup/educator_tools"
-							]
+							],
+							"esbuild": {
+								"buildPath": ".modular_mc/main.js",
+								"settings": {
+									"outfile": "BP/scripts/edu_tools/main.js",
+									"sourcemap": false,
+									"minify": false,
+									"external": ["@minecraft/server", "@minecraft/server-ui"]
+								}
+							}
 						}
 					},
 					{
-						"filter": "system_template_esbuild",
-						"settings": {
-							"entryPoint": "data/system_template_esbuild/main.ts",
-							"external": [
-								"@minecraft/server",
-								"@minecraft/server-ui"
-							],
-							"minify": false,
-							"outfile": "`BP/scripts/{path_namespace}/main.js`",
-							"scope_path": "scope.json"
-						}
+						"filter": "subfunctions"
 					},
 					{
 						"filter": "name_ninja",
@@ -240,37 +157,24 @@
 				},
 				"filters": [
 					{
-						"filter": "python_modules"
-					},
-					{
-						"filter": "system_template",
+						"filter": "modular_mc",
 						"settings": {
-							"log_path": "system_template_log.json",
-							"scope": {
-								"esbuild_path": "data/system_template_esbuild"
-							},
-							"scope_path": "scope.json",
-							"prioritized_systems": [
-								"addon_setup/more_letter_blocks"
+							"whitelist": [
+								"more_letter_blocks"
 							],
-							"systems": [
-								"more_letter_blocks",
-								"addon_setup/more_letter_blocks"
-							]
+							"esbuild": {
+								"buildPath": ".modular_mc/main.js",
+								"settings": {
+									"outfile": "BP/scripts/edu_tools/main.js",
+									"sourcemap": false,
+									"minify": false,
+									"external": ["@minecraft/server", "@minecraft/server-ui"]
+								}
+							}
 						}
 					},
 					{
-						"filter": "system_template_esbuild",
-						"settings": {
-							"entryPoint": "data/system_template_esbuild/main.ts",
-							"external": [
-								"@minecraft/server",
-								"@minecraft/server-ui"
-							],
-							"minify": false,
-							"outfile": "`BP/scripts/{path_namespace}/main.js`",
-							"scope_path": "scope.json"
-						}
+						"filter": "subfunctions"
 					},
 					{
 						"filter": "name_ninja",

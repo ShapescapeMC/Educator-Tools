@@ -1,0 +1,17 @@
+{
+	// Disable TypeScript for Deno folders
+	"typescript.preferences.importModuleSpecifier": "relative",
+	"javascript.preferences.importModuleSpecifier": "relative",
+
+	// Enable Deno only for modular_mc folder
+	"deno.enable": false,
+	"deno.enablePaths": ["./regolith/filters_data/modular_mc"],
+	"deno.config": "./regolith/deno.json",
+	"deno.lint": true,
+	"deno.unstable": false,
+
+	// Disable TypeScript extension in Deno folders
+	"[typescript]": {
+		"editor.defaultFormatter": "denoland.vscode-deno"
+	}
+}
