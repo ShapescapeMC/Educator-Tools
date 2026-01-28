@@ -10,8 +10,19 @@
 	"deno.lint": true,
 	"deno.unstable": false,
 
+	// Editor settings for tabs
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+
 	// Disable TypeScript extension in Deno folders
 	"[typescript]": {
-		"editor.defaultFormatter": "denoland.vscode-deno"
+		"editor.defaultFormatter": "denoland.vscode-deno",
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
+	},
+	"[javascript]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
 	}
 }

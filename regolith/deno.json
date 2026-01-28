@@ -5,5 +5,9 @@
 		"@minecraft/server": "npm:@minecraft/server@2.0.0",
 		"@minecraft/server-ui": "npm:@minecraft/server-ui@2.0.0",
 		"@shapescape/storage": "npm:@shapescape/storage@^1.0.7"
+	},
+	"fmt": {
+		"useTabs": true,
+		"indentWidth": 4
 	}
 }
