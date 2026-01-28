@@ -20,7 +20,6 @@ import { ClassroomLimitationsScene } from "./classroom-limitations.scene.ts";
  *  - enabled_wither: boolean (true => wither spawning blocked)
  *  - enabled_snow_golem
  *  ... etc
- *
  */
 export class ClassroomLimitationsService implements Module {
 	readonly id = "classroom_limitations";
@@ -32,7 +31,11 @@ export class ClassroomLimitationsService implements Module {
 		{ key: "ender_pearls", itemIds: ["minecraft:ender_pearl"] },
 		{
 			key: "eggs",
-			itemIds: ["minecraft:egg", "minecraft:brown_egg", "minecraft:blue_egg"],
+			itemIds: [
+				"minecraft:egg",
+				"minecraft:brown_egg",
+				"minecraft:blue_egg",
+			],
 		},
 		{ key: "arrows", itemIds: ["minecraft:arrow"] },
 		{ key: "fireworks", itemIds: ["minecraft:firework_rocket"] },
