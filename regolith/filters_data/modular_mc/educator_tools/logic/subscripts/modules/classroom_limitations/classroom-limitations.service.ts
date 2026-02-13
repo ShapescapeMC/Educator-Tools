@@ -59,12 +59,36 @@ export class ClassroomLimitationsService implements Module {
 			],
 		},
 		{
+			key: "flint_and_steel",
+			itemIds: ["minecraft:flint_and_steel"],
+		},
+		{
 			key: "fireball",
 			itemIds: [
 				"minecraft:fire_charge",
 				"minecraft:dragon_fireball",
 				"minecraft:small_fireball",
 				"minecraft:large_fireball",
+			],
+		},
+		{
+			key: "snowballs",
+			itemIds: [
+				"minecraft:snowball",
+			],
+		},
+		{
+			key: "buckets",
+			itemIds: [
+				"minecraft:bucket",
+				"minecraft:water_bucket",
+				"minecraft:lava_bucket",
+				"minecraft:cod_bucket",
+				"minecraft:salmon_bucket",
+				"minecraft:pufferfish_bucket",
+				"minecraft:tropical_fish_bucket",
+				"minecraft:axolotl_bucket",
+				"minecraft:tadpole_bucket",
 			],
 		},
 		{ key: "spawn_eggs", pattern: /_spawn_egg$/ },
