@@ -178,10 +178,10 @@
 
 ## Need More Help?
 
-📖 **Full Documentation:** [Home](Home)
-🚀 **Get Started:** [Quick Start Guide](Quick-Start-Guide)
-❓ **Troubleshooting:** [FAQ](FAQ-and-Troubleshooting)
-🆘 **Support:** [Getting Help](Getting-Help)
+📖 **Full Documentation:** [Home](index.md)
+🚀 **Get Started:** [Quick Start Guide](Quick-Start-Guide.md)
+❓ **Troubleshooting:** [FAQ](FAQ-and-Troubleshooting.md)
+🆘 **Support:** [Getting Help](Getting-Help.md)
 
 ---
 

@@ -1,0 +1,76 @@
+site_name: Educator Tools
+site_description: A comprehensive classroom management toolkit for Minecraft Education Edition
+site_url: https://educator-tools.readthedocs.io/
+repo_url: https://github.com/ShapescapeMC/Educator-Tools
+repo_name: ShapescapeMC/Educator-Tools
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - For Teachers:
+      - Introduction: Introduction.md
+      - Installation: Installation.md
+      - Quick Start Guide: Quick-Start-Guide.md
+      - Essential Tools: Essential-Tools.md
+      - Tools by Category:
+          - Student Management Tools: Student-Management-Tools.md
+          - Classroom Control Tools: Classroom-Control-Tools.md
+          - World Management Tools: World-Management-Tools.md
+      - All Features: Educator-Toolbox.md
+  - Letter Blocks:
+      - Getting Started: Letter-Blocks-Getting-Started.md
+      - Activities & Ideas: Letter-Blocks-Activities.md
+      - Custom Letter Blocks: Custom-Letter-Blocks.md
+  - Extensions:
+      - Extensions Overview: Extensions.md
+      - More Letter Blocks: Extensions-More-Letter-Blocks.md
+  - Help & Support:
+      - FAQ & Troubleshooting: FAQ-and-Troubleshooting.md
+      - Glossary: Glossary.md
+      - Getting Help: Getting-Help.md
+      - Quick Reference: Printable-Quick-Reference.md
+  - For Developers:
+      - Developer Documentation: Developer-Documentation.md
+      - Development Setup: Development-Setup.md
+      - Contributing: Contributing.md
+      - Translations: Translations.md
+      - Advanced Letter Blocks Configuration: Advanced-Letter-Blocks-Configuration.md

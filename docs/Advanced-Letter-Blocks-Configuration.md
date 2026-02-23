@@ -3,8 +3,8 @@
 **⚠️ This guide is for advanced users and developers who want to create custom letter blocks with their own fonts, colors, and backgrounds.**
 
 **If you're a teacher looking to use Letter Blocks in your classroom, see:**
-- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started)** for basic usage
-- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks)** for ready-made expansion packs
+- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started.md)** for basic usage
+- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** for ready-made expansion packs
 
 ---
 
@@ -15,7 +15,7 @@ This guide explains how to create custom letter block sets by editing the pack's
 **Prerequisites:**
 - Understanding of JSON file format
 - Access to the Educator Tools source code
-- Familiarity with the [Development Setup](Development-Setup)
+- Familiarity with the [Development Setup](Development-Setup.md)
 - Basic image editing skills
 
 ---
@@ -24,9 +24,9 @@ This guide explains how to create custom letter block sets by editing the pack's
 
 ### Requirements
 
-✅ Review the [Contributing Guide](Contributing) to understand the development workflow
+✅ Review the [Contributing Guide](Contributing.md) to understand the development workflow
 
-✅ Set up your development environment following [Development Setup](Development-Setup)
+✅ Set up your development environment following [Development Setup](Development-Setup.md)
 
 ✅ Locate your working directory:
 ```text
@@ -316,7 +316,7 @@ Before building, validate your JSON:
 ### Building the Pack
 
 1. Save the `_scope.json` file
-2. Run the build command (see [Development Setup](Development-Setup))
+2. Run the build command (see [Development Setup](Development-Setup.md))
 3. The pack will generate textures and item definitions based on your configuration
 
 ### Testing
@@ -442,7 +442,7 @@ Before building, validate your JSON:
 
 If you create custom letter blocks that would benefit other educators:
 
-1. Follow the [Contributing Guide](Contributing)
+1. Follow the [Contributing Guide](Contributing.md)
 2. Submit a pull request with your letter set configuration
 3. Include sample images showing the blocks in use
 4. Provide fonts (if openly licensed) or instructions for obtaining them
@@ -451,12 +451,12 @@ If you create custom letter blocks that would benefit other educators:
 
 ## Related Documentation
 
-- **[Development Setup](Development-Setup)** - Set up your development environment
-- **[Contributing](Contributing)** - How to contribute to Educator Tools
-- **[Extensions](Extensions)** - Learn about creating extensions
-- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started)** - Basic usage guide for teachers
-- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks)** - Ready-made expansion packs
+- **[Development Setup](Development-Setup.md)** - Set up your development environment
+- **[Contributing](Contributing.md)** - How to contribute to Educator Tools
+- **[Extensions](Extensions.md)** - Learn about creating extensions
+- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started.md)** - Basic usage guide for teachers
+- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** - Ready-made expansion packs
 
 ---
 
-**Need Help?** Visit [Getting Help](Getting-Help) or create an issue on [GitHub](https://github.com/ShapescapeMC/Educator-Tools/issues).
+**Need Help?** Visit [Getting Help](Getting-Help.md) or create an issue on [GitHub](https://github.com/ShapescapeMC/Educator-Tools/issues).

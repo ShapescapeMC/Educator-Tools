@@ -396,10 +396,10 @@ Experience points (not commonly used in classroom contexts).
 
 ## Still confused about a term?
 
-- Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting) page
-- Visit [Getting Help](Getting-Help) to ask questions
+- Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md) page
+- Visit [Getting Help](Getting-Help.md) to ask questions
 - Search the wiki using your browser's find function (Ctrl+F or Cmd+F)
 
 ---
 
-**Back to:** [Home](Home) | [Quick Start Guide](Quick-Start-Guide) | [All Features](Educator-Toolbox)
+**Back to:** [Home](index.md) | [Quick Start Guide](Quick-Start-Guide.md) | [All Features](Educator-Toolbox.md)

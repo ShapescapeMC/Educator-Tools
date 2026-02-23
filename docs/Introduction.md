@@ -19,8 +19,9 @@
 
 ## What is Educator Tools?
 
-> [!NOTE]
-> **Educator Tools is a free add-on for Minecraft Education Edition** that helps teachers manage their virtual classroom without needing to learn complex commands. Think of it as your digital teaching assistant!
+!!! note
+    **Educator Tools is a free add-on for Minecraft Education Edition** that helps teachers manage their virtual classroom without needing to learn complex commands. Think of it as your digital teaching assistant!
+
 
 🎮 **What it does:**
 - Move students around the world instantly
@@ -90,38 +91,42 @@ We created Educator Tools to solve these problems. Now teachers can:
 
 ## Who Is Educator Tools For?
 
-> [!TIP]
-> ### 🎓 Teachers
-> If you're teaching with Minecraft Education Edition, Educator Tools is for you! Whether you're:
-> - Brand new to Minecraft or an experienced player
-> - Teaching elementary, middle, or high school
-> - Using Minecraft for any subject (language arts, math, science, history, etc.)
->
-> **No technical expertise required!** The tools use simple menus - no commands to memorize.
+!!! tip
+    ### 🎓 Teachers
+    If you're teaching with Minecraft Education Edition, Educator Tools is for you! Whether you're:
+    - Brand new to Minecraft or an experienced player
+    - Teaching elementary, middle, or high school
+    - Using Minecraft for any subject (language arts, math, science, history, etc.)
 
-> [!TIP]
-> ### 👥 Students
-> Students don't need to install anything. When they join your world, Educator Tools is automatically available. They'll experience:
-> - Smooth classroom transitions (teleporting, focus mode, etc.)
-> - Engaging activities (assignments, timers)
-> - Educational tools (letter blocks for projects)
+    **No technical expertise required!** The tools use simple menus - no commands to memorize.
 
-> [!TIP]
-> ### 💻 Developers
-> Educator Tools is open-source! If you're a developer, you can:
-> - Contribute new features and improvements
-> - Customize the pack for specific needs
-> - Add translations for new languages
-> - Create custom letter block sets
->
-> See the [Developer Documentation](Developer-Documentation) to get started.
+
+!!! tip
+    ### 👥 Students
+    Students don't need to install anything. When they join your world, Educator Tools is automatically available. They'll experience:
+    - Smooth classroom transitions (teleporting, focus mode, etc.)
+    - Engaging activities (assignments, timers)
+    - Educational tools (letter blocks for projects)
+
+
+!!! tip
+    ### 💻 Developers
+    Educator Tools is open-source! If you're a developer, you can:
+    - Contribute new features and improvements
+    - Customize the pack for specific needs
+    - Add translations for new languages
+    - Create custom letter block sets
+
+    See the [Developer Documentation](Developer-Documentation.md) to get started.
+
 
 ---
 
 ## How We Want Educator Tools to Grow
 
-> [!IMPORTANT]
-> **Educator Tools is a community-driven, open-source project.** We envision a future with expanded features and community contributions that make this the ultimate teaching toolkit for Minecraft Education Edition.
+!!! info
+    **Educator Tools is a community-driven, open-source project.** We envision a future with expanded features and community contributions that make this the ultimate teaching toolkit for Minecraft Education Edition.
+
 
 🌟 **Expanded classroom management features** - More tools for different teaching scenarios
 
@@ -136,14 +141,15 @@ We created Educator Tools to solve these problems. Now teachers can:
 **We need your help!** If you have ideas, feedback, or want to contribute, please:
 - Share your suggestions on [GitHub Discussions](https://github.com/ShapescapeMC/Educator-Tools/discussions)
 - Report bugs on the [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)
-- Contribute code following our [Contributing Guide](Contributing)
+- Contribute code following our [Contributing Guide](Contributing.md)
 
 ---
 
 ## Free and Open-Source
 
-> [!IMPORTANT]
-> **Educator Tools is completely free and open-source.** We believe educational tools should be accessible to everyone.
+!!! info
+    **Educator Tools is completely free and open-source.** We believe educational tools should be accessible to everyone.
+
 
 **What this means:**
 - ✅ **Free to use** - No cost, ever
@@ -161,14 +167,14 @@ By making Educator Tools free and open-source, we're helping educators worldwide
 Ready to start using Educator Tools?
 
 **For Teachers:**
-1. 📥 **[Installation Guide](Installation)** - Get Educator Tools installed in 3 steps
-2. 🚀 **[Quick Start Guide](Quick-Start-Guide)** - Learn the basics in 5 minutes
-3. 🛠️ **[Essential Tools](Essential-Tools)** - Master the most important features
+1. 📥 **[Installation Guide](Installation.md)** - Get Educator Tools installed in 3 steps
+2. 🚀 **[Quick Start Guide](Quick-Start-Guide.md)** - Learn the basics in 5 minutes
+3. 🛠️ **[Essential Tools](Essential-Tools.md)** - Master the most important features
 
 **For Developers:**
-1. 📚 **[Developer Documentation](Developer-Documentation)** - Understand the codebase
-2. 🤝 **[Contributing Guide](Contributing)** - Learn how to contribute
-3. ⚙️ **[Development Setup](Development-Setup)** - Set up your environment
+1. 📚 **[Developer Documentation](Developer-Documentation.md)** - Understand the codebase
+2. 🤝 **[Contributing Guide](Contributing.md)** - Learn how to contribute
+3. ⚙️ **[Development Setup](Development-Setup.md)** - Set up your environment
 
 ---
 
@@ -180,10 +186,10 @@ Educator Tools gets better with community input!
 
 🐛 **Report problems** - [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)
 
-🤝 **Contribute code** - [Contributing Guide](Contributing)
+🤝 **Contribute code** - [Contributing Guide](Contributing.md)
 
 📢 **Spread the word** - Tell other educators!
 
 ---
 
-**Back to:** [Home](Home) | [Installation](Installation) | [Quick Start Guide](Quick-Start-Guide)
+**Back to:** [Home](index.md) | [Installation](Installation.md) | [Quick Start Guide](Quick-Start-Guide.md)

@@ -16,8 +16,9 @@ Welcome to Educator Tools! This guide will help you get started in just a few mi
 
 Educator Tools is a collection of classroom management features for Minecraft Education that helps teachers control their virtual classroom. Think of it as your digital teaching assistant - it lets you move students, change game settings, create activities, and keep everyone focused on learning.
 
-> [!TIP]
-> **New to Minecraft Education?** Don't worry! This guide assumes no prior experience. We'll walk you through everything step by step.
+!!! tip
+    **New to Minecraft Education?** Don't worry! This guide assumes no prior experience. We'll walk you through everything step by step.
+
 
 ---
 
@@ -41,10 +42,11 @@ When creating a new world or editing an existing one, activate the Educator Tool
 
 ![Activate Pack Screenshot](images/activate-pack.png)
 
-> [!NOTE]
-> **How to verify it's working:** Join the world and look for the **Educator Toolbox** item in your hotbar (the bottom row of your inventory). If you see it, you're all set!
+!!! note
+    **How to verify it's working:** Join the world and look for the **Educator Toolbox** item in your hotbar (the bottom row of your inventory). If you see it, you're all set!
 
-Need more detailed installation help? See the full **[Installation Guide](Installation)**.
+
+Need more detailed installation help? See the full **[Installation Guide](Installation.md)**.
 
 ---
 
@@ -60,8 +62,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 ![Toolbox Menu Screenshot](images/toolbox-menu.png)
 
-> [!TIP]
-> **Quick Access Tip:** Keep the Educator Toolbox in slot 1 of your hotbar. Press the `1` key anytime to quickly select it.
+!!! tip
+    **Quick Access Tip:** Keep the Educator Toolbox in slot 1 of your hotbar. Press the `1` key anytime to quickly select it.
+
 
 ---
 
@@ -79,8 +82,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 ![Teleport Tool Screenshot](images/teleport-tool.png)
 
-> [!IMPORTANT]
-> You need at least 2 players online (you + one student) for teleport to work.
+!!! info
+    You need at least 2 players online (you + one student) for teleport to work.
+
 
 ---
 
@@ -97,8 +101,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 ![Focus Mode Screenshot](images/focus-mode.png)
 
-> [!WARNING]
-> **Remember to turn it off!** Click **Disable Globally** in the Focus Mode menu when you're done giving instructions.
+!!! warning
+    **Remember to turn it off!** Click **Disable Globally** in the Focus Mode menu when you're done giving instructions.
+
 
 ---
 
@@ -128,8 +133,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 ![Environment Settings Screenshot](images/environment-settings.png)
 
-> [!TIP]
-> **Pro Tip:** Use **Always Day** to lock the time at noon. This ensures consistent lighting throughout your lesson!
+!!! tip
+    **Pro Tip:** Use **Always Day** to lock the time at noon. This ensures consistent lighting throughout your lesson!
+
 
 ---
 
@@ -138,30 +144,33 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 You now know the basics! Here's what to explore next:
 
 ### For Everyday Teaching
-- 🎯 **[Essential Tools](Essential-Tools)** - The 5 most important tools (Custom Nicknames, Assignments, Focus Mode, Lock Players, Letter Blocks)
+- 🎯 **[Essential Tools](Essential-Tools.md)** - The 5 most important tools (Custom Nicknames, Assignments, Focus Mode, Lock Players, Letter Blocks)
 
 ### When You Need More
-- 👥 **[Student Management Tools](Student-Management-Tools)** - Teleport, gamemode, teams, and inventory
-- 🎓 **[Classroom Control Tools](Classroom-Control-Tools)** - Focus mode, timer, assignments, and more
-- 🌍 **[World Management Tools](World-Management-Tools)** - Time, weather, game rules
-- 🔤 **[Letter Blocks Guide](Letter-Blocks-Getting-Started)** - Build words and equations with special blocks
+- 👥 **[Student Management Tools](Student-Management-Tools.md)** - Teleport, gamemode, teams, and inventory
+- 🎓 **[Classroom Control Tools](Classroom-Control-Tools.md)** - Focus mode, timer, assignments, and more
+- 🌍 **[World Management Tools](World-Management-Tools.md)** - Time, weather, game rules
+- 🔤 **[Letter Blocks Guide](Letter-Blocks-Getting-Started.md)** - Build words and equations with special blocks
 
 ### If You Need Help
-- ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting)** - Common questions and solutions
-- 🆘 **[Getting Help](Getting-Help)** - How to report problems or ask questions
+- ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common questions and solutions
+- 🆘 **[Getting Help](Getting-Help.md)** - How to report problems or ask questions
 
 ---
 
 ## Tips for New Teachers
 
-> [!TIP]
-> **Start with 2-3 tools** - Don't try to learn everything at once. Master Custom Nicknames and Focus Mode first, then gradually explore other features.
+!!! tip
+    **Start with 2-3 tools** - Don't try to learn everything at once. Master Custom Nicknames and Focus Mode first, then gradually explore other features.
 
-> [!NOTE]
-> **Practice in an empty world** - Create a test world to try out the tools before using them with students. This helps you feel confident during actual lessons.
 
-> [!IMPORTANT]
-> **The toolbox is always with you** - If you somehow lose it, you can get it back from the Creative Mode inventory (search for "Educator Toolbox").
+!!! note
+    **Practice in an empty world** - Create a test world to try out the tools before using them with students. This helps you feel confident during actual lessons.
+
+
+!!! info
+    **The toolbox is always with you** - If you somehow lose it, you can get it back from the Creative Mode inventory (search for "Educator Toolbox").
+
 
 **You can't break anything!** All settings can be changed, Focus Mode can be turned off anytime, and player locks can be removed. Experiment freely and discover what works best for your teaching style!
 
@@ -169,6 +178,6 @@ You now know the basics! Here's what to explore next:
 
 **Next Steps:**
 
-- 📚 **Learn the essentials:** [Essential Tools](Essential-Tools) - Master the 5 most important features
-- 📖 **See everything:** [All Features Guide](Educator-Toolbox) - Complete tool reference
-- 🏠 **Return home:** [Wiki Home](Home) - Main navigation page
+- 📚 **Learn the essentials:** [Essential Tools](Essential-Tools.md) - Master the 5 most important features
+- 📖 **See everything:** [All Features Guide](Educator-Toolbox.md) - Complete tool reference
+- 🏠 **Return home:** [Wiki Home](index.md) - Main navigation page

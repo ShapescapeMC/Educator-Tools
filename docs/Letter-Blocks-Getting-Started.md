@@ -17,10 +17,11 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
 
 ## What are Letter Blocks?
 
-> [!NOTE]
-> Letter Blocks are Minecraft blocks with letters, numbers, or symbols on them. Instead of being made of wood or stone, each block shows a character. You can place them like regular blocks to spell words, create math problems, or make signs.
->
-> **Think of them as:** Physical Scrabble tiles or alphabet blocks that you can build with in 3D space.
+!!! note
+    Letter Blocks are Minecraft blocks with letters, numbers, or symbols on them. Instead of being made of wood or stone, each block shows a character. You can place them like regular blocks to spell words, create math problems, or make signs.
+
+    **Think of them as:** Physical Scrabble tiles or alphabet blocks that you can build with in 3D space.
+
 
 ![Letter blocks spelling a word](images/letter-blocks-example.png)
 
@@ -75,13 +76,14 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
 
 ## How to Get Letter Blocks
 
-> [!IMPORTANT]
-> Letter Blocks require **Creative Mode** to access from the inventory. Make sure you're in Creative Mode before trying to get letter blocks.
+!!! info
+    Letter Blocks require **Creative Mode** to access from the inventory. Make sure you're in Creative Mode before trying to get letter blocks.
+
 
 ### 🎨 Method 1: Creative Mode Inventory (Easiest)
 
 1. Make sure you're in **Creative Mode**
-   - See [Gamemode Guide](Essential-Tools#-change-gamemode) if you need to switch
+   - See [Gamemode Guide](Essential-Tools.md#-change-gamemode) if you need to switch
 2. Open your inventory (press **E** key)
 3. Click the **Search** tab (magnifying glass icon)
 4. Type "letter" or "block" in the search box
@@ -120,8 +122,9 @@ To spell a word like "HELLO":
 4. Continue placing L, L, O in a row
 5. You now have "HELLO" spelled out!
 
-> [!TIP]
-> Place blocks at eye level or higher so they're easy to read. You can stack them or arrange them in any pattern for creative displays.
+!!! tip
+    Place blocks at eye level or higher so they're easy to read. You can stack them or arrange them in any pattern for creative displays.
+
 
 ![Building the word HELLO with letter blocks](gifs/build-word-demo.gif)
 
@@ -133,14 +136,15 @@ To spell a word like "HELLO":
 
 ### 📐 Stacking and Arranging
 
-> [!TIP]
-> Letter blocks work just like regular Minecraft blocks. Here are the best practices for arranging them:
->
-> - ✅ Stack them vertically (great for tall signs)
-> - ✅ Place them in rows (spell words horizontally)
-> - ✅ Arrange them in grids (create crossword-style layouts)
-> - ✅ Build 3D shapes with them
-> - ✅ Place them on walls, floors, ceilings - any surface
+!!! tip
+    Letter blocks work just like regular Minecraft blocks. Here are the best practices for arranging them:
+
+    - ✅ Stack them vertically (great for tall signs)
+    - ✅ Place them in rows (spell words horizontally)
+    - ✅ Arrange them in grids (create crossword-style layouts)
+    - ✅ Build 3D shapes with them
+    - ✅ Place them on walls, floors, ceilings - any surface
+
 
 ---
 
@@ -182,8 +186,9 @@ Place blocks in a row: [2] [+] [2] [=] [4]
 ```
 Stack blocks vertically for traditional math format
 
-> [!TIP]
-> Use arrow blocks (→) to show "solve this" or point to answers
+!!! tip
+    Use arrow blocks (→) to show "solve this" or point to answers
+
 
 ### 🪧 For Signs and Labels
 
@@ -279,7 +284,7 @@ Stack blocks vertically for traditional math format
 <details>
 <summary>❓ <strong>Can I change the color or style of letter blocks?</strong></summary>
 
-The default blocks have one style. For custom styles and colors, see [More Letter Blocks Extension](Extensions-More-Letter-Blocks) for additional themed sets, or [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration) for making your own.
+The default blocks have one style. For custom styles and colors, see [More Letter Blocks Extension](Extensions-More-Letter-Blocks.md) for additional themed sets, or [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for making your own.
 
 </details>
 
@@ -293,7 +298,7 @@ Leave empty blocks (don't place anything) between words, or use a plain colored 
 <details>
 <summary>❓ <strong>Can students use letter blocks?</strong></summary>
 
-Yes! In Creative Mode, all students can access letter blocks from their inventory. You can also give them specific blocks using [Inventory Management](Student-Management-Tools#-inventory-management).
+Yes! In Creative Mode, all students can access letter blocks from their inventory. You can also give them specific blocks using [Inventory Management](Student-Management-Tools.md#-inventory-management).
 
 </details>
 
@@ -307,7 +312,7 @@ Yes, they work in all game modes. In Survival, students need to have the blocks 
 <details>
 <summary>❓ <strong>What if I need a character that doesn't exist?</strong></summary>
 
-The default set includes most common letters, numbers, and symbols. For additional characters or custom fonts, see [More Letter Blocks Extension](Extensions-More-Letter-Blocks) or [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration).
+The default set includes most common letters, numbers, and symbols. For additional characters or custom fonts, see [More Letter Blocks Extension](Extensions-More-Letter-Blocks.md) or [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md).
 
 </details>
 
@@ -317,16 +322,16 @@ The default set includes most common letters, numbers, and symbols. For addition
 
 ### 🚀 Ready to explore more?
 
-- 🎯 **[Letter Blocks Activities](Letter-Blocks-Activities)** - Classroom activity ideas and teaching tips
-- 🎨 **[More Letter Blocks Extension](Extensions-More-Letter-Blocks)** - Expansion pack with 9 themed backgrounds and more characters
-- ⚙️ **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration)** - Create your own custom letter blocks (advanced)
+- 🎯 **[Letter Blocks Activities](Letter-Blocks-Activities.md)** - Classroom activity ideas and teaching tips
+- 🎨 **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** - Expansion pack with 9 themed backgrounds and more characters
+- ⚙️ **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md)** - Create your own custom letter blocks (advanced)
 
 ### 🔧 Want to use other tools with Letter Blocks?
 
-- 📦 **[Inventory Management](Student-Management-Tools#-inventory-management)** - Give letter blocks to all students at once
-- 📍 **[Teleport](Student-Management-Tools#-teleport)** - Gather students to see a letter block display
-- ⏱️ **[Timer](Classroom-Control-Tools#-timer)** - Timed spelling or building challenges
+- 📦 **[Inventory Management](Student-Management-Tools.md#-inventory-management)** - Give letter blocks to all students at once
+- 📍 **[Teleport](Student-Management-Tools.md#-teleport)** - Gather students to see a letter block display
+- ⏱️ **[Timer](Classroom-Control-Tools.md#-timer)** - Timed spelling or building challenges
 
 ### ❓ Need Help?
 
-Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting) page.
+Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md) page.

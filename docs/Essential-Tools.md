@@ -33,8 +33,9 @@ Allows students to choose personalized display names that appear instead of thei
 
 ### Why it's essential
 
-> [!NOTE]
-> Custom Nicknames helps you build a professional, inclusive classroom environment where every student feels seen and respected.
+!!! note
+    Custom Nicknames helps you build a professional, inclusive classroom environment where every student feels seen and respected.
+
 
 - ✅ **Builds classroom community** - Students feel more connected with personalized names
 - ✅ **Respects identity** - Honor preferred names and pronouns
@@ -45,8 +46,9 @@ Allows students to choose personalized display names that appear instead of thei
 
 #### Enable Nicknames
 
-> [!NOTE]
-> Custom Nicknames is enabled by default. These steps show how to customize the settings. No activation required unless previously disabled.
+!!! note
+    Custom Nicknames is enabled by default. These steps show how to customize the settings. No activation required unless previously disabled.
+
 
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **Custom Nicknames**
@@ -72,8 +74,9 @@ Students receive notifications when approved or denied.
 
 ![Approval queue](images/nickname-approval-queue.png)
 
-> [!TIP]
-> **Batch approval:** You can approve or deny multiple nickname requests at once by checking/unchecking multiple boxes before clicking Submit.
+!!! tip
+    **Batch approval:** You can approve or deny multiple nickname requests at once by checking/unchecking multiple boxes before clicking Submit.
+
 
 #### Manually Set Nicknames (Teacher Control)
 
@@ -90,8 +93,9 @@ Students receive notifications when approved or denied.
 - **Require Approval: ON** - Maintain control over appropriate names
 - **Allow Custom Colors: Your choice** - Adds fun but can be distracting
 
-> [!IMPORTANT]
-> Nicknames persist across sessions. Once approved, students don't need to re-enter them every time they join the world.
+!!! info
+    Nicknames persist across sessions. Once approved, students don't need to re-enter them every time they join the world.
+
 
 ---
 
@@ -102,8 +106,9 @@ Creates structured assignments where students can submit text responses and loca
 
 ### Why it's essential
 
-> [!NOTE]
-> Assignments transforms Minecraft from a building game into a complete learning management system where you can track, assess, and document student work.
+!!! note
+    Assignments transforms Minecraft from a building game into a complete learning management system where you can track, assess, and document student work.
+
 
 - ✅ **Track student progress** - See who completed work and who needs support
 - ✅ **Collect reflections** - Gather written responses to prompts and questions
@@ -144,8 +149,9 @@ Creates structured assignments where students can submit text responses and loca
 
 ![Assignment submissions](images/view-submissions.png)
 
-> [!TIP]
-> **Quick Review:** Use the teleport feature to visit each student's build location. This is much faster than walking around the world looking for projects!
+!!! tip
+    **Quick Review:** Use the teleport feature to visit each student's build location. This is much faster than walking around the world looking for projects!
+
 
 #### Review a Submission
 
@@ -169,8 +175,9 @@ When the deadline has passed or everyone has submitted:
 - ✅ Students can no longer submit or edit
 - ✅ You can still view all submissions
 
-> [!NOTE]
-> **Completed assignments are archived, not deleted.** You can always go back and review previous submissions for grading or documentation purposes.
+!!! note
+    **Completed assignments are archived, not deleted.** You can always go back and review previous submissions for grading or documentation purposes.
+
 
 **Example uses:**
 - 📝 "Describe your building process in 2-3 sentences"
@@ -189,8 +196,9 @@ Dims students' screens, shows them a message, and prevents them from moving or i
 
 ### Why it's essential
 
-> [!NOTE]
-> Focus Mode is the digital equivalent of saying "Hands up, eyes on me!" - it instantly gets every student's attention without raising your voice.
+!!! note
+    Focus Mode is the digital equivalent of saying "Hands up, eyes on me!" - it instantly gets every student's attention without raising your voice.
+
 
 - ✅ **Instant attention** - Stop everyone immediately when you need to speak
 - ✅ **Clear communication** - Display important messages on every screen
@@ -215,8 +223,9 @@ Dims students' screens, shows them a message, and prevents them from moving or i
 
 ![Focus Mode active on student screen](images/focus-mode-student-view.png)
 
-> [!WARNING]
-> **Don't forget to disable it!** Students remain frozen until you manually turn Focus Mode off. Always check that you've disabled it before moving on.
+!!! warning
+    **Don't forget to disable it!** Students remain frozen until you manually turn Focus Mode off. Always check that you've disabled it before moving on.
+
 
 #### Turn Off Focus Mode
 
@@ -235,17 +244,21 @@ Dims students' screens, shows them a message, and prevents them from moving or i
 5. Configure the message
 6. Toggle Focus Mode ON/OFF for just that group
 
-> [!TIP]
-> **Keep messages short and clear** - Students can't take notes while frozen. Use Focus Mode to get attention, then disable it so they can write down instructions.
+!!! tip
+    **Keep messages short and clear** - Students can't take notes while frozen. Use Focus Mode to get attention, then disable it so they can write down instructions.
 
-> [!TIP]
-> **Works on offline players** - If you enable Focus Mode while a student is offline, they'll see it immediately when they rejoin the world.
 
-> [!IMPORTANT]
-> **Teachers are never affected** - Focus Mode will never freeze you, even if you enable it globally. You can always move and work while students are paused.
+!!! tip
+    **Works on offline players** - If you enable Focus Mode while a student is offline, they'll see it immediately when they rejoin the world.
 
-> [!CAUTION]
-> **Chat limitation:** Chat cannot be disabled during Focus Mode (Minecraft limitation). Students can still send messages while frozen.
+
+!!! info
+    **Teachers are never affected** - Focus Mode will never freeze you, even if you enable it globally. You can always move and work while students are paused.
+
+
+!!! danger
+    **Chat limitation:** Chat cannot be disabled during Focus Mode (Minecraft limitation). Students can still send messages while frozen.
+
 
 ![Focus Mode demonstration](gifs/focus-mode-toggle-demo.gif)
 
@@ -258,8 +271,9 @@ Creates invisible boundaries that prevent students from moving beyond a defined 
 
 ### Why it's essential
 
-> [!NOTE]
-> Lock Players creates invisible boundaries that keep students focused on the learning area without constant verbal reminders or supervision.
+!!! note
+    Lock Players creates invisible boundaries that keep students focused on the learning area without constant verbal reminders or supervision.
+
 
 - ✅ **Maintain focus** - Keep students in activity areas without constant reminders
 - ✅ **Guided learning** - Lead the class on tours while keeping everyone together
@@ -293,18 +307,20 @@ Creates invisible boundaries that prevent students from moving beyond a defined 
 
 #### Lock Modes Explained
 
-> [!NOTE]
-> **Center Mode (Fixed Location):**
-> - 📍 Sets a specific spot as the center of a boundary circle
-> - ✅ Students can move freely within the radius
-> - 🚫 They can't leave the area
-> - **When to use:** Building projects, confined activities, keeping students in one spot
+!!! note
+    **Center Mode (Fixed Location):**
+    - 📍 Sets a specific spot as the center of a boundary circle
+    - ✅ Students can move freely within the radius
+    - 🚫 They can't leave the area
+    - **When to use:** Building projects, confined activities, keeping students in one spot
 
-> [!NOTE]
-> **Player Mode (Follow Mode):**
-> - 👥 The boundary follows a specific player (usually you, the teacher)
-> - 🚶 Students must stay within radius as that player moves
-> - **When to use:** Guided tours, walking lessons, keeping the class together while moving
+
+!!! note
+    **Player Mode (Follow Mode):**
+    - 👥 The boundary follows a specific player (usually you, the teacher)
+    - 🚶 Students must stay within radius as that player moves
+    - **When to use:** Guided tours, walking lessons, keeping the class together while moving
+
 
 #### Remove a Lock
 
@@ -314,17 +330,21 @@ Creates invisible boundaries that prevent students from moving beyond a defined 
 4. Select the lock to remove
 5. Confirm removal
 
-> [!TIP]
-> **Player Mode for tours:** Use Player Mode to lead guided tours. Students will automatically follow you as you move, staying within the radius you set.
+!!! tip
+    **Player Mode for tours:** Use Player Mode to lead guided tours. Students will automatically follow you as you move, staying within the radius you set.
 
-> [!TIP]
-> **Center Mode for building:** Use Center Mode for independent work. Students can work freely within their zone without wandering off.
 
-> [!TIP]
-> **Enable auto-return:** Set **Teleport to Center: ON** so students automatically teleport back if they reach the boundary edge.
+!!! tip
+    **Center Mode for building:** Use Center Mode for independent work. Students can work freely within their zone without wandering off.
 
-> [!WARNING]
-> **Don't forget to unlock!** Always remove locks when activities are finished. Students won't be able to explore or move to new areas until you remove the lock.
+
+!!! tip
+    **Enable auto-return:** Set **Teleport to Center: ON** so students automatically teleport back if they reach the boundary edge.
+
+
+!!! warning
+    **Don't forget to unlock!** Always remove locks when activities are finished. Students won't be able to explore or move to new areas until you remove the lock.
+
 
 ![Lock Players demonstration](gifs/lock-players-demo.gif)
 
@@ -337,8 +357,9 @@ Provides special building blocks that display letters, numbers, and symbols. Stu
 
 ### Why it's essential
 
-> [!NOTE]
-> Letter Blocks is a **unique feature** that doesn't exist in vanilla Minecraft. It transforms Minecraft into a 3D literacy and numeracy learning environment.
+!!! note
+    Letter Blocks is a **unique feature** that doesn't exist in vanilla Minecraft. It transforms Minecraft into a 3D literacy and numeracy learning environment.
+
 
 - ✅ **Unique to Educator Tools** - This feature doesn't exist in vanilla Minecraft
 - ✅ **Visual literacy** - Students build words and see them in 3D
@@ -384,7 +405,7 @@ Provides special building blocks that display letters, numbers, and symbols. Stu
 - They can search for letter blocks in their inventory
 
 **Option 2: You Give Specific Blocks**
-1. Use [Inventory Management](Student-Management-Tools#-inventory-management)
+1. Use [Inventory Management](Student-Management-Tools.md#-inventory-management)
 2. Give students the exact blocks they need for an activity
 
 #### Build with Letter Blocks
@@ -397,12 +418,13 @@ To spell a word like "HELLO":
 4. Continue placing L, L, O in a row
 5. You now have "HELLO" spelled out in 3D!
 
-> [!TIP]
-> **Readability tips:**
-> - Place blocks at eye level or higher so they're easy to read
-> - Leave empty spaces between words for readability
-> - Stack blocks vertically for vertical text
-> - Combine with regular blocks to create frames or backgrounds
+!!! tip
+    **Readability tips:**
+    - Place blocks at eye level or higher so they're easy to read
+    - Leave empty spaces between words for readability
+    - Stack blocks vertically for vertical text
+    - Combine with regular blocks to create frames or backgrounds
+
 
 ![Building the word HELLO with letter blocks](gifs/build-word-demo.gif)
 
@@ -444,8 +466,9 @@ To spell a word like "HELLO":
 
 </details>
 
-> [!TIP]
-> **Want more characters?** Check out **[More Letter Blocks Extension](Extensions-More-Letter-Blocks)** for hundreds of additional characters and 9 themed backgrounds!
+!!! tip
+    **Want more characters?** Check out **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** for hundreds of additional characters and 9 themed backgrounds!
+
 
 ---
 
@@ -453,13 +476,13 @@ To spell a word like "HELLO":
 
 Now that you know the 5 most important features, you can explore more tools:
 
-- **[Student Management Tools](Student-Management-Tools)** - Teleport, Teams, Inventory, Gamemode
-- **[Classroom Control Tools](Classroom-Control-Tools)** - Timer and more classroom management
-- **[World Management Tools](World-Management-Tools)** - Time, Weather, World Settings
-- **[Letter Blocks Activities](Letter-Blocks-Activities)** - Classroom activity ideas with Letter Blocks
+- **[Student Management Tools](Student-Management-Tools.md)** - Teleport, Teams, Inventory, Gamemode
+- **[Classroom Control Tools](Classroom-Control-Tools.md)** - Timer and more classroom management
+- **[World Management Tools](World-Management-Tools.md)** - Time, Weather, World Settings
+- **[Letter Blocks Activities](Letter-Blocks-Activities.md)** - Classroom activity ideas with Letter Blocks
 
-Or jump to **[All Features Guide](Educator-Toolbox)** to see everything Educator Tools can do.
+Or jump to **[All Features Guide](Educator-Toolbox.md)** to see everything Educator Tools can do.
 
 ---
 
-**Need Help?** Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting) page or visit [Getting Help](Getting-Help).
+**Need Help?** Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md) page or visit [Getting Help](Getting-Help.md).

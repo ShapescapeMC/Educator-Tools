@@ -2,7 +2,7 @@
 
 **This section is for developers and advanced users who want to contribute to Educator Tools, customize the pack, or understand how it works.**
 
-**If you're a teacher looking to use Educator Tools in your classroom, see the [Quick Start Guide](Quick-Start-Guide) instead.**
+**If you're a teacher looking to use Educator Tools in your classroom, see the [Quick Start Guide](Quick-Start-Guide.md) instead.**
 
 ---
 
@@ -26,8 +26,8 @@ Before you begin developing:
 
 ### Quick Start for Developers
 
-1. **[Development Setup](Development-Setup)** - Set up your development environment
-2. **[Contributing Guide](Contributing)** - Understand the contribution workflow
+1. **[Development Setup](Development-Setup.md)** - Set up your development environment
+2. **[Contributing Guide](Contributing.md)** - Understand the contribution workflow
 3. **Clone the repository** and start exploring the code
 4. **Make changes** and test them locally
 5. **Submit a pull request** when ready
@@ -36,7 +36,7 @@ Before you begin developing:
 
 ## Core Documentation
 
-### [Development Setup](Development-Setup)
+### [Development Setup](Development-Setup.md)
 
 Learn how to set up your development environment to work on Educator Tools.
 
@@ -47,11 +47,11 @@ Learn how to set up your development environment to work on Educator Tools.
 - Running tests
 - Debugging techniques
 
-**[Read Development Setup Guide →](Development-Setup)**
+**[Read Development Setup Guide →](Development-Setup.md)**
 
 ---
 
-### [Contributing](Contributing)
+### [Contributing](Contributing.md)
 
 Guidelines for contributing code, features, or bug fixes to Educator Tools.
 
@@ -62,11 +62,11 @@ Guidelines for contributing code, features, or bug fixes to Educator Tools.
 - Issue reporting guidelines
 - Testing requirements
 
-**[Read Contributing Guide →](Contributing)**
+**[Read Contributing Guide →](Contributing.md)**
 
 ---
 
-### [Translations](Translations)
+### [Translations](Translations.md)
 
 How to add or update language translations for Educator Tools.
 
@@ -77,11 +77,11 @@ How to add or update language translations for Educator Tools.
 - Testing translations in-game
 - Localization best practices
 
-**[Read Translations Guide →](Translations)**
+**[Read Translations Guide →](Translations.md)**
 
 ---
 
-### [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration)
+### [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md)
 
 Create custom letter block sets with your own fonts, colors, and backgrounds.
 
@@ -92,7 +92,7 @@ Create custom letter block sets with your own fonts, colors, and backgrounds.
 - Unicode character support
 - Building and testing custom letter blocks
 
-**[Read Advanced Configuration Guide →](Advanced-Letter-Blocks-Configuration)**
+**[Read Advanced Configuration Guide →](Advanced-Letter-Blocks-Configuration.md)**
 
 ---
 
@@ -314,7 +314,7 @@ if (condition) {
 
 - **[GitHub Discussions](https://github.com/ShapescapeMC/Educator-Tools/discussions)** - Ask questions
 - **[GitHub Issues](https://github.com/ShapescapeMC/Educator-Tools/issues)** - Report bugs, suggest features
-- **[Contributing Guide](Contributing)** - Contribution guidelines
+- **[Contributing Guide](Contributing.md)** - Contribution guidelines
 
 ### Staying Updated
 
@@ -328,7 +328,7 @@ if (condition) {
 
 ### Custom Letter Blocks
 
-See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration) for detailed guide on:
+See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for detailed guide on:
 - Creating custom font sets
 - Adding Unicode characters
 - Designing background images
@@ -336,7 +336,7 @@ See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration)
 
 ### Internationalization
 
-See [Translations](Translations) for information on:
+See [Translations](Translations.md) for information on:
 - Translation file format
 - Adding new languages
 - Testing localized content
@@ -372,8 +372,8 @@ Educator Tools is open-source software. When contributing:
 → [GitHub Issues](https://github.com/ShapescapeMC/Educator-Tools/issues)
 
 **For general usage (non-developer):**
-→ [Getting Help](Getting-Help)
+→ [Getting Help](Getting-Help.md)
 
 ---
 
-**Back to:** [Home](Home) | [Contributing](Contributing) | [Development Setup](Development-Setup)
+**Back to:** [Home](index.md) | [Contributing](Contributing.md) | [Development Setup](Development-Setup.md)

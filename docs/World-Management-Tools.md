@@ -30,8 +30,9 @@ Control the Minecraft world environment and game rules to create the perfect lea
 
 World Management Tools give you control over time, weather, game rules, and what items or creatures students can encounter. These tools help you create a safe, distraction-free environment focused on learning.
 
-> [!NOTE]
-> All World Management settings apply immediately and can be changed at any time during class. Teachers are never affected by item or entity restrictions.
+!!! note
+    All World Management settings apply immediately and can be changed at any time during class. Teachers are never affected by item or entity restrictions.
+
 
 ## Quick Reference
 
@@ -48,8 +49,9 @@ World Management Tools give you control over time, weather, game rules, and what
 
 Instantly change the time of day and weather in your world, or lock them to stay constant.
 
-> [!NOTE]
-> Time and weather controls affect the entire world immediately. All players will see the changes at once.
+!!! note
+    Time and weather controls affect the entire world immediately. All players will see the changes at once.
+
 
 ### 🎯 When to Use It
 
@@ -71,8 +73,9 @@ The fastest way to get perfect lighting for classroom use.
 3. Click **Environment**
 4. Click **Always Day**
 
-> [!TIP]
-> **Always Day** is the recommended setting for most classroom activities. It provides consistent, bright lighting with a single click.
+!!! tip
+    **Always Day** is the recommended setting for most classroom activities. It provides consistent, bright lighting with a single click.
+
 
 **What Always Day Does:**
 - ☀️ Time sets to noon (brightest, no shadows)
@@ -107,8 +110,9 @@ The fastest way to get perfect lighting for classroom use.
    - ✅ **ON** - Time passes normally (day → night → day)
    - ⏸️ **OFF** - Time freezes at current time
 
-> [!IMPORTANT]
-> When the Daytime Cycle is OFF, time will freeze at whatever time is currently set. Use this to maintain consistent lighting during activities.
+!!! info
+    When the Daytime Cycle is OFF, time will freeze at whatever time is currently set. Use this to maintain consistent lighting during activities.
+
 
 ![Time settings interface](images/time-settings.png)
 
@@ -124,8 +128,9 @@ The fastest way to get perfect lighting for classroom use.
    - 🌧️ **Rain** - Rain falling, darker lighting
    - ⛈️ **Thunder** - Rain + lightning strikes
 
-> [!WARNING]
-> Thunder weather includes lightning strikes that can start fires and damage players. Use Clear weather for most classroom activities.
+!!! warning
+    Thunder weather includes lightning strikes that can start fires and damage players. Use Clear weather for most classroom activities.
+
 
 #### Control Weather Cycle
 
@@ -137,8 +142,9 @@ The fastest way to get perfect lighting for classroom use.
    - ✅ **ON** - Weather changes randomly over time
    - ⏸️ **OFF** - Weather stays as currently set
 
-> [!IMPORTANT]
-> When the Weather Cycle is OFF, weather will remain as currently set. Turn this off to prevent unexpected rain during outdoor activities.
+!!! info
+    When the Weather Cycle is OFF, weather will remain as currently set. Turn this off to prevent unexpected rain during outdoor activities.
+
 
 ---
 
@@ -196,8 +202,9 @@ The fastest way to get perfect lighting for classroom use.
 
 Toggle major game rules that affect how Minecraft works. Control mob spawning, item loss on death, difficulty, and more.
 
-> [!NOTE]
-> Game rule changes apply immediately to the entire world. You can change settings at any time during class to match different activities.
+!!! note
+    Game rule changes apply immediately to the entire world. You can change settings at any time during class to match different activities.
+
 
 ### 🎯 When to Use It
 
@@ -215,8 +222,9 @@ Toggle major game rules that affect how Minecraft works. Control mob spawning, i
 3. Click **World Settings**
 4. Toggle any setting ON or OFF
 
-> [!TIP]
-> Most classroom activities work best with: **Mob Spawning OFF**, **Keep Inventory ON**, **Daylight Cycle OFF**.
+!!! tip
+    Most classroom activities work best with: **Mob Spawning OFF**, **Keep Inventory ON**, **Daylight Cycle OFF**.
+
 
 ### Available Settings
 
@@ -224,8 +232,9 @@ Toggle major game rules that affect how Minecraft works. Control mob spawning, i
 
 Controls whether creatures (animals, monsters) spawn naturally in the world.
 
-> [!IMPORTANT]
-> Turning Mob Spawning OFF prevents NEW creatures from spawning, but doesn't remove existing ones. Use [Clear Entities](Essential-Tools#-clear-entities) to remove mobs already in the world.
+!!! info
+    Turning Mob Spawning OFF prevents NEW creatures from spawning, but doesn't remove existing ones. Use [Clear Entities](Essential-Tools.md#-clear-entities) to remove mobs already in the world.
+
 
 **✅ Toggle OFF when:**
 - Building activities where mobs are distracting
@@ -243,8 +252,9 @@ Controls whether creatures (animals, monsters) spawn naturally in the world.
 
 When enabled, players keep all items when they die instead of dropping them at their death location.
 
-> [!TIP]
-> Keep Inventory ON is highly recommended for building projects and creative activities. It prevents frustration from accidental deaths.
+!!! tip
+    Keep Inventory ON is highly recommended for building projects and creative activities. It prevents frustration from accidental deaths.
+
 
 **✅ Toggle ON when:**
 - Building projects (prevents losing materials on accidental death)
@@ -284,8 +294,9 @@ Controls whether weather changes over time. Same as Environment → Weather Cycl
 
 Players skip the death screen and respawn instantly instead of seeing death details.
 
-> [!TIP]
-> Turn Immediate Respawn ON to minimize interruptions. Students won't get stuck on death screens during class activities.
+!!! tip
+    Turn Immediate Respawn ON to minimize interruptions. Students won't get stuck on death screens during class activities.
+
 
 **✅ Toggle ON when:**
 - Death isn't important to the activity
@@ -299,8 +310,9 @@ Players skip the death screen and respawn instantly instead of seeing death deta
 
 Enable or disable command block functionality for advanced students.
 
-> [!CAUTION]
-> Command blocks are powerful tools that can run game commands. Only enable this for advanced students or technical lessons.
+!!! danger
+    Command blocks are powerful tools that can run game commands. Only enable this for advanced students or technical lessons.
+
 
 **✅ Toggle ON when:**
 - Advanced students are using command blocks
@@ -314,8 +326,9 @@ Enable or disable command block functionality for advanced students.
 
 Controls whether environmental damage occurs (fire, lava, falling, drowning, etc.).
 
-> [!IMPORTANT]
-> World Damage only affects environmental damage. Combine with [Manage Health](Essential-Tools#️-manage-health) → Enable Damage OFF for complete invulnerability.
+!!! info
+    World Damage only affects environmental damage. Combine with [Manage Health](Essential-Tools.md#️-manage-health) → Enable Damage OFF for complete invulnerability.
+
 
 **✅ Toggle OFF when:**
 - Building activities where falling damage is annoying
@@ -398,8 +411,9 @@ Sets the overall game difficulty level, affecting mob strength, damage, and hung
 
 </details>
 
-> [!TIP]
-> For most classroom building activities, use **Peaceful** difficulty or turn **Mob Spawning OFF** with **Keep Inventory ON**. This creates a safe, frustration-free environment.
+!!! tip
+    For most classroom building activities, use **Peaceful** difficulty or turn **Mob Spawning OFF** with **Keep Inventory ON**. This creates a safe, frustration-free environment.
+
 
 ---
 
@@ -407,8 +421,9 @@ Sets the overall game difficulty level, affecting mob strength, damage, and hung
 
 Block specific items and creatures to create a controlled, safe learning environment by removing distractions or dangerous elements.
 
-> [!NOTE]
-> Teachers are completely exempt from all classroom limitations. You can always use any restricted item or spawn any restricted entity.
+!!! note
+    Teachers are completely exempt from all classroom limitations. You can always use any restricted item or spawn any restricted entity.
+
 
 ### 🎯 When to Use It
 
@@ -428,8 +443,9 @@ Block specific items and creatures to create a controlled, safe learning environ
 5. Toggle individual restrictions ON or OFF
 6. Changes apply immediately
 
-> [!IMPORTANT]
-> When you enable an item restriction, the item is automatically removed from all student inventories immediately. Students will see a chat message if they try to use a restricted item.
+!!! info
+    When you enable an item restriction, the item is automatically removed from all student inventories immediately. Students will see a chat message if they try to use a restricted item.
+
 
 ### Item Restrictions
 
@@ -452,7 +468,7 @@ When you enable an item restriction, the system automatically:
 **When to restrict:**
 - Activities with movement limits
 - Guided lessons with boundaries
-- When using [Lock Players](Classroom-Control-Tools#-lock-players)
+- When using [Lock Players](Classroom-Control-Tools.md#-lock-players)
 
 </details>
 
@@ -497,8 +513,9 @@ When you enable an item restriction, the system automatically:
 - Non-combat lessons
 - Peaceful classroom environments
 
-> [!TIP]
-> Restrict arrows during building projects to prevent students from distracting or harming each other.
+!!! tip
+    Restrict arrows during building projects to prevent students from distracting or harming each other.
+
 
 </details>
 
@@ -515,11 +532,13 @@ When you enable an item restriction, the system automatically:
 - Activities where liquid placement could disrupt the lesson
 - When you want controlled use of water/lava mechanics
 
-> [!NOTE]
-> This includes: empty buckets, water, lava, cod, salmon, pufferfish, tropical fish, axolotl, and tadpole buckets. Milk and powder snow buckets are intentionally not restricted.
+!!! note
+    This includes: empty buckets, water, lava, cod, salmon, pufferfish, tropical fish, axolotl, and tadpole buckets. Milk and powder snow buckets are intentionally not restricted.
 
-> [!WARNING]
-> Lava buckets are particularly dangerous as they can quickly destroy builds and harm players. Consider restricting buckets during most building activities.
+
+!!! warning
+    Lava buckets are particularly dangerous as they can quickly destroy builds and harm players. Consider restricting buckets during most building activities.
+
 
 </details>
 
@@ -563,8 +582,9 @@ When you enable an item restriction, the system automatically:
 - Any time explosions aren't part of the lesson
 - Preventing griefing
 
-> [!WARNING]
-> TNT is highly destructive and can destroy student builds instantly. This is one of the most commonly restricted items in classrooms.
+!!! warning
+    TNT is highly destructive and can destroy student builds instantly. This is one of the most commonly restricted items in classrooms.
+
 
 </details>
 
@@ -615,8 +635,9 @@ When you enable an entity restriction, the system automatically:
 
 **When to restrict:** Almost always (rarely appropriate for classroom)
 
-> [!WARNING]
-> The Wither is one of the most destructive entities in Minecraft. It can destroy large areas quickly and is very difficult to contain. Keep this restricted unless specifically teaching about boss fights.
+!!! warning
+    The Wither is one of the most destructive entities in Minecraft. It can destroy large areas quickly and is very difficult to contain. Keep this restricted unless specifically teaching about boss fights.
+
 
 </details>
 
@@ -629,8 +650,9 @@ When you enable an entity restriction, the system automatically:
 
 **When to restrict:** Almost always (unless specifically teaching about it)
 
-> [!WARNING]
-> The Ender Dragon destroys most blocks it flies through. It's extremely disruptive and hard to control in classroom environments.
+!!! warning
+    The Ender Dragon destroys most blocks it flies through. It's extremely disruptive and hard to control in classroom environments.
+
 
 </details>
 
@@ -643,8 +665,9 @@ When you enable an entity restriction, the system automatically:
 
 **When to restrict:** Most activities (too dangerous for casual play)
 
-> [!CAUTION]
-> The Warden is the most powerful hostile mob in Minecraft. It can kill players in 2-3 hits even with full diamond armor. Avoid allowing this in classrooms.
+!!! danger
+    The Warden is the most powerful hostile mob in Minecraft. It can kill players in 2-3 hits even with full diamond armor. Avoid allowing this in classrooms.
+
 
 </details>
 
@@ -660,8 +683,9 @@ When you enable an entity restriction, the system automatically:
 - Mining projects
 - Any activity requiring block breaking
 
-> [!IMPORTANT]
-> Mining Fatigue makes breaking blocks take 5-10x longer. This effect can severely disrupt classroom activities.
+!!! info
+    Mining Fatigue makes breaking blocks take 5-10x longer. This effect can severely disrupt classroom activities.
+
 
 </details>
 
@@ -697,8 +721,9 @@ When you enable an entity restriction, the system automatically:
 
 ### Typical Classroom Setup
 
-> [!TIP]
-> This is a recommended starting configuration for most general classroom activities. Adjust based on your specific lesson needs.
+!!! tip
+    This is a recommended starting configuration for most general classroom activities. Adjust based on your specific lesson needs.
+
 
 #### Recommended Configuration
 
@@ -717,8 +742,9 @@ When you enable an entity restriction, the system automatically:
 - ❌ Potions, Dragon Egg (unless needed for lesson)
 - ❌ Iron Golem, Snow Golem (can be fun/educational)
 
-> [!NOTE]
-> Teachers can always use restricted items and spawn restricted entities. You are completely exempt from all limitations.
+!!! note
+    Teachers can always use restricted items and spawn restricted entities. You are completely exempt from all limitations.
+
 
 ---
 
@@ -765,7 +791,7 @@ When you enable an entity restriction, the system automatically:
 **📚 Guided Tour/Presentation:**
 - **Restrict:** TNT, Ender Pearls, Arrows, Eggs, Elytra
 - **Allow:** Basic items only
-- **World Settings:** Always Day, Mob Spawning OFF, use [Lock Players](Classroom-Control-Tools#-lock-players)
+- **World Settings:** Always Day, Mob Spawning OFF, use [Lock Players](Classroom-Control-Tools.md#-lock-players)
 
 **🎨 Creative Showcase:**
 - **Restrict:** TNT, Wither, Ender Dragon, Warden
@@ -784,13 +810,14 @@ When you enable an entity restriction, the system automatically:
 
 World Management works great with other Educator Toolbox features:
 
-- **☀️ Always Day** + **[Focus Mode](Classroom-Control-Tools#%EF%B8%8F-focus-mode)** → Clear visibility during focused activities
-- **🚫 Disable TNT** + **[Lock Players](Classroom-Control-Tools#-lock-players)** → Create safe build zones
-- **💚 Keep Inventory** + **[Manage Health](Essential-Tools#%EF%B8%8F-manage-health)** → Invulnerable students for stress-free building
+- **☀️ Always Day** + **[Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)** → Clear visibility during focused activities
+- **🚫 Disable TNT** + **[Lock Players](Classroom-Control-Tools.md#-lock-players)** → Create safe build zones
+- **💚 Keep Inventory** + **[Manage Health](Essential-Tools.md#%EF%B8%8F-manage-health)** → Invulnerable students for stress-free building
 - **⚙️ World Settings** + **[Classroom Limitations](#-classroom-limitations)** → Complete environment control
 
-> [!TIP]
-> Combine multiple World Management features to create the perfect environment for each activity. For example, use Always Day + Mob Spawning OFF + Keep Inventory ON + TNT Restricted for ideal building conditions.
+!!! tip
+    Combine multiple World Management features to create the perfect environment for each activity. For example, use Always Day + Mob Spawning OFF + Keep Inventory ON + TNT Restricted for ideal building conditions.
+
 
 ---
 
@@ -798,9 +825,9 @@ World Management works great with other Educator Toolbox features:
 
 Ready to explore more Educator Toolbox features?
 
-- **[Student Management Tools](Student-Management-Tools)** - Teleport students, create teams, manage inventories
-- **[Classroom Control Tools](Classroom-Control-Tools)** - Focus Mode, Timer, Assignments, and more
-- **[Essential Tools](Essential-Tools)** - Clear entities, manage health, and other core features
-- **[All Features Guide](Educator-Toolbox)** - Complete tool reference
+- **[Student Management Tools](Student-Management-Tools.md)** - Teleport students, create teams, manage inventories
+- **[Classroom Control Tools](Classroom-Control-Tools.md)** - Focus Mode, Timer, Assignments, and more
+- **[Essential Tools](Essential-Tools.md)** - Clear entities, manage health, and other core features
+- **[All Features Guide](Educator-Toolbox.md)** - Complete tool reference
 
-**Need Help?** Check the **[FAQ and Troubleshooting](FAQ-and-Troubleshooting)** page for common questions and solutions.
+**Need Help?** Check the **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** page for common questions and solutions.

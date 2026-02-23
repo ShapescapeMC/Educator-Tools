@@ -28,28 +28,31 @@ The Educator Toolbox is accessed via a special in-game item that appears automat
 
 ![Educator Toolbox item](images/toolbox-item.png)
 
-> [!TIP]
-> **Quick Access:** Keep the Educator Toolbox in slot 1 of your hotbar. Press the `1` key anytime to quickly select it, then right-click to open the menu.
+!!! tip
+    **Quick Access:** Keep the Educator Toolbox in slot 1 of your hotbar. Press the `1` key anytime to quickly select it, then right-click to open the menu.
+
 
 ### Teacher Access
 
-> [!NOTE]
-> **Automatic Setup:**
-> - ✅ All teachers automatically receive the Educator Toolbox when they join the world
-> - ✅ The toolbox cannot be removed from teacher inventories
-> - ✅ If somehow lost, it can be recovered from the Creative Mode inventory (search for "Educator Toolbox")
-> - ✅ Only teachers have access to the Educator Toolbox - students cannot see or use this item
+!!! note
+    **Automatic Setup:**
+    - ✅ All teachers automatically receive the Educator Toolbox when they join the world
+    - ✅ The toolbox cannot be removed from teacher inventories
+    - ✅ If somehow lost, it can be recovered from the Creative Mode inventory (search for "Educator Toolbox")
+    - ✅ Only teachers have access to the Educator Toolbox - students cannot see or use this item
+
 
 ---
 
 ## Tools by Category
 
-> [!IMPORTANT]
-> **Start with [Essential Tools](Essential-Tools) first!** These 5 features (Custom Nicknames, Assignments, Focus Mode, Lock Players, Letter Blocks) are the most important and offer unique educational capabilities.
+!!! info
+    **Start with [Essential Tools](Essential-Tools.md) first!** These 5 features (Custom Nicknames, Assignments, Focus Mode, Lock Players, Letter Blocks) are the most important and offer unique educational capabilities.
+
 
 All tools are organized into three main categories based on what they help you do:
 
-### 👥 [Student Management Tools](Student-Management-Tools)
+### 👥 [Student Management Tools](Student-Management-Tools.md)
 
 Control where students are, what abilities they have, and what items they possess.
 
@@ -60,11 +63,11 @@ Control where students are, what abilities they have, and what items they posses
 | **Teams Management** | Organize students into groups for better management |
 | **Inventory Management** | Give, copy, or clear student items |
 
-**[View Student Management Tools Guide →](Student-Management-Tools)**
+**[View Student Management Tools Guide →](Student-Management-Tools.md)**
 
 ---
 
-### 🎓 [Classroom Control Tools](Classroom-Control-Tools)
+### 🎓 [Classroom Control Tools](Classroom-Control-Tools.md)
 
 Maintain focus, manage behavior, and create structured learning experiences.
 
@@ -76,11 +79,11 @@ Maintain focus, manage behavior, and create structured learning experiences.
 | **Assignments** | Create tasks and collect student submissions |
 | **Custom Nicknames** | Let students personalize their display names |
 
-**[View Classroom Control Tools Guide →](Classroom-Control-Tools)**
+**[View Classroom Control Tools Guide →](Classroom-Control-Tools.md)**
 
 ---
 
-### 🌍 [World Management Tools](World-Management-Tools)
+### 🌍 [World Management Tools](World-Management-Tools.md)
 
 Control the environment, time, weather, and game rules.
 
@@ -91,7 +94,7 @@ Control the environment, time, weather, and game rules.
 | **Manage Health** | Control damage, hunger, and player health settings |
 | **Classroom Limitations** | Block specific items (TNT, arrows) and creatures |
 
-**[View World Management Tools Guide →](World-Management-Tools)**
+**[View World Management Tools Guide →](World-Management-Tools.md)**
 
 ---
 
@@ -101,9 +104,9 @@ Control the environment, time, weather, and game rules.
 
 Start with these beginner-friendly guides:
 
-- **[Quick Start Guide](Quick-Start-Guide)** - Get up and running in 5 minutes
-- **[Essential Tools](Essential-Tools)** - Master the 5 most important tools first
-- **[Installation](Installation)** - Step-by-step installation instructions
+- **[Quick Start Guide](Quick-Start-Guide.md)** - Get up and running in 5 minutes
+- **[Essential Tools](Essential-Tools.md)** - Master the 5 most important tools first
+- **[Installation](Installation.md)** - Step-by-step installation instructions
 
 ### Common Tasks
 
@@ -111,16 +114,16 @@ Jump directly to how-to guides for common classroom tasks:
 
 | Task | Tool to Use |
 |------|-------------|
-| Gather all students to one location | [Teleport](Student-Management-Tools#-teleport) |
-| Get everyone's attention | [Focus Mode](Classroom-Control-Tools#%EF%B8%8F-focus-mode) |
-| Make it daytime | [Time & Weather](World-Management-Tools#-time--weather-control) |
-| Give everyone the same materials | [Inventory Management](Student-Management-Tools#-inventory-management) |
-| Create a timed challenge | [Timer](Classroom-Control-Tools#-timer) |
-| Organize students into groups | [Teams Management](Student-Management-Tools#-teams-management) |
-| Prevent students from leaving an area | [Lock Players](Classroom-Control-Tools#-lock-players) |
-| Stop students from using TNT | [Classroom Limitations](World-Management-Tools#-classroom-limitations) |
-| Heal all students | [Manage Health](Essential-Tools#%EF%B8%8F-manage-health) |
-| Switch to Creative mode | [Gamemode](Essential-Tools#-change-gamemode) |
+| Gather all students to one location | [Teleport](Student-Management-Tools.md#-teleport) |
+| Get everyone's attention | [Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode) |
+| Make it daytime | [Time & Weather](World-Management-Tools.md#-time--weather-control) |
+| Give everyone the same materials | [Inventory Management](Student-Management-Tools.md#-inventory-management) |
+| Create a timed challenge | [Timer](Classroom-Control-Tools.md#-timer) |
+| Organize students into groups | [Teams Management](Student-Management-Tools.md#-teams-management) |
+| Prevent students from leaving an area | [Lock Players](Classroom-Control-Tools.md#-lock-players) |
+| Stop students from using TNT | [Classroom Limitations](World-Management-Tools.md#-classroom-limitations) |
+| Heal all students | [Manage Health](Essential-Tools.md#%EF%B8%8F-manage-health) |
+| Switch to Creative mode | [Gamemode](Essential-Tools.md#-change-gamemode) |
 
 ---
 
@@ -128,17 +131,17 @@ Jump directly to how-to guides for common classroom tasks:
 
 Quick reference list of every tool in the Educator Toolbox:
 
-- **Assignments** - [View Guide](Classroom-Control-Tools#-assignments)
-- **Custom Nicknames** - [View Guide](Classroom-Control-Tools#%EF%B8%8F-custom-nicknames)
-- **Focus Mode** - [View Guide](Classroom-Control-Tools#%EF%B8%8F-focus-mode)
-- **Gamemode** - [View Guide](Student-Management-Tools#-gamemode)
-- **Inventory Management** - [View Guide](Student-Management-Tools#-inventory-management)
-- **Lock Players** - [View Guide](Classroom-Control-Tools#-lock-players)
-- **Manage Health** - [View Guide](Essential-Tools#%EF%B8%8F-manage-health)
-- **Teams Management** - [View Guide](Student-Management-Tools#-teams-management)
-- **Teleport** - [View Guide](Student-Management-Tools#-teleport)
-- **Timer** - [View Guide](Classroom-Control-Tools#-timer)
-- **World Management** (Time, Weather, Settings, Limitations) - [View Guide](World-Management-Tools)
+- **Assignments** - [View Guide](Classroom-Control-Tools.md#-assignments)
+- **Custom Nicknames** - [View Guide](Classroom-Control-Tools.md#%EF%B8%8F-custom-nicknames)
+- **Focus Mode** - [View Guide](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)
+- **Gamemode** - [View Guide](Student-Management-Tools.md#-gamemode)
+- **Inventory Management** - [View Guide](Student-Management-Tools.md#-inventory-management)
+- **Lock Players** - [View Guide](Classroom-Control-Tools.md#-lock-players)
+- **Manage Health** - [View Guide](Essential-Tools.md#%EF%B8%8F-manage-health)
+- **Teams Management** - [View Guide](Student-Management-Tools.md#-teams-management)
+- **Teleport** - [View Guide](Student-Management-Tools.md#-teleport)
+- **Timer** - [View Guide](Classroom-Control-Tools.md#-timer)
+- **World Management** (Time, Weather, Settings, Limitations) - [View Guide](World-Management-Tools.md)
 
 ---
 
@@ -146,7 +149,7 @@ Quick reference list of every tool in the Educator Toolbox:
 
 ### Getting Started
 
-💡 **Don't try to learn everything at once** - Start with [Essential Tools](Essential-Tools) (Teleport, Focus Mode, Manage Health, Gamemode, Set Time to Day)
+💡 **Don't try to learn everything at once** - Start with [Essential Tools](Essential-Tools.md) (Teleport, Focus Mode, Manage Health, Gamemode, Set Time to Day)
 
 💡 **Practice in an empty world first** - Try out tools before using them with students
 
@@ -188,7 +191,7 @@ Solutions:
 - Verify Educator Tools pack is active in World Settings → Behavior Packs
 - Read the tool's guide for common issues
 
-**More help:** See [FAQ and Troubleshooting](FAQ-and-Troubleshooting)
+**More help:** See [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)
 
 ---
 
@@ -200,21 +203,21 @@ The Educator Toolbox isn't the only feature in Educator Tools:
 
 Special building blocks for creating words, math problems, and signs.
 
-- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started)** - Learn how to use Letter Blocks
-- **[Letter Blocks - Activities](Letter-Blocks-Activities)** - Classroom activity ideas
+- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started.md)** - Learn how to use Letter Blocks
+- **[Letter Blocks - Activities](Letter-Blocks-Activities.md)** - Classroom activity ideas
 
 ### Extensions
 
 Optional add-ons that expand Educator Tools with additional features.
 
-- **[Extensions](Extensions)** - Browse all available extensions
-- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks)** - Hundreds of new characters and themed backgrounds
+- **[Extensions](Extensions.md)** - Browse all available extensions
+- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** - Hundreds of new characters and themed backgrounds
 
 ### Support Resources
 
-- **[FAQ and Troubleshooting](FAQ-and-Troubleshooting)** - Common problems and solutions
-- **[Glossary](Glossary)** - Minecraft terminology explained
-- **[Getting Help](Getting-Help)** - How to get support
+- **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems and solutions
+- **[Glossary](Glossary.md)** - Minecraft terminology explained
+- **[Getting Help](Getting-Help.md)** - How to get support
 
 ---
 
@@ -223,20 +226,20 @@ Optional add-ons that expand Educator Tools with additional features.
 Choose your path:
 
 **If you're brand new:**
-→ [Quick Start Guide](Quick-Start-Guide) - Get started in 5 minutes
+→ [Quick Start Guide](Quick-Start-Guide.md) - Get started in 5 minutes
 
 **If you want to learn the basics:**
-→ [Essential Tools](Essential-Tools) - Master the 5 most important tools
+→ [Essential Tools](Essential-Tools.md) - Master the 5 most important tools
 
 **If you're ready to explore everything:**
-→ [Student Management Tools](Student-Management-Tools)
-→ [Classroom Control Tools](Classroom-Control-Tools)
-→ [World Management Tools](World-Management-Tools)
+→ [Student Management Tools](Student-Management-Tools.md)
+→ [Classroom Control Tools](Classroom-Control-Tools.md)
+→ [World Management Tools](World-Management-Tools.md)
 
 **If you need help:**
-→ [FAQ and Troubleshooting](FAQ-and-Troubleshooting)
-→ [Getting Help](Getting-Help)
+→ [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)
+→ [Getting Help](Getting-Help.md)
 
 ---
 
-**Back to:** [Home](Home) | [Installation](Installation) | [Introduction](Introduction)
+**Back to:** [Home](index.md) | [Installation](Installation.md) | [Introduction](Introduction.md)

@@ -43,8 +43,9 @@ These tools help you maintain focus, manage classroom behavior, and create struc
 
 Classroom Control Tools give you ways to get students' attention, manage movement, track time, handle assignments, and personalize the student experience. These are your digital classroom management assistants.
 
-> [!NOTE]
-> All Classroom Control Tools are designed to work together seamlessly. You can use Focus Mode before explaining a Timer-based activity, or Lock Players to keep students in an area while working on an Assignment.
+!!! note
+    All Classroom Control Tools are designed to work together seamlessly. You can use Focus Mode before explaining a Timer-based activity, or Lock Players to keep students in an area while working on an Assignment.
+
 
 ## Quick Reference
 
@@ -63,8 +64,9 @@ Classroom Control Tools give you ways to get students' attention, manage movemen
 ### What it does
 Dims students' screens, shows them your message, and prevents them from moving or interacting with the world. Think of it as the "eyes on me" button.
 
-> [!TIP]
-> Focus Mode is one of the most powerful classroom management tools. Use it liberally whenever you need instant attention from the entire class.
+!!! tip
+    Focus Mode is one of the most powerful classroom management tools. Use it liberally whenever you need instant attention from the entire class.
+
 
 ### When to use it
 
@@ -89,8 +91,9 @@ Dims students' screens, shows them your message, and prevents them from moving o
 4. Click **Disable Globally** (despite the name, this button toggles between ON and OFF)
 5. Toggle to **Enable**
 
-> [!NOTE]
-> The button label "Disable Globally" can be confusing. When Focus Mode is OFF, clicking this button will ENABLE it globally. When Focus Mode is ON, clicking it will DISABLE it. The button toggles the state.
+!!! note
+    The button label "Disable Globally" can be confusing. When Focus Mode is OFF, clicking this button will ENABLE it globally. When Focus Mode is ON, clicking it will DISABLE it. The button toggles the state.
+
 
 **What students see:**
 - 🌑 Screen dims/darkens completely
@@ -106,8 +109,9 @@ Dims students' screens, shows them your message, and prevents them from moving o
 2. Click **Focus Mode**
 3. Click **Disable Globally**
 
-> [!WARNING]
-> Remember to disable Focus Mode when you're done! Students remain frozen until you turn it off. There's no automatic timer.
+!!! warning
+    Remember to disable Focus Mode when you're done! Students remain frozen until you turn it off. There's no automatic timer.
+
 
 **✅ What happens:** Students instantly return to exactly where they were before Focus Mode activated. Their gamemode, position, and state are restored.
 
@@ -120,8 +124,9 @@ Dims students' screens, shows them your message, and prevents them from moving o
 5. Configure the message
 6. Toggle Focus Mode ON/OFF for just that group
 
-> [!TIP]
-> Use Focus Mode on specific students or teams to give targeted instructions without freezing the entire class.
+!!! tip
+    Use Focus Mode on specific students or teams to give targeted instructions without freezing the entire class.
+
 
 ![Focus Mode interface](images/focus-mode-interface.png)
 
@@ -134,16 +139,18 @@ Dims students' screens, shows them your message, and prevents them from moving o
 - Works on offline players - If you enable it for someone offline, they'll see it when they rejoin
 - Restores previous state - When disabled, students return to their exact previous condition
 
-> [!TIP]
-> **Best Practices:**
-> - Keep messages short and clear (students can't take notes while frozen)
-> - Use Focus Mode before explaining complex instructions
-> - Great for stopping the class quickly in an emergency
-> - Can be used as a "pause button" for the whole class
-> - Students offline when you enable it will see Focus Mode when they rejoin
+!!! tip
+    **Best Practices:**
+    - Keep messages short and clear (students can't take notes while frozen)
+    - Use Focus Mode before explaining complex instructions
+    - Great for stopping the class quickly in an emergency
+    - Can be used as a "pause button" for the whole class
+    - Students offline when you enable it will see Focus Mode when they rejoin
 
-> [!CAUTION]
-> Chat cannot be disabled during Focus Mode (Minecraft limitation), so students can still send messages. Set clear expectations about chat usage during focus time.
+
+!!! danger
+    Chat cannot be disabled during Focus Mode (Minecraft limitation), so students can still send messages. Set clear expectations about chat usage during focus time.
+
 
 ![Focus Mode demonstration](gifs/focus-mode-toggle-demo.gif)
 
@@ -154,8 +161,9 @@ Dims students' screens, shows them your message, and prevents them from moving o
 ### What it does
 Creates an invisible boundary that prevents students from moving beyond a certain area. Students stay within the zone you define.
 
-> [!NOTE]
-> Lock Players creates a circular boundary with a configurable radius. Students can move freely within the circle but cannot leave it.
+!!! note
+    Lock Players creates a circular boundary with a configurable radius. Students can move freely within the circle but cannot leave it.
+
 
 ### When to use it
 
@@ -182,8 +190,9 @@ The boundary follows a specific player (usually you, the teacher). Students must
 
 **When to use it:** Guided tours, walking lessons, keeping the class together while moving.
 
-> [!TIP]
-> Player Mode is perfect for "field trips" in Minecraft. Students automatically follow along as you walk, maintaining a safe following distance.
+!!! tip
+    Player Mode is perfect for "field trips" in Minecraft. Students automatically follow along as you walk, maintaining a safe following distance.
+
 
 ### How to use it
 
@@ -207,8 +216,9 @@ The boundary follows a specific player (usually you, the teacher). Students must
    - **Show Lock Message** - Display a warning when students try to leave (recommended ON)
 8. Confirm the lock
 
-> [!IMPORTANT]
-> After creating a lock, it immediately takes effect. Students are constrained to the defined area until you remove the lock.
+!!! info
+    After creating a lock, it immediately takes effect. Students are constrained to the defined area until you remove the lock.
+
 
 #### View and Remove Locks
 
@@ -237,8 +247,9 @@ The boundary follows a specific player (usually you, the teacher). Students must
 - **OFF:** Students are stopped at the boundary but not teleported
 - **Recommended:** ON (smoother experience)
 
-> [!TIP]
-> Teleport to Center ON prevents students from getting stuck at the edge or finding ways to push through the boundary.
+!!! tip
+    Teleport to Center ON prevents students from getting stuck at the edge or finding ways to push through the boundary.
+
 
 </details>
 
@@ -260,8 +271,9 @@ The boundary follows a specific player (usually you, the teacher). Students must
 
 </details>
 
-> [!NOTE]
-> Locks work on offline players. If someone logs in while locked, the lock applies to them immediately upon joining.
+!!! note
+    Locks work on offline players. If someone logs in while locked, the lock applies to them immediately upon joining.
+
 
 **Example uses:**
 - **🏗️ Building competition:** Lock all students to their own plots with Center Mode
@@ -277,8 +289,9 @@ The boundary follows a specific player (usually you, the teacher). Students must
 ### What it does
 Creates a visible countdown timer that all students can see. Shows on their screens and (optionally) as a physical object in the world.
 
-> [!NOTE]
-> The Timer appears as a Boss Bar at the top of every student's screen, making it impossible to miss. It's one of the most visible features in the toolbox.
+!!! note
+    The Timer appears as a Boss Bar at the top of every student's screen, making it impossible to miss. It's one of the most visible features in the toolbox.
+
 
 ### When to use it
 
@@ -305,8 +318,9 @@ Creates a visible countdown timer that all students can see. Shows on their scre
    - Or set a custom time
 5. The timer is created but not started yet
 
-> [!TIP]
-> The timer doesn't start automatically. This lets you create it, explain the activity, and then start it when everyone is ready.
+!!! tip
+    The timer doesn't start automatically. This lets you create it, explain the activity, and then start it when everyone is ready.
+
 
 #### Control the Timer
 
@@ -321,8 +335,9 @@ Once created, you have these controls:
 
 ![Timer controls](images/timer-controls.png)
 
-> [!TIP]
-> Use **Pause** for unexpected interruptions (like answering a student's complex question), then resume with **Start** when you're ready to continue.
+!!! tip
+    Use **Pause** for unexpected interruptions (like answering a student's complex question), then resume with **Start** when you're ready to continue.
+
 
 ### How Students See the Timer
 
@@ -340,8 +355,9 @@ Once created, you have these controls:
 
 ![Timer display on student screen](images/timer-display.png)
 
-> [!IMPORTANT]
-> Only one timer can be active at a time. Creating a new timer will replace any existing timer.
+!!! info
+    Only one timer can be active at a time. Creating a new timer will replace any existing timer.
+
 
 **✅ Best Practices:**
 - The Boss Bar is always visible, so students can't miss it
@@ -370,8 +386,9 @@ Once created, you have these controls:
 ### What it does
 Creates structured assignments that students can submit with text responses and location markers. You can review submissions and track completion.
 
-> [!NOTE]
-> Assignments combine text submissions with location data, making them perfect for building projects where you want to see both the student's reflection and their actual build location.
+!!! note
+    Assignments combine text submissions with location data, making them perfect for building projects where you want to see both the student's reflection and their actual build location.
+
 
 ### When to use it
 
@@ -400,8 +417,9 @@ Creates structured assignments that students can submit with text responses and 
    - **🔔 Notify Students** - Toggle ON to send a chat notification when you create it
 5. Click **Create**
 
-> [!TIP]
-> Always toggle **Notify Students** ON so everyone immediately knows there's a new assignment. Without notification, students must check the toolbox to discover new assignments.
+!!! tip
+    Always toggle **Notify Students** ON so everyone immediately knows there's a new assignment. Without notification, students must check the toolbox to discover new assignments.
+
 
 ![Create assignment interface](images/create-assignment.png)
 
@@ -426,8 +444,9 @@ When viewing a specific assignment:
 3. Click **Teleport to Location** to visit where they submitted from
 4. Review their work
 
-> [!TIP]
-> The **Teleport to Location** feature is incredibly powerful for building projects. You can instantly visit each student's build site to review their work without manually searching for them.
+!!! tip
+    The **Teleport to Location** feature is incredibly powerful for building projects. You can instantly visit each student's build site to review their work without manually searching for them.
+
 
 #### Complete an Assignment
 
@@ -442,8 +461,9 @@ When the assignment deadline has passed or everyone has submitted:
 - Students can no longer submit or edit submissions
 - You can still view all submissions
 
-> [!IMPORTANT]
-> Completing an assignment is permanent. Students cannot submit to completed assignments. Make sure all submissions are in before marking it complete.
+!!! info
+    Completing an assignment is permanent. Students cannot submit to completed assignments. Make sure all submissions are in before marking it complete.
+
 
 #### View Completed Assignments
 
@@ -456,8 +476,9 @@ When the assignment deadline has passed or everyone has submitted:
 
 Students see a simplified view of assignments.
 
-> [!NOTE]
-> Students can only see active assignments. They cannot access completed assignments after the teacher closes them.
+!!! note
+    Students can only see active assignments. They cannot access completed assignments after the teacher closes them.
+
 
 #### View Assignments
 
@@ -477,8 +498,9 @@ Students see a simplified view of assignments.
 - 📍 Their current location (coordinates)
 - ⏰ Timestamp of submission
 
-> [!CAUTION]
-> Students cannot view their submission after submitting it. Once they click Submit, the text disappears. Encourage students to write their responses in an external document first if they want to keep a copy.
+!!! danger
+    Students cannot view their submission after submitting it. Once they click Submit, the text disappears. Encourage students to write their responses in an external document first if they want to keep a copy.
+
 
 #### Check Submission Status
 
@@ -523,8 +545,9 @@ Students can see if they've submitted an assignment, but they cannot view their 
 ### What it does
 Allows students to set personalized display names (nicknames) that appear instead of their Minecraft usernames. Teachers can approve, manage, and control the system.
 
-> [!NOTE]
-> Custom Nicknames replace Minecraft usernames everywhere in the world - in chat, on nametags, in menus, and in join/leave messages. They're a powerful way to personalize the classroom experience.
+!!! note
+    Custom Nicknames replace Minecraft usernames everywhere in the world - in chat, on nametags, in menus, and in join/leave messages. They're a powerful way to personalize the classroom experience.
+
 
 ### When to use it
 
@@ -557,8 +580,9 @@ Allows students to set personalized display names (nicknames) that appear instea
 - **🎨 Allow Custom Colors** - Students can choose colors for their nicknames
 - **📢 Custom Leave/Join Messages** - Show personalized messages when students join/leave
 
-> [!IMPORTANT]
-> **Prompt on Join** determines who controls nicknames. When OFF, only teachers can assign nicknames. When ON, students can request their own nicknames (subject to approval if enabled).
+!!! info
+    **Prompt on Join** determines who controls nicknames. When OFF, only teachers can assign nicknames. When ON, students can request their own nicknames (subject to approval if enabled).
+
 
 ![Nickname settings](images/nickname-settings.png)
 
@@ -574,8 +598,9 @@ Allows students to set personalized display names (nicknames) that appear instea
 6. Choose a color
 7. Confirm
 
-> [!NOTE]
-> Teacher-assigned nicknames take effect immediately with no approval needed. This bypasses the approval queue entirely.
+!!! note
+    Teacher-assigned nicknames take effect immediately with no approval needed. This bypasses the approval queue entirely.
+
 
 #### Approve Nickname Requests
 
@@ -591,8 +616,9 @@ When **Require Approval** is enabled, student nickname changes must be approved:
 
 Students receive notifications when their nicknames are approved or denied.
 
-> [!TIP]
-> The approval queue lets you maintain control over appropriate names while still giving students autonomy. Review requests promptly so students don't have to wait long.
+!!! tip
+    The approval queue lets you maintain control over appropriate names while still giving students autonomy. Review requests promptly so students don't have to wait long.
+
 
 ![Approval queue](images/nickname-approval-queue.png)
 
@@ -615,8 +641,9 @@ Students receive notifications when their nicknames are approved or denied.
 - Students cannot set their own nicknames
 - Only teachers can assign nicknames
 
-> [!CAUTION]
-> Students cannot change their nicknames once set without teacher approval (if approval is required). Make sure students understand they should choose carefully.
+!!! danger
+    Students cannot change their nicknames once set without teacher approval (if approval is required). Make sure students understand they should choose carefully.
+
 
 #### Nickname Display
 
@@ -670,8 +697,9 @@ When custom messages are enabled:
 
 **Best for:** Mature students, low-risk environments
 
-> [!WARNING]
-> Full freedom mode allows students to set any nickname instantly. Only use this if you trust students to make appropriate choices.
+!!! warning
+    Full freedom mode allows students to set any nickname instantly. Only use this if you trust students to make appropriate choices.
+
 
 </details>
 
@@ -708,8 +736,9 @@ When custom messages are enabled:
 
 These classroom control tools work well together:
 
-> [!TIP]
-> Combining tools creates powerful classroom management workflows. Here are effective combinations:
+!!! tip
+    Combining tools creates powerful classroom management workflows. Here are effective combinations:
+
 
 <details>
 <summary><strong>Tool Combination Examples</strong> (click to expand)</summary>
@@ -743,8 +772,8 @@ These classroom control tools work well together:
 
 ## Next Steps
 
-- **[Student Management Tools](Student-Management-Tools)** - Teleport, Teams, Inventory
-- **[World Management Tools](World-Management-Tools)** - Time, Weather, Settings
-- **[All Features Guide](Educator-Toolbox)** - Complete tool reference
+- **[Student Management Tools](Student-Management-Tools.md)** - Teleport, Teams, Inventory
+- **[World Management Tools](World-Management-Tools.md)** - Time, Weather, Settings
+- **[All Features Guide](Educator-Toolbox.md)** - Complete tool reference
 
-**Need Help?** Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting) page.
+**Need Help?** Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md) page.

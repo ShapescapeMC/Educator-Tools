@@ -31,8 +31,9 @@ Go to the official GitHub releases page and download the latest version.
 
 ![Download from releases page](images/download-release.png)
 
-> [!IMPORTANT]
-> **File to download:** Look for a file like `educator-tools-v2.1.0.mcaddon` — make sure it's the `.mcaddon` file, NOT the source code zip files!
+!!! info
+    **File to download:** Look for a file like `educator-tools-v2.1.0.mcaddon` — make sure it's the `.mcaddon` file, NOT the source code zip files!
+
 
 ---
 
@@ -59,11 +60,13 @@ Once downloaded, import the pack into Minecraft Education Edition.
 
 ![Importing the pack](images/import-pack.png)
 
-> [!TIP]
-> **✅ You'll know it worked when:** The game launches and you see a confirmation that the pack was imported.
+!!! tip
+    **✅ You'll know it worked when:** The game launches and you see a confirmation that the pack was imported.
 
-> [!WARNING]
-> If you have both Minecraft Bedrock and Minecraft Education installed, the file might open in the wrong version. Use **Option B** (right-click) to specify Education Edition.
+
+!!! warning
+    If you have both Minecraft Bedrock and Minecraft Education installed, the file might open in the wrong version. Use **Option B** (right-click) to specify Education Edition.
+
 
 ---
 
@@ -99,8 +102,9 @@ Now activate the pack in a world (new or existing).
 
 ![Activating in existing world](images/activate-existing-world.png)
 
-> [!NOTE]
-> **For existing worlds:** Activating Educator Tools in an existing world will add the tools without affecting your builds or progress. Your world data is safe!
+!!! note
+    **For existing worlds:** Activating Educator Tools in an existing world will add the tools without affecting your builds or progress. Your world data is safe!
+
 
 ---
 
@@ -117,8 +121,9 @@ Once you join the world, verify Educator Tools is working:
 
 ![Toolbox in hotbar](images/toolbox-in-hotbar.png)
 
-> [!TIP]
-> The toolbox appears automatically when you join the world. If you don't see it immediately, try leaving and rejoining the world.
+!!! tip
+    The toolbox appears automatically when you join the world. If you don't see it immediately, try leaving and rejoining the world.
+
 
 ### If You Don't See the Toolbox
 
@@ -133,8 +138,9 @@ Try these solutions in order:
 4. ✅ **Verify pack is active** - Go to World Settings → Behavior Packs → Confirm it shows "Active"
 5. 🆕 **Try a new world** - Test in a fresh world to rule out world-specific issues
 
-> [!IMPORTANT]
-> Only teachers should have access to the Educator Toolbox. Students should NOT see it in their inventory.
+!!! info
+    Only teachers should have access to the Educator Toolbox. Students should NOT see it in their inventory.
+
 
 </details>
 
@@ -152,8 +158,9 @@ Try these solutions in order:
 - 🖱️ Right-click and select "Open with" → Choose "Minecraft Education"
 - ⚠️ If you have Minecraft Bedrock installed, it might open in the wrong version - uninstall Bedrock or use "Open with" to specify Education Edition
 
-> [!IMPORTANT]
-> The source code zip files (Source code.zip) will NOT work. You must download the `.mcaddon` file.
+!!! info
+    The source code zip files (Source code.zip) will NOT work. You must download the `.mcaddon` file.
+
 
 </details>
 
@@ -167,8 +174,9 @@ Try these solutions in order:
 - 📥 Re-download the file (it might have corrupted during download)
 - ✅ Make sure you're running a supported version of Minecraft Education
 
-> [!TIP]
-> Sometimes the pack imports successfully but doesn't show up until you restart the game completely.
+!!! tip
+    Sometimes the pack imports successfully but doesn't show up until you restart the game completely.
+
 
 </details>
 
@@ -182,8 +190,9 @@ Try these solutions in order:
 - 🗑️ Remove the old version from Settings → Storage → Behavior Packs
 - ♻️ Import the new version following Step 2 again
 
-> [!WARNING]
-> After Minecraft Education updates, you may need to update Educator Tools to a compatible version.
+!!! warning
+    After Minecraft Education updates, you may need to update Educator Tools to a compatible version.
+
 
 </details>
 
@@ -192,8 +201,9 @@ Try these solutions in order:
 
 **This is expected!** Only teachers should have the Educator Toolbox. Students don't need it and shouldn't see it.
 
-> [!NOTE]
-> This is intentional behavior. The toolbox is designed for teachers only.
+!!! note
+    This is intentional behavior. The toolbox is designed for teachers only.
+
 
 ### If a student has the toolbox when they shouldn't:
 
@@ -207,22 +217,25 @@ Try these solutions in order:
 ## Platform-Specific Notes
 🖥️📱 **Installation instructions for your device**
 
-> [!NOTE]
-> The installation process is similar across all platforms, but there are some platform-specific considerations.
+!!! note
+    The installation process is similar across all platforms, but there are some platform-specific considerations.
+
 
 ### 💻 Windows
 - ✅ Double-click usually works without issues
 - 🖱️ If Minecraft doesn't launch, right-click → "Open with Minecraft Education"
 
-> [!TIP]
-> On Windows, double-clicking the `.mcaddon` file is the fastest method.
+!!! tip
+    On Windows, double-clicking the `.mcaddon` file is the fastest method.
+
 
 ### 💻 Mac
 - ✅ Double-click should work
 - 🖱️ If it doesn't, right-click → "Open With" → "Minecraft Education Edition.app"
 
-> [!CAUTION]
-> Some Mac versions may require you to grant permission to open files from the internet. Check System Preferences → Security & Privacy if prompted.
+!!! danger
+    Some Mac versions may require you to grant permission to open files from the internet. Check System Preferences → Security & Privacy if prompted.
+
 
 ### 📱 iPad/Tablet
 - 🌐 Download through a browser on the device
@@ -230,8 +243,9 @@ Try these solutions in order:
 - ✅ Select "Open in Minecraft Education" if prompted
 - 🎮 Follow the same activation steps in-game
 
-> [!TIP]
-> On iPad, you may need to navigate to your Downloads folder in the Files app to find the `.mcaddon` file.
+!!! tip
+    On iPad, you may need to navigate to your Downloads folder in the Files app to find the `.mcaddon` file.
+
 
 ### 💻 Chromebook
 - 🌐 Download the file through Chrome
@@ -239,8 +253,9 @@ Try these solutions in order:
 - 👆 Tap to open with Minecraft Education
 - ⚙️ Activate in world settings
 
-> [!NOTE]
-> Chromebook users must have Minecraft Education Edition installed from the Google Play Store or web app.
+!!! note
+    Chromebook users must have Minecraft Education Edition installed from the Google Play Store or web app.
+
 
 ---
 
@@ -254,11 +269,12 @@ Educator Tools works with:
 ✅ **Multiplayer worlds** (host must have pack activated)
 ✅ **Existing worlds** (safe to add to worlds in progress)
 
-> [!CAUTION]
-> **Known limitations:**
-> - Requires Minecraft Education Edition (will NOT work with Bedrock Edition)
-> - In multiplayer, the world host must have the pack activated
-> - Some features require Teacher permissions in the world
+!!! danger
+    **Known limitations:**
+    - Requires Minecraft Education Edition (will NOT work with Bedrock Edition)
+    - In multiplayer, the world host must have the pack activated
+    - Some features require Teacher permissions in the world
+
 
 ---
 
@@ -267,22 +283,23 @@ Educator Tools works with:
 
 Now that Educator Tools is installed:
 
-1. 📖 **[Quick Start Guide](Quick-Start-Guide)** - Learn the basics in 5 minutes
-2. 🔧 **[Essential Tools](Essential-Tools)** - Master the 5 most important tools
-3. 🎒 **[Educator Toolbox](Educator-Toolbox)** - Explore all features
+1. 📖 **[Quick Start Guide](Quick-Start-Guide.md)** - Learn the basics in 5 minutes
+2. 🔧 **[Essential Tools](Essential-Tools.md)** - Master the 5 most important tools
+3. 🎒 **[Educator Toolbox](Educator-Toolbox.md)** - Explore all features
 
-> [!TIP]
-> New to Educator Tools? Start with the Quick Start Guide to get up and running quickly!
+!!! tip
+    New to Educator Tools? Start with the Quick Start Guide to get up and running quickly!
+
 
 ---
 
 ## Need More Help?
 💬 **Additional resources**
 
-- ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting)** - Common problems and solutions
-- 🆘 **[Getting Help](Getting-Help)** - How to get support
-- 📚 **[Glossary](Glossary)** - Understand Minecraft terms
+- ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems and solutions
+- 🆘 **[Getting Help](Getting-Help.md)** - How to get support
+- 📚 **[Glossary](Glossary.md)** - Understand Minecraft terms
 
 ---
 
-**Back to:** [Home](Home) | [Introduction](Introduction) | [Quick Start Guide](Quick-Start-Guide)
+**Back to:** [Home](index.md) | [Introduction](Introduction.md) | [Quick Start Guide](Quick-Start-Guide.md)

@@ -27,8 +27,9 @@
 
 ## Overview
 
-> [!NOTE]
-> This is an optional extension. The core Letter Blocks feature works perfectly without it. Install this extension only if you need the additional content.
+!!! note
+    This is an optional extension. The core Letter Blocks feature works perfectly without it. Install this extension only if you need the additional content.
+
 
 The More Letter Blocks extension adds a comprehensive collection of additional letter blocks to Educator Tools, perfect for:
 - 🌍 Multilingual classrooms
@@ -41,8 +42,9 @@ The More Letter Blocks extension adds a comprehensive collection of additional l
 
 ## ✨ What's Included
 
-> [!IMPORTANT]
-> This extension adds to the core Letter Blocks feature - it doesn't replace anything. You'll have all original blocks plus hundreds of new ones!
+!!! info
+    This extension adds to the core Letter Blocks feature - it doesn't replace anything. You'll have all original blocks plus hundreds of new ones!
+
 
 ### Character Sets
 
@@ -95,8 +97,9 @@ The More Letter Blocks extension adds a comprehensive collection of additional l
 
 Every character is available across **9 distinct themed backgrounds**, allowing you to color-code activities and organize learning visually.
 
-> [!TIP]
-> Use different background themes to color-code parts of speech, team assignments, or activity stations. For example: blue blocks for nouns, red for verbs, green for adjectives, and yellow for adverbs.
+!!! tip
+    Use different background themes to color-code parts of speech, team assignments, or activity stations. For example: blue blocks for nouns, red for verbs, green for adjectives, and yellow for adverbs.
+
 
 <details>
 <summary><strong>View All 9 Background Themes</strong></summary>
@@ -143,8 +146,9 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 
 ## 📦 Installation
 
-> [!IMPORTANT]
-> The core Educator Tools pack must be installed and activated first. Extensions require the main pack to function.
+!!! info
+    The core Educator Tools pack must be installed and activated first. Extensions require the main pack to function.
+
 
 ### Requirements
 
@@ -214,8 +218,9 @@ If double-clicking doesn't work, you can manually import:
 
 ## 🕹️ Using in the Classroom
 
-> [!TIP]
-> Create pre-organized storage stations with item frames or labeled chests for each theme. This makes it easy for students to grab the blocks they need for specific activities.
+!!! tip
+    Create pre-organized storage stations with item frames or labeled chests for each theme. This makes it easy for students to grab the blocks they need for specific activities.
+
 
 ### Accessing Blocks
 
@@ -385,7 +390,7 @@ If double-clicking doesn't work, you can manually import:
 
 ### Activity Preparation
 - Set up themed block "kits" in advance
-- Use [Inventory Management](Student-Management-Tools#-inventory-management) to distribute to students
+- Use [Inventory Management](Student-Management-Tools.md#-inventory-management) to distribute to students
 - Keep frequently-used characters easily accessible
 
 </details>
@@ -394,8 +399,9 @@ If double-clicking doesn't work, you can manually import:
 
 ## 🔁 Combining with Other Content
 
-> [!NOTE]
-> The extension adds to the Letter Blocks library - it doesn't replace anything. All your existing blocks continue to work perfectly.
+!!! note
+    The extension adds to the Letter Blocks library - it doesn't replace anything. All your existing blocks continue to work perfectly.
+
 
 <details>
 <summary><strong>🎨 Custom Letter Blocks</strong></summary>
@@ -405,7 +411,7 @@ The extension works seamlessly with custom letter blocks you create yourself.
 **Best practice:**
 - Use unique prefixes for custom sets (e.g., `custom_` vs. extension's internal IDs)
 - Keep background styles consistent within a learning activity
-- See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration) for creating custom blocks
+- See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for creating custom blocks
 
 </details>
 
@@ -539,8 +545,9 @@ All core Letter Blocks continue to work normally. The extension **adds to** the 
 
 ## Uninstalling the Extension
 
-> [!WARNING]
-> All blocks from this extension will be removed from your world. Any displays you built with extension blocks will lose those blocks. Take screenshots of important displays before uninstalling.
+!!! warning
+    All blocks from this extension will be removed from your world. Any displays you built with extension blocks will lose those blocks. Take screenshots of important displays before uninstalling.
+
 
 If you want to remove the extension:
 
@@ -566,13 +573,13 @@ The More Letter Blocks extension may receive updates with:
 ## Related Documentation
 
 **For Teachers:**
-- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started)** - Basic letter blocks usage
-- **[Letter Blocks - Activities](Letter-Blocks-Activities)** - Activity ideas
-- **[Extensions](Extensions)** - All available extensions
+- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started.md)** - Basic letter blocks usage
+- **[Letter Blocks - Activities](Letter-Blocks-Activities.md)** - Activity ideas
+- **[Extensions](Extensions.md)** - All available extensions
 
 **For Developers:**
-- **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration)** - Create custom blocks
-- **[Developer Documentation](Developer-Documentation)** - Extension development
+- **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md)** - Create custom blocks
+- **[Developer Documentation](Developer-Documentation.md)** - Extension development
 
 ---
 
@@ -583,9 +590,9 @@ The More Letter Blocks extension may receive updates with:
 - Request features on [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)
 
 **Need help?**
-- **[FAQ and Troubleshooting](FAQ-and-Troubleshooting)** - Common problems
-- **[Getting Help](Getting-Help)** - Support resources
+- **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems
+- **[Getting Help](Getting-Help.md)** - Support resources
 
 ---
 
-**Back to:** [Extensions](Extensions) | [Letter Blocks Getting Started](Letter-Blocks-Getting-Started) | [Home](Home)
+**Back to:** [Extensions](Extensions.md) | [Letter Blocks Getting Started](Letter-Blocks-Getting-Started.md) | [Home](index.md)

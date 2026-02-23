@@ -35,8 +35,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 ---
 
-> [!NOTE]
-> All Letter Blocks activities work by having students physically build words, numbers, and equations using in-game blocks. These activities encourage hands-on learning and visual engagement while reinforcing academic concepts.
+!!! note
+    All Letter Blocks activities work by having students physically build words, numbers, and equations using in-game blocks. These activities encourage hands-on learning and visual engagement while reinforcing academic concepts.
+
 
 ---
 
@@ -47,8 +48,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Age:** Elementary
 **Time:** 15-20 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Give each student a set of letter blocks before starting the activity.
+!!! info
+    **Setup Required:** Give each student a set of letter blocks before starting the activity.
+
 
 **Activity:**
 1. Call out a spelling word
@@ -63,7 +65,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 - **Partner Mode:** Work in pairs - one student spells, the other checks
 - **Team Challenge:** Divide class into teams, each team collaborates to spell the word
-- **Timed Rounds:** Use the [Timer tool](Classroom-Control-Tools#-timer) for 30-second spelling challenges
+- **Timed Rounds:** Use the [Timer tool](Classroom-Control-Tools.md#-timer) for 30-second spelling challenges
 - **Peer Teaching:** Students who finish first help others with spelling
 
 </details>
@@ -87,8 +89,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Age:** Elementary to Middle School
 **Time:** 20-30 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Distribute letters and punctuation blocks to all students before beginning.
+!!! info
+    **Setup Required:** Distribute letters and punctuation blocks to all students before beginning.
+
 
 **Activity:**
 1. Give students a sentence prompt or topic
@@ -98,11 +101,12 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 **Learning goals:** Grammar, punctuation, sentence structure
 
-> [!TIP]
-> **Example prompts:**
-> - "Describe your favorite animal"
-> - "Write what you did yesterday"
-> - "Create a question about space"
+!!! tip
+    **Example prompts:**
+    - "Describe your favorite animal"
+    - "Write what you did yesterday"
+    - "Create a question about space"
+
 
 <details>
 <summary>💡 <strong>Activity Variations</strong></summary>
@@ -131,8 +135,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Age:** All ages
 **Time:** Ongoing (permanent display)
 
-> [!IMPORTANT]
-> **Setup Required:** Designate a wall or area for vocabulary display before starting this ongoing activity.
+!!! info
+    **Setup Required:** Designate a wall or area for vocabulary display before starting this ongoing activity.
+
 
 **Activity:**
 1. Choose a theme (science terms, historical vocabulary, etc.)
@@ -166,8 +171,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Age:** Elementary to High School
 **Time:** 30-45 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Pre-build 5-10 key story prompt words with letter blocks before the activity begins.
+!!! info
+    **Setup Required:** Pre-build 5-10 key story prompt words with letter blocks before the activity begins.
+
 
 **Activity:**
 1. Create 5-10 story prompt words (DRAGON, CASTLE, TREASURE, FOREST, etc.)
@@ -206,8 +212,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Age:** Early Elementary
 **Time:** 15 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Scatter number blocks (0-9) in a designated activity area.
+!!! info
+    **Setup Required:** Scatter number blocks (0-9) in a designated activity area.
+
 
 **Activity:**
 1. Call out a number
@@ -244,8 +251,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Age:** Elementary
 **Time:** 20-30 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Provide each student or group with number blocks and operator blocks (+, -, ×, ÷, =).
+!!! info
+    **Setup Required:** Provide each student or group with number blocks and operator blocks (+, -, ×, ÷, =).
+
 
 **Activity:**
 1. Build math problems using blocks: "3 + 4 = ?"
@@ -255,8 +263,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 **Learning goals:** Addition, subtraction, multiplication, division
 
-> [!TIP]
-> **Challenge Extension:** Students create their own problems for classmates to solve, promoting deeper understanding and peer teaching.
+!!! tip
+    **Challenge Extension:** Students create their own problems for classmates to solve, promoting deeper understanding and peer teaching.
+
 
 <details>
 <summary>💡 <strong>Activity Variations</strong></summary>
@@ -277,8 +286,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Age:** Middle to High School
 **Time:** 25-35 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Advanced math symbol blocks if available (variables, exponents, parentheses).
+!!! info
+    **Setup Required:** Advanced math symbol blocks if available (variables, exponents, parentheses).
+
 
 **Activity:**
 1. Teach an algebra or geometry concept
@@ -320,8 +330,9 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Age:** Elementary to Middle School
 **Time:** 30 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Prepare number blocks, operator blocks, and word blocks for all students.
+!!! info
+    **Setup Required:** Prepare number blocks, operator blocks, and word blocks for all students.
+
 
 **Activity:**
 1. Present a word problem (written or verbally)
@@ -353,8 +364,9 @@ Students build: "5 + 3 = 8"
 **Age:** All ages
 **Time:** 20 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Identify and designate areas in the classroom that need labels or signs.
+!!! info
+    **Setup Required:** Identify and designate areas in the classroom that need labels or signs.
+
 
 **Activity:**
 1. Identify places that need signs (LIBRARY, LAB, CAFETERIA, etc.)
@@ -389,8 +401,9 @@ Students build: "5 + 3 = 8"
 **Age:** All ages
 **Time:** Ongoing
 
-> [!IMPORTANT]
-> **Setup Required:** Designate a large shared building area accessible to all students.
+!!! info
+    **Setup Required:** Designate a large shared building area accessible to all students.
+
 
 **Activity:**
 1. Choose a collaborative project (class motto, mission statement, poem)
@@ -422,8 +435,9 @@ Students build: "5 + 3 = 8"
 **Age:** All ages
 **Time:** 15-20 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Pre-build questions or prompts using letter blocks before the assessment begins.
+!!! info
+    **Setup Required:** Pre-build questions or prompts using letter blocks before the assessment begins.
+
 
 **Activity:**
 1. Build questions using letter blocks
@@ -465,8 +479,9 @@ Students build: "5 + 3 = 8"
 **Age:** Middle to High School
 **Time:** 1-2 class periods
 
-> [!IMPORTANT]
-> **Setup Required:** Prepare project rubric and ensure sufficient blocks are available for all students.
+!!! info
+    **Setup Required:** Prepare project rubric and ensure sufficient blocks are available for all students.
+
 
 **Activity:**
 1. Assign a research topic or project
@@ -481,8 +496,9 @@ Students build: "5 + 3 = 8"
 - 🔬 **Science concepts:** Vocabulary, formulas, diagrams
 - 📚 **Book reports:** Title, author, main themes
 
-> [!TIP]
-> Use **[Focus Mode](Classroom-Control-Tools#%EF%B8%8F-focus-mode)** to help students present their letter block projects to the entire class without distractions.
+!!! tip
+    Use **[Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)** to help students present their letter block projects to the entire class without distractions.
+
 
 <details>
 <summary>💡 <strong>Activity Variations</strong></summary>
@@ -505,8 +521,9 @@ Students build: "5 + 3 = 8"
 **Age:** All ages
 **Time:** 25 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Ensure letter blocks support multiple languages or use transliteration if necessary.
+!!! info
+    **Setup Required:** Ensure letter blocks support multiple languages or use transliteration if necessary.
+
 
 **Activity:**
 1. Teach vocabulary in multiple languages
@@ -548,8 +565,9 @@ Students build: "5 + 3 = 8"
 **Age:** Middle to High School
 **Time:** 30 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Prepare science-related letter blocks and ensure sufficient blocks for terminology.
+!!! info
+    **Setup Required:** Prepare science-related letter blocks and ensure sufficient blocks for terminology.
+
 
 **Activity:**
 1. Introduce scientific terms (CELL, ATOM, PHOTOSYNTHESIS)
@@ -581,8 +599,9 @@ Students build: "5 + 3 = 8"
 **Age:** Middle to High School
 **Time:** 45-60 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Provide number blocks, word blocks, and designate a large building space for timeline construction.
+!!! info
+    **Setup Required:** Provide number blocks, word blocks, and designate a large building space for timeline construction.
+
 
 **Activity:**
 1. Choose a historical period or event sequence
@@ -630,8 +649,9 @@ Students build: "5 + 3 = 8"
 **Age:** All ages
 **Time:** 20 minutes (setup once, permanent)
 
-> [!IMPORTANT]
-> **Setup Required:** Designate a prominent classroom area for rules display before building.
+!!! info
+    **Setup Required:** Designate a prominent classroom area for rules display before building.
+
 
 **Activity:**
 1. Discuss classroom rules as a class
@@ -662,16 +682,18 @@ Students build: "5 + 3 = 8"
 **Age:** All ages
 **Time:** 30 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Ensure enough letter blocks are available for all student names.
+!!! info
+    **Setup Required:** Ensure enough letter blocks are available for all student names.
+
 
 **Activity:**
 1. Each student builds their name
 2. Place names on desks, lockers, or assigned spots
 3. Personalize with decorative blocks if desired
 
-> [!TIP]
-> Use the **[Custom Nicknames](Classroom-Control-Tools#%EF%B8%8F-custom-nicknames)** feature for digital name display, and letter blocks for physical labels to create a cohesive classroom environment.
+!!! tip
+    Use the **[Custom Nicknames](Classroom-Control-Tools.md#%EF%B8%8F-custom-nicknames)** feature for digital name display, and letter blocks for physical labels to create a cohesive classroom environment.
+
 
 <details>
 <summary>💡 <strong>Activity Variations</strong></summary>
@@ -690,8 +712,9 @@ Students build: "5 + 3 = 8"
 **Age:** All ages
 **Time:** 15 minutes
 
-> [!IMPORTANT]
-> **Setup Required:** Create teams using **[Teams Management](Student-Management-Tools#-teams-management)** before building team identifiers.
+!!! info
+    **Setup Required:** Create teams using **[Teams Management](Student-Management-Tools.md#-teams-management)** before building team identifiers.
+
 
 **Activity:**
 1. Build team names using letter blocks (RED TEAM, BLUE TEAM, etc.)
@@ -725,12 +748,12 @@ Students build: "5 + 3 = 8"
 - Encourage teamwork and communication
 
 **📢 Clear Instructions**
-- Use **[Focus Mode](Classroom-Control-Tools#%EF%B8%8F-focus-mode)** to explain activities
+- Use **[Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)** to explain activities
 - Demonstrate with your own letter block examples
 - Provide rubrics or checklists for larger projects
 
 **⏰ Time Management**
-- Use the **[Timer tool](Classroom-Control-Tools#-timer)** for timed challenges
+- Use the **[Timer tool](Classroom-Control-Tools.md#-timer)** for timed challenges
 - Set clear start and end times
 - Allow buffer time for cleanup
 
@@ -804,9 +827,9 @@ Use this template to plan letter block activities:
 
 ## 🚀 Next Steps
 
-- **[Letter Blocks Getting Started](Letter-Blocks-Getting-Started)** - Learn the basics
-- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks)** - Expansion pack with themed backgrounds
-- **[Student Management Tools](Student-Management-Tools)** - Tools to support letter block activities
-- **[Classroom Control Tools](Classroom-Control-Tools)** - Timer, Focus Mode for structured lessons
+- **[Letter Blocks Getting Started](Letter-Blocks-Getting-Started.md)** - Learn the basics
+- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** - Expansion pack with themed backgrounds
+- **[Student Management Tools](Student-Management-Tools.md)** - Tools to support letter block activities
+- **[Classroom Control Tools](Classroom-Control-Tools.md)** - Timer, Focus Mode for structured lessons
 
-**Need Help?** Check the **[FAQ and Troubleshooting](FAQ-and-Troubleshooting)** page.
+**Need Help?** Check the **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** page.

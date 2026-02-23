@@ -20,8 +20,9 @@ Extensions are optional add-ons that expand the functionality of Educator Tools 
 
 ## ❓ What are Extensions?
 
-> [!NOTE]
-> Extensions are separate add-on packs that work alongside the core Educator Tools pack. They provide additional content without bloating the base installation, allowing teachers to choose only the features they need.
+!!! note
+    Extensions are separate add-on packs that work alongside the core Educator Tools pack. They provide additional content without bloating the base installation, allowing teachers to choose only the features they need.
+
 
 **Key characteristics:**
 - ✅ **Optional** - Install only what you want
@@ -37,7 +38,7 @@ Extensions are optional add-ons that expand the functionality of Educator Tools 
 
 Expands the Letter Blocks feature with hundreds of additional characters, themed backgrounds, and multilingual support.
 
-**[View More Letter Blocks Extension →](Extensions-More-Letter-Blocks)**
+**[View More Letter Blocks Extension →](Extensions-More-Letter-Blocks.md)**
 
 **What it adds:**
 - Hundreds of new letter and symbol blocks
@@ -56,8 +57,9 @@ Expands the Letter Blocks feature with hundreds of additional characters, themed
 
 ## ➕ Installing Extensions
 
-> [!TIP]
-> Extensions install the same way as the main Educator Tools pack - just download, double-click, and activate!
+!!! tip
+    Extensions install the same way as the main Educator Tools pack - just download, double-click, and activate!
+
 
 ### Step 1: Download the Extension
 
@@ -87,8 +89,9 @@ Expands the Letter Blocks feature with hundreds of additional characters, themed
 
 ### 🔧 Do I need the core pack?
 
-> [!IMPORTANT]
-> **Yes!** Extensions require the core Educator Tools pack to be installed and activated. Always install the main pack first, then add extensions.
+!!! info
+    **Yes!** Extensions require the core Educator Tools pack to be installed and activated. Always install the main pack first, then add extensions.
+
 
 **Installation order:**
 1. Install and activate **Educator Tools** (core pack)
@@ -108,15 +111,17 @@ Expands the Letter Blocks feature with hundreds of additional characters, themed
 3. Click the **"-"** button next to the extension
 4. Save your changes
 
-> [!WARNING]
-> Removing an extension will remove all content it added. For example, removing "More Letter Blocks" will delete all themed letter blocks from the world.
+!!! warning
+    Removing an extension will remove all content it added. For example, removing "More Letter Blocks" will delete all themed letter blocks from the world.
+
 
 ---
 
 ## 🔗 Compatibility
 
-> [!IMPORTANT]
-> Extensions require the same Minecraft Education version as the core Educator Tools pack. Check the release notes for compatibility information.
+!!! info
+    Extensions require the same Minecraft Education version as the core Educator Tools pack. Check the release notes for compatibility information.
+
 
 ### 📱 Minecraft Education Version
 
@@ -128,7 +133,7 @@ Extensions can safely be added to existing worlds. They won't affect your builds
 
 ### 🎨 Custom Content
 
-Extensions don't interfere with custom letter blocks or other custom content you've created. See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration) for creating custom content alongside extensions.
+Extensions don't interfere with custom letter blocks or other custom content you've created. See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for creating custom content alongside extensions.
 
 ---
 
@@ -151,17 +156,19 @@ We're planning to add more extensions in the future! Potential extensions includ
 
 ## 🛠️ Creating Your Own Extensions
 
-> [!NOTE]
-> Advanced users and developers can create custom extensions for Educator Tools. This requires development knowledge and familiarity with Minecraft add-on development.
+!!! note
+    Advanced users and developers can create custom extensions for Educator Tools. This requires development knowledge and familiarity with Minecraft add-on development.
+
 
 **Resources for extension developers:**
-- 📖 **[Developer Documentation](Developer-Documentation)** - Learn the architecture
-- 🔧 **[Development Setup](Development-Setup)** - Set up your environment
-- 🔤 **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration)** - Example of content extension
-- 🤝 **[Contributing](Contributing)** - Submit your extension to the project
+- 📖 **[Developer Documentation](Developer-Documentation.md)** - Learn the architecture
+- 🔧 **[Development Setup](Development-Setup.md)** - Set up your environment
+- 🔤 **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md)** - Example of content extension
+- 🤝 **[Contributing](Contributing.md)** - Submit your extension to the project
 
-> [!TIP]
-> **If you create an extension**, consider sharing it with the community! We welcome contributions that benefit educators worldwide.
+!!! tip
+    **If you create an extension**, consider sharing it with the community! We welcome contributions that benefit educators worldwide.
+
 
 ---
 
@@ -202,8 +209,8 @@ We're planning to add more extensions in the future! Potential extensions includ
 ## 💬 Support & Feedback
 
 **Need help with extensions?**
-- ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting)** - Common problems
-- 🆘 **[Getting Help](Getting-Help)** - How to get support
+- ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems
+- 🆘 **[Getting Help](Getting-Help.md)** - How to get support
 
 **Have feedback on extensions?**
 - 💬 Share suggestions in [Discussions](https://github.com/ShapescapeMC/Educator-Tools/discussions)
@@ -215,10 +222,10 @@ We're planning to add more extensions in the future! Potential extensions includ
 
 Quick links to all available extensions:
 
-- **[More Letter Blocks](Extensions-More-Letter-Blocks)** - Expanded letter block library
+- **[More Letter Blocks](Extensions-More-Letter-Blocks.md)** - Expanded letter block library
 
 *More extensions coming soon!*
 
 ---
 
-**Back to:** [Home](Home) | [Installation](Installation) | [Letter Blocks](Letter-Blocks-Getting-Started)
+**Back to:** [Home](index.md) | [Installation](Installation.md) | [Letter Blocks](Letter-Blocks-Getting-Started.md)

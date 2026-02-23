@@ -19,10 +19,11 @@ Need assistance with Educator Tools? Here's how to get support.
 
 ## 🔍 Before Asking for Help
 
-> [!TIP]
-> Try these steps first - they solve most problems!
+!!! tip
+    Try these steps first - they solve most problems!
 
-1. **Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting)** - Your question might already be answered
+
+1. **Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Your question might already be answered
 2. **Read the relevant guide** - Review the documentation for the tool you're using
 3. **Search the wiki** - Use Ctrl+F (or Cmd+F on Mac) to search for keywords
 4. **Restart Minecraft** - Many issues are fixed by restarting the application
@@ -33,10 +34,10 @@ Need assistance with Educator Tools? Here's how to get support.
 ## 📚 Quick Help Resources
 
 ### 📖 Documentation (You Are Here!)
-- **[Quick Start Guide](Quick-Start-Guide)** - Get started in 5 minutes
-- **[Essential Tools](Essential-Tools)** - Learn the most important features
-- **[FAQ and Troubleshooting](FAQ-and-Troubleshooting)** - Common problems and solutions
-- **[Glossary](Glossary)** - Understand Minecraft terminology
+- **[Quick Start Guide](Quick-Start-Guide.md)** - Get started in 5 minutes
+- **[Essential Tools](Essential-Tools.md)** - Learn the most important features
+- **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems and solutions
+- **[Glossary](Glossary.md)** - Understand Minecraft terminology
 
 ### 🎥 Video Tutorials (Coming Soon)
 Video guides and demonstrations will be added in the future.
@@ -45,8 +46,9 @@ Video guides and demonstrations will be added in the future.
 
 ## 🐛 Reporting Problems
 
-> [!NOTE]
-> Use bug reports when something isn't working correctly or you encounter errors.
+!!! note
+    Use bug reports when something isn't working correctly or you encounter errors.
+
 
 If you found a bug or something isn't working correctly:
 
@@ -65,8 +67,9 @@ If your problem isn't listed, create a new issue:
 
 **Go to:** [Create New Issue](https://github.com/ShapescapeMC/Educator-Tools/issues/new)
 
-> [!IMPORTANT]
-> **Include detailed information** - the more details you provide, the faster we can fix the problem!
+!!! info
+    **Include detailed information** - the more details you provide, the faster we can fix the problem!
+
 
 **Include this information:**
 
@@ -86,8 +89,9 @@ If your problem isn't listed, create a new issue:
 2. Be as specific as possible
 3. Example: "Open Educator Toolbox → Click Teleport → Select 'All Players' → Click..."
 
-> [!TIP]
-> **Screenshots and videos help tremendously!** A picture is worth a thousand words. Consider recording a short video showing the problem in action.
+!!! tip
+    **Screenshots and videos help tremendously!** A picture is worth a thousand words. Consider recording a short video showing the problem in action.
+
 
 **Screenshots or Videos:**
 - Include screenshots if possible (helps us understand the problem faster)
@@ -125,8 +129,9 @@ If your problem isn't listed, create a new issue:
 
 ## 💡 Feature Requests
 
-> [!NOTE]
-> Use feature requests to suggest new tools, improvements, or enhancements to existing features.
+!!! note
+    Use feature requests to suggest new tools, improvements, or enhancements to existing features.
+
 
 Have an idea for a new tool or improvement?
 
@@ -145,8 +150,9 @@ If someone already suggested it:
 
 **Label it:** Feature Request
 
-> [!TIP]
-> **Describe your classroom scenario!** Explain the teaching problem you're trying to solve - this helps us design the best solution.
+!!! tip
+    **Describe your classroom scenario!** Explain the teaching problem you're trying to solve - this helps us design the best solution.
+
 
 **Include:**
 
@@ -193,8 +199,9 @@ If someone already suggested it:
 
 Can't find an answer in the documentation? Ask the community!
 
-> [!TIP]
-> **Direct support is not available**, but you can get help from experienced educators and community members who use Educator Tools.
+!!! tip
+    **Direct support is not available**, but you can get help from experienced educators and community members who use Educator Tools.
+
 
 ### 🎮 Minecraft Teacher's Lounge (Facebook)
 
@@ -213,8 +220,9 @@ Can't find an answer in the documentation? Ask the community!
 
 **To join:** Look for the official Minecraft Education Discord server
 
-> [!NOTE]
-> When asking for help in community spaces, include details about your problem (what you tried, what happened, your Minecraft version) to get the best answers!
+!!! note
+    When asking for help in community spaces, include details about your problem (what you tried, what happened, your Minecraft version) to get the best answers!
+
 
 ---
 
@@ -231,7 +239,7 @@ Want to help improve Educator Tools?
 
 ### 👨‍💻 For Developers
 
-See the [Developer Documentation](Developer-Documentation) for information on:
+See the [Developer Documentation](Developer-Documentation.md) for information on:
 - Contributing code
 - Setting up a development environment
 - Creating pull requests
@@ -241,8 +249,9 @@ See the [Developer Documentation](Developer-Documentation) for information on:
 
 ## ⏱️ Response Times
 
-> [!NOTE]
-> Educator Tools is a community project. Response times may vary based on complexity and available maintainer time.
+!!! note
+    Educator Tools is a community project. Response times may vary based on complexity and available maintainer time.
+
 
 **🐛 Issue Reports:** We try to respond within 7 days
 
@@ -264,4 +273,4 @@ Your feedback makes the documentation better for everyone!
 
 ---
 
-**Back to:** [Home](Home) | [FAQ and Troubleshooting](FAQ-and-Troubleshooting) | [Quick Start Guide](Quick-Start-Guide)
+**Back to:** [Home](index.md) | [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md) | [Quick Start Guide](Quick-Start-Guide.md)

@@ -48,8 +48,9 @@ Student Management Tools let you move students around, change their abilities, o
 | **🎒 Inventory Management** | Control student items | 📦 Give materials, clear items, copy inventories |
 | **❤️ Manage Health** | Control health and hunger | 🏥 Healing students, resetting before challenges |
 
-> [!NOTE]
-> All Student Management Tools work seamlessly together. For example, you can create teams and then teleport entire teams at once, or change the gamemode for a whole team with a single click.
+!!! note
+    All Student Management Tools work seamlessly together. For example, you can create teams and then teleport entire teams at once, or change the gamemode for a whole team with a single click.
+
 
 ---
 
@@ -58,8 +59,9 @@ Student Management Tools let you move students around, change their abilities, o
 ### What it does
 Instantly moves students to any location without them having to walk or fly there.
 
-> [!TIP]
-> Teleporting is one of the most-used tools in classroom management. Use it liberally to save time and keep your class organized.
+!!! tip
+    Teleporting is one of the most-used tools in classroom management. Use it liberally to save time and keep your class organized.
+
 
 ### When to use it
 
@@ -90,8 +92,9 @@ Instantly moves students to any location without them having to walk or fly ther
 
 ![Teleport tool interface](images/teleport-interface.png)
 
-> [!TIP]
-> **Quick Gather:** To instantly bring everyone together, select "All Players" and teleport them to you. This is perfect for starting activities or getting everyone's attention.
+!!! tip
+    **Quick Gather:** To instantly bring everyone together, select "All Players" and teleport them to you. This is perfect for starting activities or getting everyone's attention.
+
 
 **✅ Benefits:**
 - Students keep their inventory and gamemode when teleported
@@ -99,8 +102,9 @@ Instantly moves students to any location without them having to walk or fly ther
 - You can teleport yourself using this tool too
 - Works instantly across any distance
 
-> [!IMPORTANT]
-> At least 2 players must be online (you + one student) for the teleport tool to work.
+!!! info
+    At least 2 players must be online (you + one student) for the teleport tool to work.
+
 
 ![Teleporting all students demonstration](gifs/teleport-all-demo.gif)
 
@@ -111,8 +115,9 @@ Instantly moves students to any location without them having to walk or fly ther
 ### What it does
 Changes whether students are in Creative mode (unlimited resources, can fly) or Survival mode (limited resources, health matters).
 
-> [!NOTE]
-> Gamemode determines what students can do in the world. Each mode has specific capabilities and restrictions designed for different types of activities.
+!!! note
+    Gamemode determines what students can do in the world. Each mode has specific capabilities and restrictions designed for different types of activities.
+
 
 ### When to use it
 
@@ -144,8 +149,9 @@ Changes whether students are in Creative mode (unlimited resources, can fly) or 
 
 ![Gamemode selector](images/gamemode-selector.png)
 
-> [!TIP]
-> You can change your own gamemode too! Switch to Spectator mode to observe students without being seen, or match their gamemode to experience what they're experiencing.
+!!! tip
+    You can change your own gamemode too! Switch to Spectator mode to observe students without being seen, or match their gamemode to experience what they're experiencing.
+
 
 ### Gamemode Explanations
 
@@ -185,8 +191,9 @@ Changes whether students are in Creative mode (unlimited resources, can fly) or 
 
 **Best for:** Tours of builds, interactive stories, maps
 
-> [!TIP]
-> Use Adventure mode when showing students a pre-built area you don't want modified. They can explore freely but can't accidentally break your builds.
+!!! tip
+    Use Adventure mode when showing students a pre-built area you don't want modified. They can explore freely but can't accidentally break your builds.
+
 
 </details>
 
@@ -200,13 +207,15 @@ Changes whether students are in Creative mode (unlimited resources, can fly) or 
 
 **Best for:** Observing student work, assessment
 
-> [!TIP]
-> Spectator mode is perfect for checking on student progress without being seen. You can fly through walls to see everyone's work without disrupting them.
+!!! tip
+    Spectator mode is perfect for checking on student progress without being seen. You can fly through walls to see everyone's work without disrupting them.
+
 
 </details>
 
-> [!NOTE]
-> Most classroom building activities work best in Creative mode. Change to Survival for specific challenges or resource-gathering activities.
+!!! note
+    Most classroom building activities work best in Creative mode. Change to Survival for specific challenges or resource-gathering activities.
+
 
 ![Gamemode change demonstration](gifs/gamemode-change-demo.gif)
 
@@ -217,8 +226,9 @@ Changes whether students are in Creative mode (unlimited resources, can fly) or 
 ### What it does
 Organizes students into groups (teams) that you can target with other tools. Makes it easy to manage multiple students at once.
 
-> [!TIP]
-> Teams are a powerful organizational tool. Once you create teams, you can use them with almost every other tool in the Educator Toolbox (teleport entire teams, change gamemode for a whole team, etc.).
+!!! tip
+    Teams are a powerful organizational tool. Once you create teams, you can use them with almost every other tool in the Educator Toolbox (teleport entire teams, change gamemode for a whole team, etc.).
+
 
 ### When to use it
 
@@ -241,8 +251,9 @@ Three teams are always available:
 - **👨‍🏫 Teachers** - All designated teaching staff (you can add other teachers here)
 - **🎓 Students** - Everyone who isn't a teacher
 
-> [!IMPORTANT]
-> Default teams (All Players, Teachers, Students) cannot be deleted. They are permanent fixtures for easy classroom management.
+!!! info
+    Default teams (All Players, Teachers, Students) cannot be deleted. They are permanent fixtures for easy classroom management.
+
 
 ### How to use it
 
@@ -257,8 +268,9 @@ Three teams are always available:
    - **Icon** - Choose a visual symbol (🪓 Iron Axe, 🐟 Clownfish, 💎 Diamond, 🥚 Egg, or 🥔 Potato)
 5. Confirm creation
 
-> [!TIP]
-> Use descriptive names like "Red Team" or "Table 3" so students immediately understand which team they're on.
+!!! tip
+    Use descriptive names like "Red Team" or "Table 3" so students immediately understand which team they're on.
+
 
 #### Adding Students to a Team
 
@@ -287,8 +299,9 @@ Three teams are always available:
 4. Click **Delete Team**
 5. Confirm deletion
 
-> [!CAUTION]
-> You cannot delete the default teams (All Players, Teachers, Students). Only custom teams can be removed.
+!!! danger
+    You cannot delete the default teams (All Players, Teachers, Students). Only custom teams can be removed.
+
 
 ![Teams management interface](images/teams-interface.png)
 
@@ -324,8 +337,9 @@ Three teams are always available:
 ### What it does
 Controls what items students have in their inventories. You can give everyone the same items, clear unwanted items, or copy one student's inventory to others.
 
-> [!NOTE]
-> Inventory Management is perfect for ensuring everyone starts an activity with the exact same materials. It saves time and prevents students from being distracted by missing items.
+!!! note
+    Inventory Management is perfect for ensuring everyone starts an activity with the exact same materials. It saves time and prevents students from being distracted by missing items.
+
 
 ### When to use it
 
@@ -368,8 +382,9 @@ Perfect for giving everyone the same materials after one student has collected w
    - Everyone
 6. Confirm the copy
 
-> [!NOTE]
-> Every item in the source inventory is duplicated to the target(s). Original items stay in the source inventory - nothing is moved or removed.
+!!! note
+    Every item in the source inventory is duplicated to the target(s). Original items stay in the source inventory - nothing is moved or removed.
+
 
 #### Copy Hotbar Only
 
@@ -381,8 +396,9 @@ Same as Copy Inventory, but only copies the bottom 9 slots (hotbar) instead of t
 4. Select source and target
 5. Confirm
 
-> [!TIP]
-> Use Copy Hotbar to give everyone the same tools without affecting the materials they've already collected in their main inventory.
+!!! tip
+    Use Copy Hotbar to give everyone the same tools without affecting the materials they've already collected in their main inventory.
+
 
 #### Copy Specific Item
 
@@ -409,8 +425,9 @@ Removes all items from selected students. Useful for starting activities fresh.
    - All players
 5. Confirm the clear
 
-> [!WARNING]
-> Clear Inventory permanently deletes items! Make sure students don't have important work in their inventory before clearing. This action cannot be undone.
+!!! warning
+    Clear Inventory permanently deletes items! Make sure students don't have important work in their inventory before clearing. This action cannot be undone.
+
 
 ![Inventory management interface](images/inventory-interface.png)
 
@@ -431,10 +448,11 @@ This workflow ensures perfect consistency and saves time compared to manually di
 
 </details>
 
-> [!IMPORTANT]
-> **Requirements for Copy Operations:**
-> - At least 2 players must be online for copy operations
-> - Both source and target players must be online for copy to work
+!!! info
+    **Requirements for Copy Operations:**
+    - At least 2 players must be online for copy operations
+    - Both source and target players must be online for copy to work
+
 
 ![Inventory copy demonstration](gifs/inventory-copy-demo.gif)
 
@@ -445,8 +463,9 @@ This workflow ensures perfect consistency and saves time compared to manually di
 ### What it does
 Controls student health and hunger levels. You can heal students, restore their hunger, or even eliminate them from the world temporarily.
 
-> [!NOTE]
-> Manage Health is particularly useful in Survival mode activities where health and hunger matter. In Creative mode, students can't take damage, so this tool has limited use.
+!!! note
+    Manage Health is particularly useful in Survival mode activities where health and hunger matter. In Creative mode, students can't take damage, so this tool has limited use.
+
 
 ### When to use it
 
@@ -475,11 +494,13 @@ Controls student health and hunger levels. You can heal students, restore their 
    - **Kill** - Eliminate the player (they respawn at spawn point)
 5. Confirm the action
 
-> [!TIP]
-> Use "Heal & Feed" before starting Survival mode challenges to ensure everyone begins at full strength.
+!!! tip
+    Use "Heal & Feed" before starting Survival mode challenges to ensure everyone begins at full strength.
 
-> [!CAUTION]
-> The "Kill" action causes students to lose their current location and any items they're carrying (unless Keep Inventory is enabled in world settings). Use with caution.
+
+!!! danger
+    The "Kill" action causes students to lose their current location and any items they're carrying (unless Keep Inventory is enabled in world settings). Use with caution.
+
 
 **✅ Common Uses:**
 - Reset everyone to full health before a PvP challenge
@@ -493,8 +514,9 @@ Controls student health and hunger levels. You can heal students, restore their 
 
 These tools work great in combination:
 
-> [!TIP]
-> Combining tools creates powerful workflows. Here are some effective combinations:
+!!! tip
+    Combining tools creates powerful workflows. Here are some effective combinations:
+
 
 <details>
 <summary><strong>Tool Combination Examples</strong> (click to expand)</summary>
@@ -525,8 +547,8 @@ These tools work great in combination:
 
 ## Next Steps
 
-- **[Classroom Control Tools](Classroom-Control-Tools)** - Focus Mode, Timer, Freeze Students
-- **[World Management Tools](World-Management-Tools)** - Time, Weather, World Settings
-- **[All Features Guide](Educator-Toolbox)** - Complete tool reference
+- **[Classroom Control Tools](Classroom-Control-Tools.md)** - Focus Mode, Timer, Freeze Students
+- **[World Management Tools](World-Management-Tools.md)** - Time, Weather, World Settings
+- **[All Features Guide](Educator-Toolbox.md)** - Complete tool reference
 
-**Need Help?** Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting) page.
+**Need Help?** Check the [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md) page.
