@@ -1,0 +1,436 @@
+# ❓ FAQ and Troubleshooting
+
+Common questions and solutions for Educator Tools.
+
+---
+
+## Table of Contents
+
+- [🚀 Installation Questions](#-installation-questions)
+- [🎯 Using the Tools](#-using-the-tools)
+- [🔧 Troubleshooting Issues](#-troubleshooting-issues)
+  - [Installation Problems](#installation-problems)
+  - [Tool Issues](#tool-issues)
+  - [Permission & Access Issues](#permission--access-issues)
+  - [Performance Issues](#performance-issues)
+  - [Assignment & Submission Issues](#assignment--submission-issues)
+  - [Nickname Issues](#nickname-issues)
+  - [World Settings Issues](#world-settings-issues)
+- [💡 Advanced Topics](#-advanced-topics)
+- [🆘 Getting More Help](#-getting-more-help)
+
+---
+
+## 🚀 Installation Questions
+
+<details>
+<summary><strong>Q: Where do I download Educator Tools?</strong></summary>
+
+> [!NOTE]
+> Visit the [GitHub Releases page](https://github.com/ShapescapeMC/Educator-Tools/releases) and download the latest version. See the [Installation Guide](Installation) for detailed steps.
+
+</details>
+
+<details>
+<summary><strong>Q: Will Educator Tools work with my existing world?</strong></summary>
+
+**A:** Yes! You can add Educator Tools to any existing Minecraft Education world. Just activate the behavior pack in your world settings.
+
+</details>
+
+<details>
+<summary><strong>Q: Do my students need to install anything?</strong></summary>
+
+> [!TIP]
+> **No installation needed for students!** Only the world needs Educator Tools installed. When students join your world, they automatically have access to it - no installation needed on their end.
+
+</details>
+
+<details>
+<summary><strong>Q: Can I use Educator Tools on all platforms?</strong></summary>
+
+**A:** Yes. Educator Tools works on all platforms that support Minecraft Education Edition (Windows, Mac, iPad, Chromebook).
+
+</details>
+
+---
+
+## 🎯 Using the Tools
+
+<details>
+<summary><strong>Q: How do I get the Educator Toolbox?</strong></summary>
+
+> [!TIP]
+> The toolbox appears automatically in your inventory when you join a world with Educator Tools active. Only players designated as teachers get the toolbox automatically.
+>
+> If you don't see it:
+> 1. Leave and rejoin the world
+> 2. Check Creative inventory and search for "Educator Toolbox"
+> 3. Verify the pack is active in World Settings → Behavior Packs
+
+</details>
+
+<details>
+<summary><strong>Q: Can students use the tools?</strong></summary>
+
+**A:** Students should not have access to the Educator Toolbox unless they're added to the Teachers team. Most tools are designed for teacher use only. Students can interact with assignments, timers, and other teacher-created activities.
+
+</details>
+
+<details>
+<summary><strong>Q: Why can't I use Teleport?</strong></summary>
+
+> [!NOTE]
+> **Teleport requires at least 2 players online** (you + one student). If you're testing alone, the teleport button will be grayed out. Have at least one student join the world to use this feature.
+
+</details>
+
+---
+
+## 🔧 Troubleshooting Issues
+
+### Installation Problems
+
+<details>
+<summary><strong>Problem: The pack doesn't appear in my Behavior Packs list</strong></summary>
+
+**Solution:**
+1. Make sure you downloaded the `.mcpack` or `.mcaddon` file (not the source code)
+2. Double-click the file to import it into Minecraft
+3. Check Settings → Storage → Behavior Packs to confirm it imported
+4. If still missing, try restarting Minecraft Education completely
+
+</details>
+
+<details>
+<summary><strong>Problem: I activated the pack but the toolbox isn't in my inventory</strong></summary>
+
+**Solutions to try:**
+1. **Leave and rejoin the world** - The toolbox appears when you join, not when you activate the pack
+2. **Check you're a teacher** - Only players designated as teachers get the toolbox automatically
+3. **Look in Creative inventory** - Search for "Educator Toolbox" item
+4. **Verify pack is active** - Go to World Settings → Behavior Packs and confirm it shows "Active"
+
+![Checking active packs](images/check-active-packs.png)
+
+</details>
+
+<details>
+<summary><strong>Problem: The pack was working but stopped after an update</strong></summary>
+
+> [!WARNING]
+> **Minecraft Education updates can affect pack compatibility.** Always check for the latest version of Educator Tools after Minecraft updates.
+
+**Solution:**
+1. Check if Minecraft Education updated recently
+2. Visit the [releases page](https://github.com/ShapescapeMC/Educator-Tools/releases) for the latest compatible version
+3. Remove the old version and install the new version
+4. Re-activate the pack in your world settings
+
+</details>
+
+---
+
+### Tool Issues
+
+<details>
+<summary><strong>Problem: Teleport doesn't work / button is grayed out</strong></summary>
+
+**Cause:** Teleport requires at least 2 players online (you + one student).
+
+**Solution:**
+- Have at least one student join the world
+- If testing alone, you can't use teleport
+- Try the tool again once students are online
+
+</details>
+
+<details>
+<summary><strong>Problem: Focus Mode won't turn on</strong></summary>
+
+**Solutions to try:**
+1. **Check your message** - Make sure you typed something in the message field
+2. **Verify target** - Confirm you selected a player or team to focus
+3. **Try "Disable Globally" button** - This button toggles between ON and OFF (confusing name, we know!)
+4. **Students offline** - Focus Mode works on offline students, but they won't see it until they log in
+
+</details>
+
+<details>
+<summary><strong>Problem: Timer isn't visible to students</strong></summary>
+
+**Check these:**
+1. **Did you click "Start"?** - Creating a timer doesn't automatically start it
+2. **Boss Bar visibility** - Timer shows at the very top of the screen (Boss Bar)
+3. **Other Boss Bars active** - Only one Boss Bar can show at a time
+4. **Timer deleted accidentally** - Recreate the timer
+
+</details>
+
+<details>
+<summary><strong>Problem: Students can still move during Focus Mode</strong></summary>
+
+> [!NOTE]
+> **This is expected if:**
+> - Chat is still active (Minecraft limitation - can't disable chat)
+> - You haven't clicked to actually enable Focus Mode yet
+> - They're a teacher (teachers are never affected by Focus Mode)
+
+**If students can move when they shouldn't:**
+1. Confirm Focus Mode shows as "ON" for those students
+2. Try disabling and re-enabling
+3. Check if they're accidentally in the Teachers team
+
+</details>
+
+<details>
+<summary><strong>Problem: Letter Blocks don't appear in Creative inventory</strong></summary>
+
+**Solutions:**
+1. **Search for them** - Open inventory, use search box, type "letter"
+2. **Check correct tab** - Look in Construction or Items tabs
+3. **Verify Education Edition** - Letter Blocks require Minecraft Education Edition (not regular Minecraft)
+4. **Pack active** - Confirm Educator Tools pack is active in world settings
+
+</details>
+
+---
+
+### Permission & Access Issues
+
+<details>
+<summary><strong>Problem: A student has the Educator Toolbox when they shouldn't</strong></summary>
+
+**Solution:**
+Students shouldn't get the toolbox automatically. If they do:
+1. They might be in the "Teachers" team by accident
+2. Remove them from the Teachers team using [Teams Management](Student-Management-Tools#-teams-management)
+3. The toolbox will disappear from their inventory
+
+</details>
+
+<details>
+<summary><strong>Problem: I'm a teacher but don't have the toolbox</strong></summary>
+
+**Solutions:**
+1. **Add yourself to Teachers team** - Use Teams Management to add yourself
+2. **Rejoin the world** - Leave and join again to trigger the toolbox appearing
+3. **Get it from Creative** - Open Creative inventory and search for "Educator Toolbox"
+
+</details>
+
+<details>
+<summary><strong>Problem: Students can use tools they shouldn't have access to</strong></summary>
+
+**Check:**
+1. Are they in the Teachers team? (would give them full access)
+2. Do they have Creative mode? (allows access to items via inventory)
+3. Are you testing in a single-player world? (default permissions are different)
+
+**Solution:** Verify team assignments and set appropriate gamemodes.
+
+</details>
+
+---
+
+### Performance Issues
+
+<details>
+<summary><strong>Problem: The world is laggy when using Educator Tools</strong></summary>
+
+**Potential causes:**
+1. **Too many students** - Large classes (30+ students) can strain performance
+2. **Lots of active tools** - Running multiple tools simultaneously (timers, locks, focus mode)
+3. **Large world size** - Extensive builds increase lag
+4. **Device limitations** - Older devices may struggle
+
+> [!TIP]
+> **Performance optimization tips:**
+> - Disable tools not currently in use
+> - Reduce world render distance in settings
+> - Close other applications
+> - Consider upgrading device if possible
+
+</details>
+
+<details>
+<summary><strong>Problem: Commands are slow to execute</strong></summary>
+
+**This is normal for:**
+- Large operations (copying inventory to all players)
+- First use after joining world (initialization delay)
+- Worlds with many players
+
+**Not normal if:**
+- Every action takes 10+ seconds
+- Tools frequently time out or fail
+
+> [!WARNING]
+> **If experiencing abnormal slowness:**
+> 1. Restart the world
+> 2. Check internet connection (for multiplayer)
+> 3. Reduce number of active tools
+> 4. Report performance issue (see [Getting Help](Getting-Help))
+
+</details>
+
+---
+
+### Assignment & Submission Issues
+
+<details>
+<summary><strong>Problem: Students can't submit assignments</strong></summary>
+
+**Checklist:**
+1. **Is the assignment still active?** - Check it hasn't been marked "Complete"
+2. **Did they type a response?** - Text field can't be empty
+3. **Are they in the right assignment?** - Confirm they opened the correct one
+
+**Solution:** Verify assignment status and have student try again.
+
+</details>
+
+<details>
+<summary><strong>Problem: I can't see a student's submission</strong></summary>
+
+**Possible reasons:**
+1. **They haven't submitted yet** - Check with the student
+2. **Submission didn't save** - Have them resubmit
+3. **Assignment completed too soon** - Submissions might have been locked out
+
+</details>
+
+<details>
+<summary><strong>Problem: Assignment notifications don't appear</strong></summary>
+
+**This can happen if:**
+- "Notify Students" was toggled OFF when creating the assignment
+- Chat is moving too fast (message got buried)
+
+> [!TIP]
+> Use [Focus Mode](Classroom-Control-Tools#%EF%B8%8F-focus-mode) to announce important assignments and ensure all students see the notification.
+
+</details>
+
+---
+
+### Nickname Issues
+
+<details>
+<summary><strong>Problem: Nicknames don't show up in game</strong></summary>
+
+**Check settings:**
+1. Open **Custom Nicknames** → **Settings**
+2. Verify "Nicknames Enabled" is **ON**
+3. Check if "Require Approval" is ON - teacher must approve first
+4. Confirm nickname was actually set/approved
+
+</details>
+
+<details>
+<summary><strong>Problem: Students keep getting prompted to set nickname every time they join</strong></summary>
+
+**This happens when:**
+- "Prompt on Join" is ON
+- Student cancels without setting a nickname
+
+**Solutions:**
+1. Have student actually set a nickname (not cancel)
+2. Teacher can set their nickname manually (no prompt after that)
+3. Turn "Prompt on Join" OFF if you don't want automatic prompts
+
+</details>
+
+---
+
+### World Settings Issues
+
+<details>
+<summary><strong>Problem: I set time to Day but it's still night</strong></summary>
+
+**Solutions:**
+1. **Turn off Daylight Cycle** - Time might be progressing normally
+2. **Use "Always Day" button** - Sets time AND disables cycle in one click
+3. **Check if it's actually daytime** - Minecraft "Day" is morning, use "Noon" for brightest
+
+</details>
+
+<details>
+<summary><strong>Problem: Classroom Limitations don't seem to work</strong></summary>
+
+**Verify:**
+1. **You toggled the restriction ON** - Make sure it's enabled
+2. **You're testing with a student account** - Teachers are exempt from all limitations
+3. **Students rejoin after enabling** - Sometimes requires rejoin for restrictions to apply
+
+> [!WARNING]
+> **If still not working:**
+> - Check the student isn't in the Teachers team
+> - Try disabling and re-enabling the restriction
+> - Verify Educator Tools pack is up to date
+
+</details>
+
+---
+
+## 💡 Advanced Topics
+
+<details>
+<summary><strong>Q: Can I customize the letter blocks?</strong></summary>
+
+> [!TIP]
+> **Yes!** Educator Tools is open-source, so developers can create custom letter block sets. See the [Developer Documentation](Developer-Documentation) for guidance on adding new characters or symbols.
+
+</details>
+
+<details>
+<summary><strong>Q: How do I contribute to Educator Tools?</strong></summary>
+
+**A:** We welcome contributions! Follow these steps:
+1. Read the [Contributing Guide](Contributing)
+2. Set up your development environment with [Development Setup](Development-Setup)
+3. Submit pull requests on [GitHub](https://github.com/ShapescapeMC/Educator-Tools)
+
+</details>
+
+<details>
+<summary><strong>Q: Can I use Educator Tools in regular Minecraft?</strong></summary>
+
+> [!NOTE]
+> **No.** Educator Tools is specifically designed for Minecraft Education Edition and uses features not available in regular Minecraft (like special permissions, letter blocks, and education-specific commands).
+
+</details>
+
+---
+
+## 🆘 Getting More Help
+
+If your problem isn't listed here:
+
+1. 📖 **Check the [Glossary](Glossary)** - Understand Minecraft-specific terms
+2. 📝 **Read the [Getting Help](Getting-Help) guide** - Learn how to report issues
+3. 🔍 **Visit the [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)** - See if others have the same problem
+4. 💬 **Ask for help** - Create a new issue with details about your problem
+
+---
+
+## Tips to Avoid Problems
+
+> [!TIP]
+> **Best Practices for Success:**
+>
+> ✅ **Test tools in an empty world first** - Learn how they work before using with students
+>
+> ✅ **Keep Educator Tools updated** - Check for new versions regularly
+>
+> ✅ **Read tool descriptions carefully** - Many issues come from misunderstanding how tools work
+>
+> ✅ **Start simple** - Master basic tools before trying advanced features
+>
+> ✅ **Save your world regularly** - Back up your world in case something goes wrong
+>
+> ✅ **Check pack compatibility** - Verify your Minecraft Education version matches the pack
+
+---
+
+**Still stuck?** Visit [Getting Help](Getting-Help) to learn how to get support.
