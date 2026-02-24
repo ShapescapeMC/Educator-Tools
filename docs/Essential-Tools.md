@@ -394,7 +394,7 @@ Provides special building blocks that display letters, numbers, and symbols. Stu
 6. Click any block to add it to your inventory
 7. Drag blocks to your hotbar for easy access
 
-![Finding letter blocks in Creative inventory](images/find-letter-blocks-creative.png)
+![Finding letter blocks in Creative inventory](gifs/find-letter-blocks-creative.gif)
 
 #### Give Letter Blocks to Students
 
