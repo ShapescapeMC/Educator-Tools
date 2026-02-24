@@ -43,14 +43,17 @@ New to Educator Tools? Start with these guides:
 
 
 **Begin here:**
+
 - 🎯 **[Essential Tools](Essential-Tools.md)** - Master the 5 most important tools first
 
 **Then explore by category:**
+
 - 👥 **[Student Management Tools](Student-Management-Tools.md)** - Teleport, gamemode, teams, inventory
 - 🎓 **[Classroom Control Tools](Classroom-Control-Tools.md)** - Focus mode, timers, assignments, nicknames
 - 🌍 **[World Management Tools](World-Management-Tools.md)** - Time, weather, world settings, restrictions
 
 **Or see everything:**
+
 - 📖 **[Educator Toolbox - All Features](Educator-Toolbox.md)** - Complete reference guide
 
 ### 🔤 Letter Blocks
@@ -106,6 +109,7 @@ Want to contribute or customize Educator Tools?
 Educator Tools is an open-source project designed to make classroom management in Minecraft Education Edition easier and more effective for teachers worldwide.
 
 **Key Features:**
+
 - ✅ No command knowledge required
 - ✅ Intuitive in-game interface
 - ✅ Comprehensive classroom management tools
@@ -118,6 +122,7 @@ Educator Tools is an open-source project designed to make classroom management i
 ## Navigation Guide
 
 **If you're a teacher who wants to:**
+
 - **Get started quickly** → [Quick Start Guide](Quick-Start-Guide.md)
 - **Learn specific tools** → [Essential Tools](Essential-Tools.md) or [All Features](Educator-Toolbox.md)
 - **Use letter blocks** → [Letter Blocks Getting Started](Letter-Blocks-Getting-Started.md)
@@ -125,6 +130,7 @@ Educator Tools is an open-source project designed to make classroom management i
 - **Get help** → [Getting Help](Getting-Help.md)
 
 **If you're a developer who wants to:**
+
 - **Contribute code** → [Contributing Guide](Contributing.md)
 - **Set up development** → [Development Setup](Development-Setup.md)
 - **Add translations** → [Translations](Translations.md)
