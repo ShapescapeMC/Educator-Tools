@@ -57,6 +57,55 @@ function getCategoriesData() {
 	};
 }
 
+// Build lang entries from scope data and generated PNGs
+function getLangEntries() {
+	const entries: { safe_name: string; display_name: string }[] = [];
+	const seen = new Set<string>();
+
+	// Add entries from scope (with group-based display names)
+	for (const ls of scope.letter_sets) {
+		for (const letter of ls.letters) {
+			if (seen.has(letter.safe_name)) continue;
+			seen.add(letter.safe_name);
+
+			let displayName: string;
+			if (letter.group === "letter") {
+				displayName = `Letter ${letter.char}`;
+			} else if (letter.group === "number") {
+				displayName = `Number ${letter.char}`;
+			} else {
+				displayName = letter.safe_name
+					.replace(/_/g, " ")
+					.split(" ")
+					.map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+					.join(" ");
+			}
+
+			entries.push({
+				safe_name: letter.safe_name,
+				display_name: displayName,
+			});
+		}
+	}
+
+	// Add entries for any additional PNGs not in scope (e.g., blank)
+	const allLetters = getLettersFromPngs();
+	for (const letter of allLetters) {
+		if (seen.has(letter)) continue;
+		seen.add(letter);
+
+		const displayName = letter
+			.replace(/_/g, " ")
+			.split(" ")
+			.map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+			.join(" ");
+
+		entries.push({ safe_name: letter, display_name: displayName });
+	}
+
+	return entries;
+}
+
 // Generate letter images for each letter set (executed at build time)
 // Generate all letter images synchronously before building the MAP
 for (const ls of scope.letter_sets) {
@@ -187,6 +236,16 @@ export const MAP = [
 	{
 		source: "letter_blocks/**/*.block.png",
 		target: ":autoFlat",
+	},
+	// Lang entries for block/item display names
+	{
+		source: "lang/en_US.lang",
+		target: "RP/texts/en_US.lang",
+		onConflict: "appendEnd",
+		textTemplate: true,
+		scope: {
+			entries: getLangEntries(),
+		},
 	},
 	// Debug function for getting all block items
 	{
