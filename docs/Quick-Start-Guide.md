@@ -79,6 +79,8 @@ Once you're in the world with Educator Tools active, try these basic actions to 
    - **To you** (most common)
    - **To another student**
 
+![Teleport Menu Screenshot](gifs/teleport-menu.gif)
+
 !!! info
     You need at least 2 players online (you + one student) for teleport to work.
 
@@ -113,6 +115,8 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 1. Click **Manage Health** in the toolbox menu
 2. Select the student or team
 3. Click **Heal** to restore their health and hunger
+
+![Heal Menu Screenshot](gifs/heal.gif)
 
 ---
 
