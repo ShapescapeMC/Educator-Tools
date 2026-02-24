@@ -197,8 +197,8 @@ export class TeamsService implements Module {
 		if (!team) {
 			throw new Error(`Team with ID '${teamId}' doesn't exist`);
 		}
-		if (team.editable === false) {
-			throw new Error(`Team '${teamId}' is not editable`);
+		if (team.editable_members === false) {
+			throw new Error(`Team '${teamId}' does not allow member editing`);
 		}
 		if (team.memberIds.includes(playerId)) {
 			return false;
@@ -227,8 +227,8 @@ export class TeamsService implements Module {
 		if (!team) {
 			throw new Error(`Team with ID '${teamId}' doesn't exist`);
 		}
-		if (team.editable === false) {
-			throw new Error(`Team '${teamId}' is not editable`);
+		if (team.editable_members === false) {
+			throw new Error(`Team '${teamId}' does not allow member editing`);
 		}
 		const memberIndex = team.memberIds.indexOf(playerId);
 		if (memberIndex === -1) {
