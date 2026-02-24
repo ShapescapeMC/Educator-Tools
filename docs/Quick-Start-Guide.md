@@ -28,19 +28,19 @@ Educator Tools is a collection of classroom management features for Minecraft Ed
 
 Go to the [Downloads page](https://github.com/ShapescapeMC/Educator-Tools/releases) and download the latest version of Educator Tools.
 
-![Download Screenshot](images/download-pack.png)
+![Download Screenshot](gifs/download-pack.gif)
 
 ### Step 2: Import into Minecraft
 
 Open Minecraft Education, go to **Settings → Storage → Import**, and select the downloaded pack.
 
-![Import Screenshot](images/import-pack.png)
+![Import Screenshot](gifs/import-pack.gif)
 
 ### Step 3: Create or Open a World
 
 When creating a new world or editing an existing one, activate the Educator Tools pack in the **Behavior Packs** section.
 
-![Activate Pack Screenshot](images/activate-pack.png)
+![Activate Pack Screenshot](gifs/activate-pack.gif)
 
 !!! note
     **How to verify it's working:** Join the world and look for the **Educator Toolbox** item in your hotbar (the bottom row of your inventory). If you see it, you're all set!
@@ -60,7 +60,7 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 **What you'll see:** A menu with all the classroom tools
 
-![Toolbox Menu Screenshot](images/toolbox-menu.png)
+![Toolbox Menu Screenshot](gifs/toolbox-menu.gif)
 
 !!! tip
     **Quick Access Tip:** Keep the Educator Toolbox in slot 1 of your hotbar. Press the `1` key anytime to quickly select it.
@@ -78,9 +78,6 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 3. Choose where to send them:
    - **To you** (most common)
    - **To another student**
-   - **To a specific location**
-
-![Teleport Tool Screenshot](images/teleport-tool.png)
 
 !!! info
     You need at least 2 players online (you + one student) for teleport to work.
@@ -94,8 +91,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 **How to do it:**
 1. Click **Focus Mode** in the toolbox menu
-2. Type a message (like "Please look at the board")
-3. Turn Focus Mode **ON**
+2. Select the students you want to focus (or choose "All Students")
+3. Type a message (like "Please look at the board")
+4. Turn Focus Mode **ON**
 
 **What happens:** Students' screens will dim and show your message. They can't move or break blocks until you turn Focus Mode off.
 
@@ -116,8 +114,6 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 2. Select the student or team
 3. Click **Heal** to restore their health and hunger
 
-![Manage Health Screenshot](images/manage-health.png)
-
 ---
 
 ### 5. Change Time or Weather ⏱️ 30 seconds
@@ -127,11 +123,12 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 **How to do it:**
 1. Click **World Management** in the toolbox menu
 2. Click **Environment**
-3. Choose your preferred time or weather:
+3. Choose Daytime or Weather settings
+4. Choose your preferred time or weather:
    - **Time:** Day, Noon, Night, Midnight
    - **Weather:** Clear, Rain, Thunder
 
-![Environment Settings Screenshot](images/environment-settings.png)
+![Environment Settings Screenshot](gifs/environment-settings.gif)
 
 !!! tip
     **Pro Tip:** Use **Always Day** to lock the time at noon. This ensures consistent lighting throughout your lesson!
