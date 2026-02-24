@@ -72,7 +72,7 @@ Allows students to choose personalized display names that appear instead of thei
 
 Students receive notifications when approved or denied.
 
-![Approval queue](images/nickname-approval-queue.png)
+![Approval queue](gifs/nickname-approval-queue.gif)
 
 !!! tip
     **Batch approval:** You can approve or deny multiple nickname requests at once by checking/unchecking multiple boxes before clicking Submit.
@@ -147,8 +147,6 @@ Creates structured assignments where students can submit text responses and loca
 - ✅ Location coordinates where they submitted
 - ✅ Timestamp of submission
 
-![Assignment submissions](images/view-submissions.png)
-
 !!! tip
     **Quick Review:** Use the teleport feature to visit each student's build location. This is much faster than walking around the world looking for projects!
 
@@ -221,7 +219,7 @@ Dims students' screens, shows them a message, and prevents them from moving or i
 - 🚫 They can't move, build, or interact
 - 🛡️ They become invulnerable (can't take damage)
 
-![Focus Mode active on student screen](images/focus-mode-student-view.png)
+![Focus Mode active on student screen](images/focus-mode.png)
 
 !!! warning
     **Don't forget to disable it!** Students remain frozen until you manually turn Focus Mode off. Always check that you've disabled it before moving on.
@@ -260,7 +258,7 @@ Dims students' screens, shows them a message, and prevents them from moving or i
     **Chat limitation:** Chat cannot be disabled during Focus Mode (Minecraft limitation). Students can still send messages while frozen.
 
 
-![Focus Mode demonstration](gifs/focus-mode-toggle-demo.gif)
+![Focus Mode demonstration](gifs/focus-mode-toggle.gif)
 
 ---
 
@@ -303,7 +301,7 @@ Creates invisible boundaries that prevent students from moving beyond a defined 
    - **Show Lock Message** - Display warning when students try to leave (recommended ON)
 8. Confirm the lock
 
-![Lock Players interface](images/lock-players-interface.png)
+![Lock Players interface](gifs/lock-players-interface.gif)
 
 #### Lock Modes Explained
 
@@ -346,7 +344,7 @@ Creates invisible boundaries that prevent students from moving beyond a defined 
     **Don't forget to unlock!** Always remove locks when activities are finished. Students won't be able to explore or move to new areas until you remove the lock.
 
 
-![Lock Players demonstration](gifs/lock-players-demo.gif)
+![Lock Players demonstration](gifs/lock-player-demo.gif)
 
 ---
 
@@ -374,7 +372,7 @@ Provides special building blocks that display letters, numbers, and symbols. Stu
 
 - **Letters:** Uppercase (A-Z) and lowercase (a-z)
 - **Numbers:** 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-- **Math symbols:** + (plus), - (minus), × (multiply), ÷ (divide), = (equals)
+- **Math symbols:** + (plus), - (minus), × (multiply), ÷ (divide), = (equals), ( (open parenthesis), ) (close parenthesis), [ (open bracket), ] (close bracket), { (open brace), } (close brace)
 - **Punctuation:** . (period), , (comma), ? (question mark), ! (exclamation point)
 - **Special characters:** ✓ (checkmark), ✗ (cross), → ↑ ↓ ← (arrows), $ € (currency)
 
