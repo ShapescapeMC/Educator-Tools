@@ -19,10 +19,10 @@ build:
       - git config filter.lfs.clean "`pwd`/git-lfs-3.7.1/git-lfs clean -- %f"
       # Make LFS available in current repository
       - ./git-lfs-3.7.1/git-lfs install
-      # Download content from remote
-      - ./git-lfs-3.7.1/git-lfs fetch
+      # Download content from remote (continue even if some objects are missing)
+      - ./git-lfs-3.7.1/git-lfs fetch || echo "Some LFS objects not available"
       # Make local files to have the real content on them
-      - ./git-lfs-3.7.1/git-lfs checkout
+      - ./git-lfs-3.7.1/git-lfs checkout || echo "Some LFS files not checked out"
 
 mkdocs:
   configuration: mkdocs.yml
