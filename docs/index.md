@@ -36,7 +36,7 @@
 
     [:octicons-arrow-right-24: Student Management Tools](Student-Management-Tools.md)
 
--   :material-chalkboard:{ .lg .middle style="color: #8e24aa" } **Classroom Control**
+-   :material-human-male-board:{ .lg .middle style="color: #8e24aa" } **Classroom Control**
 
     ---
 
