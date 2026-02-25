@@ -4,21 +4,23 @@
 
 ---
 
-## :material-school: For Teachers
+## :material-school:{ style="color: #26a69a" } For Teachers
 
 <div class="grid cards" markdown>
 
--   :material-rocket-launch:{ .lg .middle } **Getting Started**
+-   :material-rocket-launch:{ .lg .middle style="color: #ff6d00" } **Getting Started**
 
     ---
 
     New to Educator Tools? Follow this path to get up and running in minutes.
 
     [:octicons-arrow-right-24: Introduction](Introduction.md)
+
     [:octicons-arrow-right-24: Installation](Installation.md)
+
     [:octicons-arrow-right-24: Quick Start Guide](Quick-Start-Guide.md)
 
--   :material-star:{ .lg .middle } **Essential Tools**
+-   :material-star:{ .lg .middle style="color: #ffd600" } **Essential Tools**
 
     ---
 
@@ -26,7 +28,7 @@
 
     [:octicons-arrow-right-24: Essential Tools](Essential-Tools.md)
 
--   :material-account-group:{ .lg .middle } **Student Management**
+-   :material-account-group:{ .lg .middle style="color: #1e88e5" } **Student Management**
 
     ---
 
@@ -34,7 +36,7 @@
 
     [:octicons-arrow-right-24: Student Management Tools](Student-Management-Tools.md)
 
--   :material-chalkboard:{ .lg .middle } **Classroom Control**
+-   :material-chalkboard:{ .lg .middle style="color: #8e24aa" } **Classroom Control**
 
     ---
 
@@ -42,7 +44,7 @@
 
     [:octicons-arrow-right-24: Classroom Control Tools](Classroom-Control-Tools.md)
 
--   :material-earth:{ .lg .middle } **World Management**
+-   :material-earth:{ .lg .middle style="color: #43a047" } **World Management**
 
     ---
 
@@ -50,7 +52,7 @@
 
     [:octicons-arrow-right-24: World Management Tools](World-Management-Tools.md)
 
--   :material-view-grid:{ .lg .middle } **All Features**
+-   :material-view-grid:{ .lg .middle style="color: #00897b" } **All Features**
 
     ---
 
@@ -62,11 +64,11 @@
 
 ---
 
-## :material-translate: Letter Blocks
+## :material-translate:{ style="color: #f4511e" } Letter Blocks
 
 <div class="grid cards" markdown>
 
--   :material-alpha:{ .lg .middle } **Getting Started**
+-   :material-alpha:{ .lg .middle style="color: #f4511e" } **Getting Started**
 
     ---
 
@@ -74,7 +76,7 @@
 
     [:octicons-arrow-right-24: Letter Blocks Guide](Letter-Blocks-Getting-Started.md)
 
--   :material-lightbulb:{ .lg .middle } **Classroom Activities**
+-   :material-lightbulb:{ .lg .middle style="color: #ffb300" } **Classroom Activities**
 
     ---
 
@@ -82,7 +84,7 @@
 
     [:octicons-arrow-right-24: Activities & Ideas](Letter-Blocks-Activities.md)
 
--   :material-cog:{ .lg .middle } **Custom Letter Blocks**
+-   :material-cog:{ .lg .middle style="color: #6d4c41" } **Custom Letter Blocks**
 
     ---
 
@@ -94,11 +96,11 @@
 
 ---
 
-## :material-puzzle: Extensions
+## :material-puzzle:{ style="color: #00acc1" } Extensions
 
 <div class="grid cards" markdown>
 
--   :material-package-variant:{ .lg .middle } **Extensions Overview**
+-   :material-package-variant:{ .lg .middle style="color: #00acc1" } **Extensions Overview**
 
     ---
 
@@ -106,7 +108,7 @@
 
     [:octicons-arrow-right-24: Browse Extensions](Extensions.md)
 
--   :material-alphabet-latin:{ .lg .middle } **More Letter Blocks**
+-   :material-alphabet-latin:{ .lg .middle style="color: #e91e63" } **More Letter Blocks**
 
     ---
 
@@ -118,11 +120,11 @@
 
 ---
 
-## :material-help-circle: Help & Support
+## :material-help-circle:{ style="color: #ef5350" } Help & Support
 
 <div class="grid cards" markdown>
 
--   :material-frequently-asked-questions:{ .lg .middle } **FAQ & Troubleshooting**
+-   :material-frequently-asked-questions:{ .lg .middle style="color: #ef5350" } **FAQ & Troubleshooting**
 
     ---
 
@@ -130,7 +132,7 @@
 
     [:octicons-arrow-right-24: FAQ](FAQ-and-Troubleshooting.md)
 
--   :material-book-alphabet:{ .lg .middle } **Glossary**
+-   :material-book-alphabet:{ .lg .middle style="color: #5c6bc0" } **Glossary**
 
     ---
 
@@ -138,7 +140,7 @@
 
     [:octicons-arrow-right-24: Glossary](Glossary.md)
 
--   :material-message-question:{ .lg .middle } **Getting Help**
+-   :material-message-question:{ .lg .middle style="color: #fb8c00" } **Getting Help**
 
     ---
 
@@ -146,7 +148,7 @@
 
     [:octicons-arrow-right-24: Get Help](Getting-Help.md)
 
--   :material-printer:{ .lg .middle } **Quick Reference**
+-   :material-printer:{ .lg .middle style="color: #546e7a" } **Quick Reference**
 
     ---
 
@@ -158,11 +160,11 @@
 
 ---
 
-## :material-code-braces: For Developers
+## :material-code-braces:{ style="color: #3949ab" } For Developers
 
 <div class="grid cards" markdown>
 
--   :material-book-open-page-variant:{ .lg .middle } **Developer Documentation**
+-   :material-book-open-page-variant:{ .lg .middle style="color: #3949ab" } **Developer Documentation**
 
     ---
 
@@ -170,7 +172,7 @@
 
     [:octicons-arrow-right-24: Developer Docs](Developer-Documentation.md)
 
--   :material-monitor-edit:{ .lg .middle } **Development Setup**
+-   :material-monitor-edit:{ .lg .middle style="color: #00897b" } **Development Setup**
 
     ---
 
@@ -178,7 +180,7 @@
 
     [:octicons-arrow-right-24: Setup Guide](Development-Setup.md)
 
--   :material-source-pull:{ .lg .middle } **Contributing**
+-   :material-source-pull:{ .lg .middle style="color: #43a047" } **Contributing**
 
     ---
 
@@ -186,7 +188,7 @@
 
     [:octicons-arrow-right-24: Contributing Guide](Contributing.md)
 
--   :material-translate-variant:{ .lg .middle } **Translations**
+-   :material-translate-variant:{ .lg .middle style="color: #1e88e5" } **Translations**
 
     ---
 
