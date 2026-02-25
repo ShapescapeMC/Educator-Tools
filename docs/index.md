@@ -1,150 +1,207 @@
-# Welcome to Educator Tools! 👋
+# Educator Tools
 
 **A comprehensive classroom management toolkit for Minecraft Education Edition.**
 
-Educator Tools helps teachers control their virtual classroom with easy-to-use tools for teleporting students, managing teams, creating timed activities, and much more - all without needing to learn complex commands.
+---
 
-!!! note
-    **New to Minecraft Education?** Don't worry! This wiki is written for teachers, not programmers. Everything is explained in simple, non-technical language.
+## :material-school: For Teachers
 
+<div class="grid cards" markdown>
 
-## Table of Contents
+-   :material-rocket-launch:{ .lg .middle } **Getting Started**
 
-- [📘 For Teachers (Start Here!)](#-for-teachers-start-here)
-  - [🚀 Getting Started](#-getting-started)
-  - [🎯 Learn the Tools](#-learn-the-tools)
-  - [🔤 Letter Blocks](#-letter-blocks)
-  - [🧩 Extensions](#-extensions)
-  - [❓ Help & Support](#-help--support)
-  - [📋 Quick Reference](#-quick-reference)
-- [🔧 For Developers](#-for-developers)
-- [📚 Additional Resources](#-additional-resources)
+    ---
+
+    New to Educator Tools? Follow this path to get up and running in minutes.
+
+    [:octicons-arrow-right-24: Introduction](Introduction.md)
+    [:octicons-arrow-right-24: Installation](Installation.md)
+    [:octicons-arrow-right-24: Quick Start Guide](Quick-Start-Guide.md)
+
+-   :material-star:{ .lg .middle } **Essential Tools**
+
+    ---
+
+    The 5 most important features — nicknames, assignments, focus mode, lock players, and letter blocks.
+
+    [:octicons-arrow-right-24: Essential Tools](Essential-Tools.md)
+
+-   :material-account-group:{ .lg .middle } **Student Management**
+
+    ---
+
+    Teleport students, change gamemodes, manage teams, and control inventory.
+
+    [:octicons-arrow-right-24: Student Management Tools](Student-Management-Tools.md)
+
+-   :material-chalkboard:{ .lg .middle } **Classroom Control**
+
+    ---
+
+    Focus mode, timers, assignments, and custom nicknames to keep your class on track.
+
+    [:octicons-arrow-right-24: Classroom Control Tools](Classroom-Control-Tools.md)
+
+-   :material-earth:{ .lg .middle } **World Management**
+
+    ---
+
+    Control time, weather, world settings, and environment restrictions.
+
+    [:octicons-arrow-right-24: World Management Tools](World-Management-Tools.md)
+
+-   :material-view-grid:{ .lg .middle } **All Features**
+
+    ---
+
+    A complete reference guide to every tool and feature in Educator Tools.
+
+    [:octicons-arrow-right-24: Educator Toolbox](Educator-Toolbox.md)
+
+</div>
 
 ---
 
-## 📘 For Teachers (Start Here!)
+## :material-translate: Letter Blocks
 
-### 🚀 Getting Started
+<div class="grid cards" markdown>
 
-!!! tip
-    **Complete beginner?** Follow this path: [Introduction](Introduction.md) → [Installation](Installation.md) → [Quick Start Guide](Quick-Start-Guide.md) → [Essential Tools](Essential-Tools.md)
+-   :material-alpha:{ .lg .middle } **Getting Started**
 
+    ---
 
-New to Educator Tools? Start with these guides:
+    Learn how to place and use letter blocks to build words, math problems, and signs.
 
-1. **[What is Educator Tools?](Introduction.md)** - Learn what this pack can do for your classroom
-2. **[Installation Guide](Installation.md)** - Get Educator Tools installed in 3 simple steps
-3. **[Quick Start Guide](Quick-Start-Guide.md)** - Up and running in 5 minutes
+    [:octicons-arrow-right-24: Letter Blocks Guide](Letter-Blocks-Getting-Started.md)
 
-### 🎯 Learn the Tools
+-   :material-lightbulb:{ .lg .middle } **Classroom Activities**
 
-!!! info
-    **Start with Essential Tools!** These 5 features (Custom Nicknames, Assignments, Focus Mode, Lock Players, Letter Blocks) are the most important and offer unique educational capabilities you won't find anywhere else.
+    ---
 
+    Creative activity ideas using letter blocks for your lessons.
 
-**Begin here:**
+    [:octicons-arrow-right-24: Activities & Ideas](Letter-Blocks-Activities.md)
 
-- 🎯 **[Essential Tools](Essential-Tools.md)** - Master the 5 most important tools first
+-   :material-cog:{ .lg .middle } **Custom Letter Blocks**
 
-**Then explore by category:**
+    ---
 
-- 👥 **[Student Management Tools](Student-Management-Tools.md)** - Teleport, gamemode, teams, inventory
-- 🎓 **[Classroom Control Tools](Classroom-Control-Tools.md)** - Focus mode, timers, assignments, nicknames
-- 🌍 **[World Management Tools](World-Management-Tools.md)** - Time, weather, world settings, restrictions
+    Create your own custom letter block sets and fonts.
 
-**Or see everything:**
+    [:octicons-arrow-right-24: Custom Letter Blocks](Custom-Letter-Blocks.md)
 
-- 📖 **[Educator Toolbox - All Features](Educator-Toolbox.md)** - Complete reference guide
-
-### 🔤 Letter Blocks
-
-Build words, math problems, and signs with special letter blocks:
-
-- **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started.md)** - How to use letter blocks
-- **[Letter Blocks - Activities](Letter-Blocks-Activities.md)** - Classroom activity ideas
-
-### 🧩 Extensions
-
-Optional add-ons that expand Educator Tools with additional features:
-
-- **[Extensions](Extensions.md)** - Browse all available extensions
-- **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** - Hundreds of new characters and themed backgrounds
-
-### ❓ Help & Support
-
-Need assistance?
-
-- **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems and solutions
-- **[Glossary](Glossary.md)** - Minecraft terms explained simply
-- **[Getting Help](Getting-Help.md)** - How to get support
-
-### 📋 Quick Reference
-
-- **[Printable Quick Reference](Printable-Quick-Reference.md)** - One-page cheat sheet for classroom use
+</div>
 
 ---
 
-## 🔧 For Developers
+## :material-puzzle: Extensions
 
-Want to contribute or customize Educator Tools?
+<div class="grid cards" markdown>
 
-- **[Developer Documentation](Developer-Documentation.md)** - Developer hub and overview
-- **[Contributing Guide](Contributing.md)** - How to contribute code or features
-- **[Development Setup](Development-Setup.md)** - Set up your development environment
-- **[Translations](Translations.md)** - Add or update language translations
-- **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md)** - Create custom letter blocks
+-   :material-package-variant:{ .lg .middle } **Extensions Overview**
 
----
+    ---
 
-## 📚 Additional Resources
+    Optional add-ons that expand Educator Tools with additional features.
 
-### Downloads & Links
+    [:octicons-arrow-right-24: Browse Extensions](Extensions.md)
 
-- **[📥 Download Latest Version](https://github.com/ShapescapeMC/Educator-Tools/releases)** - Get the latest release
-- **[🐛 Report a Bug](https://github.com/ShapescapeMC/Educator-Tools/issues)** - Found a problem? Let us know
-- **[💬 Discussions](https://github.com/ShapescapeMC/Educator-Tools/discussions)** - Ask questions and share ideas
+-   :material-alphabet-latin:{ .lg .middle } **More Letter Blocks**
 
-### About
+    ---
 
-Educator Tools is an open-source project designed to make classroom management in Minecraft Education Edition easier and more effective for teachers worldwide.
+    Hundreds of new characters, symbols, and themed backgrounds.
 
-**Key Features:**
+    [:octicons-arrow-right-24: More Letter Blocks](Extensions-More-Letter-Blocks.md)
 
-- ✅ No command knowledge required
-- ✅ Intuitive in-game interface
-- ✅ Comprehensive classroom management tools
-- ✅ Letter blocks for educational displays
-- ✅ Completely free and open-source
-- ✅ Regular updates and improvements
+</div>
 
 ---
 
-## Navigation Guide
+## :material-help-circle: Help & Support
 
-**If you're a teacher who wants to:**
+<div class="grid cards" markdown>
 
-- **Get started quickly** → [Quick Start Guide](Quick-Start-Guide.md)
-- **Learn specific tools** → [Essential Tools](Essential-Tools.md) or [All Features](Educator-Toolbox.md)
-- **Use letter blocks** → [Letter Blocks Getting Started](Letter-Blocks-Getting-Started.md)
-- **Solve a problem** → [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)
-- **Get help** → [Getting Help](Getting-Help.md)
+-   :material-frequently-asked-questions:{ .lg .middle } **FAQ & Troubleshooting**
 
-**If you're a developer who wants to:**
+    ---
 
-- **Contribute code** → [Contributing Guide](Contributing.md)
-- **Set up development** → [Development Setup](Development-Setup.md)
-- **Add translations** → [Translations](Translations.md)
-- **Customize letter blocks** → [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md)
+    Common problems and their solutions.
+
+    [:octicons-arrow-right-24: FAQ](FAQ-and-Troubleshooting.md)
+
+-   :material-book-alphabet:{ .lg .middle } **Glossary**
+
+    ---
+
+    Minecraft terms and concepts explained simply for teachers.
+
+    [:octicons-arrow-right-24: Glossary](Glossary.md)
+
+-   :material-message-question:{ .lg .middle } **Getting Help**
+
+    ---
+
+    How to reach the community, report bugs, and ask questions.
+
+    [:octicons-arrow-right-24: Get Help](Getting-Help.md)
+
+-   :material-printer:{ .lg .middle } **Quick Reference**
+
+    ---
+
+    A printable one-page cheat sheet for classroom use.
+
+    [:octicons-arrow-right-24: Quick Reference](Printable-Quick-Reference.md)
+
+</div>
+
+---
+
+## :material-code-braces: For Developers
+
+<div class="grid cards" markdown>
+
+-   :material-book-open-page-variant:{ .lg .middle } **Developer Documentation**
+
+    ---
+
+    Architecture overview, module patterns, and technical reference.
+
+    [:octicons-arrow-right-24: Developer Docs](Developer-Documentation.md)
+
+-   :material-monitor-edit:{ .lg .middle } **Development Setup**
+
+    ---
+
+    Set up your local environment to build and contribute.
+
+    [:octicons-arrow-right-24: Setup Guide](Development-Setup.md)
+
+-   :material-source-pull:{ .lg .middle } **Contributing**
+
+    ---
+
+    Guidelines for contributing code, features, and bug fixes.
+
+    [:octicons-arrow-right-24: Contributing Guide](Contributing.md)
+
+-   :material-translate-variant:{ .lg .middle } **Translations**
+
+    ---
+
+    Add or update language translations for Educator Tools.
+
+    [:octicons-arrow-right-24: Translations](Translations.md)
+
+</div>
 
 ---
 
 <p align="center">
-  <strong>Made with ❤️ by Shapescape</strong><br>
-  <em>Enhancing Classroom Management in Minecraft Education</em>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ShapescapeMC/Educator-Tools">GitHub Repository</a> •
-  <a href="https://github.com/ShapescapeMC/Educator-Tools/releases">Download</a> •
-  <a href="https://github.com/ShapescapeMC/Educator-Tools/issues">Report Issues</a>
+  <strong>Made with ❤️ by Shapescape</strong> · Free and open-source (LGPL v3)<br><br>
+  <a href="https://github.com/ShapescapeMC/Educator-Tools/releases">Download</a> ·
+  <a href="https://github.com/ShapescapeMC/Educator-Tools/issues">Report a Bug</a> ·
+  <a href="https://github.com/ShapescapeMC/Educator-Tools/discussions">Discussions</a> ·
+  <a href="https://github.com/ShapescapeMC/Educator-Tools">GitHub</a>
 </p>
