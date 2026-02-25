@@ -6,16 +6,6 @@ icon: material/star
 
 These are the 5 most important features of Educator Tools. These tools offer unique educational capabilities that don't exist in vanilla Minecraft. Master these first, then explore other features when you're ready.
 
-## Table of Contents
-
-- [Quick Reference](#quick-reference)
-- [🏷️ Custom Nicknames](#️-custom-nicknames)
-- [📋 Assignments](#-assignments)
-- [👁️ Focus Mode](#️-focus-mode)
-- [🔒 Lock Players](#-lock-players)
-- [🔤 Letter Blocks](#-letter-blocks)
-- [Next Steps](#next-steps)
-
 ---
 
 ## Quick Reference
@@ -93,9 +83,11 @@ Students receive notifications when approved or denied.
 7. Confirm
 
 **💡 Recommended Settings:**
+
+- **Nicknames Enabled: ON** - Activate the feature for your class
 - **Prompt on Join: ON** - Let students choose their own names
 - **Require Approval: ON** - Maintain control over appropriate names
-- **Allow Custom Colors: Your choice** - Adds fun but can be distracting
+- **Allow Custom Colors: ON** - Let students personalize with colors
 
 !!! info
     Nicknames persist across sessions. Once approved, students don't need to re-enter them every time they join the world.
@@ -146,6 +138,7 @@ Creates structured assignments where students can submit text responses and loca
 4. Select an assignment to view submissions
 
 **What you see:**
+
 - ✅ List of all students who submitted
 - ✅ Each student's text response
 - ✅ Location coordinates where they submitted
@@ -173,6 +166,7 @@ When the deadline has passed or everyone has submitted:
 3. Confirm
 
 **What happens:**
+
 - ✅ Assignment moves to **Completed Assignments**
 - ✅ Students can no longer submit or edit
 - ✅ You can still view all submissions
@@ -182,6 +176,7 @@ When the deadline has passed or everyone has submitted:
 
 
 **Example uses:**
+
 - 📝 "Describe your building process in 2-3 sentences"
 - 🌱 "What did you learn about ecosystems today?"
 - 🏛️ "Submit your pyramid build with coordinates"
@@ -218,6 +213,7 @@ Dims students' screens, shows them a message, and prevents them from moving or i
 4. Click **Disable Globally** to toggle it to **Enable**
 
 **What students see:**
+
 - 🌑 Screen dims/darkens completely
 - 💬 Your message appears in the center
 - 🚫 They can't move, build, or interact
@@ -403,10 +399,12 @@ Provides special building blocks that display letters, numbers, and symbols. Stu
 #### Give Letter Blocks to Students
 
 **Option 1: Students Get Their Own (Creative Mode)**
+
 - Put students in Creative Mode
 - They can search for letter blocks in their inventory
 
 **Option 2: You Give Specific Blocks**
+
 1. Use [Inventory Management](Student-Management-Tools.md#-inventory-management)
 2. Give students the exact blocks they need for an activity
 
@@ -414,7 +412,7 @@ Provides special building blocks that display letters, numbers, and symbols. Stu
 
 To spell a word like "HELLO":
 
-1. Get the blocks: H, E, L, L, O from your inventory
+1. Get the blocks: H, E, L, O from your inventory
 2. Place the H block
 3. Place the E block next to it
 4. Continue placing L, L, O in a row
