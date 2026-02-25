@@ -4,23 +4,6 @@ icon: material/information-outline
 
 # 📜 Introduction
 
-## Table of Contents
-
-- [What is Educator Tools?](#what-is-educator-tools)
-- [Why We Created Educator Tools](#why-we-created-educator-tools)
-- [What Can You Do with Educator Tools?](#what-can-you-do-with-educator-tools)
-  - [Classroom Management](#classroom-management)
-  - [Structured Activities](#structured-activities)
-  - [World Control](#world-control)
-  - [Educational Displays](#educational-displays)
-- [Who Is Educator Tools For?](#who-is-educator-tools-for)
-- [How We Want Educator Tools to Grow](#how-we-want-educator-tools-to-grow)
-- [Free and Open-Source](#free-and-open-source)
-- [What's Next?](#whats-next)
-- [Get Involved](#get-involved)
-
----
-
 ## What is Educator Tools?
 
 !!! note
@@ -28,6 +11,7 @@ icon: material/information-outline
 
 
 🎮 **What it does:**
+
 - Move students around the world instantly
 - Get everyone's attention with one click
 - Create timed activities and assignments
@@ -156,6 +140,7 @@ We created Educator Tools to solve these problems. Now teachers can:
 
 
 **What this means:**
+
 - ✅ **Free to use** - No cost, ever
 - ✅ **Free to share** - Give it to other teachers
 - ✅ **Free to modify** - Customize for your needs
@@ -171,11 +156,13 @@ By making Educator Tools free and open-source, we're helping educators worldwide
 Ready to start using Educator Tools?
 
 **For Teachers:**
+
 1. 📥 **[Installation Guide](Installation.md)** - Get Educator Tools installed in 3 steps
 2. 🚀 **[Quick Start Guide](Quick-Start-Guide.md)** - Learn the basics in 5 minutes
 3. 🛠️ **[Essential Tools](Essential-Tools.md)** - Master the most important features
 
 **For Developers:**
+
 1. 📚 **[Developer Documentation](Developer-Documentation.md)** - Understand the codebase
 2. 🤝 **[Contributing Guide](Contributing.md)** - Learn how to contribute
 3. ⚙️ **[Development Setup](Development-Setup.md)** - Set up your environment
