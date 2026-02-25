@@ -6,42 +6,28 @@ icon: material/download
 
 Follow these three simple steps to install Educator Tools in Minecraft Education Edition.
 
-## 📋 Table of Contents
-
-- [Step 1: Download the Pack](#step-1-download-the-pack)
-- [Step 2: Import into Minecraft](#step-2-import-into-minecraft)
-  - [Option A: Double-Click (Easiest)](#option-a-double-click-easiest)
-  - [Option B: Right-Click](#option-b-right-click-if-you-have-multiple-minecraft-versions)
-- [Step 3: Activate in a World](#step-3-activate-in-a-world)
-  - [For a New World](#for-a-new-world)
-  - [For an Existing World](#for-an-existing-world)
-- [Verification: Is It Working?](#verification-is-it-working)
-- [Troubleshooting](#troubleshooting)
-- [Platform-Specific Notes](#platform-specific-notes)
-- [System Requirements](#system-requirements)
-- [Next Steps](#next-steps)
-
 ---
 
 ## Step 1: Download the Pack
+
 📥 **Download the latest release**
 
 Go to the official GitHub releases page and download the latest version.
 
 1. ✅ Visit **[Educator Tools Releases](https://github.com/ShapescapeMC/Educator-Tools/releases)**
 2. 🔍 Find the **Latest Release** at the top
-3. 📥 Click on the `.mcaddon` file to download it
+3. 📥 Click on the download button
 4. 📂 Save the file to a location you can find (like your Downloads folder)
 
-![Download from releases page](images/download-release.png)
+![Download from releases page](gifs/download-pack.gif)
 
 !!! info
     **File to download:** Look for a file like `educator-tools-v2.1.0.mcaddon` — make sure it's the `.mcaddon` file, NOT the source code zip files!
 
-
 ---
 
 ## Step 2: Import into Minecraft
+
 🎮 **Import the downloaded pack**
 
 Once downloaded, import the pack into Minecraft Education Edition.
@@ -62,7 +48,7 @@ Once downloaded, import the pack into Minecraft Education Edition.
 4. 🚀 The game launches and imports the pack
 5. 🔐 Sign in if prompted
 
-![Importing the pack](images/import-pack.png)
+![Importing the pack](gifs/import-pack.gif)
 
 !!! tip
     **✅ You'll know it worked when:** The game launches and you see a confirmation that the pack was imported.
@@ -88,10 +74,10 @@ Now activate the pack in a world (new or existing).
 5. 📜 Scroll down to **"Behavior Packs"**
 6. 🔍 Find **"Educator Tools"** in the available packs list
 7. ✅ Click the **"+"** button to activate it
-8. 🎨 (Optional) Check **"Resource Packs"** and activate if it appears there too
+8. 🎨 (Optional) Check **"Resource Packs"** and activate if it's not already enabled
 9. 🎉 Click **"Create"** to create the world
 
-![Activating in new world](images/activate-new-world.png)
+![Activating in new world](gifs/activate-pack.gif)
 
 ### For an Existing World
 
@@ -101,18 +87,16 @@ Now activate the pack in a world (new or existing).
 4. 📜 Navigate to **"Behavior Packs"** in the sidebar
 5. 🔍 Find **"Educator Tools"** in the available packs
 6. ✅ Click the **"+"** button to activate it
-7. 🎨 (Optional) Check **"Resource Packs"** and activate if needed
+7. 🎨 (Optional) Check **"Resource Packs"** and activate if it's not already enabled
 8. 💾 Click **"Save"** or **"Play"**
-
-![Activating in existing world](images/activate-existing-world.png)
 
 !!! note
     **For existing worlds:** Activating Educator Tools in an existing world will add the tools without affecting your builds or progress. Your world data is safe!
 
-
 ---
 
 ## Verification: Is It Working?
+
 ✅ **Check that everything is working correctly**
 
 Once you join the world, verify Educator Tools is working:
@@ -137,7 +121,7 @@ Once you join the world, verify Educator Tools is working:
 Try these solutions in order:
 
 1. 🔄 **Leave and rejoin the world** - The toolbox appears when you join, not when you activate the pack
-2. 👥 **Check you're in the Teachers team** - Only teachers get the toolbox automatically
+2. 👥 **Check you're in the Teachers team** - Only teachers get the toolbox automatically. Only the first person loading Educator Tools in the world will receive it automatically
 3. 📦 **Open Creative inventory** - Search for "Educator Toolbox" and add it manually
 4. ✅ **Verify pack is active** - Go to World Settings → Behavior Packs → Confirm it shows "Active"
 5. 🆕 **Try a new world** - Test in a fresh world to rule out world-specific issues
@@ -176,7 +160,7 @@ Try these solutions in order:
 - 🔄 Restart Minecraft Education completely and try importing again
 - ⚙️ Check Settings → Storage → Behavior Packs to confirm it imported
 - 📥 Re-download the file (it might have corrupted during download)
-- ✅ Make sure you're running a supported version of Minecraft Education
+- ✅ Make sure you're running the latest version of Minecraft Education
 
 !!! tip
     Sometimes the pack imports successfully but doesn't show up until you restart the game completely.
@@ -208,8 +192,7 @@ Try these solutions in order:
 !!! note
     This is intentional behavior. The toolbox is designed for teachers only.
 
-
-### If a student has the toolbox when they shouldn't:
+### If a student can use the toolbox when they shouldn't:
 
 - 👥 They might be in the "Teachers" team by accident
 - ⚙️ Use Teams Management to remove them from the Teachers team
@@ -219,6 +202,7 @@ Try these solutions in order:
 ---
 
 ## Platform-Specific Notes
+
 🖥️📱 **Installation instructions for your device**
 
 !!! note
@@ -226,14 +210,15 @@ Try these solutions in order:
 
 
 ### 💻 Windows
+
 - ✅ Double-click usually works without issues
 - 🖱️ If Minecraft doesn't launch, right-click → "Open with Minecraft Education"
 
 !!! tip
     On Windows, double-clicking the `.mcaddon` file is the fastest method.
 
-
 ### 💻 Mac
+
 - ✅ Double-click should work
 - 🖱️ If it doesn't, right-click → "Open With" → "Minecraft Education Edition.app"
 
@@ -242,6 +227,7 @@ Try these solutions in order:
 
 
 ### 📱 iPad/Tablet
+
 - 🌐 Download through a browser on the device
 - 👆 Tap the downloaded `.mcaddon` file
 - ✅ Select "Open in Minecraft Education" if prompted
@@ -252,18 +238,19 @@ Try these solutions in order:
 
 
 ### 💻 Chromebook
+
 - 🌐 Download the file through Chrome
 - 📂 Open Files app → find the `.mcaddon` file
 - 👆 Tap to open with Minecraft Education
 - ⚙️ Activate in world settings
 
 !!! note
-    Chromebook users must have Minecraft Education Edition installed from the Google Play Store or web app.
-
+    Chromebook users must have Minecraft Education Edition installed from the Google Play Store.
 
 ---
 
 ## System Requirements
+
 📋 **What you need to run Educator Tools**
 
 Educator Tools works with:
@@ -275,14 +262,14 @@ Educator Tools works with:
 
 !!! danger
     **Known limitations:**
-    - Requires Minecraft Education Edition (will NOT work with Bedrock Edition)
+    - Requires Minecraft Education Edition (may NOT work with Bedrock Edition)
     - In multiplayer, the world host must have the pack activated
     - Some features require Teacher permissions in the world
-
 
 ---
 
 ## Next Steps
+
 🚀 **Where to go from here**
 
 Now that Educator Tools is installed:
@@ -294,10 +281,10 @@ Now that Educator Tools is installed:
 !!! tip
     New to Educator Tools? Start with the Quick Start Guide to get up and running quickly!
 
-
 ---
 
 ## Need More Help?
+
 💬 **Additional resources**
 
 - ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems and solutions
