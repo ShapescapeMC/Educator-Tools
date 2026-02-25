@@ -204,6 +204,5 @@
   <strong>Made with ❤️ by Shapescape</strong> · Free and open-source (LGPL v3)<br><br>
   <a href="https://github.com/ShapescapeMC/Educator-Tools/releases">Download</a> ·
   <a href="https://github.com/ShapescapeMC/Educator-Tools/issues">Report a Bug</a> ·
-  <a href="https://github.com/ShapescapeMC/Educator-Tools/discussions">Discussions</a> ·
   <a href="https://github.com/ShapescapeMC/Educator-Tools">GitHub</a>
 </p>
