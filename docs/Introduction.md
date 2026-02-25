@@ -92,6 +92,7 @@ We created Educator Tools to solve these problems. Now teachers can:
 !!! tip
     ### 👥 Students
     Students don't need to install anything. When they join your world, Educator Tools is automatically available. They'll experience:
+
     - Smooth classroom transitions (teleporting, focus mode, etc.)
     - Engaging activities (assignments, timers)
     - Educational tools (letter blocks for projects)
@@ -100,6 +101,7 @@ We created Educator Tools to solve these problems. Now teachers can:
 !!! tip
     ### 💻 Developers
     Educator Tools is open-source! If you're a developer, you can:
+
     - Contribute new features and improvements
     - Customize the pack for specific needs
     - Add translations for new languages
@@ -127,6 +129,7 @@ We created Educator Tools to solve these problems. Now teachers can:
 🌟 **Accessibility features** - Making Minecraft Education work for all learners
 
 **We need your help!** If you have ideas, feedback, or want to contribute, please:
+
 - Share your suggestions on [GitHub Discussions](https://github.com/ShapescapeMC/Educator-Tools/discussions)
 - Report bugs on the [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)
 - Contribute code following our [Contributing Guide](Contributing.md)
