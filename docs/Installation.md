@@ -104,10 +104,12 @@ Once you join the world, verify Educator Tools is working:
 ### What to Look For
 
 ✅ **Educator Toolbox item** appears in your hotbar (bottom row of your inventory)
+
 ✅ **Right-click the toolbox** and a menu opens with all the classroom tools
+
 ✅ **Letter Blocks** appear in the Creative inventory when you search for "letter"
 
-![Toolbox in hotbar](images/toolbox-in-hotbar.png)
+![Toolbox in hotbar](gifs/toolbox-menu.gif)
 
 !!! tip
     The toolbox appears automatically when you join the world. If you don't see it immediately, try leaving and rejoining the world.
@@ -256,8 +258,11 @@ Try these solutions in order:
 Educator Tools works with:
 
 ✅ **Minecraft Education Edition** (any recent version)
+
 ✅ **All platforms:** Windows, Mac, iPad, Chromebook
+
 ✅ **Multiplayer worlds** (host must have pack activated)
+
 ✅ **Existing worlds** (safe to add to worlds in progress)
 
 !!! danger
