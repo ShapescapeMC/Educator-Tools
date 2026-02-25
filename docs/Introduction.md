@@ -7,7 +7,7 @@ icon: material/information-outline
 ## What is Educator Tools?
 
 !!! note
-    **Educator Tools is a free add-on for Minecraft Education Edition** that helps teachers manage their virtual classroom without needing to learn complex commands. Think of it as your digital teaching assistant!
+    **Educator Tools is a free add-on for Minecraft Education** that helps teachers manage their virtual classroom without needing to learn complex commands. Think of it as your digital teaching assistant!
 
 
 🎮 **What it does:**
@@ -81,7 +81,7 @@ We created Educator Tools to solve these problems. Now teachers can:
 
 !!! tip
     ### 🎓 Teachers
-    If you're teaching with Minecraft Education Edition, Educator Tools is for you! Whether you're:
+    If you're teaching with Minecraft Education, Educator Tools is for you! Whether you're:
     - Brand new to Minecraft or an experienced player
     - Teaching elementary, middle, or high school
     - Using Minecraft for any subject (language arts, math, science, history, etc.)
@@ -115,7 +115,7 @@ We created Educator Tools to solve these problems. Now teachers can:
 ## How We Want Educator Tools to Grow
 
 !!! info
-    **Educator Tools is a community-driven, open-source project.** We envision a future with expanded features and community contributions that make this the ultimate teaching toolkit for Minecraft Education Edition.
+    **Educator Tools is a community-driven, open-source project.** We envision a future with expanded features and community contributions that make this the ultimate teaching toolkit for Minecraft Education.
 
 
 🌟 **Expanded classroom management features** - More tools for different teaching scenarios

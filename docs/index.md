@@ -1,6 +1,6 @@
 # Educator Tools
 
-**A comprehensive classroom management toolkit for Minecraft Education Edition.**
+**A comprehensive classroom management toolkit for Minecraft Education.**
 
 ---
 

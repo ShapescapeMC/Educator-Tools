@@ -55,7 +55,7 @@ Common questions and solutions for Educator Tools.
 <details>
 <summary><strong>Q: Can I use Educator Tools on all platforms?</strong></summary>
 
-**A:** Yes. Educator Tools works on all platforms that support Minecraft Education Edition (Windows, Mac, iPad, Chromebook).
+**A:** Yes. Educator Tools works on all platforms that support Minecraft Education (Windows, Mac, iPad, Chromebook).
 
 </details>
 
@@ -199,7 +199,7 @@ Common questions and solutions for Educator Tools.
 **Solutions:**
 1. **Search for them** - Open inventory, use search box, type "letter"
 2. **Check correct tab** - Look in Construction or Items tabs
-3. **Verify Education Edition** - Letter Blocks require Minecraft Education Edition (not regular Minecraft)
+3. **Verify Education** - Letter Blocks require Minecraft Education (not regular Minecraft)
 4. **Pack active** - Confirm Educator Tools pack is active in world settings
 
 </details>
@@ -412,7 +412,7 @@ Students shouldn't get the toolbox automatically. If they do:
 <summary><strong>Q: Can I use Educator Tools in regular Minecraft?</strong></summary>
 
 !!! note
-    **No.** Educator Tools is specifically designed for Minecraft Education Edition and uses features not available in regular Minecraft (like special permissions, letter blocks, and education-specific commands).
+    **No.** Educator Tools is specifically designed for Minecraft Education and uses features not available in regular Minecraft (like special permissions, letter blocks, and education-specific commands).
 
 
 </details>

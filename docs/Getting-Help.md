@@ -83,7 +83,7 @@ If your problem isn't listed, create a new issue:
 - Is the problem consistent (happens every time) or occasional?
 
 **Your Setup:**
-- Minecraft Education Edition version (found in Settings → About)
+- Minecraft Education version (found in Settings → About)
 - Educator Tools version (check the pack name in Behavior Packs)
 - Platform (Windows, Mac, iPad, Chromebook)
 - Number of players in the world when the problem occurred

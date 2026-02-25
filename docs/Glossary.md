@@ -113,7 +113,7 @@ A game mode where players have unlimited blocks, can fly, and can't die. Perfect
 ## E
 
 <details>
-<summary><strong>📖 Education Edition</strong></summary>
+<summary><strong>📖 Education</strong></summary>
 
 The version of Minecraft designed for classrooms. Different from regular Minecraft (Java or Bedrock Edition).
 

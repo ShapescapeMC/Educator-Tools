@@ -4,7 +4,7 @@ icon: material/download
 
 # 🚀 Installation Guide
 
-Follow these three simple steps to install Educator Tools in Minecraft Education Edition.
+Follow these three simple steps to install Educator Tools in Minecraft Education.
 
 ---
 
@@ -30,7 +30,7 @@ Go to the official GitHub releases page and download the latest version.
 
 🎮 **Import the downloaded pack**
 
-Once downloaded, import the pack into Minecraft Education Edition.
+Once downloaded, import the pack into Minecraft Education.
 
 ### Option A: Double-Click (Easiest)
 
@@ -55,7 +55,7 @@ Once downloaded, import the pack into Minecraft Education Edition.
 
 
 !!! warning
-    If you have both Minecraft Bedrock and Minecraft Education installed, the file might open in the wrong version. Use **Option B** (right-click) to specify Education Edition.
+    If you have both Minecraft Bedrock and Minecraft Education installed, the file might open in the wrong version. Use **Option B** (right-click) to specify Education.
 
 
 ---
@@ -67,7 +67,7 @@ Now activate the pack in a world (new or existing).
 
 ### For a New World
 
-1. 🚀 Open Minecraft Education Edition
+1. 🚀 Open Minecraft Education
 2. ▶️ Click **"Play"**
 3. ➕ Click **"Create New World"**
 4. ✏️ Give your world a name
@@ -81,7 +81,7 @@ Now activate the pack in a world (new or existing).
 
 ### For an Existing World
 
-1. 🚀 Open Minecraft Education Edition
+1. 🚀 Open Minecraft Education
 2. 🌍 Find your world in the worlds list
 3. ✏️ Click the **"Edit"** button (pencil icon)
 4. 📜 Navigate to **"Behavior Packs"** in the sidebar
@@ -146,7 +146,7 @@ Try these solutions in order:
 
 - ✅ Make sure you downloaded the `.mcaddon` file (not the source code zip)
 - 🖱️ Right-click and select "Open with" → Choose "Minecraft Education"
-- ⚠️ If you have Minecraft Bedrock installed, it might open in the wrong version - uninstall Bedrock or use "Open with" to specify Education Edition
+- ⚠️ If you have Minecraft Bedrock installed, it might open in the wrong version - uninstall Bedrock or use "Open with" to specify Education
 
 !!! info
     The source code zip files (Source code.zip) will NOT work. You must download the `.mcaddon` file.
@@ -222,7 +222,7 @@ Try these solutions in order:
 ### 💻 Mac
 
 - ✅ Double-click should work
-- 🖱️ If it doesn't, right-click → "Open With" → "Minecraft Education Edition.app"
+- 🖱️ If it doesn't, right-click → "Open With" → "Minecraft Education.app"
 
 !!! danger
     Some Mac versions may require you to grant permission to open files from the internet. Check System Preferences → Security & Privacy if prompted.
@@ -247,7 +247,7 @@ Try these solutions in order:
 - ⚙️ Activate in world settings
 
 !!! note
-    Chromebook users must have Minecraft Education Edition installed from the Google Play Store.
+    Chromebook users must have Minecraft Education installed from the Google Play Store.
 
 ---
 
@@ -257,7 +257,7 @@ Try these solutions in order:
 
 Educator Tools works with:
 
-✅ **Minecraft Education Edition** (any recent version)
+✅ **Minecraft Education** (any recent version)
 
 ✅ **All platforms:** Windows, Mac, iPad, Chromebook
 
@@ -267,7 +267,7 @@ Educator Tools works with:
 
 !!! danger
     **Known limitations:**
-    - Requires Minecraft Education Edition (may NOT work with Bedrock Edition)
+    - Requires Minecraft Education (may NOT work with Bedrock Edition)
     - In multiplayer, the world host must have the pack activated
     - Some features require Teacher permissions in the world
 

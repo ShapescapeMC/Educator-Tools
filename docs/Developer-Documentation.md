@@ -22,7 +22,7 @@ Educator Tools is an open-source Minecraft Education behavior pack built with mo
 
 Before you begin developing:
 
-- **Minecraft Education Edition** installed and working
+- **Minecraft Education** installed and working
 - **Basic coding knowledge** (JavaScript/TypeScript helpful but not required)
 - **Git** installed for version control
 - **Text editor** (VS Code recommended)
@@ -140,7 +140,7 @@ Educator-Tools/
 2. **Create a feature branch** (`git checkout -b feature/my-new-feature`)
 3. **Make your changes** in the source files
 4. **Build the pack** using the build system
-5. **Test in Minecraft** Education Edition
+5. **Test in Minecraft** Education
 6. **Commit changes** with clear messages
 7. **Push to your fork** and create a pull request
 8. **Address review feedback** if needed

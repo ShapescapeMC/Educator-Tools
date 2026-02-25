@@ -157,7 +157,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 ### Requirements
 
 ✅ **Core Educator Tools pack** must be installed and activated first
-✅ **Minecraft Education Edition** (same version as core pack)
+✅ **Minecraft Education** (same version as core pack)
 ✅ **Compatible device** (Windows, Mac, iPad, Chromebook)
 
 <details>
