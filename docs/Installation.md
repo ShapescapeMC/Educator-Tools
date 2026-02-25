@@ -134,7 +134,7 @@ Once you join the world, verify Educator Tools is working:
 ## Troubleshooting
 🔧 **Common issues and solutions**
 
-??? failure "❌ Problem: The .mcaddon file won't open"
+??? failure "Problem: The .mcaddon file won't open"
     ### Solutions:
 
     - ✅ Make sure you downloaded the `.mcaddon` file (not the source code zip)
@@ -144,7 +144,7 @@ Once you join the world, verify Educator Tools is working:
     !!! info
         The source code zip files (Source code.zip) will NOT work. You must download the `.mcaddon` file.
 
-??? failure "❌ Problem: Pack doesn't appear in Behavior Packs list"
+??? failure "Problem: Pack doesn't appear in Behavior Packs list"
     ### Solutions:
 
     - 🔄 Restart Minecraft Education completely and try importing again
@@ -155,7 +155,7 @@ Once you join the world, verify Educator Tools is working:
     !!! tip
         Sometimes the pack imports successfully but doesn't show up until you restart the game completely.
 
-??? failure "❌ Problem: Pack was working but stopped after an update"
+??? failure "Problem: Pack was working but stopped after an update"
     ### Solutions:
 
     - 🔍 Check if Minecraft Education updated recently
@@ -166,7 +166,7 @@ Once you join the world, verify Educator Tools is working:
     !!! warning
         After Minecraft Education updates, you may need to update Educator Tools to a compatible version.
 
-??? note "❌ Problem: Students don't have access to the toolbox"
+??? failure "Problem: Students don't have access to the toolbox"
     **This is expected!** Only teachers should have the Educator Toolbox. Students don't need it and shouldn't see it.
 
     !!! note

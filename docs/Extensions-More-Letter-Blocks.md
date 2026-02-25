@@ -415,28 +415,28 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 
 ## Troubleshooting
 
-??? failure "❌ Extension blocks don't appear"
+??? failure "Extension blocks don't appear"
     **Solutions:**
     - Verify **core Educator Tools** is activated first
     - Check **both** Behavior Packs and Resource Packs are activated
     - Leave and rejoin the world
     - Search specifically for theme names in Creative inventory
 
-??? failure "🔍 Can't find a specific character"
+??? failure "Can't find a specific character"
     **Solutions:**
     - Search by character name ("euro", "pi", "checkmark")
     - Try alternative search terms
     - Check if the character is in the core pack vs. extension
     - Browse by theme to see all available characters
 
-??? failure "🎨 Themes look wrong or corrupted"
+??? failure "Themes look wrong or corrupted"
     **Solutions:**
     - Ensure Resource Pack is activated (not just Behavior Pack)
     - Restart Minecraft Education
     - Re-import the extension
     - Check Minecraft Education version compatibility
 
-??? failure "⚡ Performance issues with large displays"
+??? failure "Performance issues with large displays"
     **Solutions:**
     - Reduce render distance in settings
     - Segment large word walls into smaller sections
