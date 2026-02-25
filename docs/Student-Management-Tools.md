@@ -6,38 +6,6 @@ icon: material/account-group
 
 These tools help you organize and control your students in the Minecraft world.
 
-## 📑 Table of Contents
-
-- [Overview](#overview)
-- [Quick Reference](#quick-reference)
-- [🚀 Teleport](#-teleport)
-  - [What it does](#what-it-does)
-  - [When to use it](#when-to-use-it)
-  - [How to use it](#how-to-use-it)
-- [🎮 Gamemode](#-gamemode)
-  - [What it does](#what-it-does-1)
-  - [When to use it](#when-to-use-it-1)
-  - [How to use it](#how-to-use-it-1)
-  - [Gamemode Explanations](#gamemode-explanations)
-- [👥 Teams Management](#-teams-management)
-  - [What it does](#what-it-does-2)
-  - [When to use it](#when-to-use-it-2)
-  - [Default Teams](#default-teams)
-  - [How to use it](#how-to-use-it-2)
-- [🎒 Inventory Management](#-inventory-management)
-  - [What it does](#what-it-does-3)
-  - [When to use it](#when-to-use-it-3)
-  - [Available Operations](#available-operations)
-  - [How to use it](#how-to-use-it-3)
-- [❤️ Manage Health](#️-manage-health)
-  - [What it does](#what-it-does-4)
-  - [When to use it](#when-to-use-it-4)
-  - [How to use it](#how-to-use-it-4)
-- [Related Tools](#related-tools)
-- [Next Steps](#next-steps)
-
----
-
 ## Overview
 
 Student Management Tools let you move students around, change their abilities, organize them into teams, and control what items they have. These are essential for keeping your classroom organized and running smoothly.
@@ -91,16 +59,16 @@ Instantly moves students to any location without them having to walk or fly ther
 4. **Pick where to send them:**
    - **To you** ← Most common choice, gathers everyone to your location
    - **To another student** ← Good for pairing or grouping
-   - **To a location** ← If you know specific coordinates
 5. The student(s) instantly appear at the chosen location
 
-![Teleport tool interface](images/teleport-interface.png)
+![Teleport tool interface](gifs/teleport-menu.gif)
 
 !!! tip
     **Quick Gather:** To instantly bring everyone together, select "All Players" and teleport them to you. This is perfect for starting activities or getting everyone's attention.
 
 
 **✅ Benefits:**
+
 - Students keep their inventory and gamemode when teleported
 - Teleporting doesn't interrupt what students are building
 - You can teleport yourself using this tool too
@@ -108,9 +76,6 @@ Instantly moves students to any location without them having to walk or fly ther
 
 !!! info
     At least 2 players must be online (you + one student) for the teleport tool to work.
-
-
-![Teleporting all students demonstration](gifs/teleport-all-demo.gif)
 
 ---
 
