@@ -6,14 +6,6 @@ icon: material/rocket-launch
 
 Welcome to Educator Tools! This guide will help you get started in just a few minutes.
 
-## Table of Contents
-
-- [What is Educator Tools?](#what-is-educator-tools)
-- [Install in 3 Steps](#install-in-3-steps)
-- [Your First 5 Minutes](#your-first-5-minutes)
-- [Success! You're Ready to Teach](#-success-youre-ready-to-teach)
-- [Tips for New Teachers](#tips-for-new-teachers)
-
 ---
 
 ## What is Educator Tools?
@@ -91,7 +83,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 ---
 
-### 3. Get Everyone's Attention ⏱️ 1 minute
+### 3. Get Everyone's Attention 
+
+**⏱️ 1 minute**
 
 **When to use it:** You need students to stop and listen
 
@@ -111,7 +105,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 ---
 
-### 4. Heal and Feed Students ⏱️ 30 seconds
+### 4. Heal and Feed Students 
+
+**⏱️ 30 seconds**
 
 **When to use it:** Students are running low on health or hunger
 
@@ -124,7 +120,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 ---
 
-### 5. Change Time or Weather ⏱️ 30 seconds
+### 5. Change Time or Weather 
+
+**⏱️ 30 seconds**
 
 **When to use it:** You want it to be daytime or stop the rain
 
@@ -149,15 +147,18 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 You now know the basics! Here's what to explore next:
 
 ### For Everyday Teaching
+
 - 🎯 **[Essential Tools](Essential-Tools.md)** - The 5 most important tools (Custom Nicknames, Assignments, Focus Mode, Lock Players, Letter Blocks)
 
 ### When You Need More
+
 - 👥 **[Student Management Tools](Student-Management-Tools.md)** - Teleport, gamemode, teams, and inventory
 - 🎓 **[Classroom Control Tools](Classroom-Control-Tools.md)** - Focus mode, timer, assignments, and more
 - 🌍 **[World Management Tools](World-Management-Tools.md)** - Time, weather, game rules
 - 🔤 **[Letter Blocks Guide](Letter-Blocks-Getting-Started.md)** - Build words and equations with special blocks
 
 ### If You Need Help
+
 - ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common questions and solutions
 - 🆘 **[Getting Help](Getting-Help.md)** - How to report problems or ask questions
 
