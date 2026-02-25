@@ -117,89 +117,65 @@ Once you join the world, verify Educator Tools is working:
 
 ### If You Don't See the Toolbox
 
-<details>
-<summary>🔧 Click here for troubleshooting steps</summary>
+??? tip "🔧 Click here for troubleshooting steps"
+    Try these solutions in order:
 
-Try these solutions in order:
+    1. 🔄 **Leave and rejoin the world** - The toolbox appears when you join, not when you activate the pack
+    2. 👥 **Check you're in the Teachers team** - Only teachers get the toolbox automatically. Only the first person loading Educator Tools in the world will receive it automatically
+    3. 📦 **Open Creative inventory** - Search for "Educator Toolbox" and add it manually
+    4. ✅ **Verify pack is active** - Go to World Settings → Behavior Packs → Confirm it shows "Active"
+    5. 🆕 **Try a new world** - Test in a fresh world to rule out world-specific issues
 
-1. 🔄 **Leave and rejoin the world** - The toolbox appears when you join, not when you activate the pack
-2. 👥 **Check you're in the Teachers team** - Only teachers get the toolbox automatically. Only the first person loading Educator Tools in the world will receive it automatically
-3. 📦 **Open Creative inventory** - Search for "Educator Toolbox" and add it manually
-4. ✅ **Verify pack is active** - Go to World Settings → Behavior Packs → Confirm it shows "Active"
-5. 🆕 **Try a new world** - Test in a fresh world to rule out world-specific issues
-
-!!! info
-    Only teachers should have access to the Educator Toolbox. Students should NOT see it in their inventory.
-
-
-</details>
+    !!! info
+        Only teachers should have access to the Educator Toolbox. Students should NOT see it in their inventory.
 
 ---
 
 ## Troubleshooting
 🔧 **Common issues and solutions**
 
-<details>
-<summary>❌ Problem: The .mcaddon file won't open</summary>
+??? failure "❌ Problem: The .mcaddon file won't open"
+    ### Solutions:
 
-### Solutions:
+    - ✅ Make sure you downloaded the `.mcaddon` file (not the source code zip)
+    - 🖱️ Right-click and select "Open with" → Choose "Minecraft Education"
+    - ⚠️ If you have Minecraft Bedrock installed, it might open in the wrong version - uninstall Bedrock or use "Open with" to specify Education
 
-- ✅ Make sure you downloaded the `.mcaddon` file (not the source code zip)
-- 🖱️ Right-click and select "Open with" → Choose "Minecraft Education"
-- ⚠️ If you have Minecraft Bedrock installed, it might open in the wrong version - uninstall Bedrock or use "Open with" to specify Education
+    !!! info
+        The source code zip files (Source code.zip) will NOT work. You must download the `.mcaddon` file.
 
-!!! info
-    The source code zip files (Source code.zip) will NOT work. You must download the `.mcaddon` file.
+??? failure "❌ Problem: Pack doesn't appear in Behavior Packs list"
+    ### Solutions:
 
+    - 🔄 Restart Minecraft Education completely and try importing again
+    - ⚙️ Check Settings → Storage → Behavior Packs to confirm it imported
+    - 📥 Re-download the file (it might have corrupted during download)
+    - ✅ Make sure you're running the latest version of Minecraft Education
 
-</details>
+    !!! tip
+        Sometimes the pack imports successfully but doesn't show up until you restart the game completely.
 
-<details>
-<summary>❌ Problem: Pack doesn't appear in Behavior Packs list</summary>
+??? failure "❌ Problem: Pack was working but stopped after an update"
+    ### Solutions:
 
-### Solutions:
+    - 🔍 Check if Minecraft Education updated recently
+    - 📥 Visit the [releases page](https://github.com/ShapescapeMC/Educator-Tools/releases) for the latest compatible version
+    - 🗑️ Remove the old version from Settings → Storage → Behavior Packs
+    - ♻️ Import the new version following Step 2 again
 
-- 🔄 Restart Minecraft Education completely and try importing again
-- ⚙️ Check Settings → Storage → Behavior Packs to confirm it imported
-- 📥 Re-download the file (it might have corrupted during download)
-- ✅ Make sure you're running the latest version of Minecraft Education
+    !!! warning
+        After Minecraft Education updates, you may need to update Educator Tools to a compatible version.
 
-!!! tip
-    Sometimes the pack imports successfully but doesn't show up until you restart the game completely.
+??? note "❌ Problem: Students don't have access to the toolbox"
+    **This is expected!** Only teachers should have the Educator Toolbox. Students don't need it and shouldn't see it.
 
+    !!! note
+        This is intentional behavior. The toolbox is designed for teachers only.
 
-</details>
+    ### If a student can use the toolbox when they shouldn't:
 
-<details>
-<summary>❌ Problem: Pack was working but stopped after an update</summary>
-
-### Solutions:
-
-- 🔍 Check if Minecraft Education updated recently
-- 📥 Visit the [releases page](https://github.com/ShapescapeMC/Educator-Tools/releases) for the latest compatible version
-- 🗑️ Remove the old version from Settings → Storage → Behavior Packs
-- ♻️ Import the new version following Step 2 again
-
-!!! warning
-    After Minecraft Education updates, you may need to update Educator Tools to a compatible version.
-
-
-</details>
-
-<details>
-<summary>❌ Problem: Students don't have access to the toolbox</summary>
-
-**This is expected!** Only teachers should have the Educator Toolbox. Students don't need it and shouldn't see it.
-
-!!! note
-    This is intentional behavior. The toolbox is designed for teachers only.
-
-### If a student can use the toolbox when they shouldn't:
-
-- 👥 They might be in the "Teachers" team by accident
-- ⚙️ Use Teams Management to remove them from the Teachers team
-
-</details>
+    - 👥 They might be in the "Teachers" team by accident
+    - ⚙️ Use Teams Management to remove them from the Teachers team
 
 ---
 

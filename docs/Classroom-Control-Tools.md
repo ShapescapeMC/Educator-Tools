@@ -74,16 +74,12 @@ Dims students' screens, shows them your message, and prevents them from moving o
 
 ### When to use it
 
-<details>
-<summary><strong>Common Use Cases</strong> (click to expand)</summary>
-
-- **🎯 Getting attention:** Need everyone to stop and listen
-- **📢 Giving instructions:** Explain the next activity while everyone's focused
-- **🔄 Transitions:** Moving between activities and need everyone ready
-- **❗ Important announcements:** Critical information everyone needs to hear
-- **☕ Screen breaks:** Pause gameplay for a discussion or demonstration
-
-</details>
+??? tip "Common Use Cases (click to expand)"
+    - **🎯 Getting attention:** Need everyone to stop and listen
+    - **📢 Giving instructions:** Explain the next activity while everyone's focused
+    - **🔄 Transitions:** Moving between activities and need everyone ready
+    - **❗ Important announcements:** Critical information everyone needs to hear
+    - **☕ Screen breaks:** Pause gameplay for a discussion or demonstration
 
 ### How to use it
 
@@ -171,16 +167,12 @@ Creates an invisible boundary that prevents students from moving beyond a certai
 
 ### When to use it
 
-<details>
-<summary><strong>Lock Players Use Cases</strong> (click to expand)</summary>
-
-- **📍 Keep students in activity area:** Prevent wandering during focused tasks
-- **🗺️ Guided tours:** Keep the class together as you move around
-- **🔍 Restrict exploration:** Confine students to a specific build site or lesson area
-- **⚠️ Safety boundaries:** Keep students away from dangerous or unfinished areas
-- **👥 Follow the teacher:** Students automatically stay near you as you move
-
-</details>
+??? tip "Lock Players Use Cases (click to expand)"
+    - **📍 Keep students in activity area:** Prevent wandering during focused tasks
+    - **🗺️ Guided tours:** Keep the class together as you move around
+    - **🔍 Restrict exploration:** Confine students to a specific build site or lesson area
+    - **⚠️ Safety boundaries:** Keep students away from dangerous or unfinished areas
+    - **👥 Follow the teacher:** Students automatically stay near you as you move
 
 ### Lock Modes
 
@@ -235,45 +227,28 @@ The boundary follows a specific player (usually you, the teacher). Students must
 
 ### Lock Settings Explained
 
-<details>
-<summary><strong>📏 Radius</strong></summary>
+??? note "📏 Radius"
+    - Distance in blocks students can move from the center
+    - Example: Radius of 20 = students can move 20 blocks in any direction
+    - Larger radius = more freedom to explore
 
-- Distance in blocks students can move from the center
-- Example: Radius of 20 = students can move 20 blocks in any direction
-- Larger radius = more freedom to explore
+??? note "🔁 Teleport to Center"
+    - **ON:** Students are automatically sent back if they reach the boundary
+    - **OFF:** Students are stopped at the boundary but not teleported
+    - **Recommended:** ON (smoother experience)
 
-</details>
+    !!! tip
+        Teleport to Center ON prevents students from getting stuck at the edge or finding ways to push through the boundary.
 
-<details>
-<summary><strong>🔁 Teleport to Center</strong></summary>
+??? note "✨ Show Boundaries"
+    - **ON:** Particles appear at the edge when students get close
+    - **OFF:** No visual indication of the boundary
+    - **Recommended:** ON (helps students know the limits)
 
-- **ON:** Students are automatically sent back if they reach the boundary
-- **OFF:** Students are stopped at the boundary but not teleported
-- **Recommended:** ON (smoother experience)
-
-!!! tip
-    Teleport to Center ON prevents students from getting stuck at the edge or finding ways to push through the boundary.
-
-
-</details>
-
-<details>
-<summary><strong>✨ Show Boundaries</strong></summary>
-
-- **ON:** Particles appear at the edge when students get close
-- **OFF:** No visual indication of the boundary
-- **Recommended:** ON (helps students know the limits)
-
-</details>
-
-<details>
-<summary><strong>💬 Show Lock Message</strong></summary>
-
-- **ON:** Chat message appears when students try to leave
-- **OFF:** No message, students just can't leave
-- **Recommended:** ON (explains why they can't move)
-
-</details>
+??? note "💬 Show Lock Message"
+    - **ON:** Chat message appears when students try to leave
+    - **OFF:** No message, students just can't leave
+    - **Recommended:** ON (explains why they can't move)
 
 !!! note
     Locks work on offline players. If someone logs in while locked, the lock applies to them immediately upon joining.
@@ -299,16 +274,12 @@ Creates a visible countdown timer that all students can see. Shows on their scre
 
 ### When to use it
 
-<details>
-<summary><strong>Timer Use Cases</strong> (click to expand)</summary>
-
-- **⏱️ Timed activities:** Give students a specific amount of time to complete tasks
-- **🔄 Transition management:** Count down to the end of an activity
-- **🏗️ Building challenges:** Time-limited building competitions
-- **📝 Testing:** Timed quizzes or assessments
-- **🎯 Focus periods:** Sustained work time with a visible endpoint
-
-</details>
+??? tip "Timer Use Cases (click to expand)"
+    - **⏱️ Timed activities:** Give students a specific amount of time to complete tasks
+    - **🔄 Transition management:** Count down to the end of an activity
+    - **🏗️ Building challenges:** Time-limited building competitions
+    - **📝 Testing:** Timed quizzes or assessments
+    - **🎯 Focus periods:** Sustained work time with a visible endpoint
 
 ### How to use it
 
@@ -370,16 +341,12 @@ Once created, you have these controls:
 - **Pause** is great for unexpected interruptions
 - Students can't interact with or break the timer entity
 
-<details>
-<summary><strong>Example Timer Uses</strong> (click to expand)</summary>
-
-- "You have 10 minutes to build a house"
-- "5 minutes until we gather back here"
-- "30 seconds remaining in the challenge!"
-- "15 minutes to complete the scavenger hunt"
-- "20 minutes of focused building time"
-
-</details>
+??? example "Example Timer Uses (click to expand)"
+    - "You have 10 minutes to build a house"
+    - "5 minutes until we gather back here"
+    - "30 seconds remaining in the challenge!"
+    - "15 minutes to complete the scavenger hunt"
+    - "20 minutes of focused building time"
 
 ![Timer countdown demonstration](gifs/timer-demo.gif)
 
@@ -396,16 +363,12 @@ Creates structured assignments that students can submit with text responses and 
 
 ### When to use it
 
-<details>
-<summary><strong>Assignment Use Cases</strong> (click to expand)</summary>
-
-- **🏗️ Building projects:** Students submit their builds with descriptions
-- **📝 Written reflections:** Collect text responses to prompts or questions
-- **🗺️ Scavenger hunts:** Students find locations and submit them
-- **📊 Progress check-ins:** Quick status updates from students
-- **🚪 Exit tickets:** End-of-class reflections or summaries
-
-</details>
+??? tip "Assignment Use Cases (click to expand)"
+    - **🏗️ Building projects:** Students submit their builds with descriptions
+    - **📝 Written reflections:** Collect text responses to prompts or questions
+    - **🗺️ Scavenger hunts:** Students find locations and submit them
+    - **📊 Progress check-ins:** Quick status updates from students
+    - **🚪 Exit tickets:** End-of-class reflections or summaries
 
 ### Teacher Interface
 
@@ -519,26 +482,22 @@ Students can see if they've submitted an assignment, but they cannot view their 
 - Complete assignments to prevent late submissions
 - Icons help students quickly identify assignments visually
 
-<details>
-<summary><strong>Example Assignments</strong> (click to expand)</summary>
+??? example "Example Assignments (click to expand)"
+    **🏠 Building Project:**
+    - Name: "Build a Medieval Castle"
+    - Description: "Create a castle with at least one tower, a wall, and a gate. Submit from inside your castle and describe your design choices."
 
-**🏠 Building Project:**
-- Name: "Build a Medieval Castle"
-- Description: "Create a castle with at least one tower, a wall, and a gate. Submit from inside your castle and describe your design choices."
+    **🗺️ Scavenger Hunt:**
+    - Name: "Find a New Biome"
+    - Description: "Explore and find a biome we haven't visited yet. Submit from that location and describe what you found."
 
-**🗺️ Scavenger Hunt:**
-- Name: "Find a New Biome"
-- Description: "Explore and find a biome we haven't visited yet. Submit from that location and describe what you found."
+    **💭 Reflection:**
+    - Name: "Today's Learning Reflection"
+    - Description: "Write 3 sentences about what you learned in today's lesson."
 
-**💭 Reflection:**
-- Name: "Today's Learning Reflection"
-- Description: "Write 3 sentences about what you learned in today's lesson."
-
-**📐 Math Structure:**
-- Name: "Geometric Build Challenge"
-- Description: "Create a structure that demonstrates symmetry. Explain the mathematical principles you used."
-
-</details>
+    **📐 Math Structure:**
+    - Name: "Geometric Build Challenge"
+    - Description: "Create a structure that demonstrates symmetry. Explain the mathematical principles you used."
 
 ![Assignment workflow demonstration](gifs/assignment-demo.gif)
 
@@ -555,16 +514,12 @@ Allows students to set personalized display names (nicknames) that appear instea
 
 ### When to use it
 
-<details>
-<summary><strong>Nickname Use Cases</strong> (click to expand)</summary>
-
-- **🎨 Personalization:** Let students choose how they're addressed
-- **🏳️‍🌈 Preferred names:** Students can use their preferred names instead of usernames
-- **🤝 Classroom community:** Build identity and belonging
-- **✨ Creative expression:** Students can choose fun, appropriate nicknames
-- **🎭 Role-play:** Students can take on character names for educational scenarios
-
-</details>
+??? tip "Nickname Use Cases (click to expand)"
+    - **🎨 Personalization:** Let students choose how they're addressed
+    - **🏳️‍🌈 Preferred names:** Students can use their preferred names instead of usernames
+    - **🤝 Classroom community:** Build identity and belonging
+    - **✨ Creative expression:** Students can choose fun, appropriate nicknames
+    - **🎭 Role-play:** Students can take on character names for educational scenarios
 
 ### Teacher Settings
 
@@ -665,47 +620,34 @@ When custom messages are enabled:
 
 ### Configuration Examples
 
-<details>
-<summary><strong>🔒 Strict Control (Teacher Only)</strong></summary>
+??? note "🔒 Strict Control (Teacher Only)"
+    - Nicknames Enabled: **ON**
+    - Prompt on Join: **OFF**
+    - Require Approval: **N/A** (students can't request)
+    - Teachers assign all nicknames manually
 
-- Nicknames Enabled: **ON**
-- Prompt on Join: **OFF**
-- Require Approval: **N/A** (students can't request)
-- Teachers assign all nicknames manually
+    **Best for:** Young students, situations requiring strict control
 
-**Best for:** Young students, situations requiring strict control
+??? note "✅ Student Choice with Approval"
+    - Nicknames Enabled: **ON**
+    - Prompt on Join: **ON**
+    - Require Approval: **ON**
+    - Allow Custom Colors: **ON** (optional)
+    - Students request, teachers approve
 
-</details>
+    **Best for:** Most classroom situations, balanced control
 
-<details>
-<summary><strong>✅ Student Choice with Approval</strong></summary>
+??? note "🎨 Full Student Freedom"
+    - Nicknames Enabled: **ON**
+    - Prompt on Join: **ON**
+    - Require Approval: **OFF**
+    - Allow Custom Colors: **ON**
+    - Students set nicknames instantly without approval
 
-- Nicknames Enabled: **ON**
-- Prompt on Join: **ON**
-- Require Approval: **ON**
-- Allow Custom Colors: **ON** (optional)
-- Students request, teachers approve
+    **Best for:** Mature students, low-risk environments
 
-**Best for:** Most classroom situations, balanced control
-
-</details>
-
-<details>
-<summary><strong>🎨 Full Student Freedom</strong></summary>
-
-- Nicknames Enabled: **ON**
-- Prompt on Join: **ON**
-- Require Approval: **OFF**
-- Allow Custom Colors: **ON**
-- Students set nicknames instantly without approval
-
-**Best for:** Mature students, low-risk environments
-
-!!! warning
-    Full freedom mode allows students to set any nickname instantly. Only use this if you trust students to make appropriate choices.
-
-
-</details>
+    !!! warning
+        Full freedom mode allows students to set any nickname instantly. Only use this if you trust students to make appropriate choices.
 
 **✅ Best Practices:**
 - Start with **Require Approval ON** to maintain control over appropriate names
@@ -715,22 +657,18 @@ When custom messages are enabled:
 - Teachers can change any student's nickname at any time
 - To remove a nickname, just leave the field empty when editing
 
-<details>
-<summary><strong>Example Nickname Uses</strong> (click to expand)</summary>
+??? example "Example Nickname Uses (click to expand)"
+    **🏰 Historical Role-Play:**
+    - Let students choose fantasy character names for a medieval history lesson
+    - Example: "Sir Galahad", "Queen Eleanor", "Blacksmith Thomas"
 
-**🏰 Historical Role-Play:**
-- Let students choose fantasy character names for a medieval history lesson
-- Example: "Sir Galahad", "Queen Eleanor", "Blacksmith Thomas"
+    **🎓 Preferred Names:**
+    - Use preferred names or shortened versions of long usernames
+    - Respect student identity by using their chosen names
 
-**🎓 Preferred Names:**
-- Use preferred names or shortened versions of long usernames
-- Respect student identity by using their chosen names
-
-**🎭 Creative Scenarios:**
-- Create themed nicknames for role-playing scenarios
-- Example: "Dr. Science", "Captain Explorer", "Engineer Maya"
-
-</details>
+    **🎭 Creative Scenarios:**
+    - Create themed nicknames for role-playing scenarios
+    - Example: "Dr. Science", "Captain Explorer", "Engineer Maya"
 
 ![Nickname approval demonstration](gifs/nickname-approval-demo.gif)
 
@@ -744,33 +682,29 @@ These classroom control tools work well together:
     Combining tools creates powerful classroom management workflows. Here are effective combinations:
 
 
-<details>
-<summary><strong>Tool Combination Examples</strong> (click to expand)</summary>
+??? example "Tool Combination Examples (click to expand)"
+    **🎯 Starting a Timed Activity:**
+    1. Use **[Focus Mode](#️-focus-mode)** to get everyone's attention
+    2. Explain the activity while they're frozen
+    3. Create a **[Timer](#-timer)** with the appropriate duration
+    4. Disable Focus Mode and start the Timer simultaneously
 
-**🎯 Starting a Timed Activity:**
-1. Use **[Focus Mode](#️-focus-mode)** to get everyone's attention
-2. Explain the activity while they're frozen
-3. Create a **[Timer](#-timer)** with the appropriate duration
-4. Disable Focus Mode and start the Timer simultaneously
+    **🗺️ Guided Tour with Boundaries:**
+    1. Use **[Lock Players](#-lock-players)** in Player Mode to keep students near you
+    2. Set a reasonable radius (like 20 blocks)
+    3. Walk through the area while students follow automatically
+    4. They can explore nearby but won't get left behind
 
-**🗺️ Guided Tour with Boundaries:**
-1. Use **[Lock Players](#-lock-players)** in Player Mode to keep students near you
-2. Set a reasonable radius (like 20 blocks)
-3. Walk through the area while students follow automatically
-4. They can explore nearby but won't get left behind
+    **📝 Building Assignment with Constraints:**
+    1. Use **[Lock Players](#-lock-players)** in Center Mode to confine students to their build plots
+    2. Create an **[Assignment](#-assignments)** for them to describe their builds
+    3. Set a **[Timer](#-timer)** for the activity duration
+    4. Students build, submit, and stay in bounds
 
-**📝 Building Assignment with Constraints:**
-1. Use **[Lock Players](#-lock-players)** in Center Mode to confine students to their build plots
-2. Create an **[Assignment](#-assignments)** for them to describe their builds
-3. Set a **[Timer](#-timer)** for the activity duration
-4. Students build, submit, and stay in bounds
-
-**🎨 Personalized Classroom:**
-1. Use **[Custom Nicknames](#️-custom-nicknames)** to let students personalize their identity
-2. Use nicknames in **[Assignments](#-assignments)** for a more personal touch
-3. Reference students by their chosen names when using **[Focus Mode](#️-focus-mode)** messages
-
-</details>
+    **🎨 Personalized Classroom:**
+    1. Use **[Custom Nicknames](#️-custom-nicknames)** to let students personalize their identity
+    2. Use nicknames in **[Assignments](#-assignments)** for a more personal touch
+    3. Reference students by their chosen names when using **[Focus Mode](#️-focus-mode)** messages
 
 ---
 

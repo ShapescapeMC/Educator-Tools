@@ -52,46 +52,30 @@ The More Letter Blocks extension adds a comprehensive collection of additional l
 
 ### Character Sets
 
-<details>
-<summary><strong>🔤 Letters & Diacritics</strong></summary>
+??? example "🔤 Letters & Diacritics"
+    - Extended Latin alphabet with accents (á, é, í, ñ, ü, etc.)
+    - Support for multiple European languages
+    - Uppercase and lowercase variants
+    - Perfect for authentic spelling in Spanish, French, German, Portuguese, and more
 
-- Extended Latin alphabet with accents (á, é, í, ñ, ü, etc.)
-- Support for multiple European languages
-- Uppercase and lowercase variants
-- Perfect for authentic spelling in Spanish, French, German, Portuguese, and more
+??? example "🧮 Math Symbols"
+    - Advanced operators (√, ∑, ∫, ∞, ≈, ≠, ≤, ≥)
+    - Greek letters (π, Σ, Δ, Ω, α, β, etc.)
+    - Fractions and exponents support
+    - Essential for algebra, geometry, calculus, and advanced math lessons
 
-</details>
+??? example "✨ Special Characters"
+    - Additional arrows (⇒, ⇐, ⇑, ⇓, ↔)
+    - Checkmarks and crosses (✓, ✗, ✔, ✘)
+    - Stars, hearts, and decorative symbols
+    - Currency symbols (€, £, ¥, ₹, ₽)
+    - Punctuation and typography marks
 
-<details>
-<summary><strong>🧮 Math Symbols</strong></summary>
-
-- Advanced operators (√, ∑, ∫, ∞, ≈, ≠, ≤, ≥)
-- Greek letters (π, Σ, Δ, Ω, α, β, etc.)
-- Fractions and exponents support
-- Essential for algebra, geometry, calculus, and advanced math lessons
-
-</details>
-
-<details>
-<summary><strong>✨ Special Characters</strong></summary>
-
-- Additional arrows (⇒, ⇐, ⇑, ⇓, ↔)
-- Checkmarks and crosses (✓, ✗, ✔, ✘)
-- Stars, hearts, and decorative symbols
-- Currency symbols (€, £, ¥, ₹, ₽)
-- Punctuation and typography marks
-
-</details>
-
-<details>
-<summary><strong>📍 Teaching Icons</strong></summary>
-
-- Visual indicators for correct/incorrect answers
-- Emphasis and attention symbols
-- Organizational markers for activities
-- Great for self-checking stations and assessments
-
-</details>
+??? example "📍 Teaching Icons"
+    - Visual indicators for correct/incorrect answers
+    - Emphasis and attention symbols
+    - Organizational markers for activities
+    - Great for self-checking stations and assessments
 
 ### Background Themes
 
@@ -105,46 +89,42 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     Use different background themes to color-code parts of speech, team assignments, or activity stations. For example: blue blocks for nouns, red for verbs, green for adjectives, and yellow for adverbs.
 
 
-<details>
-<summary><strong>View All 9 Background Themes</strong></summary>
+??? info "View All 9 Background Themes"
+    ### 1. 🤍 Blank (Base)
+    - Clean neutral background
+    - **Best for:** General use, flexible displays
 
-### 1. 🤍 Blank (Base)
-- Clean neutral background
-- **Best for:** General use, flexible displays
+    ### 2. 🔴 Red Outline
+    - High-attention visual style
+    - **Best for:** Warnings, important instructions, errors, "stop" indicators
 
-### 2. 🔴 Red Outline
-- High-attention visual style
-- **Best for:** Warnings, important instructions, errors, "stop" indicators
+    ### 3. 🔵 Blue Outline
+    - Cool, calm information aesthetic
+    - **Best for:** Information displays, labels, directions, "think" prompts
 
-### 3. 🔵 Blue Outline
-- Cool, calm information aesthetic
-- **Best for:** Information displays, labels, directions, "think" prompts
+    ### 4. 🟢 Green Outline
+    - Success and growth theme
+    - **Best for:** Correct answers, science/ecology topics, "go" indicators
 
-### 4. 🟢 Green Outline
-- Success and growth theme
-- **Best for:** Correct answers, science/ecology topics, "go" indicators
+    ### 5. 🟡 Yellow Outline
+    - Highlight and emphasis
+    - **Best for:** Key vocabulary, focus words, important terms
 
-### 5. 🟡 Yellow Outline
-- Highlight and emphasis
-- **Best for:** Key vocabulary, focus words, important terms
+    ### 6. 🔷 Light Blue Concrete
+    - High-contrast pastel surface
+    - **Best for:** Large word walls, readability at distance
 
-### 6. 🔷 Light Blue Concrete
-- High-contrast pastel surface
-- **Best for:** Large word walls, readability at distance
+    ### 7. 🟤 Dark Oak
+    - Dark wood aesthetic
+    - **Best for:** Chalkboard-style displays (use with light text), classic look
 
-### 7. 🟤 Dark Oak
-- Dark wood aesthetic
-- **Best for:** Chalkboard-style displays (use with light text), classic look
+    ### 8. 🟫 Pale Oak
+    - Warm neutral tone
+    - **Best for:** Narrative activities, language arts, story building
 
-### 8. 🟫 Pale Oak
-- Warm neutral tone
-- **Best for:** Narrative activities, language arts, story building
-
-### 9. 🌈 Rainbow
-- Colorful celebratory design
-- **Best for:** Celebrations, creativity activities, diversity themes, team events
-
-</details>
+    ### 9. 🌈 Rainbow
+    - Colorful celebratory design
+    - **Best for:** Celebrations, creativity activities, diversity themes, team events
 
 ---
 
@@ -160,63 +140,57 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 ✅ **Minecraft Education** (same version as core pack)
 ✅ **Compatible device** (Windows, Mac, iPad, Chromebook)
 
-<details>
-<summary><strong>Method 1: Quick Install (Recommended)</strong></summary>
+??? tip "Method 1: Quick Install (Recommended)"
 
-### Quick Install Steps
+    ### Quick Install Steps
 
-1. **Download the Extension**
-   - Visit [Educator Tools Releases](https://github.com/ShapescapeMC/Educator-Tools/releases)
-   - Find "More Letter Blocks" extension
-   - Download the `.mcaddon` file
+    1. **Download the Extension**
+       - Visit [Educator Tools Releases](https://github.com/ShapescapeMC/Educator-Tools/releases)
+       - Find "More Letter Blocks" extension
+       - Download the `.mcaddon` file
 
-2. **Import into Minecraft**
-   - Double-click the `.mcaddon` file
-   - Minecraft Education launches automatically
-   - Wait for import confirmation
+    2. **Import into Minecraft**
+       - Double-click the `.mcaddon` file
+       - Minecraft Education launches automatically
+       - Wait for import confirmation
 
-3. **Activate in Your World**
-   - Create new world or edit existing world
-   - Go to **Behavior Packs** → Activate "More Letter Blocks"
-   - (If needed) Go to **Resource Packs** → Activate "More Letter Blocks"
-   - Save and start the world
+    3. **Activate in Your World**
+       - Create new world or edit existing world
+       - Go to **Behavior Packs** → Activate "More Letter Blocks"
+       - (If needed) Go to **Resource Packs** → Activate "More Letter Blocks"
+       - Save and start the world
 
-4. **Verify Installation**
-   - Join the world
-   - Open Creative inventory
-   - Search for "letter" or a theme name (e.g., "rainbow")
-   - You should see hundreds of new letter blocks
+    4. **Verify Installation**
+       - Join the world
+       - Open Creative inventory
+       - Search for "letter" or a theme name (e.g., "rainbow")
+       - You should see hundreds of new letter blocks
 
-![More Letter Blocks in inventory](images/more-letter-blocks-inventory.png)
+    ![More Letter Blocks in inventory](images/more-letter-blocks-inventory.png)
 
-</details>
-
-<details>
-<summary><strong>Method 2: Manual Install</strong></summary>
+??? tip "Method 2: Manual Install"
 
 ### Manual Installation Steps
 
-If double-clicking doesn't work, you can manually import:
+    If double-clicking doesn't work, you can manually import:
 
-1. **Extract the Files**
-   - Rename `.mcaddon` to `.zip`
-   - Extract the archive
+    1. **Extract the Files**
+       - Rename `.mcaddon` to `.zip`
+       - Extract the archive
 
-2. **Locate Minecraft Folders**
-   - Windows: `%localappdata%\Packages\Microsoft.MinecraftEducationEdition_[...]\LocalState\games\com.mojang\`
-   - Mac: `~/Library/Application Support/minecraftpe/`
-   - iOS: Use a file manager app
+    2. **Locate Minecraft Folders**
+       - Windows: `%localappdata%\Packages\Microsoft.MinecraftEducationEdition_[...]\LocalState\games\com.mojang\`
+       - Mac: `~/Library/Application Support/minecraftpe/`
+       - iOS: Use a file manager app
 
-3. **Copy Files**
-   - Copy behavior pack to `behavior_packs/` folder
-   - Copy resource pack to `resource_packs/` folder
+    3. **Copy Files**
+       - Copy behavior pack to `behavior_packs/` folder
+       - Copy resource pack to `resource_packs/` folder
 
-4. **Activate in World**
-   - Launch Minecraft Education
-   - Create/edit world
-   - Activate both packs in world settings
-
-</details>
+    4. **Activate in World**
+       - Launch Minecraft Education
+       - Create/edit world
+       - Activate both packs in world settings
 
 ---
 
@@ -228,176 +202,136 @@ If double-clicking doesn't work, you can manually import:
 
 ### Accessing Blocks
 
-<details>
-<summary><strong>🔍 Method 1: Search by Character</strong></summary>
+??? tip "🔍 Method 1: Search by Character"
+    1. Open Creative inventory (E key)
+    2. Click Search tab
+    3. Type the character you need (e.g., "accent", "euro", "pi")
+    4. Results show all matching blocks across all themes
 
-1. Open Creative inventory (E key)
-2. Click Search tab
-3. Type the character you need (e.g., "accent", "euro", "pi")
-4. Results show all matching blocks across all themes
+    **Example searches:**
+    - "accent" → All accented letters
+    - "pi" → π symbol in all themes
+    - "checkmark" → ✓ symbols
 
-**Example searches:**
-- "accent" → All accented letters
-- "pi" → π symbol in all themes
-- "checkmark" → ✓ symbols
+??? tip "🎨 Method 2: Search by Theme"
+    1. Open Creative inventory
+    2. Search for theme name ("rainbow", "blue outline", etc.)
+    3. Browse all characters in that theme
 
-</details>
+    **Theme search terms:**
+    - "rainbow" → All rainbow-themed blocks
+    - "blue outline" → All blue outline blocks
+    - "dark oak" → All dark oak themed blocks
 
-<details>
-<summary><strong>🎨 Method 2: Search by Theme</strong></summary>
+??? tip "📦 Method 3: Pre-organized Storage"
+    - Use item frames or labeled chests to organize themed sets
+    - Create "stations" with specific themes for activities
+    - Example: Math station has blue outline blocks, Reading station has yellow outline blocks
 
-1. Open Creative inventory
-2. Search for theme name ("rainbow", "blue outline", etc.)
-3. Browse all characters in that theme
-
-**Theme search terms:**
-- "rainbow" → All rainbow-themed blocks
-- "blue outline" → All blue outline blocks
-- "dark oak" → All dark oak themed blocks
-
-</details>
-
-<details>
-<summary><strong>📦 Method 3: Pre-organized Storage</strong></summary>
-
-- Use item frames or labeled chests to organize themed sets
-- Create "stations" with specific themes for activities
-- Example: Math station has blue outline blocks, Reading station has yellow outline blocks
-
-![Organized storage example](images/letter-blocks-storage.png)
-
-</details>
+    ![Organized storage example](images/letter-blocks-storage.png)
 
 ---
 
 ## 🧪 Classroom Activity Ideas
 
-<details>
-<summary><strong>📖 Language Arts Activities</strong></summary>
+??? example "📖 Language Arts Activities"
+    ### Color-Coded Grammar
+    - Use different background themes for different parts of speech
+    - Blue = Nouns, Red = Verbs, Green = Adjectives, Yellow = Adverbs
+    - Students build color-coded sentences
 
-### Color-Coded Grammar
-- Use different background themes for different parts of speech
-- Blue = Nouns, Red = Verbs, Green = Adjectives, Yellow = Adverbs
-- Students build color-coded sentences
+    ### Multilingual Word Walls
+    - Display vocabulary in multiple languages side-by-side
+    - Use accented characters for authentic spelling
+    - Example: "HELLO" (English) | "HOLA" (Spanish) | "BONJOUR" (French)
 
-### Multilingual Word Walls
-- Display vocabulary in multiple languages side-by-side
-- Use accented characters for authentic spelling
-- Example: "HELLO" (English) | "HOLA" (Spanish) | "BONJOUR" (French)
+    ### Spelling & Phonics
+    - Color-code vowels vs. consonants using two themes
+    - Use rainbow blocks for "word of the day"
+    - Create themed sections for different phonetic patterns
 
-### Spelling & Phonics
-- Color-code vowels vs. consonants using two themes
-- Use rainbow blocks for "word of the day"
-- Create themed sections for different phonetic patterns
+??? example "🧮 Mathematics Activities"
+    ### Operation Stations
+    - Red theme = Addition problems
+    - Blue theme = Subtraction problems
+    - Green theme = Multiplication problems
+    - Yellow theme = Division problems
 
-</details>
+    ### Advanced Math Symbols
+    - Build equations with Greek letters (π, Σ, Δ)
+    - Use proper math operators (√, ≤, ≥, ≠)
+    - Create visual representations of formulas
 
-<details>
-<summary><strong>🧮 Mathematics Activities</strong></summary>
+    ### Fraction & Decimal Work
+    - Use specialized fraction symbols
+    - Build decimal representations
+    - Create number line displays
 
-### Operation Stations
-- Red theme = Addition problems
-- Blue theme = Subtraction problems
-- Green theme = Multiplication problems
-- Yellow theme = Division problems
+??? example "👥 Team Activities"
+    ### Team Color Assignment
+    - Each team gets a specific background theme
+    - Teams build with "their color" blocks
+    - Easy visual identification of team work
 
-### Advanced Math Symbols
-- Build equations with Greek letters (π, Σ, Δ)
-- Use proper math operators (√, ≤, ≥, ≠)
-- Create visual representations of formulas
+    ### Collaborative Building
+    - Different themes for different clauses in complex sentences
+    - Color-coded story building (intro, middle, conclusion)
+    - Visual organization of group projects
 
-### Fraction & Decimal Work
-- Use specialized fraction symbols
-- Build decimal representations
-- Create number line displays
+??? example "✅ Assessment Activities"
+    ### Correct/Incorrect Indicators
+    - Green blocks with ✓ for correct answers
+    - Red blocks with ✗ for incorrect answers
+    - Students place blocks to answer questions
 
-</details>
+    ### Self-Check Stations
+    - Build problems with one theme
+    - Students build answers with another theme
+    - Answer key uses checkmark blocks
 
-<details>
-<summary><strong>👥 Team Activities</strong></summary>
-
-### Team Color Assignment
-- Each team gets a specific background theme
-- Teams build with "their color" blocks
-- Easy visual identification of team work
-
-### Collaborative Building
-- Different themes for different clauses in complex sentences
-- Color-coded story building (intro, middle, conclusion)
-- Visual organization of group projects
-
-</details>
-
-<details>
-<summary><strong>✅ Assessment Activities</strong></summary>
-
-### Correct/Incorrect Indicators
-- Green blocks with ✓ for correct answers
-- Red blocks with ✗ for incorrect answers
-- Students place blocks to answer questions
-
-### Self-Check Stations
-- Build problems with one theme
-- Students build answers with another theme
-- Answer key uses checkmark blocks
-
-![Assessment activity example](images/assessment-blocks.png)
-
-</details>
+    ![Assessment activity example](images/assessment-blocks.png)
 
 ---
 
 ## ⚙️ Best Practices & Tips
 
-<details>
-<summary><strong>🎨 Visual Design Tips</strong></summary>
+??? tip "🎨 Visual Design Tips"
+    ### Contrast for Readability
+    - Test visibility under different Minecraft lighting (day, night, torches)
+    - Dark Oak theme works best with light-colored text
+    - Light themes (Pale Oak, Light Blue Concrete) work with darker text
 
-### Contrast for Readability
-- Test visibility under different Minecraft lighting (day, night, torches)
-- Dark Oak theme works best with light-colored text
-- Light themes (Pale Oak, Light Blue Concrete) work with darker text
+    ### Avoid Visual Overload
+    - Don't use too many themes in one small area
+    - Stick to 2-3 themes per activity for clarity
+    - Use Blank theme as a neutral "separator"
 
-### Avoid Visual Overload
-- Don't use too many themes in one small area
-- Stick to 2-3 themes per activity for clarity
-- Use Blank theme as a neutral "separator"
+    ### Accessibility Considerations
+    - High-contrast themes (Green, Blue, Yellow outlines) are better for dyslexia-friendly layouts
+    - Avoid red/green combinations for colorblind students
+    - Test displays from student viewing distance
 
-### Accessibility Considerations
-- High-contrast themes (Green, Blue, Yellow outlines) are better for dyslexia-friendly layouts
-- Avoid red/green combinations for colorblind students
-- Test displays from student viewing distance
+??? tip "⚡ Performance Tips"
+    ### Large Displays
+    - Hundreds of letter blocks in one area can affect lower-end devices
+    - Segment very large word walls into sections
+    - Use Blank theme for less visual processing load
 
-</details>
+    ### Backup Important Work
+    - Large instructional boards are valuable
+    - Export world copies regularly
+    - Take screenshots of completed displays
 
-<details>
-<summary><strong>⚡ Performance Tips</strong></summary>
+??? tip "📦 Organization Tips"
+    ### Storage Systems
+    - Create themed chests for each background style
+    - Label with item frames showing example blocks
+    - Pre-stage blocks for specific activities
 
-### Large Displays
-- Hundreds of letter blocks in one area can affect lower-end devices
-- Segment very large word walls into sections
-- Use Blank theme for less visual processing load
-
-### Backup Important Work
-- Large instructional boards are valuable
-- Export world copies regularly
-- Take screenshots of completed displays
-
-</details>
-
-<details>
-<summary><strong>📦 Organization Tips</strong></summary>
-
-### Storage Systems
-- Create themed chests for each background style
-- Label with item frames showing example blocks
-- Pre-stage blocks for specific activities
-
-### Activity Preparation
-- Set up themed block "kits" in advance
-- Use [Inventory Management](Student-Management-Tools.md#-inventory-management) to distribute to students
-- Keep frequently-used characters easily accessible
-
-</details>
+    ### Activity Preparation
+    - Set up themed block "kits" in advance
+    - Use [Inventory Management](Student-Management-Tools.md#-inventory-management) to distribute to students
+    - Keep frequently-used characters easily accessible
 
 ---
 
@@ -407,30 +341,22 @@ If double-clicking doesn't work, you can manually import:
     The extension adds to the Letter Blocks library - it doesn't replace anything. All your existing blocks continue to work perfectly.
 
 
-<details>
-<summary><strong>🎨 Custom Letter Blocks</strong></summary>
+??? info "🎨 Custom Letter Blocks"
+    The extension works seamlessly with custom letter blocks you create yourself.
 
-The extension works seamlessly with custom letter blocks you create yourself.
+    **Best practice:**
+    - Use unique prefixes for custom sets (e.g., `custom_` vs. extension's internal IDs)
+    - Keep background styles consistent within a learning activity
+    - See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for creating custom blocks
 
-**Best practice:**
-- Use unique prefixes for custom sets (e.g., `custom_` vs. extension's internal IDs)
-- Keep background styles consistent within a learning activity
-- See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for creating custom blocks
+??? info "🔤 Core Letter Blocks"
+    All core Letter Blocks continue to work normally. The extension **adds to** the library, it doesn't replace anything.
 
-</details>
-
-<details>
-<summary><strong>🔤 Core Letter Blocks</strong></summary>
-
-All core Letter Blocks continue to work normally. The extension **adds to** the library, it doesn't replace anything.
-
-**You'll have:**
-- ✅ All original letter blocks from the core pack
-- ✅ All new letter blocks from the extension
-- ✅ All custom letter blocks you create
-- ✅ Everything works together without conflicts
-
-</details>
+    **You'll have:**
+    - ✅ All original letter blocks from the core pack
+    - ✅ All new letter blocks from the extension
+    - ✅ All custom letter blocks you create
+    - ✅ Everything works together without conflicts
 
 ---
 
@@ -453,97 +379,69 @@ All core Letter Blocks continue to work normally. The extension **adds to** the 
 
 ## 🎓 Teaching Scenarios
 
-<details>
-<summary><strong>🌍 Scenario 1: Multilingual Elementary Class</strong></summary>
+??? example "🌍 Scenario 1: Multilingual Elementary Class"
+    **Goal:** Build vocabulary walls in English, Spanish, and French
 
-**Goal:** Build vocabulary walls in English, Spanish, and French
+    **Approach:**
+    - Use Blue Outline for English words
+    - Use Red Outline for Spanish words
+    - Use Yellow Outline for French words
+    - Utilize accented characters (á, é, ñ, ç, etc.)
 
-**Approach:**
-- Use Blue Outline for English words
-- Use Red Outline for Spanish words
-- Use Yellow Outline for French words
-- Utilize accented characters (á, é, ñ, ç, etc.)
+    **Result:** Clear visual distinction between languages, authentic spelling
 
-**Result:** Clear visual distinction between languages, authentic spelling
+??? example "🧮 Scenario 2: Advanced Math Class"
+    **Goal:** Teach algebraic formulas with proper mathematical notation
 
-</details>
+    **Approach:**
+    - Use Greek letters (π, Σ, Δ) for variables
+    - Build equations with proper operators (≤, ≥, ≠, √)
+    - Use Green Outline for formulas, Blue for student work
 
-<details>
-<summary><strong>🧮 Scenario 2: Advanced Math Class</strong></summary>
+    **Result:** Professional-looking math displays, proper mathematical communication
 
-**Goal:** Teach algebraic formulas with proper mathematical notation
+??? example "📝 Scenario 3: Grammar Lesson"
+    **Goal:** Teach sentence structure with parts of speech
 
-**Approach:**
-- Use Greek letters (π, Σ, Δ) for variables
-- Build equations with proper operators (≤, ≥, ≠, √)
-- Use Green Outline for formulas, Blue for student work
+    **Approach:**
+    - Blue Outline = Nouns
+    - Red Outline = Verbs
+    - Green Outline = Adjectives
+    - Yellow Outline = Adverbs
 
-**Result:** Professional-looking math displays, proper mathematical communication
-
-</details>
-
-<details>
-<summary><strong>📝 Scenario 3: Grammar Lesson</strong></summary>
-
-**Goal:** Teach sentence structure with parts of speech
-
-**Approach:**
-- Blue Outline = Nouns
-- Red Outline = Verbs
-- Green Outline = Adjectives
-- Yellow Outline = Adverbs
-
-**Result:** Visual, color-coded sentence analysis students can build and manipulate
-
-</details>
+    **Result:** Visual, color-coded sentence analysis students can build and manipulate
 
 ---
 
 ## Troubleshooting
 
-<details>
-<summary><strong>❌ Extension blocks don't appear</strong></summary>
+??? failure "❌ Extension blocks don't appear"
+    **Solutions:**
+    - Verify **core Educator Tools** is activated first
+    - Check **both** Behavior Packs and Resource Packs are activated
+    - Leave and rejoin the world
+    - Search specifically for theme names in Creative inventory
 
-**Solutions:**
-- Verify **core Educator Tools** is activated first
-- Check **both** Behavior Packs and Resource Packs are activated
-- Leave and rejoin the world
-- Search specifically for theme names in Creative inventory
+??? failure "🔍 Can't find a specific character"
+    **Solutions:**
+    - Search by character name ("euro", "pi", "checkmark")
+    - Try alternative search terms
+    - Check if the character is in the core pack vs. extension
+    - Browse by theme to see all available characters
 
-</details>
+??? failure "🎨 Themes look wrong or corrupted"
+    **Solutions:**
+    - Ensure Resource Pack is activated (not just Behavior Pack)
+    - Restart Minecraft Education
+    - Re-import the extension
+    - Check Minecraft Education version compatibility
 
-<details>
-<summary><strong>🔍 Can't find a specific character</strong></summary>
-
-**Solutions:**
-- Search by character name ("euro", "pi", "checkmark")
-- Try alternative search terms
-- Check if the character is in the core pack vs. extension
-- Browse by theme to see all available characters
-
-</details>
-
-<details>
-<summary><strong>🎨 Themes look wrong or corrupted</strong></summary>
-
-**Solutions:**
-- Ensure Resource Pack is activated (not just Behavior Pack)
-- Restart Minecraft Education
-- Re-import the extension
-- Check Minecraft Education version compatibility
-
-</details>
-
-<details>
-<summary><strong>⚡ Performance issues with large displays</strong></summary>
-
-**Solutions:**
-- Reduce render distance in settings
-- Segment large word walls into smaller sections
-- Use simpler themes (Blank) for background areas
-- Close other applications
-
-</details>
+??? failure "⚡ Performance issues with large displays"
+    **Solutions:**
+    - Reduce render distance in settings
+    - Segment large word walls into smaller sections
+    - Use simpler themes (Blank) for background areas
+    - Close other applications
 
 ---
 

@@ -367,18 +367,14 @@ Provides special building blocks that display letters, numbers, and symbols. Stu
 
 ### What's included
 
-<details>
-<summary><strong>📦 Click to see all available characters</strong></summary>
+??? note "📦 Click to see all available characters"
+    - **Letters:** Uppercase (A-Z) and lowercase (a-z)
+    - **Numbers:** 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    - **Math symbols:** + (plus), - (minus), × (multiply), ÷ (divide), = (equals), ( (open parenthesis), ) (close parenthesis), [ (open bracket), ] (close bracket), { (open brace), } (close brace)
+    - **Punctuation:** . (period), , (comma), ? (question mark), ! (exclamation point)
+    - **Special characters:** ✓ (checkmark), ✗ (cross), → ↑ ↓ ← (arrows), $ € (currency)
 
-- **Letters:** Uppercase (A-Z) and lowercase (a-z)
-- **Numbers:** 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-- **Math symbols:** + (plus), - (minus), × (multiply), ÷ (divide), = (equals), ( (open parenthesis), ) (close parenthesis), [ (open bracket), ] (close bracket), { (open brace), } (close brace)
-- **Punctuation:** . (period), , (comma), ? (question mark), ! (exclamation point)
-- **Special characters:** ✓ (checkmark), ✗ (cross), → ↑ ↓ ← (arrows), $ € (currency)
-
-**Total:** Hundreds of blocks covering almost any character you might need!
-
-</details>
+    **Total:** Hundreds of blocks covering almost any character you might need!
 
 ![Collection of available letter blocks](images/letter-blocks-collection.png)
 
@@ -430,41 +426,29 @@ To spell a word like "HELLO":
 
 ### Classroom Activity Ideas
 
-<details>
-<summary><strong>📚 Language Arts Activities</strong></summary>
+??? tip "📚 Language Arts Activities"
+    - Spell vocabulary words
+    - Build sentences
+    - Create story titles
+    - Label parts of speech
+    - Build word walls
+    - Practice spelling with peer review
 
-- Spell vocabulary words
-- Build sentences
-- Create story titles
-- Label parts of speech
-- Build word walls
-- Practice spelling with peer review
+??? tip "🔢 Math Activities"
+    - Create number lines
+    - Build equations (2 + 3 = 5)
+    - Display multiplication tables
+    - Show fractions and decimals
+    - Label geometric shapes
+    - Build giant calculators
 
-</details>
-
-<details>
-<summary><strong>🔢 Math Activities</strong></summary>
-
-- Create number lines
-- Build equations (2 + 3 = 5)
-- Display multiplication tables
-- Show fractions and decimals
-- Label geometric shapes
-- Build giant calculators
-
-</details>
-
-<details>
-<summary><strong>🎓 General Education</strong></summary>
-
-- Create signs and labels
-- Build alphabets
-- Make classroom rules
-- Display learning objectives
-- Create collaborative word art
-- Design welcome messages
-
-</details>
+??? tip "🎓 General Education"
+    - Create signs and labels
+    - Build alphabets
+    - Make classroom rules
+    - Display learning objectives
+    - Create collaborative word art
+    - Design welcome messages
 
 !!! tip
     **Want more characters?** Check out **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** for hundreds of additional characters and 9 themed backgrounds!

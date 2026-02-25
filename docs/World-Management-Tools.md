@@ -154,49 +154,41 @@ The fastest way to get perfect lighting for classroom use.
 
 ### 💡 Time & Weather Tips
 
-<details>
-<summary><strong>Best Practices for Classroom Use</strong></summary>
+??? tip "Best Practices for Classroom Use"
+    **For Most Activities:**
+    - Use **Always Day** for consistent, bright lighting with one click
+    - Turn weather cycle **OFF** to prevent random rain interruptions
+    - Use **Clear** weather for focused work time
 
-**For Most Activities:**
-- Use **Always Day** for consistent, bright lighting with one click
-- Turn weather cycle **OFF** to prevent random rain interruptions
-- Use **Clear** weather for focused work time
+    **For Screenshots & Videos:**
+    - Use **Noon** time to eliminate shadows
+    - Lock both cycles **OFF** for consistent lighting
 
-**For Screenshots & Videos:**
-- Use **Noon** time to eliminate shadows
-- Lock both cycles **OFF** for consistent lighting
+    **For Educational Lessons:**
+    - **Real Time** mode for teaching day/night cycles and time zones
+    - Manually change weather to demonstrate different weather types
+    - Use **Sunset** or **Night** for creative writing atmosphere
 
-**For Educational Lessons:**
-- **Real Time** mode for teaching day/night cycles and time zones
-- Manually change weather to demonstrate different weather types
-- Use **Sunset** or **Night** for creative writing atmosphere
+??? example "Example Time & Weather Configurations"
+    **📚 Science Class - Time Zones:**
+    - Time: **Real Time**
+    - Daytime Cycle: **ON**
+    - Weather: **Clear**
+    - Weather Cycle: **OFF**
 
-</details>
+    **🏗️ Building Competition:**
+    - Quick Option: **Always Day** (handles everything)
+    - Or manually: **Noon**, cycles **OFF**, **Clear** weather
 
-<details>
-<summary><strong>Example Time & Weather Configurations</strong></summary>
+    **✍️ Creative Writing Activity:**
+    - Time: **Sunset** or **Night**
+    - Daytime Cycle: **OFF** (lock the mood)
+    - Weather: **Rain** or **Clear** (depends on story theme)
 
-**📚 Science Class - Time Zones:**
-- Time: **Real Time**
-- Daytime Cycle: **ON**
-- Weather: **Clear**
-- Weather Cycle: **OFF**
-
-**🏗️ Building Competition:**
-- Quick Option: **Always Day** (handles everything)
-- Or manually: **Noon**, cycles **OFF**, **Clear** weather
-
-**✍️ Creative Writing Activity:**
-- Time: **Sunset** or **Night**
-- Daytime Cycle: **OFF** (lock the mood)
-- Weather: **Rain** or **Clear** (depends on story theme)
-
-**🌦️ Weather Lesson:**
-- Manually change between **Clear**, **Rain**, and **Thunder**
-- Weather Cycle: **OFF** (you control changes)
-- Time: **Day** or **Noon** for visibility
-
-</details>
+    **🌦️ Weather Lesson:**
+    - Manually change between **Clear**, **Rain**, and **Thunder**
+    - Weather Cycle: **OFF** (you control changes)
+    - Time: **Day** or **Noon** for visibility
 
 ![Environment controls demonstration](gifs/environment-demo.gif)
 
@@ -349,71 +341,57 @@ Controls whether environmental damage occurs (fire, lava, falling, drowning, etc
 
 ### Difficulty Modes
 
+#### Difficulty Modes
+
 #### 🎮 Game Difficulty
 
 Sets the overall game difficulty level, affecting mob strength, damage, and hunger.
 
-<details>
-<summary><strong>🕊️ Peaceful Difficulty</strong></summary>
+??? info "🕊️ Peaceful Difficulty"
+    **Effects:**
+    - ✅ No hostile monsters spawn
+    - ✅ Health regenerates automatically
+    - ✅ No hunger depletion
+    - ✅ Existing hostile mobs are removed
 
-**Effects:**
-- ✅ No hostile monsters spawn
-- ✅ Health regenerates automatically
-- ✅ No hunger depletion
-- ✅ Existing hostile mobs are removed
+    **Best for:**
+    - Most building and creative activities
+    - Young students or beginners
+    - Activities where combat is unwanted
 
-**Best for:**
-- Most building and creative activities
-- Young students or beginners
-- Activities where combat is unwanted
+??? info "🟢 Easy Difficulty"
+    **Effects:**
+    - ⚔️ Monsters spawn but deal less damage
+    - 🍖 Hunger depletes slowly
+    - ❤️ Starvation reduces health to 5 hearts (won't kill you)
 
-</details>
+    **Best for:**
+    - Gentle introduction to survival mechanics
+    - Activities with light survival elements
+    - Students new to Minecraft combat
 
-<details>
-<summary><strong>🟢 Easy Difficulty</strong></summary>
+??? info "🟡 Normal Difficulty"
+    **Effects:**
+    - ⚔️ Standard monster damage
+    - 🍖 Normal hunger depletion rate
+    - ❤️ Starvation reduces health to 0.5 hearts (almost kills you)
 
-**Effects:**
-- ⚔️ Monsters spawn but deal less damage
-- 🍖 Hunger depletes slowly
-- ❤️ Starvation reduces health to 5 hearts (won't kill you)
+    **Best for:**
+    - Standard survival activities
+    - Balanced challenge level
+    - Students familiar with Minecraft
 
-**Best for:**
-- Gentle introduction to survival mechanics
-- Activities with light survival elements
-- Students new to Minecraft combat
+??? info "🔴 Hard Difficulty"
+    **Effects:**
+    - ⚔️ Monsters deal maximum damage
+    - 🍖 Hunger depletes faster
+    - ❤️ Starvation can kill you
+    - 🧟 Zombies can break doors
 
-</details>
-
-<details>
-<summary><strong>🟡 Normal Difficulty</strong></summary>
-
-**Effects:**
-- ⚔️ Standard monster damage
-- 🍖 Normal hunger depletion rate
-- ❤️ Starvation reduces health to 0.5 hearts (almost kills you)
-
-**Best for:**
-- Standard survival activities
-- Balanced challenge level
-- Students familiar with Minecraft
-
-</details>
-
-<details>
-<summary><strong>🔴 Hard Difficulty</strong></summary>
-
-**Effects:**
-- ⚔️ Monsters deal maximum damage
-- 🍖 Hunger depletes faster
-- ❤️ Starvation can kill you
-- 🧟 Zombies can break doors
-
-**Best for:**
-- Advanced survival challenges
-- Experienced players
-- Activities requiring high difficulty
-
-</details>
+    **Best for:**
+    - Advanced survival challenges
+    - Experienced players
+    - Activities requiring high difficulty
 
 !!! tip
     For most classroom building activities, use **Peaceful** difficulty or turn **Mob Spawning OFF** with **Keep Inventory ON**. This creates a safe, frustration-free environment.
@@ -462,162 +440,118 @@ When you enable an item restriction, the system automatically:
 
 #### Available Item Restrictions
 
-<details>
-<summary><strong>🔮 Ender Pearls</strong></summary>
+??? info "🔮 Ender Pearls"
+    **What they do:** Teleport players when thrown
 
-**What they do:** Teleport players when thrown
+    **Why restrict:** Students can escape locked areas or bypass boundaries
 
-**Why restrict:** Students can escape locked areas or bypass boundaries
+    **When to restrict:**
+    - Activities with movement limits
+    - Guided lessons with boundaries
+    - When using [Lock Players](Classroom-Control-Tools.md#-lock-players)
 
-**When to restrict:**
-- Activities with movement limits
-- Guided lessons with boundaries
-- When using [Lock Players](Classroom-Control-Tools.md#-lock-players)
+??? info "🥚 Eggs"
+    **What they do:** Can be thrown, sometimes spawn chickens
 
-</details>
+    **Why restrict:** Used to spam or distract other students
 
-<details>
-<summary><strong>🥚 Eggs</strong></summary>
+    **When to restrict:**
+    - Focused activities
+    - Preventing griefing behavior
+    - When animal spawning is unwanted
 
-**What they do:** Can be thrown, sometimes spawn chickens
+??? info "❄️ Snowballs"
+    **What they do:** Throwable projectiles that can knock back players and mobs
 
-**Why restrict:** Used to spam or distract other students
+    **Why restrict:** Used to spam, distract, or annoy other students
 
-**When to restrict:**
-- Focused activities
-- Preventing griefing behavior
-- When animal spawning is unwanted
+    **When to restrict:**
+    - Focused activities
+    - Preventing disruptive behavior
+    - Building projects where interruptions are unwanted
+    - When combat or projectiles aren't part of the lesson
 
-</details>
+??? info "🏹 Arrows"
+    **What they do:** Projectiles fired from bows, can damage players/mobs
 
-<details>
-<summary><strong>❄️ Snowballs</strong></summary>
+    **Why restrict:** Prevent students from shooting each other or mobs
 
-**What they do:** Throwable projectiles that can knock back players and mobs
+    **When to restrict:**
+    - Building activities
+    - Non-combat lessons
+    - Peaceful classroom environments
 
-**Why restrict:** Used to spam, distract, or annoy other students
+    !!! tip
+        Restrict arrows during building projects to prevent students from distracting or harming each other.
 
-**When to restrict:**
-- Focused activities
-- Preventing disruptive behavior
-- Building projects where interruptions are unwanted
-- When combat or projectiles aren't part of the lesson
+??? warning "🪣 Buckets"
+    **What they do:** Collect and place water, lava, and various fish/creature types
 
-</details>
+    **Why restrict:** Can flood builds with water, create dangerous lava, or be used to grief
 
-<details>
-<summary><strong>🏹 Arrows</strong></summary>
+    **When to restrict:**
+    - Building competitions where water/lava placement is problematic
+    - Preventing students from flooding areas or creating lava hazards
+    - Activities where liquid placement could disrupt the lesson
+    - When you want controlled use of water/lava mechanics
 
-**What they do:** Projectiles fired from bows, can damage players/mobs
+    !!! note
+        This includes: empty buckets, water, lava, cod, salmon, pufferfish, tropical fish, axolotl, and tadpole buckets. Milk and powder snow buckets are intentionally not restricted.
 
-**Why restrict:** Prevent students from shooting each other or mobs
+    !!! warning
+        Lava buckets are particularly dangerous as they can quickly destroy builds and harm players. Consider restricting buckets during most building activities.
 
-**When to restrict:**
-- Building activities
-- Non-combat lessons
-- Peaceful classroom environments
+??? info "🫀🪽 Elytra"
+    **What they do:** Wings that allow gliding through the air
 
-!!! tip
-    Restrict arrows during building projects to prevent students from distracting or harming each other.
+    **Why restrict:** Students can fly away from activity areas
 
+    **When to restrict:**
+    - Movement-restricted activities
+    - When flying creates unfair advantages
+    - Ground-based building projects
 
-</details>
+??? info "🎆 Fireworks"
+    **What they do:** Decorative explosions, boost Elytra flight
 
-<details>
-<summary><strong>� Buckets</strong></summary>
+    **Why restrict:** Visual distraction, allows escaping with Elytra
 
-**What they do:** Collect and place water, lava, and various fish/creature types
+    **When to restrict:**
+    - Focused work time
+    - When visual distractions are problematic
+    - If Elytra are also restricted
 
-**Why restrict:** Can flood builds with water, create dangerous lava, or be used to grief
+??? danger "💣 TNT"
+    **What they do:** Explosive blocks that destroy terrain and builds
 
-**When to restrict:**
-- Building competitions where water/lava placement is problematic
-- Preventing students from flooding areas or creating lava hazards
-- Activities where liquid placement could disrupt the lesson
-- When you want controlled use of water/lava mechanics
+    **Why restrict:** Can grief other students' work, destructive
 
-!!! note
-    This includes: empty buckets, water, lava, cod, salmon, pufferfish, tropical fish, axolotl, and tadpole buckets. Milk and powder snow buckets are intentionally not restricted.
+    **When to restrict:**
+    - Building projects
+    - Any time explosions aren't part of the lesson
+    - Preventing griefing
 
+    !!! warning
+        TNT is highly destructive and can destroy student builds instantly. This is one of the most commonly restricted items in classrooms.
 
-!!! warning
-    Lava buckets are particularly dangerous as they can quickly destroy builds and harm players. Consider restricting buckets during most building activities.
+??? warning "🥚 Dragon Egg"
+    **What they do:** Rare decorative block from defeating Ender Dragon
 
+    **Why restrict:** Teleports randomly when clicked, causing chaos
 
-</details>
+    **When to restrict:**
+    - Most activities (rarely relevant to lessons)
+    - When unpredictable block behavior is problematic
 
-<details>
-<summary><strong>�🪽 Elytra</strong></summary>
+??? warning "🧪 Potions"
+    **What they do:** Give effects like invisibility, speed, strength
 
-**What they do:** Wings that allow gliding through the air
+    **Why restrict:** Effects can be disruptive or create unfair advantages
 
-**Why restrict:** Students can fly away from activity areas
-
-**When to restrict:**
-- Movement-restricted activities
-- When flying creates unfair advantages
-- Ground-based building projects
-
-</details>
-
-<details>
-<summary><strong>🎆 Fireworks</strong></summary>
-
-**What they do:** Decorative explosions, boost Elytra flight
-
-**Why restrict:** Visual distraction, allows escaping with Elytra
-
-**When to restrict:**
-- Focused work time
-- When visual distractions are problematic
-- If Elytra are also restricted
-
-</details>
-
-<details>
-<summary><strong>💣 TNT</strong></summary>
-
-**What they do:** Explosive blocks that destroy terrain and builds
-
-**Why restrict:** Can grief other students' work, destructive
-
-**When to restrict:**
-- Building projects
-- Any time explosions aren't part of the lesson
-- Preventing griefing
-
-!!! warning
-    TNT is highly destructive and can destroy student builds instantly. This is one of the most commonly restricted items in classrooms.
-
-
-</details>
-
-<details>
-<summary><strong>🥚 Dragon Egg</strong></summary>
-
-**What they do:** Rare decorative block from defeating Ender Dragon
-
-**Why restrict:** Teleports randomly when clicked, causing chaos
-
-**When to restrict:**
-- Most activities (rarely relevant to lessons)
-- When unpredictable block behavior is problematic
-
-</details>
-
-<details>
-<summary><strong>🧪 Potions</strong></summary>
-
-**What they do:** Give effects like invisibility, speed, strength
-
-**Why restrict:** Effects can be disruptive or create unfair advantages
-
-**When to restrict:**
-- Competitive activities requiring fairness
-- When invisibility allows avoiding participation
-- Building activities where effects are distracting
-
-</details>
+    **When to restrict:**
+    - Competitive activities requiring fairness
+    - When invisibility allows avoiding participation
+    - Building activities where effects are distracting
 
 ![Item restrictions panel](images/item-restrictions.png)
 
@@ -630,96 +564,68 @@ When you enable an entity restriction, the system automatically:
 
 #### Available Entity Restrictions
 
-<details>
-<summary><strong>💀 Wither</strong></summary>
+??? danger "💀 Wither"
+    **What it is:** Powerful hostile boss that destroys blocks with explosive projectiles
 
-**What it is:** Powerful hostile boss that destroys blocks with explosive projectiles
+    **Why restrict:** Extremely destructive, can ruin entire builds and landscapes
 
-**Why restrict:** Extremely destructive, can ruin entire builds and landscapes
+    **When to restrict:** Almost always (rarely appropriate for classroom)
 
-**When to restrict:** Almost always (rarely appropriate for classroom)
+    !!! warning
+        The Wither is one of the most destructive entities in Minecraft. It can destroy large areas quickly and is very difficult to contain. Keep this restricted unless specifically teaching about boss fights.
 
-!!! warning
-    The Wither is one of the most destructive entities in Minecraft. It can destroy large areas quickly and is very difficult to contain. Keep this restricted unless specifically teaching about boss fights.
+??? danger "🐉 Ender Dragon"
+    **What it is:** Final boss of Minecraft, flies through blocks
 
+    **Why restrict:** Destructive, chaotic, difficult to control
 
-</details>
+    **When to restrict:** Almost always (unless specifically teaching about it)
 
-<details>
-<summary><strong>🐉 Ender Dragon</strong></summary>
+    !!! warning
+        The Ender Dragon destroys most blocks it flies through. It's extremely disruptive and hard to control in classroom environments.
 
-**What it is:** Final boss of Minecraft, flies through blocks
+??? danger "🌑 Warden"
+    **What it is:** Extremely powerful blind monster from deep underground
 
-**Why restrict:** Destructive, chaotic, difficult to control
+    **Why restrict:** Nearly impossible to defeat, can instakill players in full armor
 
-**When to restrict:** Almost always (unless specifically teaching about it)
+    **When to restrict:** Most activities (too dangerous for casual play)
 
-!!! warning
-    The Ender Dragon destroys most blocks it flies through. It's extremely disruptive and hard to control in classroom environments.
+    !!! danger
+        The Warden is the most powerful hostile mob in Minecraft. It can kill players in 2-3 hits even with full diamond armor. Avoid allowing this in classrooms.
 
+??? warning "🔱 Elder Guardian"
+    **What it is:** Underwater boss that applies Mining Fatigue effect
 
-</details>
+    **Why restrict:** Makes mining extremely slow and frustrating, very disruptive
 
-<details>
-<summary><strong>🌑 Warden</strong></summary>
+    **When to restrict:**
+    - Building activities
+    - Mining projects
+    - Any activity requiring block breaking
 
-**What it is:** Extremely powerful blind monster from deep underground
+    !!! info
+        Mining Fatigue makes breaking blocks take 5-10x longer. This effect can severely disrupt classroom activities.
 
-**Why restrict:** Nearly impossible to defeat, can instakill players in full armor
+??? info "🤖 Iron Golem"
+    **What it is:** Large protective creature made from iron blocks
 
-**When to restrict:** Most activities (too dangerous for casual play)
+    **Why restrict:** Can harm students, uses up iron resources
 
-!!! danger
-    The Warden is the most powerful hostile mob in Minecraft. It can kill players in 2-3 hits even with full diamond armor. Avoid allowing this in classrooms.
+    **When to restrict:**
+    - When you don't want students creating golems
+    - Limited resources activities
+    - When golem damage is problematic
 
+??? info "⛄ Snow Golem"
+    **What it is:** Friendly snow creature that throws snowballs
 
-</details>
+    **Why restrict:** Leaves snow trails everywhere, can be spammy
 
-<details>
-<summary><strong>🔱 Elder Guardian</strong></summary>
-
-**What it is:** Underwater boss that applies Mining Fatigue effect
-
-**Why restrict:** Makes mining extremely slow and frustrating, very disruptive
-
-**When to restrict:**
-- Building activities
-- Mining projects
-- Any activity requiring block breaking
-
-!!! info
-    Mining Fatigue makes breaking blocks take 5-10x longer. This effect can severely disrupt classroom activities.
-
-
-</details>
-
-<details>
-<summary><strong>🤖 Iron Golem</strong></summary>
-
-**What it is:** Large protective creature made from iron blocks
-
-**Why restrict:** Can harm students, uses up iron resources
-
-**When to restrict:**
-- When you don't want students creating golems
-- Limited resources activities
-- When golem damage is problematic
-
-</details>
-
-<details>
-<summary><strong>⛄ Snow Golem</strong></summary>
-
-**What it is:** Friendly snow creature that throws snowballs
-
-**Why restrict:** Leaves snow trails everywhere, can be spammy
-
-**When to restrict:**
-- When snow trails mess up builds
-- Indoor building projects
-- When snowball spam is annoying
-
-</details>
+    **When to restrict:**
+    - When snow trails mess up builds
+    - Indoor building projects
+    - When snowball spam is annoying
 
 ![Entity restrictions panel](images/entity-restrictions.png)
 
@@ -754,55 +660,47 @@ When you enable an entity restriction, the system automatically:
 
 ### 💡 Classroom Limitations Tips
 
-<details>
-<summary><strong>Key Features</strong></summary>
+??? tip "Key Features"
+    **Automatic Enforcement:**
+    - Restricted items are removed from student inventories immediately
+    - Students see a chat message when attempting to use restricted items
+    - Changes apply instantly - no restart needed
 
-**Automatic Enforcement:**
-- Restricted items are removed from student inventories immediately
-- Students see a chat message when attempting to use restricted items
-- Changes apply instantly - no restart needed
+    **Teacher Exemption:**
+    - You can always use any restricted item
+    - You can always spawn any restricted entity
+    - Restrictions only affect students
 
-**Teacher Exemption:**
-- You can always use any restricted item
-- You can always spawn any restricted entity
-- Restrictions only affect students
+    **Flexible Control:**
+    - Toggle restrictions on/off freely throughout class
+    - Adjust for different activities
+    - Combine with [World Settings](#️-world-settings) for complete environment control
 
-**Flexible Control:**
-- Toggle restrictions on/off freely throughout class
-- Adjust for different activities
-- Combine with [World Settings](#️-world-settings) for complete environment control
+??? example "Example Classroom Configurations"
+    **🏗️ Pure Building Activity:**
+    - **Restrict:** TNT, Ender Pearls, Arrows, Wither, Ender Dragon
+    - **Allow:** Everything else
+    - **World Settings:** Mob Spawning OFF, Keep Inventory ON, Peaceful Difficulty
 
-</details>
+    **🌍 Peaceful Exploration:**
+    - **Restrict:** TNT, Wither, Ender Dragon, Warden
+    - **Allow:** Most tools and items
+    - **World Settings:** Difficulty Peaceful, Mob Spawning OFF
 
-<details>
-<summary><strong>Example Classroom Configurations</strong></summary>
+    **⚔️ Controlled Survival Challenge:**
+    - **Restrict:** Ender Pearls, TNT, Wither, Ender Dragon
+    - **Allow:** Combat items (arrows, potions)
+    - **World Settings:** Mob Spawning ON, Difficulty Easy, Keep Inventory ON
 
-**🏗️ Pure Building Activity:**
-- **Restrict:** TNT, Ender Pearls, Arrows, Wither, Ender Dragon
-- **Allow:** Everything else
-- **World Settings:** Mob Spawning OFF, Keep Inventory ON, Peaceful Difficulty
+    **📚 Guided Tour/Presentation:**
+    - **Restrict:** TNT, Ender Pearls, Arrows, Eggs, Elytra
+    - **Allow:** Basic items only
+    - **World Settings:** Always Day, Mob Spawning OFF, use [Lock Players](Classroom-Control-Tools.md#-lock-players)
 
-**🌍 Peaceful Exploration:**
-- **Restrict:** TNT, Wither, Ender Dragon, Warden
-- **Allow:** Most tools and items
-- **World Settings:** Difficulty Peaceful, Mob Spawning OFF
-
-**⚔️ Controlled Survival Challenge:**
-- **Restrict:** Ender Pearls, TNT, Wither, Ender Dragon
-- **Allow:** Combat items (arrows, potions)
-- **World Settings:** Mob Spawning ON, Difficulty Easy, Keep Inventory ON
-
-**📚 Guided Tour/Presentation:**
-- **Restrict:** TNT, Ender Pearls, Arrows, Eggs, Elytra
-- **Allow:** Basic items only
-- **World Settings:** Always Day, Mob Spawning OFF, use [Lock Players](Classroom-Control-Tools.md#-lock-players)
-
-**🎨 Creative Showcase:**
-- **Restrict:** TNT, Wither, Ender Dragon, Warden
-- **Allow:** Decorative items (fireworks OK if supervised)
-- **World Settings:** Always Day, Weather Clear, Mob Spawning OFF
-
-</details>
+    **🎨 Creative Showcase:**
+    - **Restrict:** TNT, Wither, Ender Dragon, Warden
+    - **Allow:** Decorative items (fireworks OK if supervised)
+    - **World Settings:** Always Day, Weather Clear, Mob Spawning OFF
 
 ![Classroom limitations demonstration](gifs/limitations-demo.gif)
 

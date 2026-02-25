@@ -37,16 +37,12 @@ Instantly moves students to any location without them having to walk or fly ther
 
 ### When to use it
 
-<details>
-<summary><strong>Common Use Cases</strong> (click to expand)</summary>
-
-- **📍 Gathering the class:** Bring everyone together at the start of an activity
-- **🔍 Student is lost:** Teleport them back to the main area
-- **🚶 Moving to new location:** Transport the whole class to a new building site
-- **🤝 Pairing students:** Teleport one student to another for partner work
-- **🆘 Rescuing students:** Someone fell into a hole or got stuck somewhere
-
-</details>
+??? tip "Common Use Cases (click to expand)"
+    - **📍 Gathering the class:** Bring everyone together at the start of an activity
+    - **🔍 Student is lost:** Teleport them back to the main area
+    - **🚶 Moving to new location:** Transport the whole class to a new building site
+    - **🤝 Pairing students:** Teleport one student to another for partner work
+    - **🆘 Rescuing students:** Someone fell into a hole or got stuck somewhere
 
 ### How to use it
 
@@ -90,15 +86,11 @@ Changes whether students are in Creative mode (unlimited resources, can fly) or 
 
 ### When to use it
 
-<details>
-<summary><strong>Gamemode Use Cases</strong> (click to expand)</summary>
-
-- **🏗️ Creative mode:** Building projects, creative activities, no resource limits needed
-- **⚔️ Survival mode:** Resource gathering challenges, adventure activities
-- **🗺️ Adventure mode:** Students can explore but can't break or place blocks (good for touring builds)
-- **👁️ Spectator mode:** Make students invisible observers who can fly through walls (good for assessment)
-
-</details>
+??? tip "Gamemode Use Cases (click to expand)"
+    - **🏗️ Creative mode:** Building projects, creative activities, no resource limits needed
+    - **⚔️ Survival mode:** Resource gathering challenges, adventure activities
+    - **🗺️ Adventure mode:** Students can explore but can't break or place blocks (good for touring builds)
+    - **👁️ Spectator mode:** Make students invisible observers who can fly through walls (good for assessment)
 
 ### How to use it
 
@@ -124,63 +116,45 @@ Changes whether students are in Creative mode (unlimited resources, can fly) or 
 
 ### Gamemode Explanations
 
-<details>
-<summary><strong>🏗️ Creative Mode</strong></summary>
+??? note "🏗️ Creative Mode"
+    **Capabilities:**
+    - ✅ Can fly (double-tap jump to start flying)
+    - ✅ Unlimited access to all blocks
+    - ✅ Can't take damage or die
+    - ✅ Can break blocks instantly
 
-**Capabilities:**
-- ✅ Can fly (double-tap jump to start flying)
-- ✅ Unlimited access to all blocks
-- ✅ Can't take damage or die
-- ✅ Can break blocks instantly
+    **Best for:** Building activities, creative projects
 
-**Best for:** Building activities, creative projects
+??? note "⚔️ Survival Mode"
+    **Capabilities:**
+    - 🚫 Can't fly (unless using Elytra)
+    - 📦 Must find or craft items
+    - ❤️ Health and hunger affect the player
+    - ⏱️ Breaking blocks takes time
 
-</details>
+    **Best for:** Resource gathering, survival challenges
 
-<details>
-<summary><strong>⚔️ Survival Mode</strong></summary>
+??? note "🗺️ Adventure Mode"
+    **Capabilities:**
+    - 🚫 Can't break or place blocks
+    - ✅ Can interact with objects (doors, buttons, chests)
+    - ⚔️ Can fight mobs and take damage
 
-**Capabilities:**
-- 🚫 Can't fly (unless using Elytra)
-- 📦 Must find or craft items
-- ❤️ Health and hunger affect the player
-- ⏱️ Breaking blocks takes time
+    **Best for:** Tours of builds, interactive stories, maps
 
-**Best for:** Resource gathering, survival challenges
+    !!! tip
+        Use Adventure mode when showing students a pre-built area you don't want modified. They can explore freely but can't accidentally break your builds.
 
-</details>
+??? note "👁️ Spectator Mode"
+    **Capabilities:**
+    - 👻 Invisible to other players
+    - 🌫️ Can fly through solid blocks
+    - 🚫 Can't interact with anything
 
-<details>
-<summary><strong>🗺️ Adventure Mode</strong></summary>
+    **Best for:** Observing student work, assessment
 
-**Capabilities:**
-- 🚫 Can't break or place blocks
-- ✅ Can interact with objects (doors, buttons, chests)
-- ⚔️ Can fight mobs and take damage
-
-**Best for:** Tours of builds, interactive stories, maps
-
-!!! tip
-    Use Adventure mode when showing students a pre-built area you don't want modified. They can explore freely but can't accidentally break your builds.
-
-
-</details>
-
-<details>
-<summary><strong>👁️ Spectator Mode</strong></summary>
-
-**Capabilities:**
-- 👻 Invisible to other players
-- 🌫️ Can fly through solid blocks
-- 🚫 Can't interact with anything
-
-**Best for:** Observing student work, assessment
-
-!!! tip
-    Spectator mode is perfect for checking on student progress without being seen. You can fly through walls to see everyone's work without disrupting them.
-
-
-</details>
+    !!! tip
+        Spectator mode is perfect for checking on student progress without being seen. You can fly through walls to see everyone's work without disrupting them.
 
 !!! note
     Most classroom building activities work best in Creative mode. Change to Survival for specific challenges or resource-gathering activities.
@@ -201,16 +175,12 @@ Organizes students into groups (teams) that you can target with other tools. Mak
 
 ### When to use it
 
-<details>
-<summary><strong>Team Organization Strategies</strong> (click to expand)</summary>
-
-- **🤝 Group projects:** Create teams for collaborative building
-- **🎨 Color-coded organization:** Assign students to colored teams for easy identification
-- **📚 Differentiated instruction:** Create teams for different skill levels or activities
-- **🪑 Class structure:** Organize by table groups or learning pods
-- **🏆 Games and competitions:** Set up teams for Minecraft-based educational games
-
-</details>
+??? note "Team Organization Strategies"
+    - **🤝 Group projects:** Create teams for collaborative building
+    - **🎨 Color-coded organization:** Assign students to colored teams for easy identification
+    - **📚 Differentiated instruction:** Create teams for different skill levels or activities
+    - **🪑 Class structure:** Organize by table groups or learning pods
+    - **🏆 Games and competitions:** Set up teams for Minecraft-based educational games
 
 ### Default Teams
 
@@ -280,22 +250,18 @@ Three teams are always available:
 - A student can be in multiple custom teams at once
 - Teams persist between sessions - you don't have to recreate them each time
 
-<details>
-<summary><strong>Example Team Structures</strong> (click to expand)</summary>
+??? note "Example Team Structures"
+    **🎨 Color teams:**
+    - Red Team, Blue Team, Green Team, Yellow Team
 
-**🎨 Color teams:**
-- Red Team, Blue Team, Green Team, Yellow Team
+    **🪑 Table groups:**
+    - Table 1, Table 2, Table 3
 
-**🪑 Table groups:**
-- Table 1, Table 2, Table 3
+    **📊 Skill levels:**
+    - Beginners, Intermediate, Advanced
 
-**📊 Skill levels:**
-- Beginners, Intermediate, Advanced
-
-**🏗️ Project groups:**
-- Architects, Landscapers, Interior Designers
-
-</details>
+    **🏗️ Project groups:**
+    - Architects, Landscapers, Interior Designers
 
 ![Creating teams demonstration](gifs/create-team-demo.gif)
 
@@ -312,16 +278,12 @@ Controls what items students have in their inventories. You can give everyone th
 
 ### When to use it
 
-<details>
-<summary><strong>Inventory Management Use Cases</strong> (click to expand)</summary>
-
-- **📦 Give materials:** Ensure everyone has the same starting materials for an activity
-- **🧹 Clear items:** Remove all items to start fresh
-- **📋 Copy inventory:** Quickly give everyone the same items as one student
-- **🚫 Remove specific items:** Take away items that are causing problems
-- **⚙️ Standardize hotbars:** Make sure everyone has tools in the same slots
-
-</details>
+??? note "Inventory Management Use Cases"
+    - **📦 Give materials:** Ensure everyone has the same starting materials for an activity
+    - **🧹 Clear items:** Remove all items to start fresh
+    - **📋 Copy inventory:** Quickly give everyone the same items as one student
+    - **🚫 Remove specific items:** Take away items that are causing problems
+    - **⚙️ Standardize hotbars:** Make sure everyone has tools in the same slots
 
 ### Available Operations
 
@@ -406,16 +368,12 @@ Removes all items from selected students. Useful for starting activities fresh.
 - Clear Inventory at the start of new activities for a fresh start
 - Copy Item is great for giving everyone the same amount of one resource
 
-<details>
-<summary><strong>Example Workflow: Setting Up Starting Materials</strong> (click to expand)</summary>
+??? note "Example Workflow: Setting Up Starting Materials"
+    1. Set up your own inventory with the perfect starting materials
+    2. Use Copy Inventory with yourself as source, All Players as target
+    3. Everyone now has the exact same items as you!
 
-1. Set up your own inventory with the perfect starting materials
-2. Use Copy Inventory with yourself as source, All Players as target
-3. Everyone now has the exact same items as you!
-
-This workflow ensures perfect consistency and saves time compared to manually distributing items.
-
-</details>
+    This workflow ensures perfect consistency and saves time compared to manually distributing items.
 
 !!! info
     **Requirements for Copy Operations:**
@@ -438,15 +396,11 @@ Controls student health and hunger levels. You can heal students, restore their 
 
 ### When to use it
 
-<details>
-<summary><strong>Health Management Use Cases</strong> (click to expand)</summary>
-
-- **🏥 Healing students:** Restore health after combat or accidents
-- **🍖 Restoring hunger:** Fill hunger bars for activities that require stamina
-- **🔄 Resetting health:** Set everyone to the same health level before challenges
-- **💀 Eliminating students:** Remove a student from the world (they respawn immediately)
-
-</details>
+??? note "Health Management Use Cases"
+    - **🏥 Healing students:** Restore health after combat or accidents
+    - **🍖 Restoring hunger:** Fill hunger bars for activities that require stamina
+    - **🔄 Resetting health:** Set everyone to the same health level before challenges
+    - **💀 Eliminating students:** Remove a student from the world (they respawn immediately)
 
 ### How to use it
 
@@ -487,30 +441,26 @@ These tools work great in combination:
     Combining tools creates powerful workflows. Here are some effective combinations:
 
 
-<details>
-<summary><strong>Tool Combination Examples</strong> (click to expand)</summary>
+??? note "Tool Combination Examples"
+    **🎯 Starting a Group Activity:**
+    1. Use **[Teams Management](#-teams-management)** to organize students into groups
+    2. Use **[Teleport](#-teleport)** to move entire teams to their work areas
+    3. Use **[Inventory Management](#-inventory-management)** to give each team their starting materials
 
-**🎯 Starting a Group Activity:**
-1. Use **[Teams Management](#-teams-management)** to organize students into groups
-2. Use **[Teleport](#-teleport)** to move entire teams to their work areas
-3. Use **[Inventory Management](#-inventory-management)** to give each team their starting materials
+    **🏗️ Building Project Setup:**
+    1. Change students to **[Creative Mode](#-gamemode)** for unlimited building
+    2. Use **[Inventory Management](#-inventory-management)** to give everyone the same tools
+    3. Use **[Teleport](#-teleport)** to move everyone to the build site
 
-**🏗️ Building Project Setup:**
-1. Change students to **[Creative Mode](#-gamemode)** for unlimited building
-2. Use **[Inventory Management](#-inventory-management)** to give everyone the same tools
-3. Use **[Teleport](#-teleport)** to move everyone to the build site
+    **⚔️ Survival Challenge Preparation:**
+    1. Change students to **[Survival Mode](#-gamemode)**
+    2. Use **[Manage Health](#️-manage-health)** to ensure everyone starts at full health
+    3. Use **[Teleport](#-teleport)** to position teams at their starting locations
 
-**⚔️ Survival Challenge Preparation:**
-1. Change students to **[Survival Mode](#-gamemode)**
-2. Use **[Manage Health](#️-manage-health)** to ensure everyone starts at full health
-3. Use **[Teleport](#-teleport)** to position teams at their starting locations
-
-**🔍 Assessment and Observation:**
-1. Change yourself to **[Spectator Mode](#-gamemode)** to observe invisibly
-2. Use **[Teleport](#-teleport)** to move between student work areas
-3. Review each student's progress without disrupting their work
-
-</details>
+    **🔍 Assessment and Observation:**
+    1. Change yourself to **[Spectator Mode](#-gamemode)** to observe invisibly
+    2. Use **[Teleport](#-teleport)** to move between student work areas
+    3. Review each student's progress without disrupting their work
 
 ---
 

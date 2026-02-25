@@ -101,33 +101,29 @@ If your problem isn't listed, create a new issue:
 - Include screenshots if possible (helps us understand the problem faster)
 - Videos are even better for complex issues
 
-<details>
-<summary><strong>📋 Example Bug Report</strong></summary>
-
-> **Title:** Timer Boss Bar doesn't appear for students
->
-> **Description:**
-> When I create a timer and start it, the Boss Bar shows on my screen but not on student screens.
->
-> **Setup:**
-> - Minecraft Education 1.20.12
-> - Educator Tools v2.1.0
-> - Windows 11
-> - 15 students in the world
->
-> **Steps to Reproduce:**
-> 1. Open Educator Toolbox
-> 2. Click Timer
-> 3. Click Create
-> 4. Set timer to 5 minutes
-> 5. Click Start
-> 6. Students report they don't see the Boss Bar
->
-> **Screenshots:**
-> [Attach screenshot showing timer on teacher screen]
-> [Attach screenshot from student showing no timer]
-
-</details>
+??? example "📋 Example Bug Report"
+    > **Title:** Timer Boss Bar doesn't appear for students
+    >
+    > **Description:**
+    > When I create a timer and start it, the Boss Bar shows on my screen but not on student screens.
+    >
+    > **Setup:**
+    > - Minecraft Education 1.20.12
+    > - Educator Tools v2.1.0
+    > - Windows 11
+    > - 15 students in the world
+    >
+    > **Steps to Reproduce:**
+    > 1. Open Educator Toolbox
+    > 2. Click Timer
+    > 3. Click Create
+    > 4. Set timer to 5 minutes
+    > 5. Click Start
+    > 6. Students report they don't see the Boss Bar
+    >
+    > **Screenshots:**
+    > [Attach screenshot showing timer on teacher screen]
+    > [Attach screenshot from student showing no timer]
 
 ---
 
@@ -174,28 +170,24 @@ If someone already suggested it:
 - Include where it would appear in the menus
 - Provide step-by-step usage example
 
-<details>
-<summary><strong>📋 Example Feature Request</strong></summary>
-
-> **Title:** Add "Mute Student" feature to prevent chat spam
->
-> **Description:**
-> A tool that prevents specific students from sending chat messages temporarily.
->
-> **Why:**
-> During presentations or focus activities, some students distract others by spamming chat. I want to mute them without disabling chat for everyone, since chat is useful for questions and collaboration.
->
-> **How it would work:**
-> 1. Open Educator Toolbox → Classroom Control
-> 2. Click "Mute Players"
-> 3. Select student or team to mute
-> 4. Toggle mute ON/OFF
-> 5. Muted students see "You are muted" when trying to send messages
->
-> **Use case:**
-> During presentations, mute all students except the presenter. During independent work, mute individual students who are being disruptive.
-
-</details>
+??? example "📋 Example Feature Request"
+    > **Title:** Add "Mute Student" feature to prevent chat spam
+    >
+    > **Description:**
+    > A tool that prevents specific students from sending chat messages temporarily.
+    >
+    > **Why:**
+    > During presentations or focus activities, some students distract others by spamming chat. I want to mute them without disabling chat for everyone, since chat is useful for questions and collaboration.
+    >
+    > **How it would work:**
+    > 1. Open Educator Toolbox → Classroom Control
+    > 2. Click "Mute Players"
+    > 3. Select student or team to mute
+    > 4. Toggle mute ON/OFF
+    > 5. Muted students see "You are muted" when trying to send messages
+    >
+    > **Use case:**
+    > During presentations, mute all students except the presenter. During independent work, mute individual students who are being disruptive.
 
 ---
 

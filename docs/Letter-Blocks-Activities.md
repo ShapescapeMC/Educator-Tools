@@ -64,25 +64,17 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 **Learning goals:** Spelling, letter recognition, speed
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
+??? tip "💡 Activity Variations"
+    - **Partner Mode:** Work in pairs - one student spells, the other checks
+    - **Team Challenge:** Divide class into teams, each team collaborates to spell the word
+    - **Timed Rounds:** Use the [Timer tool](Classroom-Control-Tools.md#-timer) for 30-second spelling challenges
+    - **Peer Teaching:** Students who finish first help others with spelling
 
-- **Partner Mode:** Work in pairs - one student spells, the other checks
-- **Team Challenge:** Divide class into teams, each team collaborates to spell the word
-- **Timed Rounds:** Use the [Timer tool](Classroom-Control-Tools.md#-timer) for 30-second spelling challenges
-- **Peer Teaching:** Students who finish first help others with spelling
-
-</details>
-
-<details>
-<summary>🎯 <strong>Extension Ideas</strong></summary>
-
-- Build the word, then use it in a sentence (spoken or written)
-- Create spelling bee-style competitions with elimination rounds
-- Have students build rhyming words or word families
-- Add difficulty levels: beginner words → intermediate → advanced
-
-</details>
+??? example "🎯 Extension Ideas"
+    - Build the word, then use it in a sentence (spoken or written)
+    - Create spelling bee-style competitions with elimination rounds
+    - Have students build rhyming words or word families
+    - Add difficulty levels: beginner words → intermediate → advanced
 
 ![Students building spelling words](images/spelling-activity.png)
 
@@ -112,25 +104,17 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
     - "Create a question about space"
 
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
+??? tip "💡 Activity Variations"
+    - **Sentence Scramble:** Build a sentence, then scramble the blocks for a partner to reassemble
+    - **Progressive Sentences:** Start with a simple sentence, then add adjectives, adverbs, and clauses
+    - **Dialogue Building:** Students create conversations between two characters
+    - **Grammar Focus:** Focus on specific grammar rules (commas, quotation marks, apostrophes)
 
-- **Sentence Scramble:** Build a sentence, then scramble the blocks for a partner to reassemble
-- **Progressive Sentences:** Start with a simple sentence, then add adjectives, adverbs, and clauses
-- **Dialogue Building:** Students create conversations between two characters
-- **Grammar Focus:** Focus on specific grammar rules (commas, quotation marks, apostrophes)
-
-</details>
-
-<details>
-<summary>🎯 <strong>Extension Ideas</strong></summary>
-
-- **Collaborative Story:** Build a class story where each student adds one sentence
-- **Sentence Surgery:** Edit sentences for grammar errors using blocks
-- **Complex Sentences:** Combine two simple sentences using conjunctions
-- **Poetry Creation:** Build haikus or simple poems with syllable counting
-
-</details>
+??? example "🎯 Extension Ideas"
+    - **Collaborative Story:** Build a class story where each student adds one sentence
+    - **Sentence Surgery:** Edit sentences for grammar errors using blocks
+    - **Complex Sentences:** Combine two simple sentences using conjunctions
+    - **Poetry Creation:** Build haikus or simple poems with syllable counting
 
 ---
 
@@ -156,15 +140,11 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 - 📜 **History:** "DEMOCRACY," "EMPIRE," "REVOLUTION"
 - 🔢 **Math:** "FRACTION," "EQUATION," "VARIABLE"
 
-<details>
-<summary>💡 <strong>Differentiation Strategies</strong></summary>
-
-- **Visual Learners:** Add color-coded blocks for different word types (nouns, verbs, adjectives)
-- **Kinesthetic Learners:** Have students physically arrange and rearrange vocabulary words
-- **Advanced Students:** Challenge them to build more complex terms or create word relationships
-- **Struggling Students:** Provide word lists and have them match blocks to definitions
-
-</details>
+??? tip "💡 Differentiation Strategies"
+    - **Visual Learners:** Add color-coded blocks for different word types (nouns, verbs, adjectives)
+    - **Kinesthetic Learners:** Have students physically arrange and rearrange vocabulary words
+    - **Advanced Students:** Challenge them to build more complex terms or create word relationships
+    - **Struggling Students:** Provide word lists and have them match blocks to definitions
 
 ![Vocabulary wall example](images/vocabulary-wall.png)
 
@@ -187,25 +167,17 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 **Learning goals:** Creative writing, storytelling, imagination
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
+??? tip "💡 Activity Variations"
+    - **Student-Created Prompts:** Students build their own prompt words for others to use
+    - **Genre-Specific:** Create themed prompts (mystery, sci-fi, adventure, historical fiction)
+    - **Random Selection:** Use dice or random picker to assign prompt words
+    - **Collaborative Stories:** Groups work together to create one story with shared prompts
 
-- **Student-Created Prompts:** Students build their own prompt words for others to use
-- **Genre-Specific:** Create themed prompts (mystery, sci-fi, adventure, historical fiction)
-- **Random Selection:** Use dice or random picker to assign prompt words
-- **Collaborative Stories:** Groups work together to create one story with shared prompts
-
-</details>
-
-<details>
-<summary>🎯 <strong>Extension Ideas</strong></summary>
-
-- Build character names and setting descriptions with blocks
-- Create story maps or plot diagrams using letter blocks
-- Build key quotes or dialogue from stories
-- Develop sequels or alternative endings using new prompt words
-
-</details>
+??? example "🎯 Extension Ideas"
+    - Build character names and setting descriptions with blocks
+    - Create story maps or plot diagrams using letter blocks
+    - Build key quotes or dialogue from stories
+    - Develop sequels or alternative endings using new prompt words
 
 ---
 
@@ -228,25 +200,17 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 **Learning goals:** Number recognition, counting, sequencing
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
+??? tip "💡 Activity Variations"
+    - **Number Hunt:** Hide number blocks around the classroom for students to find
+    - **Skip Counting:** Arrange only even numbers, odd numbers, or multiples of 5
+    - **Greater/Less Than:** Compare two numbers and determine which is larger
+    - **Number Line Building:** Create a physical number line on the floor
 
-- **Number Hunt:** Hide number blocks around the classroom for students to find
-- **Skip Counting:** Arrange only even numbers, odd numbers, or multiples of 5
-- **Greater/Less Than:** Compare two numbers and determine which is larger
-- **Number Line Building:** Create a physical number line on the floor
-
-</details>
-
-<details>
-<summary>🎯 <strong>Differentiation Strategies</strong></summary>
-
-- **Early Learners:** Focus on numbers 0-5 only
-- **Advanced Students:** Extend to two-digit numbers (10-99)
-- **Visual Support:** Use color-coded number blocks for easier identification
-- **Multisensory:** Have students trace numbers in the air while saying them aloud
-
-</details>
+??? example "🎯 Differentiation Strategies"
+    - **Early Learners:** Focus on numbers 0-5 only
+    - **Advanced Students:** Extend to two-digit numbers (10-99)
+    - **Visual Support:** Use color-coded number blocks for easier identification
+    - **Multisensory:** Have students trace numbers in the air while saying them aloud
 
 ---
 
@@ -271,15 +235,11 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
     **Challenge Extension:** Students create their own problems for classmates to solve, promoting deeper understanding and peer teaching.
 
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Problem Trading:** Students build problems and swap with partners to solve
-- **Equation Races:** Teams compete to solve a series of equations fastest
-- **Missing Number:** Build equations with one number missing (3 + ? = 7)
-- **Multi-Step Problems:** Create problems requiring two operations (3 + 4 - 2 = ?)
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Problem Trading:** Students build problems and swap with partners to solve
+    - **Equation Races:** Teams compete to solve a series of equations fastest
+    - **Missing Number:** Build equations with one number missing (3 + ? = 7)
+    - **Multi-Step Problems:** Create problems requiring two operations (3 + 4 - 2 = ?)
 
 ![Math equation with letter blocks](images/math-equation-blocks.png)
 
@@ -307,25 +267,17 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 - "A = L × W" (area formula)
 - Pythagorean theorem: "A² + B² = C²"
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
+??? tip "💡 Activity Variations"
+    - **Balancing Act:** Build equations on both sides of an equals sign to demonstrate balance
+    - **Variable Substitution:** Build an equation, then substitute different values for variables
+    - **Formula Library:** Create a permanent display of important mathematical formulas
+    - **Error Analysis:** Build equations with intentional errors for students to find and fix
 
-- **Balancing Act:** Build equations on both sides of an equals sign to demonstrate balance
-- **Variable Substitution:** Build an equation, then substitute different values for variables
-- **Formula Library:** Create a permanent display of important mathematical formulas
-- **Error Analysis:** Build equations with intentional errors for students to find and fix
-
-</details>
-
-<details>
-<summary>🎯 <strong>Extension Ideas</strong></summary>
-
-- Build systems of equations with multiple variables
-- Create visual representations of geometric formulas with labeled dimensions
-- Demonstrate order of operations (PEMDAS) with color-coded blocks
-- Build inequalities and graph solutions
-
-</details>
+??? example "🎯 Extension Ideas"
+    - Build systems of equations with multiple variables
+    - Create visual representations of geometric formulas with labeled dimensions
+    - Demonstrate order of operations (PEMDAS) with color-coded blocks
+    - Build inequalities and graph solutions
 
 ---
 
@@ -349,15 +301,11 @@ Students build: "5 + 3 = 8"
 
 **Learning goals:** Problem-solving, translating words to equations, math comprehension
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Story Problems:** Students create their own word problems for peers to solve
-- **Real-World Context:** Use actual classroom scenarios (pencils, books, students)
-- **Multi-Step Problems:** Build complex problems requiring multiple operations
-- **Visual Models:** Build both the equation and a visual representation (5 blocks + 3 blocks = 8 blocks)
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Story Problems:** Students create their own word problems for peers to solve
+    - **Real-World Context:** Use actual classroom scenarios (pencils, books, students)
+    - **Multi-Step Problems:** Build complex problems requiring multiple operations
+    - **Visual Models:** Build both the equation and a visual representation (5 blocks + 3 blocks = 8 blocks)
 
 ---
 
@@ -386,15 +334,11 @@ Students build: "5 + 3 = 8"
 - 📜 Rules or instructions
 - 👤 Student names on desks or lockers
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Multilingual Signs:** Create signs in multiple languages for ESL support
-- **Decorative Borders:** Add decorative blocks or designs around signs
-- **Rotating Responsibilities:** Different students create and update signs each week
-- **QR Code Integration:** Place signs with QR codes linking to more information
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Multilingual Signs:** Create signs in multiple languages for ESL support
+    - **Decorative Borders:** Add decorative blocks or designs around signs
+    - **Rotating Responsibilities:** Different students create and update signs each week
+    - **QR Code Integration:** Place signs with QR codes linking to more information
 
 ![Directional sign example](images/directional-sign.png)
 
@@ -422,15 +366,11 @@ Students build: "5 + 3 = 8"
 - 📝 **Collaborative poem:** Each student adds one line
 - 📅 **Historical timeline:** Each student builds a date and event
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Word Cloud:** Build a word cloud of class values or favorite topics
-- **Quote Wall:** Students build inspiring quotes from books or historical figures
-- **Gratitude Wall:** Each student builds something they're grateful for
-- **Goal Display:** Build individual or class goals for the semester
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Word Cloud:** Build a word cloud of class values or favorite topics
+    - **Quote Wall:** Students build inspiring quotes from books or historical figures
+    - **Gratitude Wall:** Each student builds something they're grateful for
+    - **Goal Display:** Build individual or class goals for the semester
 
 ---
 
@@ -456,25 +396,17 @@ Students build: "5 + 3 = 8"
 - Student answer: "PARIS"
 - Teacher feedback: Places ✓ block next to answer
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
+??? tip "💡 Activity Variations"
+    - **True/False Quizzes:** Students place ✓ or ✗ blocks for each statement
+    - **Multiple Choice:** Build options A, B, C, D and students select the correct letter
+    - **Fill in the Blank:** Build sentences with missing words for students to complete
+    - **Matching Quiz:** Build terms on one side and definitions on the other for matching
 
-- **True/False Quizzes:** Students place ✓ or ✗ blocks for each statement
-- **Multiple Choice:** Build options A, B, C, D and students select the correct letter
-- **Fill in the Blank:** Build sentences with missing words for students to complete
-- **Matching Quiz:** Build terms on one side and definitions on the other for matching
-
-</details>
-
-<details>
-<summary>🎯 <strong>Differentiation Strategies</strong></summary>
-
-- **Tiered Questions:** Provide different difficulty levels for different student groups
-- **Open Book:** Allow students to reference vocabulary walls or notes
-- **Partner Quiz:** Students work in pairs and discuss answers before building
-- **Self-Assessment:** Students mark their own answers with feedback blocks
-
-</details>
+??? example "🎯 Differentiation Strategies"
+    - **Tiered Questions:** Provide different difficulty levels for different student groups
+    - **Open Book:** Allow students to reference vocabulary walls or notes
+    - **Partner Quiz:** Students work in pairs and discuss answers before building
+    - **Self-Assessment:** Students mark their own answers with feedback blocks
 
 ---
 
@@ -504,15 +436,11 @@ Students build: "5 + 3 = 8"
     Use **[Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)** to help students present their letter block projects to the entire class without distractions.
 
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Gallery Walk:** Students build displays at their desks and classmates rotate to view each one
-- **3D Dioramas:** Combine letter blocks with other building materials for enhanced presentations
-- **Interactive Presentations:** Audience members answer questions using letter blocks
-- **Peer Review:** Students provide feedback using letter blocks (GOOD IDEA, TRY THIS, etc.)
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Gallery Walk:** Students build displays at their desks and classmates rotate to view each one
+    - **3D Dioramas:** Combine letter blocks with other building materials for enhanced presentations
+    - **Interactive Presentations:** Audience members answer questions using letter blocks
+    - **Peer Review:** Students provide feedback using letter blocks (GOOD IDEA, TRY THIS, etc.)
 
 ![Student project display](images/student-project-blocks.png)
 
@@ -542,25 +470,17 @@ Students build: "5 + 3 = 8"
 
 **Learning goals:** Language acquisition, cultural awareness, translation skills
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
+??? tip "💡 Activity Variations"
+    - **Language of the Week:** Rotate through different languages each week
+    - **Cognate Hunt:** Build words that are similar in multiple languages
+    - **Cultural Themes:** Build vocabulary related to holidays, food, or traditions
+    - **Conversation Practice:** Build common phrases and practice dialogues
 
-- **Language of the Week:** Rotate through different languages each week
-- **Cognate Hunt:** Build words that are similar in multiple languages
-- **Cultural Themes:** Build vocabulary related to holidays, food, or traditions
-- **Conversation Practice:** Build common phrases and practice dialogues
-
-</details>
-
-<details>
-<summary>🎯 <strong>Extension Ideas</strong></summary>
-
-- Build simple sentences in the target language
-- Create bilingual word walls for classroom reference
-- Label classroom objects in multiple languages
-- Build greetings and introductions for language practice
-
-</details>
+??? example "🎯 Extension Ideas"
+    - Build simple sentences in the target language
+    - Create bilingual word walls for classroom reference
+    - Label classroom objects in multiple languages
+    - Build greetings and introductions for language practice
 
 ---
 
@@ -586,15 +506,11 @@ Students build: "5 + 3 = 8"
 - ⚗️ **Chemistry:** MOLECULE, ELEMENT, COMPOUND
 - ⚡ **Physics:** FORCE, ENERGY, MOTION
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Concept Mapping:** Build related terms and connect them with arrows or lines
-- **Lab Integration:** Build procedure steps or safety rules for experiments
-- **Scientific Method:** Build hypothesis, variables, and conclusions from experiments
-- **Periodic Table:** Build element symbols and names for chemistry units
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Concept Mapping:** Build related terms and connect them with arrows or lines
+    - **Lab Integration:** Build procedure steps or safety rules for experiments
+    - **Scientific Method:** Build hypothesis, variables, and conclusions from experiments
+    - **Periodic Table:** Build element symbols and names for chemistry units
 
 ---
 
@@ -622,25 +538,17 @@ Students build: "5 + 3 = 8"
 
 **Learning goals:** Chronological thinking, historical knowledge, sequencing
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
+??? tip "💡 Activity Variations"
+    - **Biography Timeline:** Create timelines of historical figures' lives
+    - **Cause and Effect:** Build parallel timelines showing related events
+    - **Comparative History:** Build timelines from different cultures or regions side-by-side
+    - **Personal Timeline:** Students build their own life timelines with significant events
 
-- **Biography Timeline:** Create timelines of historical figures' lives
-- **Cause and Effect:** Build parallel timelines showing related events
-- **Comparative History:** Build timelines from different cultures or regions side-by-side
-- **Personal Timeline:** Students build their own life timelines with significant events
-
-</details>
-
-<details>
-<summary>🎯 <strong>Extension Ideas</strong></summary>
-
-- Add illustrations or symbols to represent events
-- Build timelines at different scales (decades, centuries, millennia)
-- Create interactive timelines where students can add details
-- Connect historical events to modern-day implications
-
-</details>
+??? example "🎯 Extension Ideas"
+    - Add illustrations or symbols to represent events
+    - Build timelines at different scales (decades, centuries, millennia)
+    - Create interactive timelines where students can add details
+    - Connect historical events to modern-day implications
 
 ![Historical timeline with blocks](images/historical-timeline.png)
 
@@ -669,15 +577,11 @@ Students build: "5 + 3 = 8"
 - "HELP EACH OTHER"
 - "TRY YOUR BEST"
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Student-Created Rules:** Have the class vote on and build their own rules
-- **Positive Language:** Frame rules positively (DO instead of DON'T)
-- **Visual Reminders:** Add symbols or icons next to each rule
-- **Rotating Spotlight:** Highlight one rule each week for focused reinforcement
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Student-Created Rules:** Have the class vote on and build their own rules
+    - **Positive Language:** Frame rules positively (DO instead of DON'T)
+    - **Visual Reminders:** Add symbols or icons next to each rule
+    - **Rotating Spotlight:** Highlight one rule each week for focused reinforcement
 
 ---
 
@@ -699,15 +603,11 @@ Students build: "5 + 3 = 8"
     Use the **[Custom Nicknames](Classroom-Control-Tools.md#%EF%B8%8F-custom-nicknames)** feature for digital name display, and letter blocks for physical labels to create a cohesive classroom environment.
 
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Themed Names:** Add decorative elements related to student interests
-- **Job Labels:** Build role labels (Line Leader, Door Holder, etc.) for classroom jobs
-- **Group Labels:** Build team or table group names
-- **Locker Decorations:** Students personalize their lockers with name blocks and designs
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Themed Names:** Add decorative elements related to student interests
+    - **Job Labels:** Build role labels (Line Leader, Door Holder, etc.) for classroom jobs
+    - **Group Labels:** Build team or table group names
+    - **Locker Decorations:** Students personalize their lockers with name blocks and designs
 
 ---
 
@@ -725,15 +625,11 @@ Students build: "5 + 3 = 8"
 2. Place in team areas or workspaces
 3. Use for competitions, group projects, or organization
 
-<details>
-<summary>💡 <strong>Activity Variations</strong></summary>
-
-- **Team Mascots:** Build team mascot names or symbols
-- **Point Trackers:** Build point displays for team competitions
-- **Rotating Teams:** Change team names monthly to keep activities fresh
-- **Team Mottos:** Each team creates and builds their own motto
-
-</details>
+??? tip "💡 Activity Variations"
+    - **Team Mascots:** Build team mascot names or symbols
+    - **Point Trackers:** Build point displays for team competitions
+    - **Rotating Teams:** Change team names monthly to keep activities fresh
+    - **Team Mottos:** Each team creates and builds their own motto
 
 ---
 
@@ -761,32 +657,24 @@ Students build: "5 + 3 = 8"
 - Set clear start and end times
 - Allow buffer time for cleanup
 
-<details>
-<summary>🔧 <strong>Integration with Educator Tools</strong></summary>
+??? note "🔧 Integration with Educator Tools"
+    **Maximize your letter block activities by combining them with other Educator Tools features:**
 
-**Maximize your letter block activities by combining them with other Educator Tools features:**
+    - **📍 Teleport students** to viewing area to see completed letter block displays
+    - **🔒 Lock players** in designated building zones during letter block activities
+    - **📦 Copy inventory** to give all students the same letter blocks for an activity
+    - **👁️ Use Focus Mode** to share building instructions before starting
+    - **⏱️ Timer Tool** for time-limited building challenges
+    - **👥 Teams Management** to organize group letter block competitions
 
-- **📍 Teleport students** to viewing area to see completed letter block displays
-- **🔒 Lock players** in designated building zones during letter block activities
-- **📦 Copy inventory** to give all students the same letter blocks for an activity
-- **👁️ Use Focus Mode** to share building instructions before starting
-- **⏱️ Timer Tool** for time-limited building challenges
-- **👥 Teams Management** to organize group letter block competitions
+??? note "🎯 Assessment Strategies"
+    **Use letter blocks as assessment tools:**
 
-</details>
-
-<details>
-<summary>🎯 <strong>Assessment Strategies</strong></summary>
-
-**Use letter blocks as assessment tools:**
-
-- **Formative Assessment:** Quick checks for understanding during lessons
-- **Peer Assessment:** Students evaluate each other's work using feedback blocks
-- **Self-Assessment:** Students reflect on their own work and build reflection statements
-- **Portfolio Evidence:** Take photos of letter block work for student portfolios
-- **Rubric Alignment:** Create rubrics specifically for letter block projects
-
-</details>
+    - **Formative Assessment:** Quick checks for understanding during lessons
+    - **Peer Assessment:** Students evaluate each other's work using feedback blocks
+    - **Self-Assessment:** Students reflect on their own work and build reflection statements
+    - **Portfolio Evidence:** Take photos of letter block work for student portfolios
+    - **Rubric Alignment:** Create rubrics specifically for letter block projects
 
 ---
 

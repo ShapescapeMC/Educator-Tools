@@ -33,44 +33,24 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
 
 ## What's Included
 
-<details>
-<summary>🔤 <strong>Letters</strong> - Click to expand character list</summary>
+??? note "🔤 Letters - Click to expand character list"
+    - **Uppercase:** A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
+    - **Lowercase:** a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
 
-- **Uppercase:** A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
-- **Lowercase:** a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+??? note "🔢 Numbers - Click to expand character list"
+    - **Digits:** 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 
-</details>
+??? note "➕ Math Symbols - Click to expand character list"
+    - **Operators:** + (plus), - (minus), × (multiply), ÷ (divide), = (equals)
 
-<details>
-<summary>🔢 <strong>Numbers</strong> - Click to expand character list</summary>
+??? note "📝 Punctuation - Click to expand character list"
+    - **Common marks:** . (period), , (comma), ? (question mark), ! (exclamation point)
 
-- **Digits:** 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-
-</details>
-
-<details>
-<summary>➕ <strong>Math Symbols</strong> - Click to expand character list</summary>
-
-- **Operators:** + (plus), - (minus), × (multiply), ÷ (divide), = (equals)
-
-</details>
-
-<details>
-<summary>📝 <strong>Punctuation</strong> - Click to expand character list</summary>
-
-- **Common marks:** . (period), , (comma), ? (question mark), ! (exclamation point)
-
-</details>
-
-<details>
-<summary>⭐ <strong>Special Characters</strong> - Click to expand character list</summary>
-
-- **Checkmarks:** ✓ (correct)
-- **Crosses:** ✗ (incorrect)
-- **Arrows:** → ↑ ↓ ←
-- **Currency:** $ (dollar), € (euro)
-
-</details>
+??? note "⭐ Special Characters - Click to expand character list"
+    - **Checkmarks:** ✓ (correct)
+    - **Crosses:** ✗ (incorrect)
+    - **Arrows:** → ↑ ↓ ←
+    - **Currency:** $ (dollar), € (euro)
 
 **Total:** Hundreds of blocks covering almost any character you might need!
 
@@ -216,109 +196,77 @@ Stack blocks vertically for traditional math format
 
 ## Quick Ideas to Try
 
-<details>
-<summary>🌟 <strong>Beginner Activities</strong> - Click to expand</summary>
+??? example "🌟 Beginner Activities - Click to expand"
+    **1. Spell Your Name** 📛
+    - Get the letter blocks for your name
+    - Place them in a row
+    - Try using different colors or arranging them creatively
 
-**1. Spell Your Name** 📛
-- Get the letter blocks for your name
-- Place them in a row
-- Try using different colors or arranging them creatively
+    **2. Simple Math** ➕
+    - Build "1 + 1 = 2"
+    - Try a subtraction problem
+    - Create a times table display
 
-**2. Simple Math** ➕
-- Build "1 + 1 = 2"
-- Try a subtraction problem
-- Create a times table display
+    **3. Make a Sign** 🪧
+    - Spell "WELCOME"
+    - Place it at the entrance of your build
+    - Experiment with different layouts
 
-**3. Make a Sign** 🪧
-- Spell "WELCOME"
-- Place it at the entrance of your build
-- Experiment with different layouts
+??? example "⭐ Intermediate Activities - Click to expand"
+    **4. Build a Sentence** 📝
+    - Use letters and punctuation to make a complete sentence
+    - Example: "HELLO WORLD!"
+    - Remember spaces between words (leave empty blocks)
 
-</details>
+    **5. Create a Word Wall** 🧱
+    - Pick a theme (animals, colors, shapes)
+    - Build multiple related words
+    - Arrange them in an interesting pattern
 
-<details>
-<summary>⭐ <strong>Intermediate Activities</strong> - Click to expand</summary>
+    **6. Math Challenge Board** 🎯
+    - Build several math problems
+    - Leave the answers blank
+    - Have students add the answer blocks
 
-**4. Build a Sentence** 📝
-- Use letters and punctuation to make a complete sentence
-- Example: "HELLO WORLD!"
-- Remember spaces between words (leave empty blocks)
+??? example "💡 Common Use Cases - Click to expand"
+    **Classroom Labeling:**
+    - Label different areas of your Minecraft classroom
+    - Create station names for learning centers
+    - Build direction signs for navigation
 
-**5. Create a Word Wall** 🧱
-- Pick a theme (animals, colors, shapes)
-- Build multiple related words
-- Arrange them in an interesting pattern
+    **Vocabulary Displays:**
+    - Spell out vocabulary words students are learning
+    - Create word families or spelling patterns
+    - Build sight words for early learners
 
-**6. Math Challenge Board** 🎯
-- Build several math problems
-- Leave the answers blank
-- Have students add the answer blocks
+    **Math Practice:**
+    - Display equations for students to solve
+    - Create number lines or counting sequences
+    - Build multiplication tables or fractions
 
-</details>
-
-<details>
-<summary>💡 <strong>Common Use Cases</strong> - Click to expand</summary>
-
-**Classroom Labeling:**
-- Label different areas of your Minecraft classroom
-- Create station names for learning centers
-- Build direction signs for navigation
-
-**Vocabulary Displays:**
-- Spell out vocabulary words students are learning
-- Create word families or spelling patterns
-- Build sight words for early learners
-
-**Math Practice:**
-- Display equations for students to solve
-- Create number lines or counting sequences
-- Build multiplication tables or fractions
-
-**Creative Writing:**
-- Build story prompts or writing starters
-- Create word banks for creative projects
-- Display famous quotes or poetry
-
-</details>
+    **Creative Writing:**
+    - Build story prompts or writing starters
+    - Create word banks for creative projects
+    - Display famous quotes or poetry
 
 ---
 
 ## Common Questions
 
-<details>
-<summary>❓ <strong>Can I change the color or style of letter blocks?</strong></summary>
+??? question "Can I change the color or style of letter blocks?"
+    The default blocks have one style. For custom styles and colors, see [More Letter Blocks Extension](Extensions-More-Letter-Blocks.md) for additional themed sets, or [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for making your own.
 
-The default blocks have one style. For custom styles and colors, see [More Letter Blocks Extension](Extensions-More-Letter-Blocks.md) for additional themed sets, or [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for making your own.
+??? question "How do I make spaces between words?"
+    Leave empty blocks (don't place anything) between words, or use a plain colored block as a spacer.
 
-</details>
+??? question "Can students use letter blocks?"
+    Yes! In Creative Mode, all students can access letter blocks from their inventory. You can also give them specific blocks using [Inventory Management](Student-Management-Tools.md#-inventory-management).
 
-<details>
-<summary>❓ <strong>How do I make spaces between words?</strong></summary>
+??? question "Do letter blocks work in Survival Mode?"
+    Yes, they work in all game modes. In Survival, students need to have the blocks in their inventory (you can't "craft" them - use Creative or teacher distribution).
 
-Leave empty blocks (don't place anything) between words, or use a plain colored block as a spacer.
-
-</details>
-
-<details>
-<summary>❓ <strong>Can students use letter blocks?</strong></summary>
-
-Yes! In Creative Mode, all students can access letter blocks from their inventory. You can also give them specific blocks using [Inventory Management](Student-Management-Tools.md#-inventory-management).
-
-</details>
-
-<details>
-<summary>❓ <strong>Do letter blocks work in Survival Mode?</strong></summary>
-
-Yes, they work in all game modes. In Survival, students need to have the blocks in their inventory (you can't "craft" them - use Creative or teacher distribution).
-
-</details>
-
-<details>
-<summary>❓ <strong>What if I need a character that doesn't exist?</strong></summary>
-
-The default set includes most common letters, numbers, and symbols. For additional characters or custom fonts, see [More Letter Blocks Extension](Extensions-More-Letter-Blocks.md) or [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md).
-
-</details>
+??? question "What if I need a character that doesn't exist?"
+    The default set includes most common letters, numbers, and symbols. For additional characters or custom fonts, see [More Letter Blocks Extension](Extensions-More-Letter-Blocks.md) or [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md).
 
 ---
 
