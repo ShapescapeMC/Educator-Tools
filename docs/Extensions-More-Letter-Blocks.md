@@ -1,3 +1,7 @@
+---
+icon: material/puzzle
+---
+
 # 🔤 More Letter Blocks Extension
 
 **An optional extension that massively expands the Letter Blocks library with hundreds of additional characters, themed backgrounds, and multilingual support.**

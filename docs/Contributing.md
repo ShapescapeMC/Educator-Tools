@@ -1,3 +1,7 @@
+---
+icon: material/source-pull
+---
+
 ## How to Contribute
 
 Educator Tools is an open-source project, and we welcome contributions from educators, developers, and Minecraft enthusiasts.

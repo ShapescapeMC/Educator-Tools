@@ -1,3 +1,7 @@
+---
+icon: material/help-circle
+---
+
 # ❓ FAQ and Troubleshooting
 
 Common questions and solutions for Educator Tools.

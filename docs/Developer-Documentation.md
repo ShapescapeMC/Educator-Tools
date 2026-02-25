@@ -1,3 +1,7 @@
+---
+icon: material/book-open-page-variant
+---
+
 # 🔧 Developer Documentation
 
 **This section is for developers and advanced users who want to contribute to Educator Tools, customize the pack, or understand how it works.**

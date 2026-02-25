@@ -1,3 +1,7 @@
+---
+icon: material/monitor-edit
+---
+
 # Development Setup
 
 This guide will help you set up your development environment for contributing to Educator Tools.

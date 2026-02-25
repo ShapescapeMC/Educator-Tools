@@ -1,3 +1,7 @@
+---
+icon: material/download
+---
+
 # 🚀 Installation Guide
 
 Follow these three simple steps to install Educator Tools in Minecraft Education Edition.

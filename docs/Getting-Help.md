@@ -1,3 +1,7 @@
+---
+icon: material/message-question
+---
+
 # 🆘 Getting Help
 
 Need assistance with Educator Tools? Here's how to get support.

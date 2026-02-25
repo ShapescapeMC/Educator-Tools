@@ -1,3 +1,7 @@
+---
+icon: material/account-group
+---
+
 # 👥 Student Management Tools
 
 These tools help you organize and control your students in the Minecraft world.

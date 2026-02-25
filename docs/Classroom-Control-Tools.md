@@ -1,3 +1,7 @@
+---
+icon: material/human-male-board
+---
+
 # 🎓 Classroom Control Tools
 
 These tools help you maintain focus, manage classroom behavior, and create structured learning experiences.

@@ -1,3 +1,7 @@
+---
+icon: material/alpha
+---
+
 # 🔤 Letter Blocks - Getting Started
 
 Letter Blocks are special building blocks that display letters, numbers, and symbols. They're perfect for creating words, equations, signs, and educational displays in your Minecraft world.

@@ -1,3 +1,7 @@
+---
+icon: material/view-grid
+---
+
 # 🎮 Educator Toolbox - All Features
 
 The Educator Toolbox is your command center for classroom management in Minecraft Education. This guide provides an overview of all available tools.

@@ -1,3 +1,7 @@
+---
+icon: material/cog
+---
+
 ## Creating Custom Letter Blocks
 
 This document explains how to create custom letter blocks using Educator Tools, enabling you to utilize personalized fonts, colors, and backgrounds.

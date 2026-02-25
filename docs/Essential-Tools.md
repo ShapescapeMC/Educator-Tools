@@ -1,3 +1,7 @@
+---
+icon: material/star
+---
+
 # 🎯 Essential Tools
 
 These are the 5 most important features of Educator Tools. These tools offer unique educational capabilities that don't exist in vanilla Minecraft. Master these first, then explore other features when you're ready.

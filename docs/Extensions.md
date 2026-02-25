@@ -1,3 +1,7 @@
+---
+icon: material/package-variant
+---
+
 # 🧩 Extensions
 
 Extensions are optional add-ons that expand the functionality of Educator Tools with additional features, content, or capabilities.

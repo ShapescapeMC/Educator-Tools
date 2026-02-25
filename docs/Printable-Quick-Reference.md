@@ -1,3 +1,7 @@
+---
+icon: material/printer
+---
+
 # 📋 Printable Quick Reference
 
 **A one-page reference guide for classroom use. Print this page and keep it handy during your lessons.**

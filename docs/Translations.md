@@ -1,3 +1,7 @@
+---
+icon: material/translate
+---
+
 # Translations
 
 Educator Tools supports multiple languages to make the add-on accessible to educators and students worldwide. This guide explains how to add or improve translations for the project.

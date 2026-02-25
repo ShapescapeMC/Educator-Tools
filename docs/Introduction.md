@@ -1,3 +1,7 @@
+---
+icon: material/information-outline
+---
+
 # 📜 Introduction
 
 ## Table of Contents

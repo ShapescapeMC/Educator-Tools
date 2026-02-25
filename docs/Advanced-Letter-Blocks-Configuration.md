@@ -1,3 +1,7 @@
+---
+icon: material/code-braces
+---
+
 # ⚙️ Advanced Letter Blocks Configuration
 
 **⚠️ This guide is for advanced users and developers who want to create custom letter blocks with their own fonts, colors, and backgrounds.**

@@ -1,3 +1,7 @@
+---
+icon: material/earth
+---
+
 # 🌍 World Management Tools
 
 Control the Minecraft world environment and game rules to create the perfect learning space.

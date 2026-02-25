@@ -1,3 +1,7 @@
+---
+icon: material/lightbulb
+---
+
 # 🎨 Letter Blocks - Classroom Activities
 
 Creative activity ideas and teaching strategies for using Letter Blocks in educational contexts.

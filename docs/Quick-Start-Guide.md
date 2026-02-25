@@ -1,3 +1,7 @@
+---
+icon: material/rocket-launch
+---
+
 # 🚀 Quick Start Guide
 
 Welcome to Educator Tools! This guide will help you get started in just a few minutes.

@@ -1,3 +1,7 @@
+---
+icon: material/book-open-variant
+---
+
 # 📚 Glossary
 
 Simple explanations of Minecraft and Educator Tools terms you'll encounter.
