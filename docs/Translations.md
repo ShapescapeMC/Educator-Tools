@@ -74,14 +74,14 @@ Before adding translations, make sure you have:
 
 1. **Commit your changes:**
 
-   #### Using Command Line
+#### Using Command Line
 
    ```bash
    git add regolith/filters_data/modular_mc/educator_tools/translations/your_locale.lang
    git commit -m "Add [Language Name] translation (your_locale)"
    ```
 
-   #### Using GitHub Desktop
+#### Using GitHub Desktop
 
    1. **Open GitHub Desktop** and make sure your repository is selected
    2. **Review your changes** in the "Changes" tab - you should see your new `.lang` file listed
@@ -91,13 +91,13 @@ Before adding translations, make sure you have:
 
 2. **Push to your fork:**
 
-   #### Using Command Line
+#### Using Command Line
 
    ```bash
    git push origin main
    ```
 
-   #### Using GitHub Desktop
+#### Using GitHub Desktop
 
    1. **Click "Push origin"** in the top bar to upload your changes to your fork on GitHub
    2. If this is your first push, GitHub Desktop may prompt you to publish the branch
