@@ -50,7 +50,9 @@ Need more detailed installation help? See the full **[Installation Guide](Instal
 
 Once you're in the world with Educator Tools active, try these basic actions to get familiar with the tools:
 
-### 1. Open the Educator Toolbox ⏱️ 30 seconds
+### 1. Open the Educator Toolbox 
+
+**⏱️ 30 seconds**
 
 **How:** Right-click the Educator Toolbox item in your hotbar
 
@@ -64,7 +66,9 @@ Once you're in the world with Educator Tools active, try these basic actions to 
 
 ---
 
-### 2. Move a Student ⏱️ 1 minute
+### 2. Move a Student 
+
+**⏱️ 1 minute**
 
 **When to use it:** A student is lost or you want to gather everyone together
 
