@@ -31,8 +31,8 @@ High-level layout of this subsystem:
 - `icons/`: Image assets used by the UI.
 - `translations/`: Active localization files for supported languages.
 - `translations_old/`: Legacy or archived localization files.
-- `_scope.json`: system_template scope configuration for this subsystem.
-- `_map.py`: Build-time mapping/helper for system_template.
+- `scope.ts`: modular_mc scope configuration for this subsystem.
+- `map.ts`: Build-time mapping/helper for modular_mc.
 
 ## Subscripts
 

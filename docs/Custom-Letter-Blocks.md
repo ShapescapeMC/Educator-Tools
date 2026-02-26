@@ -79,10 +79,10 @@ To create blocks using a single image for all faces, place the PNG image in the 
 
 ---
 
-### Step 5: Editing the `_scope.json` Safely
+### Step 5: Editing the `scope.ts` Safely
 
 * **Do not remove existing entries unless intentional.**
-* Always insert your new objects correctly formatted to avoid JSON errors.
+* Always insert your new objects correctly formatted to avoid TypeScript errors.
 
 Example insertion point:
 

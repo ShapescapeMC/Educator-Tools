@@ -43,7 +43,7 @@ regolith/filters_data/modular_mc/letter_blocks/
 
 ```
 letter_blocks/
-├── _scope.json              ← Configuration file (you'll edit this)
+├── scope.ts              ← Configuration file (you'll edit this)
 ├── fonts/                   ← Place custom font files here (.ttf)
 │   ├── AzeretMono-Black.ttf
 │   └── YourCustomFont.ttf
@@ -91,10 +91,10 @@ letter_blocks/my_background.png
 
 ## Step 2: Open the Configuration File
 
-Locate and open the `_scope.json` file:
+Locate and open the `scope.ts` file:
 
 ```text
-regolith/filters_data/modular_mc/letter_blocks/_scope.json
+regolith/filters_data/modular_mc/letter_blocks/scope.ts
 ```
 
 This file contains an array named `letter_sets`. Each object within this array defines a distinct set of letter blocks.
@@ -324,7 +324,7 @@ Before building, validate your JSON:
 
 ### Building the Pack
 
-1. Save the `_scope.json` file
+1. Save the `scope.ts` file
 2. Run the build command (see [Development Setup](Development-Setup.md))
 3. The pack will generate textures and item definitions based on your configuration
 
@@ -441,9 +441,9 @@ Before building, validate your JSON:
 
 ✅ **Use descriptive IDs** - Choose clear, meaningful IDs for easier debugging
 
-✅ **Document your sets** - Add comments (outside JSON) explaining each custom set's purpose
+✅ **Document your sets** - Add comments (outside TypeScript) explaining each custom set's purpose
 
-✅ **Backup before editing** - Keep a copy of the original `_scope.json`
+✅ **Backup before editing** - Keep a copy of the original `scope.ts`
 
 ✅ **Version control** - Use Git to track changes and revert if needed
 

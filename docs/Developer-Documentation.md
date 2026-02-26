@@ -111,7 +111,7 @@ Educator-Tools/
 │   └── filters_data/         # Filter data and templates
 │       └── modular_mc/
 │           └── letter_blocks/  # Letter blocks configuration
-│               ├── _scope.json  # Letter sets definition
+│               ├── scope.ts  # Letter sets definition
 │               ├── fonts/       # Custom font files
 │               └── *.png        # Background images
 │
