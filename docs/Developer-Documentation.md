@@ -109,7 +109,7 @@ Educator-Tools/
 ├── regolith/                  # Build system configuration
 │   ├── filters/              # Build filters and processors
 │   └── filters_data/         # Filter data and templates
-│       └── system_template/
+│       └── modular_mc/
 │           └── letter_blocks/  # Letter blocks configuration
 │               ├── _scope.json  # Letter sets definition
 │               ├── fonts/       # Custom font files
@@ -252,6 +252,7 @@ if (condition) {
 ```
 
 **Best practices:**
+
 - Use 2-space indentation
 - No trailing commas in JSON
 - Validate JSON before committing
@@ -264,16 +265,19 @@ if (condition) {
 ### Common Issues
 
 **Pack doesn't load:**
+
 - Check manifest.json format
 - Verify pack UUID is valid
 - Look for JSON syntax errors in definitions
 
 **Scripts don't run:**
+
 - Check console output in Minecraft
 - Verify script module is enabled in manifest
 - Test script syntax separately
 
 **Items don't appear:**
+
 - Confirm item definitions are correct
 - Check creative inventory categories
 - Verify identifiers are unique
@@ -333,6 +337,7 @@ if (condition) {
 ### Custom Letter Blocks
 
 See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md) for detailed guide on:
+
 - Creating custom font sets
 - Adding Unicode characters
 - Designing background images
@@ -341,6 +346,7 @@ See [Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.
 ### Internationalization
 
 See [Translations](Translations.md) for information on:
+
 - Translation file format
 - Adding new languages
 - Testing localized content
@@ -349,7 +355,9 @@ See [Translations](Translations.md) for information on:
 ### Build System Customization
 
 For advanced users wanting to modify the build process:
+
 - Study `regolith` configuration
+- Study `modular_mc` documentation
 - Understand filter system
 - Create custom build filters
 - Optimize build performance
