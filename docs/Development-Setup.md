@@ -186,4 +186,4 @@ Our project uses the **modular_mc filter by Nusiq** for modular code development
   Use an IDE like Visual Studio Code that supports debugging and syntax highlighting to streamline your development process.
 
 - **Next Steps:**  
-  Once your development environment is set up, see the **[Contributing Guide](/ShapescapeMC/Educator-Tools/wiki/Contributing)** for information on making changes and submitting pull requests.
+  Once your development environment is set up, see the **[Contributing Guide](Contributing.md)** for information on making changes and submitting pull requests.

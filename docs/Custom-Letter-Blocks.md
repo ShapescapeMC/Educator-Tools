@@ -3,7 +3,7 @@ icon: material/cog
 ---
 
 !!! warning "Advanced Users Only"
-    This page is intended for experienced users with knowledge of file modification and JSON editing. If you are not comfortable working with configuration files and technical setup, please refer to the [Getting Started](/ShapescapeMC/Educator-Tools/wiki/Letter-Blocks-Getting-Started) guide instead.
+    This page is intended for experienced users with knowledge of file modification and JSON editing. If you are not comfortable working with configuration files and technical setup, please refer to the [Getting Started](Letter-Blocks-Getting-Started.md) guide instead.
 
 ## Creating Custom Letter Blocks
 
@@ -11,7 +11,7 @@ This document explains how to create custom letter blocks using Educator Tools, 
 
 ### Before You Begin
 
-* Review the [Contributing Guide](/ShapescapeMC/Educator-Tools/wiki/Contributing).
+* Review the [Contributing Guide](Contributing.md).
 * Locate your working directory:
 
   ```text

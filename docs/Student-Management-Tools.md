@@ -448,23 +448,23 @@ These tools work great in combination:
 
 ??? note "Tool Combination Examples"
     **🎯 Starting a Group Activity:**
-    1. Use **[Teams Management](#-teams-management)** to organize students into groups
-    2. Use **[Teleport](#-teleport)** to move entire teams to their work areas
-    3. Use **[Inventory Management](#-inventory-management)** to give each team their starting materials
+    1. Use **[Teams Management](#teams-management)** to organize students into groups
+    2. Use **[Teleport](#teleport)** to move entire teams to their work areas
+    3. Use **[Inventory Management](#inventory-management)** to give each team their starting materials
 
     **🏗️ Building Project Setup:**
-    1. Change students to **[Creative Mode](#-gamemode)** for unlimited building
-    2. Use **[Inventory Management](#-inventory-management)** to give everyone the same tools
-    3. Use **[Teleport](#-teleport)** to move everyone to the build site
+    1. Change students to **[Creative Mode](#gamemode)** for unlimited building
+    2. Use **[Inventory Management](#inventory-management)** to give everyone the same tools
+    3. Use **[Teleport](#teleport)** to move everyone to the build site
 
     **⚔️ Survival Challenge Preparation:**
-    1. Change students to **[Survival Mode](#-gamemode)**
-    2. Use **[Manage Health](#️-manage-health)** to ensure everyone starts at full health
-    3. Use **[Teleport](#-teleport)** to position teams at their starting locations
+    1. Change students to **[Survival Mode](#gamemode)**
+    2. Use **[Manage Health](#manage-health)** to ensure everyone starts at full health
+    3. Use **[Teleport](#teleport)** to position teams at their starting locations
 
     **🔍 Assessment and Observation:**
-    1. Change yourself to **[Spectator Mode](#-gamemode)** to observe invisibly
-    2. Use **[Teleport](#-teleport)** to move between student work areas
+    1. Change yourself to **[Spectator Mode](#gamemode)** to observe invisibly
+    2. Use **[Teleport](#teleport)** to move between student work areas
     3. Review each student's progress without disrupting their work
 
 ---

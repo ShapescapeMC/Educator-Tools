@@ -325,7 +325,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     ### Activity Preparation
 
     - Set up themed block "kits" in advance
-    - Use [Inventory Management](Student-Management-Tools.md#-inventory-management) to distribute to students
+    - Use [Inventory Management](Student-Management-Tools.md#inventory-management) to distribute to students
     - Keep frequently-used characters easily accessible
 
 ---

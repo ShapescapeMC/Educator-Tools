@@ -9,7 +9,7 @@ Whether you want to improve existing features, fix bugs, or propose new ideas, y
 
 ## Getting Started
 
-Before contributing, make sure you have your development environment set up properly. Follow our **[Development Setup Guide](/ShapescapeMC/Educator-Tools/wiki/Development-Setup)** for detailed instructions on:
+Before contributing, make sure you have your development environment set up properly. Follow our **[Development Setup Guide](Development-Setup.md)** for detailed instructions on:
 
 - Installing prerequisites (Python, NodeJS, Regolith, etc.)
 - Forking and cloning the repository
@@ -46,7 +46,7 @@ Our project uses the **system_template filter by Nusiq** for modular code develo
 
 ### Adding Translations
 
-For detailed instructions on adding or improving translations, please see our dedicated **[Translations Guide](/ShapescapeMC/Educator-Tools/wiki/Translations)**.
+For detailed instructions on adding or improving translations, please see our dedicated **[Translations Guide](Translations.md)**.
 
 ---
 
@@ -158,4 +158,4 @@ After pushing your changes to your fork, follow these steps to open a Pull Reque
 - **Stay Updated:** Keep your fork synchronized with the main repository to avoid conflicts.
 - **Be Responsive:** Be prepared to address feedback and make revisions to your pull request if requested.
 
-For technical setup questions, refer to the **[Development Setup Guide](/ShapescapeMC/Educator-Tools/wiki/Development-Setup)**.
+For technical setup questions, refer to the **[Development Setup Guide](Development-Setup.md)**.

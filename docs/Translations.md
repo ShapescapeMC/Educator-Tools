@@ -22,7 +22,7 @@ Each language is represented by a `.lang` file named with the appropriate locale
 
 Before adding translations, make sure you have:
 
-- Forked and cloned the main repository (see [Contributing Guide](/ShapescapeMC/Educator-Tools/wiki/Contributing))
+- Forked and cloned the main repository (see [Contributing Guide](Contributing.md))
 - Set up the development environment with all dependencies
 
 ### Step 2: Create the Translation File
@@ -63,7 +63,7 @@ Before adding translations, make sure you have:
 
 ### Step 4: Test Your Translation
 
-1. **Build the project** using one of the methods described in the [Contributing Guide](/ShapescapeMC/Educator-Tools/wiki/Contributing#5-building-the-project--running-regolith).
+1. **Build the project** using one of the methods described in the [Contributing Guide](Contributing.md#5-building-the-project--running-regolith).
 
 2. **Test in Minecraft Education** by:
    - Installing the compiled add-on
@@ -102,7 +102,7 @@ Before adding translations, make sure you have:
    1. **Click "Push origin"** in the top bar to upload your changes to your fork on GitHub
    2. If this is your first push, GitHub Desktop may prompt you to publish the branch
 
-3. **Create a Pull Request** following the guidelines in the [Contributing Guide](/ShapescapeMC/Educator-Tools/wiki/Contributing#7-creating-a-pull-request).
+3. **Create a Pull Request** following the guidelines in the [Contributing Guide](Contributing.md#7-creating-a-pull-request).
 
 ## Improving Existing Translations
 

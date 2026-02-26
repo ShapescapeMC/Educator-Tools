@@ -403,7 +403,7 @@ Provides special building blocks that display letters, numbers, and symbols. Stu
 
 **Option 2: You Give Specific Blocks**
 
-1. Use [Inventory Management](Student-Management-Tools.md#-inventory-management)
+1. Use [Inventory Management](Student-Management-Tools.md#inventory-management)
 2. Give students the exact blocks they need for an activity
 
 #### Build with Letter Blocks

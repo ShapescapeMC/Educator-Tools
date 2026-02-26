@@ -32,7 +32,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 ??? tip "💡 Activity Variations"
     - **Partner Mode:** Work in pairs - one student spells, the other checks
     - **Team Challenge:** Divide class into teams, each team collaborates to spell the word
-    - **Timed Rounds:** Use the [Timer tool](Classroom-Control-Tools.md#-timer) for 30-second spelling challenges
+    - **Timed Rounds:** Use the [Timer tool](Classroom-Control-Tools.md#timer) for 30-second spelling challenges
     - **Peer Teaching:** Students who finish first help others with spelling
 
 ??? example "🎯 Extension Ideas"
@@ -408,7 +408,7 @@ Students build: "5 + 3 = 8"
 - 📚 **Book reports:** Title, author, main themes
 
 !!! tip
-    Use **[Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)** to help students present their letter block projects to the entire class without distractions.
+    Use **[Focus Mode](Classroom-Control-Tools.md#focus-mode)** to help students present their letter block projects to the entire class without distractions.
 
 
 ??? tip "💡 Activity Variations"
@@ -579,7 +579,7 @@ Students build: "5 + 3 = 8"
 3. Personalize with decorative blocks if desired
 
 !!! tip
-    Use the **[Custom Nicknames](Classroom-Control-Tools.md#%EF%B8%8F-custom-nicknames)** feature for digital name display, and letter blocks for physical labels to create a cohesive classroom environment.
+    Use the **[Custom Nicknames](Classroom-Control-Tools.md#custom-nicknames)** feature for digital name display, and letter blocks for physical labels to create a cohesive classroom environment.
 
 
 ??? tip "💡 Activity Variations"
@@ -596,7 +596,7 @@ Students build: "5 + 3 = 8"
 **Time:** 15 minutes
 
 !!! info
-    **Setup Required:** Create teams using **[Teams Management](Student-Management-Tools.md#-teams-management)** before building team identifiers.
+    **Setup Required:** Create teams using **[Teams Management](Student-Management-Tools.md#teams-management)** before building team identifiers.
 
 
 **Activity:**
@@ -631,13 +631,13 @@ Students build: "5 + 3 = 8"
 
 **📢 Clear Instructions**
 
-- Use **[Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)** to explain activities
+- Use **[Focus Mode](Classroom-Control-Tools.md#focus-mode)** to explain activities
 - Demonstrate with your own letter block examples
 - Provide rubrics or checklists for larger projects
 
 **⏰ Time Management**
 
-- Use the **[Timer tool](Classroom-Control-Tools.md#-timer)** for timed challenges
+- Use the **[Timer tool](Classroom-Control-Tools.md#timer)** for timed challenges
 - Set clear start and end times
 - Allow buffer time for cleanup
 

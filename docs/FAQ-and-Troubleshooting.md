@@ -132,7 +132,7 @@ Common questions and solutions for Educator Tools.
     Students shouldn't get the toolbox automatically. If they do:
 
     1. They might be in the "Teachers" team by accident
-    2. Remove them from the Teachers team using [Teams Management](Student-Management-Tools.md#-teams-management)
+    2. Remove them from the Teachers team using [Teams Management](Student-Management-Tools.md#teams-management)
     3. The toolbox will disappear from their inventory
 
 ??? note "Problem: I'm a teacher but don't have the toolbox"

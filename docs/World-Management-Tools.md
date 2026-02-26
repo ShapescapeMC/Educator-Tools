@@ -214,7 +214,7 @@ Toggle major game rules that affect how Minecraft works. Control mob spawning, i
 Controls whether creatures (animals, monsters) spawn naturally in the world.
 
 !!! info
-    Turning Mob Spawning OFF prevents NEW creatures from spawning, but doesn't remove existing ones. Use [Clear Entities](Essential-Tools.md#-clear-entities) to remove mobs already in the world.
+    Turning Mob Spawning OFF prevents NEW creatures from spawning, but doesn't remove existing ones. Use Clear Entities to remove mobs already in the world.
 
 
 **✅ Toggle OFF when:**
@@ -318,7 +318,7 @@ Enable or disable command block functionality for advanced students.
 Controls whether environmental damage occurs (fire, lava, falling, drowning, etc.).
 
 !!! info
-    World Damage only affects environmental damage. Combine with [Manage Health](Essential-Tools.md#️-manage-health) → Enable Damage OFF for complete invulnerability.
+    World Damage only affects environmental damage. Combine with [Manage Health](Student-Management-Tools.md#manage-health) → Enable Damage OFF for complete invulnerability.
 
 
 **✅ Toggle OFF when:**
@@ -450,7 +450,7 @@ When you enable an item restriction, the system automatically:
 
     - Activities with movement limits
     - Guided lessons with boundaries
-    - When using [Lock Players](Classroom-Control-Tools.md#-lock-players)
+    - When using [Lock Players](Classroom-Control-Tools.md#lock-players)
 
 ??? info "🥚 Eggs"
     **What they do:** Can be thrown, sometimes spawn chickens
@@ -690,7 +690,7 @@ When you enable an entity restriction, the system automatically:
 
     - Toggle restrictions on/off freely throughout class
     - Adjust for different activities
-    - Combine with [World Settings](#️-world-settings) for complete environment control
+    - Combine with [World Settings](#world-settings) for complete environment control
 
 ??? example "Example Classroom Configurations"
     **🏗️ Pure Building Activity:**
@@ -715,7 +715,7 @@ When you enable an entity restriction, the system automatically:
 
     - **Restrict:** TNT, Ender Pearls, Arrows, Eggs, Elytra
     - **Allow:** Basic items only
-    - **World Settings:** Always Day, Mob Spawning OFF, use [Lock Players](Classroom-Control-Tools.md#-lock-players)
+    - **World Settings:** Always Day, Mob Spawning OFF, use [Lock Players](Classroom-Control-Tools.md#lock-players)
 
     **🎨 Creative Showcase:**
 
@@ -731,10 +731,10 @@ When you enable an entity restriction, the system automatically:
 
 World Management works great with other Educator Toolbox features:
 
-- **☀️ Always Day** + **[Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)** → Clear visibility during focused activities
-- **🚫 Disable TNT** + **[Lock Players](Classroom-Control-Tools.md#-lock-players)** → Create safe build zones
-- **💚 Keep Inventory** + **[Manage Health](Essential-Tools.md#%EF%B8%8F-manage-health)** → Invulnerable students for stress-free building
-- **⚙️ World Settings** + **[Classroom Limitations](#-classroom-limitations)** → Complete environment control
+- **☀️ Always Day** + **[Focus Mode](Classroom-Control-Tools.md#focus-mode)** → Clear visibility during focused activities
+- **🚫 Disable TNT** + **[Lock Players](Classroom-Control-Tools.md#lock-players)** → Create safe build zones
+- **💚 Keep Inventory** + **[Manage Health](Student-Management-Tools.md#manage-health)** → Invulnerable students for stress-free building
+- **⚙️ World Settings** + **[Classroom Limitations](#classroom-limitations)** → Complete environment control
 
 !!! tip
     Combine multiple World Management features to create the perfect environment for each activity. For example, use Always Day + Mob Spawning OFF + Keep Inventory ON + TNT Restricted for ideal building conditions.

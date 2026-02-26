@@ -105,16 +105,16 @@ Jump directly to how-to guides for common classroom tasks:
 
 | Task | Tool to Use |
 |------|-------------|
-| Gather all students to one location | [Teleport](Student-Management-Tools.md#-teleport) |
-| Get everyone's attention | [Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode) |
-| Make it daytime | [Time & Weather](World-Management-Tools.md#-time--weather-control) |
-| Give everyone the same materials | [Inventory Management](Student-Management-Tools.md#-inventory-management) |
-| Create a timed challenge | [Timer](Classroom-Control-Tools.md#-timer) |
-| Organize students into groups | [Teams Management](Student-Management-Tools.md#-teams-management) |
-| Prevent students from leaving an area | [Lock Players](Classroom-Control-Tools.md#-lock-players) |
-| Stop students from using TNT | [Classroom Limitations](World-Management-Tools.md#-classroom-limitations) |
-| Heal all students | [Manage Health](Essential-Tools.md#%EF%B8%8F-manage-health) |
-| Switch to Creative mode | [Gamemode](Essential-Tools.md#-change-gamemode) |
+| Gather all students to one location | [Teleport](Student-Management-Tools.md#teleport) |
+| Get everyone's attention | [Focus Mode](Classroom-Control-Tools.md#focus-mode) |
+| Make it daytime | [Time & Weather](World-Management-Tools.md#time-weather-control) |
+| Give everyone the same materials | [Inventory Management](Student-Management-Tools.md#inventory-management) |
+| Create a timed challenge | [Timer](Classroom-Control-Tools.md#timer) |
+| Organize students into groups | [Teams Management](Student-Management-Tools.md#teams-management) |
+| Prevent students from leaving an area | [Lock Players](Classroom-Control-Tools.md#lock-players) |
+| Stop students from using TNT | [Classroom Limitations](World-Management-Tools.md#classroom-limitations) |
+| Heal all students | [Manage Health](Student-Management-Tools.md#manage-health) |
+| Switch to Creative mode | [Gamemode](Student-Management-Tools.md#gamemode) |
 
 ---
 
@@ -122,16 +122,16 @@ Jump directly to how-to guides for common classroom tasks:
 
 Quick reference list of every tool in the Educator Toolbox:
 
-- **Assignments** - [View Guide](Classroom-Control-Tools.md#-assignments)
-- **Custom Nicknames** - [View Guide](Classroom-Control-Tools.md#%EF%B8%8F-custom-nicknames)
-- **Focus Mode** - [View Guide](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)
-- **Gamemode** - [View Guide](Student-Management-Tools.md#-gamemode)
-- **Inventory Management** - [View Guide](Student-Management-Tools.md#-inventory-management)
-- **Lock Players** - [View Guide](Classroom-Control-Tools.md#-lock-players)
-- **Manage Health** - [View Guide](Essential-Tools.md#%EF%B8%8F-manage-health)
-- **Teams Management** - [View Guide](Student-Management-Tools.md#-teams-management)
-- **Teleport** - [View Guide](Student-Management-Tools.md#-teleport)
-- **Timer** - [View Guide](Classroom-Control-Tools.md#-timer)
+- **Assignments** - [View Guide](Classroom-Control-Tools.md#assignments)
+- **Custom Nicknames** - [View Guide](Classroom-Control-Tools.md#custom-nicknames)
+- **Focus Mode** - [View Guide](Classroom-Control-Tools.md#focus-mode)
+- **Gamemode** - [View Guide](Student-Management-Tools.md#gamemode)
+- **Inventory Management** - [View Guide](Student-Management-Tools.md#inventory-management)
+- **Lock Players** - [View Guide](Classroom-Control-Tools.md#lock-players)
+- **Manage Health** - [View Guide](Student-Management-Tools.md#manage-health)
+- **Teams Management** - [View Guide](Student-Management-Tools.md#teams-management)
+- **Teleport** - [View Guide](Student-Management-Tools.md#teleport)
+- **Timer** - [View Guide](Classroom-Control-Tools.md#timer)
 - **World Management** (Time, Weather, Settings, Limitations) - [View Guide](World-Management-Tools.md)
 
 ---

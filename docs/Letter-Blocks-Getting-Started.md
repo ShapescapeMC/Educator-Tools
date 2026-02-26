@@ -55,7 +55,7 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
 ### 🎨 Method 1: Creative Mode Inventory (Easiest)
 
 1. Make sure you're in **Creative Mode**
-   - See [Gamemode Guide](Essential-Tools.md#-change-gamemode) if you need to switch
+   - See [Gamemode Guide](Student-Management-Tools.md#gamemode) if you need to switch
 2. Open your inventory (press **E** key)
 3. Click the **Search** tab (magnifying glass icon)
 4. Type "letter" or "block" in the search box
@@ -258,7 +258,7 @@ Stack blocks vertically for traditional math format
     Leave empty blocks (don't place anything) between words, or use a plain colored block as a spacer.
 
 ??? question "Can students use letter blocks?"
-    Yes! In Creative Mode, all students can access letter blocks from their inventory. You can also give them specific blocks using [Inventory Management](Student-Management-Tools.md#-inventory-management).
+    Yes! In Creative Mode, all students can access letter blocks from their inventory. You can also give them specific blocks using [Inventory Management](Student-Management-Tools.md#inventory-management).
 
 ??? question "Do letter blocks work in Survival Mode?"
     Yes, they work in all game modes. In Survival, students need to have the blocks in their inventory (you can't "craft" them - use Creative or teacher distribution).
@@ -278,9 +278,9 @@ Stack blocks vertically for traditional math format
 
 ### 🔧 Want to use other tools with Letter Blocks?
 
-- 📦 **[Inventory Management](Student-Management-Tools.md#-inventory-management)** - Give letter blocks to all students at once
-- 📍 **[Teleport](Student-Management-Tools.md#-teleport)** - Gather students to see a letter block display
-- ⏱️ **[Timer](Classroom-Control-Tools.md#-timer)** - Timed spelling or building challenges
+- 📦 **[Inventory Management](Student-Management-Tools.md#inventory-management)** - Give letter blocks to all students at once
+- 📍 **[Teleport](Student-Management-Tools.md#teleport)** - Gather students to see a letter block display
+- ⏱️ **[Timer](Classroom-Control-Tools.md#timer)** - Timed spelling or building challenges
 
 ### ❓ Need Help?
 

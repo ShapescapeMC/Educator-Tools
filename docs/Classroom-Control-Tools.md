@@ -660,27 +660,27 @@ These classroom control tools work well together:
 
 ??? example "Tool Combination Examples (click to expand)"
     **🎯 Starting a Timed Activity:**
-    1. Use **[Focus Mode](#️-focus-mode)** to get everyone's attention
+    1. Use **[Focus Mode](#focus-mode)** to get everyone's attention
     2. Explain the activity while they're frozen
-    3. Create a **[Timer](#-timer)** with the appropriate duration
+    3. Create a **[Timer](#timer)** with the appropriate duration
     4. Disable Focus Mode and start the Timer simultaneously
 
     **🗺️ Guided Tour with Boundaries:**
-    1. Use **[Lock Players](#-lock-players)** in Player Mode to keep students near you
+    1. Use **[Lock Players](#lock-players)** in Player Mode to keep students near you
     2. Set a reasonable radius (like 20 blocks)
     3. Walk through the area while students follow automatically
     4. They can explore nearby but won't get left behind
 
     **📝 Building Assignment with Constraints:**
-    1. Use **[Lock Players](#-lock-players)** in Center Mode to confine students to their build plots
-    2. Create an **[Assignment](#-assignments)** for them to describe their builds
-    3. Set a **[Timer](#-timer)** for the activity duration
+    1. Use **[Lock Players](#lock-players)** in Center Mode to confine students to their build plots
+    2. Create an **[Assignment](#assignments)** for them to describe their builds
+    3. Set a **[Timer](#timer)** for the activity duration
     4. Students build, submit, and stay in bounds
 
     **🎨 Personalized Classroom:**
-    1. Use **[Custom Nicknames](#️-custom-nicknames)** to let students personalize their identity
-    2. Use nicknames in **[Assignments](#-assignments)** for a more personal touch
-    3. Reference students by their chosen names when using **[Focus Mode](#️-focus-mode)** messages
+    1. Use **[Custom Nicknames](#custom-nicknames)** to let students personalize their identity
+    2. Use nicknames in **[Assignments](#assignments)** for a more personal touch
+    3. Reference students by their chosen names when using **[Focus Mode](#focus-mode)** messages
 
 ---
 
