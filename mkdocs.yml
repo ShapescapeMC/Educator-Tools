@@ -6,6 +6,7 @@ repo_name: ShapescapeMC/Educator-Tools
 
 theme:
   name: material
+  font: false
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
