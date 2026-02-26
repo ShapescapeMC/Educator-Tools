@@ -245,6 +245,7 @@ Three teams are always available:
 ![Teams management interface](images/teams-interface.png)
 
 **✅ Team Benefits:**
+
 - Create teams at the start of class for easy management throughout the session
 - Teams work with almost all other tools (Teleport, Gamemode, Inventory Management, etc.)
 - A student can be in multiple custom teams at once
@@ -270,6 +271,7 @@ Three teams are always available:
 ## 🎒 Inventory Management
 
 ### What it does
+
 Controls what items students have in their inventories. You can give everyone the same items, clear unwanted items, or copy one student's inventory to others.
 
 !!! note
@@ -363,6 +365,7 @@ Removes all items from selected students. Useful for starting activities fresh.
 ![Inventory management interface](images/inventory-interface.png)
 
 **✅ Best Practices:**
+
 - Create a "template student" with perfect starting items, then copy to everyone
 - Use Copy Hotbar to give tools without affecting students' collected materials
 - Clear Inventory at the start of new activities for a fresh start
@@ -388,6 +391,7 @@ Removes all items from selected students. Useful for starting activities fresh.
 ## ❤️ Manage Health
 
 ### What it does
+
 Controls student health and hunger levels. You can heal students, restore their hunger, or even eliminate them from the world temporarily.
 
 !!! note
@@ -426,6 +430,7 @@ Controls student health and hunger levels. You can heal students, restore their 
 
 
 **✅ Common Uses:**
+
 - Reset everyone to full health before a PvP challenge
 - Quickly heal students who got hurt during exploration
 - Feed students to prevent hunger-related slowdown during building
