@@ -6,6 +6,9 @@ icon: material/printer
 
 **A one-page reference guide for classroom use. Print this page and keep it handy during your lessons.**
 
+!!! warning
+	**Work in progress:** This page is still being updated.
+
 ---
 
 ## Opening the Educator Toolbox
