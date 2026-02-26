@@ -7,6 +7,7 @@ icon: material/code-braces
 **⚠️ This guide is for advanced users and developers who want to create custom letter blocks with their own fonts, colors, and backgrounds.**
 
 **If you're a teacher looking to use Letter Blocks in your classroom, see:**
+
 - **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started.md)** for basic usage
 - **[More Letter Blocks Extension](Extensions-More-Letter-Blocks.md)** for ready-made expansion packs
 
@@ -17,6 +18,7 @@ icon: material/code-braces
 This guide explains how to create custom letter block sets by editing the pack's configuration files and adding your own fonts and background images.
 
 **Prerequisites:**
+
 - Understanding of JSON file format
 - Access to the Educator Tools source code
 - Familiarity with the [Development Setup](Development-Setup.md)
@@ -34,7 +36,7 @@ This guide explains how to create custom letter block sets by editing the pack's
 
 ✅ Locate your working directory:
 ```text
-regolith/filters_data/system_template/letter_blocks/
+regolith/filters_data/modular_mc/letter_blocks/
 ```
 
 ### File Structure
@@ -79,6 +81,7 @@ letter_blocks/my_background.png
 ```
 
 **Image Tips:**
+
 - Use square dimensions (64×64, 128×128, 256×256)
 - PNG format with transparency support
 - Design should work well when repeated on all 6 block faces
@@ -91,7 +94,7 @@ letter_blocks/my_background.png
 Locate and open the `_scope.json` file:
 
 ```text
-regolith/filters_data/system_template/letter_blocks/_scope.json
+regolith/filters_data/modular_mc/letter_blocks/_scope.json
 ```
 
 This file contains an array named `letter_sets`. Each object within this array defines a distinct set of letter blocks.
@@ -296,6 +299,7 @@ You can include any Unicode character using escape sequences:
 ```
 
 **Finding Unicode values:**
+
 - Visit [Unicode Character Table](https://unicode-table.com/)
 - Search for your character
 - Copy the `\uXXXX` escape sequence
@@ -314,6 +318,7 @@ Before building, validate your JSON:
 4. **No trailing commas** - Remove commas after the last item in arrays/objects
 
 **Tools for validation:**
+
 - [JSONLint](https://jsonlint.com/)
 - VS Code JSON validation (built-in)
 
@@ -338,6 +343,7 @@ Before building, validate your JSON:
 ### Problem: Blocks don't appear in inventory
 
 **Solutions:**
+
 - Verify suffix is unique (not used by another set)
 - Check JSON syntax for errors
 - Ensure paths to fonts and images are correct
@@ -346,6 +352,7 @@ Before building, validate your JSON:
 ### Problem: Text is cut off or positioned poorly
 
 **Solutions:**
+
 - Adjust `font_size` (try smaller values)
 - Check `image_size` matches background image dimensions
 - Ensure font file is valid and not corrupted
@@ -354,6 +361,7 @@ Before building, validate your JSON:
 ### Problem: Background image looks stretched or wrong
 
 **Solutions:**
+
 - Use square dimensions (64×64, 128×128, etc.)
 - Verify image path is correct
 - Check image format is PNG
@@ -362,6 +370,7 @@ Before building, validate your JSON:
 ### Problem: Build fails with JSON error
 
 **Solutions:**
+
 - Validate JSON syntax using JSONLint
 - Check for missing commas between objects
 - Remove trailing commas after last items
