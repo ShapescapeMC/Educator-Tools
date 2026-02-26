@@ -478,11 +478,13 @@ The More Letter Blocks extension may receive updates with:
 ## Related Documentation
 
 **For Teachers:**
+
 - **[Letter Blocks - Getting Started](Letter-Blocks-Getting-Started.md)** - Basic letter blocks usage
 - **[Letter Blocks - Activities](Letter-Blocks-Activities.md)** - Activity ideas
 - **[Extensions](Extensions.md)** - All available extensions
 
 **For Developers:**
+
 - **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md)** - Create custom blocks
 - **[Developer Documentation](Developer-Documentation.md)** - Extension development
 
@@ -491,9 +493,11 @@ The More Letter Blocks extension may receive updates with:
 ## Feedback & Support
 
 **Have ideas for new characters or themes?**
+
 - Request features on [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)
 
 **Need help?**
+
 - **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems
 - **[Getting Help](Getting-Help.md)** - Support resources
 
