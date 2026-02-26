@@ -6,12 +6,8 @@ icon: material/lightbulb
 
 Creative activity ideas and teaching strategies for using Letter Blocks in educational contexts.
 
----
-
 !!! note
     All Letter Blocks activities work by having students physically build words, numbers, and equations using in-game blocks. These activities encourage hands-on learning and visual engagement while reinforcing academic concepts.
-
----
 
 ## 📚 Language Arts Activities
 
@@ -44,8 +40,6 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
     - Create spelling bee-style competitions with elimination rounds
     - Have students build rhyming words or word families
     - Add difficulty levels: beginner words → intermediate → advanced
-
-![Students building spelling words](images/spelling-activity.png)
 
 ---
 
@@ -117,8 +111,6 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
     - **Kinesthetic Learners:** Have students physically arrange and rearrange vocabulary words
     - **Advanced Students:** Challenge them to build more complex terms or create word relationships
     - **Struggling Students:** Provide word lists and have them match blocks to definitions
-
-![Vocabulary wall example](images/vocabulary-wall.png)
 
 ---
 
@@ -215,8 +207,6 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
     - **Equation Races:** Teams compete to solve a series of equations fastest
     - **Missing Number:** Build equations with one number missing (3 + ? = 7)
     - **Multi-Step Problems:** Create problems requiring two operations (3 + 4 - 2 = ?)
-
-![Math equation with letter blocks](images/math-equation-blocks.png)
 
 ---
 
@@ -320,8 +310,6 @@ Students build: "5 + 3 = 8"
     - **Decorative Borders:** Add decorative blocks or designs around signs
     - **Rotating Responsibilities:** Different students create and update signs each week
     - **QR Code Integration:** Place signs with QR codes linking to more information
-
-![Directional sign example](images/directional-sign.png)
 
 ---
 
@@ -428,8 +416,6 @@ Students build: "5 + 3 = 8"
     - **3D Dioramas:** Combine letter blocks with other building materials for enhanced presentations
     - **Interactive Presentations:** Audience members answer questions using letter blocks
     - **Peer Review:** Students provide feedback using letter blocks (GOOD IDEA, TRY THIS, etc.)
-
-![Student project display](images/student-project-blocks.png)
 
 ---
 
@@ -541,8 +527,6 @@ Students build: "5 + 3 = 8"
     - Build timelines at different scales (decades, centuries, millennia)
     - Create interactive timelines where students can add details
     - Connect historical events to modern-day implications
-
-![Historical timeline with blocks](images/historical-timeline.png)
 
 ---
 
