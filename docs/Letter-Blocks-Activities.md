@@ -8,40 +8,8 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 ---
 
-## 📋 Table of Contents
-
-- [Language Arts Activities](#-language-arts-activities)
-  - [Spelling Practice](#spelling-practice)
-  - [Sentence Construction](#sentence-construction)
-  - [Vocabulary Walls](#vocabulary-walls)
-  - [Storytelling Prompts](#storytelling-prompts)
-- [Mathematics Activities](#-mathematics-activities)
-  - [Number Recognition](#number-recognition)
-  - [Basic Operations Practice](#basic-operations-practice)
-  - [Equation Building](#equation-building)
-  - [Word Problems in 3D](#word-problems-in-3d)
-- [General Education Activities](#-general-education-activities)
-  - [Interactive Signage](#interactive-signage)
-  - [Collaborative Displays](#collaborative-displays)
-  - [Assessment and Quizzes](#assessment-and-quizzes)
-  - [Student Projects and Presentations](#student-projects-and-presentations)
-- [Cross-Curricular Activities](#-cross-curricular-activities)
-  - [Multilingual Learning](#multilingual-learning)
-  - [Science Vocabulary](#science-vocabulary)
-  - [Historical Timelines](#historical-timelines)
-- [Classroom Management Uses](#-classroom-management-uses)
-  - [Behavior and Rules](#behavior-and-rules)
-  - [Student Name Tags](#student-name-tags)
-  - [Team Identification](#team-identification)
-- [Teaching Tips](#-teaching-tips)
-- [Activity Planning Template](#-activity-planning-template)
-- [Next Steps](#-next-steps)
-
----
-
 !!! note
     All Letter Blocks activities work by having students physically build words, numbers, and equations using in-game blocks. These activities encourage hands-on learning and visual engagement while reinforcing academic concepts.
-
 
 ---
 
@@ -57,6 +25,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 
 **Activity:**
+
 1. Call out a spelling word
 2. Students race to build the word using letter blocks
 3. First student to complete it correctly wins a point
@@ -90,6 +59,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 
 **Activity:**
+
 1. Give students a sentence prompt or topic
 2. Students build complete sentences with proper punctuation
 3. Share and read sentences aloud
@@ -128,6 +98,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 
 **Activity:**
+
 1. Choose a theme (science terms, historical vocabulary, etc.)
 2. Students build key vocabulary words using letter blocks
 3. Add definition blocks or signs next to each word
@@ -136,6 +107,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Learning goals:** Vocabulary retention, visual learning, reference skills
 
 **Theme Examples:**
+
 - 🔬 **Science:** "PHOTOSYNTHESIS," "MOLECULE," "ENERGY"
 - 📜 **History:** "DEMOCRACY," "EMPIRE," "REVOLUTION"
 - 🔢 **Math:** "FRACTION," "EQUATION," "VARIABLE"
@@ -160,6 +132,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 
 **Activity:**
+
 1. Create 5-10 story prompt words (DRAGON, CASTLE, TREASURE, FOREST, etc.)
 2. Students pick 3-4 words
 3. Write or build a story incorporating those words
@@ -193,6 +166,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 
 **Activity:**
+
 1. Call out a number
 2. Students find and collect that number block
 3. Have students arrange numbers in order (0-9)
@@ -224,6 +198,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 
 **Activity:**
+
 1. Build math problems using blocks: "3 + 4 = ?"
 2. Students solve and add the answer block
 3. Create multiple problems for practice
@@ -255,6 +230,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 
 **Activity:**
+
 1. Teach an algebra or geometry concept
 2. Students build equations representing the concept
 3. Solve equations collaboratively
@@ -263,6 +239,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 **Learning goals:** Algebraic thinking, visual representation of math
 
 **Example Equations:**
+
 - "2X + 5 = 15"
 - "A = L × W" (area formula)
 - Pythagorean theorem: "A² + B² = C²"
@@ -291,6 +268,7 @@ Creative activity ideas and teaching strategies for using Letter Blocks in educa
 
 
 **Activity:**
+
 1. Present a word problem (written or verbally)
 2. Students build the math equation using blocks
 3. Solve the equation
@@ -321,6 +299,7 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Identify places that need signs (LIBRARY, LAB, CAFETERIA, etc.)
 2. Students build appropriate signs
 3. Place signs at correct locations
@@ -329,12 +308,14 @@ Students build: "5 + 3 = 8"
 **Learning goals:** Literacy, spatial awareness, classroom organization
 
 **Signage Uses:**
+
 - 🚪 Room labels
 - ➡️ Directional signs ("ENTRANCE →")
 - 📜 Rules or instructions
 - 👤 Student names on desks or lockers
 
 ??? tip "💡 Activity Variations"
+
     - **Multilingual Signs:** Create signs in multiple languages for ESL support
     - **Decorative Borders:** Add decorative blocks or designs around signs
     - **Rotating Responsibilities:** Different students create and update signs each week
@@ -354,6 +335,7 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Choose a collaborative project (class motto, mission statement, poem)
 2. Each student builds one word or part
 3. Combine all pieces into a complete display
@@ -362,6 +344,7 @@ Students build: "5 + 3 = 8"
 **Learning goals:** Teamwork, contribution, shared ownership
 
 **Collaborative Ideas:**
+
 - 🎯 **Class motto:** "LEARN," "GROW," "ACHIEVE"
 - 📝 **Collaborative poem:** Each student adds one line
 - 📅 **Historical timeline:** Each student builds a date and event
@@ -384,6 +367,7 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Build questions using letter blocks
 2. Students build their answers below each question
 3. Review answers together
@@ -392,6 +376,7 @@ Students build: "5 + 3 = 8"
 **Learning goals:** Knowledge assessment, active participation
 
 **Example:**
+
 - Question: "CAPITAL OF FRANCE?"
 - Student answer: "PARIS"
 - Teacher feedback: Places ✓ block next to answer
@@ -420,6 +405,7 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Assign a research topic or project
 2. Students create visual presentations using letter blocks
 3. Include key terms, definitions, facts, or quotes
@@ -428,6 +414,7 @@ Students build: "5 + 3 = 8"
 **Learning goals:** Research, presentation skills, visual communication
 
 **Example Projects:**
+
 - 📜 **Historical figures:** Build name, dates, key achievements
 - 🔬 **Science concepts:** Vocabulary, formulas, diagrams
 - 📚 **Book reports:** Title, author, main themes
@@ -458,12 +445,14 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Teach vocabulary in multiple languages
 2. Students build words in English and target language side-by-side
 3. Practice pronunciation while building
 4. Create bilingual signs or displays
 
 **Example Translations:**
+
 - HELLO | HOLA
 - CAT | GATO
 - BOOK | LIBRO
@@ -494,6 +483,7 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Introduce scientific terms (CELL, ATOM, PHOTOSYNTHESIS)
 2. Students build terms using blocks
 3. Add definitions or examples below
@@ -502,6 +492,7 @@ Students build: "5 + 3 = 8"
 **Learning goals:** Scientific literacy, vocabulary retention
 
 **Subject-Specific Terms:**
+
 - 🧬 **Biology:** DNA, CELL, ORGAN, TISSUE
 - ⚗️ **Chemistry:** MOLECULE, ELEMENT, COMPOUND
 - ⚡ **Physics:** FORCE, ENERGY, MOTION
@@ -524,6 +515,7 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Choose a historical period or event sequence
 2. Students build dates and key events in order
 3. Arrange in a timeline format
@@ -566,12 +558,14 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Discuss classroom rules as a class
 2. Build each rule using letter blocks
 3. Display prominently in the classroom
 4. Reference throughout the year
 
 **Example Rules:**
+
 - "BE RESPECTFUL"
 - "LISTEN CAREFULLY"
 - "HELP EACH OTHER"
@@ -595,6 +589,7 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Each student builds their name
 2. Place names on desks, lockers, or assigned spots
 3. Personalize with decorative blocks if desired
@@ -621,6 +616,7 @@ Students build: "5 + 3 = 8"
 
 
 **Activity:**
+
 1. Build team names using letter blocks (RED TEAM, BLUE TEAM, etc.)
 2. Place in team areas or workspaces
 3. Use for competitions, group projects, or organization
@@ -638,21 +634,25 @@ Students build: "5 + 3 = 8"
 ### Effective Implementation
 
 **🚀 Start Simple**
+
 - Begin with basic letter recognition or number activities
 - Gradually increase complexity as students become comfortable
 - Don't overwhelm with too many blocks at once
 
 **👥 Group Work**
+
 - Pair students for collaborative building
 - Assign roles (builder, spell-checker, designer)
 - Encourage teamwork and communication
 
 **📢 Clear Instructions**
+
 - Use **[Focus Mode](Classroom-Control-Tools.md#%EF%B8%8F-focus-mode)** to explain activities
 - Demonstrate with your own letter block examples
 - Provide rubrics or checklists for larger projects
 
 **⏰ Time Management**
+
 - Use the **[Timer tool](Classroom-Control-Tools.md#-timer)** for timed challenges
 - Set clear start and end times
 - Allow buffer time for cleanup
@@ -691,28 +691,34 @@ Use this template to plan letter block activities:
 **Time Required:** _________________
 
 **Learning Goals:**
+
 -
 -
 -
 
 **Materials Needed:**
+
 - Letter blocks: _________________
 - Other tools: _________________
 
 **Setup Steps:**
+
 1.
 2.
 3.
 
 **Activity Instructions:**
+
 1.
 2.
 3.
 
 **Assessment Method:**
+
 -
 
 **Extensions/Variations:**
+
 -
 
 ---
