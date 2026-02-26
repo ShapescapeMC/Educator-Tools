@@ -228,7 +228,7 @@ The boundary follows a specific player (usually you, the teacher). Students must
 - **🖼️ Museum tour:** Lock students in Player Mode following you through the exhibit
 - **⛏️ Resource gathering:** Lock students to a specific forest or mining area
 
-![Lock Players demonstration](gifs/lock-players-demo.gif)
+![Lock Players demonstration](gifs/lock-player-demo.gif)
 
 ---
 
