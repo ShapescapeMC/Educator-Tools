@@ -19,6 +19,9 @@ Before you begin, make sure you have installed the following:
 - **NodeJS LTS**  
   Install the Long Term Support version from the [official NodeJS website](https://nodejs.org/). This will be used for managing our TypeScript modules and dependencies.
 
+- **Deno**  
+  Install the latest version from the [official Deno website](https://deno.com/). This is required for Regolith and build tooling.
+
 - **Regolith**  
   Our project uses Regolith (from Bedrock-Oss) as a compiler for our files. Follow the installation instructions available in [Regolith's official documentation](https://regolith-docs.readthedocs.io/en/latest/introduction/installation/).
 
@@ -164,10 +167,10 @@ Both methods achieve the same result, such as compiling your files for Minecraft
 
 ## 5. Project Architecture
 
-Our project uses the **system_template filter by Nusiq** for modular code development, allowing flexible and reusable code components.
+Our project uses the **modular_mc filter by Nusiq** for modular code development, allowing flexible and reusable code components.
 
 - **Source Files:**  
-  The source files are primarily located in the Regolith-related directories, particularly in `./regolith/filters_data/system_template/`. Additionally, a `manifest.json` file in the `scripting_setup` folder contains references to the Minecraft modules.
+  The source files are primarily located in the Regolith-related directories, particularly in `./regolith/filters_data/modular_mc/`. Additionally, a `manifest.json` file in the `scripting_setup` folder contains references to the Minecraft modules.
 
 - **TypeScript Modules:**  
   NodeJS manages TypeScript modules; you may need to recompile the project to see your changes.
@@ -177,7 +180,7 @@ Our project uses the **system_template filter by Nusiq** for modular code develo
 ## Final Setup Tips
 
 - **Read the Documentation:**  
-  Review the official Regolith and System Template documentation to stay updated on any changes or specific details.
+  Review the official Regolith and Modular MC documentation to stay updated on any changes or specific details.
 
 - **Set Up a Development Environment:**  
   Use an IDE like Visual Studio Code that supports debugging and syntax highlighting to streamline your development process.
