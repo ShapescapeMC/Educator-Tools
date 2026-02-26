@@ -8,28 +8,6 @@ Control the Minecraft world environment and game rules to create the perfect lea
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Quick Reference](#quick-reference)
-- [⏰ Time & Weather Control](#-time--weather-control)
-  - [Quick Option: Always Day](#quick-option-always-day)
-  - [Set Specific Time](#set-specific-time)
-  - [Control Day/Night Cycle](#control-daynight-cycle)
-  - [Set Weather](#set-weather)
-  - [Control Weather Cycle](#control-weather-cycle)
-- [⚙️ World Settings](#️-world-settings)
-  - [Available Settings](#available-settings)
-  - [Difficulty Modes](#difficulty-modes)
-- [🚫 Classroom Limitations](#-classroom-limitations)
-  - [Item Restrictions](#item-restrictions)
-  - [Entity Restrictions](#entity-restrictions)
-  - [Typical Classroom Setup](#typical-classroom-setup)
-- [Related Tools](#related-tools)
-- [Next Steps](#next-steps)
-
----
-
 ## Overview
 
 World Management Tools give you control over time, weather, game rules, and what items or creatures students can encounter. These tools help you create a safe, distraction-free environment focused on learning.
@@ -72,6 +50,7 @@ Instantly change the time of day and weather in your world, or lock them to stay
 The fastest way to get perfect lighting for classroom use.
 
 **Steps:**
+
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **World Management**
 3. Click **Environment**
@@ -82,6 +61,7 @@ The fastest way to get perfect lighting for classroom use.
 
 
 **What Always Day Does:**
+
 - ☀️ Time sets to noon (brightest, no shadows)
 - 🔒 Day/night cycle stops (stays noon forever)
 - 🌤️ Weather cycle stops (stays clear)
@@ -91,6 +71,7 @@ The fastest way to get perfect lighting for classroom use.
 #### Set Specific Time
 
 **Steps:**
+
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **World Management**
 3. Click **Environment**
@@ -107,6 +88,7 @@ The fastest way to get perfect lighting for classroom use.
 #### Control Day/Night Cycle
 
 **Steps:**
+
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **World Management**
 3. Click **Environment**
@@ -123,6 +105,7 @@ The fastest way to get perfect lighting for classroom use.
 #### Set Weather
 
 **Steps:**
+
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **World Management**
 3. Click **Environment**
@@ -139,6 +122,7 @@ The fastest way to get perfect lighting for classroom use.
 #### Control Weather Cycle
 
 **Steps:**
+
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **World Management**
 3. Click **Environment**
@@ -213,6 +197,7 @@ Toggle major game rules that affect how Minecraft works. Control mob spawning, i
 ### How to Use It
 
 **Steps:**
+
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **World Management**
 3. Click **World Settings**
@@ -233,11 +218,13 @@ Controls whether creatures (animals, monsters) spawn naturally in the world.
 
 
 **✅ Toggle OFF when:**
+
 - Building activities where mobs are distracting
 - You don't want monsters interrupting students
 - Peaceful environment needed for focused work
 
 **✅ Toggle ON when:**
+
 - Survival challenges that involve fighting mobs
 - Resource gathering that requires animals
 - Adventure activities with creatures
@@ -253,11 +240,13 @@ When enabled, players keep all items when they die instead of dropping them at t
 
 
 **✅ Toggle ON when:**
+
 - Building projects (prevents losing materials on accidental death)
 - You don't want death to be punishing
 - Focus is on creativity, not survival
 
 **✅ Toggle OFF when:**
+
 - Survival challenges where risk/reward matters
 - Teaching consequences and item management
 
@@ -266,11 +255,13 @@ When enabled, players keep all items when they die instead of dropping them at t
 Controls whether time passes or stays frozen. Same as Environment → Daytime Cycle.
 
 **✅ Toggle OFF when:**
+
 - You want consistent lighting
 - Time changes are distracting
 - Taking screenshots/videos
 
 **✅ Toggle ON when:**
+
 - Teaching about day/night cycles
 - Want natural time progression
 
@@ -279,10 +270,12 @@ Controls whether time passes or stays frozen. Same as Environment → Daytime Cy
 Controls whether weather changes over time. Same as Environment → Weather Cycle.
 
 **✅ Toggle OFF when:**
+
 - Want consistent weather
 - Rain is distracting
 
 **✅ Toggle ON when:**
+
 - Teaching about weather patterns
 - Want natural weather variation
 
@@ -295,10 +288,12 @@ Players skip the death screen and respawn instantly instead of seeing death deta
 
 
 **✅ Toggle ON when:**
+
 - Death isn't important to the activity
 - Want minimal interruption from death
 
 **✅ Toggle OFF when:**
+
 - Death screen provides useful information
 - Want students to think before taking risks
 
@@ -311,10 +306,12 @@ Enable or disable command block functionality for advanced students.
 
 
 **✅ Toggle ON when:**
+
 - Advanced students are using command blocks
 - Technical Minecraft lessons
 
 **✅ Toggle OFF when:**
+
 - Preventing students from using command blocks
 - Not relevant to the lesson
 
@@ -327,11 +324,13 @@ Controls whether environmental damage occurs (fire, lava, falling, drowning, etc
 
 
 **✅ Toggle OFF when:**
+
 - Building activities where falling damage is annoying
 - You don't want students interrupted by damage
 - Creating a completely safe environment
 
 **✅ Toggle ON when:**
+
 - Survival challenges where environmental hazards matter
 - Teaching risk assessment
 
@@ -418,6 +417,7 @@ Block specific items and creatures to create a controlled, safe learning environ
 ### How to Use It
 
 **Steps:**
+
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **World Management**
 3. Click **Classroom Limitations**
@@ -432,6 +432,7 @@ Block specific items and creatures to create a controlled, safe learning environ
 ### Item Restrictions
 
 When you enable an item restriction, the system automatically:
+
 - ✅ Removes the item from all student inventories
 - ✅ Prevents students from using the item
 - ✅ Blocks students from obtaining the item
@@ -446,6 +447,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Students can escape locked areas or bypass boundaries
 
     **When to restrict:**
+
     - Activities with movement limits
     - Guided lessons with boundaries
     - When using [Lock Players](Classroom-Control-Tools.md#-lock-players)
@@ -456,6 +458,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Used to spam or distract other students
 
     **When to restrict:**
+
     - Focused activities
     - Preventing griefing behavior
     - When animal spawning is unwanted
@@ -466,6 +469,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Used to spam, distract, or annoy other students
 
     **When to restrict:**
+
     - Focused activities
     - Preventing disruptive behavior
     - Building projects where interruptions are unwanted
@@ -477,6 +481,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Prevent students from shooting each other or mobs
 
     **When to restrict:**
+
     - Building activities
     - Non-combat lessons
     - Peaceful classroom environments
@@ -507,6 +512,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Students can fly away from activity areas
 
     **When to restrict:**
+
     - Movement-restricted activities
     - When flying creates unfair advantages
     - Ground-based building projects
@@ -517,6 +523,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Visual distraction, allows escaping with Elytra
 
     **When to restrict:**
+
     - Focused work time
     - When visual distractions are problematic
     - If Elytra are also restricted
@@ -527,6 +534,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Can grief other students' work, destructive
 
     **When to restrict:**
+
     - Building projects
     - Any time explosions aren't part of the lesson
     - Preventing griefing
@@ -540,6 +548,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Teleports randomly when clicked, causing chaos
 
     **When to restrict:**
+
     - Most activities (rarely relevant to lessons)
     - When unpredictable block behavior is problematic
 
@@ -549,6 +558,7 @@ When you enable an item restriction, the system automatically:
     **Why restrict:** Effects can be disruptive or create unfair advantages
 
     **When to restrict:**
+
     - Competitive activities requiring fairness
     - When invisibility allows avoiding participation
     - Building activities where effects are distracting
@@ -558,6 +568,7 @@ When you enable an item restriction, the system automatically:
 ### Entity Restrictions
 
 When you enable an entity restriction, the system automatically:
+
 - ✅ Prevents the creature from spawning
 - ✅ Shows a chat message if someone tries to spawn it
 - ✅ Teachers are NEVER affected - you can still spawn entities
@@ -600,6 +611,7 @@ When you enable an entity restriction, the system automatically:
     **Why restrict:** Makes mining extremely slow and frustrating, very disruptive
 
     **When to restrict:**
+
     - Building activities
     - Mining projects
     - Any activity requiring block breaking
@@ -613,6 +625,7 @@ When you enable an entity restriction, the system automatically:
     **Why restrict:** Can harm students, uses up iron resources
 
     **When to restrict:**
+
     - When you don't want students creating golems
     - Limited resources activities
     - When golem damage is problematic
@@ -623,6 +636,7 @@ When you enable an entity restriction, the system automatically:
     **Why restrict:** Leaves snow trails everywhere, can be spammy
 
     **When to restrict:**
+
     - When snow trails mess up builds
     - Indoor building projects
     - When snowball spam is annoying
@@ -638,16 +652,19 @@ When you enable an entity restriction, the system automatically:
 #### Recommended Configuration
 
 **🔴 Item Restrictions (Turn ON):**
+
 - ✅ TNT (prevents griefing)
 - ✅ Ender Pearls (prevents escaping)
 - ✅ Arrows (prevents combat)
 
 **🔴 Entity Restrictions (Turn ON):**
+
 - ✅ Wither (extremely destructive)
 - ✅ Ender Dragon (chaotic)
 - ✅ Warden (too powerful)
 
 **🟢 Keep Available:**
+
 - ❌ Eggs, Fireworks, Elytra (unless specifically problematic)
 - ❌ Potions, Dragon Egg (unless needed for lesson)
 - ❌ Iron Golem, Snow Golem (can be fun/educational)
@@ -662,42 +679,50 @@ When you enable an entity restriction, the system automatically:
 
 ??? tip "Key Features"
     **Automatic Enforcement:**
+
     - Restricted items are removed from student inventories immediately
     - Students see a chat message when attempting to use restricted items
     - Changes apply instantly - no restart needed
 
     **Teacher Exemption:**
+
     - You can always use any restricted item
     - You can always spawn any restricted entity
     - Restrictions only affect students
 
     **Flexible Control:**
+
     - Toggle restrictions on/off freely throughout class
     - Adjust for different activities
     - Combine with [World Settings](#️-world-settings) for complete environment control
 
 ??? example "Example Classroom Configurations"
     **🏗️ Pure Building Activity:**
+
     - **Restrict:** TNT, Ender Pearls, Arrows, Wither, Ender Dragon
     - **Allow:** Everything else
     - **World Settings:** Mob Spawning OFF, Keep Inventory ON, Peaceful Difficulty
 
     **🌍 Peaceful Exploration:**
+
     - **Restrict:** TNT, Wither, Ender Dragon, Warden
     - **Allow:** Most tools and items
     - **World Settings:** Difficulty Peaceful, Mob Spawning OFF
 
     **⚔️ Controlled Survival Challenge:**
+
     - **Restrict:** Ender Pearls, TNT, Wither, Ender Dragon
     - **Allow:** Combat items (arrows, potions)
     - **World Settings:** Mob Spawning ON, Difficulty Easy, Keep Inventory ON
 
     **📚 Guided Tour/Presentation:**
+
     - **Restrict:** TNT, Ender Pearls, Arrows, Eggs, Elytra
     - **Allow:** Basic items only
     - **World Settings:** Always Day, Mob Spawning OFF, use [Lock Players](Classroom-Control-Tools.md#-lock-players)
 
     **🎨 Creative Showcase:**
+
     - **Restrict:** TNT, Wither, Ender Dragon, Warden
     - **Allow:** Decorative items (fireworks OK if supervised)
     - **World Settings:** Always Day, Weather Clear, Mob Spawning OFF
