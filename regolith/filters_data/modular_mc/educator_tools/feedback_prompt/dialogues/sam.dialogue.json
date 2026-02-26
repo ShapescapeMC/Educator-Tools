@@ -154,6 +154,16 @@
 							"/dialogue open @s @initiator edu_tools_dialogue_prompt_npc_thank_you_sam",
 							"/scriptevent edu_tools:feedback_provided"
 						]
+					},
+					{
+						"name": {
+							"rawtext": [
+								{
+									"translate": "edu_tools.dialogue.prompt_npc.button.documentation"
+								}
+							]
+						},
+						"url": "::documentation_url"
 					}
 				]
 			},
