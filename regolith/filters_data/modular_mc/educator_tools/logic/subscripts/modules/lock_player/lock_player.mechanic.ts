@@ -154,7 +154,7 @@ export class LockPlayerMechanic {
 		// Player is outside radius - apply containment mechanics
 		if (
 			distance <
-			lockSettings.radius + LockPlayerMechanic.IMPULSE_BUFFER_ZONE
+				lockSettings.radius + LockPlayerMechanic.IMPULSE_BUFFER_ZONE
 		) {
 			// Apply gentle impulse to push player back
 			this.applyContainmentImpulse(player, center, playerLocation);
@@ -223,18 +223,25 @@ export class LockPlayerMechanic {
 			if (lockSettings.showLockMessage) {
 				player.sendMessage([
 					{
-						translate: "edu_tools.message.lock_player.too_far_teleport_center",
+						translate:
+							"edu_tools.message.lock_player.too_far_teleport_center",
 					},
 				]);
 			}
 		} else {
 			// Teleport to edge of allowed area
-			this.teleportToAreaEdge(player, center, lockSettings.radius, distance);
+			this.teleportToAreaEdge(
+				player,
+				center,
+				lockSettings.radius,
+				distance,
+			);
 
 			if (lockSettings.showLockMessage) {
 				player.sendMessage([
 					{
-						translate: "edu_tools.message.lock_player.too_far_teleport_area",
+						translate:
+							"edu_tools.message.lock_player.too_far_teleport_area",
 					},
 				]);
 			}
@@ -360,7 +367,10 @@ export class LockPlayerMechanic {
 		const reductionFactor = Math.pow(0.85, blocksOverThreshold);
 
 		// Calculate final count and ensure it's at least 1
-		const dynamicCount = Math.max(1, Math.floor(baseCount * reductionFactor));
+		const dynamicCount = Math.max(
+			1,
+			Math.floor(baseCount * reductionFactor),
+		);
 
 		return dynamicCount;
 	}
@@ -471,8 +481,7 @@ export class LockPlayerMechanic {
 			};
 
 			// Calculate angle between this point and target direction
-			const dotProduct =
-				spherePoint.x * normalizedDir.x +
+			const dotProduct = spherePoint.x * normalizedDir.x +
 				spherePoint.y * normalizedDir.y +
 				spherePoint.z * normalizedDir.z;
 			const angle = Math.acos(Math.max(-1, Math.min(1, dotProduct)));
@@ -508,8 +517,10 @@ export class LockPlayerMechanic {
 			const inclination = Math.acos(1 - 2 * t);
 			const azimuth = angleIncrement * i;
 
-			const x = center.x + radius * Math.sin(inclination) * Math.cos(azimuth);
-			const y = center.y + radius * Math.sin(inclination) * Math.sin(azimuth);
+			const x = center.x +
+				radius * Math.sin(inclination) * Math.cos(azimuth);
+			const y = center.y +
+				radius * Math.sin(inclination) * Math.sin(azimuth);
 			const z = center.z + radius * Math.cos(inclination);
 
 			points.push({ x, y, z });
