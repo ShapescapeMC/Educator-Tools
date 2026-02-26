@@ -18,7 +18,7 @@ Student Management Tools let you move students around, change their abilities, o
 | **🎮 Gamemode** | Change Creative/Survival mode | 🎯 Starting activities, giving/removing flying ability |
 | **👥 Teams** | Organize students into groups | 🤝 Group projects, color-coded teams, class organization |
 | **🎒 Inventory Management** | Control student items | 📦 Give materials, clear items, copy inventories |
-| **❤️ Manage Health** | Control health and hunger | 🏥 Healing students, resetting before challenges |
+| **❤️ Manage Health** | Control health, hunger, and effects | 🏥 Healing students, clearing effects, toggling damage/hunger |
 
 !!! note
     All Student Management Tools work seamlessly together. For example, you can create teams and then teleport entire teams at once, or change the gamemode for a whole team with a single click.
@@ -392,7 +392,7 @@ Removes all items from selected students. Useful for starting activities fresh.
 
 ### What it does
 
-Controls student health and hunger levels. You can heal students, restore their hunger, or even eliminate them from the world temporarily.
+Controls student health, hunger, and status effects. You can heal students, remove unwanted effects, reset health settings to defaults, or configure per-team health behavior.
 
 !!! note
     Manage Health is particularly useful in Survival mode activities where health and hunger matter. In Creative mode, students can't take damage, so this tool has limited use.
@@ -401,40 +401,47 @@ Controls student health and hunger levels. You can heal students, restore their 
 ### When to use it
 
 ??? note "Health Management Use Cases"
-    - **🏥 Healing students:** Restore health after combat or accidents
-    - **🍖 Restoring hunger:** Fill hunger bars for activities that require stamina
-    - **🔄 Resetting health:** Set everyone to the same health level before challenges
-    - **💀 Eliminating students:** Remove a student from the world (they respawn immediately)
+    - **🏥 Healing students:** Restore health and hunger after combat or accidents
+    - **🧹 Clearing effects:** Remove all active status effects (poison, slowness, etc.)
+    - **🔄 Resetting settings:** Return health properties to defaults before a new activity
+    - **⚙️ Configuring behavior:** Toggle damage, hunger, or effect immunity per team
 
 ### How to use it
 
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **Manage Health**
-3. **Choose who to affect:**
-   - Single student
-   - Team
-   - All players
+3. **Choose who to affect** (select a team — the tool targets entire teams)
 4. **Select the action:**
-   - **Heal** - Restore health to full
-   - **Feed** - Restore hunger to full
-   - **Heal & Feed** - Restore both health and hunger
-   - **Kill** - Eliminate the player (they respawn at spawn point)
-5. Confirm the action
+   - **Heal** — Clears all effects, briefly restores hunger, and resets health to full
+   - **Clear Effects** — Removes all active status effects from players
+   - **Reset** — Returns health settings to defaults (damage on, hunger on, effect immunity off) and heals
+   - **Settings** — Opens toggles to configure health behavior (see below)
 
 !!! tip
-    Use "Heal & Feed" before starting Survival mode challenges to ensure everyone begins at full strength.
+    Use **Heal** before starting Survival mode challenges to ensure everyone begins at full health and hunger.
 
 
-!!! danger
-    The "Kill" action causes students to lose their current location and any items they're carrying (unless Keep Inventory is enabled in world settings). Use with caution.
+#### Health Settings
+
+The **Settings** button opens a panel with three toggles that control ongoing health behavior for the selected team:
+
+| Toggle | What It Does |
+|--------|-------------|
+| **Enable Damage** | Turn on/off the ability to take damage. When off, players receive permanent regeneration. |
+| **Enable Hunger** | Turn on/off hunger. When off, players receive permanent saturation. |
+| **Enable Effect Immunity** | When on, all effects are continuously removed from players (including positive ones). |
+
+!!! warning
+    Enabling **Effect Immunity** removes *all* effects — including beneficial ones like speed boosts or night vision. Use with caution.
 
 
 **✅ Common Uses:**
 
-- Reset everyone to full health before a PvP challenge
-- Quickly heal students who got hurt during exploration
-- Feed students to prevent hunger-related slowdown during building
-- Respawn stuck students by eliminating them (they reappear at spawn)
+- Heal everyone to full health and hunger before a PvP challenge
+- Clear unwanted effects (poison, slowness) after exploring dangerous areas
+- Disable damage for a peaceful building session without switching to Creative mode
+- Turn off hunger so students aren't distracted during a lesson
+- Enable effect immunity to prevent potion-based disruptions
 
 ---
 
@@ -448,21 +455,25 @@ These tools work great in combination:
 
 ??? note "Tool Combination Examples"
     **🎯 Starting a Group Activity:**
+
     1. Use **[Teams Management](#teams-management)** to organize students into groups
     2. Use **[Teleport](#teleport)** to move entire teams to their work areas
     3. Use **[Inventory Management](#inventory-management)** to give each team their starting materials
 
     **🏗️ Building Project Setup:**
+
     1. Change students to **[Creative Mode](#gamemode)** for unlimited building
     2. Use **[Inventory Management](#inventory-management)** to give everyone the same tools
     3. Use **[Teleport](#teleport)** to move everyone to the build site
 
     **⚔️ Survival Challenge Preparation:**
+
     1. Change students to **[Survival Mode](#gamemode)**
     2. Use **[Manage Health](#manage-health)** to ensure everyone starts at full health
     3. Use **[Teleport](#teleport)** to position teams at their starting locations
 
     **🔍 Assessment and Observation:**
+	
     1. Change yourself to **[Spectator Mode](#gamemode)** to observe invisibly
     2. Use **[Teleport](#teleport)** to move between student work areas
     3. Review each student's progress without disrupting their work
