@@ -1,0 +1,19 @@
+:root {
+  --md-primary-fg-color: #cfb7f3;
+  --md-primary-fg-color-dark: #cfb7f3;
+  --md-primary-bg-color: #f5f0ff;
+  --md-primary-bg-color-dark: #3a2f52;
+  --md-accent-fg-color: #cef46f;
+  --md-accent-fg-color-dark: #cef46f;
+  --md-accent-bg-color: #f0ff99;
+  --md-accent-bg-color-dark: #5a6b2a;
+}
+
+/* Colore per link e elementi interattivi */
+a {
+  color: #cfb7f3;
+}
+
+a:hover {
+  color: #b89cd9;
+}
