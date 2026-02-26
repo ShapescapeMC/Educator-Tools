@@ -31,6 +31,7 @@ theme:
     - toc.integrate
   icon:
     repo: fontawesome/brands/github
+  logo: img/logo.png
   favicon: img/favicon.ico
 
 extra_css:
