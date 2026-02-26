@@ -8,27 +8,6 @@ icon: material/puzzle
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [✨ What's Included](#-whats-included)
-  - [Character Sets](#character-sets)
-  - [Background Themes](#background-themes)
-- [📦 Installation](#-installation)
-- [🕹️ Using in the Classroom](#️-using-in-the-classroom)
-- [🧪 Classroom Activity Ideas](#-classroom-activity-ideas)
-- [⚙️ Best Practices & Tips](#️-best-practices--tips)
-- [🔁 Combining with Other Content](#-combining-with-other-content)
-- [📊 Content Comparison](#-content-comparison)
-- [🎓 Teaching Scenarios](#-teaching-scenarios)
-- [Troubleshooting](#troubleshooting)
-- [Uninstalling the Extension](#uninstalling-the-extension)
-- [Future Updates](#future-updates)
-- [Related Documentation](#related-documentation)
-- [Feedback & Support](#feedback--support)
-
----
-
 ## Overview
 
 !!! note
@@ -36,6 +15,7 @@ icon: material/puzzle
 
 
 The More Letter Blocks extension adds a comprehensive collection of additional letter blocks to Educator Tools, perfect for:
+
 - 🌍 Multilingual classrooms
 - 🧮 Advanced math and science activities
 - 🎨 Color-coded learning activities
@@ -137,7 +117,9 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 ### Requirements
 
 ✅ **Core Educator Tools pack** must be installed and activated first
+
 ✅ **Minecraft Education** (same version as core pack)
+
 ✅ **Compatible device** (Windows, Mac, iPad, Chromebook)
 
 ??? tip "Method 1: Quick Install (Recommended)"
@@ -165,8 +147,6 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
        - Open Creative inventory
        - Search for "letter" or a theme name (e.g., "rainbow")
        - You should see hundreds of new letter blocks
-
-    ![More Letter Blocks in inventory](images/more-letter-blocks-inventory.png)
 
 ??? tip "Method 2: Manual Install"
 
@@ -209,6 +189,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     4. Results show all matching blocks across all themes
 
     **Example searches:**
+
     - "accent" → All accented letters
     - "pi" → π symbol in all themes
     - "checkmark" → ✓ symbols
@@ -219,16 +200,16 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     3. Browse all characters in that theme
 
     **Theme search terms:**
+
     - "rainbow" → All rainbow-themed blocks
     - "blue outline" → All blue outline blocks
     - "dark oak" → All dark oak themed blocks
 
 ??? tip "📦 Method 3: Pre-organized Storage"
+
     - Use item frames or labeled chests to organize themed sets
     - Create "stations" with specific themes for activities
     - Example: Math station has blue outline blocks, Reading station has yellow outline blocks
-
-    ![Organized storage example](images/letter-blocks-storage.png)
 
 ---
 
@@ -241,55 +222,62 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     - Students build color-coded sentences
 
     ### Multilingual Word Walls
+
     - Display vocabulary in multiple languages side-by-side
     - Use accented characters for authentic spelling
     - Example: "HELLO" (English) | "HOLA" (Spanish) | "BONJOUR" (French)
 
     ### Spelling & Phonics
+
     - Color-code vowels vs. consonants using two themes
     - Use rainbow blocks for "word of the day"
     - Create themed sections for different phonetic patterns
 
 ??? example "🧮 Mathematics Activities"
     ### Operation Stations
+
     - Red theme = Addition problems
     - Blue theme = Subtraction problems
     - Green theme = Multiplication problems
     - Yellow theme = Division problems
 
     ### Advanced Math Symbols
+
     - Build equations with Greek letters (π, Σ, Δ)
     - Use proper math operators (√, ≤, ≥, ≠)
     - Create visual representations of formulas
 
     ### Fraction & Decimal Work
+
     - Use specialized fraction symbols
     - Build decimal representations
     - Create number line displays
 
 ??? example "👥 Team Activities"
     ### Team Color Assignment
+
     - Each team gets a specific background theme
     - Teams build with "their color" blocks
     - Easy visual identification of team work
 
     ### Collaborative Building
+
     - Different themes for different clauses in complex sentences
     - Color-coded story building (intro, middle, conclusion)
     - Visual organization of group projects
 
 ??? example "✅ Assessment Activities"
     ### Correct/Incorrect Indicators
+
     - Green blocks with ✓ for correct answers
     - Red blocks with ✗ for incorrect answers
     - Students place blocks to answer questions
 
     ### Self-Check Stations
+
     - Build problems with one theme
     - Students build answers with another theme
     - Answer key uses checkmark blocks
-
-    ![Assessment activity example](images/assessment-blocks.png)
 
 ---
 
@@ -297,38 +285,45 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 
 ??? tip "🎨 Visual Design Tips"
     ### Contrast for Readability
+
     - Test visibility under different Minecraft lighting (day, night, torches)
     - Dark Oak theme works best with light-colored text
     - Light themes (Pale Oak, Light Blue Concrete) work with darker text
 
     ### Avoid Visual Overload
+
     - Don't use too many themes in one small area
     - Stick to 2-3 themes per activity for clarity
     - Use Blank theme as a neutral "separator"
 
     ### Accessibility Considerations
+
     - High-contrast themes (Green, Blue, Yellow outlines) are better for dyslexia-friendly layouts
     - Avoid red/green combinations for colorblind students
     - Test displays from student viewing distance
 
 ??? tip "⚡ Performance Tips"
     ### Large Displays
+
     - Hundreds of letter blocks in one area can affect lower-end devices
     - Segment very large word walls into sections
     - Use Blank theme for less visual processing load
 
     ### Backup Important Work
+
     - Large instructional boards are valuable
     - Export world copies regularly
     - Take screenshots of completed displays
 
 ??? tip "📦 Organization Tips"
     ### Storage Systems
+
     - Create themed chests for each background style
     - Label with item frames showing example blocks
     - Pre-stage blocks for specific activities
 
     ### Activity Preparation
+
     - Set up themed block "kits" in advance
     - Use [Inventory Management](Student-Management-Tools.md#-inventory-management) to distribute to students
     - Keep frequently-used characters easily accessible
@@ -339,7 +334,6 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 
 !!! note
     The extension adds to the Letter Blocks library - it doesn't replace anything. All your existing blocks continue to work perfectly.
-
 
 ??? info "🎨 Custom Letter Blocks"
     The extension works seamlessly with custom letter blocks you create yourself.
@@ -353,6 +347,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     All core Letter Blocks continue to work normally. The extension **adds to** the library, it doesn't replace anything.
 
     **You'll have:**
+
     - ✅ All original letter blocks from the core pack
     - ✅ All new letter blocks from the extension
     - ✅ All custom letter blocks you create
@@ -383,6 +378,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     **Goal:** Build vocabulary walls in English, Spanish, and French
 
     **Approach:**
+
     - Use Blue Outline for English words
     - Use Red Outline for Spanish words
     - Use Yellow Outline for French words
@@ -394,6 +390,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     **Goal:** Teach algebraic formulas with proper mathematical notation
 
     **Approach:**
+
     - Use Greek letters (π, Σ, Δ) for variables
     - Build equations with proper operators (≤, ≥, ≠, √)
     - Use Green Outline for formulas, Blue for student work
@@ -404,6 +401,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
     **Goal:** Teach sentence structure with parts of speech
 
     **Approach:**
+
     - Blue Outline = Nouns
     - Red Outline = Verbs
     - Green Outline = Adjectives
@@ -417,6 +415,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 
 ??? failure "Extension blocks don't appear"
     **Solutions:**
+
     - Verify **core Educator Tools** is activated first
     - Check **both** Behavior Packs and Resource Packs are activated
     - Leave and rejoin the world
@@ -424,6 +423,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 
 ??? failure "Can't find a specific character"
     **Solutions:**
+
     - Search by character name ("euro", "pi", "checkmark")
     - Try alternative search terms
     - Check if the character is in the core pack vs. extension
@@ -431,6 +431,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 
 ??? failure "Themes look wrong or corrupted"
     **Solutions:**
+
     - Ensure Resource Pack is activated (not just Behavior Pack)
     - Restart Minecraft Education
     - Re-import the extension
@@ -438,6 +439,7 @@ Every character is available across **9 distinct themed backgrounds**, allowing 
 
 ??? failure "Performance issues with large displays"
     **Solutions:**
+
     - Reduce render distance in settings
     - Segment large word walls into smaller sections
     - Use simpler themes (Blank) for background areas
@@ -463,6 +465,7 @@ If you want to remove the extension:
 ## Future Updates
 
 The More Letter Blocks extension may receive updates with:
+
 - Additional language support
 - New background themes
 - More specialized symbols
@@ -488,7 +491,6 @@ The More Letter Blocks extension may receive updates with:
 ## Feedback & Support
 
 **Have ideas for new characters or themes?**
-- Share in [GitHub Discussions](https://github.com/ShapescapeMC/Educator-Tools/discussions)
 - Request features on [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)
 
 **Need help?**
