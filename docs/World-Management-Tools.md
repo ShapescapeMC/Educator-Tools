@@ -174,7 +174,7 @@ The fastest way to get perfect lighting for classroom use.
     - Weather Cycle: **OFF** (you control changes)
     - Time: **Day** or **Noon** for visibility
 
-![Environment controls demonstration](gifs/environment-demo.gif)
+![Environment controls demonstration](gifs/environment-settings.gif)
 
 ---
 
@@ -228,8 +228,6 @@ Controls whether creatures (animals, monsters) spawn naturally in the world.
 - Survival challenges that involve fighting mobs
 - Resource gathering that requires animals
 - Adventure activities with creatures
-
-![Mob spawning setting](images/mob-spawning-setting.png)
 
 #### 💎 Keep Inventory
 
@@ -405,6 +403,8 @@ Block specific items and creatures to create a controlled, safe learning environ
 !!! note
     Teachers are completely exempt from all classroom limitations. You can always use any restricted item or spawn any restricted entity.
 
+![Classroom Limitations panel](gifs/classroom-limitations.gif)
+
 
 ### 🎯 When to Use It
 
@@ -563,8 +563,6 @@ When you enable an item restriction, the system automatically:
     - When invisibility allows avoiding participation
     - Building activities where effects are distracting
 
-![Item restrictions panel](images/item-restrictions.png)
-
 ### Entity Restrictions
 
 When you enable an entity restriction, the system automatically:
@@ -640,8 +638,6 @@ When you enable an entity restriction, the system automatically:
     - When snow trails mess up builds
     - Indoor building projects
     - When snowball spam is annoying
-
-![Entity restrictions panel](images/entity-restrictions.png)
 
 ### Typical Classroom Setup
 
@@ -726,8 +722,6 @@ When you enable an entity restriction, the system automatically:
     - **Restrict:** TNT, Wither, Ender Dragon, Warden
     - **Allow:** Decorative items (fireworks OK if supervised)
     - **World Settings:** Always Day, Weather Clear, Mob Spawning OFF
-
-![Classroom limitations demonstration](gifs/limitations-demo.gif)
 
 ---
 
