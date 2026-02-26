@@ -15,7 +15,7 @@ export class LockPlayerMechanic {
 	private taskId: number | null = null;
 
 	/** Reference to the teams service for team management */
-	private teamsService: TeamsService;
+	private teamsService: TeamsService | undefined;
 
 	/** Maximum impulse force applied to players when pushing them back */
 	private static readonly MAX_IMPULSE = 2;
@@ -77,7 +77,7 @@ export class LockPlayerMechanic {
 		// Update center location if bound to a player
 		this.updatePlayerBoundCenter(teamId, lockSettings);
 
-		const team = this.teamsService.getTeam(teamId);
+		const team = this.teamsService?.getTeam(teamId);
 		if (!team) {
 			return;
 		}
