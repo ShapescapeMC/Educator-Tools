@@ -68,7 +68,7 @@ Dims students' screens, shows them your message, and prevents them from moving o
 - 🚫 They can't move, build, or interact
 - 💭 They can still see chat (Minecraft limitation)
 
-![Focus Mode active on student screen](images/focus-mode-student-view.png)
+![Focus Mode active on student screen](images/focus-mode.png)
 
 #### Turn Off Focus Mode
 
@@ -95,7 +95,7 @@ Dims students' screens, shows them your message, and prevents them from moving o
     Use Focus Mode on specific students or teams to give targeted instructions without freezing the entire class.
 
 
-![Focus Mode interface](images/focus-mode-interface.png)
+![Focus Mode interface](gifs/focus-mode-toggle.gif)
 
 ### Focus Mode Features
 
@@ -118,9 +118,6 @@ Dims students' screens, shows them your message, and prevents them from moving o
 
 !!! danger
     Chat cannot be disabled during Focus Mode (Minecraft limitation), so students can still send messages. Set clear expectations about chat usage during focus time.
-
-
-![Focus Mode demonstration](gifs/focus-mode-toggle-demo.gif)
 
 ---
 
@@ -194,7 +191,7 @@ The boundary follows a specific player (usually you, the teacher). Students must
 3. Click **View Blocked Teams**
 4. Select the lock to view details or remove it
 
-![Lock Players interface](images/lock-players-interface.png)
+![Lock Players interface](gifs/lock-players-interface.gif)
 
 ### Lock Settings Explained
 
@@ -280,8 +277,6 @@ Once created, you have these controls:
 - **🗑️ Delete** - Remove the timer completely
 - **👁️ Hide Timer Entity** - Make the physical world object invisible (Boss Bar still shows)
 
-![Timer controls](images/timer-controls.png)
-
 !!! tip
     Use **Pause** for unexpected interruptions (like answering a student's complex question), then resume with **Start** when you're ready to continue.
 
@@ -301,8 +296,6 @@ Once created, you have these controls:
 - Can be placed anywhere in the world
 - Shows the same countdown
 - Can be hidden if you only want the Boss Bar
-
-![Timer display on student screen](images/timer-display.png)
 
 !!! info
     Only one timer can be active at a time. Creating a new timer will replace any existing timer.
@@ -560,7 +553,7 @@ Students receive notifications when their nicknames are approved or denied.
     The approval queue lets you maintain control over appropriate names while still giving students autonomy. Review requests promptly so students don't have to wait long.
 
 
-![Approval queue](images/nickname-approval-queue.png)
+![Approval queue](gifs/nickname-approval-queue.gif)
 
 ### Student Experience
 
@@ -601,8 +594,6 @@ When custom messages are enabled:
 
 - Join: `[Nickname] joined the game (was [Original Name])`
 - Leave: `[Nickname] left the game (was [Original Name])`
-
-![Nickname display in game](images/nickname-display.png)
 
 ### Configuration Examples
 
@@ -656,8 +647,6 @@ When custom messages are enabled:
     **🎭 Creative Scenarios:**
     - Create themed nicknames for role-playing scenarios
     - Example: "Dr. Science", "Captain Explorer", "Engineer Maya"
-
-![Nickname approval demonstration](gifs/nickname-approval-demo.gif)
 
 ---
 
