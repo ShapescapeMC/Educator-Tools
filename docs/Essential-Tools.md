@@ -307,6 +307,7 @@ Creates invisible boundaries that prevent students from moving beyond a defined 
 
 !!! note
     **Center Mode (Fixed Location):**
+	
     - 📍 Sets a specific spot as the center of a boundary circle
     - ✅ Students can move freely within the radius
     - 🚫 They can't leave the area
@@ -315,6 +316,7 @@ Creates invisible boundaries that prevent students from moving beyond a defined 
 
 !!! note
     **Player Mode (Follow Mode):**
+
     - 👥 The boundary follows a specific player (usually you, the teacher)
     - 🚶 Students must stay within radius as that player moves
     - **When to use:** Guided tours, walking lessons, keeping the class together while moving
