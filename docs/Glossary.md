@@ -8,12 +8,6 @@ Simple explanations of Minecraft and Educator Tools terms you'll encounter.
 
 ---
 
-## Table of Contents
-
-- [A](#a) | [B](#b) | [C](#c) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [P](#p) | [S](#s) | [T](#t) | [W](#w) | [X](#x)
-
----
-
 ## A
 
 ??? note "🎮 Adventure Mode"
@@ -67,7 +61,7 @@ Simple explanations of Minecraft and Educator Tools terms you'll encounter.
 ??? note "📖 Education"
     The version of Minecraft designed for classrooms. Different from regular Minecraft (Java or Bedrock Edition).
 
-??? note "🞠️ Educator Toolbox"
+??? note "🛠️ Educator Toolbox"
     The special item that teachers receive automatically. Right-click it to open the menu with all classroom management tools.
 
 ---
@@ -113,7 +107,7 @@ Simple explanations of Minecraft and Educator Tools terms you'll encounter.
 
 ## I
 
-??? note "🂰 Inventory"
+??? note "🎒 Inventory"
     The storage space where players keep items and blocks. Press **E** key to open. Think of it as your backpack.
 
 ---
