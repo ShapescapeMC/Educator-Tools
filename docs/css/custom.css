@@ -37,8 +37,8 @@
   --md-primary-bg-color:        #ffffff;
   --md-primary-bg-color--light: #f5f5f5;
 
-  --md-accent-fg-color:         #ef38a9;
-  --md-accent-fg-color--transparent: rgba(239, 56, 169, 0.1);
+  --md-accent-fg-color:         #4b927e;
+  --md-accent-fg-color--transparent: rgba(75, 146, 126, 0.1);
   --md-accent-bg-color:         #ffffff;
 
   --md-typeset-a-color:         #4b927e;
@@ -60,8 +60,8 @@
   --md-primary-bg-color:        #ffffff;
   --md-primary-bg-color--light: #f5f5f5;
 
-  --md-accent-fg-color:         #ef38a9;
-  --md-accent-fg-color--transparent: rgba(239, 56, 169, 0.15);
+  --md-accent-fg-color:         #4b927e;
+  --md-accent-fg-color--transparent: rgba(75, 146, 126, 0.15);
   --md-accent-bg-color:         #1e1e2e;
 
   --md-typeset-a-color:         #cdf462;
@@ -83,10 +83,10 @@
 
 /* ---------- Active nav item indicator ---------- */
 .md-nav__link--active {
-  color: #ef38a9 !important;
+  color: #4b927e !important;
 }
 
 /* ---------- Search highlight ---------- */
 .md-search-result mark {
-  background-color: rgba(205, 244, 98, 0.45);
+  background-color: rgba(239, 56, 169, 0.2);
 }
