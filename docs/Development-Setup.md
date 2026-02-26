@@ -75,23 +75,25 @@ Once you have forked the repository, you can clone it to your local machine usin
 
 There are multiple steps to install the necessary dependencies.
 
-### 3.1. NodeJS Dependencies
+### 3.1. Deno Dependencies
 
 The project uses Node to manage TypeScript modules. The `package_lock.json` file is located in the `./regolith/filters_data` folder and lists the necessary dependencies. To install them manually:
+Run the following command:
 
-1. Open the terminal in the `./regolith/filters_data` directory:
+1. Open the terminal in the `regolith` directory:
+
    ```bash
-   cd regolith/filters_data
+   cd regolith
    ```
-2. Run the following command:
+2. Execute the command:
    ```bash
-   npm install
+   deno install
    ```
    This command will install all the dependencies listed in the `package_lock.json` file.
 
 ### 3.2. Regolith Dependencies
 
-In addition to the NodeJS dependencies, you must also run the following command in the `regolith` folder to install Regolith-specific dependencies:
+In addition to the Deno dependencies, you must also run the following command in the `regolith` folder to install Regolith-specific dependencies:
 
 1. Open the terminal in the `regolith` directory:
    ```bash
