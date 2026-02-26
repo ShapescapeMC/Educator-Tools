@@ -6,41 +6,6 @@ icon: material/human-male-board
 
 These tools help you maintain focus, manage classroom behavior, and create structured learning experiences.
 
-## 📑 Table of Contents
-
-- [Overview](#overview)
-- [Quick Reference](#quick-reference)
-- [👁️ Focus Mode](#focus-mode)
-  - [What it does](#what-it-does)
-  - [When to use it](#when-to-use-it)
-  - [How to use it](#how-to-use-it)
-  - [Focus Mode Features](#focus-mode-features)
-- [🔒 Lock Players](#lock-players)
-  - [What it does](#what-it-does_1)
-  - [When to use it](#when-to-use-it_1)
-  - [Lock Modes](#lock-modes)
-  - [How to use it](#how-to-use-it_1)
-  - [Lock Settings Explained](#lock-settings-explained)
-- [⏰ Timer](#timer)
-  - [What it does](#what-it-does_2)
-  - [When to use it](#when-to-use-it_2)
-  - [How to use it](#how-to-use-it_2)
-  - [How Students See the Timer](#how-students-see-the-timer)
-- [📋 Assignments](#assignments)
-  - [What it does](#what-it-does_3)
-  - [When to use it](#when-to-use-it_3)
-  - [Teacher Interface](#teacher-interface)
-  - [Student Interface](#student-interface)
-- [🏷️ Custom Nicknames](#custom-nicknames)
-  - [What it does](#what-it-does_4)
-  - [When to use it](#when-to-use-it_4)
-  - [Teacher Settings](#teacher-settings)
-  - [Managing Student Nicknames](#managing-student-nicknames)
-  - [Student Experience](#student-experience)
-  - [Configuration Examples](#configuration-examples)
-- [Related Tools](#related-tools)
-- [Next Steps](#next-steps)
-
 ---
 
 ## Overview
@@ -66,6 +31,7 @@ Classroom Control Tools give you ways to get students' attention, manage movemen
 ## 👁️ Focus Mode
 
 ### What it does
+
 Dims students' screens, shows them your message, and prevents them from moving or interacting with the world. Think of it as the "eyes on me" button.
 
 !!! tip
@@ -96,6 +62,7 @@ Dims students' screens, shows them your message, and prevents them from moving o
 
 
 **What students see:**
+
 - 🌑 Screen dims/darkens completely
 - 💬 Your message appears in the center
 - 🚫 They can't move, build, or interact
@@ -133,6 +100,7 @@ Dims students' screens, shows them your message, and prevents them from moving o
 ### Focus Mode Features
 
 **✅ Core Capabilities:**
+
 - Students become invulnerable - Can't take damage while focused
 - Students can't move - Completely frozen in place
 - Teachers are never affected - Focus Mode never activates on teachers
@@ -159,6 +127,7 @@ Dims students' screens, shows them your message, and prevents them from moving o
 ## 🔒 Lock Players
 
 ### What it does
+
 Creates an invisible boundary that prevents students from moving beyond a certain area. Students stay within the zone you define.
 
 !!! note
@@ -177,11 +146,13 @@ Creates an invisible boundary that prevents students from moving beyond a certai
 ### Lock Modes
 
 #### 📍 Center Mode (Fixed Location)
+
 Sets a specific spot as the center of a circle. Students can move freely within the radius but can't leave the area.
 
 **When to use it:** Building projects, confined activities, keeping students in one location.
 
 #### 👤 Player Mode (Follow Mode)
+
 The boundary follows a specific player (usually you, the teacher). Students must stay within radius of that player as they move.
 
 **When to use it:** Guided tours, walking lessons, keeping the class together while moving.
@@ -255,6 +226,7 @@ The boundary follows a specific player (usually you, the teacher). Students must
 
 
 **Example uses:**
+
 - **🏗️ Building competition:** Lock all students to their own plots with Center Mode
 - **🖼️ Museum tour:** Lock students in Player Mode following you through the exhibit
 - **⛏️ Resource gathering:** Lock students to a specific forest or mining area
@@ -317,12 +289,14 @@ Once created, you have these controls:
 ### How Students See the Timer
 
 **📊 Boss Bar (Top of Screen):**
+
 - Appears at the very top of the screen
 - Shows time remaining
 - Visible to all students at all times
 - Example: "⏰ Time Remaining: 04:32"
 
 **🎈 Timer Entity (In World):**
+
 - Physical floating timer object
 - Can be placed anywhere in the world
 - Shows the same countdown
@@ -335,6 +309,7 @@ Once created, you have these controls:
 
 
 **✅ Best Practices:**
+
 - The Boss Bar is always visible, so students can't miss it
 - Use **Hide Timer Entity** if you don't want a physical object in the world
 - **Edit** lets you add or remove time if you need to adjust mid-activity
@@ -398,6 +373,7 @@ Creates structured assignments that students can submit with text responses and 
 4. Select an assignment to view submissions
 
 **What you see:**
+
 - ✅ List of all students who have submitted
 - 💬 Each student's text response
 - 📍 Location coordinates where they submitted (you can teleport there)
@@ -406,6 +382,7 @@ Creates structured assignments that students can submit with text responses and 
 #### Viewing a Submission
 
 When viewing a specific assignment:
+
 1. Click on a student's name to see their submission
 2. Read their text response
 3. Click **Teleport to Location** to visit where they submitted from
@@ -424,6 +401,7 @@ When the assignment deadline has passed or everyone has submitted:
 3. Confirm
 
 **✅ What happens:**
+
 - Assignment moves to **Completed Assignments**
 - Students can no longer submit or edit submissions
 - You can still view all submissions
@@ -461,6 +439,7 @@ Students see a simplified view of assignments.
 4. Click **Submit**
 
 **What gets recorded:**
+
 - 📝 The student's text response
 - 📍 Their current location (coordinates)
 - ⏰ Timestamp of submission
@@ -476,6 +455,7 @@ Students can see if they've submitted an assignment, but they cannot view their 
 ![Student assignment view](images/student-assignment-view.png)
 
 **✅ Best Practices:**
+
 - Use **Notify Students** when creating assignments so everyone knows immediately
 - **Teleport to Location** is perfect for reviewing building projects
 - Create a clear description so students know exactly what to submit
@@ -531,6 +511,7 @@ Allows students to set personalized display names (nicknames) that appear instea
 4. Configure options:
 
 **⚙️ System Control:**
+
 - **🔘 Nicknames Enabled** - Turn the entire system on or off
 - **💬 Prompt on Join** - Ask students to set a nickname when they join the world
   - **OFF** - Only teachers can set nicknames
@@ -586,6 +567,7 @@ Students receive notifications when their nicknames are approved or denied.
 #### Setting a Nickname (Student)
 
 **If "Prompt on Join" is ON:**
+
 1. Join the world
 2. Nickname prompt appears automatically
 3. Enter desired nickname
@@ -593,10 +575,12 @@ Students receive notifications when their nicknames are approved or denied.
 5. Submit
 
 **If nickname is pending approval:**
+
 - Student sees "Waiting for approval" message
 - Receives notification when approved or denied
 
 **If "Prompt on Join" is OFF:**
+
 - Students cannot set their own nicknames
 - Only teachers can assign nicknames
 
@@ -607,12 +591,14 @@ Students receive notifications when their nicknames are approved or denied.
 #### Nickname Display
 
 Once approved/set, nicknames:
+
 - Replace the default Minecraft username everywhere
 - Appear in chat, on player nametags, in menus
 - Show in custom colors (if enabled)
 
 **📢 Join/Leave Messages:**
 When custom messages are enabled:
+
 - Join: `[Nickname] joined the game (was [Original Name])`
 - Leave: `[Nickname] left the game (was [Original Name])`
 
@@ -650,6 +636,7 @@ When custom messages are enabled:
         Full freedom mode allows students to set any nickname instantly. Only use this if you trust students to make appropriate choices.
 
 **✅ Best Practices:**
+
 - Start with **Require Approval ON** to maintain control over appropriate names
 - Use nicknames to respect preferred names and pronouns
 - **Allow Custom Colors** adds personalization but can be distracting (your choice)
