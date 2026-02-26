@@ -20,12 +20,10 @@ Once your environment is ready, return here to learn about the contribution work
 
 ---
 
-## 1. Making Changes
-
-Our project uses the **system_template filter by Nusiq** for modular code development, allowing flexible and reusable code components. Follow these steps to modify the code:
+Our project uses the **modular_mc Regolith filter** for modular code development, allowing flexible and reusable code components. Follow these steps to modify the code:
 
 1. **Locate the Source Files:**  
-   The source files are primarily located in the Regolith-related directories, particularly in `./regolith/filters_data/system_template/`. Additionally, a `manifest.json` file in the `scripting_setup` folder contains references to the Minecraft modules.
+   The source files are primarily located in the Regolith-related directories, particularly in `./regolith/filters_data/modular_mc/educator_tools/`. Additionally, a `manifest.json` file in the `scripting_setup` folder contains references to the Minecraft modules.
 
 2. **Make Your Changes:**
 
