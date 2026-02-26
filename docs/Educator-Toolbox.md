@@ -6,19 +6,6 @@ icon: material/view-grid
 
 The Educator Toolbox is your command center for classroom management in Minecraft Education. This guide provides an overview of all available tools.
 
-## Table of Contents
-
-- [Accessing the Educator Toolbox](#accessing-the-educator-toolbox)
-- [Tools by Category](#tools-by-category)
-  - [👥 Student Management Tools](#-student-management-tools)
-  - [🎓 Classroom Control Tools](#-classroom-control-tools)
-  - [🌍 World Management Tools](#-world-management-tools)
-- [Quick Access Guides](#quick-access-guides)
-- [Common Tasks](#common-tasks)
-- [All Tools Alphabetically](#all-tools-alphabetically)
-- [Tips for Using the Educator Toolbox](#tips-for-using-the-educator-toolbox)
-- [Beyond the Toolbox](#beyond-the-toolbox)
-
 ---
 
 ## Accessing the Educator Toolbox
@@ -26,6 +13,7 @@ The Educator Toolbox is your command center for classroom management in Minecraf
 The Educator Toolbox is accessed via a special in-game item that appears automatically in your inventory.
 
 **How to open it:**
+
 1. Find the **Educator Toolbox** item in your hotbar (bottom row of your inventory)
 2. Right-click (or interact) with the item
 3. The main menu opens with all classroom management tools
@@ -52,7 +40,6 @@ The Educator Toolbox is accessed via a special in-game item that appears automat
 
 !!! info
     **Start with [Essential Tools](Essential-Tools.md) first!** These 5 features (Custom Nicknames, Assignments, Focus Mode, Lock Players, Letter Blocks) are the most important and offer unique educational capabilities.
-
 
 All tools are organized into three main categories based on what they help you do:
 
@@ -184,6 +171,7 @@ Quick reference list of every tool in the Educator Toolbox:
 **Problem: I don't see the Educator Toolbox in my inventory**
 
 Solutions:
+
 - Check if you're in the Teachers team
 - Leave and rejoin the world to trigger the toolbox appearing
 - Open Creative inventory and search for "Educator Toolbox"
