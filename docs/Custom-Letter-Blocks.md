@@ -2,6 +2,9 @@
 icon: material/cog
 ---
 
+!!! warning "Advanced Users Only"
+    This page is intended for experienced users with knowledge of file modification and JSON editing. If you are not comfortable working with configuration files and technical setup, please refer to the [Getting Started](/ShapescapeMC/Educator-Tools/wiki/Letter-Blocks-Getting-Started) guide instead.
+
 ## Creating Custom Letter Blocks
 
 This document explains how to create custom letter blocks using Educator Tools, enabling you to utilize personalized fonts, colors, and backgrounds.
@@ -12,7 +15,7 @@ This document explains how to create custom letter blocks using Educator Tools, 
 * Locate your working directory:
 
   ```text
-  regolith/filters_data/system_template/letter_blocks/
+  regolith/filters_data/modular_mc/letter_blocks/
   ```
 * Place your custom font files into the `fonts/` subdirectory.
 * Put your background images directly into the current working directory (`letter_blocks/`).
@@ -21,15 +24,15 @@ This document explains how to create custom letter blocks using Educator Tools, 
 
 ### Step 1: Open the Template
 
-Locate and open the `_scope.json` file:
+Locate and open the `scope.ts` file:
 
 ```text
-regolith/filters_data/system_template/letter_blocks/_scope.json
+regolith/filters_data/modular_mc/letter_blocks/_scope.ts
 ```
 
 ### Step 2: JSON Structure Overview
 
-The `_scope.json` file contains an array named `letter_sets`. Each object within this array defines a distinct set of letter blocks.
+The `scope.jtsson` file contains an array named `letter_sets`. Each object within this array defines a distinct set of letter blocks.
 
 ---
 
