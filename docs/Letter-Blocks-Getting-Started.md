@@ -6,17 +6,6 @@ icon: material/alpha
 
 Letter Blocks are special building blocks that display letters, numbers, and symbols. They're perfect for creating words, equations, signs, and educational displays in your Minecraft world.
 
-## 📑 Table of Contents
-
-- [What are Letter Blocks?](#what-are-letter-blocks)
-- [What's Included](#whats-included)
-- [How to Get Letter Blocks](#how-to-get-letter-blocks)
-- [How to Use Letter Blocks](#how-to-use-letter-blocks)
-- [Basic Building Tips](#basic-building-tips)
-- [Quick Ideas to Try](#quick-ideas-to-try)
-- [Common Questions](#common-questions)
-- [Next Steps](#next-steps)
-
 ---
 
 ## What are Letter Blocks?
@@ -25,9 +14,6 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
     Letter Blocks are Minecraft blocks with letters, numbers, or symbols on them. Instead of being made of wood or stone, each block shows a character. You can place them like regular blocks to spell words, create math problems, or make signs.
 
     **Think of them as:** Physical Scrabble tiles or alphabet blocks that you can build with in 3D space.
-
-
-![Letter blocks spelling a word](images/letter-blocks-example.png)
 
 ---
 
@@ -42,6 +28,7 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
 
 ??? note "➕ Math Symbols - Click to expand character list"
     - **Operators:** + (plus), - (minus), × (multiply), ÷ (divide), = (equals)
+    - **Other symbols:** < (less than), > (greater than), ± (plus-minus)
 
 ??? note "📝 Punctuation - Click to expand character list"
     - **Common marks:** . (period), , (comma), ? (question mark), ! (exclamation point)
@@ -51,6 +38,7 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
     - **Crosses:** ✗ (incorrect)
     - **Arrows:** → ↑ ↓ ←
     - **Currency:** $ (dollar), € (euro)
+    - **Parentheses:** ( ) [ ] { }
 
 **Total:** Hundreds of blocks covering almost any character you might need!
 
@@ -75,7 +63,7 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
 6. Click any block to add it to your inventory
 7. Drag it to your hotbar for easy access
 
-![Finding letter blocks in Creative inventory](images/find-letter-blocks-creative.png)
+![Finding letter blocks in Creative inventory](gifs/find-letter-blocks-creative.gif)
 
 ### 🧰 Method 2: Educator Tools Menu
 
@@ -100,7 +88,7 @@ Letter Blocks are special building blocks that display letters, numbers, and sym
 
 To spell a word like "HELLO":
 
-1. Get the blocks: H, E, L, L, O from your inventory
+1. Get the blocks: H, E, L, O from your inventory
 2. Place the H block
 3. Place the E block next to it
 4. Continue placing L, L, O in a row
@@ -108,7 +96,6 @@ To spell a word like "HELLO":
 
 !!! tip
     Place blocks at eye level or higher so they're easy to read. You can stack them or arrange them in any pattern for creative displays.
-
 
 ![Building the word HELLO with letter blocks](gifs/build-word-demo.gif)
 
@@ -129,7 +116,6 @@ To spell a word like "HELLO":
     - ✅ Build 3D shapes with them
     - ✅ Place them on walls, floors, ceilings - any surface
 
-
 ---
 
 ## Basic Building Tips
@@ -137,21 +123,22 @@ To spell a word like "HELLO":
 ### 📝 For Words and Sentences
 
 **Horizontal lines:**
+
 - Easy to read from left to right
 - Place blocks side-by-side at the same height
 - Good for simple messages and signs
 
 **Vertical stacks:**
+
 - Works well for banners or tall signs
 - Stack blocks on top of each other
 - Great for player names or titles
 
 **Mixed layouts:**
+
 - Combine horizontal and vertical for creativity
 - Create crossword-style patterns
 - Use different heights for visual interest
-
-![Different layout examples](images/letter-block-layouts.png)
 
 ### 🔢 For Math Problems
 
@@ -177,20 +164,21 @@ Stack blocks vertically for traditional math format
 ### 🪧 For Signs and Labels
 
 **Simple signs:**
+
 - Spell words like "ENTRANCE," "EXIT," "LIBRARY"
 - Place at doorways or important locations
 - Use all capitals for easier reading from a distance
 
 **Directional signs:**
+
 - Combine words with arrow blocks
 - Example: "CAFETERIA" followed by → block
 
 **Informational displays:**
+
 - Create classroom rules or instructions
 - Build vocabulary words with definitions
 - Make educational posters in 3D
-
-![Letter block sign examples](images/letter-block-signs.png)
 
 ---
 
@@ -198,53 +186,63 @@ Stack blocks vertically for traditional math format
 
 ??? example "🌟 Beginner Activities - Click to expand"
     **1. Spell Your Name** 📛
+
     - Get the letter blocks for your name
     - Place them in a row
     - Try using different colors or arranging them creatively
 
     **2. Simple Math** ➕
+
     - Build "1 + 1 = 2"
     - Try a subtraction problem
     - Create a times table display
 
     **3. Make a Sign** 🪧
+
     - Spell "WELCOME"
     - Place it at the entrance of your build
     - Experiment with different layouts
 
 ??? example "⭐ Intermediate Activities - Click to expand"
     **4. Build a Sentence** 📝
+
     - Use letters and punctuation to make a complete sentence
     - Example: "HELLO WORLD!"
     - Remember spaces between words (leave empty blocks)
 
     **5. Create a Word Wall** 🧱
+
     - Pick a theme (animals, colors, shapes)
     - Build multiple related words
     - Arrange them in an interesting pattern
 
     **6. Math Challenge Board** 🎯
+
     - Build several math problems
     - Leave the answers blank
     - Have students add the answer blocks
 
 ??? example "💡 Common Use Cases - Click to expand"
     **Classroom Labeling:**
+
     - Label different areas of your Minecraft classroom
     - Create station names for learning centers
     - Build direction signs for navigation
 
     **Vocabulary Displays:**
+
     - Spell out vocabulary words students are learning
     - Create word families or spelling patterns
     - Build sight words for early learners
 
     **Math Practice:**
+
     - Display equations for students to solve
     - Create number lines or counting sequences
     - Build multiplication tables or fractions
 
     **Creative Writing:**
+
     - Build story prompts or writing starters
     - Create word banks for creative projects
     - Display famous quotes or poetry
