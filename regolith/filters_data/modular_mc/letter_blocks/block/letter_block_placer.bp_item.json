@@ -1,0 +1,23 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "::`edu_tools:letter_block_${letter}_placer`",
+			"name": "::letter.replace(/_/g, ' ').split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')",
+			"description": "Places a corresponding letter block",
+			"player_facing": true,
+			"menu_category": {
+				"category": "construction",
+				"group": "::`shapescape:itemGroup.name.${group}`"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "::`letter_block_${letter}`"
+			},
+			"minecraft:block_placer": {
+				"block": "::`edu_tools:letter_block_${letter}`"
+			}
+		}
+	}
+}

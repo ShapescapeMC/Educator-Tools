@@ -1,1 +1,0 @@
-"`[p.name.replace('.lang', '') for p in Path('translations').glob('*')]`"

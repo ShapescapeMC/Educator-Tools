@@ -1,0 +1,5 @@
+{ts:
+return entries.map(e =>
+`item.edu_tools:letter_block_${e.safe_name}_placer=${e.display_name}\ntile.edu_tools:letter_block_${e.safe_name}.name=${e.display_name}`
+).join('\n');
+:}

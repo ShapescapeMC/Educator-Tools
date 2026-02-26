@@ -1,0 +1,94 @@
+import { TimeOfDay } from "@minecraft/server";
+import { ModalUIScene } from "../scene_manager/ui-scene.ts";
+import { SceneContext } from "../scene_manager/scene-context.ts";
+import { SceneManager } from "../scene_manager/scene-manager.ts";
+import { EnvironmentService } from "./environment.service.ts";
+
+/**
+ * Modal scene for configuring daytime settings including time of day and daylight cycle.
+ * Provides options to set specific time periods, enable real-time synchronization, or toggle the daylight cycle.
+ */
+export class EnvironmentDaytimeScene extends ModalUIScene {
+	static readonly id = "environment_daytime";
+	private static readonly DROPDOWN_OFFSET = 2;
+
+	/**
+	 * Creates a new EnvironmentDaytimeScene with controls for time and cycle settings.
+	 * @param sceneManager - The scene manager for handling scene navigation
+	 * @param context - The scene context containing player and navigation history
+	 * @param environmentService - The environment service for managing daytime settings
+	 */
+	constructor(
+		sceneManager: SceneManager,
+		context: SceneContext,
+		environmentService: EnvironmentService,
+	) {
+		super(EnvironmentDaytimeScene.id, context.getSourcePlayer());
+
+		this.setContext(context);
+
+		const daytimes = Object.keys(TimeOfDay).filter((key) => isNaN(Number(key)));
+		const dayTimeLangKeys = daytimes.map((daytime) => ({
+			translate: `edu_tools.ui.environment_daytime.select_daytime.options.${daytime.toLowerCase()}`,
+		}));
+		// Add a "real-time" option
+		dayTimeLangKeys.unshift({
+			translate:
+				"edu_tools.ui.environment_daytime.select_daytime.options.realtime",
+		});
+		// Add a "no change" option
+		dayTimeLangKeys.unshift({
+			translate:
+				"edu_tools.ui.environment_daytime.select_daytime.options.no_change",
+		});
+
+		this.addDropdown(
+			"edu_tools.ui.environment_daytime.select_daytime",
+			dayTimeLangKeys,
+			(selectedDaytime: number): void => {
+				if (selectedDaytime === 0) {
+					// If "no change" is selected, do nothing
+					return;
+				}
+				if (selectedDaytime === 1) {
+					// If "real-time" is selected, enable real-time daylight
+					environmentService.setRealTimeDaylight(true);
+					return;
+				}
+
+				// Set specific daytime and disable real-time daylight
+				environmentService.setRealTimeDaylight(false);
+				environmentService.setDayTime(
+					TimeOfDay[
+						daytimes[
+							selectedDaytime - EnvironmentDaytimeScene.DROPDOWN_OFFSET
+						] as keyof typeof TimeOfDay
+					],
+				);
+			},
+			{
+				tooltip: "edu_tools.ui.environment_daytime.select_daytime_tooltip",
+			},
+		);
+
+		this.addToggle(
+			"edu_tools.ui.environment_daytime.set_daytime_cycle",
+			(isEnabled: boolean): void => {
+				if (!environmentService.isRealTimeDaylight()) {
+					environmentService.setDayLightCycle(isEnabled);
+				}
+			},
+			{
+				defaultValue:
+					environmentService.getDayLightCycle() ||
+					environmentService.isRealTimeDaylight(),
+				tooltip: "edu_tools.ui.environment_daytime.set_daytime_cycle_tooltip",
+			},
+		);
+
+		this.show(context.getSourcePlayer(), sceneManager).then((r) => {
+			if (r.canceled) return;
+			sceneManager.goBackToScene(context, "environment");
+		});
+	}
+}
