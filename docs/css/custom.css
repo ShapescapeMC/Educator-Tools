@@ -1,19 +1,19 @@
 :root {
-  --md-primary-fg-color: #061c3a;
-  --md-primary-fg-color-dark: #061c3a;
-  --md-primary-bg-color: #e6f0ff;
-  --md-primary-bg-color-dark: #0a2847;
-  --md-accent-fg-color: #4DA6FF;
-  --md-accent-fg-color-dark: #4DA6FF;
-  --md-accent-bg-color: #d9eaff;
-  --md-accent-bg-color-dark: #1a4d80;
+  --md-primary-fg-color: #041c3b;
+  --md-primary-fg-color-dark: #041c3b;
+  --md-primary-bg-color: #cfb7f5;
+  --md-primary-bg-color-dark: #041c3b;
+  --md-accent-fg-color: #ef38a9;
+  --md-accent-fg-color-dark: #ef38a9;
+  --md-accent-bg-color: #cdf462;
+  --md-accent-bg-color-dark: #4b927e;
 }
 
-/* Colore per link e elementi interattivi */
+/* Link e elementi interattivi */
 a {
-  color: #0055CC;
+  color: #4b927e;
 }
 
 a:hover {
-  color: #004B99;
+  color: #ef38a9;
 }
