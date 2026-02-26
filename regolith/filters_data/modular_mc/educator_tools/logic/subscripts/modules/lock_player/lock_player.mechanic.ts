@@ -172,8 +172,8 @@ export class LockPlayerMechanic {
 	 */
 	private applyContainmentImpulse(
 		player: Player,
-		center: any,
-		playerLocation: any,
+		center: Vector3,
+		playerLocation: Vector3,
 	): void {
 		const impulse = {
 			x: (center.x - playerLocation.x) * 0.1,
@@ -211,7 +211,7 @@ export class LockPlayerMechanic {
 	private teleportPlayerBack(
 		player: Player,
 		lockSettings: LockSettings,
-		center: any,
+		center: Vector3,
 		distance: number,
 	): void {
 		if (lockSettings.teleportToCenter) {
@@ -260,7 +260,7 @@ export class LockPlayerMechanic {
 	 */
 	private teleportToAreaEdge(
 		player: Player,
-		center: any,
+		center: Vector3,
 		radius: number,
 		distance: number,
 	): void {
