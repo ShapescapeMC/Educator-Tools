@@ -1,19 +1,70 @@
-:root {
-  --md-primary-fg-color: #041c3b;
-  --md-primary-fg-color-dark: #041c3b;
-  --md-primary-bg-color: #cfb7f5;
-  --md-primary-bg-color-dark: #041c3b;
-  --md-accent-fg-color: #ef38a9;
-  --md-accent-fg-color-dark: #ef38a9;
-  --md-accent-bg-color: #cdf462;
-  --md-accent-bg-color-dark: #4b927e;
+/* ===================================================
+   Educator Tools – Brand Colors
+   #cfb7f5  light purple
+   #ef38a9  hot pink
+   #4b927e  teal green
+   #041c3b  dark navy
+   #cdf462  lime green
+   =================================================== */
+
+/* ---------- Light scheme (default) ---------- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #041c3b;
+  --md-primary-fg-color--light: #0b3060;
+  --md-primary-fg-color--dark:  #021024;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #f5f5f5;
+
+  --md-accent-fg-color:         #ef38a9;
+  --md-accent-fg-color--transparent: rgba(239, 56, 169, 0.1);
+  --md-accent-bg-color:         #ffffff;
+
+  --md-typeset-a-color:         #4b927e;
+  --md-typeset-a-color--light:  rgba(75, 146, 126, 0.1);
+
+  --md-code-bg-color:           #f4eefe;
+  --md-footer-bg-color:         #041c3b;
+  --md-footer-bg-color--dark:   #021024;
+  --md-footer-fg-color:         #ffffff;
+  --md-footer-fg-color--light:  #cfb7f5;
+  --md-footer-fg-color--lighter:#cfb7f5;
 }
 
-/* Link e elementi interattivi */
-a {
-  color: #4b927e;
+/* ---------- Dark scheme (slate) ---------- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #041c3b;
+  --md-primary-fg-color--light: #0b3060;
+  --md-primary-fg-color--dark:  #021024;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #f5f5f5;
+
+  --md-accent-fg-color:         #ef38a9;
+  --md-accent-fg-color--transparent: rgba(239, 56, 169, 0.15);
+  --md-accent-bg-color:         #1e1e2e;
+
+  --md-typeset-a-color:         #cdf462;
+  --md-typeset-a-color--light:  rgba(205, 244, 98, 0.15);
+
+  --md-code-bg-color:           #1a1a2e;
+  --md-footer-bg-color:         #021024;
+  --md-footer-bg-color--dark:   #010812;
+  --md-footer-fg-color:         #cfb7f5;
+  --md-footer-fg-color--light:  #cfb7f5;
+  --md-footer-fg-color--lighter:#cfb7f5;
 }
 
-a:hover {
-  color: #ef38a9;
+/* ---------- Admonition accent strip ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left-color: #4b927e;
+}
+
+/* ---------- Active nav item indicator ---------- */
+.md-nav__link--active {
+  color: #ef38a9 !important;
+}
+
+/* ---------- Search highlight ---------- */
+.md-search-result mark {
+  background-color: rgba(205, 244, 98, 0.45);
 }
