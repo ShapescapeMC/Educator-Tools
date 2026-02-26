@@ -3,7 +3,7 @@ export interface Team extends TeamsData {
 	memberIds: string[];
 	isSystem?: boolean; // Flag to identify system-generated teams
 	editable?: boolean; // Flag to control if team can be modified
-	editable_members?: boolean; // Flag to control if team members can be modified
+	editableMembers?: boolean; // Flag to control if team members can be modified
 	minimumMembers?: number; // Minimum number of members required for the team
 	maximumMembers?: number; // Maximum number of members allowed in the team
 }

@@ -54,7 +54,7 @@ export class TeamsManagementScene extends ActionUIScene {
 				context.setNextScene("teams_manage_players");
 				context.setSubjectTeamRequired(true);
 				context.setData("team_filter", (team: Team): boolean => {
-					return !!team.editable_members;
+					return !!team.editableMembers;
 				});
 				sceneManager.openSceneWithContext(context, "team_select", true);
 			},

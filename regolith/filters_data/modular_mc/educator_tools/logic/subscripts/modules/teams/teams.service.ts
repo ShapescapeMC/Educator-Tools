@@ -197,7 +197,7 @@ export class TeamsService implements Module {
 		if (!team) {
 			throw new Error(`Team with ID '${teamId}' doesn't exist`);
 		}
-		if (team.editable_members === false) {
+		if (team.editableMembers === false) {
 			throw new Error(`Team '${teamId}' does not allow member editing`);
 		}
 		if (team.memberIds.includes(playerId)) {
@@ -227,7 +227,7 @@ export class TeamsService implements Module {
 		if (!team) {
 			throw new Error(`Team with ID '${teamId}' doesn't exist`);
 		}
-		if (team.editable_members === false) {
+		if (team.editableMembers === false) {
 			throw new Error(`Team '${teamId}' does not allow member editing`);
 		}
 		const memberIndex = team.memberIds.indexOf(playerId);
@@ -390,7 +390,7 @@ export class TeamsService implements Module {
 				memberIds: [],
 				isSystem: true,
 				editable: false,
-				editable_members: true,
+				editableMembers: true,
 				icon: "teachers",
 				minimumMembers: 1, // At least one teacher required
 				host_auto_assign: true, // Auto-assign teachers when they join
