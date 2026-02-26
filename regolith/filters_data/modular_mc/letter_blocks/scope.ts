@@ -96,6 +96,28 @@ export const scope = {
 				{ char: "\u003d", safe_name: "equals_sign", group: "symbol" },
 				{ char: "\u003c", safe_name: "less_than", group: "symbol" },
 				{ char: "\u003e", safe_name: "greater_than", group: "symbol" },
+				{
+					char: "\u0028",
+					safe_name: "left_parenthesis",
+					group: "symbol",
+				},
+				{
+					char: "\u0029",
+					safe_name: "right_parenthesis",
+					group: "symbol",
+				},
+				{
+					char: "\u005b",
+					safe_name: "left_square_bracket",
+					group: "symbol",
+				},
+				{
+					char: "\u005d",
+					safe_name: "right_square_bracket",
+					group: "symbol",
+				},
+				{ char: "\u007b", safe_name: "left_brace", group: "symbol" },
+				{ char: "\u007d", safe_name: "right_brace", group: "symbol" },
 				{ char: "\u007e", safe_name: "tilde", group: "symbol" },
 				{
 					char: "\u201a",
