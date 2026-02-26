@@ -32,7 +32,7 @@ regolith/filters_data/modular_mc/letter_blocks/_scope.ts
 
 ### Step 2: JSON Structure Overview
 
-The `scope.jtsson` file contains an array named `letter_sets`. Each object within this array defines a distinct set of letter blocks.
+The `scope.ts` file contains an array named `letter_sets`. Each object within this array defines a distinct set of letter blocks.
 
 ---
 
