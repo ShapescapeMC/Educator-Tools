@@ -1,1 +1,5 @@
 **/*.ogg filter=lfs diff=lfs merge=lfs -text
+docs/gifs/*.gif filter=lfs diff=lfs merge=lfs -text
+docs/images/*.png filter=lfs diff=lfs merge=lfs -text
+docs/img/*.png filter=lfs diff=lfs merge=lfs -text
+docs/img/*.ico filter=lfs diff=lfs merge=lfs -text
