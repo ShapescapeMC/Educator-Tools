@@ -8,20 +8,6 @@ Extensions are optional add-ons that expand the functionality of Educator Tools 
 
 ---
 
-## Table of Contents
-
-- [❓ What are Extensions?](#-what-are-extensions)
-- [📦 Available Extensions](#-available-extensions)
-- [➕ Installing Extensions](#-installing-extensions)
-- [⚙️ Managing Extensions](#️-managing-extensions)
-- [🔗 Compatibility](#-compatibility)
-- [🔮 Future Extensions](#-future-extensions)
-- [🛠️ Creating Your Own Extensions](#️-creating-your-own-extensions)
-- [🔧 Troubleshooting Extensions](#-troubleshooting-extensions)
-- [💬 Support & Feedback](#-support--feedback)
-
----
-
 ## ❓ What are Extensions?
 
 !!! note
@@ -29,6 +15,7 @@ Extensions are optional add-ons that expand the functionality of Educator Tools 
 
 
 **Key characteristics:**
+
 - ✅ **Optional** - Install only what you want
 - ✅ **Compatible** - Work seamlessly with the core pack
 - ✅ **Independent** - Can be activated or removed without affecting core functionality
@@ -45,6 +32,7 @@ Expands the Letter Blocks feature with hundreds of additional characters, themed
 **[View More Letter Blocks Extension →](Extensions-More-Letter-Blocks.md)**
 
 **What it adds:**
+
 - Hundreds of new letter and symbol blocks
 - 9 distinct background themes
 - Extended Latin characters and diacritics
@@ -52,6 +40,7 @@ Expands the Letter Blocks feature with hundreds of additional characters, themed
 - Multilingual support for European languages
 
 **Best for:**
+
 - Teachers who need more characters than the default set
 - Multilingual classrooms
 - Advanced math and science activities
@@ -98,6 +87,7 @@ Expands the Letter Blocks feature with hundreds of additional characters, themed
 
 
 **Installation order:**
+
 1. Install and activate **Educator Tools** (core pack)
 2. Install and activate **Extension(s)** of your choice
 
@@ -110,6 +100,7 @@ Expands the Letter Blocks feature with hundreds of additional characters, themed
 **Yes!** Extensions can be deactivated or removed from your world at any time. Removing an extension won't affect the core pack or other extensions.
 
 **To remove:**
+
 1. Edit your world settings
 2. Go to Behavior Packs (or Resource Packs)
 3. Click the **"-"** button next to the extension
@@ -146,6 +137,7 @@ Extensions don't interfere with custom letter blocks or other custom content you
 We're planning to add more extensions in the future! Potential extensions include:
 
 **Possible future extensions:**
+
 - 🔬 Science & Lab Equipment blocks
 - 🏛️ Historical & Cultural building sets
 - 💻 Programming & Computer Science tools
@@ -153,7 +145,7 @@ We're planning to add more extensions in the future! Potential extensions includ
 - 🎵 Music & Sound education tools
 
 **Have an idea for an extension?**
-- 💬 Share it in [GitHub Discussions](https://github.com/ShapescapeMC/Educator-Tools/discussions)
+
 - 💡 Create a feature request on the [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)
 
 ---
@@ -165,6 +157,7 @@ We're planning to add more extensions in the future! Potential extensions includ
 
 
 **Resources for extension developers:**
+
 - 📖 **[Developer Documentation](Developer-Documentation.md)** - Learn the architecture
 - 🔧 **[Development Setup](Development-Setup.md)** - Set up your environment
 - 🔤 **[Advanced Letter Blocks Configuration](Advanced-Letter-Blocks-Configuration.md)** - Example of content extension
@@ -181,6 +174,7 @@ We're planning to add more extensions in the future! Potential extensions includ
 ### Extension doesn't appear in pack list
 
 **Solutions:**
+
 - Make sure you downloaded the `.mcaddon` file (not source code)
 - Restart Minecraft Education and try importing again
 - Check Settings → Storage → Behavior Packs to confirm it imported
@@ -188,6 +182,7 @@ We're planning to add more extensions in the future! Potential extensions includ
 ### Extension content doesn't appear in-game
 
 **Solutions:**
+
 - Verify the extension is **activated** in world settings (not just imported)
 - Verify the **core Educator Tools pack** is also activated
 - Leave and rejoin the world to trigger initialization
@@ -196,6 +191,7 @@ We're planning to add more extensions in the future! Potential extensions includ
 ### Extension causes errors or crashes
 
 **Solutions:**
+
 - Check the release notes for known issues
 - Verify you're using compatible versions (core pack + extension)
 - Remove the extension and report the issue on [GitHub](https://github.com/ShapescapeMC/Educator-Tools/issues)
@@ -203,6 +199,7 @@ We're planning to add more extensions in the future! Potential extensions includ
 ### Extension interferes with core pack
 
 **This shouldn't happen!** Extensions are designed to be independent. If you experience conflicts:
+
 1. Remove all extensions
 2. Test with core pack only
 3. Add extensions back one at a time to identify the problem
@@ -213,11 +210,12 @@ We're planning to add more extensions in the future! Potential extensions includ
 ## 💬 Support & Feedback
 
 **Need help with extensions?**
+
 - ❓ **[FAQ and Troubleshooting](FAQ-and-Troubleshooting.md)** - Common problems
 - 🆘 **[Getting Help](Getting-Help.md)** - How to get support
 
 **Have feedback on extensions?**
-- 💬 Share suggestions in [Discussions](https://github.com/ShapescapeMC/Educator-Tools/discussions)
+
 - 🐛 Report bugs on the [Issue Tracker](https://github.com/ShapescapeMC/Educator-Tools/issues)
 
 ---
