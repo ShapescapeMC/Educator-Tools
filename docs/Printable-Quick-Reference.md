@@ -192,7 +192,7 @@ icon: material/printer
 
 ---
 
-**Educator Tools Wiki:** https://github.com/ShapescapeMC/Educator-Tools/wiki
+**Educator Tools Wiki:** https://educator-tools.readthedocs.io/en/
 
 **Print Date:** ____________   **Teacher:** ____________
 
