@@ -1,12 +1,12 @@
 :root {
-  --md-primary-fg-color: #cfb7f3;
-  --md-primary-fg-color-dark: #cfb7f3;
-  --md-primary-bg-color: #f5f0ff;
-  --md-primary-bg-color-dark: #3a2f52;
-  --md-accent-fg-color: #cef46f;
-  --md-accent-fg-color-dark: #cef46f;
-  --md-accent-bg-color: #f0ff99;
-  --md-accent-bg-color-dark: #5a6b2a;
+  --md-primary-fg-color: #061c3a;
+  --md-primary-fg-color-dark: #061c3a;
+  --md-primary-bg-color: #e6f0ff;
+  --md-primary-bg-color-dark: #0a2847;
+  --md-accent-fg-color: #cfb7f3;
+  --md-accent-fg-color-dark: #cfb7f3;
+  --md-accent-bg-color: #f5f0ff;
+  --md-accent-bg-color-dark: #3a2f52;
 }
 
 /* Colore per link e elementi interattivi */
