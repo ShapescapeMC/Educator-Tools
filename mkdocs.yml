@@ -10,14 +10,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: cfb7f3
-      accent: green
+      accent: cef46f
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: cfb7f3
-      accent: green
+      accent: cef46f
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
