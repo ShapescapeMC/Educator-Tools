@@ -3,9 +3,9 @@
 **A comprehensive classroom management toolkit for Minecraft Education.**
 
 <div class="feedback-banner" markdown>
-:material-message-draw:{ .lg style="color: #ef38a9" } **Help us improve Educator Tools!** We'd love to hear from you, it only takes 3 minutes.
+:material-message-draw:{ .lg style="color: #ef38a9" } **Your feedback shapes what's next.** It only takes 3 minutes.
 
-[**Share Your Feedback** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
+[**Shape the Tools You Use** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
 </div>
 
 ---
@@ -207,9 +207,9 @@
 ---
 
 <div class="feedback-banner feedback-banner--bottom" markdown>
-:material-heart:{ style="color: #ef38a9" } **Enjoying Educator Tools?** Help us make it even better, share your feedback!
+:material-heart:{ style="color: #ef38a9" } **Enjoying Educator Tools?** Help us make them even better for your classroom.
 
-[**Take the Survey (3 min)** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
+[**Shape the Tools You Use** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
 </div>
 
 <p align="center">
