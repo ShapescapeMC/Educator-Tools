@@ -157,3 +157,10 @@ After pushing your changes to your fork, follow these steps to open a Pull Reque
 - **Be Responsive:** Be prepared to address feedback and make revisions to your pull request if requested.
 
 For technical setup questions, refer to the **[Development Setup Guide](Development-Setup.md)**.
+
+---
+
+!!! tip "📝 Not a developer? You can still help!"
+    Share your feedback on Educator Tools, it only takes 3 minutes.
+
+    [**Take the Feedback Survey →**](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary target="_blank" }
