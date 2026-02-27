@@ -3,7 +3,7 @@
 **A comprehensive classroom management toolkit for Minecraft Education.**
 
 <div class="feedback-banner" markdown>
-:material-message-draw:{ .lg style="color: #ef38a9" } **Help us improve Educator Tools!** We'd love to hear from you — it only takes 3 minutes.
+:material-message-draw:{ .lg style="color: #ef38a9" } **Help us improve Educator Tools!** We'd love to hear from you, it only takes 3 minutes.
 
 [**Share Your Feedback** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
 </div>
@@ -30,7 +30,7 @@
 
     ---
 
-    The 5 most important features — nicknames, assignments, focus mode, lock players, and letter blocks.
+    The 5 most important features: nicknames, assignments, focus mode, lock players, and letter blocks.
 
     [:octicons-arrow-right-24: Essential Tools](Essential-Tools.md)
 
@@ -207,7 +207,7 @@
 ---
 
 <div class="feedback-banner feedback-banner--bottom" markdown>
-:material-heart:{ style="color: #ef38a9" } **Enjoying Educator Tools?** Help us make it even better — share your feedback!
+:material-heart:{ style="color: #ef38a9" } **Enjoying Educator Tools?** Help us make it even better, share your feedback!
 
 [**Take the Survey (3 min)** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
 </div>

@@ -22,7 +22,7 @@ Go to the official GitHub releases page and download the latest version.
 ![Download from releases page](gifs/download-pack.gif)
 
 !!! info
-    **File to download:** Look for a file like `educator-tools-v2.1.0.mcaddon` — make sure it's the `.mcaddon` file, NOT the source code zip files!
+    **File to download:** Look for a file like `educator-tools-v2.1.0.mcaddon`, make sure it's the `.mcaddon` file, NOT the source code zip files!
 
 ---
 
