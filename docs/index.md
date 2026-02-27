@@ -2,6 +2,12 @@
 
 **A comprehensive classroom management toolkit for Minecraft Education.**
 
+<div class="feedback-banner" markdown>
+:material-message-draw:{ .lg style="color: #ef38a9" } **Help us improve Educator Tools!** We'd love to hear from you — it only takes 3 minutes.
+
+[**Share Your Feedback** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
+</div>
+
 ---
 
 ## :material-school:{ style="color: #26a69a" } For Teachers
@@ -199,6 +205,12 @@
 </div>
 
 ---
+
+<div class="feedback-banner feedback-banner--bottom" markdown>
+:material-heart:{ style="color: #ef38a9" } **Enjoying Educator Tools?** Help us make it even better — share your feedback!
+
+[**Take the Survey (3 min)** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
+</div>
 
 <p align="center">
   <strong>Made with ❤️ by Shapescape</strong> · Free and open-source (LGPL v3)<br><br>

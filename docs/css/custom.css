@@ -90,3 +90,60 @@
 .md-search-result mark {
   background-color: rgba(239, 56, 169, 0.2);
 }
+
+/* ---------- Announcement bar (feedback) ---------- */
+.md-banner {
+  background: linear-gradient(135deg, #4b927e, #041c3b);
+  color: #fff;
+  text-align: center;
+}
+
+.md-banner a,
+.md-banner a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.feedback-announce {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.82rem;
+  padding: 0.35em 0;
+}
+
+.feedback-announce__arrow {
+  font-weight: 700;
+  margin-left: 0.2em;
+}
+
+/* ---------- Feedback banner card ---------- */
+.feedback-banner {
+  background: linear-gradient(135deg, rgba(75, 146, 126, 0.12), rgba(207, 183, 245, 0.15));
+  border: 2px solid #4b927e;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+[data-md-color-scheme="slate"] .feedback-banner {
+  background: linear-gradient(135deg, rgba(75, 146, 126, 0.18), rgba(207, 183, 245, 0.10));
+  border-color: #4b927e;
+}
+
+.feedback-banner p {
+  margin: 0.5rem 0;
+}
+
+.feedback-btn {
+  background-color: #ef38a9 !important;
+  border-color: #ef38a9 !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.feedback-btn:hover {
+  background-color: #d42e95 !important;
+  border-color: #d42e95 !important;
+}

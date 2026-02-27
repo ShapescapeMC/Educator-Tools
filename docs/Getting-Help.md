@@ -266,6 +266,11 @@ Found this help guide confusing or incomplete?
 
 Your feedback makes the documentation better for everyone!
 
+!!! tip "📝 Share your feedback directly!"
+    Help us improve Educator Tools — it only takes 3 minutes.
+
+    [**Take the Feedback Survey →**](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary target="_blank" }
+
 ---
 
 **Back to:** [Home](index.md) | [FAQ and Troubleshooting](FAQ-and-Troubleshooting.md) | [Quick Start Guide](Quick-Start-Guide.md)
