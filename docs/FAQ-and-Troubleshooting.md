@@ -317,4 +317,4 @@ If your problem isn't listed here:
 ---
 
 !!! tip "📝 Help us improve!"
-    Have feedback about Educator Tools? [**Share your thoughts — it only takes 3 minutes →**](https://forms.office.com/e/gE2ks5WR7R){ target="_blank" }
+    Have feedback about Educator Tools? [**Share your thoughts, it only takes 3 minutes →**](https://forms.office.com/e/gE2ks5WR7R){ target="_blank" }

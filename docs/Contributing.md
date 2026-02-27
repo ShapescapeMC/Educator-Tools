@@ -161,6 +161,6 @@ For technical setup questions, refer to the **[Development Setup Guide](Developm
 ---
 
 !!! tip "📝 Not a developer? You can still help!"
-    Share your feedback on Educator Tools — it only takes 3 minutes.
+    Share your feedback on Educator Tools, it only takes 3 minutes.
 
     [**Take the Feedback Survey →**](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary target="_blank" }
