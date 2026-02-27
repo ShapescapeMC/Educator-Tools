@@ -410,12 +410,12 @@ Controls student health, hunger, and status effects. You can heal students, remo
 
 1. Right-click the **Educator Toolbox** in your hotbar
 2. Click **Manage Health**
-3. **Choose who to affect** (select a team — the tool targets entire teams)
+3. **Choose who to affect** (select a team, the tool targets entire teams)
 4. **Select the action:**
-   - **Heal** — Clears all effects, briefly restores hunger, and resets health to full
-   - **Clear Effects** — Removes all active status effects from players
-   - **Reset** — Returns health settings to defaults (damage on, hunger on, effect immunity off) and heals
-   - **Settings** — Opens toggles to configure health behavior (see below)
+   - **Heal** - Clears all effects, briefly restores hunger, and resets health to full
+   - **Clear Effects** - Removes all active status effects from players
+   - **Reset** - Returns health settings to defaults (damage on, hunger on, effect immunity off) and heals
+   - **Settings** - Opens toggles to configure health behavior (see below)
 
 !!! tip
     Use **Heal** before starting Survival mode challenges to ensure everyone begins at full health and hunger.
@@ -432,7 +432,7 @@ The **Settings** button opens a panel with three toggles that control ongoing he
 | **Enable Effect Immunity** | When on, all effects are continuously removed from players (including positive ones). |
 
 !!! warning
-    Enabling **Effect Immunity** removes *all* effects — including beneficial ones like speed boosts or night vision. Use with caution.
+    Enabling **Effect Immunity** removes *all* effects, including beneficial ones like speed boosts or night vision. Use with caution.
 
 
 **✅ Common Uses:**
