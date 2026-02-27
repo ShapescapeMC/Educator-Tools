@@ -137,13 +137,13 @@
 }
 
 .feedback-btn {
-  background-color: #d42e95 !important;
-  border-color: #d42e95 !important;
+  background-color: #4b927e !important;
+  border-color: #4b927e !important;
   color: #fff !important;
   font-weight: 600;
 }
 
 .feedback-btn:hover {
-  background-color: #b3227b !important;
-  border-color: #b3227b !important;
+  background-color: #3a7565 !important;
+  border-color: #3a7565 !important;
 }
