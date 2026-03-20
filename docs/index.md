@@ -5,7 +5,7 @@
 <div class="feedback-banner" markdown>
 :material-message-draw:{ .lg style="color: #4b927e" } **Your feedback shapes what's next.** It only takes 3 minutes.
 
-[**Shape the Tools You Use** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
+[**Shape the Tools You Use** :material-arrow-right:](https://tally.so/r/0QPY9P){ .md-button .md-button--primary .feedback-btn target="_blank" }
 </div>
 
 ---
@@ -209,7 +209,7 @@
 <div class="feedback-banner feedback-banner--bottom" markdown>
 :material-heart:{ style="color: #4b927e" } **Enjoying Educator Tools?** Help us make them even better for your classroom.
 
-[**Shape the Tools You Use** :material-arrow-right:](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary .feedback-btn target="_blank" }
+[**Shape the Tools You Use** :material-arrow-right:](https://tally.so/r/0QPY9P){ .md-button .md-button--primary .feedback-btn target="_blank" }
 </div>
 
 <p align="center">
