@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
+<script>
+	window.TallyConfig = {
+		"formId": "0QPY9P",
+		"popup": {
+			"emoji": {
+				"text": "👋",
+				"animation": "wave"
+			},
+			"autoClose": 0,
+			"formEventsForwarding": true,
+			"open": {
+				"trigger": "time",
+				"ms": 5000
+			}
+		}
+	};
+</script>
+
 <script async src="https://tally.so/widgets/embed.js"></script>
 {% endblock %}
 
