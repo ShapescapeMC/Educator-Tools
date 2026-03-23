@@ -269,7 +269,7 @@ Your feedback makes the documentation better for everyone!
 !!! tip "📝 Share your feedback directly!"
     Help us improve Educator Tools, it only takes 3 minutes.
 
-    [**Take the Feedback Survey →**](https://forms.office.com/e/gE2ks5WR7R){ .md-button .md-button--primary target="_blank" }
+    [**Take the Feedback Survey →**](https://tally.so/r/0QPY9P){ .md-button .md-button--primary target="_blank" }
 
 ---
 

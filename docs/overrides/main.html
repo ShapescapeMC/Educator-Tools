@@ -1,7 +1,29 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+<script>
+	window.TallyConfig = {
+		"formId": "0QPY9P",
+		"popup": {
+			"emoji": {
+				"text": "👋",
+				"animation": "wave"
+			},
+			"autoClose": 0,
+			"formEventsForwarding": true,
+			"open": {
+				"trigger": "time",
+				"ms": 5000
+			}
+		}
+	};
+</script>
+
+<script async src="https://tally.so/widgets/embed.js"></script>
+{% endblock %}
+
 {% block announce %}
-<a href="https://forms.office.com/e/gE2ks5WR7R" target="_blank" rel="noopener" class="feedback-announce">
+<a href="https://tally.so/r/0QPY9P" target="_blank" rel="noopener" class="feedback-announce">
   📝 <strong>Help us improve Educator Tools!</strong> Share your feedback, it only takes 3 minutes.
 </a>
 {% endblock %}
